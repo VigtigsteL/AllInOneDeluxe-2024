@@ -1,9 +1,9 @@
 监狱建筑师 (PrisonArchitect)中文豪华版2024 模组
 
-特别感谢 GrandSong (Steam主页) 最初开发了此模组
+特别感谢 GrandSong ([Steam主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组
 原模组页面
 
-特别感谢 Yuanze31 (Steam主页)(Github主页) 二次开发了此模组
+特别感谢 Yuanze31 ([Steam主页](https://steamcommunity.com/id/yuanze31/)[Github主页](https://github.com/yuanze31/All-in-One-Deluxe) 二次开发了此模组
 二次开发模组页面
 
 已经获得二次开发作者 Yuanze31 的开发许可
