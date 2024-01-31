@@ -8,7 +8,7 @@
 ### 已经获得二次开发作者 Yuanze31 的开发许可
 ### 在作者Yuanze31有时间更新之前，可以暂时使用本模组。
 ***
-#### 此模组是于2024年2月针对经典大型模组[中文豪华版]进行的修复与更新
+#### 此模组是于**2024年2月**针对经典大型模组[中文豪华版]进行的修复与更新
 #### 感谢两位开发者对PA社区做出的巨大贡献！
 #### 如果有任何需要完善的地方，欢迎反馈与讨论。
 ## ➡️[中文豪华版2024]-Vigtigste [Steam模组页面]()
@@ -79,39 +79,39 @@
     - 死刑犯宽大处理可能性 > 死刑犯上诉成功率
     - 我们拥有 A 间空闲的B牢房。>空闲 A 间 B 牢房
 ***
-# 本次更新基于原模组与二次开发模组进行的修复与更新
-# 再次感谢两位开发者对PA社区做出的巨大贡献！
+## 本次更新基于原模组与二次开发模组进行的修复与更新
+## 再次感谢两位开发者对PA社区做出的巨大贡献！
 
-### **特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组**
-### **原模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)**
-### **特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组**
-### **二次开发模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)**
+#### **特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组**
+#### **原模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)**
+#### **特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组**
+#### **二次开发模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)**
 ***
-## 本次修复使用或参考了以下模组的内容，感谢这些作者的辛勤付出！
-### LargePrisonMod/大型监狱模组
+### 本次修复使用或参考了以下模组的内容，感谢这些作者的辛勤付出！
+#### LargePrisonMod/大型监狱模组
 [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=359636985)
-### Ozone'sFixes&QolAll-In-One/Ozone的修复和Qol一体化
+#### Ozone'sFixes&QolAll-In-One/Ozone的修复和Qol一体化
 [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2978340955)
-### CallableTrucks/应急卡车
+#### CallableTrucks/应急卡车
 [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=1632394574)
-### RestylingUI(Continued)/重新设计用户界面(续)
+#### RestylingUI(Continued)/重新设计用户界面(续)
 [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3009547076)
 
 ## 我正在使用的模组推荐：
 
-**Prison Population Grants/监狱人口补助金**
+#### Prison Population Grants/监狱人口补助金
 
 [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=227085867)
 
-**Murgh DevTools (Continued)/Murgh 开发工具(续)**
+#### Murgh DevTools (Continued)/Murgh 开发工具(续)
 
 [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3019052572)
 
-**No More Water!/无需水源**
+#### No More Water!/无需水源
 
 [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2514307311)
 
-**No More Power!/无需电力**
+#### No More Power!/无需电力
 
 [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2514307414)
 
