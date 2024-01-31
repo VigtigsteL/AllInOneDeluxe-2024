@@ -1,49 +1,40 @@
-监狱建筑师 (PrisonArchitect)中文豪华版2024 模组
-
-特别感谢 GrandSong ([Steam主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组
-原模组页面
-
-特别感谢 Yuanze31 ([Steam主页](https://steamcommunity.com/id/yuanze31/)[Github主页](https://github.com/yuanze31/All-in-One-Deluxe) 二次开发了此模组
-二次开发模组页面
-
-已经获得二次开发作者 Yuanze31 的开发许可
-在作者Yuanze31有时间更新之前，可以暂时使用本模组。
-
-此模组是于2024年2月针对经典大型模组[中文豪华版]进行的修复与更新
-如果有任何需要完善的地方，欢迎反馈与讨论。
-[这里插入一个Steam链接]
-
-
-本次模组是基于原模组与二次开发模组进行的修复与更新。
-感谢两位开发者对PA社区做出的巨大贡献！
-原模组：{中文豪华版}	作者@GrandSong
-https://steamcommunity.com/sharedfiles/filedetails/?id=821415114
-二次开发：{中文豪华版}-yuanze31	作者@yuanze31
-https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
+# 监狱建筑师 (PrisonArchitect)中文豪华版2024 模组
+***
+### **特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组**
+### **原模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)**
+### **特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组**
+### **二次开发模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)**
+***
+### 已经获得二次开发作者 Yuanze31 的开发许可
+### 在作者Yuanze31有时间更新之前，可以暂时使用本模组。
+***
+#### 此模组是于2024年2月针对经典大型模组[中文豪华版]进行的修复与更新
+#### 感谢两位开发者对PA社区做出的巨大贡献！
+#### 如果有任何需要完善的地方，欢迎反馈与讨论。
+## ➡️[中文豪华版2024]-Vigtigste [Steam模组页面]()
+***
+# 重要！修复了在大型游戏中，严重影响运算性能、2~5秒一次的严重卡顿、内存泄漏等严重Bug！
 
 
-重要！修复了在大型游戏中，严重影响运算性能、2~5秒一次的严重卡顿、内存泄漏等严重Bug！
-
-
-一.界面
+## 一.界面
 1.修复了在报告的“接收囚犯”界面中，“囚犯到达时间”、“移除囚犯接收限制”、“囚犯替换”三个按钮无法显示的Bug
 2.由于原模组界面没有更新，缺少很多图标。为了界面一致性，统一更换为<RestylingUI(Continued)>界面
 
-二.房间
+## 二.房间
 1.林场 修复： 修复了狱中劳役失效的Bug
 2.庭院 修复： 修复了错误代码导致的Bug，并调整了冲突数值。面积评分标准 25+1/50+2 > 50+1/100+2
 3.牢房 更改： 优化了评分需求
 4.教室 增加： 加入了对豪华办公桌的替代支持
 5.其他微调
 
-三.方案
+## 三.方案
 1.集体健身 更改： 席位30>20。增加替代物品：哑铃，沙袋，训练木桩，跑步机
 （原设计需要30个举重床太影响布局，所以添加了对更多物品替代支持)
 (并且席位相对于原版方案也显得过多，所以将席位减少以更符合原版）
 2.参考<LargePrisonMod>后，对游戏原方案进行调整
 稍微减少了方案费用、时间长度、参加次数，部分课程稍微增加了参与席位(如：行为疗法)
 
-四.人物
+## 四.人物
 1.典狱长 更改： 血量5>20
 （为了提高在执行模组方案“近距离接触”时，发生暴动后典狱长的生存能力，所以将血量稍微提高一些）
 2.参考<LargePrisonMod>后，对游戏原人员数值进行调整
@@ -52,7 +43,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
 -训犬员 更改： 移速0.5>0.8，视野12>20
 -其他微调
 
-五.紧急服务
+## 五.紧急服务
 1.供给车 增加： 紧急服务费用50
 (模组方案“近距离接触”在大规模监狱中会产生较多的奖金堆积，所以加入了<CallableTrucks>模组的供给车紧急服务功能，没有图标但可以正常使用)
 2.消防人员 更改： 召唤数量 3>5
@@ -61,7 +52,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
 5.部队 更改： 召唤数量 3>5，单次召唤人数4>6
 6.其他微调
 
-六.物品
+## 六.物品
 1.医药箱 更改：价格200>1000。医药箱内放置了戒断药物，能够使周围的囚犯少量满足酒精需求，极少满足毒品需求
 2.灯 更改 ：允许克隆，建造时间缩短
 3.金属探测器 更改： 位置调整回物品菜单
@@ -78,7 +69,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
 -矮书架 修复： 书籍无法被放置于矮书架的Bug
 12.其他微调
 
-七.翻译优化
+## 七.翻译优化
 1.添加缺失的汉化
 2.简化大量繁体
 3.微调部分文本
@@ -92,14 +83,14 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
 
 
 
-本次更新基于原模组与二次开发模组进行的修复与更新，再次感谢两位开发者对PA社区做出的巨大贡献！
+### 本次更新基于原模组与二次开发模组进行的修复与更新，再次感谢两位开发者对PA社区做出的巨大贡献！
 原模组：{中文豪华版}	作者@GrandSong
 https://steamcommunity.com/sharedfiles/filedetails/?id=821415114
 二次开发：{中文豪华版}-yuanze31	作者@yuanze31
 https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
 
 
-本次修复使用或参考了以下模组的内容，感谢这些作者的辛勤付出！
+### 本次修复使用或参考了以下模组的内容，感谢这些作者的辛勤付出！
 Large Prison mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=359636985
 
@@ -112,7 +103,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1632394574
 Restyling UI (Continued)
 https://steamcommunity.com/sharedfiles/filedetails/?id=3009547076
 
-我正在使用的模组推荐：
+### 我正在使用的模组推荐：
 Prison Population Grants/监狱人口补助金
 https://steamcommunity.com/sharedfiles/filedetails/?id=227085867
 
