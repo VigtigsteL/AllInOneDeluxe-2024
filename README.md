@@ -1,29 +1,22 @@
 # 监狱建筑师 (PrisonArchitect)中文豪华版2024 模组
 ***
-### **特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组**
-### **原模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)**
-### **特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组**
-### **二次开发模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)**
-***
-# 本次模组是对[中文豪华版]基于<原始模组>与<二次开发模组>
-# 进行的修复与更新。
-## 已获得二次开发作者@Yuanze31许可。
+### 特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)]
+### 特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)]
 ## 感谢两位开发者对PA社区做出的巨大贡献！
 
-### 关于本次更新内容请查看本模组页面
+### 本次模组是对[中文豪华版]基于<原始模组>与<二次开发模组>
+### 进行的修复与更新。
+### 已获得二次开发作者@Yuanze31许可。
+
+***
+### 关于 模组详情 请查看置顶<原始模组>与<二次开发模组>页面
+### 关于 本次更新内容 请查看本模组页面
 #### 如果有任何需要完善的地方、希望更改或添加的功能。
 #### 欢迎大家反馈与讨论。
-[Steam模组界面](https://steamcommunity.com/sharedfiles/filedetails/?id=3151283978)
-
-### 关于模组详情请查看<原始模组>与<二次开发模组>页面
-
-#### 原始模组：{中文豪华版}|作者@GrandSong
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)
-#### 二次开发：{中文豪华版}-yuanze31|作者@yuanze31
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)
+### ➡️[中文豪华版2024]-Vigtigste [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3151283978)]
 
 
-## ➡️[中文豪华版2024]-Vigtigste [Steam模组页面]()
+
 ***
 # ❗重要：修复了在大型游戏中，严重影响运算性能、2~5秒一次的严重卡顿、内存泄漏等严重Bug！
 ***
@@ -90,41 +83,22 @@
     - 不再接收新的犯人 > 暂停接收新囚犯
     - 死刑犯宽大处理可能性 > 死刑犯上诉成功率
     - 我们拥有 A 间空闲的B牢房。>空闲 A 间 B 牢房
-***
-## 本次更新基于<原始模组>与<二次开发模组>进行的修复与更新
-## 再次感谢两位开发者对PA社区做出的巨大贡献！
 
-#### **特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组**
-#### **原始模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)**
-#### **特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组**
-#### **二次开发模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)**
+***
+## 再次感谢两位开发者对PA社区做出的巨大贡献！
+### 特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)]
+### 特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)]
 ***
 ### 本次修复使用或参考了以下模组的内容，感谢这些作者的辛勤付出！
-#### LargePrisonMod/大型监狱模组
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=359636985)
-#### Ozone'sFixes&QolAll-In-One/Ozone的修复和Qol一体化
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2978340955)
-#### CallableTrucks/应急卡车
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=1632394574)
-#### RestylingUI(Continued)/重新设计用户界面(续)
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3009547076)
-
+#### LargePrisonMod/大型监狱模组    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=359636985)
+#### Ozone'sFixes&QolAll-In-One/Ozone的修复和Qol一体化    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2978340955)
+#### CallableTrucks/应急卡车    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=1632394574)
+#### RestylingUI(Continued)/重新设计用户界面(续)    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3009547076)
+***
 ## 我正在使用的模组推荐：
-
-#### Prison Population Grants/监狱人口补助金
-
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=227085867)
-
-#### Murgh DevTools (Continued)/Murgh 开发工具(续)
-
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3019052572)
-
-#### No More Water!/无需水源
-
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2514307311)
-
-#### No More Power!/无需电力
-
-[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2514307414)
+#### Prison Population Grants/监狱人口补助金    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=227085867)
+#### Murgh DevTools (Continued)/Murgh 开发工具(续)    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3019052572)
+#### No More Water!/无需水源    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2514307311)
+#### No More Power!/无需电力    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2514307414)
 
 
