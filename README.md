@@ -18,9 +18,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3151283978
 ### 关于模组详情请查看<原始模组>与<二次开发模组>页面
 
 #### 原始模组：{中文豪华版}|作者@GrandSong
-https://steamcommunity.com/sharedfiles/filedetails/?id=821415114
+[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)
 #### 二次开发：{中文豪华版}-yuanze31|作者@yuanze31
-https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
+[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)
 
 
 ## ➡️[中文豪华版2024]-Vigtigste [Steam模组页面]()
@@ -91,11 +91,11 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
     - 死刑犯宽大处理可能性 > 死刑犯上诉成功率
     - 我们拥有 A 间空闲的B牢房。>空闲 A 间 B 牢房
 ***
-## 本次更新基于原使模组与二次开发模组进行的修复与更新
+## 本次更新基于<原始模组>与<二次开发模组>进行的修复与更新
 ## 再次感谢两位开发者对PA社区做出的巨大贡献！
 
 #### **特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组**
-#### **原模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)**
+#### **原始模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)**
 #### **特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组**
 #### **二次开发模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)**
 ***
