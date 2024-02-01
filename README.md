@@ -5,12 +5,23 @@
 ### **特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组**
 ### **二次开发模组[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)**
 ***
-### 已经获得二次开发作者 Yuanze31 的开发许可
-### 在作者Yuanze31有时间更新之前，可以暂时使用本模组。
-***
-#### 此模组是于**2024年2月**针对经典大型模组[中文豪华版]进行的修复与更新
-#### 感谢两位开发者对PA社区做出的巨大贡献！
+# 本次模组是对[中文豪华版]基于<原始模组>与<二次开发模组>
+# 进行的修复与更新。
+## 已获得二次开发作者@Yuanze31许可。
+## 感谢两位开发者对PA社区做出的巨大贡献！
+
+### 关于本次更新内容请查看本模组页面
 #### 如果有任何需要完善的地方，欢迎反馈与讨论。
+https://steamcommunity.com/sharedfiles/filedetails/?id=3151283978
+
+### 关于模组详情请查看<原始模组>与<二次开发模组>页面
+
+#### 原始模组：{中文豪华版}|作者@GrandSong
+https://steamcommunity.com/sharedfiles/filedetails/?id=821415114
+#### 二次开发：{中文豪华版}-yuanze31|作者@yuanze31
+https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242
+
+
 ## ➡️[中文豪华版2024]-Vigtigste [Steam模组页面]()
 ***
 # ❗重要：修复了在大型游戏中，严重影响运算性能、2~5秒一次的严重卡顿、内存泄漏等严重Bug！
