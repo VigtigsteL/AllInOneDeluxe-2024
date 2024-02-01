@@ -13,7 +13,7 @@
 ### 关于本次更新内容请查看本模组页面
 #### 如果有任何需要完善的地方、希望更改或添加的功能。
 #### 欢迎大家反馈与讨论。
-https://steamcommunity.com/sharedfiles/filedetails/?id=3151283978
+[Steam模组界面](https://steamcommunity.com/sharedfiles/filedetails/?id=3151283978)
 
 ### 关于模组详情请查看<原始模组>与<二次开发模组>页面
 
