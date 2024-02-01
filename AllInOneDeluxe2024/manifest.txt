@@ -1,0 +1,8 @@
+
+Name                 [中文豪华版2024]-Vigtigste  
+Author               Vigtigste  
+IsTranslation        true  
+Version              1.0.0  
+FileID               F3151230550  
+SteamAuthor          A76561198151725088  
+SteamTags            "mod,translation,graphics and sound,content"  

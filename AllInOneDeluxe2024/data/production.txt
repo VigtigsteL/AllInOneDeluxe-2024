@@ -1,0 +1,19 @@
+# Store library books in library shelves and short bookcases in libraries and decorative libraries
+
+BEGIN ProductionRule
+    Rule                Storage
+    Material            LibraryBookSorted
+    Container           LibraryBookshelf
+    Container           ShortBookcase
+    Room                Library
+    Distribution        Random
+END
+
+BEGIN ProductionRule
+    Rule                Storage
+    Material            LibraryBookSorted
+    Container           LibraryBookshelf
+    Container           ShortBookcase
+    Room                DecorativeLibrary
+    Distribution        Random
+END
