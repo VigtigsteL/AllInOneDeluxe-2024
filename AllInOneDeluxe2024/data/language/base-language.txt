@@ -4368,4 +4368,5 @@ banner_donate_confirm	捐赠
 banner_donate_cancel	暂不
 buildtoolbar_popup_obj_guardtower	让狙击手执勤的小型建筑。\n只能“安装”在户外。\n\n这是除了门和探监柜台之外，极少数的会堵路的物品。\n\n它让围墙无法阻挡狙击手的视线。\n\n在[部署]视图，有时会闪烁警戒塔提示“无法进出”，\n但其实狙击手可以正常进出……
 
-interfacecallout_truck                  供给车
+interfacecallout_Truck                  供给车
+interfacecallout_Hearse                  灵车
