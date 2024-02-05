@@ -23,7 +23,7 @@ BEGIN Sprites
     BEGIN "[i 19]"     Name DeployArmedPatrols  x 18  y 18  w 3  h 3  RotateType 0  TopAligned false  END
     BEGIN "[i 20]"     Name DeployClearPatrols  x 24  y 18  w 3  h 3  RotateType 0  TopAligned false  END
     BEGIN "[i 21]"     Name DeployDogPatrols  x 15  y 18  w 3  h 3  RotateType 0  TopAligned false  END
-    BEGIN "[i 22]"     Name DeployGuards  x 18  y 3  w 3  h 3  RotateType 0  TopAligned false  END
+    BEGIN "[i 22]"     Name DeployGuards  x 39  y 18  w 3  h 3  RotateType 0  TopAligned false  END
     BEGIN "[i 23]"     Name DeployPatrols  x 9  y 18  w 3  h 3  RotateType 0  TopAligned false  END
     BEGIN "[i 24]"     Name DeployRemoveGuards  x 33  y 3  w 3  h 3  RotateType 0  TopAligned false  END
     BEGIN "[i 25]"     Name Deployment  x 18  y 3  w 3  h 3  RotateType 0  TopAligned false  END

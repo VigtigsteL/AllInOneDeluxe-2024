@@ -3599,6 +3599,17 @@ BEGIN Room
 END
 
 BEGIN Room
+    Name                 Intake
+    Properties       RequiresSector
+    BEGIN Requirement Type Object  Id Table Alt SmallTable END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+    BEGIN LikelyObject  Id      Door    END
+    BEGIN LikelyObject  Id      Cctv    END
+    BEGIN LikelyObject  Id      Chair    END
+    Research             Security
+END
+
+BEGIN Room
     Name                Nursery
     Properties          RequiresSector
     Properties          WomenOnly
@@ -3809,17 +3820,6 @@ END
 
 BEGIN Room
     Name Garbage
-END
-
-BEGIN Room
-    Name                 Intake
-    Properties       RequiresSector
-    BEGIN Requirement Type Object  Id Table Alt SmallTable END
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN LikelyObject  Id      Door    END
-    BEGIN LikelyObject  Id      Cctv    END
-    BEGIN LikelyObject  Id      Chair    END
-    Research             Security
 END
 
 BEGIN Room
@@ -4248,7 +4248,7 @@ END
 
 BEGIN Object     
     Name                 LicensePlateBlank
-    Price                -16
+    Price                -15
     MaxStackSize         20
     RenderDepth          1  
     Sprite               PlateBlank

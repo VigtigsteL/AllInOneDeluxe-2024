@@ -124,50 +124,6 @@ BEGIN ProductionRule
     Worker		 Laborer
 END
 
-BEGIN ProductionRule       
-    Rule                 Storage
-    Material             LicensePlateBlank  
-    Container            WorkshopPress  
-    Distribution         NonCompeting 
-    Worker		 Laborer
-END
-
-BEGIN ProductionRule       
-    Rule                 Storage
-    Material             LicensePlate  
-    Container            Table  
-    Room                 Workshop  
-    Distribution         NonCompeting  
-    MaxSlotId            3  
-    Worker		 Laborer
-END
-
-BEGIN ProductionRule       
-    Rule                 Storage
-    Material             LicensePlate  
-    Room                 Workshop  
-    Distribution         NonCompeting  
-    Condition            NotLoadedOnTable  
-    Worker		 Laborer
-END
-
-BEGIN Processor
-    Processor            WorkshopPress
-    Input                LicensePlateBlank
-    Output               LicensePlate
-    Worker		 Laborer
-    OperatingTime        60.0
-END
-
-BEGIN Processor
-    Processor            WorkshopSaw
-    Input                SheetMetal
-    Output               LicensePlateBlank
-    OutputCount          2
-    OperatingTime        60.0
-    Worker		 Laborer               
-END
-
 BEGIN Processor
     Processor            WorkshopSaw
     Input                Log
@@ -283,21 +239,7 @@ BEGIN ProductionRule
     Properties           HighPriority
 END
 
-BEGIN ProductionRule
-    Rule                 Storage
-    Material             LicensePlateBlank
-    Container            Table
-    Room                 Workshop
-    Distribution         NonCompeting
-END
 
-
-BEGIN ProductionRule
-    Rule                 Storage
-    Material             LicensePlateBlank
-    Room                 Exports
-    Condition            NotLoaded
-END
 
 
 
@@ -519,4 +461,49 @@ BEGIN ProductionRule
     StackInRoom          Canteen
     StackInRoom          Staffroom
     StackInRoom          Kitchen
+END
+
+#======LicensePlate
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             LicensePlateBlank  
+    Container            WorkshopPress  
+    Distribution         NonCompeting 
+    Worker		 Laborer
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+    Material             LicensePlateBlank
+    Container            Table
+    Container            JungleTable
+    Room                 Workshop
+    Distribution         NonCompeting
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             LicensePlate  
+    Room                 Workshop  
+    Distribution         NonCompeting  
+    Condition            NotLoadedOnTable  
+    Worker		 Laborer
+END
+
+BEGIN Processor
+    Processor            WorkshopSaw
+    Input                SheetMetal
+    Output               LicensePlateBlank
+    OutputCount          2
+    OperatingTime        24.0
+    Worker		 Laborer               
+END
+
+BEGIN Processor
+    Processor            WorkshopPress
+    Input                LicensePlateBlank
+    Output               LicensePlate
+    Worker		 Laborer
+    OperatingTime        12.0
 END
