@@ -97,9 +97,9 @@ bodytype_thin 瘦小
 bodytype_average 一般
 bodytype_strong 壮硕
 
-object_bodybonus0 塑身奖励
-object_bodybonus2 塑身奖励
-object_bodybonus3 塑身奖励
+object_bodybonus0 塑身奖励A($5)
+object_bodybonus2 塑身奖励B($5)
+object_bodybonus3 塑身奖励C($5)
 
 w__define_sleep_title 定义睡眠时间段：
 w__sleep_start_at 开始于 *N 点
@@ -138,7 +138,7 @@ reformprogram_Bookkeeping [制造]记账
 reformprogram_Bookkeeping_text 在会计外包业务中最简单的一种。单调、累人。\n非常适合尚且看得懂数字的囚犯们，不是吗？\n\n由于有资格的囚犯少，感兴趣的更少，所以本项目是强制性的。\n只有通过的囚犯才能进行“记账外包”打工。\n\n这让“[学术Ⅰ]基础教育项目”有了更大的价值。\n也让你在混乱的“工坊”制造之外多了一种挣钱的选择。\n并且，会计不会在平时闲着没事干了。
 
 object_AccountingBookUnfinished 账本(未处理)
-object_AccountingBookFinished 账本(已处理)
+object_AccountingBookFinished 账本($85)
 object_AccountingBookFailed 账本(有错误)
 object_AccountingBookFailed2 账本(有错误)
 object_AccountingBookCorrecting 账本(修正中)
@@ -196,7 +196,7 @@ chief__tt__fc_on \n目前腐败警卫数: *N\n整体腐败水平: *L\n\n已调�
 fc__tt__bonus \n【腐败报告】\n腐败水平: *L\n勒索 *X 次\n殴打 *B 次\n被反击 *F 次\n所得金额 $*M
 fc__tt__p \n【不满爆发点】\n · 最低: *A\n · 最新: *B\n\n被警卫勒索了 *X 次\n反击 *F 次\n损失金额 $*M\n\n最近被勒索于 *L 分钟前
 
-object_DiciplineBonus 腐败警卫\n整顿奖励
+object_DiciplineBonus 腐败警卫\n整顿奖励($2000)
 
 object_AttentionToPrisoner 关注囚犯
 object_AttentionMarker 关注标记
@@ -289,10 +289,10 @@ a48__am__action_backstab 背后偷袭
 a48__am__action_scuffle 制造混战
 a48__am__action_playdead 制造混战
 
-object_HitmanReward 杀手使命奖励
-object_HitmanFine 杀手使命罚款
+object_HitmanReward 杀手使命奖励($3000)
+object_HitmanFine 杀手使命罚款($-1000)
 
-object_DeathFine 死亡罚款
+object_DeathFine 死亡罚款($-4000)
 
 a48__am__has_item 物品 *X [已获得✔]
 a48__am__need_item 物品 *X 的来源有：
@@ -3109,10 +3109,10 @@ object_dirtyprisoneruniform		囚服(脏)
 object_crumpledprisoneruniform	囚服(皱)
 object_bleach					漂白剂
 object_sheetmetal				金属板
-object_licenseplateblank		车牌(空白)
-object_licenseplate				车牌(成品)
-object_log						圆木
-object_wood						木板
+object_licenseplateblank		空白车牌
+object_licenseplate				车牌($25)
+object_log						圆木($85)
+object_wood						木板($85)
 object_workman					工人
 object_truckdriver				卡车司机
 object_guard					一般警卫
@@ -3197,7 +3197,7 @@ object_bookshelflarge			图书馆书架
 object_weaponrack				武器架
 object_treestump				树桩
 object_schooldesk				课桌
-object_superiorbed				高级床
+object_superiorbed				高级床($850)
 object_doorcontrolsystem		门禁系统
 object_phonemonitor				电话窃听器
 object_servo					门禁伺服器

@@ -470,16 +470,46 @@ BEGIN ProductionRule
     Material             LicensePlateBlank  
     Container            WorkshopPress  
     Distribution         NonCompeting 
-    Worker		 Laborer
+    Worker               Prisoner
+    Worker               Laborer
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             LicensePlate
+    Room                 Workshop
+    Container            Table
+    Container            SmallTable  
+    Container            JungleTable
+    Distribution         NonCompeting 
+    Worker               Prisoner
+    Worker               Laborer
 END
 
 BEGIN ProductionRule
     Rule                 Storage
     Material             LicensePlateBlank
+    Room                 Workshop
     Container            Table
+    Container            SmallTable  
+    Container            JungleTable
+    Distribution         NonCompeting
+    Worker               Prisoner
+    Worker               Laborer
+	MaxSlotId            3
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+    Material             LicensePlate
+    Container            Table
+    Container            SmallTable  
     Container            JungleTable
     Room                 Workshop
     Distribution         NonCompeting
+    Worker               Prisoner
+    Worker               Laborer
+	MaxSlotId            3
 END
 
 BEGIN ProductionRule       
@@ -488,7 +518,8 @@ BEGIN ProductionRule
     Room                 Workshop  
     Distribution         NonCompeting  
     Condition            NotLoadedOnTable  
-    Worker		 Laborer
+    Worker               Prisoner
+    Worker               Laborer
 END
 
 BEGIN Processor
@@ -496,14 +527,16 @@ BEGIN Processor
     Input                SheetMetal
     Output               LicensePlateBlank
     OutputCount          2
-    OperatingTime        24.0
-    Worker		 Laborer               
+    OperatingTime        12.0
+    Worker               Prisoner
+    Worker               Laborer               
 END
 
 BEGIN Processor
     Processor            WorkshopPress
     Input                LicensePlateBlank
     Output               LicensePlate
-    Worker		 Laborer
-    OperatingTime        12.0
+    OperatingTime        6.0
+    Worker               Prisoner
+    Worker               Laborer
 END

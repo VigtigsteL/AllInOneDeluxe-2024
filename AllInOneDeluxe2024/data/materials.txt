@@ -38,8 +38,8 @@ BEGIN Object
     Toughness           5.0000
     RenderDepth         3
     ViewRange           6
-    Price               -500
-    Upkeep              -100
+    Price               -1000
+    Upkeep              -200
     BlockedBy           Wall
     BlockedBy           StaticObject
     BlockedBy           tilityStation
@@ -2381,7 +2381,7 @@ END
 BEGIN Object
     Name                 DiciplineBonus
     RenderDepth          3
-    Price                -2000
+    Price                -2353
     Sprite               GuardUniform
     SpriteScale          1
     Properties           Sellable
@@ -2640,7 +2640,7 @@ END
 BEGIN Object
     Name                 HitmanReward
     RenderDepth          4
-    Price                -3000
+    Price                -3530
     BEGIN Sprite
     x 20
     y 8
@@ -2656,7 +2656,7 @@ END
 BEGIN Object
     Name                 HitmanFine
     RenderDepth          4
-    Price                1000
+    Price                1177
     BEGIN Sprite
     x 20
     y 10
@@ -2672,7 +2672,7 @@ END
 BEGIN Object
     Name                 DeathFine
     RenderDepth          4
-    Price                4000
+    Price                4706
     BEGIN Sprite
     x 20
     y 10
@@ -3352,7 +3352,7 @@ END
 BEGIN Object
     Name                 BodyBonus0
     Sprite               Prisoner
-    Price                -2
+    Price                -6
     RenderDepth          3
     SpriteScale          0.9
     Properties           Sellable
@@ -3362,7 +3362,7 @@ END
 BEGIN Object
     Name                 BodyBonus2
     Sprite               Prisoner3
-    Price                -2
+    Price                -6
     RenderDepth          3
     SpriteScale          1.1
     Properties           Sellable
@@ -3372,7 +3372,7 @@ END
 BEGIN Object
     Name                 BodyBonus3
     Sprite               Prisoner4
-    Price                -2
+    Price                -6
     RenderDepth          3
     SpriteScale          0.8
     Properties           Sellable
@@ -4248,8 +4248,7 @@ END
 
 BEGIN Object     
     Name                 LicensePlateBlank
-    Price                -15
-    MaxStackSize         20
+    MaxStackSize         40
     RenderDepth          1  
     Sprite               PlateBlank
     StackSprite          StackPlatesBlank
@@ -4260,7 +4259,7 @@ BEGIN Object
     Name                 LicensePlate
     MaxStackSize         40
     RenderDepth          1  
-    Price                -25
+    Price                -30
     Sprite               Plate
     StackSprite          StackPlates
     Properties           Material
