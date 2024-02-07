@@ -1,19 +1,4 @@
-BEGIN Object
-    Name                 CheatWorkman
-    MoveSpeedFactor      2.00000
-    Toughness            5
-    Price                -500
-    Upkeep               10000
-    RenderDepth          2
-    ViewRange            3
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Sprite               Workman
-    SpriteVariants       4
-    Properties           Entity
-    Properties           Staff
-END
+
 
 BEGIN Object     
     Name                 MetalDetector  
@@ -32,30 +17,7 @@ BEGIN Object
     Properties           DontAvoid
 END
 
-BEGIN Object    
-    Name                Laborer
-    MoveSpeedFactor     0.500000
-    Toughness           5.0000
-    RenderDepth         3
-    ViewRange           6
-    Price               -1000
-    Upkeep              -200
-    BlockedBy           Wall
-    BlockedBy           StaticObject
-    BlockedBy           tilityStation
-    Equipment           Hammer
-    BEGIN    Sprite     x 32 y 12 w 2 h 2 RotateType 1 END
-    BEGIN    Sprite     x 32 y 14 w 2 h 2 RotateType 1 END
-    BEGIN    Sprite     x 32 y 16 w 2 h 2 RotateType 1 END
-    BEGIN    Sprite     x 32 y 18 w 2 h 2 RotateType 1 END
-    SpriteVariants      4
-    WorkGroup           Workshop
-    Properties          Entity
-    Properties          Staff
-    Properties          DefaultBehaviour
-    Properties          StaffNeeds
-    HangOutRoom         Staffroom
-END
+
 
 BEGIN Object
     Name                WorkshopPress
@@ -2104,162 +2066,6 @@ END
     BEGIN Sprite0    x 0  y 16  END
 END
 
-BEGIN Object
-    Name                 Warden
-    Price                -1000
-    Upkeep               -200
-    RenderDepth          2
-    ViewRange            3
-    Toughness            20
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Research             Warden
-    Sprite               Warden
-    Properties           Entity
-    Properties           Administrator
-    Properties           DoesNotTire
-    Properties           Staff
-    Properties           Scripted
-    Equipment            Clipboard
-END
-
-BEGIN Object
-    Name                 Chief
-    Price                -1000
-    Upkeep               -200
-    RenderDepth          2
-    ViewRange            12
-    Toughness            20
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Research             Security
-    Sprite               Chief
-    Properties           Entity
-    Properties           Administrator
-    Properties           DoesNotTire
-    Properties           Staff
-    Properties           Scripted
-    Equipment            Gun
-END
-
-BEGIN Object
-    Name                 Foreman
-    Price                -1000
-    Upkeep               -200
-    RenderDepth          2
-    Toughness            5
-    ViewRange            3
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Research             Maintainance
-    Sprite               Foreman
-    Properties           Entity
-    Properties           Administrator
-    Properties           DoesNotTire
-    Properties           Staff
-    Properties           Scripted
-    Equipment            Clipboard
-    MaxAllowed				5
-END
-
-BEGIN Object
-    Name                 Psychologist
-    Price                -1000
-    Upkeep               -200
-    RenderDepth          2
-    Toughness            5
-    ViewRange            3
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Research             MentalHealth
-    Sprite               Shrink
-    Properties           Entity
-    Properties           Administrator
-    Properties           DoesNotTire
-    Properties           Staff
-    Equipment            Clipboard
-END
-
-BEGIN Object
-    Name                 Accountant
-    Price                -1000
-    Upkeep               -150
-    RenderDepth          2
-    Toughness            5
-    ViewRange            3
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Research             Finance
-    Sprite               Accountant
-    Properties           Entity
-    Properties           Administrator
-    Properties           DoesNotTire
-    Properties           Staff
-    Equipment            Clipboard
-    Properties           Scripted
-END
-
-BEGIN Object
-    Name                 Lawyer
-    Price                -5000
-    Upkeep               -200
-    Toughness            5
-    RenderDepth          2
-    ViewRange            3
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Research             Legal
-    Sprite               Lawyer
-    Properties           Entity
-    Properties           Administrator
-    Properties           DoesNotTire
-    Properties           Staff
-    Properties           Scripted
-    Equipment            Clipboard
-END
-
-BEGIN Object
-    Name                 Workman
-    MoveSpeedFactor      2.00000
-    Toughness            5
-    Price                -500
-    Upkeep               -100
-    RenderDepth          2
-    ViewRange            3
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Sprite               Workman
-    SpriteVariants       4
-    Properties           Entity
-    Properties           Staff
-END
-
-BEGIN Object
-    Name                 Doctor
-    Toughness            10.0000
-    Price                -1000
-    Upkeep               -150
-    Toughness            5
-    RenderDepth          2
-    ViewRange            3
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Research             Health
-    Sprite               Doctor
-    SpriteVariants       4
-    Properties           Entity
-    Properties           Staff
-    Properties           Scripted
-    Equipment            Needle
-END
 
 # BEGIN Object
 #   Name                 ChiefInspector
@@ -2306,46 +2112,6 @@ BEGIN Object
     Properties           Electrical
     Properties           RoomSpecific
     Properties           Scripted
-END
-
-  BEGIN Callout
-    Name                 NationalGuard
-    MaxNumber            5
-    Cost                 -1500
-    Vehicle              TroopTruck
-    Entity               Soldier
-    NumEntities          6
-    Sprite               EmergencyRiotPolice
-END
-
-BEGIN Callout  
-    Name                 RiotPolice  
-    Cost                 -300  
-    MaxNumber            5 
-    Vehicle              RiotVan
-    Entity               RiotGuard
-    NumEntities          6
-    Sprite               EmergencyRiotPolice
-END
-
-BEGIN Callout  
-    Name                 Paramedics
-    Cost                 -100  
-    MaxNumber            5 
-    Vehicle              Ambulance
-    Entity               Paramedic
-    NumEntities          4
-    Sprite               EmergencyParamedics
-END
-
-BEGIN Callout  
-    Name                 FireEngine
-    Cost                 -100 
-    MaxNumber            5  
-    Vehicle              FireEngine
-    Entity               Fireman
-    NumEntities          4
-    Sprite               EmergencyFireEngine
 END
 
 BEGIN Object
@@ -2406,27 +2172,6 @@ BEGIN Object
     Properties           DontAvoid
     Properties           Scripted
     Properties           Uncloneable
-END
-
-BEGIN Object
-    Name                 BoldHost
-    MoveSpeedFactor      0.4
-    Toughness            5
-    Price                -5000
-    Upkeep               -100
-    RenderDepth          2
-    ViewRange            5
-    BlockedBy            Wall
-    BlockedBy            StaticObject
-    BlockedBy            UtilityStation
-    Research             PrisonerEvaluation
-    Sprite               SonnyIRL
-    Properties           Entity
-    Properties           Administrator
-    Properties           Staff
-    Properties           DoesNotTire
-    Properties           Scripted
-    Equipment            Microphone
 END
 
 BEGIN Object
@@ -4381,218 +4126,6 @@ BEGIN Object
 END 
 
 BEGIN Object     
-    Name                 Guard  
-    MoveSpeedFactor      1.000000  
-    Toughness            20.0000  
-    Price                -500  
-    Upkeep               -100
-    RenderDepth          2  
-    ViewRange            18
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               Guard
-    SpriteVariants       4  
-    Properties           Entity
-    Properties           Staff
-    Properties           Guard
-    Equipment            Baton
-END
-
-BEGIN Object     
-    Name                 ArmedGuard
-    MoveSpeedFactor      0.700000  
-    Toughness            30.0000  
-    Price                -1500  
-    Upkeep               -350
-    RenderDepth          2  
-    ViewRange            24
-    BlockedBy            Wall
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Research             Armoury
-    Sprite               ArmedGuard
-    SpriteVariants       4
-    Properties           Entity
-    Properties           Staff
-    Properties           Guard
-    Equipment            Shotgun
-END
-
-BEGIN Object     
-    Name                 DogHandler  
-    MoveSpeedFactor      0.800000  
-    Toughness            15.0000
-    Price                -500  
-	Upkeep				 -150
-    RenderDepth          2  
-    ViewRange            20
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Research             Dogs
-    Sprite               DogHandler  
-    SpriteVariants       4  
-    Properties           Entity
-    Properties           Staff
-    Properties           Guard
-    Equipment            DogLeash
-    Equipment            Baton
-END
-
-BEGIN Object     
-    Name                 Teacher
-    MoveSpeedFactor      1.000000  
-    Toughness            5.0000
-    RenderDepth          2  
-    ViewRange            5
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               Teacher 
-    SpriteVariants       4
-    Properties           Entity
-    Properties           DoesNotTire
-END
-
-BEGIN Object
-    Name                 SpiritualLeader
-    MoveSpeedFactor      1.000000
-    Toughness            5.0000
-    RenderDepth          2  
-    ViewRange            5
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               Priest
-    SpriteVariants       7
-    Properties           Entity
-    Properties           DoesNotTire
-END 
-
-BEGIN Object
-    Name                 ParoleOfficer
-    MoveSpeedFactor      1.000000
-    Toughness            5.0000
-    RenderDepth          2  
-    ViewRange            5
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               ParoleBoardMember
-    SpriteVariants       4
-    Properties           Entity
-    Properties           DoesNotTire
-END 
-
-BEGIN Object
-    Name                 ParoleLawyer
-    MoveSpeedFactor      1.000000
-    Toughness            5.0000
-    RenderDepth          2  
-    ViewRange            5
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               ParoleLawyer
-    SpriteVariants       4
-    Properties           Entity
-    Properties           DoesNotTire
-END 
-
-BEGIN Object
-    Name                 AppealsLawyer
-    MoveSpeedFactor      1.000000
-    Toughness            5.0000
-    RenderDepth          2  
-    ViewRange            5
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               ParoleLawyer
-    SpriteVariants       4
-    Properties           Entity
-    Properties           DoesNotTire
-END 
-
-BEGIN Object
-    Name                 AppealsMagistrate
-    MoveSpeedFactor      1.000000
-    Toughness            5.0000
-    RenderDepth          2  
-    ViewRange            5
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               ParoleBoardMember
-    SpriteVariants       4
-    Properties           Entity
-    Properties           DoesNotTire
-END 
-
-BEGIN Object     
-    Name                 Dog  
-    MoveSpeedFactor      1.20000  
-    Toughness            20.0000  
-    RenderDepth          2  
-    ViewRange            24
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Research             Dogs
-    Sprite               GuardDog
-    Properties           Entity
-    Properties           Staff
-END
-
-BEGIN Object     
-    Name                 RiotGuard  
-    MoveSpeedFactor      1.000000  
-    Toughness            60.0000  
-    RenderDepth          2  
-    ViewRange            30
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               RiotGuard  
-    Properties           Entity
-    Properties           Guard
-    Properties           DoesNotTire
-    Equipment            Baton
-END
-
-BEGIN Object     
-    Name                 Soldier  
-    MoveSpeedFactor      1.500000  
-    Toughness            80.0000  
-    RenderDepth          2  
-    ViewRange            30
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               Soldier  
-    Properties           Entity
-    Properties           Guard
-    Properties           Staff
-    SpriteVariants       4
-    Equipment            AssaultRifle
-END
-
-
-BEGIN Object     
-    Name                 Prisoner  
-    MoveSpeedFactor      0.700000  
-    Toughness            20.0000  
-    RenderDepth          2  
-    BlockedBy            Wall  
-    BlockedBy            StaticObject  
-    BlockedBy            UtilityStation  
-    Sprite               Prisoner  
-    Properties           Entity
-    Properties           DoesNotTire
-END
-
-BEGIN Object     
     Name                 Equipment  
     Toughness            5.00000  
     RenderDepth          1  
@@ -4637,6 +4170,56 @@ BEGIN Object
     WorkGroup            Shop
 END   
 
+##################################################
+
+
+# 紧急呼叫
+
+## 防爆警察
+BEGIN Callout  
+    Name                 RiotPolice  
+    Cost                 -300  
+    MaxNumber            5 
+    Vehicle              RiotVan
+    Entity               RiotGuard
+    NumEntities          6
+    Sprite               EmergencyRiotPolice
+END
+
+## 救护人员
+BEGIN Callout  
+    Name                 Paramedics
+    Cost                 -100  
+    MaxNumber            5 
+    Vehicle              Ambulance
+    Entity               Paramedic
+    NumEntities          4
+    Sprite               EmergencyParamedics
+END
+
+## 消防人员
+BEGIN Callout  
+    Name                 FireEngine
+    Cost                 -100 
+    MaxNumber            5  
+    Vehicle              FireEngine
+    Entity               Fireman
+    NumEntities          4
+    Sprite               EmergencyFireEngine
+END
+
+## [模组]部队
+BEGIN Callout
+    Name                 NationalGuard
+    MaxNumber            5
+    Cost                 -1500
+    Vehicle              TroopTruck
+    Entity               Soldier
+    NumEntities          6
+    Sprite               EmergencyRiotPolice
+END
+
+## [模组]供给车
 BEGIN Callout  
     Name                 Truck  
 	Cost                 -100
@@ -4646,6 +4229,7 @@ BEGIN Callout
     Entity               TruckDriver
 END
 
+## [模组]灵车
 BEGIN Callout  
     Name                 Hearse  
 	Cost                 -100
@@ -4655,3 +4239,476 @@ BEGIN Callout
     Entity               Paramedic
 END
 
+##################################################
+
+
+#行政人员
+
+## 典狱长
+BEGIN Object
+    Name                 Warden
+    Price                -1000
+    Upkeep               -200
+    RenderDepth          2
+    ViewRange            3
+    Toughness            20
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Research             Warden
+    Sprite               Warden
+    Properties           Entity
+    Properties           Administrator
+    Properties           DoesNotTire
+    Properties           Staff
+    Properties           Scripted
+    Equipment            Gun
+END
+
+## 安保主管
+BEGIN Object
+    Name                 Chief
+    Price                -1000
+    Upkeep               -200
+    RenderDepth          2
+    ViewRange            12
+    Toughness            20
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Research             Security
+    Sprite               Chief
+    Properties           Entity
+    Properties           Administrator
+    Properties           DoesNotTire
+    Properties           Staff
+    Properties           Scripted
+    Equipment            Gun
+END
+
+## 会计
+BEGIN Object
+    Name                 Accountant
+    Price                -1000
+    Upkeep               -150
+    RenderDepth          2
+    Toughness            5
+    ViewRange            3
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Research             Finance
+    Sprite               Accountant
+    Properties           Entity
+    Properties           Administrator
+    Properties           DoesNotTire
+    Properties           Staff
+    Equipment            Clipboard
+    Properties           Scripted
+END
+
+## 律师
+BEGIN Object
+    Name                 Lawyer
+    Price                -5000
+    Upkeep               -200
+    Toughness            5
+    RenderDepth          2
+    ViewRange            3
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Research             Legal
+    Sprite               Lawyer
+    Properties           Entity
+    Properties           Administrator
+    Properties           DoesNotTire
+    Properties           Staff
+    Properties           Scripted
+    Equipment            Clipboard
+END
+
+## 工头
+BEGIN Object
+    Name                 Foreman
+    Price                -1000
+    Upkeep               -200
+    RenderDepth          2
+    Toughness            5
+    ViewRange            3
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Research             Maintainance
+    Sprite               Foreman
+    Properties           Entity
+    Properties           Administrator
+    Properties           DoesNotTire
+    Properties           Staff
+    Properties           Scripted
+    Equipment            Clipboard
+    MaxAllowed				5
+END
+
+## 心理医生
+BEGIN Object
+    Name                 Psychologist
+    Price                -1000
+    Upkeep               -200
+    RenderDepth          2
+    Toughness            5
+    ViewRange            3
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Research             MentalHealth
+    Sprite               Shrink
+    Properties           Entity
+    Properties           Administrator
+    Properties           DoesNotTire
+    Properties           Staff
+    Equipment            Clipboard
+END
+
+##################################################
+
+
+#工作人员
+
+## 工人
+BEGIN Object
+    Name                 Workman
+    MoveSpeedFactor      2.00000
+    Toughness            5
+    Price                -500
+    Upkeep               -100
+    RenderDepth          2
+    ViewRange            3
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Sprite               Workman
+    SpriteVariants       4
+    Properties           Entity
+    Properties           Staff
+END
+
+## 医生
+BEGIN Object
+    Name                 Doctor
+    Toughness            10.0000
+    Price                -1000
+    Upkeep               -150
+    Toughness            5
+    RenderDepth          2
+    ViewRange            3
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Research             Health
+    Sprite               Doctor
+    SpriteVariants       4
+    Properties           Entity
+    Properties           Staff
+    Properties           Scripted
+    Equipment            Needle
+END
+
+## [模组]作弊工人
+BEGIN Object
+    Name                 CheatWorkman
+    MoveSpeedFactor      2.00000
+    Toughness            5
+    Price                -500
+    Upkeep               10000
+    RenderDepth          2
+    ViewRange            3
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Sprite               Workman
+    SpriteVariants       4
+    Properties           Entity
+    Properties           Staff
+END
+
+## [模组]劳工
+BEGIN Object    
+    Name                Laborer
+    MoveSpeedFactor     0.700000
+    Toughness           5.0000
+    RenderDepth         3
+    ViewRange           6
+    Price               -1000
+    Upkeep              -200
+    BlockedBy           Wall
+    BlockedBy           StaticObject
+    BlockedBy           tilityStation
+    Equipment           Hammer
+    BEGIN    Sprite     x 32 y 12 w 2 h 2 RotateType 1 END
+    BEGIN    Sprite     x 32 y 14 w 2 h 2 RotateType 1 END
+    BEGIN    Sprite     x 32 y 16 w 2 h 2 RotateType 1 END
+    BEGIN    Sprite     x 32 y 18 w 2 h 2 RotateType 1 END
+    SpriteVariants      4
+    WorkGroup           Workshop
+    Properties          Entity
+    Properties          Staff
+    Properties          DefaultBehaviour
+    Properties          StaffNeeds
+    HangOutRoom         Staffroom
+END
+
+## [模组]大胆主持人
+BEGIN Object
+    Name                 BoldHost
+    MoveSpeedFactor      0.5
+    Toughness            5
+    Price                -5000
+    Upkeep               -100
+    RenderDepth          2
+    ViewRange            5
+    BlockedBy            Wall
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+    Research             PrisonerEvaluation
+    Sprite               SonnyIRL
+    Properties           Entity
+    Properties           Administrator
+    Properties           Staff
+    Properties           DoesNotTire
+    Properties           Scripted
+    Equipment            Microphone
+END
+
+##################################################
+
+
+# 警备人员
+
+## 警卫
+BEGIN Object     
+    Name                 Guard  
+    MoveSpeedFactor      1.500000  
+    Toughness            20.0000  
+    Price                -500  
+    Upkeep               -100
+    RenderDepth          2  
+    ViewRange            18
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               Guard
+    SpriteVariants       4  
+    Properties           Entity
+    Properties           Staff
+    Properties           Guard
+    Equipment            Baton
+END
+
+## 武装警卫
+BEGIN Object     
+    Name                 ArmedGuard
+    MoveSpeedFactor      1.200000  
+    Toughness            30.0000  
+    Price                -1500  
+    Upkeep               -350
+    RenderDepth          2  
+    ViewRange            24
+    BlockedBy            Wall
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Research             Armoury
+    Sprite               ArmedGuard
+    SpriteVariants       4
+    Properties           Entity
+    Properties           Staff
+    Properties           Guard
+    Equipment            Shotgun
+END
+
+## 训犬员
+BEGIN Object     
+    Name                 DogHandler  
+    MoveSpeedFactor      1.800000  
+    Toughness            15.0000
+    Price                -500  
+	Upkeep				 -150
+    RenderDepth          2  
+    ViewRange            20
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Research             Dogs
+    Sprite               DogHandler  
+    SpriteVariants       4  
+    Properties           Entity
+    Properties           Staff
+    Properties           Guard
+    Equipment            Baton
+END
+
+## 警犬
+BEGIN Object     
+    Name                 Dog  
+    MoveSpeedFactor      2.00000  
+    Toughness            20.0000  
+    RenderDepth          2  
+    ViewRange            24
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Research             Dogs
+    Sprite               GuardDog
+    Properties           Entity
+    Properties           Staff
+END
+
+## 防爆警察
+BEGIN Object     
+    Name                 RiotGuard  
+    MoveSpeedFactor      1.800000  
+    Toughness            60.0000  
+    RenderDepth          2  
+    ViewRange            30
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               RiotGuard  
+    Properties           Entity
+    Properties           Guard
+    Properties           DoesNotTire
+    Equipment            Baton
+END
+
+## 士兵
+BEGIN Object     
+    Name                 Soldier  
+    MoveSpeedFactor      2.000000  
+    Toughness            80.0000  
+    RenderDepth          2  
+    ViewRange            30
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               Soldier  
+    Properties           Entity
+    Properties           Guard
+    Properties           Staff
+    SpriteVariants       4
+    Equipment            AssaultRifle
+END
+
+##################################################
+
+
+# 其他人员
+
+## 囚犯
+BEGIN Object     
+    Name                 Prisoner  
+    MoveSpeedFactor      0.750000  
+    Toughness            20.0000  
+    RenderDepth          2  
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               Prisoner  
+    Properties           Entity
+    Properties           DoesNotTire
+END
+
+## 精神领袖
+BEGIN Object
+    Name                 SpiritualLeader
+    MoveSpeedFactor      1.000000
+    Toughness            5.0000
+    RenderDepth          2  
+    ViewRange            5
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               Priest
+    SpriteVariants       7
+    Properties           Entity
+    Properties           DoesNotTire
+END 
+
+## 假释官
+BEGIN Object
+    Name                 ParoleOfficer
+    MoveSpeedFactor      1.000000
+    Toughness            5.0000
+    RenderDepth          2  
+    ViewRange            5
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               ParoleBoardMember
+    SpriteVariants       4
+    Properties           Entity
+    Properties           DoesNotTire
+END 
+
+## 假释律师
+BEGIN Object
+    Name                 ParoleLawyer
+    MoveSpeedFactor      1.000000
+    Toughness            5.0000
+    RenderDepth          2  
+    ViewRange            5
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               ParoleLawyer
+    SpriteVariants       4
+    Properties           Entity
+    Properties           DoesNotTire
+END 
+
+## 上诉律师
+BEGIN Object
+    Name                 AppealsLawyer
+    MoveSpeedFactor      1.000000
+    Toughness            5.0000
+    RenderDepth          2  
+    ViewRange            5
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               ParoleLawyer
+    SpriteVariants       4
+    Properties           Entity
+    Properties           DoesNotTire
+END 
+
+## 上诉裁判官
+BEGIN Object
+    Name                 AppealsMagistrate
+    MoveSpeedFactor      1.000000
+    Toughness            5.0000
+    RenderDepth          2  
+    ViewRange            5
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               ParoleBoardMember
+    SpriteVariants       4
+    Properties           Entity
+    Properties           DoesNotTire
+END 
+
+## 教师
+BEGIN Object     
+    Name                 Teacher
+    MoveSpeedFactor      1.000000  
+    Toughness            5.0000
+    RenderDepth          2  
+    ViewRange            5
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               Teacher 
+    SpriteVariants       4
+    Properties           Entity
+    Properties           DoesNotTire
+END

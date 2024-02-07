@@ -2,7 +2,7 @@
 
 local function sortPrisoner()
 
-    local prisoners = Object.GetNearbyObjects(this, "Prisoner", 7)
+    local prisoners = Object.GetNearbyObjects(this, "Prisoner", 12)
     if prisoners~=nil then
         for prisoner, distance in pairs( prisoners ) do
             -- print(prisoner.Category)
