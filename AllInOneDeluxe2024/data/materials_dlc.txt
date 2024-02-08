@@ -1,5 +1,3 @@
-# Misc. changes with the standard bookshelves and also adds inventory slots so that the short bookcases can actually fucking function. How the fuck could they miss this, it is pretty obvious the books are not unloaded on the shelves. Are they even playing this game? /rant
-
 BEGIN Object
     Name                ShortBookcase
     Width               3
@@ -28,4 +26,59 @@ BEGIN Object
 	IndoorOutdoor       IndoorOnly
     ToolbarSprite       d_BookshelfShortToolbar
 	VersionAdded		2000
+END
+
+BEGIN Object
+	Name				 	RecyclingBin
+	Width            	 	1
+    Height           		1
+	ConstructionTime     	1.00000  
+    MoveSpeedFactor      	0.800000  
+    Toughness            	3.00000  
+    Price                	-50  
+    Filter			Work
+    Group                	StaticObject  
+    BlockedBy            	Wall  
+    BlockedBy            	StaticObject  
+    BlockedBy            	UtilityStation  
+    BEGIN SpriteBank	
+		Name			objects_d11_2
+		Sprite          d_RecyclingBin
+		ToolbarSprite   d_RecyclingBinToolbar
+	END
+    MadeOf               	Composite
+    Properties           	StaticObject
+	IndoorOutdoor			Either
+    VersionAdded        4000
+	Research             	RecyclingIncentive
+END
+
+BEGIN Room       
+    Name                 FruitOrchard
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Outdoor END
+    BEGIN Requirement Type Object  Id Shed  END    
+	Qualification        FarmTraining
+	BEGIN LikelyObject 	Id		Shed		  END
+	BEGIN LikelyObject	Id		CropAppleTree	END
+	BEGIN LikelyObject	Id		CropBananaTree	END
+	BEGIN LikelyObject	Id		CropPeachTree	END
+	BEGIN LikelyObject	Id		CropOrangeTree	END
+	BEGIN LikelyObject	Id		CompostBin		END
+	BEGIN LikelyObject	Id		RecyclingBin	END
+	BEGIN LikelyObject	Id		BasicAutoGatherer		END
+	BEGIN LikelyObject	Id		AdvancedAutoGatherer	END
+	Properties          PrisonersCanWork
+	Properties	    RequiresSector
+   	BEGIN Contraband    Id      Sheers	END
+	BEGIN Contraband    Id      Spade	END
+	BEGIN Contraband    Id      Trowel	END
+	BEGIN Contraband    Id      HandFork	END
+    BEGIN Contraband    Id      Axe 	END
+    BEGIN Contraband    Id      Saw 	END
+	BEGIN Contraband    Id 	    ProducedNarcotics END
+    VersionAdded        4000
+	WorkExperience		WorkLabourer
+	WorkExperienceRate	0.025
+
 END

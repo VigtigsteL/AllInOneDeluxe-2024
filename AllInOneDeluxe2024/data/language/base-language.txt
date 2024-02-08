@@ -185,7 +185,7 @@ mc__current_grid_type 当前网格: *N
 mc__change_grid 改变网格为 *N
 
 # Chief: Fight Corruption
-
+Object_MusterGuards 召集警卫
 fc__toggle_corruption 与腐败作斗争: *B
 fc__add_corrupt_guard [作弊]增加腐败的警卫
 fc__muster_corrupt_guards [作弊]调查所有腐败的警卫
@@ -747,7 +747,7 @@ interfacedeployment_accessonly	目的地专区
 interfacedeployment_prisonerdirection	囚犯方向
 interfacedeployment_staffdirection	其他人方向
 
-interfacelogistics_jobs	狱中劳动
+interfacelogistics_jobs	狱中劳役
 interfacelogistics_removejobs	移除劳动名额
 interfacelogistics_targettingfood	食物分配
 interfacelogistics_targettinglaundry	衣物分配
@@ -1031,14 +1031,14 @@ buildtoolbar_popup_room_dormitory	这个房间可容纳多个囚犯。\n房间�
 buildtoolbar_popup_room_familycell	女囚犯带着宝宝一起生活的地方。
 buildtoolbar_popup_room_sharedcell	一个多人牢房。至多能够容纳8个囚犯。
 buildtoolbar_popup_room_canteen	这有什么可说的呢？大家的嘴都在忙着进食，不是么。\n\n其实，除了吃饭，这里也可以进行各种活动。\n只要空间足够，可以当做非正式的公共活动室。\n事实上，由于“吃饭”作息让囚犯无法提前离开，\n你最好添加一些满足其它需求的物品。\n\n另外，食堂里也可以安装水槽。\n\n由于人员密度形成高峰，囚犯们很容易自发地开展\n“非正式活动”——比如斗殴。所以安保需要特别加强。\n\n小窍门：如果嫌长桌太占地方，你可以只保留一个，\n仅仅应付房间要求而已。当然，这会不真实。\n\n[推荐区划：不上锁区域]\n\n如果启用“员工需求”，那么把一个食堂设为员工专区，\n以让员工轮休时来用餐。
-buildtoolbar_popup_room_kitchen	厨师为囚犯烹制食物的区域。\n\n提前4小时开始准备。\n厨师会从卸货区把食材送到冰柜上。\n\n[报告/政策]中，伙食的份量和花样越高，则消耗的食材越多、\n需要的厨师也越多。\n相应的好处是产生并维持囚犯的“吃得不错”状态，\n让人心情好，少闹事；还提高监狱评级的“健康”指标。\n\n如果启用“天气与温度”，厨房会产生可观的热量。\n\n通过狱中劳动，可以廉价地让囚犯帮工。\n这有利有弊。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为20人。\n\n[推荐区划：员工专区或中、低戒备]\n\n【调整】‘厨房水槽’不再是必需的。你可以把它们安装在食堂。
+buildtoolbar_popup_room_kitchen	厨师为囚犯烹制食物的区域。\n\n提前4小时开始准备。\n厨师会从卸货区把食材送到冰柜上。\n\n[报告/政策]中，伙食的份量和花样越高，则消耗的食材越多、\n需要的厨师也越多。\n相应的好处是产生并维持囚犯的“吃得不错”状态，\n让人心情好，少闹事；还提高监狱评级的“健康”指标。\n\n如果启用“天气与温度”，厨房会产生可观的热量。\n\n通过狱中劳役，可以廉价地让囚犯帮工。\n这有利有弊。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为20人。\n\n[推荐区划：员工专区或中、低戒备]\n\n【调整】‘厨房水槽’不再是必需的。你可以把它们安装在食堂。
 buildtoolbar_popup_room_shower	用于让囚犯保持卫生。\n\n配合“淋浴”作息，可以强制囚犯来这里。\n但其实，淋浴行为与房间无关。\n建议你还是在庭院或牢房里安装淋浴设备。\n它们同样有效，且没有强制性。\n\n别忘了在出入口（或在花洒下方）铺设排水孔。
 buildtoolbar_popup_room_yard	让囚犯们每天晒几小时的太阳，进行健身等。\n\n配合“庭院放风”作息，可以强制囚犯来这里。\n主要用途是满足“自由”和“锻炼”需求。\n可以安装多种设施物品。比如长凳、电视、电话亭、举重床。\n根据放风前后的作息，也可能需要马桶、淋浴花洒一些。\n\n很适合让警戒塔发挥其大范围震慑作用。\n\n【调整】不知为何，原版居然没有限制庭院为户外。\n这太不真实了。故改之。
 buildtoolbar_popup_room_storage	在这里，放置监狱员工所需的各种材料（建材、物品等）。\n\n没有活儿的工人，会在这里待命。\n不妨在各处再指定两三个小仓库，节省路途奔波。\n\n要注意避免囚犯来偷东西。所以最好封闭起来。\n\n有些物品（比如门）会凭空出现在卸货区或仓库。\n不真实，但节省时间。\n\n[推荐区划：员工专区]
 buildtoolbar_popup_room_deliveries	在这里，卸下货物、材料以及囚犯。\n自然，也是大多数违禁品“光临”的第一站。\n\n沿着马路加长此区，可以让更多的供给车同时停留。\n每一辆供给车需要10米。\n供给车只会在马路上的第一个卸货区卸货。\n所以多个卸货区是毫无意义的。\n如果它与垃圾场、出货区相邻，则可以一边卸货一边装车。\n\n把这些“房间”设在室内（至少围起来），在安全角度上也会是明智的。\n\n[推荐区划：员工专区]
 buildtoolbar_popup_room_garbage	在这里，堆放废弃物，然后装车送走。\n\n没有活儿的清洁工，会在这里待命。\n厨师也需要丢弃厨余垃圾。\n所以，最好在监狱各处指定多个垃圾场。\n不用担心被偷违禁品。所以可以自由选地。
 buildtoolbar_popup_room_execution	在这里，处死囚犯。\n\n考虑到会有一些员工、见证人，这个房间最好至少有20平米。\n见证人需要大约5个座椅，但其实站着也无所谓。\n\n另外，为了接收死刑犯，你还需要有单人牢房被设为死刑犯专区。\n并且死刑犯要能够从其牢房走到这里。\n\n建议在睡觉期间执行死刑。\n\n
-buildtoolbar_popup_room_workshop	在这里，囚犯们制作汽车牌照，无聊得要死。\n\n产品的销售额有可能成为你监狱收入的重头戏。\n\n经过训练后，也可以制作木制品，利润更高。\n木制品流程：\n1. 从 林场 产出 圆木。\n2. 用 电锯台 加工出 木板。\n3. 用 木工桌 加工出 高级床。\n也可直接采购/出售木板。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为20人。\n\n大约每5个高戒备囚犯中能有一人来工作。\n其中能操作‘木工桌’的有4分之一。\n中戒备的这两个值则分别为7和9。\n\n有时囚犯会操起工具当做武器。最好能有多名警卫压制。\n或者，干脆建在户外，让警戒塔来压制。\n[推荐区划：中或高戒备]\n\n另外，囚犯会在这里做出 木质镐头，用于挖地道。\n它不是金属，难以检测。\n\n如果要提高培训的成功率，则最好为培训单独设置工坊，\n并且，不部署警卫，而安装‘定时呼叫’。\n\n虽然没有强制要求，但安装桌子可以临时集中放置物品。
+buildtoolbar_popup_room_workshop	在这里，囚犯们制作汽车牌照，无聊得要死。\n\n产品的销售额有可能成为你监狱收入的重头戏。\n\n经过训练后，也可以制作木制品，利润更高。\n木制品流程：\n1. 从 林场 产出 原木。\n2. 用 电锯台 加工出 木板。\n3. 用 木工桌 加工出 高级床。\n也可直接采购/出售木板。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为20人。\n\n大约每5个高戒备囚犯中能有一人来工作。\n其中能操作‘木工桌’的有4分之一。\n中戒备的这两个值则分别为7和9。\n\n有时囚犯会操起工具当做武器。最好能有多名警卫压制。\n或者，干脆建在户外，让警戒塔来压制。\n[推荐区划：中或高戒备]\n\n另外，囚犯会在这里做出 木质镐头，用于挖地道。\n它不是金属，难以检测。\n\n如果要提高培训的成功率，则最好为培训单独设置工坊，\n并且，不部署警卫，而安装‘定时呼叫’。\n\n虽然没有强制要求，但安装桌子可以临时集中放置物品。
 buildtoolbar_popup_room_security	警卫的办公室。一般、武装警卫和狙击手会在这里待命。\n\n闭路电视监视器、门禁系统和电话窃听器，很适合安装在这里。\n\n每次激活秘密线人，都要将其押送到这里以提供情报。\n\n[推荐区划：员工专区]
 buildtoolbar_popup_room_office	每个管理人员都需要一间。\n\n[推荐区划：员工专区]\n但“行为疗法”项目所需的除外
 buildtoolbar_popup_room_medicalward	保存麻醉剂的地方——直到瘾君子把它们偷走。\n\n说正经的，这是医护人员的待命地点。\n受伤的囚犯和员工会被带到这里，接受治疗。\n“毒瘾的药物治疗”项目也在这里进行。\n\n医生不会为囚犯开门，所以应当采用无锁门。\n\n由于无法避免囚犯出入，所以最好严查违禁品。\n\n待命的医生能够自动响应的半径大约为20米。\n\n有多个医务室时，你并不能指定医生属于那一个。\n所以，你最好用‘医药箱’来把医生自动叫回来。\n\n[推荐区划：不上锁区域+目的地专区]\n\n【调整】由于我让医生更容易疲劳，所以你应当让医务室和\n员工休息室彼此靠近。
@@ -1066,7 +1066,7 @@ buildtoolbar_popup_obj_solitarydoor	牢固的门，能够阻挡哪怕最强壮�
 buildtoolbar_popup_obj_staffdoor	上锁的门。不只一般警卫，所有员工都能打开它。\n\n不过，囚犯仍然可以等有人开门而通过。\n所以还是依靠区划来阻止囚犯进出某些区域吧。
 buildtoolbar_popup_obj_window	可以见到一缕阳光。\n\n如果在[政策]里启用“牢房品质”，那么通往户外的窗户\n可以提高品质1分。\n此外，它可以让灯光穿过。但灯光其实毫无作用……\n\n如果启用“战争迷雾”，这种铁窗并不能让牢房里面变得可见。\n如果启用“天气与温度”，窗户会影响室温。\n谣言：连通户外的窗户，可以缓解这一需求？并不。\n基本上很鸡肋……\n\n【调整】原本价格为200。改成100。\n原本图片没啥意义地非对称。现在你只需要区分两种朝向。
 buildtoolbar_popup_obj_windowlarge	可以见到充沛的阳光。\n\n违反直觉的是，在功能上，它与小窗没有区别……\n唯一的差别，无非是可透过的灯光更多一些。
-buildtoolbar_popup_obj_tree	采取措施应对全球变暖，是我们所有人的责任。\n其实只能用来被当做木材……\n\n长大后会自动被工人砍伐，变成圆木。\n如果种在‘林场’之外，则毫无作用；只有你能观赏。\n\n【调整】原本树居然可以种在室内！\n这个必须修正。\n\n我还让树可以用来“接触自然”。\n满足2人的“自由”需求。\n速率：每5分钟降低0.3点
+buildtoolbar_popup_obj_tree	采取措施应对全球变暖，是我们所有人的责任。\n其实只能用来被当做木材……\n\n长大后会自动被工人砍伐，变成原木。\n如果种在‘林场’之外，则毫无作用；只有你能观赏。\n\n【调整】原本树居然可以种在室内！\n这个必须修正。\n\n我还让树可以用来“接触自然”。\n满足2人的“自由”需求。\n速率：每5分钟降低0.3点
 buildtoolbar_popup_obj_light	确保你在晚上也能看清囚犯们。\n\n不真实的是：\n · 其实囚犯和员工并不在乎有没有照明……\n · 在户外的灯，居然不需要通电。
 buildtoolbar_popup_obj_cooker	提供热腾腾的饭菜让囚犯们享受一下。\n\n如果启用“天气与温度”，炊具会产生可观的热量。\n在天冷时，这是好事。但天热时……\n\n如果要在开饭前4小时内准备好食物，建议按此公式：\n   炊具数=囚犯数×每顿份量÷25\n如果“吃饭”作息为2小时，那么除数最大可以为40。
 buildtoolbar_popup_obj_fridge	用于存放食材。\n\n1台冰柜可以盛放2箱食材。\n\n不真实的是，更多的食材会被随意地扔在地上……\n\n建议按此公式：\n   冰箱数=囚犯数×每顿份量÷40\n此外，伙食花样很高时，也需要冰箱再增多一些。
@@ -1102,9 +1102,9 @@ buildtoolbar_popup_obj_shopfront 让‘商店’得以开业的必要部分。\n
 buildtoolbar_popup_obj_playmat 让宝宝玩耍的小小天地。\n\n满足宝宝的玩耍需求\n速率：每5分钟降低2点
 buildtoolbar_popup_obj_crib 啊，他/她睡觉的样子不像是个天使么？\n\n满足宝宝的睡眠需求\n速率：每5分钟降低0.5点\n\n虽然在‘家庭牢房’之外也能安装这种床，\n但是宝宝睡觉时，母亲会不肯离开太远……
 
-buildtoolbar_popup_obj_workshopsaw 工坊里的基本工具。可以——\n · 把1张‘金属板’加工成2张‘车牌(空白)’\n   用时12分钟\n · 把1根‘圆木’加工成4块‘木板’\n   用时30分钟\n\n无法限定为只加工某一种！\n\n由于金属板是从外面采购的，所以供应很稳定。\n\n圆木的供应取决于林场的生产情况。\n\n【调整】\n\n为了避免‘车牌(空白)’占用电锯台，我让它们\n也可以被卖掉。但这样挣钱很少。\n\n我还降低了木板的价格。从50变成40。\n\n圆木→木板的盈利能力为:\n(30×4-50)÷30×60=140 元每人时\n仍然是暴利。所以，要想富，多种树。
+buildtoolbar_popup_obj_workshopsaw 工坊里的基本工具。可以——\n · 把1张‘金属板’加工成2张‘车牌(空白)’\n   用时12分钟\n · 把1根‘原木’加工成4块‘木板’\n   用时30分钟\n\n无法限定为只加工某一种！\n\n由于金属板是从外面采购的，所以供应很稳定。\n\n原木的供应取决于林场的生产情况。\n\n【调整】\n\n为了避免‘车牌(空白)’占用电锯台，我让它们\n也可以被卖掉。但这样挣钱很少。\n\n我还降低了木板的价格。从50变成40。\n\n原木→木板的盈利能力为:\n(30×4-50)÷30×60=140 元每人时\n仍然是暴利。所以，要想富，多种树。
 buildtoolbar_popup_obj_workshoppress 可以把‘车牌(空白)’加工成‘车牌(成品)’。\n用时6分钟\n\n与加工金属板的电锯台的数量比应当为1:1。\n\n金属板→车牌(空白)→车牌(成品)的盈利能力为:\n(10×2-10)÷(12+6×2)×60=25 元每人时\n这个真相让你原本良好的感觉破灭了吧？
-buildtoolbar_popup_obj_carpentertable 可以把5块‘木板’加工成1张‘高级床’。\n用时60分钟\n\n【调整】我减少了木板数量，从5变成4。\n现在，木工桌与电锯台的数量比应当为2:1。\n由于木板价格下调且高级床价格上调，这才确实值得你\n为高级床折腾。\n\n树苗→×3圆木→×4木板→÷4高级床的盈利能力为:\n(500×3×4÷4-100)÷(30×3+60×3×4÷4)×60=311 元每人时
+buildtoolbar_popup_obj_carpentertable 可以把5块‘木板’加工成1张‘高级床’。\n用时60分钟\n\n【调整】我减少了木板数量，从5变成4。\n现在，木工桌与电锯台的数量比应当为2:1。\n由于木板价格下调且高级床价格上调，这才确实值得你\n为高级床折腾。\n\n树苗→×3原木→×4木板→÷4高级床的盈利能力为:\n(500×3×4÷4-100)÷(30×3+60×3×4÷4)×60=311 元每人时
 
 buildtoolbar_popup_obj_roadgate 通常用在马路上，以防大胆的囚犯从那里越狱。
 
@@ -1146,18 +1146,18 @@ tc__tt__waiting_for_guard 等待警卫到来
 tc__tt__no_guard_available 没有发现可用的警卫
 
 buildtoolbar_popup_staff_workman	按照你所提供的规划，为你建造监狱。\n\n选中一种员工后，本工具栏菜单面板的右上角，\n会出现“？”图标按钮。\n悬停它，你会看到更多有用的帮助说明。\n\n【调整】行走速度提高为2倍。\n毕竟，等待建造太无趣了。
-buildtoolbar_popup_staff_guard	看管囚犯，以防其滋事。\n监狱安保的主力。
-buildtoolbar_popup_staff_armedguard	装备了霰弹枪。囚犯在攻击他之前会多掂量掂量。\n\n每个武装警卫都需要在‘枪械库’拥有自己的锁柜。
-buildtoolbar_popup_staff_doctor	监狱这种地方，医生不愁没有用武之地。\n\n【调整】原本医生治疗的速率为每分钟8%。太快了。\n我让其降低为2%。\n并且，治疗会显著消耗医生的精力。每分钟2点。\n这样，你不再只靠区区一名医生就能轻松地照顾近百个囚犯。\n\n此外，治疗过程中，会产生医疗用品的消耗，成为你的成本。\n因此，人员受伤并不再是对你的经营无关痛痒的小事。\n\n医疗用品的废弃物的价格，参见‘医药箱’。\n在生成它们时，你的银行余额就已经扣减了其价格。
-buildtoolbar_popup_staff_cook	烹制伙食，并提供给囚犯。
+buildtoolbar_popup_staff_guard	基础警卫负责看管囚犯等监狱琐事。\n是监狱安保的主力。
+buildtoolbar_popup_staff_armedguard	武装警卫装备了霰弹枪，让附近的囚犯有所忌惮。囚犯在攻击他之前会多掂量掂量。\n\n每个武装警卫都需要在‘枪械库’拥有自己的锁柜。
+buildtoolbar_popup_staff_doctor	医生负责治愈囚犯以及负责培训\n\n【调整】原本医生治疗的速率为每分钟8%。太快了。\n我让其降低为2%。\n并且，治疗会显著消耗医生的精力。每分钟2点。\n这样，你不再只靠区区一名医生就能轻松地照顾近百个囚犯。\n\n此外，治疗过程中，会产生医疗用品的消耗，成为你的成本。\n因此，人员受伤并不再是对你的经营无关痛痒的小事。\n\n医疗用品的废弃物的价格，参见‘医药箱’。\n在生成它们时，你的银行余额就已经扣减了其价格。
+buildtoolbar_popup_staff_cook	厨师负责烹制伙食提供给囚犯和员工以及负责培训。
 buildtoolbar_popup_staff_gardener	保持监狱户外干净整洁。
-buildtoolbar_popup_staff_janitor	保持监狱室内干净整洁。
-buildtoolbar_popup_staff_warden	监狱大总管，在你研究并雇用高级员工之前必须拥有此职位。\n\n【调整】管理人员不会疲劳。\n\n【新增玩法】\n典狱长会自动评估周围囚犯的改造程度，并产生相应奖金。\n半径10米。每3分钟一个人次。\n但为了让他走出办公室，你需要开设“近距离接触”项目。\n\n在典狱长悬停提示为统计信息。你可以切换其大类。\n疾病点数玩法的难度也通过他来调整。\n\n我还增加了“睡眠加速”功能。\n\n详情见“？”的更多帮助。
-buildtoolbar_popup_staff_chief	这名高级员工令你可以访问“部署”、“闭路电视”和高级警卫\n等研究项。\n\n【新增】标记不端行为的囚犯\n每1分钟检查一次所有囚犯。\n如果刚刚发生不端行为，那么会给该囚犯一个醒目的标记。\n该标记在15分钟后会自动消失。\n\n【新增玩法】\n在主管的菜单中，你可以启用“与腐败作斗争”玩法。\n你的一般警卫当中，有概率会产生腐败分子。\n在白天，他们会勒索囚犯，从而引发负面情绪甚至打斗。\n勒索零用钱的比例、囚犯的爆发点和再犯罪可能性三者\n影响其反抗的概率。\n\n如果放任腐败的家伙肆意妄为，那么他们会越发贪婪。\n囚犯会更难忍受；其他警卫更容易出现效仿者。\n你可以在主管的悬停提示中看到整体腐败水平。\n\n如果某个一般警卫经常“拜访”不同囚犯，且很容易疲劳，\n说明他把精力大都用在了以权谋私的“副业”上。\n让他到主管的办公室走一趟，接受调查。\n在那里，腐败的警卫会被解雇，而你会得到奖励。
-buildtoolbar_popup_staff_foreman	这名高级员工令你可以访问“清洁工”和“园丁”。\n\n【新增功能】如果你启用工具和作弊，那么点击他，你可以\n批量地改变很多格子的地面种类。包括：\n · 边界：正常情况下你无法编辑它们\n · 主体：除了边界、室内和房间之外的所有格子\n · 网格：每10米“画”一条参考线
-buildtoolbar_popup_staff_psychologist	这名高级员工使你可以洞察囚犯们的心理活动。\n此外，有些改造项目需要他们。
-buildtoolbar_popup_staff_accountant	这名高级员工使你可以查看财务报告。\n\n【新增玩法】会计可以强制培训囚犯，以便进行记账工作。\n\n此外，囚犯的正确率终究有限。其错误还需正式员工来修正。\n错误的账本会被送到会计的办公室。会计每10分钟修正一本。\n相当于支持囚犯记账10人时。\n但仅限白天时段（从早上9点到晚上9点）。\n而且，会计还肩负培训的重担。\n所以当工作量上升后，你也许应该考虑多雇佣一个。
-buildtoolbar_popup_staff_lawyer	这名高级员工可帮助你打破规则，获得监狱的更大控制权。\n\n虽然没有上限，但雇用1个就足够了。\n除非你特别急于加速完成相关研究……\n\n【新增玩法】律师可以到探监室提供咨询服务。\n详情见改造项目“探监者服务”
+buildtoolbar_popup_staff_janitor	保持监狱室内干净整洁以及负责培训。
+buildtoolbar_popup_staff_warden	监狱总管，在你研究并雇用高级员工之前必须拥有此职位。\n\n【调整】管理人员不会疲劳。\n\n【新增玩法】\n典狱长会自动评估周围囚犯的改造程度，并产生相应奖金。\n半径10米。每3分钟一个人次。\n但为了让他走出办公室，你需要开设“近距离接触”项目。\n\n在典狱长悬停提示为统计信息。你可以切换其大类。\n疾病点数玩法的难度也通过他来调整。\n\n我还增加了“睡眠加速”功能。\n\n详情见“？”的更多帮助。
+buildtoolbar_popup_staff_chief	安保主管使你可以访问“部署”、“闭路电视”和高级警卫\n等研究项。\n\n【新增】标记不端行为的囚犯\n每1分钟检查一次所有囚犯。\n如果刚刚发生不端行为，那么会给该囚犯一个醒目的标记。\n该标记在15分钟后会自动消失。\n\n【新增玩法】\n在主管的菜单中，你可以启用“与腐败作斗争”玩法。\n你的一般警卫当中，有概率会产生腐败分子。\n在白天，他们会勒索囚犯，从而引发负面情绪甚至打斗。\n勒索零用钱的比例、囚犯的爆发点和再犯罪可能性三者\n影响其反抗的概率。\n\n如果放任腐败的家伙肆意妄为，那么他们会越发贪婪。\n囚犯会更难忍受；其他警卫更容易出现效仿者。\n你可以在主管的悬停提示中看到整体腐败水平。\n\n如果某个一般警卫经常“拜访”不同囚犯，且很容易疲劳，\n说明他把精力大都用在了以权谋私的“副业”上。\n让他到主管的办公室走一趟，接受调查。\n在那里，腐败的警卫会被解雇，而你会得到奖励。
+buildtoolbar_popup_staff_foreman	工头使你可以访问“清洁工”和“园丁”以以及负责培训。\n\n【新增功能】如果你启用工具和作弊，那么点击他，你可以\n批量地改变很多格子的地面种类。包括：\n · 边界：正常情况下你无法编辑它们\n · 主体：除了边界、室内和房间之外的所有格子\n · 网格：每10米“画”一条参考线
+buildtoolbar_popup_staff_psychologist	心理医生使你可以洞察囚犯们的心理活动以及负责培训。\n此外，有些改造项目需要他们。
+buildtoolbar_popup_staff_accountant	会计使你可以查看财务报告。\n\n【新增玩法】会计可以强制培训囚犯，以便进行记账工作。\n\n此外，囚犯的正确率终究有限。其错误还需正式员工来修正。\n错误的账本会被送到会计的办公室。会计每10分钟修正一本。\n相当于支持囚犯记账10人时。\n但仅限白天时段（从早上9点到晚上9点）。\n而且，会计还肩负培训的重担。\n所以当工作量上升后，你也许应该考虑多雇佣一个。
+buildtoolbar_popup_staff_lawyer	律师可帮助你打破规则，获得监狱的更大控制权。\n\n虽然没有上限，但雇用1个就足够了。\n除非你特别急于加速完成相关研究……\n\n【新增玩法】律师可以到探监室提供咨询服务。\n详情见改造项目“探监者服务”
 buildtoolbar_popup_staff_sniper	一个受过严格培训的狙击手。\n他们会自动占据空置的警戒塔。
 
 buildtoolbar_popup_uts_powerstation	产生监狱所需的电力。\n非常依赖电容器。\n\n两个发电站不能共用电缆，会冲突。\n是唯一会遇水爆炸的东西。
@@ -1219,6 +1219,7 @@ buildtoolbar_quickbuild_clone “克隆”工具可以让你复制监狱的一�
 
 # The ~ and ^ characters in front of some of the lines in the buildtoolbar_popup_help section are colour codes and should be preserved during translation
 
+buildtoolbar_Logistics_TargettingFood		食物分配
 buildtoolbar_popup_help_targettingfood_1	“食物分配”视图为你展示：哪些食堂为哪些牢房供应食物，\n哪些厨房为哪些食堂供应食物。\n你还可以看到处于活动状态的厨房和食堂当前的供需状态。\n(烹饪在下一次“吃饭”作息的4小时前开始)\n\n
 buildtoolbar_popup_help_targettingfood_2	~左键点击一间牢房，然后点击食堂，可强行让该牢房使用该食堂。\n你也可以用同样的方式来改变哪些厨房为哪些食堂供应食物。\n右键点击一个区块，可将该区块的目标配对重置为默认。
 buildtoolbar_popup_help_targettingfood_3	~按住Shift键并左键点击，可设置多个牢房的食堂配对。
@@ -1226,13 +1227,15 @@ buildtoolbar_popup_help_targettingfood_4	^\n小技巧
 buildtoolbar_popup_help_targettingfood_5	\n如果你发现某个牢房或厨房没有与你预想的食堂配对，\n请尝试右键点击该牢房或厨房，强行重置。
 buildtoolbar_popup_help_targettingfood_6	\n如果你发现在吃饭期间对食堂的供应不足，这表明厨房超负荷了，\n你需要设法烹制更多的食物。
 
+buildtoolbar_Logistics_TargettingLaundry 	衣物分配
 buildtoolbar_popup_help_targettinglaundry_1	“衣物分配”视图为你展示哪些牢房、宿舍和入狱搜查室\n与哪些洗衣房配对。\n\n
 buildtoolbar_popup_help_targettinglaundry_2	~左键点击一间洗衣房，然后点击牢房、宿舍或入狱搜查室，\n使该前者为该房间提供服务。\n按住Shift键可设置多个房间的配对。\n\n
 buildtoolbar_popup_help_targettinglaundry_3	右键点击一间洗衣房，可将其目标配对重置为默认。
 buildtoolbar_popup_help_targettinglaundry_4	^\n小技巧
 buildtoolbar_popup_help_targettinglaundry_5	你可以随意为洗衣房搭配多个牢房，但洗衣房的运作速度是\n有限的(取决于洗衣房的大小、囚犯或警卫的数量)。\n一个大监狱使用仅仅一间洗衣房是很不明智的。\n
 
-buildtoolbar_popup_help_jobs_1	“狱中劳动”视图为你展示哪些牢房拥有必须工作的囚犯，\n以及必须工作的囚犯数量。\n\n
+buildtoolbar_Logistics_Jobs		狱中劳役
+buildtoolbar_popup_help_jobs_1	“狱中劳役”视图为你展示哪些牢房拥有必须工作的囚犯，\n以及必须工作的囚犯数量。\n\n
 buildtoolbar_popup_help_jobs_2	~左键点击一个房间，可为该房间添加工作职位。\n在工作作息里，每个工作职位都可安排一个囚犯。\n右键点击该房间可移除一个职位。
 buildtoolbar_popup_help_jobs_3	^\n小技巧
 buildtoolbar_popup_help_jobs_4	\n有些工作，例如在厨房或车间干活，要求囚犯首先完成培训。\n你可以在[报告]窗口的[项目]标签页里启动这些项目。
@@ -1930,7 +1933,7 @@ research_clone	克隆
 research_deployment	部署
 research_patrols	巡逻
 research_dogs	警犬
-research_prisonlabour	狱中劳动
+research_prisonlabour	狱中劳役
 research_education	教育
 research_contraband	情报
 research_policy	监狱政策
@@ -1962,7 +1965,7 @@ researchtooltip_dogs	解锁“警犬”与“训犬员”。\n警犬能够轻易
 researchtooltip_cctv	解锁“闭路电视摄像头”与“监视器”。\n使用这些设备来监视没有警卫的区域。\n\n同时，解锁“电话窃听”系统，使你可以监听囚犯打出的电话，\n以获取重要情报，作为线人的补充。
 researchtooltip_remoteaccess	解锁高科技设备，以进行远程控制和自动门禁。\n使用门禁控制系统（由一名警卫操作）或者门禁定时器\n（在每天特定时刻），就能遥控开门。
 researchtooltip_riotguards	（目前暂时无用）\n解锁“防暴警察”。\n这些伙计的防护更周全，能够更好地处置暴力事件。
-researchtooltip_maintainance	解锁“工头”。\n他让你可以进行更多研究，比如“狱中劳动”；\n或者更多员工类型，比如“园丁”。\n\n作为管理者，需要配有一间办公室。
+researchtooltip_maintainance	解锁“工头”。\n他让你可以进行更多研究，比如“狱中劳役”；\n或者更多员工类型，比如“园丁”。\n\n作为管理者，需要配有一间办公室。
 researchtooltip_clone	解锁工具栏上的“克隆”工具。\n使用此工具可快速复制监狱的区域，如牢房。\n\n你需要按住鼠标右键拖动以选择一个区域并复制，\n然后左键点击你要粘贴的位置。
 researchtooltip_groundskeeping	解锁“园丁”。\n他们会令户外区域保持整洁（主要是清理藤蔓）。\n此外，他们会在林场里自动种树。
 researchtooltip_cleaning	解锁“清洁工”。\n他们会清洁监狱的所有室内区域，也可协助洗衣服务。
@@ -2920,7 +2923,7 @@ objective_grant_SecurityOffice_cctvcameras 在监狱各处，安装4台 闭路�
 
 objective_grant_prisonerworkforce	囚犯的适应和劳役
 objective_grant_prisonerworkforce_description	让囚犯在监狱中工作，是个一石二鸟的好办法：\n既能削减费用，同时又能使他们融入环境。\n完成必要的研究，建造必需的设施，然后将囚犯投入工作。
-objective_grant_prisonerworkforce_research	通过[行政系统]解锁“狱中劳动”
+objective_grant_prisonerworkforce_research	通过[行政系统]解锁“狱中劳役”
 objective_grant_prisonerworkforce_cleaning	建造 清洁间
 objective_grant_prisonerworkforce_laundry	建造 洗衣房
 objective_grant_prisonerworkforce_kitchenclass	让3个囚犯完成 厨房安全与卫生 项目
@@ -2946,7 +2949,7 @@ objective_grant_prisonlabour_reform	让5个囚犯通过 工坊安全方案 项�
 objective_grant_prisonlabour_plates	制作30个 车牌
 
 objective_grant_furnituremanufacturing	木工学徒项目
-objective_grant_furnituremanufacturing_description	向囚犯们提供木工课程，传授出狱后能够用上的宝贵技能。\n让他们在工坊中制作高档家具，并且出售以增加收入。\n先建造林场，以生产圆木。\n平均分成5片，按天分别种植，以稳定产量。
+objective_grant_furnituremanufacturing_description	向囚犯们提供木工课程，传授出狱后能够用上的宝贵技能。\n让他们在工坊中制作高档家具，并且出售以增加收入。\n先建造林场，以生产原木。\n平均分成5片，按天分别种植，以稳定产量。
 objective_grant_furnituremanufacturing_forestry	建造第一个 林场
 objective_grant_furnituremanufacturing_forestrys 一共建造5个 林场
 objective_grant_FurnitureManufacturing_gardener 雇用4名 园丁
@@ -3097,9 +3100,9 @@ object_brick					砖
 object_concrete					混凝土
 object_steel					钢材
 object_ingredients				食材
-object_ingredientscooking		食材(烹制中)
-object_ingredientscooked		食材(已烹制)
-object_ingredientsspoiled		食材(坏掉了)
+object_ingredientscooking		食材(烹饪)
+object_ingredientscooked		食材(煮熟)
+object_ingredientsspoiled		食材(变质)
 object_meal						伙食
 object_foodtray					餐盘
 object_foodtraydirty			餐盘(脏)
@@ -3111,7 +3114,7 @@ object_bleach					漂白剂
 object_sheetmetal				金属板
 object_licenseplateblank		空白车牌
 object_licenseplate				车牌($25)
-object_log						圆木($85)
+object_log						原木($85)
 object_wood						木板($85)
 object_workman					工人
 object_truckdriver				卡车司机
@@ -3502,8 +3505,8 @@ regimetooltip_sleep	囚犯被关在牢房里，灯也熄了。所有人都上床
 regimetooltip_eat	囚犯们前往指定的食堂，就坐吃饭。\n\n囚犯可以使用食堂内的一切设施，但在时间结束前不得离开。\n\n厨师会提前4小时开始准备伙食。\n如果你突然调整作息，那么小心会出现断档。\n\n由于游戏机制的种种问题，我建议你每天只提供2顿。\n这不真实，但3顿实在不适合这游戏。
 regimetooltip_shower	囚犯们脱掉衣服进入淋浴间。每日的淋浴对囚犯的卫生很重要。\n但有些囚犯懒得去，除非被强迫。(我表示怀疑……)\n\n注意：其实，强制的淋浴时间，很少是个好主意。\n哪怕牢房里就有花洒，他们也只能去淋浴间。\n不用淋浴而有其它需求的囚犯，也无法提前离开。
 regimetooltip_yard	囚犯可以到庭院中进行必要的锻炼、晒太阳、呼吸新鲜空气。\n\n这段时间内，囚犯可以使用庭院里的任何设施，比如\n用举重床健身、打电话给所爱之人、淋浴等。\n\n囚犯被限制在庭院。不过你可以在庭院安装多种功能物品。\n该作息可以用来错开不同的囚犯群体，以防发生冲突。\n特别是帮派之间的冲突。\n\n对于高戒备群体，“庭院放风”+警戒塔可以压制其嚣张气焰。
-regimetooltip_work	囚犯可在监狱四处工作。\n任何职位空缺都会被填补，囚犯会自动到其工作岗位报到。\n(你可以在[部署>狱中劳动]设立职位空缺。)\n\n“工作”期间，所有的改造项目也会进行。它们算是一回事。\n\n注意：工作中的囚犯无法处理自己的需求。\n\n至于目前没有工作或参加改造项目的囚犯，则如同“自由活动”。
-regimetooltip_freetime	囚犯们可以使用监狱中的所有设施，只要区划允许其进入。\n囚犯最喜欢这段时间，会开展社交，并尽可能好地打理其需求。\n\n较长的自由活动可以缓解监狱中的压力和紧张情绪，\n但很多人认为这算不上什么刑罚。(降低[评级]中改造指标的评分)\n\n自由活动时，囚犯可以按其需要，最大自由地行动。\n不过，狱中劳动和囚犯参加的改造项目，无法进行。\n\n此外不会做的事情，只有一个：开始吃饭。不过如果\n上一个作息是吃饭，那么没吃完的囚犯可以在这时继续。
+regimetooltip_work	囚犯可在监狱四处工作。\n任何职位空缺都会被填补，囚犯会自动到其工作岗位报到。\n(你可以在[部署>狱中劳役]设立职位空缺。)\n\n“工作”期间，所有的改造项目也会进行。它们算是一回事。\n\n注意：工作中的囚犯无法处理自己的需求。\n\n至于目前没有工作或参加改造项目的囚犯，则如同“自由活动”。
+regimetooltip_freetime	囚犯们可以使用监狱中的所有设施，只要区划允许其进入。\n囚犯最喜欢这段时间，会开展社交，并尽可能好地打理其需求。\n\n较长的自由活动可以缓解监狱中的压力和紧张情绪，\n但很多人认为这算不上什么刑罚。(降低[评级]中改造指标的评分)\n\n自由活动时，囚犯可以按其需要，最大自由地行动。\n不过，狱中劳役和囚犯参加的改造项目，无法进行。\n\n此外不会做的事情，只有一个：开始吃饭。不过如果\n上一个作息是吃饭，那么没吃完的囚犯可以在这时继续。
 regimetooltip_worklockdown	关于“工作”部分，见“工作或自由活动”。\n\n目前没有工作或参加改造项目的囚犯，会被“关押”在牢房里。
 
 regime_clear	清除这类囚犯的作息，\n而采用中威胁的作息。
@@ -4370,3 +4373,7 @@ buildtoolbar_popup_obj_guardtower	让狙击手执勤的小型建筑。\n只能�
 
 interfacecallout_Truck                  供给车
 interfacecallout_Hearse                  灵车
+
+###############################
+Object_SearchToilets	搜查厕所
+Object_SwapOffice	交换办公室
