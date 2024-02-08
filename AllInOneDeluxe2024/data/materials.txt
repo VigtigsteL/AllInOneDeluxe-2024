@@ -1,5 +1,4 @@
 
-
 BEGIN Object     
     Name                 MetalDetector  
     ConstructionTime     10.0000  
@@ -3980,75 +3979,72 @@ BEGIN Object
     Properties           SlowDelivery
 END
 
-BEGIN Object     
-    Name                 SheetMetal
-    MaxStackSize         40
-    RenderDepth          1  
-    Price                -10
-    Sprite               SheetMetal
-    StackSprite          StackSheetMetal
-    Properties           Material    
-    Properties           SlowDelivery
-END
+# =============================================================================
 
-BEGIN Object     
-    Name                 LicensePlateBlank
-    MaxStackSize         40
-    RenderDepth          1  
-    Sprite               PlateBlank
-    StackSprite          StackPlatesBlank
-    Properties           Material  
-END
 
-BEGIN Object     
-    Name                 LicensePlate
-    MaxStackSize         40
-    RenderDepth          1  
-    Price                -30
-    Sprite               Plate
-    StackSprite          StackPlates
-    Properties           Material
-    Properties           Sellable
-END
+# 堆叠材料
 
+## 食材
 BEGIN Object     
     Name                 Ingredients  
     MaxStackSize         40  
     RenderDepth          1  
-    Sprite               Ingredient1  
-    StackSprite          StackIngredients1
+	BEGIN SpriteBank
+		Name			objects_d11_2
+		Sprite			d_D11Ingredient01  
+		StackSprite		d_D11StackIngredients01
+	END
     Properties           Material
     Properties           SlowDelivery
+    Properties           Undamageable
+    SpecialRestriction	 NoShadow
 END
 
+## 食材(烹饪)
 BEGIN Object     
     Name                 IngredientsCooking  
     MaxStackSize         40  
     RenderDepth          1  
-    Sprite               StackMeals1  
-    StackSprite          StackMeals1
+    
+	BEGIN SpriteBank
+		Name			objects_d11_2
+		Sprite			d_D11StackMeals01  
+		StackSprite		d_D11StackMeals01
+	END
     Properties           Material
 END
 
+## 食材(煮熟)
 BEGIN Object     
     Name                 IngredientsCooked  
     MaxStackSize         40  
     RenderDepth          1  
-    Sprite               StackMealsCooked1
-    StackSprite          StackMealsCooked1
-    Properties           Material
+    
+	BEGIN SpriteBank
+		Name			objects_d11_2
+		Sprite			d_D11Ingredient01
+		StackSprite		d_D11StackMealsCooked01
+	END
+    Properties          Material
+    Properties          Undamageable
 END
 
+## 食材(变质)
 BEGIN Object     
     Name                 IngredientsSpoiled  
     MaxStackSize         40  
     RenderDepth          1  
-    Sprite               Ingredient1  
-    StackSprite          StackIngredients1
+	
+	BEGIN SpriteBank
+		Name			objects_d11_2
+		Sprite			d_D11Ingredient01  
+		StackSprite     d_D11StackIngredients01
+	END
     Properties           Material
     Properties           SlowDelivery
 END
 
+## 餐盘
 BEGIN Object     
     Name                 FoodTray  
     MaxStackSize         80  
@@ -4060,6 +4056,7 @@ BEGIN Object
     Properties           SlowDelivery
 END
 
+## 餐盘(脏)
 BEGIN Object     
     Name                 FoodTrayDirty  
     MaxStackSize         80  
@@ -4073,6 +4070,7 @@ BEGIN Object
     Properties           Material
 END
 
+## 囚服
 BEGIN Object     
     Name                 PrisonerUniform
     MaxStackSize         40  
@@ -4084,6 +4082,7 @@ BEGIN Object
     Properties           SlowDelivery
 END
 
+## 囚服(脏)
 BEGIN Object     
     Name                 DirtyPrisonerUniform  
     MaxStackSize         40  
@@ -4094,6 +4093,7 @@ BEGIN Object
     Properties           Material
 END
 
+## 囚服(皱)
 BEGIN Object
     Name                CrumpledPrisonerUniform
     MaxStackSize        40
@@ -4103,6 +4103,41 @@ BEGIN Object
     Properties          Material
 END
 
+## 金属板
+BEGIN Object     
+    Name                 SheetMetal
+    MaxStackSize         40
+    RenderDepth          1  
+    Price                -10
+    Sprite               SheetMetal
+    StackSprite          StackSheetMetal
+    Properties           Material    
+    Properties           SlowDelivery
+END
+
+## 空白车牌
+BEGIN Object     
+    Name                 LicensePlateBlank
+    MaxStackSize         40
+    RenderDepth          1  
+    Sprite               PlateBlank
+    StackSprite          StackPlatesBlank
+    Properties           Material  
+END
+
+## 车牌
+BEGIN Object     
+    Name                 LicensePlate
+    MaxStackSize         40
+    RenderDepth          1  
+    Price                -30
+    Sprite               Plate
+    StackSprite          StackPlates
+    Properties           Material
+    Properties           Sellable
+END
+
+## 原木
 BEGIN Object
     Name                Log
     MaxStackSize        9
@@ -4114,6 +4149,7 @@ BEGIN Object
     Properties          Sellable
 END
 
+## 木板
 BEGIN Object
     Name                Wood
     MaxStackSize        40
@@ -4125,14 +4161,7 @@ BEGIN Object
     Properties          Sellable
 END 
 
-BEGIN Object     
-    Name                 Equipment  
-    Toughness            5.00000  
-    RenderDepth          1  
-    Sprite               Hammer  
-    Properties           Metal
-END
-
+## 邮件(未分类)
 BEGIN Object     
     Name                 MailUnsorted
     RenderDepth          1  
@@ -4146,6 +4175,7 @@ BEGIN Object
     Properties           Uncloneable
 END
 
+## 邮件(已分类)
 BEGIN Object     
     Name                 MailSorted
     RenderDepth          1  
@@ -4158,6 +4188,7 @@ BEGIN Object
     Properties           Uncloneable
 END 
 
+## 商店货物
 BEGIN Object     
     Name                 ShopGoods  
     MaxStackSize         40  
@@ -4170,7 +4201,16 @@ BEGIN Object
     WorkGroup            Shop
 END   
 
-##################################################
+## 装备
+BEGIN Object     
+    Name                 Equipment  
+    Toughness            5.00000  
+    RenderDepth          1  
+    Sprite               Hammer  
+    Properties           Metal
+END
+
+# =============================================================================
 
 
 # 紧急呼叫
@@ -4239,7 +4279,7 @@ BEGIN Callout
     Entity               Paramedic
 END
 
-##################################################
+# =============================================================================
 
 
 #行政人员
@@ -4347,7 +4387,7 @@ BEGIN Object
     Properties           Staff
     Properties           Scripted
     Equipment            Clipboard
-    MaxAllowed				5
+    MaxAllowed			 50
 END
 
 ## 心理医生
@@ -4370,7 +4410,7 @@ BEGIN Object
     Equipment            Clipboard
 END
 
-##################################################
+# =============================================================================
 
 
 #工作人员
@@ -4480,7 +4520,7 @@ BEGIN Object
     Equipment            Microphone
 END
 
-##################################################
+# =============================================================================
 
 
 # 警备人员
@@ -4598,7 +4638,7 @@ BEGIN Object
     Equipment            AssaultRifle
 END
 
-##################################################
+# =============================================================================
 
 
 # 其他人员

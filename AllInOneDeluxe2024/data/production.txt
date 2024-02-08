@@ -1,4 +1,4 @@
-# Store library books in library shelves and short bookcases in libraries and decorative libraries
+
 
 BEGIN ProductionRule
     Rule                Storage
@@ -7,6 +7,7 @@ BEGIN ProductionRule
     Container           ShortBookcase
     Room                Library
     Distribution        Random
+    Worker           Prisoner
 END
 
 BEGIN ProductionRule       

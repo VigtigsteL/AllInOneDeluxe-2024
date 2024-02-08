@@ -1,3 +1,5 @@
+# 若要覆盖原计划，需要放置在 “游戏根目录\Data\”中才能生效
+
 BEGIN Program
     Name            WorkshopInduction
     SessionCost     -80
@@ -7,7 +9,7 @@ BEGIN Program
     Difficulty      5
     Research        PrisonLabour
     Room            Workshop
-    Teacher         Workman
+    Teacher         Foreman
     Equipment       WorkshopSaw,WorkshopPress,CarpenterTable
     EquipmentAlt    WorkshopPress
     EquipmentAlt    CarpenterTable
@@ -35,7 +37,7 @@ BEGIN Program
     SessionLength   120
     NumSessions     4
     Difficulty      10
-    Teacher         Workman
+    Teacher         Foreman
     Room            Workshop
     Equipment       CarpenterTable
     EquipmentAlt    WorkshopPress
