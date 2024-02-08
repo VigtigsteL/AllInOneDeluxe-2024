@@ -1736,15 +1736,15 @@ buildtoolbar_popup_help_jobs_6	你必须封闭林区，以安排囚犯在其中�
 research_forestrylabour	林业劳动
 researchtooltip_forestrylabour	你可以通过后勤菜单让囚犯在林区工作。你必须封闭林区，以安排囚犯在其中工作，并且防止他们逃跑。请注意，囚犯也需要进入囚犯接收区来重新种植树木。
 action_usecomputer	使用电脑
-
-buildtoolbar_popup_help_roomquality_1	“牢房品质”视图为你展示监狱中所有牢房和宿舍的质量。\n按照从0到10进行分级，数字越大表示品质越好。\n鼠标悬停一个房间，即可查看决定其品质的因素，\n并了解你可以添加什么来提高品质。
-buildtoolbar_popup_help_roomquality_2	^\n小技巧
-buildtoolbar_popup_help_roomquality_3	\n表现良好的囚犯有权进入品质更高的牢房。\n囚犯可享受的品质待遇级别，等于其“无事故天数”。\n拥有品质更高的牢房有助于激励良好表现。\n
-buildtoolbar_popup_help_roomquality_4	\n你的监狱务必保留一些低品质的牢房，因为新囚犯需要住宿。\n如果所有可用牢房的品质太高，新囚犯可能会无处可去，\n而只能留在拘留室。
-buildtoolbar_popup_help_roomquality_5	\n如果没有合适的牢房，可以将囚犯放入比他们应得的品质\n更高的牢房，但这可能会让其他囚犯不高兴……\n\n我个人觉得这个玩法很鸡肋，倾向于禁用它。
-buildtoolbar_popup_help_roomquality_6	 
-buildtoolbar_popup_help_roomquality_7	 
-buildtoolbar_popup_help_roomquality_8	 
+buildtoolbar_Logistics_RoomQuality		牢房品质
+buildtoolbar_popup_help_roomquality_1	“牢房品质”视图为你展示监狱中所有牢房和宿舍的质量。
+buildtoolbar_popup_help_roomquality_2	\n按照从0到10进行分级，数字越大表示品质越好。
+buildtoolbar_popup_help_roomquality_3	\n鼠标悬停一个房间，即可查看决定其品质的因素，\n并了解你可以添加什么来提高品质。
+buildtoolbar_popup_help_roomquality_4	^\n小技巧
+buildtoolbar_popup_help_roomquality_5	\n表现良好的囚犯有权进入品质更高的牢房。
+buildtoolbar_popup_help_roomquality_6	 \n囚犯可享受的品质待遇级别，等于其“无事故天数”。\n拥有品质更高的牢房有助于激励良好表现。\n
+buildtoolbar_popup_help_roomquality_7	 \n你的监狱务必保留一些低品质的牢房，因为新囚犯需要住宿。\n如果所有可用牢房的品质太高，新囚犯可能会无处可去，\n而只能留在拘留室。
+buildtoolbar_popup_help_roomquality_8	 \n如果没有合适的牢房，可以将囚犯放入比他们应得的品质\n更高的牢房，但这可能会让其他囚犯不高兴……
 
 interface_landbuyoverwater	在你的航道或开阔水域周围生成额外的岛屿，以完成扩张。
 interface_landbuywaterislands	岛屿
@@ -1847,7 +1847,7 @@ object_SolarPanels	太阳能电池板
 object_Transformer	变压器
 object_WindTurbine	风力发电机
 object_SolarWindHybrid	风光互补发电机
-object_Battery	电池
+object_Battery	变压器电池
 object_PowerExportMeter	外销电能测量仪
 object_PracticeSolarPanel	太阳能电池板组装练习
 
@@ -1949,7 +1949,7 @@ buildtoolbar_popup_mat_ReclaimedRubberFloor	利用废旧材料制造出的橡胶
 
 buildtoolbar_popup_obj_shed	储存所有种子、工具和其他农业道具的区域。该区域还有可用于初级灌溉的水龙头。
 buildtoolbar_popup_obj_BasicAutoGatherer	每 6 小时激活一次，用于在一片 5x5 的区域内收集和储存所有食材。
-buildtoolbar_popup_obj_AdvanceAutoGatherer	每 6 小时激活一次，用于在一片 10x10 的区域内收集和储存所有食材。
+buildtoolbar_popup_obj_AdvancedAutoGatherer	每 6 小时激活一次，用于在一片 10x10 的区域内收集和储存所有食材。
 buildtoolbar_popup_obj_AutoHarvester	每 6 小时激活一次，收割其前方宽度为 4 的 10 块地砖中的所有农作物。收割过程会因墙和门而受限。
 buildtoolbar_popup_obj_AutoScythe	机械化农场工具，会在游戏内每 6 小时激活一次，收割 5x5 区域内的所有农作物。
 
@@ -2013,7 +2013,7 @@ buildtoolbar_popup_obj_DoubleStaffDoor	供员工使用的双开门。
 buildtoolbar_popup_obj_DoubleVisitorDoor	供访客使用的双开门。
 buildtoolbar_popup_obj_SellUtility	用于降价销售的销售设施。
 
-buildtoolbar_popup_staff_farmer	照看农作物生长，管理与菜园、果园或农田相关的所有工作。
+buildtoolbar_popup_staff_farmer	照看农作物生长，管理与菜园、果园或农田相关的所有工作以及负责培训。
 
 buildtoolbar_popup_mat_HayBailWall	高但脆弱的干草捆。这种材料较为美观，但不怎么安全。仅限室外使用
 buildtoolbar_popup_mat_WoodenFence	外观更自然的人造木栅栏。仅限室外使用。
@@ -2031,8 +2031,8 @@ d11_farm_work	农业事务
 d11_farm_work_desc	将囚犯安排在菜园、果园或农田工作，在农场工人的监控下，囚犯将参与这些房间内农作物的种植、收割和一般维护。只有通过农场工作安全课程或擅长园艺的囚犯才能在此工作。
 d11_check_ingredients_menu	查看食材菜单了解更多详情
 d11_meal_cost_per_meal	$*X/餐
-d11_meal_cost_total	总价
-d11_meal_estimated_price	估价
+d11_meal_cost_total	每餐总价
+d11_meal_estimated_price	每日估价
 d11_meal_quantity_description	调整每个囚犯进餐时消耗的食材量，数值为 1 至 3。使用此选项，则可依据所选设置、囚犯人数和当前食物供应量，控制食材配送量。
 d11_meal_variety_description	使用此选项，则可控制配送食物时运送至监狱的食材类型数量。改变此选项不会影响订购的食材量，仅影响食材类型及这些食材的成本。
 
@@ -2231,29 +2231,7 @@ objective_HelpNarcoticProduction_child_1_Description	满足特定条件的囚犯
 objective_HelpNarcoticProduction_child_2	制毒
 objective_HelpNarcoticProduction_child_2_Description	另一方面，制毒只能在农田中进行，囚犯会尝试破坏现有的农作物，从而藏匿可生长的毒品植株。\n\n这些遭到破坏的农作物会散发出难闻的味道，因此警犬能察觉到。但这些区域不在搜查范围内，因此必须手动发起搜查，但每次搜查都有概率破坏农作物。\n\n如果正好是由某类符合条件的囚犯收割农作物，收获的农作物中也会包含麻醉品。\n\n帮派也能够控制农田，以确保控制毒品生产线。
 
-# =============================================================================
-# Crop Distribution
-# =============================================================================
 
-interfacelogistics_CropDistribution	农作物分配
-
-d11_manage_crops	管理分配
-d11_manageCropsDescription	你可以在这里控制将*X里生长的农作物配送至每个与之相连房间的数量。每个农业房间最多连接 8 个房间。
-
-d11_logistics_roomTitle	房间
-
-d11_noRoomsConnected	没有房间与*X相连，因此系统会将农作物移动至食品储藏室、厨房、出货区和仓库，直至每个房间均储存满。
-d11_noRoomsConnectedField	没有房间与*X相连，因此系统会将农作物移动至出货区和仓库，直至每个房间均储存满。
-
-#console only
-d11_logistic_select_crop_distribution	选择房间
-d11_logistics_change_Room	更改房间
-d11_logistics_change_Percentage	更改比例
-d11_logistics_change_Focus	更改重点
-d11_logistics_lock_percentage	锁定比例
-d11_logistics_unlock_percentage	解锁比例
-d11_view_room	查看房间
-#
 
 # =============================================================================
 # Reputations
@@ -2862,7 +2840,6 @@ room_pantry	食品储藏室
 room_flowergarden	花园
 buildtoolbar_popup_room_Pantry	储存所有新鲜种植的蔬菜水果的房间，此房间为冷藏室，用于储存所有监狱内生长的食材。
 buildtoolbar_popup_obj_Shed	储存所有种子、工具和其他农业道具的区域。该区域还有可用于初级灌溉的水龙头。
-buildtoolbar_popup_obj_AdvancedAutoGatherer	每 6 小时激活一次，用于在一片 10x10 的区域内收集和储存所有食材。
 buildtoolbar_popup_obj_CompostBin	用于改造食物和有机废物，制成可使用的肥料。
 buildtoolbar_popup_obj_PinkFlamingo	令人愉悦的经典花园装饰物。
 buildtoolbar_popup_obj_BowtieBandit	衣冠楚楚的小伙子。
@@ -2948,7 +2925,7 @@ buildtoolbar_popup_mat_grasscornerfloor	带有泥土的草坪拐角，对于建�
 buildtoolbar_popup_mat_grasscornerfloor1	带有泥土的草坪拐角，对于建设成角度的道路很有用。
 buildtoolbar_popup_mat_grasscornerfloor2	带有泥土的草坪拐角，对于建设成角度的道路很有用。
 buildtoolbar_popup_mat_grasscornerfloor3	带有泥土的草坪拐角，对于建设成角度的道路很有用。
-buildtoolbar_Logistics_CropDistribution	决定农作物收获后将会转换到哪些房间，你也可以通过管理分配窗口调整分配比例。
+
 d11_hover_alert_water	需要水源
 d11_hover_alert_electricity	需要电力
 interfacemode_objectPack_filter_caption	根据相关扩展包，过滤显示的物品数量。
@@ -4026,7 +4003,7 @@ guardinvestigation_investigated	已调查 *A/*B 名警卫
 informant_investigating	调查中
 crookedguard_fired_reward	腐败警卫已开除
 crookedguard_advisor_onboarding	我们发现一名腐败警卫与帮派窜通。我已在“报告”窗口中的“员工”选项卡将其标出。记得把他给开除。
-buildtoolbar_popup_staff_doghandler	训犬员和警犬结成搭档、共同行动。\n【调整】为了真实性，我给训犬员配了警棍。
+buildtoolbar_popup_staff_doghandler	训犬员和警犬结成搭档、共同行动。\n负责寻找违禁品与地道。\n[豪华版] 为训犬员装备了警棍。
 buildtoolbar_popup_staff_kimber_doghandler	训犬师和他们的工作犬可以在囚犯和腐败警卫近距离经过时发现他们身上的违禁品。
 d11_prisoner_replacement	囚犯替换
 d11_prisoner_replacement_tooltip	囚犯人数被补充至所期望的数量，而安全级别的比率尽可能保持不变。超出规定数量的囚犯均需按照标准系统提出申请
@@ -4415,3 +4392,34 @@ objective_Grant_Tracker_Router	放置路由器，以增加囚犯追踪范围
 objective_Grant_Tracker_TrackingMonitor	在警卫室安装并连接追踪监视器
 objective_Grant_Tracker_TrackingBelt	通过“情报>追踪清单”将追踪器分配给 3 个囚犯
 objective_Grant_Tracker_SecurityRoom	建造警卫室
+
+# =============================================================================
+
+
+# 后勤菜单
+
+
+## 农作物
+
+interfacelogistics_CropDistribution	农作物分配
+
+d11_manage_crops	管理分配
+d11_manageCropsDescription	你可以在这里控制将*X里生长的农作物配送至每个与之相连房间的数量。每个农业房间最多连接 8 个房间。
+
+d11_logistics_roomTitle	房间
+
+d11_noRoomsConnected	没有房间与*X相连，因此系统会将农作物移动至食品储藏室、厨房、出货区和仓库，直至每个房间均储存满。
+d11_noRoomsConnectedField	没有房间与*X相连，因此系统会将农作物移动至出货区和仓库，直至每个房间均储存满。
+
+buildtoolbar_Logistics_CropDistribution	农作物分配
+buildtoolbar_popup_help_CropDistribution_1	决定农作物收获后将会转换到哪些房间，你也可以通过管理分配窗口调整分配比例。
+
+###仅控制台
+d11_logistic_select_crop_distribution	选择房间
+d11_logistics_change_Room	更改房间
+d11_logistics_change_Percentage	更改比例
+d11_logistics_change_Focus	更改重点
+d11_logistics_lock_percentage	锁定比例
+d11_logistics_unlock_percentage	解锁比例
+d11_view_room	查看房间
+
