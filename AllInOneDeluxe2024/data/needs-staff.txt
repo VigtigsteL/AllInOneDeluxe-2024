@@ -1,0 +1,177 @@
+# ==============坐================
+# 坐.椅子 优先级1.5 舒适+0.4
+BEGIN Provider
+  Action          Sit
+  ProviderType  Object
+  Object          Chair
+  Slot          0
+  PrimaryNeed     StaffComfort
+  PrimaryRate     -0.4
+  ActionType      Use
+  Priority        1.5
+END
+
+#木凳 舒适0.4
+BEGIN Provider
+  Action          Sit
+  ProviderType  Object
+  Object          WoodenStool
+  Slot          0
+  PrimaryNeed     Comfort
+  PrimaryRate     -0.4
+  ActionType      Use
+  Priority        1.5
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 听.收音机 范围20 娱乐+0.1
+BEGIN Provider
+  Action          ListenToRadio_Modified
+  ProviderType    Object
+  Object          Radio
+  PrimaryNeed     StaffRecreation
+  PrimaryRate     -0.1
+  ActionType      Use
+  Flags           Passive
+  BroadcastRange  20
+END
+
+
+
+
+# 坐.课桌 优先级0.8 舒适+0.5
+BEGIN Provider
+  Action          Sit
+  ProviderType  Object
+  Object          SchoolDesk
+  Slot          0
+  PrimaryNeed     StaffComfort
+  PrimaryRate     -0.4
+  ActionType      Use
+  Priority        0.8
+END
+
+# 洗手.洗手池 优先级0.9 环境+0.15
+BEGIN Provider
+  Action          WashingHand
+  ProviderType    Object
+  Object          PersonalSink
+  Slot            0
+  PrimaryNeed     StaffEnvironment
+  PrimaryRate     -0.15
+  ActionType      Use
+  Priority        0.9
+END
+
+# 洗手.浴室洗手池 优先级0.9 环境+0.15
+BEGIN Provider
+  Action          WashingHand
+  ProviderType    Object
+  Object          bathroomSink
+  Slot            0
+  PrimaryNeed     StaffEnvironment
+  PrimaryRate     -0.15
+  ActionType      Use
+  Priority        0.9
+END
+
+# 洗手.洗手池和镜子 优先级0.9 环境+0.2
+BEGIN Provider
+  Action          WashingHand
+  ProviderType    Object
+  Object          SinkMirror
+  Slot            0
+  PrimaryNeed     StaffEnvironment
+  PrimaryRate     -0.2
+  ActionType      Use
+  Priority        0.9
+END
+
+# 风扇 范围5 舒适+0.05
+BEGIN Provider
+	Action	        UseFan
+	ProviderType	Object
+	Object	        Fan
+	PrimaryNeed	    StaffComfort
+	PrimaryRate	    -0.05000
+	ActionType	    Use
+    Flags           Passive
+    BroadcastRange  5.0
+END
+
+# 保持整洁.垃圾桶 范围6 环境+0.05
+BEGIN Provider
+  Action          KeepTidy
+  ProviderType    Object
+  Object          Bin
+  PrimaryNeed     StaffEnvironment
+  PrimaryRate     -0.05000
+  ActionType      Use
+  Flags           Passive
+  BroadcastRange  6
+END
+
+# 保持整洁.可回收垃圾桶 范围6 环境+0.05
+BEGIN Provider
+  Action          KeepTidy
+  ProviderType    Object
+  Object          RecyclingBin
+  PrimaryNeed     StaffEnvironment
+  PrimaryRate     -0.05000
+  ActionType      Use
+  Flags           Passive
+  BroadcastRange  6
+END
+
+# 植物 范围2 环境+0.02
+BEGIN Provider
+  Action          Plant
+  ProviderType    Object
+  Object          Plant
+  PrimaryNeed     StaffEnvironment
+  PrimaryRate     -0.02000
+  ActionType      Use
+  Flags           Passive
+  BroadcastRange  2
+END
+
+# 监控 范围14 安全+0.05
+BEGIN Provider
+  Action          Cctv
+  ProviderType    Object
+  Object          Cctv
+  PrimaryNeed     Safety
+  PrimaryRate     -0.05
+  ActionType      Use
+  Flags           Broadcaster
+  BroadcastRange  14
+END
+
+# 宠物鸟 范围5 舒适+0.1
+BEGIN Provider
+	Action			ListenToBird
+	ProviderType	Object
+	Object			PetBird
+	PrimaryNeed		StaffComfort
+	PrimaryRate	    -0.1
+	ActionType		Use
+	Flags           Passive
+	BroadcastRange  5.0
+END

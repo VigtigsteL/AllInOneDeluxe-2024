@@ -1,3 +1,41 @@
+BEGIN Object     
+    Name                 PlantCactus 
+    ConstructionTime     1.00000  
+    MoveSpeedFactor      0.300000  
+    Price                -30  
+    Filter               Foliage
+    NumSlots             1  
+    Group                StaticObject  
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               d_PlantCactus  
+    Properties           StaticObject
+    Properties		     RoomSpecific
+    Properties           HeatWaveAffected
+	BEGIN ImprovesRoom	 Room	Canteen END
+	VersionAdded		 2000
+END
+
+BEGIN Object     
+    Name                 SoftPillow
+    ConstructionTime     1.00000  
+	Toughness            1.0000 
+    Price                -15
+    Filter               Rest
+	RenderDepth          1.9 
+    AttachToWall         true
+    Group                StaticObject  
+    BlockedBy            Wall
+    BlockedBy            UtilityStation  
+    MadeOf               Composite
+    Properties           StaticObject
+    Properties		 	 RoomSpecific
+	BEGIN ImprovesRoom	 Room	Cell END
+	VersionAdded		 3000
+	DLC					 PrisonWingPriviledges
+	Sprite 				 d_SoftPillow
+END
 
 BEGIN Object     
     Name                 MetalDetector  
@@ -247,7 +285,7 @@ END
 BEGIN Object
     Name                 SolitaryDoor
     ConstructionTime     15
-    Toughness            300
+    Toughness            500
     Teleportable         true
     Price                -500
     RenderDepth          2
@@ -1194,7 +1232,6 @@ BEGIN Object
     RenderDepth          2
     Price                -100
     Group                StaticObject
-    BlockedBy            MustBeOutdoor
     BlockedBy            Wall
     BlockedBy            StaticObject
     BlockedBy            UtilityStation
@@ -3384,7 +3421,7 @@ BEGIN Room
     BEGIN LikelyObject  Id      SmallTable      END
     BEGIN LikelyObject  Id      SnackMachine    END
     BEGIN LikelyObject  Id      Fan             END
-    BEGIN LikelyObject  Id      Plant           END
+    BEGIN LikelyObject  Id      Plant  Alt  Plantcactus END
     BEGIN LikelyObject  Id      WaterCooler     END
     BEGIN LikelyObject  Id      DrinkMachine    END
     BEGIN LikelyObject  Id    Sink             END
@@ -4263,7 +4300,7 @@ END
 BEGIN Callout  
     Name                 Truck  
 	Cost                 -100
-    MaxNumber            1
+    MaxNumber            100
     Vehicle              SupplyTruck
     Sprite               TruckDriver
     Entity               TruckDriver
@@ -4273,7 +4310,7 @@ END
 BEGIN Callout  
     Name                 Hearse  
 	Cost                 -100
-    MaxNumber            1 
+    MaxNumber            100 
     Vehicle              Hearse
     Sprite               Paramedic
     Entity               Paramedic
@@ -4288,7 +4325,7 @@ END
 BEGIN Object
     Name                 Warden
     Price                -1000
-    Upkeep               -200
+    Upkeep               -250
     RenderDepth          2
     ViewRange            3
     Toughness            20
@@ -4309,7 +4346,7 @@ END
 BEGIN Object
     Name                 Chief
     Price                -1000
-    Upkeep               -200
+    Upkeep               -250
     RenderDepth          2
     ViewRange            12
     Toughness            20
@@ -4351,7 +4388,7 @@ END
 BEGIN Object
     Name                 Lawyer
     Price                -5000
-    Upkeep               -200
+    Upkeep               -250
     Toughness            5
     RenderDepth          2
     ViewRange            3
@@ -4387,7 +4424,7 @@ BEGIN Object
     Properties           Staff
     Properties           Scripted
     Equipment            Clipboard
-    MaxAllowed			 50
+    MaxAllowed			 10
 END
 
 ## 心理医生
@@ -4751,4 +4788,116 @@ BEGIN Object
     SpriteVariants       4
     Properties           Entity
     Properties           DoesNotTire
+END
+
+# =============================================================================
+
+
+# 车辆
+
+#供给车
+BEGIN Object     
+    Name                 SupplyTruck  
+    Width                2  
+    Height               8  
+    Toughness            35
+    MaxStackSize         -1  
+    NumSlots             8
+    Sprite               SupplyTruck
+    SpriteScale          1.2
+    Properties           Vehicle
+    TopSpeed		 6.0
+END
+
+BEGIN Object     
+    Name                 PrisonerBus  
+    Width                2  
+    Height               8
+	GroundBaseOveride	 1	
+    RenderDepth          3 
+	Toughness            35
+    MaxStackSize         -1  
+    NumSlots             8
+    Sprite               PrisonerBus
+    SpriteScale          1
+    Properties           Vehicle
+    TopSpeed		 6.0
+END
+
+BEGIN Object     
+    Name                 FireEngine  
+    Width                2  
+    Height               7  
+    MaxStackSize         -1  
+    NumSlots             4  
+	Toughness            35
+    Sprite               FireEngine  
+    SpriteScale          1.2
+    Properties           Vehicle
+	Properties           Undamageable
+    TopSpeed		 16.0
+END
+
+BEGIN Object     
+    Name                 RiotVan
+    Width                2
+    Height               5  
+    MaxStackSize         -1  
+    NumSlots             6
+	Toughness            35
+    Sprite               RiotVan
+    SpriteScale          1.4
+    Properties           Vehicle
+    TopSpeed		 16.0
+END
+
+BEGIN Object     
+    Name                 Ambulance
+    Width                2 
+    Height               5  
+    MaxStackSize         -1  
+    NumSlots             4
+	Toughness            35
+    Sprite               Ambulance
+    SpriteScale          1.2
+    Properties           Vehicle
+    TopSpeed		 16.0
+END
+
+BEGIN Object     
+    Name                 Hearse
+    Width                2 
+    Height               5  
+    MaxStackSize         -1  
+    NumSlots             4
+	Toughness            35
+    Sprite               Ambulance
+    SpriteScale          1.2
+    Properties           Vehicle
+    TopSpeed		 6.0
+END
+
+BEGIN Object     
+    Name                 Limo
+    Width                2 
+    Height               5  
+    MaxStackSize         -1  
+    NumSlots             4
+	Toughness            35
+    Sprite               RiotVan
+    SpriteScale          1.4
+    Properties           Vehicle
+    TopSpeed		 6.0
+END
+
+BEGIN Object     
+    Name                 TroopTruck
+    Width                2
+    Height               5  
+    MaxStackSize         -1  
+    NumSlots             6
+	Toughness            35
+    Sprite               TroopTruck
+    Properties           Vehicle
+    TopSpeed		 16.0
 END
