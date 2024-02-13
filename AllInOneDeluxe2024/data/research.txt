@@ -22,11 +22,6 @@ BEGIN Research
     NonWideY             420
 END
 
-
-
-
-
-
 BEGIN Research
     Name                 Finance
     Type                 Entity
@@ -99,21 +94,13 @@ BEGIN Research
     Type                 Ability
     Requires             Finance
     Admin                Finance
-    Cost                 -2000
-    Time                 720
+    Cost                 -20000
+    Time                 2880
     X                    220
     Y                    280
     NonWideX             200
     NonWideY             220
 END
-
-
-
-
-
-
-
-
 
 BEGIN Research
     Name                 Maintainance
@@ -137,8 +124,8 @@ BEGIN Research
     Sprite               Janitor
     Cost                 -500
     Time                 180
-    X                    160
-    Y                    420
+    X                    220  
+    Y                    360  
     NonWideX             160
     NonWideY             300
 END
@@ -480,6 +467,8 @@ BEGIN Research
     NonWideX             560
     NonWideY             600
 END
+
+
 BEGIN Research
     Name                 LegalPrep
     Type                 Ability
@@ -492,6 +481,8 @@ BEGIN Research
     NonWideX             440
     NonWideY             660
 END
+
+#法律辩护
 BEGIN Research
     Name                 LegalDefense
     Type                 Ability
@@ -513,7 +504,7 @@ END
 
 
 
-
+#囚犯评估
 BEGIN Research
     Name                 PrisonerEvaluation
     Type                 Ability
@@ -528,7 +519,7 @@ BEGIN Research
 END
 
 
-
+#杀手
 BEGIN Research
     Name                 Hitman
     Type                 Entity
@@ -541,4 +532,64 @@ BEGIN Research
     Y                    160
     NonWideX             500
     NonWideY             120
+END
+
+
+#护工
+BEGIN Research
+    Name                 Orderly
+    Type                 Entity
+    Requires             Health
+    Admin                Warden
+    Sprite               Orderly
+    Cost                 -1000
+    Time                 720
+
+    X                    580
+    Y                    400
+    NonWideX             500
+    NonWideY             170
+
+END
+
+#回收激励
+BEGIN Research   
+    Name                 RecyclingIncentive 
+    Type                 Entity  
+    Requires             Cleaning  
+    Admin                Finance  
+    Cost                 -2500  
+    Time                 720  
+    X                    100  
+    Y                    360  
+    NonWideX             40  
+    NonWideY             260 
+END
+
+#林业劳动
+BEGIN Research
+	Name				ForestryLabour
+	Type				Ability
+	Requires			PrisonLabour
+	Admin				Maintainance
+	Cost				-1500
+	Time				360
+	X                   280  
+    Y                   660  
+    NonWideX            80
+    NonWideY            600  
+END
+
+#农业
+BEGIN Research   
+    Name                 Farming  
+    Type                 Entity  
+    Requires             GroundsKeeping
+    Admin                Maintainance  
+    Cost                 -2000  
+    Time                 480  
+    X                    160  
+    Y                    660  
+    NonWideX             200  
+    NonWideY             660  
 END
