@@ -30,7 +30,7 @@ interfacemode_prisoners	囚犯
 interfacemode_needs	需求
 interfacemode_threats	威胁
 interfacemode_overlays	分布图
-interfacemode_research	行政系
+
 
 interfacemode_clone	克隆
 
@@ -278,7 +278,7 @@ buildtoolbar_popup_overlays	从视觉上标明监狱布局上的安全弱点。
 
 buildtoolbar_popup_research	为监狱解锁新功能。
 
-buildtoolbar_popup_clone	你可以复制并粘贴现有建筑结构。
+buildtoolbar_popup_clone	可以复制并粘贴现有建筑结构。
 buildtoolbar_popup_properties	找出乱子。
 
 buildtoolbar_popup_grading	查看你的监狱整体等级，基于四个关键指标：\n惩罚、改造、安全、健康。还显示囚犯出狱后的再犯率。
@@ -309,10 +309,10 @@ buildtoolbar_popup_room_paroleroom	当囚犯服刑达到总刑期的50%和75%时
 buildtoolbar_popup_room_library	全国各地会给你的监狱送来成箱的废书或旧书。\n囚犯们要将书本分类并上架。\n\n提供图书以满足“文化”需求。\n囚犯会来这里借书和还书。\n\n拿到书后，囚犯会去食堂的长凳上读书。\n或者回到牢房里坐在椅子上。\n公共活动室等地方因为不够安静而无法读书。\n虽然犯人读书效率非常高，但他们花费很多时间在来回的路上。\n\n一段时期后图书会损坏，因此需要持续补充。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为20人。
 buildtoolbar_popup_room_intake	囚犯刚抵达时，会先被带到这里搜身。
 buildtoolbar_popup_room_nursery	带宝宝的女囚犯的活动室。\n\n并且，她们在这里用餐，而不去普通的食堂。
-buildtoolbar_popup_room_shop	让犯人们花掉零用钱的合法渠道，以瞬间解决其需求。\n\n还会给你聊胜于无的收入。\n\n · 棕色=食物\n · 蓝色=卫生\n · 绿色=娱乐，安装‘店面’，从而让顾客从外面光顾。\n\n只能由囚犯工作来运营。需要人数=店面数。\n如果客流量很大则需要增加人手，以专心补充货架。\n\n所有被要求的物品，只安装1个即可。\n房间面积越小越好。\n工人会不断送来货物，尽可能塞满每个格子……\n\n由于程序的缺陷，工人会反复地把货物从商店里再运到仓库。\n最佳对策是：不安排专人补充货架。这样所有都货物会处于\n等待上架的待办事项，从而避免了出现运到仓库的待办事项。\n\n【调整】我去掉了对长桌的要求。\n它太占地方。并且工人总会把地板也塞满货物。
+buildtoolbar_popup_room_shop	让犯人们花掉零用钱的合法渠道，以瞬间解决其需求。\n\n还会给你聊胜于无的收入。\n\n · 棕色=食物\n · 蓝色=卫生\n · 绿色=娱乐，安装‘店面’，从而让顾客从外面光顾。\n\n只能由囚犯工作来运营。需要人数=店面数。\n如果客流量很大则需要增加人手，以专心补充货架。\n\n所有被要求的物品，只安装1个即可。\n房间面积越小越好。\n工人会不断送来货物，尽可能塞满每个格子……\n\n由于程序的缺陷，工人会反复地把货物从商店里再运到仓库。\n最佳对策是：不安排专人补充货架。这样所有都货物会处于\n等待上架的待办事项，从而避免了出现运到仓库的待办事项。
 
 buildtoolbar_popup_obj_jaildoor	把囚犯关在他们应该待的地方。\n\n在“睡觉”和“监禁”作息，或者囚犯被禁足、关禁闭时，\n牢房的监狱门会变成关闭模式。\n这时，只有附近的警卫可以开门并替人开门。\n\n非牢房的监狱门，则总是这个模式。\n你会看到清洁工经常被拦住。\n也容易在高峰时段造成囚犯的拥堵，产生不良情绪。\n如果不考虑真实性，那么很多时候，‘员工门’甚至\n‘无锁门’会是更好的选择。
-buildtoolbar_popup_obj_jaildoorlarge	把很多囚犯关在他们应该待的地方。\n\n在人流特别拥挤的交通瓶颈，最好安装反向对开的两个门\n，形成4米宽。或者，你可以用3米的特大监狱门。
+buildtoolbar_popup_obj_jaildoorlarge	把很多囚犯关在他们应该待的地方。\n\n在人流特别拥挤的交通瓶颈，最好安装反向对开的两个门\n，形成4米宽。或者，可以用3米的特大监狱门。
 buildtoolbar_popup_obj_door	简单的门。\n没有锁。谁都可以出入。\n\n用于满足房间对“封闭”的需要，或分割出不同的区划。\n\n或者，你也可以用“空房间”。\n\n如果不考虑真实性，那么你应该优先考虑用这种门。
 buildtoolbar_popup_obj_solitarydoor	牢固的门，能够阻挡哪怕最强壮的犯人越狱。\n\n任何作息时，它都会把囚犯关起来。\n适合禁闭室和枪械库。
 buildtoolbar_popup_obj_staffdoor	上锁的门。不只警卫，所有员工都能打开它。\n\n不过，囚犯仍然可以等有人开门而通过。\n所以还是依靠区划来阻止囚犯进出某些区域吧。
@@ -344,15 +344,15 @@ tc__tt__no_guard_available 没有发现可用的警卫
 buildtoolbar_popup_staff_workman	按照你所提供的规划，为你建造监狱。\n\n选中一种员工后，本工具栏菜单面板的右上角，\n会出现“？”图标按钮。\n悬停它，你会看到更多有用的帮助说明。\n\n【调整】行走速度提高为2倍。\n毕竟，等待建造太无趣了。
 buildtoolbar_popup_staff_guard	基础警卫负责看管囚犯等监狱琐事。\n是监狱安保的主力。
 buildtoolbar_popup_staff_armedguard	武装警卫装备了霰弹枪，让附近的囚犯有所忌惮。囚犯在攻击他之前会多掂量掂量。\n\n每个武装警卫都需要在‘枪械库’拥有自己的锁柜。
-buildtoolbar_popup_staff_doctor	医生负责治愈囚犯以及负责培训\n\n【调整】原本医生治疗的速率为每分钟8%。太快了。\n我让其降低为2%。\n并且，治疗会显著消耗医生的精力。每分钟2点。\n这样，你不再只靠区区一名医生就能轻松地照顾近百个囚犯。\n\n此外，治疗过程中，会产生医疗用品的消耗，成为你的成本。\n因此，人员受伤并不再是对你的经营无关痛痒的小事。\n\n医疗用品的废弃物的价格，参见‘医药箱’。\n在生成它们时，你的银行余额就已经扣减了其价格。
+buildtoolbar_popup_staff_doctor	医生负责治愈囚犯以及负责培训.
 buildtoolbar_popup_staff_cook	厨师负责烹制伙食提供给囚犯和员工以及负责培训。
 buildtoolbar_popup_staff_gardener	保持监狱户外干净整洁。
 buildtoolbar_popup_staff_janitor	保持监狱室内干净整洁以及负责培训。
-buildtoolbar_popup_staff_warden	监狱总管，在你研究并雇用高级员工之前必须拥有此职位。\n\n【调整】管理人员不会疲劳。\n\n【新增玩法】\n典狱长会自动评估周围囚犯的改造程度，并产生相应奖金。\n半径10米。每3分钟一个人次。\n但为了让他走出办公室，你需要开设“近距离接触”方案。\n\n在典狱长悬停提示为统计信息。你可以切换其大类。\n疾病点数玩法的难度也通过他来调整。\n\n我还增加了“睡眠加速”功能。\n\n详情见“？”的更多帮助。
-buildtoolbar_popup_staff_chief	安保主管使你可以访问“部署”、“监控”和高级警卫\n等研究项。\n\n【新增】标记不端行为的囚犯\n每1分钟检查一次所有囚犯。\n如果刚刚发生不端行为，那么会给该囚犯一个醒目的标记。\n该标记在15分钟后会自动消失。\n\n【新增玩法】\n在主管的菜单中，你可以启用“腐败斗争”玩法。\n你的警卫当中，有概率会产生腐败分子。\n在白天，他们会勒索囚犯，从而引发负面情绪甚至打斗。\n勒索零用钱的比例、囚犯的爆发点和再犯罪可能性三者\n影响其反抗的概率。\n\n如果放任腐败的家伙肆意妄为，那么他们会越发贪婪。\n囚犯会更难忍受；其他警卫更容易出现效仿者。\n你可以在主管的悬停提示中看到整体腐败水平。\n\n如果某个警卫经常“拜访”不同囚犯，且很容易疲劳，\n说明他把精力大都用在了以权谋私的“副业”上。\n让他到主管的办公室走一趟，接受调查。\n在那里，腐败的警卫会被解雇，而你会得到奖励。
-buildtoolbar_popup_staff_foreman	工头使你可以访问“清洁工”和“园丁”以以及负责培训。\n\n【新增功能】如果你启用工具和作弊，那么点击他，你可以\n批量地改变很多格子的地面种类。包括：\n · 边界：正常情况下你无法编辑它们\n · 主体：除了边界、室内和房间之外的所有格子\n · 网格：每10米“画”一条参考线
-buildtoolbar_popup_staff_psychologist	心理医生使你可以洞察囚犯们的心理活动以及负责培训。\n此外，有些改造项目需要他们。
-buildtoolbar_popup_staff_accountant	会计使你可以查看财务报告。\n\n【新增玩法】会计可以强制培训囚犯，以便进行记账工作。\n\n此外，囚犯的正确率终究有限。其错误还需正式员工来修正。\n错误的账本会被送到会计的办公室。会计每10分钟修正一本。\n相当于支持囚犯记账10人时。\n但仅限白天时段（从早上9点到晚上9点）。\n而且，会计还肩负培训的重担。\n所以当工作量上升后，你也许应该考虑多雇佣一个。
+buildtoolbar_popup_staff_warden	监狱总管，在你研究并雇用高级员工之前必须拥有此职位。\n\n【调整】管理人员不会疲劳。\n\n【新增玩法】\n典狱长会自动评估周围囚犯的改造程度，并产生相应奖金。\n半径10米。每3分钟一个人次。\n但为了让他走出办公室，你需要开设“近距离接触”方案。\n\n在典狱长悬停提示为统计信息。可以切换其大类。\n疾病点数玩法的难度也通过他来调整。\n\n我还增加了“睡眠加速”功能。\n\n详情见“？”的更多帮助。
+buildtoolbar_popup_staff_chief	安保主管使可以访问“部署”、“监控”和高级警卫\n等研究项。\n\n【新增】标记不端行为的囚犯\n每1分钟检查一次所有囚犯。\n如果刚刚发生不端行为，那么会给该囚犯一个醒目的标记。\n该标记在15分钟后会自动消失。\n\n【新增玩法】\n在主管的菜单中，可以启用“腐败斗争”玩法。\n你的警卫当中，有概率会产生腐败分子。\n在白天，他们会勒索囚犯，从而引发负面情绪甚至打斗。\n勒索零用钱的比例、囚犯的爆发点和再犯罪可能性三者\n影响其反抗的概率。\n\n如果放任腐败的家伙肆意妄为，那么他们会越发贪婪。\n囚犯会更难忍受；其他警卫更容易出现效仿者。\n可以在主管的悬停提示中看到整体腐败水平。\n\n如果某个警卫经常“拜访”不同囚犯，且很容易疲劳，\n说明他把精力大都用在了以权谋私的“副业”上。\n让他到主管的办公室走一趟，接受调查。\n在那里，腐败的警卫会被解雇，而你会得到奖励。
+buildtoolbar_popup_staff_foreman	工头使可以访问“清洁工”和“园丁”以以及负责培训。\n\n【新增功能】如果你启用工具和作弊，那么点击他，可以\n批量地改变很多格子的地面种类。包括：\n · 边界：正常情况下你无法编辑它们\n · 主体：除了边界、室内和房间之外的所有格子\n · 网格：每10米“画”一条参考线
+buildtoolbar_popup_staff_psychologist	心理医生使可以洞察囚犯们的心理活动以及负责培训。\n此外，有些改造项目需要他们。
+buildtoolbar_popup_staff_accountant	会计使可以查看财务报告。\n\n【新增玩法】会计可以强制培训囚犯，以便进行记账工作。\n\n此外，囚犯的正确率终究有限。其错误还需正式员工来修正。\n错误的账本会被送到会计的办公室。会计每10分钟修正一本。\n相当于支持囚犯记账10人时。\n但仅限白天时段（从早上9点到晚上9点）。\n而且，会计还肩负培训的重担。\n所以当工作量上升后，你也许应该考虑多雇佣一个。
 buildtoolbar_popup_staff_lawyer	律师可帮助你打破规则，获得监狱的更大控制权。\n\n虽然没有上限，但雇用1个就足够了。\n除非你特别急于加速完成相关研究……\n\n【新增玩法】律师可以到探监室提供咨询服务。\n详情见改造项目“探监者服务”
 buildtoolbar_popup_staff_sniper	一个受过严格培训的狙击手。\n他们会自动占据空置的警戒塔。
 
@@ -371,10 +371,10 @@ buildtoolbar_popup_uts_LogicBridge	仅限高级建筑师使用。\n\n接收其�
 buildtoolbar_popup_uts_DoorTimer	可用于在每天固定的时段自动开门。\n\n使用“连接”工具将定时器连接到‘门禁控制器’或‘逻辑桥’上。
 buildtoolbar_popup_uts_Wire	连接以构成你的遥控系统。
 buildtoolbar_popup_uts_showallwires	显示监狱中所有已连接的线路。
-buildtoolbar_popup_uts_tidywires 交织的线路让你眼花缭乱？\n现在，你可以让一些线路“绕路”。\n\n点击一个线路后，再点击某处，会增加一个中途的节点。\n右键点击则可移除节点。
+buildtoolbar_popup_uts_tidywires 交织的线路让你眼花缭乱？\n现在，可以让一些线路“绕路”。\n\n点击一个线路后，再点击某处，会增加一个中途的节点。\n右键点击则可移除节点。
 buildtoolbar_popup_uts_remotedoor	无法用钥匙打开的坚固金属门(只能远程遥控打开)。用这种门可以有效防止囚犯窃取钥匙大规模越狱。
 buildtoolbar_popup_uts_dismantleutility	如题。
-buildtoolbar_popup_uts_pressurepad	每当有物体压在其上时，会向其连接的设备发出信号。\n\n不能区分员工与囚犯。\n\n我更喜欢用于为外部的教师、探监者和卡车打开‘道路闸门’。\n至于监狱内的门，如果我希望员工和囚犯都迅速通过，\n那么我干脆让它们一直开着好了。\n\n备注：有的模组提供了专供员工的门或压力板，\n但其实囚犯依然会等员工过来，然后跟着通过。\n况且，设置员工专区更简单有效。\n所以我就不提供这些半吊子的物品了。
+buildtoolbar_popup_uts_pressurepad	每当有物体压在其上时，会向其连接的设备发出信号。\n\n不能区分员工与囚犯。
 buildtoolbar_popup_uts_statuslight	根据接收到的信号，亮红灯或绿灯。\n\n它只是让你看的；对于囚犯和员工则毫无影响。
 
 buildtoolbar_popup_autolights_name	[自动灯具]
@@ -423,16 +423,16 @@ buildtoolbar_popup_help_targettinglaundry_1	“衣物分配”视图为你展示
 buildtoolbar_popup_help_targettinglaundry_2	~左键点击一间洗衣房，然后点击牢房、宿舍或入狱搜查室，\n使该前者为该房间提供服务。\n按住Shift键可设置多个房间的配对。\n\n
 buildtoolbar_popup_help_targettinglaundry_3	右键点击一间洗衣房，可将其目标配对重置为默认。
 buildtoolbar_popup_help_targettinglaundry_4	^\n小技巧
-buildtoolbar_popup_help_targettinglaundry_5	你可以随意为洗衣房搭配多个牢房，但洗衣房的运作速度是\n有限的(取决于洗衣房的大小、囚犯或警卫的数量)。\n一个大监狱使用仅仅一间洗衣房是很不明智的。\n
+buildtoolbar_popup_help_targettinglaundry_5	可以随意为洗衣房搭配多个牢房，但洗衣房的运作速度是\n有限的(取决于洗衣房的大小、囚犯或警卫的数量)。\n一个大监狱使用仅仅一间洗衣房是很不明智的。\n
 
 buildtoolbar_Logistics_Jobs		狱中劳役
 buildtoolbar_popup_help_jobs_1	“狱中劳役”视图为你展示哪些牢房拥有必须工作的囚犯，\n以及必须工作的囚犯数量。\n\n
 buildtoolbar_popup_help_jobs_2	~左键点击一个房间，可为该房间添加工作职位。\n在工作作息里，每个工作职位都可安排一个囚犯。\n右键点击该房间可移除一个职位。
 buildtoolbar_popup_help_jobs_3	^\n小技巧
-buildtoolbar_popup_help_jobs_4	\n有些工作，例如在厨房或车间干活，要求囚犯首先完成培训。\n你可以在[报告]窗口的[方案]标签页里启动这些项目。
+buildtoolbar_popup_help_jobs_4	\n有些工作，例如在厨房或车间干活，要求囚犯首先完成培训。\n可以在[报告]窗口的[方案]标签页里启动这些项目。
 buildtoolbar_popup_help_jobs_5	\n工作的囚犯按照每小时的工作领取少量报酬。\n安排最大数量的岗位未必是好主意；囚犯即使没有活干，\n也能领取报酬。\n\n为了避免偷窃违禁品或者闹事，你还需要部署警卫。
 
-buildtoolbar_popup_help_source_1	“来源”视图展示囚犯可以从每个房间偷窃哪些违禁品。\n此外，你可以在右侧查看每一种违禁品的供需。\n如果某种违禁品供不应求，囚犯更有可能尝试偷窃，\n尤其是他们迫切需要某种东西的时候。
+buildtoolbar_popup_help_source_1	“来源”视图展示囚犯可以从每个房间偷窃哪些违禁品。\n此外，可以在右侧查看每一种违禁品的供需。\n如果某种违禁品供不应求，囚犯更有可能尝试偷窃，\n尤其是他们迫切需要某种东西的时候。
 buildtoolbar_popup_help_source_2	^\n小技巧
 buildtoolbar_popup_help_source_3	\n并非所有拥有违禁品资源的房间都有必要让囚犯进入，\n可以限制或完全阻止囚犯进出这些房间。
 buildtoolbar_popup_help_source_4	\n虽然这个视图展示了哪些房间可以偷窃违禁品，但进入房间\n并不是囚犯得到自己想要的东西的唯一方式……
@@ -452,7 +452,7 @@ buildtoolbar_popup_help_informants_5	^\n小技巧
 buildtoolbar_popup_help_informants_6	\n保持激活线人(留在警卫室)并根据线人提供的信息进行搜查，\n会提高线人的“被怀疑度”。如果过高，那么线人就危险了……
 buildtoolbar_popup_help_informants_7	\n点击线人的[激活]按钮旁边的[X]，可以解雇线人。
 
-buildtoolbar_popup_help_utilities_1		“基础设施”视图显示监狱下方的各种管道连接。\n你可以建立电缆和水管，并利用电线连接各种物品。\n\n
+buildtoolbar_popup_help_utilities_1		“基础设施”视图显示监狱下方的各种管道连接。\n可以建立电缆和水管，并利用电线连接各种物品。\n\n
 buildtoolbar_popup_help_utilities_2		~创建电缆或管道时，按住鼠标左键，在你想要连接的两个点之间拖曳。\n右键点击可以取消现有的电缆或管道工程任务。
 buildtoolbar_popup_help_utilities_3		~\n利用电线连接物品时(例如将监控监视器连接到摄像头)，\n点击第一个物品，然后点击你想要连接的另一个物品。\n按住Shift键可以让你一次连接多个物品。
 buildtoolbar_popup_help_utilities_4		^\n小技巧
@@ -465,22 +465,22 @@ buildtoolbar_popup_help_guard_1			警卫是监狱工作人员的主体，处理�
 buildtoolbar_popup_help_guard_2			~你还可以左键点击或按住左键拖动鼠标，以选定一个或一群警卫，\n然后右键点击某个地方，命令他们立即移动到那里。\n\n
 buildtoolbar_popup_help_guard_3			有“压制”影响，让周围的囚犯更加安分一些。\n影响力的直径为17米（8+1+8）。\n可以越过墙壁。但室内和户外互相独立。\n（你在作弊模式下，按F9，启用 Influence 可查看。）\n\n
 buildtoolbar_popup_help_guard_4			注意：压制的好处很明显，但同时会让囚犯变得消极：\n · 囚犯走路变慢。\n · 对工作和改造项目缺乏兴趣。\n · 即使参加培训项目，也容易失败。\n所以，你应当只对必要的人和地方进行压制。\n\n
-buildtoolbar_popup_help_guard_5			在屏幕顶部显示，你可以查看有多少警卫在待命。\n保留适当比例的警卫待命，可以让轮岗更顺畅。
+buildtoolbar_popup_help_guard_5			在屏幕顶部显示，可以查看有多少警卫在待命。\n保留适当比例的警卫待命，可以让轮岗更顺畅。
 buildtoolbar_popup_help_guard_6			搜查有概率会失败。\n唯一的例外是搜查有地道的马桶。
 
 buildtoolbar_popup_help_workman_1	工人负责建造监狱、卸货，并把货物运送到需要它们的地方。\n\n如果你合理分布‘仓库’，可以缩减他们在路上的时间。\n\n
 buildtoolbar_popup_help_workman_2	^小技巧\n\n
-buildtoolbar_popup_help_workman_3	工人大体上会自行运作。但如果想要快速完成一个建造任务，\n你可以利用“Ctrl+左键”将该它设为高优先级。\n这会使最近的工人放下手头的工作，而去完成你给的任务。
+buildtoolbar_popup_help_workman_3	工人大体上会自行运作。但如果想要快速完成一个建造任务，\n可以利用“Ctrl+左键”将该它设为高优先级。\n这会使最近的工人放下手头的工作，而去完成你给的任务。
 
 buildtoolbar_popup_help_cook_1	厨师会做饭、洗餐盘、倒垃圾，并把食材运到厨房。\n\n
-buildtoolbar_popup_help_cook_2	当你有多个厨房时，你不能直接指定每个厨房有多少厨师。\n不过你可以通过炊具数量来间接管理。\n\n
+buildtoolbar_popup_help_cook_2	当你有多个厨房时，你不能直接指定每个厨房有多少厨师。\n不过可以通过炊具数量来间接管理。\n\n
 buildtoolbar_popup_help_cook_3	厨师的忙碌时间从饭前4小时开始，到餐盘洗完和垃圾清完结束。
 buildtoolbar_popup_help_cook_4	大体上，你需要厨师的数量=炊具数×1.5\n或者，=囚犯数÷12\n\n当然，伙食政策会显著影响厨师的工作量。\n\n即使有囚犯打工，你仍然需要这么多厨师，\n以便确保早餐可以及时完成。
 
 buildtoolbar_popup_help_warden_1	“悬停提示”\n点击典狱长，在其菜单中可以设置统计的大类。\n这同时也决定所有囚犯的信息。\n\n不过，当囚犯刚刚被典狱长评估后，会暂时优先显示\n“再犯罪可能性”；在举重后，暂时显示“疾病点数”；\n“危险座谈”，暂时显示“不满爆发点”。
-buildtoolbar_popup_help_warden_2	\n“疾病”（或者说，不健康）\n你可以调整疾病难度系数，但不可以关闭该机制。\n每个囚犯根据其疾病点数，会随机发生受伤事件。\n（请理解为生病。毕竟我无法很真实地模拟。）\n受伤的频率与整体的难度系数和个人的点数成正比。\n受伤程度与疾病点数相关，不过还有一些上下浮动。\n这些非暴力的受伤者们需要你更加重视医疗和伙食。
-buildtoolbar_popup_help_warden_3	\n“睡眠加速”\n每天有近一半的时间，你会觉得傻傻地等待很无聊。\n点击典狱长，在其菜单中可以设置。\n到了你定义的时间段，时钟会加快5倍。于是早晨很快就会到来。\n\n注意：由于技术限制，我无法针对囚犯睡眠的行为。\n你定义的“睡眠时间段”应该确保绝大多数囚犯真的会在其间睡觉。\n否则，即使没有睡觉，只要囚犯在他们的牢房，一律会被当做睡觉，\n而加速改变其多种需求。见特殊物品“睡眠加速需求调整”。\n\n由于技术上的重重限制，它仅当你“启用工具和作弊”时才生效。\n确切地说，按F1后可以看到，"ImmediateObjects"一项必须启用。
-buildtoolbar_popup_help_warden_4	\n\n“睡眠加速”功能的开发很难很难。\n但即使我克服了一个又一个技术难题，最终还是需要作弊模式。\n假如我能联系上开发者、且他们还有意愿改进的话就好了………
+buildtoolbar_popup_help_warden_2	\n“疾病”（或者说，不健康）\n可以调整疾病难度系数，但不可以关闭该机制。\n每个囚犯根据其疾病点数，会生病受伤。\n受伤的频率与整体的难度系数和个人的点数成正比。\n受伤程度与疾病点数相关。\n这些非暴力的受伤者们需要你更加重视医疗和伙食。
+buildtoolbar_popup_help_warden_3	\n“睡眠加速”\n每天有近一半的时间，你会觉得傻傻地等待很无聊。\n点击典狱长，在其菜单中可以设置。\n到了你定义的时间段，时钟会加快5倍。于是早晨很快就会到来。\n\n注意：由于技术限制，无法针对囚犯睡眠的行为。\n定义的“睡眠时间段”应该确保绝大多数囚犯真的会在其间睡觉。\n否则，即使没有睡觉，只要囚犯在他们的牢房，一律会被当做睡觉，\n而加速改变其多种需求。见特殊物品“睡眠加速需求调整”。\n\n由于技术上的重重限制，它仅当你“启用工具和作弊”时才生效。\n确切地说，按F1后可以看到，"ImmediateObjects"一项必须启用。
+buildtoolbar_popup_help_warden_4	\n\n“睡眠加速”功能需要作弊模式。
 
 buildtoolbar_popup_help_armedguard_1	除了应对囚犯的暴力举动之外，武装警卫并不会做\n警卫的工作（开监狱门、搜查等）。\n\n
 buildtoolbar_popup_help_armedguard_2	平时适合用影响力压制囚犯，避免他们闹事。\n影响力的直径为25米（12+1+12）。\n武装警卫的压制太强。不要过度部署。\n在关键的时间出现在关键区域为宜。\n\n
@@ -489,7 +489,7 @@ buildtoolbar_popup_help_armedguard_4	开枪射杀囚犯，一般会让周围的�
 buildtoolbar_popup_help_armedguard_5	疲劳时，会去员工休息室。
 
 buildtoolbar_popup_help_doctor_1	自动治疗附近5米所有受伤的人，无论是员工还是囚犯。\n\n平时在‘医务室’待命。\n往往被动地等待伤员上门。只有发生集体受伤事件才会出来服务。
-buildtoolbar_popup_help_doctor_2	~你可以选中他们并右键点击目的地，让其立即移动。
+buildtoolbar_popup_help_doctor_2	~可以选中他们并右键点击目的地，让其立即移动。
 
 buildtoolbar_popup_help_janitor_1	最基本的工作是清洁室内的各种脏东西。\n此外，也负责协助洗衣并运送囚服。\n\n
 buildtoolbar_popup_help_janitor_2	^小技巧\n\n
@@ -522,7 +522,7 @@ buildtoolbar_popup_help_foreman_2	如果你大力发展工坊的生产，那么�
 buildtoolbar_popup_help_foreman_3	如果培训需求很大，你可能希望再多雇佣一个工头。\n可惜有名额限制。所以你只能优化培训和生产。\n比如：设法提高培训的通过率；工作的囚犯们的刑期不应太短。
 
 buildtoolbar_popup_help_psychologist_1	[报告/需求]需要你雇佣至少一名心理医师。\n\n
-buildtoolbar_popup_help_psychologist_2	两种改造项目需要用到心理医师。在你采用我这个模组之前，\n心理医师是唯一需要雇佣多名的高级员工。\n\n
+buildtoolbar_popup_help_psychologist_2	两种改造项目需要用到心理医师。在采用这个模组之前，\n心理医师是唯一需要雇佣多名的高级员工。\n\n
 buildtoolbar_popup_help_psychologist_3	使用"对调办公室"来给心理医师们合适位置上的办公室。\n\n
 buildtoolbar_popup_help_psychologist_4	如果你开设“行为疗法”方案，那么要确保囚犯可以\n走到心理医师的办公室。
 
@@ -530,12 +530,12 @@ buildtoolbar_popup_help_accountant_1	[行政系统]的一些研究需要此高�
 
 buildtoolbar_popup_help_lawyer_1	[行政系统]的一些研究需要此高级员工。
 
-buildtoolbar_popup_help_gangs_1 帮派画面显示监狱目前的帮派状况。\n你可以查看每一个帮派的信息，看到哪些帮派拥有哪些房间，\n以及哪些囚犯是帮派成员。还包括：哪些帮派成员是帮派干部\n(以双圈图案标示)，以及帮派领袖(以三圈图案标示)。\n\n
-buildtoolbar_popup_help_gangs_2 ~若你想强制赶走控制着某个区域的帮派，你可以选定房间并\n点击[驱逐]按钮。但是显然该帮派不会乐意……
+buildtoolbar_popup_help_gangs_1 帮派画面显示监狱目前的帮派状况。\n可以查看每一个帮派的信息，看到哪些帮派拥有哪些房间，\n以及哪些囚犯是帮派成员。还包括：哪些帮派成员是帮派干部\n(以双圈图案标示)，以及帮派领袖(以三圈图案标示)。\n\n
+buildtoolbar_popup_help_gangs_2 ~若你想强制赶走控制着某个区域的帮派，可以选定房间并\n点击[驱逐]按钮。但是显然该帮派不会乐意……
 buildtoolbar_popup_help_gangs_3 ^\n小技巧
 buildtoolbar_popup_help_gangs_4 \n你无法控制和管理被帮派控制的区域。\n你必须将其收复，否则无法添加或移除该区域的任何东西。
 buildtoolbar_popup_help_gangs_5 \n非帮派成员使用帮派控制区域的设施时，将被收取保护费。\n而敌对帮派成员则会彻底避开那些区域。
-buildtoolbar_popup_help_gangs_6 \n你可以使用警卫室以更好地维持你在某个区域的影响力。\n部署警卫到与潜在帮派区域相临的警卫室，有利于你的控制。
+buildtoolbar_popup_help_gangs_6 \n可以使用警卫室以更好地维持你在某个区域的影响力。\n部署警卫到与潜在帮派区域相临的警卫室，有利于你的控制。
 buildtoolbar_popup_help_gangs_7 \n帮派成员非常保护他们的领袖。\n如果领袖出了什么事，他们肯定不高兴……
 
 buildtoolbar_popup_help_weathermap_1	“温度”视图显示监狱内各区域的温度。\n若一个区域过冷，该区域的囚犯对“保暖”的需求就会上升。\n\n温度主要是通过‘暖气片’来提高。\n热水澡也很重要。\n相应地，需要‘锅炉’和‘热水管’。
@@ -555,7 +555,7 @@ buildtoolbar_popup_help_zoning_5	基本上，有了好的区划设置，你就�
 buildtoolbar_popup_help_guards_1	“部署”工具可以让你在区域里驻守警卫。\n\n这些警卫会在所指派的区域里随意走动，也会在该区域执行\n任何警卫的职务，例如帮人开门。
 buildtoolbar_popup_help_guards_2	~左键点击以增加区域内驻守的警卫人数。\n右键点击以移除警卫。
 buildtoolbar_popup_help_guards_3	^\n小技巧
-buildtoolbar_popup_help_guards_4	\n若你解锁了“微观管理”，你可使用[部署时刻盘]。\n这可以让你制定出警卫指派至特定区域的时刻表。\n\n例如，如果你只想要在吃饭时间部署警卫在食堂，你可以——\n\n
+buildtoolbar_popup_help_guards_4	\n若你解锁了“微观管理”，你可使用[部署时刻盘]。\n这可以让你制定出警卫指派至特定区域的时刻表。\n\n例如，如果你只想要在吃饭时间部署警卫在食堂，可以——\n\n
 buildtoolbar_popup_help_guards_5	~点击时刻表上所有与吃饭作息一致的时间槽位(原本白色)，\n标记为同一个数字(以及颜色)，令它们组成一个时间段。\n然后，点击上方刻度，移动时刻指针到该时间段中的任一一格。\n最后，点击食堂以指派警卫去驻守。\n\n
 buildtoolbar_popup_help_guards_6	当你移动指针到别的时间段，你会发现食堂没有此警卫；\n因而，那时他们可以去做别的事情。\n\n默认时间段为白色的，表示全天24小时不间断。\n\n注意：若你在指派警卫时，没有手动选择某一时间槽位，\n那么时刻表会使用当前的时刻(指针为白色三角)。\n所以，在改变部署时，请确保你选择了正确的时刻！
 
@@ -566,7 +566,7 @@ buildtoolbar_popup_help_patrols_3	^\n小技巧
 buildtoolbar_popup_help_patrols_4	\n巡逻中的警卫依旧会执行警卫职责，例如开门或搜查囚犯。\n训犬员和武装警卫则不会。
 buildtoolbar_popup_help_patrols_5	\n若你解锁了“微观管理”，你将可以访问[部署时刻盘]。
 
-buildtoolbar_popup_help_accessonly_1	“目的地专区”工具让你可以标记一些区域为通常应被避开。\n如果你更希望人们选择不同的路线，那么它让你可以阻止\n人们把这些房间当做是捷径(穿堂而过)。\n\n
+buildtoolbar_popup_help_accessonly_1	“目的地专区”工具让可以标记一些区域为通常应被避开。\n如果你更希望人们选择不同的路线，那么它让可以阻止\n人们把这些房间当做是捷径(穿堂而过)。\n\n
 buildtoolbar_popup_help_accessonly_2	~左键点击你想要标记为“目的地专区”的区域。\n特别的是：这可以叠加在平常的戒备设置上。\n\n
 buildtoolbar_popup_help_accessonly_3	~右键点击则移除它。\n\n
 buildtoolbar_popup_help_accessonly_4	^\n小技巧\n\n
@@ -721,7 +721,7 @@ codex_options_v2gui	2.0版图形用户界面(GUI)
 codex_options_zoomtomouse	缩放到鼠标
 codex_options_oneclickrapsheet	一键查看犯罪档案
 codex_options_disableanalytics	禁止提交分析
-codex_tooltip_disableanalytics	我们收集匿名的统计数据，以利于改进游戏体验。\n我们所收集的数据可以在 metrics.txt 看到。
+codex_tooltip_disableanalytics	收集匿名的统计数据，以利于改进游戏体验。\n所收集的数据可以在 metrics.txt 看到。
 
 codex_options_language	语言
 
@@ -745,7 +745,7 @@ codex_enabled	[已启用]
 codex_disabled	[已禁用]
 
 codex_option_intake						持续接收新囚犯
-codex_tooltip_intake					若启用，你每天都会收到随机数目的新囚犯...一直如此\n\n若禁用，你可以前往报告、点击囚犯栏来选择何时接收囚犯。
+codex_tooltip_intake					若启用，你每天都会收到随机数目的新囚犯...一直如此\n\n若禁用，可以前往报告、点击囚犯栏来选择何时接收囚犯。
 codex_option_fogofwar					战争迷雾
 codex_tooltip_fogofwar					【额外挑战】\n除非有警卫在此区域巡逻，或区域内有监控摄像头，\n否则你将无法看见监狱内部的情况。\n如果迷雾中发生了事端，没有警卫会知道，自然无法响应。
 codex_option_lakes						生成湖泊
@@ -871,12 +871,12 @@ codex_mod_scenario	剧情
 codex_mod_content	内容
 codex_mod_load_scenario	加载剧情
 
-codex_publishmod	发布我的这个模组
-codex_mod_update	更新我的这个模组
+codex_publishmod	发布这个模组
+codex_mod_update	更新这个模组
 codex_mod_published_good	已发布模组
-codex_mod_published_good_msg	你已成功发布模组。
+codex_mod_published_good_msg	已成功发布模组。
 codex_mod_published_bad	发布模组失败
-codex_mod_published_bad_msg	你的模组发布失败。
+codex_mod_published_bad_msg	模组发布失败。
 codex_mod_modsupdated	模组已更新
 codex_mod_modsupdated_msg	某些你的已激活模组已经更新，点击[确定]\n以应用新的变更。游戏会自动存档。
 codex_mod_translationcaption	这是非英语的翻译吗？
@@ -1187,7 +1187,7 @@ report_schedule	改造项目时刻表
 report_intake	接收
 
 report_grants_bankloan	银行贷款
-report_grants_bankloan_text	你可以从银行获得一大笔贷款。\n作为回报，银行将每天收取利息，你必须通过现金流支付。\n\n按时还款会使你的信用评级提高，银行会愿意贷给你更多的钱。\n反之，如果你错过还款，你的信用评级会降低，当你下次需要\n贷款时，将遭到银行拒绝。\n\n注意：仅靠支付每日利息，无法还清贷款。\n在信用评级为负数时将贷款全额还请，将再也无法贷款。
+report_grants_bankloan_text	可以从银行获得一大笔贷款。\n作为回报，银行将每天收取利息，你必须通过现金流支付。\n\n按时还款会使你的信用评级提高，银行会愿意贷给你更多的钱。\n反之，如果你错过还款，你的信用评级会降低，当你下次需要\n贷款时，将遭到银行拒绝。\n\n注意：仅靠支付每日利息，无法还清贷款。\n在信用评级为负数时将贷款全额还请，将再也无法贷款。
 report_grants_max1	你只能同时接受1项补助。\n让会计来解除限制。
 report_grants_max2	你只能同时接受不超过2项补助。\n让会计来解除限制。
 report_grants_max3	你只能同时接受不超过3项补助。
@@ -1244,13 +1244,13 @@ report_intake_locked	未解锁
 report_intakeclosed	关闭囚犯接收
 report_intakeclosed_tooltip	你的囚犯接收是关闭的。除非你再次打开它，否则你将不会收到任何新的囚犯。
 report_intakenumperday	每日人数
-report_intakenumperday_tooltip	你下一次接收囚犯的总人数。\n\n你可以调节上面的滑块，以改变接收犯人的类别的比例。
+report_intakenumperday_tooltip	你下一次接收囚犯的总人数。\n\n可以调节上面的滑块，以改变接收犯人的类别的比例。
 report_intaketotalprisoners	囚犯总数
-report_intaketotalprisoners_tooltip	你想要的你的监狱里的囚犯的总数。\n新接收的囚犯不会使监狱的总人数超过这个数字。\n\n你可以调节上面的滑块，以改变接收犯人的类别的比例。\n\n注意：新囚犯的戒备类别，与牢房容量完全无关！\n除非你没有按类别划分牢房区域，否则还是用“填补容量”吧。
+report_intaketotalprisoners_tooltip	你想要的你的监狱里的囚犯的总数。\n新接收的囚犯不会使监狱的总人数超过这个数字。\n\n可以调节上面的滑块，以改变接收犯人的类别的比例。\n\n注意：新囚犯的戒备类别，与牢房容量完全无关！\n除非你没有按类别划分牢房区域，否则还是用“填补容量”吧。
 report_intakeallavailable	尽管来吧
 report_intakeallavailable_tooltip	接收全部可获得的囚犯。将会在下一次接收囚犯时执行。
 report_intakefillcapacity	填补容量
-report_intakefillcapacity_tooltip	以尽可能多的囚犯来填补你的监狱容量。\n\n你可以调节上面的滑块，以改变接收犯人的类别的比例。\n每种戒备类别的囚犯，都会补充到其牢房区域的容量。
+report_intakefillcapacity_tooltip	以尽可能多的囚犯来填补你的监狱容量。\n\n可以调节上面的滑块，以改变接收犯人的类别的比例。\n每种戒备类别的囚犯，都会补充到其牢房区域的容量。
 reports_intaketypenone	关闭接收
 reports_intaketypefillcapacity	填补容量
 reports_intaketypetotalprisoners	囚犯总数
@@ -1266,12 +1266,12 @@ report_intakeall	全部
 report_intakefill	到 *X
 report_intakefill_mothers	填补到 *X (不计算家庭牢房)
 report_intake_list_tooltip_title	接收类别
-report_intake_list_tooltip	可接收的囚犯类别列表。\n\n每个类别下，池的大小表示可得囚犯的数量。\n此数量会根据滑块的比例，随着时间而增减。\n\n你可以调节滑块，以改变接收犯人的类别的比例。\n\n低戒备囚犯如果得到有效改造，并提供假释，\n那么每天能够有10分之一的人被释放，\n从而得到3000元的奖金。\n\n高戒备的囚犯，刑期很长，但也因此可以充分培训，\n进而制造高级商品。
+report_intake_list_tooltip	可接收的囚犯类别列表。\n\n每个类别下，池的大小表示可得囚犯的数量。\n此数量会根据滑块的比例，随着时间而增减。\n\n可以调节滑块，以改变接收犯人的类别的比例。\n\n低戒备囚犯如果得到有效改造，并提供假释，\n那么每天能够有10分之一的人被释放，\n从而得到3000元的奖金。\n\n高戒备的囚犯，刑期很长，但也因此可以充分培训，\n进而制造高级商品。
 report_intake_list_tooltip_dr	\n\n在接收死刑犯前，你需要准备好“死刑犯专区”牢房。\n死刑犯的接收要比普通囚犯慢很多。\n你不会总能补充到死刑犯；这种犯人十分罕见。
 report_intake_buttons_tooltip_title	下批接收
-report_intake_buttons_tooltip	你可以在下一批接收时使用此部分增加或减少你希望接收的囚犯数量。\n\n选择”无“监狱将不会接收新囚犯。选择”全部“将接收所有可被接收的囚犯。\n\n每类囚犯的数目可以用上述滚动条调节。
+report_intake_buttons_tooltip	可以在下一批接收时使用此部分增加或减少你希望接收的囚犯数量。\n\n选择”无“监狱将不会接收新囚犯。选择”全部“将接收所有可被接收的囚犯。\n\n每类囚犯的数目可以用上述滚动条调节。
 report_intake_overview_tooltip_title	囚犯接收概况
-report_intake_overview_tooltip	你可在此查看下一波囚犯的押送情况，并可获得资金。你可以用上述滚动条及按钮调整押送犯人的数目及类别。可获得的资金由每类囚犯的数目决定。
+report_intake_overview_tooltip	你可在此查看下一波囚犯的押送情况，并可获得资金。可以用上述滚动条及按钮调整押送犯人的数目及类别。可获得的资金由每类囚犯的数目决定。
 
 report_needs_prisoners	囚犯需求
 report_needs_staff	员工需求
@@ -1332,7 +1332,7 @@ policy_mealcost	$*X / 天
 policy_totalmealcost	(总计: $*X / 天)
 policy_cell_quality	牢房品质分级
 policy_cell_quality_tooltip_title	牢房品质分级
-policy_cell_quality_tooltip	如果启用，基于行为表现，囚犯只会被指派到其应得的质量的牢房。\n哪怕没有别的牢房可用了，行为不端的囚犯也永远得不到高质量的牢房。\n\n如果禁用，囚犯会被指派到任意质量的牢房。\n但低于平均水平的质量会让人心生不忿。\n如果表现良好，囚犯依旧会被升级到更高质量的牢房。\n\n启用它会导致你为接收新囚犯而费神许多。\n\n我的建议：禁用这个选项。
+policy_cell_quality_tooltip	如果启用，基于行为表现，囚犯只会被指派到其应得的质量的牢房。\n哪怕没有别的牢房可用了，行为不端的囚犯也永远得不到高质量的牢房。\n\n如果禁用，囚犯会被指派到任意质量的牢房。\n但低于平均水平的质量会让人心生不忿。\n如果表现良好，囚犯依旧会被升级到更高质量的牢房。
 policy_staffbreak_length	员工轮流时长: *P 分钟
 policy_staffbreak_num	每日轮休次数: *P
 policy_staffbreakmax	员工轮休上限：*P%
@@ -1447,7 +1447,7 @@ victory_warning_toomanyescapes	如果今天有更多囚犯越狱，你将遭到�
 victory_warning_executions	今天你处决死刑犯时，必须严格遵循正式流程。
 victory_warning_staffpayrise	如果再不提高薪酬，你的员工就快要罢工了。
 victory_warning_staffstrike	你的员工罢工了！
-victory_warning_staffonstrike	员工已经在罢工——我们失去了大约90%的警卫力量！\n如果不在今天提高薪酬，他们威胁要彻底走人了。
+victory_warning_staffonstrike	员工已经在罢工——监狱失去了大约90%的警卫力量！\n如果不在今天提高薪酬，他们威胁要彻底走人了。
 
 victory_prisoners_units	处地方
 victory_prisonersreleased_units	个囚犯被释放
@@ -1465,13 +1465,13 @@ victory_advisernotice_toomanydeaths1	别说我们没警告过你。\n由于最�
 victory_advisernotice_toomanydeaths2	你因犯罪被判入狱服刑十年。祝你好运。
 victory_adviserwarning_riot1	你的监狱失控了。立刻镇压暴动。\n否则，政府就要干涉并用武力收回监狱。
 victory_advisernotice_riot1	你没能控制这次暴动。\n政府已吊销我们的监狱合约，并派出部队来夺回监狱。
-victory_adviserwarning_toomanyescapes1	我们即将面临公关危机。近期有太多囚犯越狱，这是你的错。
+victory_adviserwarning_toomanyescapes1	近期有太多囚犯越狱，监狱即将面临公关危机。
 victory_adviserwarning_toomanyescapes2	封锁这个地方，确保再没有人能够越狱，否则媒体会对你口诛笔伐。
 victory_advisernotice_toomanyescapes1	你失败了。这座监狱成了媒体的笑柄，他们需要讨伐的对象。
 victory_advisernotice_toomanyescapes2	那个对象就是你。你被解雇了。
-victory_adviserwarning_bankrupt1	我们破产了！你极糟的管理能力使监狱陷入财政危机。
+victory_adviserwarning_bankrupt1	监狱破产了！你极糟的管理能力使监狱陷入财政危机。
 victory_adviserwarning_bankrupt2	迅速设法解决这个问题，否则你会被解雇。
-victory_advisernotice_bankrupt1		我们被迫宣布破产，把这座监狱交给政府管理。你失败了。
+victory_advisernotice_bankrupt1		监狱被迫宣布破产，这座监狱被交给政府管理。你失败了。
 victory_adviserwarning_wardendeaths1	为你工作风险实在太高了。\n我们很难再找到愿意在这座监狱工作的典狱长。
 victory_adviserwarning_wardendeaths2	如果你再让典狱长死掉，我们就只好让解雇你了。
 victory_advisernotice_wardendeaths1	你没能为典狱长提供安全的工作环境。\n所有人都害怕给你工作。
@@ -1735,24 +1735,24 @@ needs_help_bladder		人人皆需上厕所，囚犯也一样。\n\n别忘记，�
 needs_help_bowels		同“小便”。\n只不过，其周期上限是小便的两倍。\n失败后果: 坏情绪+拉裤裆(让囚服变脏)
 needs_help_sleep		囚犯只能在他们指派到的牢房里睡觉。\n显然，他们会需要一张床。\n\n你偶尔会发现，某个囚犯虽然人在被窝里，但其睡眠和\n舒适需求完全没有减少。搜查此人的马桶，会有惊喜。\n从晚上8点开始就可以睡觉了，\n只要囚犯在他的牢房里。\n\n+ 时间\n- 睡觉\n失败后果: 坏情绪
 needs_help_food			人人皆需吃饭，且大部分的人一天需要吃不止一次。\n\n若你发现厨房无法应付需求量，试着多雇用或调来几个厨师。\n你也可以在[报告]窗口中的[政策]标签页，调整你的伙食政策。\n\n+ 时间\n- 吃饭\n\n失败后果: 坏情绪+挨饿(长期的话，会饿死)
-needs_help_safety		即使在监狱，你的囚犯也需要安全感。\n\n如果你的监狱有太多斗殴事件或整体危险水平过高，\n囚犯会感到不安全，进而考虑武装自己。\n\n若这渐渐变成一个问题，你可以试着雇用更多警卫、建立更多\n巡逻路线或者满足囚犯的其它需求，藉此提高监狱的安全。\n\n监狱的“危险等级”的低/高，影响本需求的增/减。\n\n失败后果: 为了自保而去冒险抢武器\n\n以上只是官方说法。我做了实验，并没有发现这个需求\n很高会产生什么后果……
+needs_help_safety		即使在监狱，你的囚犯也需要安全感。\n\n如果你的监狱有太多斗殴事件或整体危险水平过高，\n囚犯会感到不安全，进而考虑武装自己。\n\n若这渐渐变成一个问题，可以试着雇用更多警卫、建立更多\n巡逻路线或者满足囚犯的其它需求，藉此提高监狱的安全。\n\n监狱的“危险等级”的低/高，影响本需求的增/减。\n\n失败后果: 为了自保而想方设法得到武器
 needs_help_hygiene		大部分的囚犯会想要定期洗澡，尤其是早上起床后。\n\n“淋浴”作息会强迫那些牢房里没有淋浴物品的囚犯前往淋浴间。\n或者，增加自由活动时间，让囚犯依自己的需求洗澡。\n\n+ 时间\n- 淋浴\n\n失败后果: 坏情绪
-needs_help_exercise		很多囚犯会想要保持好身材。\n\n你可以增加一个庭院，让他们散步或跑步。\n无论在庭院还是其它区域，安装举重床也有助于此。\n\n+ 时间\n- (庭院)放风\n- (举重床)举重\n\n失败后果: 坏情绪
-needs_help_recreation	无聊的囚犯，是危险的囚犯。\n\n你可以在公共区域增加一些消遣的设施，例如电视或收音机，\n藉此达到囚犯对于休闲娱乐的需求。\n\n+ 时间\n- 收音机，作用于整个房间\n- (电视和多个座位)看电视\n- (台球桌)打台球\n- (游戏街机)打游戏\n\n失败后果: 坏情绪
+needs_help_exercise		很多囚犯会想要保持好身材。\n\n可以增加一个庭院，让他们散步或跑步。\n无论在庭院还是其它区域，安装举重床也有助于此。\n\n+ 时间\n- (庭院)放风\n- (举重床)举重\n\n失败后果: 坏情绪
+needs_help_recreation	无聊的囚犯，是危险的囚犯。\n\n可以在公共区域增加一些消遣的设施，例如电视或收音机，\n藉此达到囚犯对于休闲娱乐的需求。\n\n+ 时间\n- 收音机，作用于整个房间\n- (电视和多个座位)看电视\n- (台球桌)打台球\n- (游戏街机)打游戏\n\n失败后果: 坏情绪
 needs_help_comfort		囚犯一般需要感到舒适，生理上和心理上皆如此。\n\n有许多方法可以帮助达到这一点，例如允许家庭探监、\n提供热水澡，或者单纯是确保他们有地方可以坐而已。\n\n+ 时间\n- (座位)坐着\n- (床)放松\n- (电视和多个座位)看电视\n- (探监室)探监\n- (锅炉)热水澡\n- (床)睡觉\n\n失败后果: (不明)\n该需求似乎并不导致坏情绪。
 needs_help_environment	囚犯讨厌居住在脏乱的环境，但这么多囚犯一起使用同样的\n设施，周遭环境可能很快就脏乱了。\n\n雇用一些清洁工或安排囚犯打扫马桶，以保持环境整洁。\n\n周围环境的清洁程度的低/高，影响本需求的增/减。\n\n失败后果: (不明)\n注：该需求不导致坏情绪。亦即不会引发暴动。
 needs_help_privacy		有时候，囚犯会想要有自己的时间。\n\n通常待在自己牢房可以满足这个需求。\n如果和其他囚犯共享一个宿舍(拘留室、宿舍)，他们会觉得隐私不足。\n早晚需要换牢房。\n\n+ 与他人共用牢房的时间\n- 独自或与宝宝一起的时间\n\n失败后果: 不明\n不端行为: 发飙\n女性囚犯的概率远高于男性囚犯\n该需求似乎还会导致更多的地道。
 needs_help_freedom		就算在监狱里，你的囚犯还是会想要感到某种程度上的自由。\n\n增加“自由活动”或“庭院放风”到作息，会有助于此。\n\n+ 被关起来的时间\n- 自由活动的时间\n- (游戏街机)玩游戏\n- (树)接触自然\n失败后果: 不明\n不端行为: 越狱
 needs_help_clothing		就算总是一样颜色的连裤衫，囚犯时不时还是会想要干净衣服。\n\n增加洗衣房，并雇用清洁工或安排囚犯工作，以让他们美梦成真。\n\n+ 时间\n+ 下雨时在户外\n- 获得 囚服干净\n\n失败后果: (不明)
 needs_help_drugs		不少囚犯都有毒瘾问题——这可能也是他们入狱的原因。\n\n在医务室推动“毒瘾治疗”方案，有助于解决这个问题。\n\n如果囚犯偷偷使用了麻醉剂，他们会异常亢奋。\n有时会因为过量而导致生命危险。\n\n+ 时间\n- 使用相应的违禁品: 麻醉剂(除了酒)\n\n[可以削弱此需要]\n- 成功通过相应的改造项目: 毒瘾的药物治疗\n- 长时间地戒断(没有使用相应的违禁品)\n\n失败后果: 戒断(长期看是好事)\n不端行为: 发飙
-needs_help_alcohol		不少囚犯饱受酒瘾的困扰，会竭尽全力把酒弄到手。\n\n你可以尝试推行“酗酒者团体治疗”，以减轻这种困扰。\n\n+ 时间\n- 使用相应的违禁品: 酒\n\n[可以削弱此需要]\n- 成功通过相应的改造项目: 酗酒者团体治疗\n- 长时间地戒断(没有使用相应的违禁品)\n\n失败后果: 戒断(长期看是好事)\n不端行为: 发飙
+needs_help_alcohol		不少囚犯饱受酒瘾的困扰，会竭尽全力把酒弄到手。\n\n可以尝试推行“酗酒者团体治疗”，以减轻这种困扰。\n\n+ 时间\n- 使用相应的违禁品: 酒\n\n[可以削弱此需要]\n- 成功通过相应的改造项目: 酗酒者团体治疗\n- 长时间地戒断(没有使用相应的违禁品)\n\n失败后果: 戒断(长期看是好事)\n不端行为: 发飙
 needs_help_spirituality	一些囚犯有各种不同的宗教信仰。\n\n在监狱内增加教堂长凳或祈祷垫，可以让囚犯施行他们的宗教。\n但是建立 礼拜堂 并实施“精神引导”项目的成效最佳，\n并且还能普遍安抚囚犯。\n\n+ 时间\n- (教堂长凳、祈祷垫)祈祷\n\n失败后果: (不明)
 needs_help_literacy		一些囚犯就是想要读些东西。\n\n增加图书馆，让囚犯借阅书籍，以满足这个需求。\n\n+ 时间\n- (图书馆)借书\n- (小书架)读书\n\n失败后果: (不明)
 needs_help_warmth		没有人想在寒冷中度日，但大自然可不管你。\n\n在监狱内增加暖气片，保持室内温暖，以阻止冷天演变成问题。\n\n+ 暴露在在寒冷区域\n- 在温暖区域(暖气片)\n\n失败后果: (不明)\n\n此外，虽然没有列在这里，但“过热”也是一种负面情况，\n所以不要滥用加热设施。
 needs_help_babysleep	宝宝的睡眠时间需要比一般囚犯长。\n\n若你的囚犯有宝宝，请确保有 婴儿床，让宝宝可以安心睡觉。\n\n+ 时间\n- (婴儿床)[宝宝]睡眠\n\n失败后果: (不明)
 needs_help_babyplay		宝宝需要活动和娱乐。\n\n若你的囚犯有宝宝，请确保公共区域有 玩耍垫。\n\n+ 时间\n- (玩耍垫)[宝宝]玩耍\n\n失败后果: (不明)
 needs_help_family		大部分的囚犯想要和家人保持联系。\n最简单的方式是增加电话亭，不过探监室的成效更好。\n邮件收发室也有利于该需求。\n\n+ 时间\n- (探监室)探监\n- (电话亭)与家人通电话\n- 获得 邮件\n\n失败后果: 坏情绪\n不端行为: 越狱
-needs_help_luxuries		很多囚犯时不时地要享用一点奢侈品。你可以通过建造商店来满足该需求，并且在这个过程中稍稍挣点小钱。\n该需求得以满足的囚犯会更少惹麻烦，但忽视该需求也没什么大不了的；毕竟，这里是监狱。
+needs_help_luxuries		很多囚犯时不时地要享用一点奢侈品。可以通过建造商店来满足该需求，并且在这个过程中稍稍挣点小钱。\n该需求得以满足的囚犯会更少惹麻烦，但忽视该需求也没什么大不了的；毕竟，这里是监狱。
 
 needs_help_staffbladder			员工也需要上厕所啊。\n在“员工休息室”或“员工专区”房间里安装马桶。\n当轮休时，他们会来用。
 needs_help_staffbowels			员工也需要上厕所啊。\n在“员工休息室”或“员工专区”房间里安装马桶。\n当轮休时，他们会来用。
@@ -2159,10 +2159,10 @@ reformprogram_tazertrained	已有执照：电击枪
 
 reformprogram_workshopinduction_text	安全第一！囚犯必须通过这门课程才能在工坊工作。
 reformprogram_foundationeducation_text	许多囚犯甚至缺乏基本的阅读、写作和数学技能。\n本课程旨在使囚犯达到基本水平。通过的囚犯可在图书馆工作。\n难度为25。总课时极长。好在同时上课的人数够多。
-reformprogram_generaleducation_text		没有任何已知的好处。\n感兴趣的囚犯极少。\n难度为50。通过率很低。\n我猜想也许会降低再犯罪率。\n\n【调整】原本这是一个早期补助“通过教育行动来改造”的条件。\n一直卡在这一条，很让人难受。\n我把它从补助条件里去掉了。\n所以，你完全不用再为它纠结了。
+reformprogram_generaleducation_text		很少囚犯会感兴趣。
 reformprogram_carpentry_text			需要较强实践能力的一项复杂技能。\n合格的囚犯可用此技能在木匠桌制作出高价木制品。\n难度为60。
 reformprogram_kitcheninduction_text		在为数百人提供伙食时，食物标准十分重要。\n在去厨房工作之前，囚犯必须完成此课程。
-reformprogram_therapy_text				囚犯通常较难控制他们的暴力天性。与监狱心理医师的一对一谈话，\n旨在提供工具帮助囚犯，在变得暴力之前阻止事态升级。\n\n只有暴力倾向的囚犯会来参加，而且全凭自愿。\n如果改造成功，那么囚犯会变得更有忍耐力，不容易闹事。\n(开发者官方的说法如此。\n在游戏中验证太麻烦，我就干脆信了吧。)\n难度为40。总课时10小时。\n\n警卫巡逻会压制囚犯，导致其成功率下降。\n事实上，自愿接受治疗的囚犯似乎也不会闹事。\n注意：不要因为“员工专区”导致囚犯无法走到办公室。\n\n这大概是性价比最低的改造。\n建议：设为“超高戒备”专区，只服务于这些最让你头疼的危险分子。
+reformprogram_therapy_text				囚犯通常较难控制他们的暴力天性。与监狱心理医师的一对一谈话，\n旨在帮助囚犯克服暴力行为问题。\n\n只有暴力倾向的囚犯会来参加，而且全凭自愿。\n如果改造成功，那么囚犯会变得更有忍耐力，不容易闹事。\n\n警卫巡逻会压制囚犯，导致其成功率下降。\n注意：不要因为“员工专区”导致囚犯无法前往办公室。
 reformprogram_methadone_text			一套包括5种药物替代品的课程，用以治疗囚犯的毒品成瘾症状。\n每次治疗都将帮助囚犯缓解毒瘾，完成课程还有几率完全消除毒瘾。\n\n大约每20个囚犯中有一人需要这个项目。
 reformprogram_alcoholicsmeeting_text	酗酒者团体治疗能够帮助囚犯减少对酒精的欲望。\n无法完全消除需求。\n\n大约每20个囚犯中有一人需要这个项目。
 reformprogram_parolehearing_text		确定囚犯是否符合提前释放资格的听证会。\n如果囚犯被提前释放后不再犯罪，那么可以获得可观的奖励。\n如果你积极改造囚犯，那么这是让你的努力开花结果的好途径。\n\n如果有资格的囚犯得不到听证机会，会增加状态“焦躁”。
@@ -2239,10 +2239,10 @@ regime_worklockdown	工作或监禁
 
 regimetooltip_nothing	囚犯被关在其牢房中。他们无事可做，只能反思以往作出\n的选择，是怎样令自己走到这步田地。\n\n即使对于最强硬的囚犯，长期监禁也是一种态度坚决的惩罚。\n对于需要严惩的囚犯，可以适当增加这个作息。\n相应地，会产生“自由”需求。\n\n其实还是可以做点事的，比如淋浴、娱乐、睡觉。\n但囚犯会感到被压制，而情绪会不太好。\n\n一般用在“睡觉”作息前后的一个小时。\n\n而如果用“监禁”完全替代“睡觉”，囚犯虽然会照常入睡，\n但会早早醒来，而得不到充分睡眠。
 regimetooltip_sleep	囚犯被关在牢房里，灯也熄了。所有人都上床睡觉。\n除了正在异常兴奋的那些家伙，以及挖越狱地道的……\n\n正常情况下，囚犯会尽可能待在被窝里。\n这样可以充分睡眠。但注意不要过度睡眠。\n\n一觉醒来后，很多人会积攒不少生理需求。比如吃喝拉撒和卫生。
-regimetooltip_eat	囚犯们前往指定的食堂，就坐吃饭。\n\n囚犯可以使用食堂内的一切设施，但在时间结束前不得离开。\n\n厨师会提前4小时开始准备伙食。\n如果你突然调整作息，那么小心会出现断档。\n\n由于游戏机制的种种问题，我建议你每天只提供2顿。\n这不真实，但3顿实在不适合这游戏。
-regimetooltip_shower	囚犯们脱掉衣服进入淋浴间。每日的淋浴对囚犯的卫生很重要。\n但有些囚犯懒得去，除非被强迫。(我表示怀疑……)\n\n注意：其实，强制的淋浴时间，很少是个好主意。\n哪怕牢房里就有花洒，他们也只能去淋浴间。\n不用淋浴而有其它需求的囚犯，也无法提前离开。
-regimetooltip_yard	囚犯可以到庭院中进行必要的锻炼、晒太阳、呼吸新鲜空气。\n\n这段时间内，囚犯可以使用庭院里的任何设施，比如\n用举重床健身、打电话给所爱之人、淋浴等。\n\n囚犯被限制在庭院。不过你可以在庭院安装多种功能物品。\n该作息可以用来错开不同的囚犯群体，以防发生冲突。\n特别是帮派之间的冲突。\n\n对于高戒备群体，“庭院放风”+警戒塔可以压制其嚣张气焰。
-regimetooltip_work	囚犯可在监狱四处工作。\n任何职位空缺都会被填补，囚犯会自动到其工作岗位报到。\n(你可以在[部署>狱中劳役]设立职位空缺。)\n\n“工作”期间，所有的改造项目也会进行。它们算是一回事。\n\n注意：工作中的囚犯无法处理自己的需求。\n\n至于目前没有工作或参加改造项目的囚犯，则如同“自由活动”。
+regimetooltip_eat	囚犯们前往指定的食堂，就坐吃饭。\n\n囚犯可以使用食堂内的一切设施，但在时间结束前不得离开。\n\n厨师会提前4小时开始准备伙食。
+regimetooltip_shower	囚犯们脱掉衣服进入淋浴间。每日的淋浴对囚犯的卫生很重要。\n但有些囚犯懒得去，除非被强迫。\n\n注意：强制的淋浴时间，很少是个好主意。\n哪怕牢房里就有花洒，他们也只能去淋浴间。\n不用淋浴而有其它需求的囚犯，也无法提前离开。
+regimetooltip_yard	囚犯可以到庭院中进行必要的锻炼、晒太阳、呼吸新鲜空气。\n\n这段时间内，囚犯可以使用庭院里的任何设施，比如\n用举重床健身、打电话给所爱之人、淋浴等。\n\n囚犯被限制在庭院。不过可以在庭院安装多种功能物品。\n该作息可以用来错开不同的囚犯群体，以防发生冲突。\n特别是帮派之间的冲突。\n\n对于高戒备群体，“庭院放风”+警戒塔可以压制其嚣张气焰。
+regimetooltip_work	囚犯可在监狱四处工作。\n任何职位空缺都会被填补，囚犯会自动到其工作岗位报到。\n(可以在[部署>狱中劳役]设立职位空缺。)\n\n“工作”期间，所有的改造项目也会进行。它们算是一回事。\n\n注意：工作中的囚犯无法处理自己的需求。\n\n至于目前没有工作或参加改造项目的囚犯，则如同“自由活动”。
 regimetooltip_freetime	囚犯们可以使用监狱中的所有设施，只要区划允许其进入。\n囚犯最喜欢这段时间，会开展社交，并尽可能好地打理其需求。\n\n较长的自由活动可以缓解监狱中的压力和紧张情绪，\n但很多人认为这算不上什么刑罚。(降低[评级]中改造指标的评分)\n\n自由活动时，囚犯可以按其需要，最大自由地行动。\n不过，狱中劳役和囚犯参加的改造项目，无法进行。\n\n此外不会做的事情，只有一个：开始吃饭。不过如果\n上一个作息是吃饭，那么没吃完的囚犯可以在这时继续。
 regimetooltip_worklockdown	关于“工作”部分，见“工作或自由活动”。\n\n目前没有工作或参加改造项目的囚犯，会被“监禁”在牢房里。
 
@@ -2513,7 +2513,7 @@ roomerror_noprisoners	没有指派 牢房区域 的囚犯到此食堂吃饭。
 roomerror_nocanteen_cells	从此牢房无法抵达任何食堂。\n此牢房中的囚犯没有吃饭的地方。
 roomerror_nocanteen_kitchen	从此厨房无法抵达任何食堂。\n厨房在吃饭时间不会烹制任何食物。
 
-ceos_letter	更新(2017-07-23)：\n[同步] 跟进12b版本升级，补上了翻译。\n[改进] 不端行为标记 变得更小且更加透明，这样就不太阻挡你的视线了。\n[改进] 睡眠加速(仅限启用了作弊模式)时，以前会“购买”特殊物品“睡眠加速需求调整”，花费惊人的金额。现在它的价格改成0，并且不再在物品菜单中显示。\n[修复]有六种房间里，即使并非“员工专区”，员工也应该能够休息。我以前不知道这一点，意外地导致员工无法休息。\n[修复]雇佣“工头”时的一个错误。\n[修复][报告/需求]窗口还是官方更新并添加“员工需求”之前的，导致无法查看员工需求。\n[修复]代号48无法在一开始就被移除，而需要先碰到一个囚犯才能出现\n"终止任务并退场"的选项。\n[修复]升级了分拣帮派成员的摄像头，在分拣囚犯时会导致弹出调试窗口。\n\n亲爱的先生/女士：\n\n恭喜你完成基本入门。你现在是完全合格的监狱建筑师了！很快你就会从\n空置地块和几堆砖块开始设计、建造并经营你自己的监狱。在开始之前，\n我想我或许可以给你分享一些重要的经验教训。\n\n1. 每个监狱都需要典狱长——他应当是你最先雇用的人员之一。给他建一间\n漂亮的办公室，他会通过[行政系统]，开启一系列高级功能。\n\n2. 单人牢房很贵，特别是在早期资金紧张时。为了存下钱来，先从一个\n大型的拘留室起步吧；它马上就可以给很多囚犯共同使用。\n\n3. 设立厨房和食堂，并在第一个囚犯抵达之前开始运营。别忘了雇用厨师\n——没有什么比空空的胃更能激怒囚犯！\n\n4. 建造监狱是一项昂贵的事业，你需要擅长通过补助与合同，筹集大笔资金。\n你可以从右下角的[报告]窗口，访问[补助]标签页。\n\n我要讲的就是这些——祝你好运！\n\n监狱建筑师公司\n首席执行官\n\n\n附赠小提示：\n · 按 - 和 + 键，可以缩放界面比例。\n · 按1、2、3、4可以设定时钟速度为1、2、5、10倍。\n  (界面上的三个按钮，则是更快的2、4、10倍。)\n · 经常存档是个好习惯。(我偶尔会遇到程序崩溃的情况。)\n\n{中文豪华版} 祝你游戏愉快！\nyuanze3131@gmail.com
+ceos_letter	\n\n亲爱的先生/女士：\n\n恭喜你完成基本入门。你现在是完全合格的监狱建筑师了！很快你就会从\n空置地块和几堆砖块开始设计、建造并经营你自己的监狱。在开始之前，\n我想我或许可以给你分享一些重要的经验教训。\n\n1. 每个监狱都需要典狱长——他应当是你最先雇用的人员之一。给他建一间\n漂亮的办公室，他会通过[行政系统]，开启一系列高级功能。\n\n2. 单人牢房很贵，特别是在早期资金紧张时。为了存下钱来，先从一个\n大型的拘留室起步吧；它马上就可以给很多囚犯共同使用。\n\n3. 设立厨房和食堂，并在第一个囚犯抵达之前开始运营。别忘了雇用厨师\n——没有什么比空空的胃更能激怒囚犯！\n\n4. 建造监狱是一项昂贵的事业，你需要擅长通过补助与合同，筹集大笔资金。\n可以从右下角的[报告]窗口，访问[补助]标签页。\n\n我要讲的就是这些——祝你好运！\n\n监狱建筑师公司\n首席执行官\n\n\n附赠小提示：\n · 按 - 和 + 键，可以缩放界面比例。\n · 按1、2、3、4可以设定时钟速度为1、2、5、10倍。\n  (界面上的三个按钮，则是更快的2、4、10倍。)\n · 经常存档是个好习惯。(我偶尔会遇到程序崩溃的情况。)\n\n{中文豪华版} 祝你游戏愉快！\nyuanze3131@gmail.com
 
 quickbuild_basiccell	基础牢房
 quickbuild_solitarycell	禁闭室
@@ -2563,7 +2563,7 @@ campaignchapter_chapternumber	第 *C 章
 
 campaignchapter_deathrow	死刑犯
 
-campaignchapter_deathrow_description	我们已签订在这座监狱中建立处决室的合同，必须要赶在\n其中一名的处决时间之前建成。
+campaignchapter_deathrow_description	监狱已签订建立处决室的合同，必须要赶在\n其中一名的处决时间之前建成。
 
 campaigncutscene_deathrowmurder	双重谋杀
 campaigncutscene_deathrowconfession	忏悔
@@ -2609,7 +2609,7 @@ adviser_deathrow_internalwalls2	建造一些砖墙以分隔空间。
 objective_deathrow_buildinternalwalls	建造内墙
 
 adviser_deathrow_internaldoors1	现在给分隔墙安装监狱门(大)。
-adviser_deathrow_internaldoors2	你可以点击鼠标中键(或按R键)在放置前旋转物品。
+adviser_deathrow_internaldoors2	可以点击鼠标中键(或按R键)在放置前旋转物品。
 
 objective_deathrow_buildinternaldoors	建造内门(点击鼠标中键或按R键来旋转物品)
 
@@ -2636,7 +2636,7 @@ adviser_deathrow_optional1	重要的部分已经弄好，但你还可以做一�
 adviser_deathrow_optional2	这并非必要的要求，完全由你来决定。\n这取决于你对囚犯及其生活环境的重视程度。
 adviser_deathrow_optional3	一扇向外的窗户和一个小书架即可改善牢房环境。
 adviser_deathrow_optional4	较高品质的地板材料——比如木地板或马赛克瓷砖，\n会让监狱看起来更好。
-adviser_deathrow_optional5	你可以在外面安装一些照明。\n如果你认为需要的话，还可以加一条铺砌的路径。
+adviser_deathrow_optional5	可以在外面安装一些照明。\n如果你认为需要的话，还可以加一条铺砌的路径。
 
 adviser_deathrow_transfer05	这就是接受审问的人，爱德华•罗姆西。\n曾经是一名教师，难以置信吧。
 adviser_deathrow_transfer06	他是否应该被监禁不由我们决定，需要法律裁决，\n我们只负责执行任务。
@@ -2760,21 +2760,21 @@ clock_pm	下午
 # Events
 # =============================================================================
 
-event_powerstationfire	功率骤增导致我们的发电机过载起火了！
-event_powerstationfire_x	功率骤增导致我们的发电机严重过载爆炸了！
-event_powerstationfirelarge	功率骤增导致我们的发电机过载起火了！
-event_powerstationfirelarge_x	功率骤增导致我们的发电机严重过载爆炸了！
+event_powerstationfire	功率骤增导致发电机过载起火了！
+event_powerstationfire_x	功率骤增导致发电机严重过载爆炸了！
+event_powerstationfirelarge	功率骤增导致发电机过载起火了！
+event_powerstationfirelarge_x	功率骤增导致发电机严重过载爆炸了！
 event_kitchenfire	厨房着火了！
 event_waterpipeburst	水管爆裂了，水四处蔓延。\n尽快修好以避免造成严重损坏。
 event_bulkintake	附近监狱的一场灾难导致其整个设施都无法使用。\n我们不得不将那里的囚犯转移到你的监狱，因为附近没有其他\n合适的设施。他们很快就会抵达。
 event_workshopaccident	工坊事故导致一个囚犯严重受伤，没办法移动他！快派一名医生！
-event_subsidence	地面下沉摧毁了我们的一部分外墙。你应该立即修补！
+event_subsidence	地面下沉摧毁了监狱的一部分外墙。应该立即修补！
 event_earthquake	当地地震导致监狱的一个区域坍塌！
-event_virus	我们收到许多囚犯生病的报告。\n有必要甄别感染者，并对他们进行隔离，以防止传染。
-event_virus_x	我们收到许多囚犯生病的报告，症状似乎非常严重。\n你应该将病患隔离治疗，以防大范围传染。
+event_virus	监狱收到许多囚犯生病的报告。\n有必要甄别感染者，并对他们进行隔离，以防止传染。
+event_virus_x	监狱收到许多囚犯生病的报告，症状似乎非常严重。\n你应该将病患隔离治疗，以防大范围传染。
 event_treefire	你的林场着火了！
-event_foodpoisoning	我们持续收到囚犯食物中毒的报告。厨房的某些食物肯定坏了。\n不幸的是，病人除了等症状退去，也别无他法。
-event_cilistleak	我们不知道为何，但是你的线人们的信息外泄了。\n如果我们不立刻将他们移到别处，他们将面临真正的危险。
+event_foodpoisoning	监狱持续收到囚犯食物中毒的报告。厨房的某些食物肯定坏了。\n不幸的是，病人除了等症状退去，也别无他法。
+event_cilistleak	不知道为何，但是线人们的信息外泄了。\n如果监狱不立刻将他们移到别处，他们将面临真正的危险。
 event_keysersoze	近期有一起备受关注的帮派案件，表明我们这儿的\n一名低戒备的囚犯，其实是某帮派的高层领袖。\n虽然此人保持低调，可是现在每个人都知道了……\n(制作组在致敬电影《非常嫌疑犯》)...
 event_preacherconversion	一名富有魅力的囚犯成了某种传教士，而其他人似乎也开始跟随他。\n这不见得是一个问题，但囚犯们也许很快会有更多精神层面的需求。
 
@@ -2810,15 +2810,15 @@ event_lessworkdemand_complete	囚犯们现在不再抱怨工作时长——我�
 event_moresleepdemand_1	有囚犯抱怨说没有足够的睡眠时间，并为此感到非常愤怒。
 event_moresleepdemand_2	他们说，如果每晚得不到7小时的睡眠时间，就会开始闹事。
 event_moresleepdemand_ignore	看起来囚犯们最终失去势头，放弃了对缺乏睡眠的抗议。\n估计他们太累了。
-event_moresleepdemand_complete	囚犯们的睡眠时间安排问题最终平息了。\n你可以根据需要再次改变安排，不会引发问题。
+event_moresleepdemand_complete	囚犯们的睡眠时间安排问题最终平息了。\n可以根据需要再次改变安排，不会引发问题。
 
 event_morefreetimedemand_1	囚犯们对其日常安排中的自由活动过短感到很不开心。
 event_morefreetimedemand_2	警卫们听到囚犯们在密谈，如果事情不马上改变，他们就会开始搞破坏。
 event_morefreetimedemand_ignore	囚犯们平静下来，不再针对缺乏自由活动而制造麻烦了。\n或许他们意识到，如果总被关禁闭，那么自由活动就更少。
-event_morefreetimedemand_complete	已经放任那些要求更多自由活动的囚犯们够久了，\n所以你可以再次随意改变其时间安排。
+event_morefreetimedemand_complete	已经放任那些要求更多自由活动的囚犯们够久了，\n所以可以再次随意改变其时间安排。
 
-event_contrabandsurge_complete	我们刚刚发现，我们为囚犯课程而雇用的老师，一直在走私\n大量的违禁品。\n此人虽然被开除，但伤害已经造成。
-event_corruptingspiritualist_complete	我们为了宗教项目而雇用的精神领袖，其中一人一直用各种\n仇恨言论激怒囚犯们。\n此人虽然被开除了，但是囚犯们仍需时间冷静下来。
+event_contrabandsurge_complete	我们刚刚发现，监狱为囚犯课程而雇用的老师，一直在走私\n大量的违禁品。\n此人虽然被开除，但伤害已经造成。
+event_corruptingspiritualist_complete	监狱为了宗教项目而雇用的精神领袖，其中一人一直用各种\n仇恨言论激怒囚犯们。\n此人虽然被开除了，但是囚犯们仍需时间冷静下来。
 
 event_agitatingradio_1	根据一些警卫的说法，囚犯们收听的广播电台有一位新主持人，\n一直在发表激怒囚犯的言论。
 event_agitatingradio_2	趁他们还没有开始把那人的话往心里去，在这段时期里，\n还是把收音机移除为好。
@@ -2848,7 +2848,7 @@ objective_moresleepdemand_child	将睡眠时间增加到\n每天至少7小时
 objective_morefreetimedemand	给囚犯更多自由活动
 objective_morefreetimedemand_child	将自由活动时间增加到\n每天至少6小时
 objective_agitatingradio	煽动的电台节目
-objective_agitatingradio_child	当前的电台广播节目在激怒我们的囚犯……\n移除所有收音机
+objective_agitatingradio_child	当前的电台广播节目正在激怒囚犯……\n移除所有收音机
 
 # =============================================================================
 # Custom warden strings
@@ -3079,7 +3079,7 @@ attract_pressanykey	按任意键开始……
 # =============================================================================
 
 help_warning_gangleader	一个帮派的首领当前正在被惩罚。怎么处理是你的自由，但在惩罚的过程中，该帮派的所有成员都会大闹特闹，让人不得安闲。
-help_warning_deathrow	我们的第一个死刑犯刚刚到达了。我们需要确保在一个假释听证室里设置【死刑上诉】方案，以便让其进行上诉的听证。
+help_warning_deathrow	监狱的第一个死刑犯刚刚到达了。需要确保在一个假释听证室里设置【死刑上诉】方案，以便让其进行上诉的听证。
 
 buildtoolbar_walk_speed_Veryfast	非常快
 codex_load_failed_title	加载监狱吧。
@@ -3254,11 +3254,11 @@ buildtoolbar_popup_mat_newbarredwall	在基地上建造有栅栏的墙壁，以�
 buildtoolbar_popup_mat_newtiledwall	在基地上建造贴有瓷砖的墙壁，以创建新区域或房间。
 buildtoolbar_popup_mat_newhedgewall	长但是脆弱的树篱。这个方案美观，但不怎么安全。
 
-buildtoolbar_popup_mat_solacofloor	为我们的监狱地面打造一个高科技外观。Yutani 墙壁更适合。
-buildtoolbar_popup_mat_gratefloor	为我们的监狱地面打造一个高科技外观。
-buildtoolbar_popup_mat_newcargofloor	为我们的监狱地面打造一个定制外观。
-buildtoolbar_popup_mat_newironfloor	为我们的监狱地面打造一个定制外观。
-buildtoolbar_popup_mat_newcheckeredfloor	这种材料在你的厨房或客厅可能会很好看。
+buildtoolbar_popup_mat_solacofloor	为监狱地面打造一个高科技外观。Yutani 墙壁更适合。
+buildtoolbar_popup_mat_gratefloor	为监狱地面打造一个高科技外观。
+buildtoolbar_popup_mat_newcargofloor	为监狱地面打造一个定制外观。
+buildtoolbar_popup_mat_newironfloor	为监狱地面打造一个定制外观。
+buildtoolbar_popup_mat_newcheckeredfloor	这种材料在厨房或客厅可能会很好看。
 buildtoolbar_popup_mat_snow	很像水，只是色调更冷，更漂亮。
 
 buildtoolbar_popup_obj_visitorDoor	门，允许监狱探视者自行通过，不需要警卫来开门。警卫和工作人员也可以使用这扇门，但囚犯不能用。
@@ -3289,21 +3289,21 @@ buildtoolbar_deployment_ArmedPatrols	将武装警卫分配至你监狱的巡逻�
 buildtoolbar_popup_help_Guards_1	警卫工具可以让你在每个区域驻扎警卫。驻扎警卫会在所分配的区域随意走动，也会执行该区域的所有警卫工作，例如开门。\n\n
 buildtoolbar_popup_help_Guards_2	~按左键增加区域内驻扎的训犬员人数。按右键移除警卫。\n\n
 buildtoolbar_popup_help_Guards_3	^提示
-buildtoolbar_popup_help_Guards_4	- 若你解锁微觀管理功能，你可使用部署调度器。这可以让你制定守卫分配至特定区域的时间表。例如，若你只想要在吃飯时间部署守卫在餐廳，你可以選取调度器上每一个与吃飯时间一致的时间区塊，然后移动时间橫条至该区塊，再点擊餐廳以分配守卫。
-buildtoolbar_popup_help_Guards_5	- 共有最多 7 个不同的时间区域供你调度，还有默认的常效模式，让你可以建立复杂的部署程序以符合你监狱的需求。
+buildtoolbar_popup_help_Guards_4	- 若你解锁微觀管理功能，你可使用部署调度器。这可以让你制定守卫分配至特定区域的时间表。例如，若你只想要在吃飯时间部署守卫在餐廳，可以選取调度器上每一个与吃飯时间一致的时间区塊，然后移动时间橫条至该区塊，再点擊餐廳以分配守卫。
+buildtoolbar_popup_help_Guards_5	- 共有最多 7 个不同的时间区域供你调度，还有默认的常效模式，让可以建立复杂的部署程序以符合你监狱的需求。
 buildtoolbar_popup_help_Guards_6	- 如果你在分配训犬员时，没有手动选择一个时间区域，调度器会使用当下的时间；更改部署时，请确保你选择正确的时间！
 
 buildtoolbar_popup_help_Dogs_1	训犬员工具可以让你在每个区域驻扎训犬员。驻扎警卫会在所分配的区域随意走动，也会执行该区域的所有警卫工作，例如开门。\n\n
 buildtoolbar_popup_help_Dogs_2	~按左键增加区域内驻扎的训犬员人数。按右键移除训犬员。\n\n
 buildtoolbar_popup_help_Dogs_3	^提示
-buildtoolbar_popup_help_Dogs_4	- 若你解锁微观管理功能，你可使用部署调度器。这可以让你制定训犬员分配至特定区域的时间表。例如，若你只想要在吃饭时间部署训犬员在餐厅，你可以选取调度器上每一个与吃饭时间一致的时间区域，然后移动时间横条至该区域，再点击餐厅以分配训犬员。
+buildtoolbar_popup_help_Dogs_4	- 若你解锁微观管理功能，你可使用部署调度器。这可以让你制定训犬员分配至特定区域的时间表。例如，若你只想要在吃饭时间部署训犬员在餐厅，可以选取调度器上每一个与吃饭时间一致的时间区域，然后移动时间横条至该区域，再点击餐厅以分配训犬员。
 buildtoolbar_popup_help_Dogs_5	
 buildtoolbar_popup_help_Dogs_6	
 
 buildtoolbar_popup_help_ArmedGuards_1	武装警卫工具可以让你在每个区域驻扎武装警卫。驻扎警卫会在所分配的区域随意走动，也会执行该区域的所有警卫工作，例如开门。\n\n
 buildtoolbar_popup_help_ArmedGuards_2	~按左键增加区域内驻扎的警卫人数。按右键移除警卫。\n\n
 buildtoolbar_popup_help_ArmedGuards_3	^提示
-buildtoolbar_popup_help_ArmedGuards_4	- 若你解锁微观管理功能，你可使用部署调度器。这可以让你制定武装警卫分配至特定区域的时间表。例如，若你只想要在吃饭时间部署武装警卫在餐厅，你可以选取调度器上每一个与吃饭时间一致的时间区域，然后移动时间横条至该区域，再点击餐厅以分配武装警卫。
+buildtoolbar_popup_help_ArmedGuards_4	- 若你解锁微观管理功能，你可使用部署调度器。这可以让你制定武装警卫分配至特定区域的时间表。例如，若你只想要在吃饭时间部署武装警卫在餐厅，可以选取调度器上每一个与吃饭时间一致的时间区域，然后移动时间横条至该区域，再点击餐厅以分配武装警卫。
 buildtoolbar_popup_help_ArmedGuards_5	
 buildtoolbar_popup_help_ArmedGuards_6	 
 
@@ -3311,10 +3311,10 @@ interfacedeployment_PrioritizeArea	优先区域\n (*X)
 buildtoolbar_deployment_PrioritizeGuard	使用此选项，可以优先安排指定的警卫监视你监狱周围的特定区域。如果你人手紧缺，警卫会优先监视你设置的优先区域。有两个优先级别可选，“高”(>>) 和“超高”(>>>)。
 
 interfacedeployment_BluePatrol	蓝色巡逻
-buildtoolbar_deployment_BluePatrol	有颜色的巡逻路线允许重叠，你可以为这些线路单独安排警卫。点击拖拽可创建一条蓝色巡逻路线。右击拖拽可清除蓝色巡逻路线。使用“分配警卫”按钮添加警卫至巡逻路线。
+buildtoolbar_deployment_BluePatrol	有颜色的巡逻路线允许重叠，可以为这些线路单独安排警卫。点击拖拽可创建一条蓝色巡逻路线。右击拖拽可清除蓝色巡逻路线。使用“分配警卫”按钮添加警卫至巡逻路线。
 
 interfacedeployment_MagentaPatrol	红色巡逻
-buildtoolbar_deployment_MagentaPatrol	有颜色的巡逻路线允许重叠，你可以为这些线路单独安排警卫。点击拖拽可创建一条红色巡逻路线。右击拖拽可清除红色巡逻路线。使用“分配警卫”按钮添加警卫至巡逻路线。
+buildtoolbar_deployment_MagentaPatrol	有颜色的巡逻路线允许重叠，可以为这些线路单独安排警卫。点击拖拽可创建一条红色巡逻路线。右击拖拽可清除红色巡逻路线。使用“分配警卫”按钮添加警卫至巡逻路线。
 
 interfacedeployment_PrioritizePatrol	优先巡逻
 buildtoolbar_deployment_PrioritizePatrol	使用此选项，可以优先安排指定的警卫监视你监狱周围的特定巡逻路线。如果你人手紧缺，警卫会优先监视你设置的优先巡逻路线。有两个优先级别可选，“高”(>>) 和“超高”(>>>)。
@@ -3458,7 +3458,7 @@ buildtoolbar_popup_mat_limestonefloor	地板是褪色的石灰色。
 buildtoolbar_popup_mat_blueCarpet	铺设舒适地毯，非常适合员工区域。
 buildtoolbar_popup_mat_redCarpet	铺设舒适地毯，非常适合员工区域。
 buildtoolbar_popup_mat_brownCarpet	铺设舒适地毯，非常适合员工区域。
-buildtoolbar_popup_mat_paddedfloor	搭配软垫墙壁，为犯罪精神病囚犯创建完整的软垫牢房。
+buildtoolbar_popup_mat_paddedfloor	搭配软垫墙壁，为精神病囚犯创建完整的软垫牢房。
 buildtoolbar_popup_mat_grassstones	带有石板的草地区域。
 buildtoolbar_popup_mat_grassscornerfloor	带有泥土的草坪拐角，对于成角度的道路很有用。
 buildtoolbar_popup_mat_lunarfloor	具有星际外观的坚硬岩石表面。
@@ -3530,24 +3530,24 @@ buildtoolbar_popup_mat_greenclassywall	在地基上建造高级墙壁，以创�
 buildtoolbar_popup_obj_windowclassy	让外观看起来远好于实际状态。
 buildtoolbar_popup_obj_windowclassyLarge	让外观看起来远好于实际状态。
 
-buildtoolbar_popup_staff_psychiatrist	一名高级员工，定期为犯罪精神病囚犯提供咨询服务。\n一旦我们在监狱中设置了心理咨询方案，精神科医生便会定期提供一对一咨询服务，以帮助安抚我们的犯罪精神病囚犯。\n如果我们有很多犯罪精神病囚犯，我们应该聘用一些精神科医生来帮助他们。确保每位精神科医生都有自己的办公室。
+buildtoolbar_popup_staff_psychiatrist	一名高级员工，定期为精神病囚犯提供咨询服务。\n一旦监狱中设置了心理咨询方案，精神科医生便会定期提供一对一咨询服务，以帮助安抚精神病囚犯。\n如果有很多精神病囚犯，应该聘用一些精神科医生来帮助他们。确保每位精神科医生都有自己的办公室。
 
 buildtoolbar_popup_staff_orderly	医务人员，受过特殊训练，能处理犯罪精神病人。
 
-buildtoolbar_popup_obj_rorschachTest	在精神科医生办公室里添加罗夏测试，可改善精神科医生对犯罪精神病囚犯的治疗
-buildtoolbar_popup_obj_anatomyModel	在精神科医生办公室里添加解剖模型，可改善精神科医生对犯罪精神病囚犯的治疗。
-buildtoolbar_popup_obj_flipboard	在精神科医生办公室里添加带有大脑图像的翻转板，可改善精神科医生对犯罪精神病囚犯的治疗。
-buildtoolbar_popup_obj_medicineCabinetPsych	在精神科医生办公室里添加医药箱，可改善精神科医生对犯罪精神病囚犯的治疗。
-buildtoolbar_popup_obj_leatherSofa	在精神科医生办公室里添加经典皮革沙发，可改善精神科医生对犯罪精神病囚犯的治疗。
+buildtoolbar_popup_obj_rorschachTest	在精神科医生办公室里添加罗夏测试，可改善精神科医生对精神病囚犯的治疗
+buildtoolbar_popup_obj_anatomyModel	在精神科医生办公室里添加解剖模型，可改善精神科医生对精神病囚犯的治疗。
+buildtoolbar_popup_obj_flipboard	在精神科医生办公室里添加带有大脑图像的翻转板，可改善精神科医生对精神病囚犯的治疗。
+buildtoolbar_popup_obj_medicineCabinetPsych	在精神科医生办公室里添加医药箱，可改善精神科医生对精神病囚犯的治疗。
+buildtoolbar_popup_obj_leatherSofa	在精神科医生办公室里添加经典皮革沙发，可改善精神科医生对精神病囚犯的治疗。
 
-buildtoolbar_deployment_insaneseczone	只有犯罪精神病囚犯能够进入此区域。
+buildtoolbar_deployment_insaneseczone	只有精神病囚犯能够进入此区域。
 
 failuremessage_maximumcountreachedgeneric	放置数量已达上限
 
 buildtoolbar_popup_locked_PsychiatricConsultation	*B 次精神治疗后解锁
 buildtoobar_PsychConItemImproveInfo	- 升级精神科医生办公室。
-buildtoobar_PsychConItemImproveSuppression	- 咨询结束后，该犯罪精神病囚犯的\n压抑和某些需求降低 +5%
-buildtoobar_PsychConItemImproveGrace	- 咨询结束后，在其压抑和某些需求再次上升之前，\n为该犯罪精神病囚犯\n提供 1 天的额外“宽限”期。
+buildtoobar_PsychConItemImproveSuppression	- 咨询结束后，该精神病囚犯的\n压抑和某些需求降低 +5%
+buildtoobar_PsychConItemImproveGrace	- 咨询结束后，在其压抑和某些需求再次上升之前，\n为该精神病囚犯\n提供 1 天的额外“宽限”期。
 
 # =============================================================================
 # Room - Names
@@ -3559,9 +3559,9 @@ room_PaddedSolitary	软垫禁闭室
 # Room - Description
 # =============================================================================
 
-buildtoolbar_popup_room_paddedcell	适用于犯罪精神病囚犯，软垫墙壁能产生安抚效果。
-buildtoolbar_popup_room_paddedholdingcell	永久性软垫牢房准备好之前，新来的犯罪精神病囚犯会放置在这里。
-buildtoolbar_popup_room_paddedsolitary	专门针对穷凶极恶的犯罪精神病囚犯的隔离惩戒牢房。
+buildtoolbar_popup_room_paddedcell	适用于精神病囚犯，软垫墙壁能产生安抚效果。
+buildtoolbar_popup_room_paddedholdingcell	永久性软垫牢房准备好之前，新来的精神病囚犯会放置在这里。
+buildtoolbar_popup_room_paddedsolitary	专门针对穷凶极恶的精神病囚犯的隔离惩戒牢房。
 
 # =============================================================================
 # Quick Build - Names
@@ -3580,7 +3580,7 @@ quickbuild_PsychiatristOffice	精神科医生办公室
 interfacedeployment_insaneseczone	精神病设防区
 interfacetopbar_PrisonerCells_insaneSecOnly	犯罪精神病人容量：*X
 
-roomgrading_PsychiatristOffice_info	在精神科医生办公室解锁并放置额外物品，以提高对于犯罪精神病囚犯的治疗效果。\n
+roomgrading_PsychiatristOffice_info	在精神科医生办公室解锁并放置额外物品，以提高对于精神病囚犯的治疗效果。\n
 Items	通过精神病罪犯参加心理咨询计划解锁。
 roomgrading_PsychiatristOffice_Item	物品: *X
 roomgrading_PsychiatristOffice_Quality	精神科医生能力：*Q
@@ -3596,13 +3596,13 @@ roomgrading_score_outstanding	卓越
 # =============================================================================
 
 objective_grant_firstinsanecellblock	犯罪精神病人侧翼
-objective_grant_firstinsanecellblock_description	政府愿意出资扩建我们的监狱，为犯罪精神病囚犯提供住所并保护其身心健康。\n\n这项资助有助于建造特殊的软垫牢房和聘用训练有素的精神科医生。
+objective_grant_firstinsanecellblock_description	政府愿意出资扩建监狱，为精神病囚犯提供住所并保护其身心健康。\n\n这项资助有助于建造特殊的软垫牢房和聘用训练有素的精神科医生。
 objective_grant_firstinsanecellblock_cells	用 10 个软垫牢房为犯罪精神病人建造侧翼/牢房区域
-objective_grant_firstinsanecellblock_prisoners	接收 10 名犯罪精神病囚犯
+objective_grant_firstinsanecellblock_prisoners	接收 10 名精神病囚犯
 objective_grant_firstinsanecellblock_psychiatrist	聘用 2 位精神科医生（每人需要一间办公室）
 
-objective_readinsaneletter	首席执行官提供的关于犯罪精神病囚犯的准则
-objective_readinsaneletter_description	在将犯罪精神病囚犯纳入你的监狱之前，应该先准备好适当的设施和员工，以便照顾这些囚犯的需求 - 首席执行官…
+objective_readinsaneletter	首席执行官提供的关于精神病囚犯的准则
+objective_readinsaneletter_description	在将精神病囚犯纳入你的监狱之前，应该先准备好适当的设施和员工，以便照顾这些囚犯的需求 - 首席执行官…
 
 # =============================================================================
 # Wardens
@@ -3613,8 +3613,8 @@ warden_wardeninsanehawk_desc	作为一名前警务人员，霍克·哈特曼 把
 warden_wardeninsanehawk_desc_short	- 接收技巧后提升警卫耐力。
 
 warden_wardeninsaneslugworth_name	斯拉格沃斯博士
-warden_wardeninsaneslugworth_desc	所有其他监狱都拒绝时，斯拉格沃斯博士 为最穷凶极恶的犯罪精神病囚犯敞开了大门，他相信自己能帮助他们。\n\n - 精神科医生的治疗效果提升 20%\n - 接收犯罪精神病囚犯的几率更高！
-warden_wardeninsaneslugworth_desc_short	- 接收更多犯罪精神病囚犯。精神科医生的治疗效果更佳。
+warden_wardeninsaneslugworth_desc	所有其他监狱都拒绝时，斯拉格沃斯博士 为最穷凶极恶的精神病囚犯敞开了大门，他相信自己能帮助他们。\n\n - 精神科医生的治疗效果提升 20%\n - 接收精神病囚犯的几率更高！
+warden_wardeninsaneslugworth_desc_short	- 接收更多精神病囚犯。精神科医生的治疗效果更佳。
 
 warden_wardeninsanehudson_name	哈德森博士
 warden_wardeninsanehudson_desc	哈德森博士 准备进行其他典狱长做不到的事…\n\n - 应急服务工作速度提升 20%，且到达时间更早\n - 维修成本降低 10%
@@ -3632,14 +3632,14 @@ victory_insaneprisonersabused	精神病囚犯被攻击
 victory_warning_insaneprisonersabused	如果太多精神病囚犯被警卫攻击，你将遭到解雇。
 victory_insaneprisonersabused_units	攻击
 
-victory_adviserwarning_insaneprisonersdeaths1	不能再让犯罪精神病囚犯在我们的监狱里遭受虐待了！如果我们不齐心协力，媒体会让我们名誉扫地！
+victory_adviserwarning_insaneprisonersdeaths1	不能再让精神病囚犯在我们的监狱里遭受虐待了！如果我们不齐心协力，媒体会让我们名誉扫地！
 victory_advisernotice_insaneprisonersdeaths1	就是这样！你完了！你本该照顾这些精神病人，但你却让他们遭受了无法形容的虐待。我只能解雇你，但我建议你回家重新评估自己的人生选择。
 
 # =============================================================================
 # Codex
 # =============================================================================
 
-codex_option_criminallyinsane	犯罪精神病囚犯
+codex_option_criminallyinsane	精神病囚犯
 
 codex_tooltip_criminallyinsane	处理经常感觉压抑的囚犯，需要全新软垫牢房和精神帮助，以便减少他们的隐私、舒适、安全和自由需求，避免他们发怒。开启此设置后，如果不满足囚犯需求，你监狱中的一些普通囚犯也可能被逼疯。可以在地图设置中关闭囚犯成为犯罪精神病人设置。
 
@@ -3660,7 +3660,7 @@ codex_option_prisonerTurning	囚犯成为犯罪精神病人
 # =============================================================================
 
 rapsheet_category_insane	犯罪精神病人
-rapsheet_insane_bio_desc	犯罪精神病囚犯经常感到压抑，需要软垫牢房和精神帮助使他们保持冷静。\n\n发怒的犯罪精神病囚犯可能会进行攻击员工、破坏监狱、试图越狱和其他不可预测的行为。
+rapsheet_insane_bio_desc	精神病囚犯经常感到压抑，需要软垫牢房和精神帮助使他们保持冷静。\n\n发怒的精神病囚犯可能会进行攻击员工、破坏监狱、试图越狱和其他不可预测的行为。
 
 reputation_Weak	虚弱
 reputation_Insomniac	失眠
@@ -3685,7 +3685,7 @@ reputationtooltip_Addict	当感到压抑且得不到治疗时，该囚犯更有�
 reputationtooltip_Claustrophobic	当感到压抑且得不到治疗时，该囚犯越狱的欲望更高。
 reputationtooltip_ExtremelyStoical	该囚犯在被单独拘禁或有警卫在场时不会感到压抑。他们真的不在乎。
 reputationtooltip_ExtremelyVolatile	密切关注这类囚犯。任何事都能轻易激怒他们，他们会很快把事情搞砸。
-reputationtooltip_Psychopathic	比起其他犯罪精神病囚犯，该囚犯更危险且更难以捉摸。
+reputationtooltip_Psychopathic	比起其他精神病囚犯，该囚犯更危险且更难以捉摸。
 reputationtooltip_Insane	确保该囚犯能得到精神科医生的心理咨询和软垫牢房，让他们保持冷静。
 
 # =============================================================================
@@ -3693,15 +3693,15 @@ reputationtooltip_Insane	确保该囚犯能得到精神科医生的心理咨询�
 # =============================================================================
 
 report_intake_cat_insane	犯罪精神病人
-report_intake_list_tooltip_insane	犯罪精神病患者经常感到压抑，需要软垫牢房和精神帮助来减少他们的隐私、舒适、安全和自由需求，避免他们发怒。\n\n准备好一些软垫牢房或一间软垫拘留牢房之后，你才能申请犯罪精神病囚犯。\n\n通过房间菜单，可将普通牢房转化成软垫牢房。
-report_intake_insane_intake_empty	目前无法收容犯罪精神病囚犯。\n你需要建造软垫牢房或软垫拘留牢房。\n通过房间菜单，可将普通牢房转化成软垫牢房。
+report_intake_list_tooltip_insane	犯罪精神病患者经常感到压抑，需要软垫牢房和精神帮助来减少他们的隐私、舒适、安全和自由需求，避免他们发怒。\n\n准备好一些软垫牢房或一间软垫拘留牢房之后，你才能申请精神病囚犯。\n\n通过房间菜单，可将普通牢房转化成软垫牢房。
+report_intake_insane_intake_empty	目前无法收容精神病囚犯。\n你需要建造软垫牢房或软垫拘留牢房。\n通过房间菜单，可将普通牢房转化成软垫牢房。
 report_staff_group_prisoners_insane	犯罪精神病人
 report_Criminally_Insane	犯罪精神病人
 report_Pyschopathic	精神变态
 
 report_intake_enable_insane	可收容
 report_intake_psychward_title	精神病区：典狱长版
-report_intake_psychward_tooltip	激活该监狱的《精神病区：典狱长版》游戏内容。\n\n你可以接收犯罪精神病囚犯，但你首先需要在监狱作好准备。\n\n可搜寻并聘用精神科医生和护理人员。可建造软垫牢房和软垫拘留牢房。\n\n精神科医生和软垫牢房有助于安抚和控制你的犯罪精神病囚犯。
+report_intake_psychward_tooltip	激活该监狱的《精神病区：典狱长版》游戏内容。\n\n可以接收精神病囚犯，但你首先需要在监狱作好准备。\n\n可搜寻并聘用精神科医生和护理人员。可建造软垫牢房和软垫拘留牢房。\n\n精神科医生和软垫牢房有助于安抚和控制你的精神病囚犯。
 
 reformerror_no_psychiatrist	无精神科医生
 reform_completion_psychiatrist	- *X 名囚犯已完成 - *Y 名囚犯已治疗 (*P%)
@@ -3713,8 +3713,8 @@ report_staff_group_orderlies	护理人员
 research_Orderly	护理人员
 research_Psychiatrist	精神科医生
 
-researchtooltip_Orderly	普通警卫禁止攻击犯罪精神病囚犯，因为在此过程中这些囚犯可能会受到伤害。\n护理人员受过专业训练，可在不伤害他们的情况下控制这些犯罪精神病人。\n护理人员还会在晚上为精神变态的囚犯穿上拘束衣，防止他们在夜间伤害自己。
-researchtooltip_Psychiatrist	一名高级员工，定期为犯罪精神病囚犯提供咨询服务。\n一旦我们在监狱中设置了心理咨询方案，精神科医生便会定期提供一对一咨询服务，以帮助安抚我们的犯罪精神病囚犯。\n如果我们有很多犯罪精神病囚犯，我们应该聘用一些精神科医生来帮助他们。确保每位医生都有一间精神科医生办公室。
+researchtooltip_Orderly	普通警卫禁止攻击精神病囚犯，因为在此过程中这些囚犯可能会受到伤害。\n护理人员受过专业训练，可在不伤害他们的情况下控制这些犯罪精神病人。\n护理人员还会在晚上为精神变态的囚犯穿上拘束衣，防止他们在夜间伤害自己。
+researchtooltip_Psychiatrist	一名高级员工，定期为精神病囚犯提供咨询服务。\n一旦监狱中设置了心理咨询方案，精神科医生便会定期提供一对一咨询服务，以帮助安抚精神病囚犯。\n如果有很多精神病囚犯，应该聘用一些精神科医生来帮助他们。确保每位医生都有一间精神科医生办公室。
 
 # =============================================================================
 # Misc
@@ -3726,18 +3726,18 @@ buildtoolbar_header_foundationmain	主要
 buildtoolbar_header_foundationmore	更多
 
 reformprogram_PsychiatricConsultation	心理咨询
-reformprogram_PsychiatricConsultation_text	所有犯罪精神病囚犯都需要定期与精神科医生进行一对一安抚谈话，以帮助降低他们逐渐增长的压抑感。缺少精神科医生的帮助可能会使这些囚犯爆发暴力和其他特别反应。
+reformprogram_PsychiatricConsultation_text	所有精神病囚犯都需要定期与精神科医生进行一对一安抚谈话，以帮助降低他们逐渐增长的压抑感。缺少精神科医生的帮助可能会使这些囚犯爆发暴力和其他特别反应。
 reform_program_properties_NeedToBeEscorted	囚犯可能需要被护送前往参加谈话。
-reform_program_intake_insane	仅限犯罪精神病囚犯。
+reform_program_intake_insane	仅限精神病囚犯。
 
-insane_letter	尊敬的先生/女士，\n\n\n请遵循以下重要准则，确保准备好恰当的设施和员工，以便妥善照顾犯罪精神病囚犯。\n\n1. 犯罪精神病囚犯必须呆在软垫牢房。你可以将标准牢房转化为软垫牢房（通过房间按钮）。配备软垫牢房后，你就可以接收第一批囚犯。\n\n2. 确保你的员工工资表上有精神科医生和护理人员。精神科医生也需要一件特殊办公室。\n\n3. 为你的犯罪精神病囚犯设置一些心理咨询方案。这些与精神科医生（在软垫牢房）进行的一对一谈话有助于控制囚犯。升级精神科医生办公室也会提高其治疗能力。\n\n4. 如果不治疗也不检查，犯罪精神病囚犯可能会展现不可预测的行为，试图越狱或施加暴力。\n\n5. 护理人员会帮助护送和治疗囚犯，他们也不会像普通警卫那样镇压囚犯。白天结束时你还需要让护理人员为精神变态的犯罪精神病囚犯穿上拘束衣。\n\n6. 犯罪精神病囚犯与其他囚犯混狱可能会带来麻烦。在餐厅、庭院和其他区域建造并隔离犯罪病人区域是一个好办法。此外，不妨在犯罪精神病人牢房区域附近建造精神科医生办公室。\n\n7. 最后，其他安全等级的囚犯现在也有可能成为犯罪精神病人，因此请密切关注\n\n Prison Architects Corp，\n首席执行官
+insane_letter	尊敬的先生/女士，\n\n\n请遵循以下重要准则，确保准备好恰当的设施和员工，以便妥善照顾精神病囚犯。\n\n1. 精神病囚犯必须呆在软垫牢房。可以将标准牢房转化为软垫牢房（通过房间按钮）。配备软垫牢房后，你就可以接收第一批囚犯。\n\n2. 确保你的员工工资表上有精神科医生和护理人员。精神科医生也需要一件特殊办公室。\n\n3. 为你的精神病囚犯设置一些心理咨询方案。这些与精神科医生（在软垫牢房）进行的一对一谈话有助于控制囚犯。升级精神科医生办公室也会提高其治疗能力。\n\n4. 如果不治疗也不检查，精神病囚犯可能会展现不可预测的行为，试图越狱或施加暴力。\n\n5. 护理人员会帮助护送和治疗囚犯，他们也不会像普通警卫那样镇压囚犯。白天结束时你还需要让护理人员为精神变态的精神病囚犯穿上拘束衣。\n\n6. 精神病囚犯与其他囚犯混狱可能会带来麻烦。在餐厅、庭院和其他区域建造并隔离犯罪病人区域是一个好办法。此外，不妨在犯罪精神病人牢房区域附近建造精神科医生办公室。\n\n7. 最后，其他安全等级的囚犯现在也有可能成为犯罪精神病人，因此请密切关注\n\n Prison Architects Corp，\n首席执行官
 
 job_StraitJacket	穿上/移除拘束衣
 job_EscortInsane	护送精神病囚犯
 status_effect_sedated	已注射镇静剂
 
-orderly_description	护理人员受过特殊训练，能处理和镇静（如有需要）犯罪精神病囚犯。
-pyschiatrist_description	所有犯罪精神病囚犯都需要定期与精神科医生进行一对一心理咨询谈话。通过方案菜单添加心理咨询谈话。
+orderly_description	护理人员受过特殊训练，能处理和镇静（如有需要）精神病囚犯。
+pyschiatrist_description	所有精神病囚犯都需要定期与精神科医生进行一对一心理咨询谈话。通过方案菜单添加心理咨询谈话。
 
 insanetooltip_status	状态：*X
 insanetooltip_status_level0	冷静
@@ -3750,7 +3750,7 @@ mutator_name_ReducedDirtBuildup	减少泥土堆积
 mutator_tooltip_ReducedDirtBuildup	监狱周围泥土和垃圾的堆积速度减半。
 administrator_requiresoffice_psychiatrist	需要精神科医生办公室
 
-dlc_upsell	该存档使用来自《*D》扩展包的内容。由于我们无法在你的系统上检测到该扩展包，因此一些功能无法使用。请考虑购买《*D》以获取《监狱建筑师》完整体验。
+dlc_upsell	该存档使用来自《*D》扩展包的内容。由于无法在你的系统上检测到该扩展包，因此一些功能无法使用。请考虑购买《*D》以获取《监狱建筑师》完整体验。
 dlc_upsell_multiplayer	此多人游戏主机已购买《*D》扩展包，以访客身份进入亦可使用该扩展包。玩得开心！
 
 dlc_insane	精神病房：典狱长版本
@@ -4126,9 +4126,9 @@ buildtoolbar_popup_mat_pipewall	在基地上建造有管道通过的墙壁，以
 buildtoolbar_popup_mat_derelictwall	建造廉价的破旧墙壁搭配古老的外观。
 buildtoolbar_popup_mat_overgrownwall	建造廉价的蔓生墙壁，因为哪怕在监狱里，生命也自有其法。
 buildtoolbar_popup_mat_rustywall	建造锈迹斑斑的廉价墙壁搭配后世界末日外观。
-buildtoolbar_popup_mat_slumwall	建造廉价的贫民窟墙壁，因为你可以用在囚犯福利上省下的钱扩建办公室。
+buildtoolbar_popup_mat_slumwall	建造廉价的贫民窟墙壁，因为可以用在囚犯福利上省下的钱扩建办公室。
 buildtoolbar_popup_mat_bambooFence	有个人建造了竹制栅栏搭配营地外观。
-buildtoolbar_popup_mat_RunningTrack	非常适合我们的囚犯在庭院里慢跑。
+buildtoolbar_popup_mat_RunningTrack	非常适合囚犯在庭院里慢跑。
 buildtoolbar_popup_mat_BambooFloor	丛林营地外观的地面。
 buildtoolbar_popup_mat_DecayedWall	在地基上用腐坏的煤砖建造墙壁。
 buildtoolbar_popup_mat_flowerfield	长满美丽鲜花的草地区域。
@@ -4310,8 +4310,8 @@ buildtoolbar_deployment_Doctor	把医生分配到监狱中的各个区域。
 buildtoolbar_deployment_PrioritizeJanitor	使用此选项，可以优先安排清洁工在特定区域工作，然后再清理监狱周围其他区域。如果你人手紧缺，清洁工会优先清理你设置的优先区域。安排 1 名、2 名或 3 名清洁工优先清理一个区域。
 buildtoolbar_deployment_PrioritizeGardener	使用此选项，可以优先安排园丁在特定区域工作，然后再打理监狱周围其他区域。如果你人手紧缺，园丁会优先打理你设置的优先区域。安排 1 名、2 名或 3 名园丁优先打理一个区域。
 
-researchtooltip_deployment2	你可以通过“部署”菜单将这些员工具体分配到监狱的各个区域。
-researchtooltip_prioritize	你可以通过“部署菜单”将这些员工优先分配到监狱的各个区域。
+researchtooltip_deployment2	可以通过“部署”菜单将这些员工具体分配到监狱的各个区域。
+researchtooltip_prioritize	可以通过“部署菜单”将这些员工优先分配到监狱的各个区域。
 
 interfacetopbar_tooltip_totalChefs	共计 *X 名厨师
 interfacetopbar_tooltip_totalDoctors	共计 *X 名医生
@@ -4338,7 +4338,7 @@ reports_prsioners_transfer_numCells	（牢房可容纳 *X 名囚犯）
 reports_transfers_offMessage	可以通过“地图设置”菜单开启囚犯移送。
 report_Transfer	转移
 
-transfer_icon_tooltip	使用下列选项确定 *X 囚犯转换至 *Y 需要符合的标准。\n你可以使用“政策标准”栏让囚犯更难获得移送资格，也可使用其他选项直接取消某些类型的囚犯的移送资格。\n并非所有囚犯都对移送感兴趣，特别是那些刑期较短的囚犯，他们正打算挖地道逃狱，或者干脆认为安全等级更低的区域的状况和舒适度也不比他们所在的区域好多少。
+transfer_icon_tooltip	使用下列选项确定 *X 囚犯转换至 *Y 需要符合的标准。\n可以使用“政策标准”栏让囚犯更难获得移送资格，也可使用其他选项直接取消某些类型的囚犯的移送资格。\n并非所有囚犯都对移送感兴趣，特别是那些刑期较短的囚犯，他们正打算挖地道逃狱，或者干脆认为安全等级更低的区域的状况和舒适度也不比他们所在的区域好多少。
 transfer_tooltip_onOff	取消选择以打开/关闭选定的安全区域。
 
 transfer_description	为囚犯设置标准。囚犯若想转换至安全等级更低、更舒适的安全区域，则需要符合此标准。
@@ -4679,7 +4679,7 @@ action_usecomputer	使用电脑
 buildtoolbar_Logistics_RoomQuality		牢房品质
 buildtoolbar_popup_help_roomquality_1	“牢房品质”视图为你展示监狱中所有牢房和宿舍的质量。
 buildtoolbar_popup_help_roomquality_2	\n按照从0到10进行分级，数字越大表示品质越好。
-buildtoolbar_popup_help_roomquality_3	\n鼠标悬停一个房间，即可查看决定其品质的因素，\n并了解你可以添加什么来提高品质。
+buildtoolbar_popup_help_roomquality_3	\n鼠标悬停一个房间，即可查看决定其品质的因素，\n并了解可以添加什么来提高品质。
 buildtoolbar_popup_help_roomquality_4	^\n小技巧
 buildtoolbar_popup_help_roomquality_5	\n表现良好的囚犯有权进入品质更高的牢房。
 buildtoolbar_popup_help_roomquality_6	 \n囚犯可享受的品质待遇级别，等于其“无事故天数”。\n拥有品质更高的牢房有助于激励良好表现。\n
@@ -4947,7 +4947,7 @@ objective_grant_greenMachine_wind	购买并安装一个风力发电机
 objective_grant_greenMachine_hybrid	购买并安装一个风光互补发电机
 
 objective_grant_ecoFriendly	环保
-objective_grant_ecoFriendly_description	是时候认真关注我们的碳足迹了！放弃使用普通发电站，转而使用绿色电源，银行就会给予奖励。
+objective_grant_ecoFriendly_description	是时候认真关注碳足迹了！放弃使用普通发电站，转而使用绿色电源，银行就会给予奖励。
 objective_grant_ecoFriendly_days	只使用绿色电源而非发电站为你的监狱供电 5 天
 
 objective_grant_givingSomethingBack	回馈
@@ -5289,22 +5289,22 @@ finances_other	其他事务
 interfacetopbar_tension_activeeliteops	已雇佣 *X 名精英技工
 
 
-d11_manageCropsInstructions	你可以点击百分比按钮将其锁定，从而防止其他房间改变此比例。否则，请使用箭头按钮改变百分比。在所有连接的房间中，每种农作物的总量不得超过 100%。
+d11_manageCropsInstructions	可以点击百分比按钮将其锁定，从而防止其他房间改变此比例。否则，请使用箭头按钮改变百分比。在所有连接的房间中，每种农作物的总量不得超过 100%。
 
-d11_staffalert_details_CELLS01	我们还可容纳 *A 名囚犯
-d11_staffalert_details_CELLS01a	我们还可容纳 *A 名低戒备囚犯
-d11_staffalert_details_CELLS01b	我们还可容纳 *A 名中戒备囚犯
-d11_staffalert_details_CELLS01c	我们还可容纳 *A 名高戒备囚犯
-d11_staffalert_details_CELLS01d	我们还可容纳 *A 名超高戒备囚犯
-d11_staffalert_details_CELLS01e	我们还可容纳 *A 名死刑犯
-d11_staffalert_details_CELLS01f	我们还可容纳 *A 名重点保护囚犯
+d11_staffalert_details_CELLS01	还可容纳 *A 名囚犯
+d11_staffalert_details_CELLS01a	还可容纳 *A 名低戒备囚犯
+d11_staffalert_details_CELLS01b	还可容纳 *A 名中戒备囚犯
+d11_staffalert_details_CELLS01c	还可容纳 *A 名高戒备囚犯
+d11_staffalert_details_CELLS01d	还可容纳 *A 名超高戒备囚犯
+d11_staffalert_details_CELLS01e	还可容纳 *A 名死刑犯
+d11_staffalert_details_CELLS01f	还可容纳 *A 名重点保护囚犯
 d11_staffalert_details_CELLS01Z	空闲 *A 间 *B 牢房
 d11_staffalert_details_CONTRABAND01a	武器供应的百分比为 *A
 d11_staffalert_details_CONTRABAND01b	工具供应的百分比为 *A
 d11_staffalert_details_CONTRABAND02	麻醉药品供应的百分比为 *A
 d11_staffalert_details_CONTRABAND03	过去 7 天內已发现 *A 件违禁品。
 d11_staffalert_details_DEATHROW01	为监狱新增死刑区将使您能够接收高价值的死刑犯。
-d11_staffalert_details_DOCTOR01	我们目前沒有雇佣任何医生。
+d11_staffalert_details_DOCTOR01	目前沒有雇佣任何医生。
 d11_staffalert_details_HOLDINGCELL01	*A 名囚犯目前沒有自己的牢房。
 d11_staffalert_details_INFORMANTS01	囚犯強烈怀疑 *A 是个线人。
 d11_staffalert_details_MONEY01	监狱的银行存款仅剩 *A 元。
@@ -5345,7 +5345,7 @@ d11_staffalert_details_PRISONERS03	*A 名囚犯目前居住在不符合其应有
 d11_staffalert_details_ROOMS01	请确保带闪烁红色感叹号图示的房间完全符合所列标准。
 d11_staffalert_details_STAFF01	*A 名工作人员目前非常疲惫。
 d11_staffalert_details_WATER01	将所有带闪烁水滴图示的物品连接到水泵。
-d11_staffalert_hint_CELLS01	接收更多囚犯将带给我们丰厚的前期现金奖励，还意味着我们每天可从国家获得更多资金。如有可能，我们应该始终满负荷运营！
+d11_staffalert_hint_CELLS01	接收更多囚犯将带给监狱丰厚的前期现金奖励，还意味着我们每天可从国家获得更多资金。如有可能，我们应该始终满负荷运营！
 d11_staffalert_hint_CONTRABAND01	囚犯可轻松获取工具和武器，这是非常危险的。将金属探测器放在违禁品来源附近，或下令彻底搜查整所监狱。
 d11_staffalert_hint_CONTRABAND02	囚犯可轻松获取麻醉药物，这是非常危险的。雇佣训犬员，让他们巡邏牢房区，或下令彻底搜查整所监狱。
 d11_staffalert_hint_CONTRABAND03	检视我提交的违禁品情报报告，以找出过去 7 天內的违禁品来源，并制定措施对其进行封锁。
@@ -5394,17 +5394,17 @@ d11_staffalert_summary_INFORMANTS01	囚犯们高度怀疑我们的其中一名�
 d11_staffalert_summary_MONEY01	我们的现金所剩无几。
 d11_staffalert_summary_NEEDS01	我们应该再多构建些马桶。
 d11_staffalert_summary_NEEDS02	我们应该再多构建些马桶。
-d11_staffalert_summary_NEEDS03	我们的囚犯看起来总是很累。
+d11_staffalert_summary_NEEDS03	监狱的囚犯看起来总是很累。
 d11_staffalert_summary_NEEDS04	您的囚犯正感到饥饿。
-d11_staffalert_summary_NEEDS05	我们的囚犯正在思念家人。
+d11_staffalert_summary_NEEDS05	监狱的囚犯正在思念家人。
 d11_staffalert_summary_NEEDS06	监狱需要清洁打扫。
-d11_staffalert_summary_NEEDS07	我们的囚犯沒有安全感。
-d11_staffalert_summary_NEEDS08	哦，我们的囚犯看起来有点邋遢。
-d11_staffalert_summary_NEEDS09	我们的囚犯有点不太健康。
-d11_staffalert_summary_NEEDS10	我们的囚犯感觉有点无聊。
+d11_staffalert_summary_NEEDS07	监狱的囚犯沒有安全感。
+d11_staffalert_summary_NEEDS08	哦，监狱的囚犯看起来有点邋遢。
+d11_staffalert_summary_NEEDS09	监狱的囚犯有点不太健康。
+d11_staffalert_summary_NEEDS10	监狱的囚犯感觉有点无聊。
 d11_staffalert_summary_NEEDS11	囚犯抱怨空闲时间缺少座位。
-d11_staffalert_summary_NEEDS12	我们的囚犯需要一些独处的时间。
-d11_staffalert_summary_NEEDS13	我们的囚犯需要更多空闲时间。
+d11_staffalert_summary_NEEDS12	监狱的囚犯需要一些独处的时间。
+d11_staffalert_summary_NEEDS13	监狱的囚犯需要更多空闲时间。
 d11_staffalert_summary_NEEDS14	嗯，我们的囚服看起来有点…破旧。
 d11_staffalert_summary_NEEDS15	天啊，看来我们的许多囚犯都存在毒品問題。
 d11_staffalert_summary_NEEDS16	看来我们的许多囚犯都非常喜欢喝酒。
@@ -5437,28 +5437,28 @@ d11_staffalert_title_NEEDS03	太多囚犯抱怨睡眠不足。
 d11_staffalert_title_NEEDS04	太多囚犯抱怨吃不饱。
 d11_staffalert_title_NEEDS05	思念家人的囚犯人数处于危险水准。
 d11_staffalert_title_NEEDS06	监狱急需清洁打扫。
-d11_staffalert_title_NEEDS07	我们的囚犯觉得这里不安全。
-d11_staffalert_title_NEEDS08	我们的囚犯不是很干净。
-d11_staffalert_title_NEEDS09	我们的囚犯需要锻炼
+d11_staffalert_title_NEEDS07	囚犯觉得这里不安全。
+d11_staffalert_title_NEEDS08	囚犯不是很干净。
+d11_staffalert_title_NEEDS09	囚犯需要锻炼
 d11_staffalert_title_NEEDS10	囚犯太过无聊，快要被逼疯了。
 d11_staffalert_title_NEEDS11	囚犯需要在空闲时间有地方可坐。
-d11_staffalert_title_NEEDS12	我们的囚犯需要一些独处的时间。
-d11_staffalert_title_NEEDS13	我们的囚犯需要空闲时间来保持平静的心情。
-d11_staffalert_title_NEEDS14	我们的囚犯需要获得干净的衣服。
+d11_staffalert_title_NEEDS12	囚犯需要一些独处的时间。
+d11_staffalert_title_NEEDS13	囚犯需要空闲时间来保持平静的心情。
+d11_staffalert_title_NEEDS14	囚犯需要获得干净的衣服。
 d11_staffalert_title_NEEDS15	控制监狱內毒品成瘾的水准。
 d11_staffalert_title_NEEDS16	控制监狱內酒精成瘾的水准。
 d11_staffalert_title_NEEDS18	精神指引对于囚犯具有安抚效果。
-d11_staffalert_title_NEEDS19	我们的囚犯欠缺基本的读写能力。
-d11_staffalert_title_OBJECTS01	我们沒有能力应对监狱中的火灾。
+d11_staffalert_title_NEEDS19	囚犯欠缺基本的读写能力。
+d11_staffalert_title_OBJECTS01	监狱沒有能力应对火灾。
 d11_staffalert_title_OBJECTS02	监狱未能有效地处理垃圾。
 d11_staffalert_title_OBJECTS03	监狱缺少全面的监控系统。
 d11_staffalert_title_OBJECTS04	监狱缺少门禁控制系统。
 d11_staffalert_title_POWER01	多个监狱区域沒有供电。
-d11_staffalert_title_POWER02	我们的其中一台发电机负载过重。
+d11_staffalert_title_POWER02	监狱的其中一台发电机负载过重。
 d11_staffalert_title_PRISONERS02	囚犯数量已超出警卫数量。
-d11_staffalert_title_PRISONERS03	我们的牢房品质太低。
-d11_staffalert_title_ROOMS01	您监狱內的一个房间不符合规定的标准。
-d11_staffalert_title_STAFF01	您的大部分工作人员均非常疲惫。
+d11_staffalert_title_PRISONERS03	监狱的牢房品质太低。
+d11_staffalert_title_ROOMS01	监狱內的一个房间不符合规定的标准。
+d11_staffalert_title_STAFF01	大部分工作人员均非常疲惫。
 d11_staffalert_title_WATER01	多个监狱区域沒有自来水供应。
 d11_staffalert_tooltip_CELLS01	增加囚犯收监数量[[ButtonCross]]
 d11_staffalert_tooltip_CONTRABAND01	构建金属探测器[[ButtonCross]]
@@ -5499,32 +5499,32 @@ d11_staffalert_tooltip_PRISONERS03	改进牢房[[ButtonCross]]
 d11_staffalert_tooltip_ROOMS01	检查要求[[ButtonCross]]
 d11_staffalert_tooltip_STAFF01	构建员工休息室[[ButtonCross]]
 d11_staffalert_tooltip_WATER01	构建水管[[ButtonCross]]
-d11_staffalert_urgentsummary_CELLS01	我们拥有许多空闲的空间，可收监更多囚犯！
+d11_staffalert_urgentsummary_CELLS01	监狱拥有许多空闲的牢房，可收监更多囚犯！
 d11_staffalert_urgentsummary_CONTRABAND01	监狱內的工具和武器供应情況非常危险！
 d11_staffalert_urgentsummary_CONTRABAND02	监狱內的毒品供应情況非常危险！
 d11_staffalert_urgentsummary_CONTRABAND03	监狱內的违禁品持有水准已經失控！
-d11_staffalert_urgentsummary_DEATHROW01	如果为监狱新增死囚区，我们就可以快速赚取大量资金。
-d11_staffalert_urgentsummary_DOCTOR01	我们需要雇佣医生在医务室內工作！
-d11_staffalert_urgentsummary_HOLDINGCELL01	我们必须减少關押在拘留室內的囚犯人数！
-d11_staffalert_urgentsummary_INFORMANTS01	我们的其中一名线人即将被发现，他的生命正处于危险之中！
-d11_staffalert_urgentsummary_MONEY01	我们的现金几乎就要用完了！
+d11_staffalert_urgentsummary_DEATHROW01	如果为监狱新增死囚区，监狱就可以快速赚取大量资金。
+d11_staffalert_urgentsummary_DOCTOR01	需要雇佣医生在医务室內工作！
+d11_staffalert_urgentsummary_HOLDINGCELL01	必须减少關押在拘留室內的囚犯人数！
+d11_staffalert_urgentsummary_INFORMANTS01	其中一名线人即将被发现，他的生命正处于危险之中！
+d11_staffalert_urgentsummary_MONEY01	监狱的现金几乎就要用完了！
 d11_staffalert_urgentsummary_NEEDS01	说真的！我不是在开玩笑。请构建更多马桶！
 d11_staffalert_urgentsummary_NEEDS02	说真的！我不是在开玩笑。请构建更多马桶！
 d11_staffalert_urgentsummary_NEEDS03	喂！醒醒吧！您的囚犯需要睡觉！
-d11_staffalert_urgentsummary_NEEDS04	把餅乾放下！我们的囚犯正在挨餓！
+d11_staffalert_urgentsummary_NEEDS04	把饼干放下！囚犯正在挨餓！
 d11_staffalert_urgentsummary_NEEDS05	发发善心吧…您必须让囚犯与家人联系！
 d11_staffalert_urgentsummary_NEEDS06	呸！我们的监狱令人作呕。
-d11_staffalert_urgentsummary_NEEDS07	我们的囚犯觉得这里不安全。拜託，请做点什么吧。
-d11_staffalert_urgentsummary_NEEDS08	呃，我们的囚犯好脏啊。
-d11_staffalert_urgentsummary_NEEDS09	天啊，我们的囚犯非常不健康。
-d11_staffalert_urgentsummary_NEEDS10	我们的囚犯简直无聊透了！
+d11_staffalert_urgentsummary_NEEDS07	囚犯觉得这里不安全。拜託，请做点什么吧。
+d11_staffalert_urgentsummary_NEEDS08	呃，监狱的囚犯好脏啊。
+d11_staffalert_urgentsummary_NEEDS09	天啊，监狱的囚犯非常不健康。
+d11_staffalert_urgentsummary_NEEDS10	囚犯们简直无聊透了！
 d11_staffalert_urgentsummary_NEEDS11	拜託，他们只是想要个能坐着的地方。
-d11_staffalert_urgentsummary_NEEDS12	我们的囚犯越来越生气，您是不会喜欢生气的囚犯的。
+d11_staffalert_urgentsummary_NEEDS12	囚犯们越来越生气，您是不会喜欢生气的囚犯的。
 d11_staffalert_urgentsummary_NEEDS13	他们可不是成天勞作的工蜂，他们需要空闲时间才能继续坚持下去！
 d11_staffalert_urgentsummary_NEEDS14	天啊！整个监狱到处都是邋遢汉！
-d11_staffalert_urgentsummary_NEEDS15	我们的囚犯中有太多人吸毒成瘾。我们必须做点什么！
-d11_staffalert_urgentsummary_NEEDS16	我们的囚犯有严重的酗酒問題！
-d11_staffalert_urgentsummary_NEEDS18	我们的囚犯需要精神指引。
+d11_staffalert_urgentsummary_NEEDS15	监狱的囚犯中有太多人吸毒成瘾。我们必须做点什么！
+d11_staffalert_urgentsummary_NEEDS16	监狱的囚犯有严重的酗酒問題！
+d11_staffalert_urgentsummary_NEEDS18	监狱的囚犯需要精神指引。
 d11_staffalert_urgentsummary_NEEDS19	我们应该为不認字的囚犯设置一个房间。
 d11_staffalert_urgentsummary_OBJECTS01	如果发生火灾，我们将面临严重的危险！
 d11_staffalert_urgentsummary_OBJECTS02	我们真的需要购买些垃圾箱！
@@ -5631,7 +5631,7 @@ d11_researchhint_l_farming	此研究项可以解锁多项农业功能，例如�
 object_quickconnect	快速连接
 objective_GoingGreenInfo_child_1	“迈向绿色”最主要的特色已在下方列出，将鼠标悬停在各个小标题上，相关特色的描述和说明就会显示出来。
 d11_cropDistributionHint	右键点击：管理分配
-d11_manageCropsInstructions	你可以点击百分比按钮将其锁定，从而防止其他房间改变此比例。否则，请使用箭头按钮改变百分比。在所有连接的房间中，每种农作物的总量不得超过 100%。
+d11_manageCropsInstructions	可以点击百分比按钮将其锁定，从而防止其他房间改变此比例。否则，请使用箭头按钮改变百分比。在所有连接的房间中，每种农作物的总量不得超过 100%。
 dlc_name_seaAirLand	困守孤岛
 dlc_name_greenMachine	迈向绿色
 interfacemode_objectType_filter_requiresWater	管道系统
@@ -5805,9 +5805,9 @@ room_Restaurant	餐厅
 room_Bakery	面包房
 room_TherapyRoom	会客室
 d11_restaurant_work	餐厅
-d11_restaurant_work_desc	指派囚犯在我们的餐厅工作，为平民顾客烹饪食物和提供上菜服务。但是他们必须要有烹饪或服务生方面的工作经验。
+d11_restaurant_work_desc	指派囚犯在餐厅工作，为平民顾客烹饪食物和提供上菜服务。但是他们必须要有烹饪或服务生方面的工作经验。
 d11_bakery_work	面包房
-d11_bakery_work_desc	指派囚犯在我们的面包房工作，为平民顾客烹饪烘焙食物。但是他们必须要有烹饪或服务生方面的工作经验。
+d11_bakery_work_desc	指派囚犯在面包房工作，为平民顾客烹饪烘焙食物。但是他们必须要有烹饪或服务生方面的工作经验。
 buildtoolbar_popup_room_TherapyRoom	一个“安全空间”，供动物疗法课程以及与已释放人员交流使用。
 buildtoolbar_popup_room_Restaurant	有烹饪或服务生经验的囚犯可以为平民顾客烹饪食物或负责上菜。
 buildtoolbar_popup_room_Bakery	有烹饪或服务生经验的囚犯可以烤制面包和蛋糕，卖给平民顾客。
@@ -5877,7 +5877,7 @@ d11_reform_progrom_live	居住改造计划
 d11_reform_program_places	改造计划场所数
 d11_reform_program_attendance	改造计划出勤人数
 d11_reform_program_pass_rate	改造计划通过率
-d11_reform_released_prisoners_design_info	囚犯从你的监狱被释放后，你可以查看他们出狱后的动向，如果他们再犯罪或改过自新并成功找到工作，你的监狱会分别受到处罚或奖励。
+d11_reform_released_prisoners_design_info	囚犯从你的监狱被释放后，可以查看他们出狱后的动向，如果他们再犯罪或改过自新并成功找到工作，你的监狱会分别受到处罚或奖励。
 d11_reform_prisoners_action_reformed	已改造！
 d11_reform_prisoners_action_reoffended	再次犯罪！
 d11_reform_prisoners_action_reoffended_returned	*X 被送回了你的监狱。
@@ -6285,7 +6285,7 @@ objective_HelpCalamities_child_3_Description	高温可能构成严重威胁，�
 objective_HelpCalamities_child_4	鼠灾
 objective_HelpCalamities_child_4_Description	你的囚犯不会满意肮脏的监狱环境，但老鼠非常高兴。小心它们四处乱窜，老鼠不仅会让囚犯染病、偷吃仓库里的食物，还会咬断电缆和栅栏。为了防止发生鼠灾，请确保监狱始终保持清洁，并尽快拆除所有老鼠洞。否则你将需要开展害虫防治。
 objective_HelpCalamityPrevention	灾难预防
-objective_HelpCalamityPrevention_Description	我们现已推出全新系统以预报部分灾难，建议你最大程度利用新系统。你可以借此将处于危险之中的人转移到更安全的区域，并实施计划以减轻灾害影响甚至完全避免重大灾难发生。
+objective_HelpCalamityPrevention_Description	我们现已推出全新系统以预报部分灾难，建议你最大程度利用新系统。可以借此将处于危险之中的人转移到更安全的区域，并实施计划以减轻灾害影响甚至完全避免重大灾难发生。
 objective_HelpEmergencyServices	全新紧急服务
 objective_HelpEmergencyServices_Description	我们现已推出全新服务，以在需要时为你的监狱提供支持。新服务有助于解决与害虫、结构和电气损坏、供水设施相关的问题，还可以对道路进行维护。
 objective_HelpCoveragePlans	保险计划
@@ -6583,7 +6583,7 @@ securitymenu_MarkPrisoner	标记囚犯：
 securitymenu_RemovePrisoner	遣送囚犯：
 securitymenu_RemovePrisonerButton	遣送囚犯
 securitymenu_RemovedPrisoner	已遣送囚犯
-securitymenu_RemovePrisoner_message	遣送囚犯\n\n这是对付冥顽不化囚犯的最后手段，你可以花一大笔钱把这名囚犯送去另一所监狱。该操作每 5 天可进行一次。
+securitymenu_RemovePrisoner_message	遣送囚犯\n\n这是对付冥顽不化囚犯的最后手段，可以花一大笔钱把这名囚犯送去另一所监狱。该操作每 5 天可进行一次。
 securitymenu_RestrictAccess_tooltip	封锁特定区域的入口，选中囚犯只有在警卫看管的情况下才能进入。不能限制帮派成员进入自己的辖区。
 securitymenu_TransferPrisoner_tooltip	将选中囚犯转移至特定安保系统以便于管控。
 securitymenu_MarkPrisoner_tooltip	给选中囚犯添加视觉标记，方便监控危险分子，以及有人身危险的囚犯。
@@ -6592,8 +6592,8 @@ job_PrisonerAssignment	囚犯分配
 assignment_confirm_message	是否要分配一名警卫？
 assignment_description_message	如果想要盯紧这名囚犯，建议分配一名警卫看管。请务必确保警卫数量充足。
 assignment_error_message	当前无法分配警卫对此囚犯进行看管。请稍后再试。\n\n囚犯为刚抵达，在牢房或禁足状态。
-buildtoolbar_popup_help_securitymenu_1	安保菜单列出了监狱中所有被视为危险分子或有人身危险的囚犯。通过此菜单，你可以对囚犯采取某些行动以提供进一步的支持，并使这些囚犯得到更好的管理。\n\n
-buildtoolbar_popup_help_securitymenu_2	~默认情况下，危险分子和有人身危险的囚犯会同时列出，但你可以通过“囚犯类型”选项对特定群体采取行动。\n\n
+buildtoolbar_popup_help_securitymenu_1	安保菜单列出了监狱中所有被视为危险分子或有人身危险的囚犯。通过此菜单，可以对囚犯采取某些行动以提供进一步的支持，并使这些囚犯得到更好的管理。\n\n
+buildtoolbar_popup_help_securitymenu_2	~默认情况下，危险分子和有人身危险的囚犯会同时列出，但可以通过“囚犯类型”选项对特定群体采取行动。\n\n
 buildtoolbar_popup_help_securitymenu_3	~有些行动可以应用在群体身上，而某些只能应用到选定的个人，突出显示并左键单击囚犯来进行选择。\n\n
 buildtoolbar_popup_help_securitymenu_5	-警卫分配选项既有助于保证囚犯的安全，也可以同时监控其他人，防止不当行为发生。警卫不会在囚犯的私人时间待在他们身边，比如睡觉和洗澡的时候。
 buildtoolbar_popup_help_securitymenu_6	-如果你监狱中的某些囚犯经常惹事，并且难以管束，可通过“遣送囚犯”选项把他们送走。此行动有冷却时间，不能每天执行，同时需要耗费一定的金钱。
@@ -6624,7 +6624,7 @@ objective_HelpCrookedGuards_child_2_Description	某些警卫可能会因为与�
 objective_HelpGangIntelligence	帮派情报
 objective_HelpGangIntelligence_Description	监狱中到处都在上演着不当行为，因此情报是保证设施安全的关键。帮派情报菜单可提供监狱内每个帮派的信息，列出每个帮派的成员数量、资金情况，以及入狱以来的不当行为总数。菜单还会显示帮派参与的任何计划或活动，以此展示每个帮派的危险水平。
 objective_HelpSecurityOptions	安保选项
-objective_HelpSecurityOptions_Description	“重点囚犯”名单将在新菜单中列出，其中所有囚犯都被认为对他人构成威胁或自身受到威胁。通过此菜单，你可以标记出需要给予额外关注的囚犯，方便在正常游戏过程中对其加强看管，也便于在其他游戏行为过程中重点关照；另外菜单中还会显示其他行动，如限制囚犯进入特定区域，将囚犯群体转移到特定的安全级别，甚至将问题囚犯转送其他监狱，尽管这样做需要支付巨额罚款。
+objective_HelpSecurityOptions_Description	“重点囚犯”名单将在新菜单中列出，其中所有囚犯都被认为对他人构成威胁或自身受到威胁。通过此菜单，可以标记出需要给予额外关注的囚犯，方便在正常游戏过程中对其加强看管，也便于在其他游戏行为过程中重点关照；另外菜单中还会显示其他行动，如限制囚犯进入特定区域，将囚犯群体转移到特定的安全级别，甚至将问题囚犯转送其他监狱，尽管这样做需要支付巨额罚款。
 objective_HelpPrograms_Description	为了帮助保护和管理囚犯，警卫现在可以接受新培训，经过训练后，警卫可轻松缴械囚犯。囚犯也有可参加的新计划。娱乐计划有助于囚犯完成改造，还能帮助囚犯平静下来，减轻身上的压力。改造计划有助于囚犯远离帮派活动，让他们以更加平静和建设性的方式度过自己的刑期。
 objective_grant_positiveEnergyGrant	正能量
 objective_grant_positiveEnergyGrant_Description	帮派成员需要把注意力（和精力）集中到锻炼而不是暴力上。研究表明，锻炼可以减少暴力行为。在院子里设置一些户外运动器材。
@@ -6857,7 +6857,7 @@ buildtoolbar_popup_room_laundry	让囚犯协助清洁工洗衣的前提条件。
 buildtoolbar_popup_room_visitation	让家属与囚犯面对面交谈的地方。\n\n满足“家庭”需求。\n即使在工作作息之外，囚犯总可以来接受探监。\n\n有的家属会带来违禁品。\n\n如果采用探监柜台，则可以杜绝这种行为。\n但不甘心的他们会尝试别的办法……\n\n注意：在进入探监室之前，家属身上并不存在违禁品。\n只有与囚犯会面时，才会（根据囚犯的需要）凭空生成。\n所以你无法针对家属进行检测和拦截。\n\n【新增玩法】律师可以到这里提供咨询服务。\n按照探监者人次，获得政府奖金。\n\n大约每10个囚犯每天会有1组探监者来访。
 buildtoolbar_popup_room_cleaningcupboard	让囚犯协助打扫监狱的前提条件。\n\n在这里打工的囚犯需要漂白剂，而清洁工并不需要它们。\n\n每个囚犯需要4平米才会工作。\n工作岗位上限为20人。但你只需要很少的打工者。\n\n事实上，如果监狱足够干净，你都不需要这个房间。\n\n这里会产生的违禁品：\n · “毒物”是毒品的一种替代品。\n · “木棍”是一种无法检测出来的武器。\n考虑到它们所带来的麻烦，还是多雇用几名清洁工吧。\n\n如果牢房都是无锁门，那么打扫效率就会极高。
 buildtoolbar_popup_room_armoury	武装警卫的锁柜安装在这里，对应于其人数上限。\n这里还是武装警卫和狙击手专用的休息处。\n\n注意：武装警卫并不会替清洁工开门。\n最好安装遥控门和门禁控制器。\n\n[推荐区划：员工专区]\n\n越狱时，囚犯们有可能试图攻入这里，以抢夺武器。\n与房间内武器架存在与否无关……
-buildtoolbar_popup_room_forestry	让你可以自产木材。\n\n1. 园丁自动种树。\n2. 树苗长大。\n3. 工人将其砍伐，得到圆木。\n4. 在工坊里，圆木通过电锯台变成木板。\n5. 之后，再通过木工桌变成高级床。\n\n圆木本身也可以直接卖掉，但很不值钱。\n\n树苗会被自动采购并种植。5天后长大。\n建议按天拆分出5个林场；不要所有树都挤在同一天种/收。\n地面不要为沙土；那会导致成长缓慢。\n\n园丁种树时，会在本“房间”的上方和左侧留出1米的空白。\n换言之，最左上角的树苗，会位于房间的(3, 3)坐标。
+buildtoolbar_popup_room_forestry	让可以自产木材。\n\n1. 园丁自动种树。\n2. 树苗长大。\n3. 工人将其砍伐，得到圆木。\n4. 在工坊里，圆木通过电锯台变成木板。\n5. 之后，再通过木工桌变成高级床。\n\n圆木本身也可以直接卖掉，但很不值钱。\n\n树苗会被自动采购并种植。5天后长大。\n建议按天拆分出5个林场；不要所有树都挤在同一天种/收。\n地面不要为沙土；那会导致成长缓慢。\n\n园丁种树时，会在本“房间”的上方和左侧留出1米的空白。\n换言之，最左上角的树苗，会位于房间的(3, 3)坐标。
 buildtoolbar_popup_room_classroom	这里，进行学术性的改造项目。\n\n由于“[学术Ⅰ]基础教育项目”的感兴趣人数比例很低，\n仅10分之一，所以对教室和课桌的需求很少。\n\n如果教室里有警卫，会压制囚犯，不利于其专心。\n如果囚犯们不安定，那么最稳妥的方式是，利用[部署时刻盘]，\n让警卫仅仅在课程前、后的各一小时来巡逻。\n\n【新增功能】更好的选择是安装‘定时呼叫’。\n或者，让教室外面的格子就是户外，这样巡逻的警卫的\n影响力会被隔离在户外。
 buildtoolbar_popup_room_exports	在这里，堆放工坊的产品，然后装车送走，从而卖掉。\n\n[推荐区划：员工专区]
 buildtoolbar_popup_room_mailroom	把从外界收来的信件，转送给囚犯。\n满足“家庭”、“娱乐”和“舒适”需求。\n\n每天上午8点，邮件被送过来。（但不寄出邮件）\n\n可以让囚犯打工。\n\n本房间的区划决定了邮件会属于哪个戒备类别的囚犯。\n（收信人取决于分拣者。这是颠倒因果……）\n只有设为“公共区域”时，才会给所有区划的牢房递送邮件。\n如果打工的囚犯无法走到某些牢房，那么会由待命的警卫来做。\n\n由于邮件只有一个来源，所以这个房间只需要建造一个。\n\n要注意检测邮件里的违禁品。\n\n送来的邮件为监狱囚犯总数的1/4。\n假设每天工作8小时（有效时间则为7小时），\n大约每50个囚犯，需要有1人来分拣邮件。\n每个囚犯需要12平米才会工作。
@@ -7039,9 +7039,9 @@ material_ElectrifiedFence	电栅栏
 buildtoolbar_popup_mat_ElectrifiedFence	高压电威慑。\n每一块见方区域地下都需要铺设电缆。
 equipment_keycard	门禁卡
 object_KeycardDoor	电磁锁门
-buildtoolbar_popup_obj_KeycardDoor	配备门禁卡的警卫或佩戴追踪器的囚犯可以进入此门。你可以单独取消囚犯对每扇门的访问权限。
+buildtoolbar_popup_obj_KeycardDoor	配备门禁卡的警卫或佩戴追踪器的囚犯可以进入此门。可以单独取消囚犯对每扇门的访问权限。
 object_KeycardDoorLarge	电磁锁大门
-buildtoolbar_popup_obj_KeycardDoorLarge	配备门禁卡的警卫或佩戴追踪器的囚犯可以进入此门。你可以单独取消囚犯对每扇门的访问权限。
+buildtoolbar_popup_obj_KeycardDoorLarge	配备门禁卡的警卫或佩戴追踪器的囚犯可以进入此门。可以单独取消囚犯对每扇门的访问权限。
 entity_carryingkeycard	携带门禁卡
 material_HexagonalTiles	六边形瓷砖
 buildtoolbar_popup_mat_HexagonalTiles	见方设计已经是过去式了，欢迎选择六边形的未来设计理念。
@@ -7111,7 +7111,7 @@ objective_Grant_Tracker_SecurityRoom	建造警卫室
 interfacelogistics_CropDistribution	农作物分配
 
 d11_manage_crops	管理分配
-d11_manageCropsDescription	你可以在这里控制将*X里生长的农作物配送至每个与之相连房间的数量。每个农业房间最多连接 8 个房间。
+d11_manageCropsDescription	可以在这里控制将*X里生长的农作物配送至每个与之相连房间的数量。每个农业房间最多连接 8 个房间。
 
 d11_logistics_roomTitle	房间
 
@@ -7549,7 +7549,7 @@ objective_grant_SecurityOutdoor_GuardTower 安装1座 警戒塔
 objective_grant_SecurityOutdoor_Sniper 雇用1名 狙击手
 
 objective_grant_SecurityTunnel 固若金汤
-objective_grant_SecurityTunnel_description 对于追求自由的“鼹鼠们”，警犬和围墙是头号大敌。\n\n在牢房周围，让警犬在夜间巡逻，以便及时发现“地下”活动。\n围墙是专门克制越狱地道的防线。不仅高，而且深。\n挖穿围墙很费时间。因而囚犯会倾向于绕道。\n\n另外，为了让警犬移动更迅速，你还需要建设铺石路。\n\n由于游戏本身的限制，我只能圈出一个范围，\n在其中的围墙和铺石路才会被计数。
+objective_grant_SecurityTunnel_description 对于追求自由的“鼹鼠们”，警犬和围墙是头号大敌。\n\n在牢房周围，让警犬在夜间巡逻，以便及时发现“地下”活动。\n围墙是专门克制越狱地道的防线。不仅高，而且深。\n挖穿围墙很费时间。因而囚犯会倾向于绕道。\n\n另外，为了让警犬移动更迅速，你还需要建设铺石路。\n\n由于游戏限制只能圈出一个范围，\n在其中的围墙和铺石路才会被计数。
 objective_grant_SecurityTunnel_Dog 指派6名 训犬员(警犬) 巡逻
 objective_grant_SecurityTunnel_PerimeterWall 建造50米 围墙
 objective_grant_SecurityTunnel_PavingStone 建造250平米的 铺石路
@@ -7664,7 +7664,7 @@ objective_grant_Release1_description 恭喜！这是从你的监狱释放的第�
 objective_grant_Release1_JustTakeIt 领取这份额外的奖励吧。
 
 objective_grant_Release2 出狱 Ⅱ
-objective_grant_Release2_description 除了到期放人，你更重要的职责是让他们有效地回归社会。\n政府希望从你监狱出来的囚犯的整体的再犯罪率足够低。\n(你可以在屏幕左上角打开[监狱评级]来查看)\n\n除了压制和惩罚，也给囚犯们提供一些积极的改造项目。
+objective_grant_Release2_description 除了到期放人，你更重要的职责是让他们有效地回归社会。\n政府希望从你监狱出来的囚犯的整体的再犯罪率足够低。\n(可以在屏幕左上角打开[监狱评级]来查看)\n\n除了压制和惩罚，也给囚犯们提供一些积极的改造项目。
 objective_grant_Release2_Population 释放10个囚犯
 objective_grant_Release2_ReoffendingRate 令整体的再犯罪率低于30%
 
@@ -7714,15 +7714,16 @@ grant_property_atleast	至少 *X
 grant_property_atmost	至多 *X
 
 #-
-#+===============================政策研究===============================
+#+===============================行政系统===============================
 
 #+通用文本
 
+interfacemode_research	行政系统
 research_required	你需要雇用 *X 来编制这份报告
 research_requireunlock	你需要研究“*X”来解锁此报告
 research_approved	[✔]
 research_cost	费用：*X
-research_costperitem	+ *X 每件。
+research_costperitem	+ 每件：*X 
 research_timetounlock	解锁时间：*X小时
 research_movementpenalty	移动减慢：↘*X%
 research_protectionbonus	防护作用：↗*X%
@@ -7733,17 +7734,21 @@ research_legaldefense_adviser2	迅速让监狱恢复秩序，并确保其正常�
 
 #-
 
-#+行政系统
+#+典狱长
 
-research_warden	行政系统
-researchtooltip_warden	解锁“典狱长”和整个[行政系统]。\n在“员工”工具栏雇用典狱长。\n\n作为管理者，需要配有一间办公室。
+research_warden	典狱长
+researchtooltip_warden	解锁“典狱长”和整个[行政系统]。\n在“员工”工具栏雇用典狱长。\n\n需要配备办公室。
 
 #+0.子项目
 
-research_advancedmanagement	微观管理
-researchtooltip_advancedmanagement	提供对监狱进行微观管理的工具，满足你的细致需求。\n\n解锁“食物后勤”，能够为食堂指定厨房以及吃饭的囚犯。\n解锁“洗衣后勤”，能够规划牢房区域对应的洗衣房。\n\n解锁“部署时间区块”，能够定制警卫在不同时间段的部署安排。\n\n解锁“改造方案时刻表”，能够手动更改项目的时间安排。
+research_landexpansion	土地扩张
+researchtooltip_landexpansion	能够购买临近的地块，从而拓展监狱规模。\n\n注意：\n过大的监狱规模会降低游戏性能！\n并且切拓展土地后无法撤销，请谨慎使用。
+
 research_policy	监狱政策
 researchtooltip_policy	解锁“政策”报告，能够规定违规行为的处罚量，并自动对违规囚犯或其牢房进行搜查。\n\n能够控制伙食政策，改变囚犯伙食的份量和种类。
+research_advancedmanagement	微观管理
+researchtooltip_advancedmanagement	提供对监狱进行微观管理的工具，满足你的细致需求。\n\n解锁“食物后勤”，能够为食堂指定厨房以及吃饭的囚犯。\n解锁“洗衣后勤”，能够规划牢房区域对应的洗衣房。\n\n解锁“部署时间区块”，能够定制警卫在不同时间段的部署安排。\n\n解锁“改造方案时刻表”，能够手动更改项目的时间安排。
+
 research_Hitman 杀手
 researchtooltip_Hitman 监狱有机会与杀手组织秘密合作，把监狱变成绝佳的演练舞台。\n\n能够玩到几个风格各异的小游戏，从全新的角度感受你的监狱。\n关键词：钢琴线、变装、偷取、下毒、爆炸、越狱。\n\n在员工菜单雇佣“代号48”以开始一个任务。
 
@@ -7754,20 +7759,19 @@ researchtooltip_Hitman 监狱有机会与杀手组织秘密合作，把监狱变
 #+财政
 
 research_finance	财政
-researchtooltip_finance	解锁“会计”。\n使你可以查看监狱的财务报告并允许超支。\n\n作为管理者，需要配有一间办公室。
+researchtooltip_finance	解锁“会计”。\n使可以查看监狱的财务报告并允许超支。\n\n需要配备办公室。
 
 #+0.子项目
 
 research_extragrant	额外补助
-researchtooltip_extragrant	能够同时进行的补助数量增加一个。
+researchtooltip_extragrant	增加一个能够同时进行的补助数量。
 research_bankloans	银行贷款
-researchtooltip_bankloans	允许从银行借贷大笔款项，但需每天支付利息。\n偿还贷款会提高你的信用评级，允许你将来借到更大的数额。\n\n银行不会给失信企业贷款，因此贷款额度透支时，请持续还款至信用评级正常后，再全额还清。
+researchtooltip_bankloans	允许从银行借贷周转，但每天需要支付利息。\n偿还贷款会提高你的信用评级，从而提高贷款额度。\n\n银行不会给失信企业贷款，因此信用评级不良时，请持续还款至信用评级正常后，再全额还清贷款。
+
 research_lowertaxes1	税收减免
 researchtooltip_lowertaxes1	对政府税收激励措施善加利用，将公司所得税率由30%降至15%。\n\n（收入累计达到66,667元时这项研究可以回本）
-research_lowertaxes2	离岸避税天堂
-researchtooltip_lowertaxes2	会计将规则运用到极致，把你的所有官方账户和业务流程，转移到享有超高优惠税率的国家。\n你的公司所得税将会由15%降至1%。\n\n（收入累计达到357,143元时这项研究可以回本）
-research_landexpansion	土地扩张
-researchtooltip_landexpansion	能够购买临近的地块，从而拓展监狱规模。\n\n注意：\n过大的监狱规模会降低游戏性能！\n并且切拓展土地后无法撤销，请谨慎使用。
+research_lowertaxes2	离岸避税
+researchtooltip_lowertaxes2	会计将规则运用到极致，把你的所有官方账户和业务流程，转移到享有超高优惠税率的国家。\n监狱的所得税将会由15%降至1%。\n\n（收入累计达到357,143元时这项研究可以回本）
 
 #-
 
@@ -7776,7 +7780,7 @@ researchtooltip_landexpansion	能够购买临近的地块，从而拓展监狱�
 #+维护
 
 research_maintainance	维护
-researchtooltip_maintainance	解锁“工头”。\n解锁更多研究与员工类型。\n\n作为管理者，需要配有一间办公室。
+researchtooltip_maintainance	解锁“工头”。\n解锁更多研究与员工类型。\n\n需要配备办公室。
 
 #+1.清洁
 
@@ -7801,7 +7805,7 @@ d11_researchhint_s_farming	解锁高级农业技术、设备，以及更昂贵�
 research_prisonlabour	狱中劳役
 researchtooltip_prisonlabour	解锁“工坊”和“洗衣房”。\n\n允许囚犯在监狱内工作。\n可以开源节流，同时也给囚犯传授新技能。
 research_forestrylabour	林业劳动
-researchtooltip_forestrylabour	你可以通过后勤菜单安排囚犯在林场工作。\n记得封闭林区防止囚犯逃跑。
+researchtooltip_forestrylabour	可以通过后勤菜单安排囚犯在林场工作。\n记得封闭林区防止囚犯逃跑。
 
 #-
 
@@ -7810,7 +7814,7 @@ researchtooltip_forestrylabour	你可以通过后勤菜单安排囚犯在林场�
 #+法务
 
 research_legal	法务
-researchtooltip_legal	解锁“律师”。\n可以从“员工”工具栏雇用。\n解锁多个调查选项以加大你对监狱的控制权。\n\n作为管理者，需要配有一间办公室。
+researchtooltip_legal	解锁“律师”。\n可以从“员工”工具栏雇用。\n解锁多个调查选项以加大你对监狱的控制权。\n\n需要配备办公室。
 
 #+0.子项目
 
@@ -7818,10 +7822,12 @@ research_removemincellsize	微型牢房
 researchtooltip_removemincellsize	通常牢房要达到一定尺寸以满足法定标准。但试想一下，\n如果不限定尺寸，那么你的监狱可以再塞下多少牢房！\n\n牢房解除最小尺寸要求。
 research_permanentpunishment	永久处罚
 researchtooltip_permanentpunishment	即使被关进监狱了，依然也有更难熬的事情。\n律师可以提交申请，允许将囚犯永久关押在牢房或禁闭室中。\n\n在[查看犯罪档案>基本]里解锁：永久禁足和永久禁闭。
+
 research_deathrow	死刑犯
 researchtooltip_deathrow 允许接收死刑犯，并执行死刑。\n\n死刑犯带来的收入可观，不过频率不高。\n\n解锁“行刑室”和‘电椅’。
 research_reduceexecutionliability	降低行刑责任
 researchtooltip_reduceexecutionliability	律师会帮你降低在行刑前的麻烦。\n在囚犯可能上诉成功的情况下行刑，若事后证明量刑不当而无需死刑，则监狱会受到法律处罚。\n\n无责行刑的“囚犯上诉成功率”由5%提高至10%
+
 research_legalprep	法律预案
 researchtooltip_legalprep	所有监狱都会偶尔出现问题，有的可能会带来严重的法律后果。\n防范于未然，律师必须提前准备好应对措施，才能即时避免法律责任。\n\n适用情况：\n你开启了“失败条件。\n每局游戏仅能生效一次。
 research_legaldefense	法律辩护
@@ -7834,47 +7840,51 @@ researchtooltip_legaldefense	事态极其糟糕，监狱已经被密切注意。
 #+安保
 
 research_security	安保
-researchtooltip_security	解锁“安保主管”。\n可以从“员工”工具栏雇用。\n解锁"部署"界面，提供监狱风险等级的实时报告，\n预测潜在的安全隐患。\n\n作为管理者，需要配有一间办公室。\n\n【豪华版】主管可以启用“腐败斗争”玩法。\n警卫中会出现腐败分子勒索囚犯，从而引发负面情绪甚至打斗。\n解雇这些腐败的警卫可以得到奖励。\n注：这与启用“员工需求”后警卫的受贿机制无关。
+researchtooltip_security	解锁“安保主管”。\n可以从“员工”工具栏雇用。\n解锁"部署"界面，提供监狱风险等级的实时报告，预测潜在的安全隐患。\n\n需要配备办公室。\n\n【豪华版】主管可以启用“腐败斗争”玩法。\n警卫中会出现腐败分子勒索囚犯，从而引发负面情绪甚至打斗。\n解雇这些腐败的警卫可以得到奖励。\n注：这与启用“员工需求”后警卫的受贿机制无关。
 
-#+0.子项目
+#+==分支A
 
 research_remoteaccess	门禁系统
 researchtooltip_remoteaccess	能够远程控制门禁，降低警卫的工作量。\n安装“门禁控制器”或“门禁定时器”后，警卫就能在门禁系统中遥控开门。
 
-#-
-
-#+1.监控
-
-research_contraband	情报
-researchtooltip_contraband	训练警卫，提高其追踪并追回“违禁品”的能力。\n\n解锁违禁品分布图（显示监狱内所有可能发生盗窃的地方），\n并将所有遭盗窃的违禁品回溯到其被盗地点。\n此外，你将能够把囚犯招募为秘密线人。\n\n如果你开启了“帮派”，那么还包括帮派的情报视图。
 research_cctv	监控
-researchtooltip_cctv	解锁“监控摄像头”与“监视器”，能够远程观察监狱。\n老旧的设备使得画面模糊，警卫无法清晰观察囚犯的一举一动。\n解锁“电话窃听”系统，能够监听囚犯打出的电话以获取情报。
+researchtooltip_cctv	解锁“监控摄像头”与“监视器”，能够远程观察监狱。\n老旧的设备使得画面模糊，警卫无法在监控中清晰地观察囚犯。\n解锁“电话窃听”系统，能够监听囚犯打出的电话以获取情报。
+
 research_CCTVImprovement	警报程序
 researchtooltip_CCTVImprovement	监控系统安装了警报程序，警卫能够在监控系统中识别违规的囚犯，并发出警报。
 research_PrisonerSorting 高级监控系统
-researchtooltip_PrisonerSorting 升级高端设备后，警卫终于能够能够清晰地观察囚犯。\n能够在监控中识别出特定人群，并重新指定其戒备类别。
-
+researchtooltip_PrisonerSorting 升级高端设备后，警卫终于能够能够清晰地观察囚犯。\n现在警卫可以在监控中识别出特定人群，并重新指定其戒备类别。
 #-
 
-#+2.警备武装
+#+==分支B
 
 research_deployment	部署
 researchtooltip_deployment	能够安排员工到指定区域工作。
 research_patrols	巡逻
 researchtooltip_patrols	能够制定“巡逻”路线，并安排警备人员巡逻。
+research_contraband	情报
+researchtooltip_contraband	训练警卫，提高其追踪“违禁品”的能力。\n\n解锁违禁品分布图，回溯违禁品的被盗过程。\n此外，你将能够把囚犯招募为秘密线人。\n\n如果你开启了“帮派”，那么还包括帮派的情报视图。
+#-
+
+#+==分支C
+
 research_dogs	警犬
 researchtooltip_dogs	解锁“警犬”与“训犬员”。\n警犬能够凭借嗅觉，找出违禁品和越狱地道。\n警犬出色的速度，使其可以轻松追捕逃犯。
+#-
+
+
+#+==分支D
 
 research_armoury	武装警备
 researchtooltip_armoury	解锁“枪械库”与“武装警卫”。
+
+research_bodyarmour	护甲
+researchtooltip_bodyarmour	为所有警备人员配备“护甲”。\n可以大幅度减少警备人员在打斗中受到的伤害，但会降低移动速度。\n\n需要前往枪械库领取装备。
 
 research_tazers	电击枪
 researchtooltip_tazers	为武装警卫配备“电击枪”。\n非常有效的单发武器，通常可以在一瞬间将犯人电晕。\n电击枪使用后，需要一个小时来充电。\n\n需要前往枪械库领取装备。
 research_tazersforeveryone	普及电击枪
 researchtooltip_tazersforeveryone	为普通警卫和训犬员配备电击枪。\n\n需要前往枪械库领取装备。
-
-research_bodyarmour	护甲
-researchtooltip_bodyarmour	为所有警备人员配备“护甲”。\n可以大幅度减少警备人员在打斗中受到的伤害，但会降低移动速度。\n\n需要前往枪械库领取装备。
 
 research_guardtowers	远程火力
 researchtooltip_guardtowers	解锁"警戒塔"和"狙击手"。\n经过严格训练的狙击手能在警戒塔保护监狱安全。
@@ -7893,8 +7903,8 @@ researchtooltip_health	解锁“医生”以及“医务室”和“停尸房”
 research_education	教育
 researchtooltip_education	可以为囚犯提供教育性的改造方案，教师会从外部雇用。
 
-research_mentalhealth	心理
-researchtooltip_MentalHealth	解锁“心理医师”。\n可为你提供囚犯的心理状态分析。\n\n作为管理者，需要配有一间办公室。
+research_mentalhealth	心理研究
+researchtooltip_MentalHealth	解锁“心理医师”。\n可为你提供囚犯的心理状态分析。\n\n需要配备办公室。
 research_PrisonerEvaluation 评估囚犯
 researchtooltip_PrisonerEvaluation 监狱的主要使命是降低囚犯们的再犯罪率。\n及时地评估囚犯能帮助你更好解决问题。\n\n · 解锁方案“近距离接触”\n · 解锁方案“危险座谈”\n · 解锁员工“大胆主持人”\n\n能够了解各个囚犯的“不满爆发点”和“再犯罪可能性”。
 
@@ -7946,7 +7956,7 @@ buildtoolbar_popup_planning	在草稿中对监狱主体结构进行规划，在�
 interfacemode_emergencies	应急
 buildtoolbar_popup_emergencies	如果事态恶化可以呼叫应急服务获取帮助。
 interfacemode_spawn	作弊生成
-buildtoolbar_popup_spawn	你可以自由地创建并放置各种对象。\n\n在已经存在的对象上按住左键并拖动，可以移动其位置。\n按住Shift键并按住和拖动鼠标，可以旋转它的朝向。\n在空地上点击并拖动鼠标，可以新建多个对象；\n但记得同时还应按住Shift键，以免中途变成移动已有对象。\n\n警告：部分对象生成后无法移除！
+buildtoolbar_popup_spawn	可以自由地创建并放置各种对象。\n\n在已经存在的对象上按住左键并拖动，可以移动其位置。\n按住Shift键并按住和拖动鼠标，可以旋转它的朝向。\n在空地上点击并拖动鼠标，可以新建多个对象；\n但记得同时还应按住Shift键，以免中途变成移动已有对象。\n\n警告：部分对象生成后无法移除！
 
 #-========================
 #+==============================警备工具栏
@@ -8079,15 +8089,15 @@ object_SoftPillow	松软的枕头
 buildtoolbar_popup_obj_SoftPillow	毛茸茸的羽毛枕头。
 
 object_Mattress	海绵床垫
-buildtoolbar_popup_obj_Mattress	肮脏发霉的海绵床垫散发着臭味，但好歹比地板好一点。\n\n需求：\n + 睡眠 0.12\n+ 舒适(坐) 0.09\n+ 舒适(睡) 0.12
+buildtoolbar_popup_obj_Mattress	肮脏发霉的海绵床垫散发着臭味，但好歹比地板好一点。\n\n需求：\n+ 睡眠 0.12\n+ 舒适(坐) 0.09\n+ 舒适(睡) 0.12
 object_OldBed	旧床
-buildtoolbar_popup_obj_OldBed	老式监狱床铺，比海绵床垫好一些。\n\n需求：\n + 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
+buildtoolbar_popup_obj_OldBed	老式监狱床铺，比海绵床垫好一些。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
 object_bunkbed					双层床
-buildtoolbar_popup_obj_bunkbed 让打鼾声合奏的乐器，狭隘的空间让人无法正常坐着，只有放在宿舍和拘留室才有意义。\n\n需求：\n + 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
+buildtoolbar_popup_obj_bunkbed 让打鼾声合奏的乐器，狭隘的空间让人无法正常坐着，只有放在宿舍和拘留室才有意义。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
 object_bed						单人床
-buildtoolbar_popup_obj_bed	不太软也不太硬，刚刚好。好吧，其实又硬又小。\n\n需求：\n + 睡眠 0.18\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.18
+buildtoolbar_popup_obj_bed	不太软也不太硬，刚刚好。好吧，其实又硬又小。\n\n需求：\n+ 睡眠 0.18\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.18
 object_ComfyBed	舒适的床
-buildtoolbar_popup_obj_ComfyBed	配有记忆海绵床垫的豪华大床，可提供最好的夜间睡眠质量。\n\n需求：\n + 睡眠 0.30\n+ 舒适(坐) 0.20\n+ 舒适(睡) 0.40
+buildtoolbar_popup_obj_ComfyBed	配有记忆海绵床垫的豪华大床，可提供最好的夜间睡眠质量。\n\n需求：\n+ 睡眠 0.30\n+ 舒适(坐) 0.20\n+ 舒适(睡) 0.40
 
 object_CoffinBed	棺床
 buildtoolbar_popup_obj_CoffinBed	造型怪异的床。
@@ -8826,7 +8836,7 @@ ab__accountant_tt__unconscious 先赶紧救治她吧。
 #+==========================杀手开始
 
 object_Avatar 代号48
-buildtoolbar_popup_staff_Avatar 【新增玩法】\n某著名杀手的新人后辈。但在非工作时，喜欢老派的装扮。\n为了秘密任务，他可以轻易地潜入到各种“戒备森严”的禁区。\n他有多样的致命和非致命手法，是个艺术家。\n\n你暂时化身为他。用 WSAD 键控制移动。Shift键冲刺。\n他接触的第一个囚犯，将被标记为目标。\n然后，点击他，在弹出菜单选择任务类型，并按照步骤进行下去。\n\n此外，当他走到特定设施旁边，可以偷取物品。\n但为了避免暴露，在偷取时，应当尽量避开囚犯、员工和摄像头。\n\n大多数步骤中，你可以变装。\n\n(无法同时“雇用”多个“代号48”)\n(你最好先存档)
+buildtoolbar_popup_staff_Avatar 【新增玩法】\n某著名杀手的新人后辈。但在非工作时，喜欢老派的装扮。\n为了秘密任务，他可以轻易地潜入到各种“戒备森严”的禁区。\n他有多样的致命和非致命手法，是个艺术家。\n\n你暂时化身为他。用 WSAD 键控制移动。Shift键冲刺。\n他接触的第一个囚犯，将被标记为目标。\n然后，点击他，在弹出菜单选择任务类型，并按照步骤进行下去。\n\n此外，当他走到特定设施旁边，可以偷取物品。\n但为了避免暴露，在偷取时，应当尽量避开囚犯、员工和摄像头。\n\n大多数步骤中，可以变装。\n\n(无法同时“雇用”多个“代号48”)\n(你最好先存档)
 buildtoolbar_popup_help_Avatar_1 你不知道这是在致敬什么？\n你需要了解一下《杀手》系列及其主角“代号47”。\n\n这个玩法凝结了我对本游戏的潜力的多样探索。\n相信你会得到比“越狱模式”更多的乐趣。
 
 a48__menu__target_status__no \n未标记目标\n你接触的第一个活跃的囚犯，将被标记为目标。
@@ -8928,7 +8938,7 @@ a48__at__desc_backstab_1 你原本就带着隐蔽性极高的钢琴线\n但你�
 a48__at__desc_backstab_2 当四下无人的时候，从背后一击毙命。\n注意目标面朝的方向。
 a48__reward__backstab \n你低调地解决了目标。
 
-a48__at__desc_scuffle_2 当你和目标的附近有足够多的囚犯时，\n你可以制造一场混战。\n\n你同时会让武装警卫忍不住动用霰弹枪。\n\n运气好的话，目标会被打晕。\n而你会确保他流血，直至失血而亡。
+a48__at__desc_scuffle_2 当你和目标的附近有足够多的囚犯时，\n可以制造一场混战。\n\n你同时会让武装警卫忍不住动用霰弹枪。\n\n运气好的话，目标会被打晕。\n而你会确保他流血，直至失血而亡。
 a48__at__desc_scuffle_3 从混战中脱身。等着目标受伤吧。\n\n你还可以鼓动更多囚犯加入混战。
 a48__reward__scuffle \n真是不幸的悲剧啊。\n但这种事儿在监狱里也不稀奇，对吧？\n\n你漂亮地借刀杀人。没有人怀疑到你。
 
@@ -8967,7 +8977,7 @@ a48__reward__fire \n你给与了目标历史悠久的处刑方式——“火刑
 Object_FlammableUniform 易燃的囚服
 
 a48__at__desc_grenade_1 收集素材后，制作出手雷。\n\n把它扔到目标的头上并引爆。\n\n这个手雷基本上不会引发火灾。\n\n但这样高调的做法，会让你被所有警卫攻击。\n尽快完成变装，以逃脱追捕。
-a48__at__desc_grenade_2 你心灵手巧地用这些简单的素材，\n做出了威力惊人的手雷。\n它的杀伤半径为3.5米。\n引爆点周围的墙壁也会被摧毁。\n\n用它杀掉目标是轻而易举的事情。\n但你要准备好躲避警卫的追捕。\n先想一想，你可以迅速躲到哪里以变装。
+a48__at__desc_grenade_2 你心灵手巧地用这些简单的素材，\n做出了威力惊人的手雷。\n它的杀伤半径为3.5米。\n引爆点周围的墙壁也会被摧毁。\n\n用它杀掉目标是轻而易举的事情。\n但你要准备好躲避警卫的追捕。\n先想一想，可以迅速躲到哪里以变装。
 a48__at__desc_grenade_3 避开警卫的视线，完成变装。\n这样你就会安全了。
 
 a48__am__need_see_target [需要目标在你的视野内]
@@ -8983,8 +8993,8 @@ a48__mission_name_outbreak 援救/爆发
 a48__at__desc_playdead_1 怎样让警卫主动把目标从正门护送出去？\n需要先去医务室获得药物。\n之后，引发混战，让目标“不幸身亡”。\n上了灵车之后，目标就会向监狱说拜拜了。
 a48__at__desc_playdead_2 你已经合成了一副药剂。\n把它交给目标。
 a48__at__desc_playdead_3 引发混战，并让目标被卷入。\n(和“刺杀/混战”任务的步骤相同)\n目标并不会真的死亡。\n但警卫们并不会意识到这一点。\n之后，就看目标扮演死人的本领和运气了。
-a48__at__desc_playdead_4 当你和目标的附近有足够多的囚犯时，\n你可以制造一场混战。\n\n你同时会让武装警卫忍不住动用霰弹枪。\n\n运气好的话，目标会被打晕。\n而你会确保他流血，直至失血而亡(假)。
-a48__at__desc_playdead_5 从混战中脱身。等着目标受伤吧。\n\n你可以鼓动更多囚犯加入混战。
+a48__at__desc_playdead_4 当你和目标的附近有足够多的囚犯时，\n可以制造一场混战。\n\n你同时会让武装警卫忍不住动用霰弹枪。\n\n运气好的话，目标会被打晕。\n而你会确保他流血，直至失血而亡(假)。
+a48__at__desc_playdead_5 从混战中脱身。等着目标受伤吧。\n\n可以鼓动更多囚犯加入混战。
 
 a48__am__too_far [距离目标太远]
 a48__am__give_potion_to_playdead 给目标装死药剂
@@ -9046,7 +9056,7 @@ PrisonerSorter_TargetFound \n已分拣袭击目标 *X 人
 PrisonerSorter_GangFound \n已分拣帮派成员 *X 人
 PrisonerSorter_TargetNGangFound \n已分拣袭击目标 *X 人\n已分拣帮派成员 *Y 人
 PrisonerSorter_NotEnabledGangs \n你需要在[主菜单/附加功能/本监狱的额外玩法]中，“启用 帮派”。否则这个毫无用处。
-PrisonerSorter_DidNotUpgrade \n本升级包没有发挥作用。原因可能是：\n · 当前位置上没有‘监控摄像头’\n · 摄像头已经被升级过了\n你可以拆除本升级包，再“安装”到别的摄像头。
+PrisonerSorter_DidNotUpgrade \n本升级包没有发挥作用。原因可能是：\n · 当前位置上没有‘监控摄像头’\n · 摄像头已经被升级过了\n可以拆除本升级包，再“安装”到别的摄像头。
 
 lawyer__tt \n已为探监者提供服务 *S 人次\n产生奖金 *B 次
 reformprogram_VisitorService [特殊]探监者服务
@@ -9145,7 +9155,7 @@ interfacecallout_NationalGuard 部队
 
 
 object_jaildoorXL 特大监狱门
-buildtoolbar_popup_obj_jaildoorXL 3米长的监狱门。你应该会用到它的。\n\n这是我独家制作的图片。仔细对比2米的，你会发现细节不同。
+buildtoolbar_popup_obj_jaildoorXL 超大的监狱门。
 
 
 reformprogram_GroupFitness [特殊]集体健身
