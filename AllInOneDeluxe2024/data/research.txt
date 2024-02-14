@@ -1,41 +1,108 @@
+#====================行政系统====================
+#=====X最大值1270
+#=====Y最大值690  
+#================================================
 
+
+#+==========典狱长
+
+#+典狱长
 BEGIN Research
     Name                 Warden
     Type                 Entity
     Sprite               Warden
-    X                    580
-    Y                    300
-    NonWideX             500
-    NonWideY             300
+    X                    630
+    Y                    340
+    NonWideX             315
+    NonWideY             170
 END
+#-
 
+#+==分支
+#+土地扩张
 BEGIN Research
-    Name                 AdvancedManagement
+    Name                 LandExpansion
     Type                 Ability
     Requires             Warden
     Admin                Warden
-    Cost                 -2000
-    Time                 360
-    X                    400
-    Y                    220
-    NonWideX             500
-    NonWideY             420
+    Cost                 -30000
+    Time                 2880
+    X                    520
+    Y                    160
+    NonWideX             260
+    NonWideY             80
 END
+#-
 
+#+监狱政策
+BEGIN Research
+    Name                 Policy
+    Type                 Ability
+    Requires             Warden
+    Admin                Warden
+    Cost                 -1000
+    Time                 360
+    X                    630
+    Y                    160
+    NonWideX             315
+    NonWideY             80
+END
+#-
+
+#+微观管理
+BEGIN Research
+    Name                 AdvancedManagement
+    Type                 Ability
+    Requires             Policy
+    Admin                Warden
+    Cost                 -2000
+    Time                 720
+    X                    630
+    Y                    100
+    NonWideX             315
+    NonWideY             50
+END
+#-
+
+#+杀手
+BEGIN Research
+    Name                 Hitman
+    Type                 Entity
+    Requires             Warden
+    Admin                Warden
+    Sprite               AnthonyIRL
+    Cost                 -50000
+    Time                 1440
+    X                    740
+    Y                    160
+    NonWideX             370
+    NonWideY             80
+END
+#-
+#-
+#-
+
+#+==========财政
+
+#+财政
 BEGIN Research
     Name                 Finance
     Type                 Entity
     Requires             Warden
     Admin                Warden
     Sprite               Accountant
-    Cost                 -500
+    Cost                 -1000
     Time                 360
-    X                    400
+    X                    380
     Y                    100
-    NonWideX             320
-    NonWideY             160
+    NonWideX             190
+    NonWideY             50
 END
+#-
 
+#+==分支A
+
+#+额外补助
 BEGIN Research
     Name                 ExtraGrant
     Type                 Ability
@@ -43,25 +110,32 @@ BEGIN Research
     Admin                Finance
     Cost                 -1000
     Time                 360
-    X                    220
+    X                    240
     Y                    100
-    NonWideX             200
-    NonWideY             100
+    NonWideX             120
+    NonWideY             50
 END
+#-
 
+#+银行贷款
 BEGIN Research
     Name                 BankLoans
     Type                 Ability
     Requires             Finance
     Admin                Finance
-    Cost                 -500
-    Time                 360
-    X                    220
-    Y                    160
-    NonWideX             320
-    NonWideY             100
+    Cost                 -2000
+    Time                 720
+    X                    100
+    Y                    100
+    NonWideX             50
+    NonWideY             50
 END
+#-
+#-
 
+#+==分支B
+
+#+税收减免
 
 BEGIN Research
     Name                 LowerTaxes1
@@ -70,11 +144,15 @@ BEGIN Research
     Admin                Finance
     Cost                 -10000
     Time                 1440
-    X                    220
-    Y                    220
-    NonWideX             200
-    NonWideY             160
+    X                    240
+    Y                    160
+    NonWideX             120
+    NonWideY             80
 END
+#-
+
+#+离岸避税
+
 BEGIN Research
     Name                 LowerTaxes2
     Type                 Ability
@@ -83,25 +161,17 @@ BEGIN Research
     Cost                 -50000
     Time                 2880
     X                    100
-    Y                    220
-    NonWideX             80
-    NonWideY             160
+    Y                    160
+    NonWideX             50
+    NonWideY             80
 END
+#-
+#-
+#-
 
+#+==========维护
 
-BEGIN Research
-    Name                 LandExpansion
-    Type                 Ability
-    Requires             Finance
-    Admin                Finance
-    Cost                 -20000
-    Time                 2880
-    X                    220
-    Y                    280
-    NonWideX             200
-    NonWideY             220
-END
-
+#+维护
 BEGIN Research
     Name                 Maintainance
     Type                 Entity
@@ -110,39 +180,16 @@ BEGIN Research
     Sprite               Foreman
     Cost                 -500
     Time                 180
-    X                    400
-    Y                    360
-    NonWideX             320
-    NonWideY             300
+    X                    380
+    Y                    340
+    NonWideX             190
+    NonWideY             170
 END
+#-
 
-BEGIN Research
-    Name                 Cleaning
-    Type                 Entity
-    Requires             Maintainance
-    Admin                Maintainance
-    Sprite               Janitor
-    Cost                 -500
-    Time                 180
-    X                    220  
-    Y                    360  
-    NonWideX             160
-    NonWideY             300
-END
-BEGIN Research
-    Name                 GroundsKeeping
-    Type                 Entity
-    Requires             Maintainance
-    Admin                Maintainance
-    Sprite               Gardener
-    Cost                 -1000
-    Time                 360
-    X                    160
-    Y                    540
-    NonWideX             160
-    NonWideY             420
-END
+#+==分支A
 
+#+狱中劳役
 BEGIN Research
     Name                 PrisonLabour
     Type                 Ability
@@ -151,81 +198,220 @@ BEGIN Research
     Sprite               LaundryBasket
     Cost                 -2000
     Time                 360
-    X                    280
-    Y                    540
-    NonWideX             160
-    NonWideY             540
+    X                    240  
+    Y                    240  
+    NonWideX             120
+    NonWideY             120
 END
+#-
 
-
-
-
-
-
+#+林业劳动
 BEGIN Research
-    Name                 MentalHealth
+	Name				ForestryLabour
+	Type				Ability
+	Requires			PrisonLabour
+	Admin				Maintainance
+	Cost				-3000
+	Time				720
+    X                    100  
+    Y                    240  
+    NonWideX             50  
+    NonWideY             120 
+END
+#-
+#-
+
+#+==分支B
+
+#+清洁
+BEGIN Research
+    Name                 Cleaning
     Type                 Entity
-    Requires             Warden
-    Admin                Warden
-    Sprite               Psychologist
-    Cost                 -1000
-    Time                 360
-    X                    760
-    Y                    100
-    NonWideX             660
-    NonWideY             60
+    Requires             Maintainance
+    Admin                Maintainance
+    Sprite               Janitor
+    Cost                 -500
+    Time                 180
+    X                    240  
+    Y                    340  
+    NonWideX             120
+    NonWideY             170
 END
+#-
 
+#+回收激励
+BEGIN Research   
+    Name                 RecyclingIncentive 
+    Type                 Entity  
+    Requires             Cleaning  
+    Admin                Finance  
+    Cost                 -2000  
+    Time                 720  
+    X                    100  
+    Y                    340  
+    NonWideX             50  
+    NonWideY             170 
+END
+#-
+#-
+
+#+==分支C
+
+#+园艺
 BEGIN Research
-    Name                 Health
+    Name                 GroundsKeeping
     Type                 Entity
-    Requires             Warden
-    Admin                Warden
-    Sprite               Doctor
+    Requires             Maintainance
+    Admin                Maintainance
+    Sprite               Gardener
     Cost                 -1000
     Time                 360
-    X                    760
-    Y                    440
-    NonWideX             800
-    NonWideY             180
+    X                    240  
+    Y                    440  
+    NonWideX             120
+    NonWideY             220
 END
+#-
 
+#+农业
+BEGIN Research   
+    Name                 Farming  
+    Type                 Entity  
+    Requires             GroundsKeeping
+    Admin                Maintainance  
+    Cost                 -20000  
+    Time                 1440  
+    X                    100  
+    Y                    440  
+    NonWideX             50  
+    NonWideY             220 
+END
+#-
+
+#-
+#-
+
+#+==========法务
+
+#+法务
+BEGIN Research   
+    Name                 Legal  
+    Type                 Entity  
+    Requires             Warden  
+    Admin                Warden  
+    Sprite               Lawyer  
+    Cost                 -5000  
+    Time                 720  
+    X                    380  
+    Y                    560  
+    NonWideX             190  
+    NonWideY             280  
+END
+#-
+
+#+==分支A
+
+#+微型牢房
 BEGIN Research
-    Name                 Education
+    Name                 RemoveMinCellSize
     Type                 Ability
-    Requires             Warden
-    Admin                Warden
-    Sprite               Teacher
-    Cost                 -2000
-    Time                 720
-    X                    760
-    Y                    580
-    NonWideX             800
-    NonWideY             60
+    Requires             Legal
+    Admin                Legal
+    Cost                 -10000
+    Time                 1440
+    X                    240  
+    Y                    560  
+    NonWideX             120
+    NonWideY             280
 END
+#-
 
-
+#+永久处罚
 BEGIN Research
-    Name                 Policy
+    Name                 PermanentPunishment
     Type                 Ability
-    Requires             Warden
-    Admin                Warden
-    Cost                 -1000
-    Time                 360
-    X                    580
-    Y                    220
-    NonWideX             500
-    NonWideY             180
+    Requires             Legal
+    Admin                Legal
+    Cost                 -20000
+    Time                 1440
+    X                    100  
+    Y                    560  
+    NonWideX             50  
+    NonWideY             280 
 END
+#-
+#-
 
+#+==分支B
 
+#+死刑犯
+BEGIN Research
+    Name                 Deathrow
+    Type                 Ability
+    Requires             Legal
+    Admin                Legal
+    Cost                 -10000
+    Time                 1440
+    X                    240  
+    Y                    620  
+    NonWideX             120
+    NonWideY             310
+END
+#-
 
+#+降低行刑责任
+BEGIN Research
+    Name                 ReduceExecutionLiability
+    Type                 Ability
+    Requires             Deathrow
+    Admin                Legal
+    Cost                 -20000
+    Time                 4320
+    X                    100  
+    Y                    620  
+    NonWideX             50  
+    NonWideY             310 
+END
+#-
+#-
 
+#+==分支C
 
+#+法律预案
+BEGIN Research   
+    Name                 LegalPrep  
+    Type                 Ability  
+    Requires             Legal  
+    Admin                Legal  
+    Cost                 -50000  
+    Time                 4320  
+    X                    240  
+    Y                    680  
+    NonWideX             120
+    NonWideY             340
+END
+#-
 
+#+法律辩护
+BEGIN Research
+    Name                 LegalDefense
+    Type                 Ability
+    Requires             LegalPrep
+    Admin                Legal
+    Cost                 -50000
+    Time                 180
+    X                    100  
+    Y                    680  
+    NonWideX             50 
+    NonWideY             340 
+END
+#-
+#-
+#-
 
+#+==========安保
 
-
+#+安保
 BEGIN Research
     Name                 Security
     Type                 Entity
@@ -234,13 +420,16 @@ BEGIN Research
     Sprite               Chief
     Cost                 -500
     Time                 180
-    X                    760
-    Y                    300
-    NonWideX             660
-    NonWideY             300
+    X                    880
+    Y                    340
+    NonWideX             440
+    NonWideY             170
 END
+#-
 
+#+==分支A
 
+#+门禁系统
 BEGIN Research
     Name                 RemoteAccess
     Type                 Ability
@@ -248,41 +437,44 @@ BEGIN Research
     Admin                Security
     Cost                 -2000
     Time                 360
-    X                    960
-    Y                    100
-    NonWideX             660
-    NonWideY             420
+    X                    1000
+    Y                    160  
+    NonWideX             500
+    NonWideY             80
 END
+#-
 
-
-
-BEGIN Research
-    Name                 Contraband
-    Type                 Ability
-    Requires             Security
-    Admin                Security
-    Cost                 -1000
-    Time                 360
-    X                    960
-    Y                    200
-    NonWideX             800
-    NonWideY             300
-END
-
+#+监控
 BEGIN Research
     Name                 Cctv
     Type                 Ability
-    Requires             Contraband
+    Requires             RemoteAccess
     Admin                Security
-    Cost                 -2000
+    Cost                 -3000
     Time                 720
-    X                    1080
-    Y                    200
-    NonWideX             920
-    NonWideY             300
+    X                    1120
+    Y                    160
+    NonWideX             560
+    NonWideY             80
 END
+#-
 
+#+警报程序
+BEGIN Research
+	Name				CCTVImprovement
+	Type				Ability
+	Requires			Cctv
+	Admin				Security
+	Cost				-5000
+	Time				720
+	X                    1240  
+    Y                    160  
+    NonWideX             620  
+    NonWideY             80  
+END
+#-
 
+#+高级监控系统
 BEGIN Research
     Name                 PrisonerSorting
     Type                 Ability
@@ -290,17 +482,17 @@ BEGIN Research
     Admin                Security
     Cost                 -10000
     Time                 1440
-    X                    1200
-    Y                    200
-    NonWideX             920
-    NonWideY             370
+    X                    1240
+    Y                    100
+    NonWideX             620
+    NonWideY             50
 END
+#-
+#-
 
+#+==分支B
 
-
-
-
-
+#+部署
 BEGIN Research
     Name                 Deployment
     Type                 Ability
@@ -308,12 +500,14 @@ BEGIN Research
     Admin                Security
     Cost                 -500
     Time                 180
-    X                    960
-    Y                    300
-    NonWideX             800
-    NonWideY             380
+    X                    1000
+    Y                    240  
+    NonWideX             500
+    NonWideY             120
 END
+#-
 
+#+巡逻
 BEGIN Research
     Name                 Patrols
     Type                 Ability
@@ -321,54 +515,99 @@ BEGIN Research
     Admin                Security
     Cost                 -1000
     Time                 360
-    X                    960
-    Y                    360
-    NonWideX             800
-    NonWideY             440
+    X                    1120
+    Y                    240  
+    NonWideX             560
+    NonWideY             120
 END
+#-
 
+#+情报
+BEGIN Research
+    Name                 Contraband
+    Type                 Ability
+    Requires             Patrols
+    Admin                Security
+    Cost                 -2000
+    Time                 360
+    X                    1240
+    Y                    240
+    NonWideX             620
+    NonWideY             120
+END
+#-
+#-
 
+#+==分支C
+
+#+警犬
 BEGIN Research
     Name                 Dogs
     Type                 Entity
-    Requires             Patrols
+    Requires             Security
     Admin                Security
     Sprite               Dog
-    Cost                 -1000
+    Cost                 -1500
     Time                 360
-    X                    1080
-    Y                    360
-    NonWideX             680
-    NonWideY             500
+    X                    1000
+    Y                    340  
+    NonWideX             500  
+    NonWideY             170  
 END
+#-
+#-
 
+#+==分支D
+
+#+武装警备
 BEGIN Research
     Name                 Armoury
     Type                 Entity
-    Requires             Patrols
+    Requires             Security
     Admin                Security
     Sprite               ArmedGuard
     Cost                 -2000
     Time                 720
-    X                    960
-    Y                    480
-    NonWideX             800
-    NonWideY             500
+    X                    1000
+    Y                    560  
+    NonWideX             500  
+    NonWideY             280  
 END
+#-
 
+#+护甲
+BEGIN Research
+    Name                 BodyArmour
+    Type                 Ability
+    Requires             Armoury
+    Admin                Security
+    Cost                 -4000
+    CostPerUse           -200
+    Time                 1440
+    X                    1120
+    Y                    620  
+    NonWideX             560
+    NonWideY             310
+END
+#-
+
+#+电击枪
 BEGIN Research
     Name                 Tazers
     Type                 Ability
     Requires             Armoury
     Admin                Security
-    Cost                 -1000
+    Cost                 -3000
     CostPerUse           -400
-    Time                 360
-    X                    1080
-    Y                    480
-    NonWideX             920
-    NonWideY             500
+    Time                 720
+    X                    1120
+    Y                    560  
+    NonWideX             560
+    NonWideY             280
 END
+#-
+
+#+普及电击枪
 BEGIN Research
     Name                 TazersForEveryone
     Type                 Ability
@@ -377,26 +616,14 @@ BEGIN Research
     Cost                 -5000
     CostPerUse           -400
     Time                 720
-    X                    1200
-    Y                    480
-    NonWideX             920
-    NonWideY             560
+    X                    1240
+    Y                    560  
+    NonWideX             620
+    NonWideY             280
 END
+#-
 
-BEGIN Research
-    Name                 BodyArmour
-    Type                 Ability
-    Requires             Armoury
-    Admin                Security
-    Cost                 -2000
-    CostPerUse           -100
-    Time                 1440
-    X                    1080
-    Y                    540
-    NonWideX             920
-    NonWideY             620
-END
-
+#+远程火力
 BEGIN Research
     Name                 GuardTowers
     Type                 Entity
@@ -405,106 +632,81 @@ BEGIN Research
     Sprite               Sniper
     Cost                 -5000
     Time                 720
-    X                    1080
-    Y                    600
-    NonWideX             800
-    NonWideY             620
+    X                    1120
+    Y                    440  
+    NonWideX             620  
+    NonWideY             220  
 END
+#-
 
-
-
-
-
-
-
-
-BEGIN Research
-    Name                 PermanentPunishment
-    Type                 Ability
-    Requires             Legal
-    Admin                Legal
-    Cost                 -5000
-    Time                 1440
-    X                    400
-    Y                    660
-    NonWideX             440
-    NonWideY             540
+#+非致命狙击手
+BEGIN Research   
+    Name                 NonLethalSniper  
+    Type                 Entity  
+    Requires             GuardTowers  
+    Admin                Security  
+    Cost                 -5000  
+    Time                 360   
+    X                    1240
+    Y                    440  
+    NonWideX             620  
+    NonWideY             220  
 END
+#-
+#-
+#-
+
+#+==========其他
+
+#+健康
 BEGIN Research
-    Name                 RemoveMinCellSize
-    Type                 Ability
-    Requires             Legal
-    Admin                Legal
-    Cost                 -10000
-    Time                 1440
+    Name                 Health
+    Type                 Entity
+    Requires             Warden
+    Admin                Warden
+    Sprite               Doctor
+    Cost                 -1000
+    Time                 360
     X                    520
-    Y                    540
-    NonWideX             440
-    NonWideY             480
+    Y                    560 
+    NonWideX             260
+    NonWideY             280
 END
+#-
 
+#+教育
 BEGIN Research
-    Name                 Deathrow
+    Name                 Education
     Type                 Ability
-    Requires             Legal
-    Admin                Legal
-    Cost                 -10000
-    Time                 1440
-    X                    520
-    Y                    600
-    NonWideX             440
-    NonWideY             600
+    Requires             Warden
+    Admin                Warden
+    Sprite               Teacher
+    Cost                 -2000
+    Time                 720
+    X                    740
+    Y                    560 
+    NonWideX             370
+    NonWideY             280
 END
+#-
+
+#+心理
 BEGIN Research
-    Name                 ReduceExecutionLiability
-    Type                 Ability
-    Requires             Deathrow
-    Admin                Legal
-    Cost                 -10000
-    Time                 4320
-    X                    640
-    Y                    600
-    NonWideX             560
-    NonWideY             600
+    Name                 MentalHealth
+    Type                 Entity
+    Requires             Warden
+    Admin                Warden
+    Sprite               Psychologist
+    Cost                 -1500
+    Time                 360
+    X                    630
+    Y                    560 
+    NonWideX             315
+    NonWideY             280
 END
+#-
 
-
-BEGIN Research
-    Name                 LegalPrep
-    Type                 Ability
-    Requires             Legal
-    Admin                Legal
-    Cost                 -50000
-    Time                 4320
-    X                    520
-    Y                    660
-    NonWideX             440
-    NonWideY             660
-END
-
-#法律辩护
-BEGIN Research
-    Name                 LegalDefense
-    Type                 Ability
-    Requires             LegalPrep
-    Admin                Legal
-    Cost                 -50000
-    Time                 180
-    X                    640
-    Y                    660
-    NonWideX             560
-    NonWideY             660
-END
-
-
-
-
-
-
-
-
-
-#囚犯评估
+#+囚犯评估
 BEGIN Research
     Name                 PrisonerEvaluation
     Type                 Ability
@@ -512,30 +714,14 @@ BEGIN Research
     Admin                MentalHealth
     Cost                 -5000
     Time                 1440
-    X                    580
-    Y                    100
-    NonWideX             500
-    NonWideY             60
+    X                    630
+    Y                    680 
+    NonWideX             315
+    NonWideY             340
 END
+#-
 
-
-#杀手
-BEGIN Research
-    Name                 Hitman
-    Type                 Entity
-    Requires             Policy
-    Admin                Warden
-    Sprite               AnthonyIRL
-    Cost                 -10000
-    Time                 1440
-    X                    580
-    Y                    160
-    NonWideX             500
-    NonWideY             120
-END
-
-
-#护工
+#+护工
 BEGIN Research
     Name                 Orderly
     Type                 Entity
@@ -544,52 +730,14 @@ BEGIN Research
     Sprite               Orderly
     Cost                 -1000
     Time                 720
-
-    X                    580
-    Y                    400
-    NonWideX             500
-    NonWideY             170
+    X                    880
+    Y                    560
+    NonWideX             440
+    NonWideY             280
 
 END
+#-
+#-
 
-#回收激励
-BEGIN Research   
-    Name                 RecyclingIncentive 
-    Type                 Entity  
-    Requires             Cleaning  
-    Admin                Finance  
-    Cost                 -2500  
-    Time                 720  
-    X                    100  
-    Y                    360  
-    NonWideX             40  
-    NonWideY             260 
-END
 
-#林业劳动
-BEGIN Research
-	Name				ForestryLabour
-	Type				Ability
-	Requires			PrisonLabour
-	Admin				Maintainance
-	Cost				-1500
-	Time				360
-	X                   280  
-    Y                   660  
-    NonWideX            80
-    NonWideY            600  
-END
 
-#农业
-BEGIN Research   
-    Name                 Farming  
-    Type                 Entity  
-    Requires             GroundsKeeping
-    Admin                Maintainance  
-    Cost                 -2000  
-    Time                 480  
-    X                    160  
-    Y                    660  
-    NonWideX             200  
-    NonWideY             660  
-END
