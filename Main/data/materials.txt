@@ -3436,7 +3436,7 @@ BEGIN Room
     BEGIN Grading       Type    Item    Id      DrinkMachine  END
     BEGIN Grading       Type    Item    Id      SnackMachine  END
     BEGIN Grading       Type    Item    Id      WaterCooler   END
-    BEGIN Grading       Type    Item    Id      Plant Alt PlantCactus  Quantity 4  END
+    BEGIN Grading       Type    Item    Id      Plant Quantity 4 Alt PlantCactus Quantity 4 END
     BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
     BEGIN Grading       Type    Item    Id      Cctv   GradeEffect -1    END
     END
@@ -3653,9 +3653,9 @@ END
 BEGIN Room
     Name                 Office
     BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN Requirement Type Object  Id OfficeDesk  END
+    BEGIN Requirement Type Object  Id OfficeDesk Alt FancyDesk END
     BEGIN Requirement Type Object  Id Chair Alt OfficeChair END
-    BEGIN Requirement Type Object  Id FilingCabinet  END
+    BEGIN Requirement Type Object  Id FilingCabinet Alt FilingCabinetFancy END
     BEGIN LikelyObject  Id    StaffDoor     END
     BEGIN LikelyObject  Id    LeatherChair  END
     BEGIN LikelyObject  Id    Lamp      END
@@ -3787,6 +3787,8 @@ BEGIN Room
     Properties           StaffCanUseFacilities
 END
 
+
+
 BEGIN Room
     Name                 Staffroom
     BEGIN Requirement Type Object  Id DrinkMachine  END
@@ -3831,8 +3833,8 @@ END
 
 BEGIN Room
     Name                 Library
-    BEGIN Requirement Type MinimumSize  x 4  y 4  END
-    BEGIN Requirement Type Object  Id LibraryBookshelf END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+    BEGIN Requirement Type Object  Id LibraryBookshelf Quantity 2 END
     BEGIN Requirement Type Object Id SortingTable END
     BEGIN Contraband    Id      Scissors        END
     BEGIN Contraband    Id      FountainPen     END

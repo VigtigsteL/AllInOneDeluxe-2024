@@ -1,3 +1,47 @@
+BEGIN Room       
+    Name                 Gymnasium  
+    Capturable           true
+	VersionAdded		 3000
+	DLC					PrisonWingPriviledges
+	Properties			 QualityGraded
+	Properties           PrisonerRelax
+
+    BEGIN Requirement Type MinimumSize  x 6  y 6  END
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type Object  Id WeightsBench   END
+    BEGIN Requirement Type Object  Id GymMat     	 END
+    BEGIN LikelyObject	Id		DrinkMachine		 END
+    BEGIN LikelyObject	Id		WeightsBench		 END
+    BEGIN LikelyObject	Id		WaterCooler 		 END
+    BEGIN LikelyObject	Id		Fan          		 END
+    BEGIN LikelyObject	Id		GymMat      		 END
+    BEGIN LikelyObject	Id		BoxingRing  		 END
+    BEGIN LikelyObject	Id		DumbbellRack		 END
+    BEGIN LikelyObject	Id		PunchBag 		 	 END
+    BEGIN LikelyObject	Id		Treadmill    		 END
+    BEGIN LikelyObject	Id		WaterCooler		 	 END
+    BEGIN LikelyObject	Id		TrainingDummy		 END
+	BEGIN LikelyObject	Id		SnackMachine		 END
+	BEGIN LikelyObject	Id		TableTennis			 END
+	
+    BEGIN Grading      Type    RoomSize Size   60               END
+	BEGIN Grading      Type    Item    Id  Treadmill Quantity 4 END
+    BEGIN Grading      Type    Item    Id  WeightsBench Quantity 4 END
+    BEGIN Grading      Type    Item    Id  GymMat Quantity 4   END
+    BEGIN Grading      Type    Item    Id  PunchBag Quantity 2   END
+    BEGIN Grading      Type    Item    Id  BoxingRing          END
+    BEGIN Grading      Type    Item    Id  Fan                 END
+    BEGIN Grading      Type    Item    Id  WaterCooler         END
+    BEGIN Grading      Type    Item    Id  DumbbellRack Quantity 4   END
+	BEGIN Grading      Type    OutsideWindow  Quantity 4 GradeEffect 2  END
+    BEGIN Grading      Type    HasWindow	Quantity 0 GradeEffect -1	END
+	BEGIN Grading	   Type	   HasGlassWalls Percent 50	GradeEffect 1		END	
+
+    BEGIN Contraband    Id      Rope		END
+    BEGIN Contraband    Id      Club		END
+    BEGIN Contraband    Id      Medicine	END
+END
+
 BEGIN Object
     Name                ShortBookcase
     Width               3
