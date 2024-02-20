@@ -287,7 +287,7 @@ buildtoolbar_popup_room_cell	标准的单人间。\n\n囚犯主要在这里睡�
 buildtoolbar_popup_room_holdingcell	暂时收容新进囚犯的房间，直到他们获得自己的正式牢房。\n\n监狱起步时，节约资金的好办法。\n\n如果启用了牢房品质分级，那么新囚犯可能得不到牢房，\n那么他们可以在这里等几天。\n\n没有容量限制，但让大量犯人长期呆在这里显然不妥。\n他们非常容易积累不满，而且频繁地闹事。\n\n如果你不得不较长时间让囚犯住在这儿，那么记得买些床铺。\n同时，指派警卫驻守也是很有必要的。\n\n床位不计入监狱容量。
 buildtoolbar_popup_room_solitary	专门针对恶中之恶的隔离惩戒方式。\n\n当囚犯被惩罚关禁闭时，会被戴上镣铐并押送进这里。\n\n会让囚犯的“被压制”程度快速上升，因而变得很听话。\n对于顽固的囚犯，禁闭是提高其改造评分的重要途径。\n\n可以把禁闭中的部分囚犯招募为秘密线人。\n\n这里的囚犯不能出去，而由警卫为其送饭。
 buildtoolbar_popup_room_dormitory	这个房间可容纳多个囚犯。\n每4平米容纳1人。\n\n会积累“隐私”需求。
-buildtoolbar_popup_room_familycell	女囚犯带着宝宝一起生活的地方。
+buildtoolbar_popup_room_familycell	女囚犯带着婴儿一起生活的地方。
 buildtoolbar_popup_room_sharedcell	一个多人牢房。至多能够容纳8个囚犯。
 buildtoolbar_popup_room_canteen	囚犯的进食场所。\n\n其实除了吃饭，这里也可以进行各种活动。\n只要空间足够，可以当做非正式的公共活动室。\n由于“吃饭”作息让囚犯无法提前离开，\n可以添加一些满足其它需求的物品。\n\n由于人员密度形成高峰，囚犯们很容易自发地开展\n“非正式活动”——比如斗殴，所以安保需要特别加强。\n\n如果启用“员工需求”，那么把一个食堂设为员工专区，\n以让员工轮休时来用餐。
 buildtoolbar_popup_room_kitchen	厨师为囚犯烹制食物的区域。\n\n提前4小时开始准备。\n厨师会从卸货区把食材送到冰柜上。\n\n[报告/政策]中，伙食的份量和种类越多，则消耗的食材越多、\n需要的厨师也越多。\n相应的好处是产生并维持囚犯的“吃得不错”状态，\n让人心情好，少闹事；还提高监狱评级的“健康”指标。\n\n如果启用“天气与温度”，厨房会产生可观的热量。
@@ -308,7 +308,7 @@ buildtoolbar_popup_room_chapel	当行政管理层聚在一起讨论如何应对�
 buildtoolbar_popup_room_paroleroom	当囚犯服刑达到总刑期的50%和75%时，各有一次机会申请假释。\n他们的命运将由（外部的）假释官在这间房间里决定。\n\n注意：最好有额外的安保人员。\n假释被驳回时，屡见不鲜地，囚犯会相当激动。\n\n如果囚犯被提前释放且没有再犯罪的话会得到非常可观的奖励。\n死刑犯的上诉也在这里进行。
 buildtoolbar_popup_room_library	全国各地会给你的监狱送来成箱的废书或旧书。\n囚犯们要将书本分类并上架。\n\n提供图书以满足“文化”需求。\n囚犯会来这里借书和还书。\n\n拿到书后，囚犯会去食堂的长凳上读书。\n或者回到牢房里坐在椅子上。\n公共活动室等地方因为不够安静而无法读书。\n虽然犯人读书效率非常高，但他们花费很多时间在来回的路上。\n\n一段时期后图书会损坏，因此需要持续补充。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为20人。
 buildtoolbar_popup_room_intake	囚犯刚抵达时，会先被带到这里搜身。
-buildtoolbar_popup_room_nursery	带宝宝的女囚犯的活动室。\n\n并且，她们在这里用餐，而不去普通的食堂。
+buildtoolbar_popup_room_nursery	带婴儿的女囚犯的活动室。\n\n并且，她们在这里用餐，而不去普通的食堂。
 buildtoolbar_popup_room_shop	让犯人们花掉零用钱的合法渠道，以瞬间解决其需求。\n\n还会给你聊胜于无的收入。\n\n · 棕色=食物\n · 蓝色=卫生\n · 绿色=娱乐，安装‘店面’，从而让顾客从外面光顾。\n\n只能由囚犯工作来运营。需要人数=店面数。\n如果客流量很大则需要增加人手，以专心补充货架。\n\n所有被要求的物品，只安装1个即可。\n房间面积越小越好。\n工人会不断送来货物，尽可能塞满每个格子……\n\n由于程序的缺陷，工人会反复地把货物从商店里再运到仓库。\n最佳对策是：不安排专人补充货架。这样所有都货物会处于\n等待上架的待办事项，从而避免了出现运到仓库的待办事项。
 
 buildtoolbar_popup_obj_jaildoor	把囚犯关在他们应该待的地方。\n\n在“睡觉”和“监禁”作息，或者囚犯被禁足、关禁闭时，\n牢房的监狱门会变成关闭模式。\n这时，只有附近的警卫可以开门并替人开门。\n\n非牢房的监狱门，则总是这个模式。\n你会看到清洁工经常被拦住。\n也容易在高峰时段造成囚犯的拥堵，产生不良情绪。\n如果不考虑真实性，那么很多时候，‘员工门’甚至\n‘无锁门’会是更好的选择。
@@ -319,8 +319,8 @@ buildtoolbar_popup_obj_staffdoor	上锁的门。不只警卫，所有员工都�
 
 buildtoolbar_popup_obj_dismantleobject	按住左键并拖动鼠标，可以选中多个物品。\n拆除后，物品会被装进箱子，以便你重新安装。
 
-buildtoolbar_popup_obj_playmat 让宝宝玩耍的小小天地。\n\n满足宝宝的玩耍需求\n速率：每5分钟降低2点
-buildtoolbar_popup_obj_crib 啊，他/她睡觉的样子不像是个天使么？\n\n满足宝宝的睡眠需求\n速率：每5分钟降低0.5点\n\n虽然在‘家庭牢房’之外也能安装这种床，\n但是宝宝睡觉时，母亲会不肯离开太远……
+buildtoolbar_popup_obj_playmat 让婴儿玩耍的小小天地。\n\n满足婴儿的玩耍需求\n速率：每5分钟降低2点
+buildtoolbar_popup_obj_crib 啊，他/她睡觉的样子不像是个天使么？\n\n满足婴儿的睡眠需求\n速率：每5分钟降低0.5点\n\n虽然在‘家庭牢房’之外也能安装这种床，\n但是婴儿睡觉时，母亲会不肯离开太远……
 
 buildtoolbar_popup_obj_roadgate 通常用在马路上，以防大胆的囚犯从那里越狱。
 
@@ -1234,6 +1234,7 @@ report_intake_next_header	下一批接收：*X
 report_intake_cat_minsec	低戒备
 report_intake_cat_normal	中戒备
 report_intake_cat_maxsec	高戒备
+report_intake_cat_SuperMax	超高戒备
 report_intake_cat_deathrow	死刑犯
 report_intake_slider_minsec	调整低戒备的接收比例
 report_intake_slider_normal	调整中戒备的接收比例
@@ -1683,86 +1684,7 @@ experience_intoxicated	犯毒瘾
 experience_wellfed	饮食良好
 experience_exercise	锻炼
 
-need_name_nothing	无
-need_name_bladder	小便
-need_name_bowels	大便
-need_name_sleep	睡眠
-need_name_food	食物
-need_name_safety	安全
-need_name_hygiene	卫生
-need_name_exercise	锻炼
-need_name_family	家庭
-need_name_recreation	娱乐
-need_name_comfort	舒适
-need_name_environment	环境
-need_name_privacy	隐私
-need_name_freedom	自由
-need_name_clothing	衣物
-need_name_drugs	毒品
-need_name_alcohol	酒精
-need_name_starving	挨饿
-need_name_spirituality	宗教
-need_name_literacy	文化
-need_name_babysleep	[婴儿]睡眠
-need_name_babyplay	[婴儿]玩耍
-need_name_warmth	保暖
-need_name_staffbladder	小便
-need_name_staffbowels	大便
-need_name_stafffood	食物
-need_name_staffsafety	安全
-need_name_staffrecreation	娱乐
-need_name_staffcomfort	舒适
-need_name_staffenvironment	环境
-need_name_staffrest	休息
-need_name_staffwarmth	保暖
-need_name_luxuries	奢侈品
-needs_locked	(需要心理医师来揭示需求)
-needs_title	【需求】
 
-needs_total_prisoners	▁ *X 个囚犯有这个需求\n
-needs_total_concerned	▃ *X 个囚犯为这个需求所苦恼
-needs_total_desperate	▆ *X 个囚犯迫切希望这个需求得到满足
-needs_total_angry	█ *X 个囚犯因为未能满足这个需求而大怒
-needs_total_active	√ *X 个囚犯正在处理这个需求
-
-needs_total_staff				▁ *X 名员工有这个需求\n
-needs_total_concerned_staff		▃ *X 名员工为这个需求所苦恼
-needs_total_desperate_staff		▆ *X 名员工迫切希望这个需求得到满足
-needs_total_angry_staff			█ *X 名员工大发雷霆，因为这个需求未得到满足
-needs_total_active_staff		♫ *X名 员工正在应付这个需求
-
-needs_help_bladder		人人皆需上厕所，囚犯也一样。\n\n别忘记，你的监狱的大部分体制非常严格。\n例如，如果他们应在淋浴间，他们就无法使用牢房内的马桶。\n\n睡觉时间之后，最好给囚犯方便的机会。\n牢房之外也可以考虑添加一些厕所。\n\n+ 时间\n- 小便\n\n失败后果: 坏情绪+尿裤子(让囚服变脏)
-needs_help_bowels		同“小便”。\n只不过，其周期上限是小便的两倍。\n失败后果: 坏情绪+拉裤裆(让囚服变脏)
-needs_help_sleep		囚犯只能在他们指派到的牢房里睡觉。\n显然，他们会需要一张床。\n\n你偶尔会发现，某个囚犯虽然人在被窝里，但其睡眠和\n舒适需求完全没有减少。搜查此人的马桶，会有惊喜。\n从晚上8点开始就可以睡觉了，\n只要囚犯在他的牢房里。\n\n+ 时间\n- 睡觉\n失败后果: 坏情绪
-needs_help_food			人人皆需吃饭，且大部分的人一天需要吃不止一次。\n\n若你发现厨房无法应付需求量，试着多雇用或调来几个厨师。\n你也可以在[报告]窗口中的[政策]标签页，调整你的伙食政策。\n\n+ 时间\n- 吃饭\n\n失败后果: 坏情绪+挨饿(长期的话，会饿死)
-needs_help_safety		即使在监狱，你的囚犯也需要安全感。\n\n如果你的监狱有太多斗殴事件或整体危险水平过高，\n囚犯会感到不安全，进而考虑武装自己。\n\n若这渐渐变成一个问题，可以试着雇用更多警卫、建立更多\n巡逻路线或者满足囚犯的其它需求，藉此提高监狱的安全。\n\n监狱的“危险等级”的低/高，影响本需求的增/减。\n\n失败后果: 为了自保而想方设法得到武器
-needs_help_hygiene		大部分的囚犯会想要定期洗澡，尤其是早上起床后。\n\n“淋浴”作息会强迫那些牢房里没有淋浴物品的囚犯前往淋浴间。\n或者，增加自由活动时间，让囚犯依自己的需求洗澡。\n\n+ 时间\n- 淋浴\n\n失败后果: 坏情绪
-needs_help_exercise		很多囚犯会想要保持好身材。\n\n可以增加一个庭院，让他们散步或跑步。\n无论在庭院还是其它区域，安装举重床也有助于此。\n\n+ 时间\n- (庭院)放风\n- (举重床)举重\n\n失败后果: 坏情绪
-needs_help_recreation	无聊的囚犯，是危险的囚犯。\n\n可以在公共区域增加一些消遣的设施，例如电视或收音机，\n藉此达到囚犯对于休闲娱乐的需求。\n\n+ 时间\n- 收音机，作用于整个房间\n- (电视和多个座位)看电视\n- (台球桌)打台球\n- (游戏街机)打游戏\n\n失败后果: 坏情绪
-needs_help_comfort		囚犯一般需要感到舒适，生理上和心理上皆如此。\n\n有许多方法可以帮助达到这一点，例如允许家庭探监、\n提供热水澡，或者单纯是确保他们有地方可以坐而已。\n\n+ 时间\n- (座位)坐着\n- (床)放松\n- (电视和多个座位)看电视\n- (探监室)探监\n- (锅炉)热水澡\n- (床)睡觉\n\n失败后果: (不明)\n该需求似乎并不导致坏情绪。
-needs_help_environment	囚犯讨厌居住在脏乱的环境，但这么多囚犯一起使用同样的\n设施，周遭环境可能很快就脏乱了。\n\n雇用一些清洁工或安排囚犯打扫马桶，以保持环境整洁。\n\n周围环境的清洁程度的低/高，影响本需求的增/减。\n\n失败后果: (不明)\n注：该需求不导致坏情绪。亦即不会引发暴动。
-needs_help_privacy		有时候，囚犯会想要有自己的时间。\n\n通常待在自己牢房可以满足这个需求。\n如果和其他囚犯共享一个宿舍(拘留室、宿舍)，他们会觉得隐私不足。\n早晚需要换牢房。\n\n+ 与他人共用牢房的时间\n- 独自或与宝宝一起的时间\n\n失败后果: 不明\n不端行为: 发飙\n女性囚犯的概率远高于男性囚犯\n该需求似乎还会导致更多的地道。
-needs_help_freedom		就算在监狱里，你的囚犯还是会想要感到某种程度上的自由。\n\n增加“自由活动”或“庭院放风”到作息，会有助于此。\n\n+ 被关起来的时间\n- 自由活动的时间\n- (游戏街机)玩游戏\n- (树)接触自然\n失败后果: 不明\n不端行为: 越狱
-needs_help_clothing		就算总是一样颜色的连裤衫，囚犯时不时还是会想要干净衣服。\n\n增加洗衣房，并雇用清洁工或安排囚犯工作，以让他们美梦成真。\n\n+ 时间\n+ 下雨时在户外\n- 获得 囚服干净\n\n失败后果: (不明)
-needs_help_drugs		不少囚犯都有毒瘾问题——这可能也是他们入狱的原因。\n\n在医务室推动“毒瘾治疗”方案，有助于解决这个问题。\n\n如果囚犯偷偷使用了麻醉剂，他们会异常亢奋。\n有时会因为过量而导致生命危险。\n\n+ 时间\n- 使用相应的违禁品: 麻醉剂(除了酒)\n\n[可以削弱此需要]\n- 成功通过相应的改造项目: 毒瘾的药物治疗\n- 长时间地戒断(没有使用相应的违禁品)\n\n失败后果: 戒断(长期看是好事)\n不端行为: 发飙
-needs_help_alcohol		不少囚犯饱受酒瘾的困扰，会竭尽全力把酒弄到手。\n\n可以尝试推行“酗酒者团体治疗”，以减轻这种困扰。\n\n+ 时间\n- 使用相应的违禁品: 酒\n\n[可以削弱此需要]\n- 成功通过相应的改造项目: 酗酒者团体治疗\n- 长时间地戒断(没有使用相应的违禁品)\n\n失败后果: 戒断(长期看是好事)\n不端行为: 发飙
-needs_help_spirituality	一些囚犯有各种不同的宗教信仰。\n\n在监狱内增加教堂长凳或祈祷垫，可以让囚犯施行他们的宗教。\n但是建立 礼拜堂 并实施“精神引导”项目的成效最佳，\n并且还能普遍安抚囚犯。\n\n+ 时间\n- (教堂长凳、祈祷垫)祈祷\n\n失败后果: (不明)
-needs_help_literacy		一些囚犯就是想要读些东西。\n\n增加图书馆，让囚犯借阅书籍，以满足这个需求。\n\n+ 时间\n- (图书馆)借书\n- (小书架)读书\n\n失败后果: (不明)
-needs_help_warmth		没有人想在寒冷中度日，但大自然可不管你。\n\n在监狱内增加暖气片，保持室内温暖，以阻止冷天演变成问题。\n\n+ 暴露在在寒冷区域\n- 在温暖区域(暖气片)\n\n失败后果: (不明)\n\n此外，虽然没有列在这里，但“过热”也是一种负面情况，\n所以不要滥用加热设施。
-needs_help_babysleep	宝宝的睡眠时间需要比一般囚犯长。\n\n若你的囚犯有宝宝，请确保有 婴儿床，让宝宝可以安心睡觉。\n\n+ 时间\n- (婴儿床)[宝宝]睡眠\n\n失败后果: (不明)
-needs_help_babyplay		宝宝需要活动和娱乐。\n\n若你的囚犯有宝宝，请确保公共区域有 玩耍垫。\n\n+ 时间\n- (玩耍垫)[宝宝]玩耍\n\n失败后果: (不明)
-needs_help_family		大部分的囚犯想要和家人保持联系。\n最简单的方式是增加电话亭，不过探监室的成效更好。\n邮件收发室也有利于该需求。\n\n+ 时间\n- (探监室)探监\n- (电话亭)与家人通电话\n- 获得 邮件\n\n失败后果: 坏情绪\n不端行为: 越狱
-needs_help_luxuries		很多囚犯时不时地要享用一点奢侈品。可以通过建造商店来满足该需求，并且在这个过程中稍稍挣点小钱。\n该需求得以满足的囚犯会更少惹麻烦，但忽视该需求也没什么大不了的；毕竟，这里是监狱。
-
-needs_help_staffbladder			员工也需要上厕所啊。\n在“员工休息室”或“员工专区”房间里安装马桶。\n当轮休时，他们会来用。
-needs_help_staffbowels			员工也需要上厕所啊。\n在“员工休息室”或“员工专区”房间里安装马桶。\n当轮休时，他们会来用。
-needs_help_stafffood			员工需要在“员工专区”的“食堂”里用餐。\n你也可以在任何“员工专区”房间里摆些‘配餐桌’和座位。\n食物会从外部订购，所以不需要给员工‘厨房’。\n但餐盘仍然需要在‘厨房水槽’清洗。
-needs_help_staffsafety			即使在监狱工作，你的员工也需要安全感。\n高的危险等级或不断的打斗会让你的员工感到不安。\n更多的警卫彼此照应、配有更好的装备，可以缓解这个问题。
-needs_help_staffrecreation		监狱对谁来说都是超级无聊的地方。\n给你的员工们更丰富的娱乐吧。
-needs_help_staffcomfort			给员工一些坐着放松的地方。比如沙发。
-needs_help_staffenvironment		没人喜欢脏乱的环境。
-needs_help_staffrest			员工虽然不睡觉，但需要休息。\n在[报告/政策]里，给员工充足的轮休。\n另一方面，安保员工即使精力下降也不会疲劳。\n因为该机制被这一新的需求覆盖了。\n不在轮休时，警卫就不会去员工休息室。
-needs_help_staffwarmth			员工需要保持温暖，在您的监狱中放上暖气片来让他们舒适。
 
 reputation_title	特征
 reputation_hidden	（未知特征）
@@ -3358,7 +3280,7 @@ action_PlayChess	下棋
 
 plant_tree_location	在*X植树
 
-report_intake_cat_SuperMax	超高戒备囚犯
+
 
 interface_undo	撤消
 
@@ -3906,35 +3828,7 @@ codex_option_escapeplans	逃脱规划
 
 
 
-graph_title	图表
 
-graph_label_1	数据类型 1
-graph_label_2	数据类型 2
-graph_label_day	天数
-
-graph_axis_none	无
-graph_axis_profit	利润
-graph_axis_funds	资金
-graph_axis_prisonsize	监狱规模 (m²)
-graph_axis_numprisoners	囚犯数量
-graph_axis_numstaff	员工数量
-graph_axis_releasedprisoners	已释放的囚犯
-graph_axis_totalreleasedprisoners	已释放的囚犯总数
-graph_axis_escapedprisoners	已逃脱的囚犯
-graph_axis_totalescapedprisoners	已逃脱的囚犯总数
-graph_axis_entitydeath	死亡
-graph_axis_totaldeaths	死亡总数
-graph_axis_prisonerdeaths	囚犯死亡
-graph_axis_guarddeaths	警卫死亡
-graph_axis_securitygrading	安全等级
-graph_axis_healthgrading	健康等级
-graph_axis_reformgrading	教化等级
-graph_axis_punishmentgrading	惩罚等级
-graph_axis_reoffendingrate	再犯罪率
-graph_axis_prisonvalue	监狱价值
-graph_axis_prisonercapacity	囚犯容量
-graph_axis_numincidents	事件数量
-graph_axis_totalincidents	总事故
 
 equipment_Photo	照片
 equipment_SubMachineGun	冲锋枪
@@ -5546,7 +5440,7 @@ d11_tooltip_HelpEnvironmentallyFriendly_child_2_SectionTitle	执行“选择”�
 equipment_WateringCan	"洒水壶	"
 d11_Crop_Placement_Error_01	农作物只能放置在各自的农业房间内。
 d11_Crop_Placement_Error_02	农作物只能放置在尘土地、泥地、草坪、草坪拐角或花田上。
-interfacemode_objectPack_filter_all	所有种子包
+interfacemode_objectPack_filter_all	所有内容包
 d11_staffalert_summary_BasicFarming01	可在每个农业房间内种植蔬菜、果树和谷物，农作物收获后可外销出售，也可用作囚犯餐食。
 d11_staffalert_summary_BasicFarming02	农民不仅要处理耕种方面的一切事宜，还要将种田技能传授给囚犯。
 oobjective_HelpEnvironmentallyFriendly	和其他农作物不同的是，果树会持续不断地产出水果，因此无需在收获之后将其移除。
@@ -5934,7 +5828,7 @@ objective_WorkCredentials_child_1	囚犯原有的工作证明
 objective_WorkCredentials_child_1_Description	在入狱之前，即使是高戒备囚犯也会因以前的职业而具有一定的经验。有某一领域背景的囚犯不需要参加相应的培训课程，可直接参加与他们的经验相关的工作。
 objective_WorkCredentials_child_2	工作证明对囚犯的影响
 objective_WorkCredentials_child_2_Description	获得某些工作证明可以赢得某些声誉，即使没有通过培训计划，在某些情况下也可以不需要培训。\n\n厨师可通过获得搏击能手和结交广泛的声誉绕过厨房安全培训。\n\n清洁工可以获得敏捷和洁癖的声誉。\n\n工匠可通过获得工作狂和搏击能手的声誉绕过工坊培训。\n\n劳工可以获得强壮和粗暴的声誉。\n\n顾客服务人员可通过获得教唆犯和传教士的声誉绕过社会工作/计划的培训。
-objective_WorkExperience	工作经验
+
 objective_WorkExperience_child_2_Description	囚犯可通过 3 种途径获得工作经验：\n\n培训计划，囚犯从 3 个培训计划（作坊安全、厨房安全或三振出局培训）中选择 1 个完成，即可在相应领域（烹饪、工匠、顾客服务）获得 50% 的经验。\n\n原有的工作证明，囚犯可能在入狱前就已经拥有相关领域的工作经验。\n\n狱中劳役，任何参加劳役工作的囚犯都会获得相关领域的工作经验。
 objective_NewRooms	全新房间
 objective_NewRooms_child_4_Description	面包房为囚犯提供获得已有和新型违禁品的机会。由于有可能有大量的囚犯和平民在场，在某些情况下，囚犯有可能变成暴力分子。
@@ -7268,6 +7162,10 @@ samplebank	(音色库)
 #-
 
 
+
+
+
+
 #+===============================状态栏===============================
 
 interfacetopbar_todo	待办事项
@@ -7280,7 +7178,7 @@ interfacecontrol_research_tooltip	在其中进行研究以解锁新的功能
 interfacecontrol_grading	监狱评级
 interfacecontrol_grading_tooltip	在其中查看监狱的总体评分
 
-interfacecontrol_graphs	图表
+interfacecontrol_graphs	统计图表
 interfacecontrol_graphs_tooltip	在其中查看监狱各方面的统计图表
 
 interfacetopbar_title_tension	危险等级
@@ -7922,6 +7820,139 @@ research_orderly 护工
 #-
 
 #-===========================================================
+#+===============================统计===============================
+
+graph_title	统计图表
+
+graph_label_1	数据类型 1
+graph_label_2	数据类型 2
+graph_label_day	天数
+
+graph_axis_none	无
+graph_axis_profit	监狱：利润
+graph_axis_funds	监狱：现金
+graph_axis_prisonsize	监狱：规模 (m²)
+graph_axis_prisonvalue	监狱：价值
+
+graph_axis_prisonercapacity	管理：囚犯容量
+graph_axis_numprisoners	管理：囚犯数量
+graph_axis_numstaff	管理：员工数量
+graph_axis_numincidents	管理：事件数量（单日）
+graph_axis_totalincidents	管理：事故（累计）
+
+graph_axis_releasedprisoners	囚犯：出狱（单日）
+graph_axis_totalreleasedprisoners	囚犯：出狱（累计）
+graph_axis_escapedprisoners	囚犯：越狱（单日）
+graph_axis_totalescapedprisoners	囚犯：越狱（累计）
+
+graph_axis_entitydeath	死亡（单日）
+graph_axis_totaldeaths	死亡（累计）
+graph_axis_prisonerdeaths	死亡：囚犯（累计）
+graph_axis_guarddeaths	死亡：警卫（累计）
+
+graph_axis_securitygrading	评级：安全
+graph_axis_healthgrading	评级：等级
+graph_axis_reformgrading	评级：改造
+graph_axis_punishmentgrading	评级：惩罚
+graph_axis_reoffendingrate	评级：再犯罪率
+objective_WorkExperience	评级：工作经验
+
+
+#-===========================================================
+#+===============================需求===============================
+
+#+==需求名称
+need_name_nothing	无
+need_name_bladder	小便
+need_name_bowels	大便
+need_name_sleep	睡眠
+need_name_food	食物
+need_name_safety	安全
+need_name_hygiene	卫生
+need_name_exercise	锻炼
+need_name_family	家庭
+need_name_recreation	娱乐
+need_name_comfort	舒适
+need_name_environment	环境
+need_name_privacy	隐私
+need_name_freedom	自由
+need_name_clothing	衣物
+need_name_drugs	毒品
+need_name_alcohol	酒精
+need_name_starving	挨饿
+need_name_spirituality	宗教
+need_name_literacy	文化
+need_name_babysleep	[婴儿]睡眠
+need_name_babyplay	[婴儿]玩耍
+need_name_warmth	保暖
+
+need_name_staffbladder	小便
+need_name_staffbowels	大便
+need_name_stafffood	食物
+need_name_staffsafety	安全
+need_name_staffrecreation	娱乐
+need_name_staffcomfort	舒适
+need_name_staffenvironment	环境
+need_name_staffrest	休息
+need_name_staffwarmth	保暖
+need_name_luxuries	奢侈品
+needs_locked	(需要心理医师来揭示需求)
+needs_title	【需求】
+#-==
+
+#+==需求统计
+needs_total_prisoners	▁ *X 个囚犯有此需求\n
+needs_total_concerned	▃ *X 个囚犯希望满足此需求
+needs_total_desperate	▆ *X 个囚犯急需满足此需求
+needs_total_angry	█ *X 个囚犯因未能满足此需求而愤怒
+needs_total_active	√ *X 个囚犯正在解决此需求
+
+needs_total_staff				▁ *X 名员工有此需求\n
+needs_total_concerned_staff		▃ *X 名员工希望满足此需求
+needs_total_desperate_staff		▆ *X 名员工急需满足此需求
+needs_total_angry_staff			█ *X 名员工因未能满足此需求而愤怒
+needs_total_active_staff		♫ *X名 员工正在解决此需求
+#-==
+
+#+==需求描述
+needs_help_bladder		人人皆需上厕所，囚犯也一样。\n\n监狱的体制非常严格，例如他们应在淋浴间，他们就无法使用牢房内的马桶。\n\n睡觉时间之后，最好给囚犯上厕所的机会。\n牢房之外也可以考虑添加一些厕所。\n\n+ 时间\n- 厕所\n\n失败后果: 愤怒+囚服变脏
+needs_help_bowels		人人皆需上厕所，囚犯也一样。\n\n周期是小便的两倍。\n\n+ 时间\n- 厕所\n\n失败后果: 愤怒+囚服变脏
+needs_help_sleep		囚犯只能在牢房的床铺上睡觉。\n有些囚犯会为了挖掘地道而放弃睡觉。\n\n+ 时间\n- 睡觉\n失败后果: 愤怒
+needs_help_food			人人皆需吃饭。。\n\n若你发现厨房无法应付需求，试着多雇用或安排几个厨师。\n你也可以在[报告]窗口中的[政策]标签页，调整你的伙食政策。\n\n+ 时间\n- 吃饭\n- 相关物品\n\n失败后果: 愤怒+挨饿(长期挨饿会死亡)
+needs_help_safety		即使在监狱，囚犯也需要安全感。\n\n如果你的监狱有太多斗殴事件或整体危险水平过高，\n囚犯会感到不安全，进而考虑武装自己。\n\n若这渐渐变成一个问题，可以试着雇用更多警卫、建立更多巡逻路线或者满足囚犯的其它需求，以此提高监狱的安全。\n\n监狱的“危险等级”的高/低，影响本需求的增/减\n- 监控\n\n失败后果: 为自保而想方设法得到武器
+needs_help_hygiene		大部分的囚犯会想要定期洗澡，尤其是早上起床后。\n\n“淋浴”作息会强迫那些牢房里没有淋浴物品的囚犯前往淋浴间。\n或者增加自由活动时间，让囚犯依自己的需求洗澡。\n\n+ 时间\n- 淋浴\n- 相关物品\n\n失败后果: 愤怒
+needs_help_exercise		很多囚犯会想要保持锻炼。\n\n可以建设一个庭院或健身房，让他们散步或锻炼。\n\n+ 时间\n- 庭院放风\n- 相关物品\n\n失败后果: 愤怒
+needs_help_recreation	无聊的囚犯，是危险的囚犯。\n\n可以在公共区域增加一些用来消遣的娱乐设施，例如电视或收音机，\n以此达到囚犯对于休闲娱乐的需求。\n\n+ 时间\n- 相关物品\n\n失败后果: 愤怒
+needs_help_comfort		囚犯想要感到舒适，生理上和心理上皆如此。\n\n有许多方法可以帮助达到这一点，例如允许家庭探监、\n提供热水澡，或者单纯是确保他们有地方可以坐而已。\n\n+ 时间\n- (探监室)探监\n- (锅炉)热水澡\n- (座位)坐着\n- (床)放松\n- (床)睡觉\n- 相关物品\n\n失败后果: 愤怒
+needs_help_environment	囚犯讨厌居住在脏乱的环境。\n\n雇用一些清洁工或安排囚犯打扫，以保持环境整洁。\n\n周围环境的清洁程度的低/高，影响本需求的增/减。\n- 植物盆栽\n- 垃圾桶\n\n失败后果: 愤怒
+needs_help_privacy		有时候，囚犯会想要有独处的时间。\n\n通常待在自己牢房可以满足这个需求。\n如果住在宿舍与拘留室，他们会觉得隐私不足。\n女性囚犯的概率远高于男性囚犯\n该需求可能会导致更多的地道。\n\n+ 与他人共用牢房的时间\n- 牢房独处的时间\n- 与婴儿一起的时间\n\n不端行为: 发飙
+needs_help_freedom		就算在监狱里，囚犯还是会想要感到某种程度上的自由。\n\n增加“自由活动”或“庭院放风”到作息有助于此。\n\n+ 被监禁的时间\n- 自由活动的时间\n- (树)接触自然\n- 相关物品\n不端行为: 越狱
+needs_help_clothing		就算总是一样颜色的连裤衫，囚犯还是会想要干净衣服。\n\n增加洗衣房，并雇用清洁工或安排囚犯工作，以让他们美梦成真。\n\n+ 时间\n+ 淋雨\n- 获得 干净的囚服
+needs_help_drugs		不少囚犯都有毒瘾问题，这可能也是他们入狱的原因。\n\n让囚犯参与改造方案，有助于解决这个问题。\n\n如果囚犯偷偷使用了麻醉剂，他们会异常亢奋。\n有时会因为过量而导致生命危险。\n\n+ 时间\n- 通过相关改造方案\n- 长时间戒断\n- 使用相关违禁品\n- 相关物品\n\n失败后果: 戒断\n不端行为: 发飙
+needs_help_alcohol		不少囚犯饱受酒瘾的困扰，会竭尽全力把酒弄到手。\n\n让囚犯参与改造方案，有助于解决这个问题。\n\n+ 时间\n- 通过相关改造方案\n- 长时间戒断\n- 使用相关违禁品\n- 相关物品\n\n失败后果: 戒断\n不端行为: 发飙
+needs_help_spirituality	囚犯有各种不同的宗教信仰。\n\n在监狱内增加教堂长凳或祈祷垫，可以让囚犯满足宗教需求。\n建立(礼拜堂)并实施相关改造方案的成效最佳，并且还能普遍安抚囚犯。\n\n+ 时间\n- 教堂长凳/祈祷垫\n- 通过相关改造方案
+needs_help_literacy		一些囚犯就是想要读些东西。\n\n增加图书馆让囚犯借阅书籍，以满足这个需求。\n\n+ 时间\n- 相关物品
+needs_help_warmth		没有人想在寒冷中度日，但大自然可不管你。\n\n在监狱内增加暖气可以保持室内温暖。\n\n+ 寒冷区域\n- 温暖区域
+needs_help_family		大部分的囚犯想要和家人保持联系。\n最简单的方式是阅读邮件与使用电话亭，不过探监室的成效更好。\n\n+ 时间\n- (探监室)探监\n- (电话亭)通电话\n- 阅读 邮件\n- 宠物鸟\n\n失败后果: 愤怒\n不端行为: 越狱
+needs_help_luxuries		很多囚犯时不时地要享用一点奢侈品。可以通过建造商店来满足该需求，并且在这个过程中稍稍挣点小钱。\n\n+ 时间\n- 图书馆借阅\n- 小书架
+
+
+needs_help_babysleep	婴儿的睡眠时间需要比一般囚犯长。\n\n请确保有婴儿床可以让婴儿安心睡觉。\n\n+ 时间\n- (婴儿床)睡眠
+needs_help_babyplay		婴儿需要活动和娱乐。\n\n若你的囚犯有婴儿，请确保公共区域有 玩耍垫。\n\n+ 时间\n- (玩耍垫)玩耍
+
+needs_help_staffbladder			员工也需要上厕所。\n在“员工休息室”或“员工专区”的房间里安装厕所，\n当轮休时员工会使用。\n\n+ 时间\n- 相关物品
+needs_help_staffbowels			员工也需要上厕所。\n在“员工休息室”或“员工专区”的房间里安装厕所，\n当轮休时员工会使用。\n\n+ 时间\n- 相关物品
+needs_help_stafffood			员工需要在“员工专区”的“食堂”里用餐。\n你也可以在任何“员工专区”房间里摆些‘配餐桌’和座位。\n食物会从外部订购，所以不需要给员工‘厨房’。\n但餐盘仍然需要在‘厨房水槽’清洗。\n\n+ 时间\n- 吃饭
+needs_help_staffsafety			员工也需要安全感。\n高的危险等级或不断的打斗会让你的员工感到不安。\n更多的警卫彼此照应、配有更好的装备，可以缓解这个问题。\n\n监狱的“危险等级”的高/低，影响本需求的增/减
+needs_help_staffrecreation		监狱对谁来说都是超级无聊的地方，\n给你的员工们更丰富的娱乐吧。\n\n+ 时间\n- 相关物品
+needs_help_staffcomfort			给员工一些放松的地方，比如沙发。\n\n+ 时间\n- 相关物品
+needs_help_staffenvironment		没人喜欢脏乱的环境。\n\n+ 时间\n- 相关物品
+needs_help_staffrest			员工也需要休息。\n在[报告/政策]里，给员工充足的轮休。\n不在轮休时，警卫就不会去员工休息室。\n\n+ 时间\n- 轮休
+needs_help_staffwarmth			员工需要保持温暖，在您的监狱中安装暖气来让员工感到舒适。\n\n+ 寒冷区域\n- 温暖区域
+#-===========================================================
+#-============================================================
+
+
 
 
 
@@ -8400,7 +8431,7 @@ buildtoolbar_popup_obj_metaldetector	囚犯经过时偷藏的金属违禁品会�
 object_CameraPillar	摄像机柱
 buildtoolbar_popup_obj_camerapillar	放置在开放区域，然后将摄像头安装在两侧。\n装饰性
 object_cctv						监控摄像头
-buildtoolbar_popup_uts_cctv	不用到处安排警卫，也可以监视囚犯。\n\n迷雾中发生事端时，附近的警卫不会知晓，所以不会前去处理。\n必须用‘监控监视器’连接才能工作。\n\n【豪华版】增加了“分拣囚犯”研究可以升级摄像头，\n从而把特定的囚犯群体，自动设置为合适的戒备类别。\n\n需求：\n+ 安全 0.02\n- 隐私 0.04
+buildtoolbar_popup_uts_cctv	不用到处安排警卫，也可以监视囚犯。\n\n迷雾中发生事端时，附近的警卫不会知晓，所以不会前去处理。\n必须用‘监控监视器’连接才能工作。\n\n【豪华版】增加了“分拣囚犯”研究可以升级摄像头，\n从而把特定的囚犯群体，自动设置为合适的戒备类别。\n\n需求：\n+ 安全 0.03\n- 隐私 0.05
 object_cctvmonitor				监控监视器
 buildtoolbar_popup_uts_cctvmonitor	警卫可远程监控监狱各处的摄像头。\n\n使用“连接”工具，将监视器与‘监控摄像头’相连。\n最多同时监视8个摄像头。如果连接了超过8个摄像头，\n监视器会轮流切换显示，只能提供不完整的监控覆盖度。
 
