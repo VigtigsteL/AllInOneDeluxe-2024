@@ -1,5 +1,5 @@
-# 需求
-# ===========================================
+#==============================需求==============================
+
 
 # ==============床================
 # - 坐舒适0.09/睡舒适0.12/睡眠0.12 
@@ -7,6 +7,319 @@
 # . 坐舒适0.15/睡舒适0.18/睡眠0.18 
 # + 坐舒适0.20/睡舒适0.40/睡眠0.30 
 # ================================
+
+#+===============需求===============
+
+#+膀胱
+BEGIN Need       
+    Name                 Bladder   
+    Priority             9  
+    FailureAction        Urinate 
+    TimeToAction         600.000  
+    TimeToFailure        720.000  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               1.00000  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           Involuntary
+    Properties           RaisesTemp
+END
+#-
+
+#+肠道
+BEGIN Need       
+    Name                 Bowels  
+    Priority             9   
+    FailureAction        SoilSuit 
+    TimeToAction         600.000  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               1.00000  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           Involuntary
+    Properties           RaisesTemp
+END
+#-
+
+#+睡眠
+BEGIN Need       
+    Name                 Sleep  
+    Priority             8    
+    TimeToAction         1440.00  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               1.00000  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           RaisesTemp
+END
+#-
+
+#+食物
+BEGIN Need       
+    Name                 Food  
+    Priority             8   
+    TimeToAction         960.000  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               1.00000  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           RaisesTemp
+END
+#-
+
+#+安全
+BEGIN Need       
+    Name                 Safety  
+    Priority             7   
+    TimeToAction         -360.000  
+    TimeToFailure        -360.000  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.900000  
+    Visibility           Visible
+    Properties           AutoCharge
+END
+#-
+
+#+卫生
+BEGIN Need       
+    Name                 Hygiene  
+    Priority             7   
+    TimeToAction         1440.00  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.800000  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           RaisesTemp
+END
+#-
+
+#+锻炼
+BEGIN Need       
+    Name                 Exercise  
+    Priority             6  
+    Hidden               false   
+    TimeToAction         1440.00  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.600000  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           RaisesTemp
+END
+#-
+
+#+家庭
+BEGIN Need       
+    Name                 Family  
+    Priority             6   
+    MisbehaviorType      Escaping  
+    TimeToAction         1440.00  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.000000  
+    GenerationRules      Family  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           RaisesTemp
+END
+#-
+
+#+娱乐
+BEGIN Need       
+    Name                 Recreation   
+    Priority             6   
+    TimeToAction         1440.00  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.700000  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           RaisesTemp
+END
+#-
+
+#+舒适
+BEGIN Need       
+    Name                 Comfort  
+    Priority             5   
+    TimeToAction         720.000  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.700000  
+    Visibility           Visible
+    Properties           AutoCharge
+    Properties           RaisesTemp
+END
+#-
+
+#+环境
+BEGIN Need       
+    Name                 Environment  
+    Priority             5   
+    TimeToAction         720.000  
+    TimeToFailure        720.000  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.700000  
+    Visibility           Visible
+    Properties           RaisesTemp
+END
+#-
+
+#+隐私
+BEGIN Need       
+    Name                 Privacy   
+    Priority             5   
+    MisbehaviorType      Spoiling  
+    TimeToAction         1440.00  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.500000  
+    Visibility           Visible
+    Properties           AutoCharge
+END
+#-
+
+#+自由
+BEGIN Need       
+    Name                 Freedom  
+    Priority             5   
+    MisbehaviorType      Escaping  
+    TimeToAction         1440.00  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.660000  
+    Visibility           Visible
+    Properties           RaisesTemp
+END
+#-
+
+#+衣服
+BEGIN Need       
+    Name                 Clothing  
+    Priority             8
+    TimeToAction         4320.00  
+    TimeToFailure        4320.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               1.00000  
+    Visibility           Visible
+    Properties           AutoCharge
+END
+#-
+
+#+毒品
+BEGIN Need       
+    Name                 Drugs  
+    Priority             8  
+    FailureAction        Withdrawal  
+    MisbehaviorType      Spoiling  
+    TimeToAction         720.000  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.200000  
+    GenerationRules      Narcotics  
+    Visibility           AutoHide
+    Properties           AutoCharge
+    Properties           Involuntary
+END
+#-
+
+#+酒精
+BEGIN Need       
+    Name                 Alcohol  
+    Priority             8  
+    Hidden               false  
+    AutoCharge           true  
+    FailureAction        Withdrawal  
+    MisbehaviorType      Spoiling  
+    TimeToAction         720.000  
+    TimeToFailure        1440.00  
+    StartingActionPoints 33  
+    RandomActionPoints   33  
+    Chance               0.200000  
+    GenerationRules      Narcotics  
+    Visibility           AutoHide
+    Properties           AutoCharge
+    Properties           Involuntary
+END
+#-
+
+#+宗教
+BEGIN Need
+    Name                    Spirituality
+    Priority                5
+    TimeToAction            1440.00  
+    TimeToFailure           1440.00 
+    StartingActionPoints    33
+    RandomActionPoints      33
+    Chance                  0.33
+    Properties              AutoCharge
+    Visibility              Visible
+END
+#-
+
+#+文化
+BEGIN Need
+    Name                    Literacy
+    Priority                5
+    TimeToAction            2880.00
+    TimeToFailure           2880.00
+    StartingActionPoints    33
+    RandomActionPoints      33
+    Chance                  0.2
+    Visibility              Visible
+    Properties              AutoCharge
+    GenerationRules         Intelligent
+END
+#-
+
+#+温暖
+BEGIN Need
+    Name                    Warmth
+    Priority                4
+    Chance                  1.0
+    TimeToAction            1800.00
+    TimeToFailure           3600.00
+    StartingActionPoints    33
+    RandomActionPoints      33
+    Visibility              Visible
+    Properties              Involuntary
+    Properties              RaisesTemp
+END
+#-
+
+#+奢侈品
+BEGIN Need
+    Name                    Luxuries
+    Priority                6
+    TimeToAction            2880.00
+    TimeToFailure           2880.00
+    StartingActionPoints    33
+    RandomActionPoints      33
+    Chance                  0.7
+    Visibility              Visible
+    Properties              AutoCharge
+END
+#-
+#-
 
 # 海绵床垫--
 BEGIN Provider
@@ -629,17 +942,17 @@ END
 
 
 
-# 监控 范围14 安全+0.02 隐私-0.04
+# 监控 范围14 安全+0.03 隐私-0.05
 BEGIN Provider
   Action          Cctv
   ProviderType    Object
   Object          Cctv
   PrimaryNeed     Safety
-  PrimaryRate     -0.02
+  PrimaryRate     -0.03
   SecondaryNeed	  Privacy
-  SecondaryRate	  0.04
+  SecondaryRate	  0.05
   ActionType      Use
-  Flags           Broadcaster
+  Flags           Passive
   BroadcastRange  14
 END
 
