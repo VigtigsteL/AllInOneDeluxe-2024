@@ -1,8 +1,13 @@
 # ==============================================================================
 # 中文豪华版2024 By:Vigtigste
 # =============================================================================
-
-
+quickbuild_Armoury	枪械库
+quickbuild_Infirmary	医务室
+quickbuild_Laundry	洗衣房
+quickbuild_Library	图书馆
+quickbuild_MailRoom	邮件收发室
+quickbuild_Visitation	探视
+d11_quick_yard	庭院
 
 # 声音编辑器(F5)
 soundeditor_NewEvent 新建事件
@@ -16,6 +21,13 @@ regime_more_sec ◀▶
 # [报告/补助]的“出狱 I”
 grant_category_PrisonersReleased 已释放囚犯数:
 
+interfacecallout_NationalGuard 部队
+
+object_jaildoorXL 特大监狱门
+buildtoolbar_popup_obj_jaildoorXL 超大的监狱门。
+
+reformprogram_GroupFitness [特殊]集体健身
+reformprogram_GroupFitness_text 让众多囚犯们大量流汗以充分健身。\n普通的举重时间很短，最好提供这个额外的健身机会。\n\n疾病点数机制：\n每个新囚犯会根据体型得到初始的疾病点数。\n比如：肥胖者最高，为300。\n之后的变化规则为：\n+/-伙食政策\n-举重\n+保持受伤(尚未得到治疗)
 
 # =============================================================================
 # Interface Mode
@@ -121,47 +133,25 @@ interfaceclone_paste	粘贴
 interfaceclone_cancel	取消快速建造
 interfaceclone_clone	【克隆】
 
-
 interfacetopbar_balance	余额 *B
 interfacetopbar_budget	现金流 *C
 interfacetopbar_income	收入 *I
 interfacetopbar_expenses	支出 *C
 
 
-
-
-
-
-
-
 interfacetopbar_tooltip_cctv	你当前拥有的监控摄像头和监视器的数量
 
 interfacetopbar_title_cctv	监控
 
-
-
 interfacetopbar_tooltip_recenttransactions	最近的交易
-
-
-
-
-
-
-
-
 
 
 interfacetopbar_cctv_current	目前运作 *C 个摄像头
 interfacetopbar_cctv_cap	还可安装 *C 个摄像头
 
 
-
-
-
 interfacecontrol_mainmenu	主菜单(Esc)
 interfacecontrol_mainmenu_tooltip	打开主菜单(新建游戏/读档/存档/退出等)
-
-
 
 interface_confirmlandbuy	你确定要花 $*X 购买这个地块吗？
 interface_loadconfirm	你确定要加载这张地图？\n\n你将失去所有未保存的进度。
@@ -283,33 +273,6 @@ buildtoolbar_popup_properties	找出乱子。
 
 buildtoolbar_popup_grading	查看你的监狱整体等级，基于四个关键指标：\n惩罚、改造、安全、健康。还显示囚犯出狱后的再犯率。
 
-buildtoolbar_popup_room_cell	标准的单人间。\n\n囚犯主要在这里睡觉或者挖挖地道。\n\n被监禁在牢房时，犯人的“自由”需求会积累。\n\n通过研究“小牢房”，可以提高空间利用率。\n当然，相应地，牢房的品质会很成问题。\n\n随时可以点击囚犯以选中，然后右击希望他搬到的牢房的任意格子，会有警卫来押送他。
-buildtoolbar_popup_room_holdingcell	暂时收容新进囚犯的房间，直到他们获得自己的正式牢房。\n\n监狱起步时，节约资金的好办法。\n\n如果启用了牢房品质分级，那么新囚犯可能得不到牢房，\n那么他们可以在这里等几天。\n\n没有容量限制，但让大量犯人长期呆在这里显然不妥。\n他们非常容易积累不满，而且频繁地闹事。\n\n如果你不得不较长时间让囚犯住在这儿，那么记得买些床铺。\n同时，指派警卫驻守也是很有必要的。\n\n床位不计入监狱容量。
-buildtoolbar_popup_room_solitary	专门针对恶中之恶的隔离惩戒方式。\n\n当囚犯被惩罚关禁闭时，会被戴上镣铐并押送进这里。\n\n会让囚犯的“被压制”程度快速上升，因而变得很听话。\n对于顽固的囚犯，禁闭是提高其改造评分的重要途径。\n\n可以把禁闭中的部分囚犯招募为秘密线人。\n\n这里的囚犯不能出去，而由警卫为其送饭。
-buildtoolbar_popup_room_dormitory	这个房间可容纳多个囚犯。\n每4平米容纳1人。\n\n会积累“隐私”需求。
-buildtoolbar_popup_room_familycell	女囚犯带着婴儿一起生活的地方。
-buildtoolbar_popup_room_sharedcell	一个多人牢房。至多能够容纳8个囚犯。
-buildtoolbar_popup_room_canteen	囚犯的进食场所。\n\n其实除了吃饭，这里也可以进行各种活动。\n只要空间足够，可以当做非正式的公共活动室。\n由于“吃饭”作息让囚犯无法提前离开，\n可以添加一些满足其它需求的物品。\n\n由于人员密度形成高峰，囚犯们很容易自发地开展\n“非正式活动”——比如斗殴，所以安保需要特别加强。\n\n如果启用“员工需求”，那么把一个食堂设为员工专区，\n以让员工轮休时来用餐。
-buildtoolbar_popup_room_kitchen	厨师为囚犯烹制食物的区域。\n\n提前4小时开始准备。\n厨师会从卸货区把食材送到冰柜上。\n\n[报告/政策]中，伙食的份量和种类越多，则消耗的食材越多、\n需要的厨师也越多。\n相应的好处是产生并维持囚犯的“吃得不错”状态，\n让人心情好，少闹事；还提高监狱评级的“健康”指标。\n\n如果启用“天气与温度”，厨房会产生可观的热量。
-buildtoolbar_popup_room_shower	用于让囚犯保持卫生。\n\n配合“淋浴”作息，可以强制囚犯来这里。\n但其实，淋浴行为与房间无关。\n建议你还是在庭院或牢房里安装淋浴设备。\n它们同样有效，且没有强制性。\n\n别忘了在出入口（或在花洒下方）铺设排水孔。
-
-buildtoolbar_popup_room_storage	放置监狱员工所需的各种材料（建材、物品等）。\n\n工人的待命地点。\n不妨在各处再指定两三个小仓库，节省路途奔波。\n\n最好封闭起来避免囚犯偷东西。\n\n[推荐区划：员工专区]
-buildtoolbar_popup_room_deliveries	卸下货物、材料以及囚犯。\n\n工人的待命地点。\n\n沿着马路加长此区，可以让更多的供给车同时停留。\n每一辆供给车需要10米。\n供给车只会在马路上的第一个卸货区卸货，\n所以多个卸货区是毫无意义的。\n如果它与垃圾场、出货区相邻，则可以一边卸货一边装车。\n\n[推荐区划：员工专区]
-buildtoolbar_popup_room_garbage	在这里，堆放废弃物，然后装车送走。\n\n清洁工的待命地点。\n厨师需要丢弃厨余垃圾，可以在监狱各处指定多个垃圾场。
-buildtoolbar_popup_room_execution	在这里处死囚犯。\n\n考虑到会有一些员工、见证人，这个房间最好至少有20平米。\n见证人需要大约5个座椅，但其实站着也无所谓。\n\n建议在睡觉期间执行死刑。
-buildtoolbar_popup_room_workshop	囚犯们在这里制作物品。\n\n产品的销售额有可能成为你监狱收入的重头。\n\n经过训练后，也可以制作木制品，利润更高。\n木制品流程：\n1. 从 林场 产出 原木。\n2. 用 电锯台 加工出 木板。\n3. 用 木工桌 加工出 高级床。\n也可直接采购/出售木板。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为20人。\n\n大约每5个高戒备囚犯中能有一人来工作。\n其中能操作‘木工桌’的有4分之一。\n中戒备的这两个值则分别为7和9。\n\n有时囚犯会操起工具当做武器。最好能有多名警卫压制。\n或者，干脆建在户外，让警戒塔来压制。\n\n另外，囚犯会在这里做出 木质镐头，用于挖地道。\n它不是金属，难以检测。\n\n如果要提高培训的成功率，则最好为培训单独设置工坊。
-buildtoolbar_popup_room_security	警卫办公室。一般、武装警卫和狙击手会在这里待命。\n\n监控监视器、门禁系统和电话窃听器，很适合安装在这里。\n\n每次激活秘密线人，都要将其押送到这里以提供情报。\n\n[推荐区划：员工专区]
-buildtoolbar_popup_room_office	每个管理人员都需要一间。\n\n[推荐区划：员工专区]\n但“行为疗法”项目所需的除外
-buildtoolbar_popup_room_medicalward	保存麻醉剂的地方——直到瘾君子把它们偷走。\n\n医护人员的待命地点。\n受伤的囚犯和员工会被带到这里治疗。\n\n医生不会为囚犯开门，所以应当采用无锁门。\n\n由于无法避免囚犯出入，所以最好严查违禁品。\n\n待命的医生能够自动响应的半径大约为20米。\n\n[推荐区划：目的地专区]\n\n应当让医务室和\n员工休息室彼此靠近。
-buildtoolbar_popup_room_morgue	在这里，安放死亡的囚犯和员工。\n\n相当于在死亡现场和灵车之间，\n空间和时间双重意义上的中转站。\n不过即使没有它，似乎也没什么影响。\n\n不需要墙壁，所以建议与医务室连在一起。\n\n[推荐区划：员工专区]
-buildtoolbar_popup_room_commonroom	给囚犯一些自由活动让其放松。\n\n这个房间本身毫无效果。\n你需要安装各种设施物品来满足囚犯需求。\n比如：小书架、收音机、电视、台球桌等。\n\n其实这些物品在庭院、食堂等地方也可以安装。\n不妨把上述地方作为重点，而把本房间当做补充：\n——以小巧而灵活的宽高尺寸，分散在各地角落，\n以便囚犯们就近得到满足需求的物品设施。\n\n为了“酗酒者团体治疗”方案，仍然要有一个较大的活动室。
-buildtoolbar_popup_room_kennel	警犬在这里快速恢复疲劳。\n\n警犬需要狗笼才能睡觉。\n\n[推荐区划：无所谓] 没有违禁品可偷
-buildtoolbar_popup_room_chapel	当行政管理层聚在一起讨论如何应对囚犯们的宗教需求时，\n会有什么结果？“多信仰祷告室”，就是这玩意儿。\n我们指的是礼拜堂。\n\n通过项目“精神引导”，满足“宗教”需求并产生“平静”效果。
-buildtoolbar_popup_room_paroleroom	当囚犯服刑达到总刑期的50%和75%时，各有一次机会申请假释。\n他们的命运将由（外部的）假释官在这间房间里决定。\n\n注意：最好有额外的安保人员。\n假释被驳回时，屡见不鲜地，囚犯会相当激动。\n\n如果囚犯被提前释放且没有再犯罪的话会得到非常可观的奖励。\n死刑犯的上诉也在这里进行。
-buildtoolbar_popup_room_library	全国各地会给你的监狱送来成箱的废书或旧书。\n囚犯们要将书本分类并上架。\n\n提供图书以满足“文化”需求。\n囚犯会来这里借书和还书。\n\n拿到书后，囚犯会去食堂的长凳上读书。\n或者回到牢房里坐在椅子上。\n公共活动室等地方因为不够安静而无法读书。\n虽然犯人读书效率非常高，但他们花费很多时间在来回的路上。\n\n一段时期后图书会损坏，因此需要持续补充。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为20人。
-buildtoolbar_popup_room_intake	囚犯刚抵达时，会先被带到这里搜身。
-buildtoolbar_popup_room_nursery	带婴儿的女囚犯的活动室。\n\n并且，她们在这里用餐，而不去普通的食堂。
-buildtoolbar_popup_room_shop	让犯人们花掉零用钱的合法渠道，以瞬间解决其需求。\n\n还会给你聊胜于无的收入。\n\n · 棕色=食物\n · 蓝色=卫生\n · 绿色=娱乐，安装‘店面’，从而让顾客从外面光顾。\n\n只能由囚犯工作来运营。需要人数=店面数。\n如果客流量很大则需要增加人手，以专心补充货架。\n\n所有被要求的物品，只安装1个即可。\n房间面积越小越好。\n工人会不断送来货物，尽可能塞满每个格子……\n\n由于程序的缺陷，工人会反复地把货物从商店里再运到仓库。\n最佳对策是：不安排专人补充货架。这样所有都货物会处于\n等待上架的待办事项，从而避免了出现运到仓库的待办事项。
 
 buildtoolbar_popup_obj_jaildoor	把囚犯关在他们应该待的地方。\n\n在“睡觉”和“监禁”作息，或者囚犯被禁足、关禁闭时，\n牢房的监狱门会变成关闭模式。\n这时，只有附近的警卫可以开门并替人开门。\n\n非牢房的监狱门，则总是这个模式。\n你会看到清洁工经常被拦住。\n也容易在高峰时段造成囚犯的拥堵，产生不良情绪。\n如果不考虑真实性，那么很多时候，‘员工门’甚至\n‘无锁门’会是更好的选择。
 buildtoolbar_popup_obj_jaildoorlarge	把很多囚犯关在他们应该待的地方。\n\n在人流特别拥挤的交通瓶颈，最好安装反向对开的两个门\n，形成4米宽。或者，可以用3米的特大监狱门。
@@ -1183,7 +1146,7 @@ report_grants	补助
 report_valuation	估值
 report_contraband	违禁品
 report_programs	方案
-report_schedule	改造项目时刻表
+report_schedule	改造方案日程表
 report_intake	接收
 
 report_grants_bankloan	银行贷款
@@ -1381,7 +1344,7 @@ finances_profit	净额
 finances_timewithoutincident	(*X天)
 finances_dailyincome	*X/天
 
-finances_category_federalgrant			联邦补助
+finances_category_federalgrant			政府补助
 finances_category_minsecprisoners		低戒备犯补助
 finances_category_medsecprisoners		中戒备犯补助
 finances_category_maxsecprisoners		高戒备犯补助
@@ -1739,28 +1702,28 @@ reputation_pickpocket_high	惯偷✚
 reputation_copycat_high	身份窃贼✚
 reputation_escapeartist_high	逃脱大师✚
 
-reputationtooltip_legendary			该囚犯是黑社会里的传奇人物，\n拥有诸多的本领和能力，十分危险。
+reputationtooltip_legendary			该囚犯是黑社会里的传奇人物，\n拥有诸多的本领和能力，十分危险！
 reputationtooltip_strong			该囚犯在打斗时战斗力比常人更高。\n也擅长破坏监狱门等东西。
-reputationtooltip_tough				该囚犯在打斗时比常人更能承受伤害。\n甚至有时连电击枪的威力也能承受。
+reputationtooltip_tough				该囚犯在打斗时比常人更能承受伤害。\n甚至有时连电击枪也能承受。
 reputationtooltip_volatile			该囚犯容易毫无预兆、无缘无故地发飙。\n即使所有需求被满足，仍然是个不定时炸弹。
-reputationtooltip_stoical			该囚犯对于被关禁闭满不在乎，\n不会感到丝毫压抑（压制）。
+reputationtooltip_stoical			该囚犯对于被关禁闭满不在乎，\n不会感到丝毫压抑。
 reputationtooltip_snitch			该囚犯是已暴露的线人，因此生命有危险。\n不要将他和其他囚犯放在一起太久。
-reputationtooltip_deadly			该囚犯精通致命的格斗招式，有时一击致死。
+reputationtooltip_deadly			该囚犯精通致命的格斗招式，有时能够一击致死。
 reputationtooltip_exlaw				该囚犯曾经是一名警察或者其他执法人员。\n他的生命可能受到威胁。
 reputationtooltip_copkiller			该囚犯的罪名是谋杀警察。\n警卫在制服他的时候，或许会过度使用武力。
 reputationtooltip_fearless			该囚犯不受武装警卫的威慑，\n并且在打斗中不会轻易投降。\n（对警卫的压制影响免疫）
-reputationtooltip_quick				该囚犯是个非同寻常的快跑健将。\n（奔跑速度是常人的1.5倍或2倍）
-reputationtooltip_instigator		该囚犯擅长煽动附近囚犯的不满情绪。\n当他制造麻烦的时候，周围的囚犯们会轰然响应。
-reputationtooltip_fighter			该囚犯擅长防守型格斗招式。\n他能够在打斗中卸掉对方的兵器，\n甚至夺取对方的武器。
+reputationtooltip_quick				该囚犯是个快跑健将。\n（奔跑速度是常人的1.5倍或2倍）
+reputationtooltip_instigator		该囚犯擅长煽动附近囚犯的不满情绪。\n当他制造麻烦的时候，周围的囚犯们会更易响应。
+reputationtooltip_fighter			该囚犯擅长防守型格斗招式。\n能够在打斗中击落甚至夺取对方的武器。
 reputationtooltip_gangmember		该囚犯属于一个帮派。他会保护自己帮派成员，\n并且对敌对帮派暗藏仇恨。
 reputationtooltip_federalwitness	该囚犯是一个重要案件的证人。\n因此已经被帮派或犯罪头目列为灭口目标。
 reputationtooltip_preacher			该囚犯极富魅力，能够让他人皈依其宗教，\n因而带来宗教需求。
-reputationtooltip_connected			该囚犯到处都有路子，无论监狱内外。\n能够不知从哪里就仿佛凭空变出违禁品。
-reputationtooltip_workaholic		该囚犯无法自拔地工作不休，直到没活儿可干为止。\n忙碌时会忽视作息甚至自己的基本需求。
-reputationtooltip_clean				该囚犯执着于保持洁净；\n因而，对卫生的需求会以很高的速率上升。
+reputationtooltip_connected			该囚犯到处都有路子，无论监狱内外。\n仿佛能够凭空变出违禁品。
+reputationtooltip_workaholic		该囚犯无法自拔地工作不休，直到没活可干为止。\n忙碌时会忽视作息甚至自己的基本需求。
+reputationtooltip_clean				该囚犯执着于保持洁净；\n对卫生的需求会以很高的速率上升。
 reputationtooltip_copycat			该囚犯能够复制附近囚犯的行为举止，\n复制其特征。
-reputationtooltip_dangerous			该囚犯对附近其他囚犯造成伤害。\n怎么做的？为什么？谁晓得呢。
-reputationtooltip_escapeartist		该囚犯是专业的逃脱大师，以脱逃为乐。\n持续地尝试偷取监狱钥匙，然后脱逃。
+reputationtooltip_dangerous			该囚犯对附近其他囚犯造成伤害。\n为什么？谁晓得呢。
+reputationtooltip_escapeartist		该囚犯是专业的逃脱大师，。\n因此会持续地尝试偷取监狱钥匙然后脱逃。
 
 # =============================================================================
 # Nameplate status
@@ -1769,14 +1732,14 @@ reputationtooltip_escapeartist		该囚犯是专业的逃脱大师，以脱逃为
 nameplate_working	工作中
 nameplate_stationed	驻守中
 nameplate_patrolling	巡逻中
-nameplate_resting	休息
+nameplate_resting	休息中
 nameplate_tired	疲劳
 nameplate_injured	受伤
 nameplate_unconscious	昏迷
 nameplate_dead	死亡！
-nameplate_released	被释放！
+nameplate_released	已释放
 nameplate_researching	研究中
-nameplate_overdose	麻醉剂过量！
+nameplate_overdose	麻醉过量！
 nameplate_starving	挨饿！
 nameplate_wounded	流血！
 
@@ -1811,7 +1774,7 @@ object_meal						伙食
 object_foodtray					餐盘
 object_foodtraydirty			餐盘(脏)
 object_grassturf				草坪
-object_prisoneruniform			囚服(待穿)
+object_prisoneruniform			囚服(干净)
 object_dirtyprisoneruniform		囚服(脏)
 object_crumpledprisoneruniform	囚服(皱)
 object_bleach					漂白剂
@@ -1968,47 +1931,7 @@ material_buildingframe	建筑框架
 material_roof	屋顶
 material_water	湖泊
 
-room_none	无
 
-room_cell	牢房
-room_solitary	禁闭室
-room_familycell	家庭牢房
-room_dormitory	宿舍
-room_shower	淋浴间
-room_canteen	食堂
-room_canteen_staff	员工餐厅
-room_kitchen	厨房
-room_yard	庭院
-room_storage	仓库
-room_office	办公室
-room_staffroom	员工休息室
-room_security	警卫室
-room_commonroom	公共房间
-room_laundry	洗衣房
-room_cleaningcupboard	清洁用品间
-room_paroleroom	假释听证室
-room_classroom	教室
-room_chapel	礼拜堂
-room_workshop	工坊
-room_library	图书馆
-room_shop	商店
-room_kennel	狗舍
-room_medicalward	医务室
-room_nursery	托儿所
-room_forestry	林场
-room_intake	入狱搜查室
-room_holdingcell	拘留室
-room_armoury	枪械库
-room_morgue	停尸房
-room_execution	行刑室
-room_deliveries	卸货区
-room_garbage	垃圾场
-room_exports	出货区
-room_visitation	探监室
-room_mailroom	邮件收发室
-room_clearrooms	清除房间
-room_superiorcell	高级牢房
-room_sharedcell	共用牢房
 
 equipment_none	无
 equipment_fists	拳头
@@ -3006,7 +2929,7 @@ help_warning_deathrow	监狱的第一个死刑犯刚刚到达了。需要确保�
 buildtoolbar_walk_speed_Veryfast	非常快
 codex_load_failed_title	加载监狱吧。
 schedule_zone_custom	自定义
-room_Helipad	停机坪
+
 interfacetopbar_tension_hoursonrollcall	+ 个囚犯们对于点名很恼火
 codex_load_failed_message	无法加载这个监狱，因为它文件损坏了。
 script_error_critical	有什么出错了。
@@ -3018,7 +2941,7 @@ reputationtooltip_swimmer	这个囚犯很识水性。\n只要进入水里就能�
 object_climbingrope	爬绳
 object_banner	条幅
 object_stand	架子
-room_dock	码头
+
 equipment_rope	绳子
 banner_tooltip	点击广告栏支持 @WarChildUK
 banner_donate_text	2018 年是第一次世界大战停战协定签署 100 周年，但如今受战争影响的儿童比历史上任何时候都要多。\n\n为英国战争儿童 (War Child UK) 组织和冲突中的儿童 (Children in Conflict) 基金筹集善款，为笼罩在战争阴影中的儿童构筑一个光明的未来。
@@ -3423,9 +3346,7 @@ buildtoolbar_deployment_orderly	将护理人员分配至你监狱里的区域。
 interfacedeployment_orderlypatrols	分配护理人员
 buildtoolbar_deployment_orderlypatrols	将护理人员分配至你监狱的巡逻路线。
 
-room_PaddedCell	软垫牢房
-room_PaddedHoldingCell	软垫拘留牢房
-room_PsychiatristOffice	精神科医生办公室
+
 
 interfaceplanning_BuildPlan	建造规划
 interfaceplanning_ClearPlan	清除规划
@@ -3475,15 +3396,13 @@ buildtoobar_PsychConItemImproveGrace	- 咨询结束后，在其压抑和某些�
 # Room - Names
 # =============================================================================
 
-room_PaddedSolitary	软垫禁闭室
+
 
 # =============================================================================
 # Room - Description
 # =============================================================================
 
-buildtoolbar_popup_room_paddedcell	适用于精神病囚犯，软垫墙壁能产生安抚效果。
-buildtoolbar_popup_room_paddedholdingcell	永久性软垫牢房准备好之前，新来的精神病囚犯会放置在这里。
-buildtoolbar_popup_room_paddedsolitary	专门针对穷凶极恶的精神病囚犯的隔离惩戒牢房。
+
 
 # =============================================================================
 # Quick Build - Names
@@ -3948,12 +3867,7 @@ equipment_StrikePlacard	罢工标语牌
 # Prefabs - Names
 # =============================================================================
 
-quickbuild_Armoury	枪械库
-quickbuild_Infirmary	医务室
-quickbuild_Laundry	洗衣房
-quickbuild_Library	图书馆
-quickbuild_MailRoom	邮件收发室
-quickbuild_Visitation	探视
+
 
 # =============================================================================
 # Build Toolbar
@@ -4025,7 +3939,8 @@ buildtoolbar_popup_mat_bambooFence	有个人建造了竹制栅栏搭配营地外
 buildtoolbar_popup_mat_RunningTrack	非常适合囚犯在庭院里慢跑。
 buildtoolbar_popup_mat_BambooFloor	丛林营地外观的地面。
 buildtoolbar_popup_mat_DecayedWall	在地基上用腐坏的煤砖建造墙壁。
-buildtoolbar_popup_mat_flowerfield	长满美丽鲜花的草地区域。
+buildtoolbar_popup_mat_flowerfield	鲜花盛开的草地区域。
+buildtoolbar_popup_room_FlowerField	鲜花盛开的草地。
 buildtoolbar_popup_mat_fenceandgrass	下面是草坪而非泥土的栅栏区域。
 buildtoolbar_popup_mat_WallMinSec	建造彩色的墙壁以表示监狱中特定的安全区域。
 buildtoolbar_popup_mat_WallMedSec	建造彩色的墙壁以表示监狱中特定的安全区域。
@@ -4486,7 +4401,8 @@ d11_hover_quantity	x *X
 # =============================================================================
 # Build Toolbar
 # =============================================================================
-
+room_dock	码头
+room_Helipad	停机坪
 buildtoolbar_popup_obj_FerryDock	将建造两座渡轮码头，渡轮将在岛屿间平行运行，作为两岛的交通方式。要建造一组码头，两岛必须有同等的陆地。
 buildtoolbar_popup_obj_BoatDock	船只停泊、运送新囚犯或供给的必备建筑。
 buildtoolbar_popup_obj_Helipad	直升机飞抵监狱、运送新囚犯、交付供给或征召航空应急小队的必备建筑。
@@ -4688,7 +4604,7 @@ buildtoolbar_quickbuild__yard	标准庭院，包含囚犯可能需要的任何�
 # =============================================================================
 
 #console only
-buildtoolbar_popup_room_FlowerField	鲜花盛开的草地。
+
 #
 
 buildtoolbar_popup_mat_ReclaimedWoodWall	对老旧材料废物利用搭建而成的木墙。
@@ -4703,7 +4619,7 @@ buildtoolbar_popup_obj_AdvancedAutoGatherer	每 6 小时激活一次，用于在
 buildtoolbar_popup_obj_AutoHarvester	每 6 小时激活一次，收割其前方宽度为 4 的 10 块地砖中的所有农作物。收割过程会因墙和门而受限。
 buildtoolbar_popup_obj_AutoScythe	机械化农场工具，会在游戏内每 6 小时激活一次，收割 5x5 区域内的所有农作物。
 
-buildtoolbar_popup_room_pantry	储存所有新鲜种植的蔬菜水果的房间，此房间为冷藏室，用于储存所有监狱内生长的食材。
+
 
 buildtoolbar_popup_obj_sell_Material	降价销售材料。
 buildtoolbar_popup_obj_Dump_Obj	在监狱内丢弃物品。
@@ -5546,9 +5462,9 @@ object_OrganicWaste	有机废物
 object_CompostBin	堆肥垃圾桶
 object_DumpObject	【丢弃物品】
 
-room_pantry	食品储藏室
 
-buildtoolbar_popup_room_Pantry	储存所有新鲜种植的蔬菜水果的房间，此房间为冷藏室，用于储存所有监狱内生长的食材。
+
+
 buildtoolbar_popup_obj_Shed	储存所有种子、工具和其他农业道具的区域。该区域还有可用于初级灌溉的水龙头。
 buildtoolbar_popup_obj_CompostBin	用于改造食物和有机废物，制成可使用的肥料。
 
@@ -5695,16 +5611,12 @@ buildtoolbar_popup_obj_RestaurantSign	一个带有餐厅标识的墙标。
 buildtoolbar_popup_obj_BakerySign	一个带有面包房标识的墙标。
 buildtoolbar_popup_obj_VisitationSign	一个带有探视标识的墙标。
 
-room_Restaurant	餐厅
-room_Bakery	面包房
-room_TherapyRoom	会客室
+
 d11_restaurant_work	餐厅
 d11_restaurant_work_desc	指派囚犯在餐厅工作，为平民顾客烹饪食物和提供上菜服务。但是他们必须要有烹饪或服务生方面的工作经验。
 d11_bakery_work	面包房
 d11_bakery_work_desc	指派囚犯在面包房工作，为平民顾客烹饪烘焙食物。但是他们必须要有烹饪或服务生方面的工作经验。
-buildtoolbar_popup_room_TherapyRoom	一个“安全空间”，供动物疗法课程以及与已释放人员交流使用。
-buildtoolbar_popup_room_Restaurant	有烹饪或服务生经验的囚犯可以为平民顾客烹饪食物或负责上菜。
-buildtoolbar_popup_room_Bakery	有烹饪或服务生经验的囚犯可以烤制面包和蛋糕，卖给平民顾客。
+
 quickbuild_Therapy	会客室
 quickbuild_Restaurant	餐厅
 quickbuild_Bakery	面包房
@@ -6133,10 +6045,7 @@ equipment_GritBucket	砂砾桶
 material_RebarReinforcement	钢筋
 buildtoolbar_popup_mat_RebarReinforcement	这种钢筋可以加强墙壁和地基的结构完整性，降低事故发生并造成损坏的可能性。
 subsidence_tooltip_Damaged	下陷/老鼠造成的破坏
-room_WeatherCentre	气象中心
-buildtoolbar_popup_room_WeatherCentre	配备天气预报设备的房间，可提前预警极端天气事件。
-room_TrainingRoom	培训室
-buildtoolbar_popup_room_TrainingRoom	供员工学习新技能的地方。
+
 quickbuild_WeatherCentre	气象中心
 buildtoolbar_quickbuild_WeatherCentre	配备天气预报设备的房间，可提前预警极端天气事件。
 object_pestcontrolteacher	害虫防治工人
@@ -6398,14 +6307,12 @@ object_TattooRemovalMachine	纹身去除机
 buildtoolbar_popup_obj_TattooRemovalMachine	改造帮派成员的必备物品。去除纹身是改造他们的第一步。
 。
 equipment_TattooRemovalTool	纹身去除工具
-room_TheCage	牢笼
-buildtoolbar_popup_room_TheCage	为单独监禁的囚犯提供。此露天设施可供囚犯锻炼，同时将使用此设施的囚犯与其他囚犯隔离开来。
+
 quickbuild_TheCage	牢笼
 buildtoolbar_quickbuild_TheCage	一部露天设施，可供一名囚犯在其中锻炼，将他们与其他囚犯隔离开来。
 material_CageFence	牢笼栅栏
 buildtoolbar_popup_mat_CageFence	一道铁网围栏，用于防止锻炼中的囚犯出逃。
-room_TattooRemovalRoom	纹身去除室
-buildtoolbar_popup_room_TattooRemovalRoom	囚犯在这里经历痛苦、漫长的过程，最终将身上的帮派纹身去除。
+
 quickbuild_TattooRemovalRoom	纹身去除室
 buildtoolbar_quickbuild_TattooRemovalRoom	囚犯在这里经历痛苦、漫长的过程，最终将身上的帮派纹身去除。
 
@@ -6747,15 +6654,6 @@ rank_specialist	专家级警官
 rank_popup_text_1	高级警卫、警官和专家级警官更强壮，也更难杀死。但是如果有机会的话，他们会优先考虑待在监狱中不那么吵闹的区域。\n\n
 rank_popup_text_2	所有警卫必须获得警卫电击枪认证，才能开始晋升过程。晋升至警官需要在监狱工作至少10天，晋升至专家级警官需要至少20天。\n不是每个警卫都能得到晋升，10个高级警卫中只有4个可以成为警官，而3个警官中只有1个可以成为专家级警官。
 finance_cost_gun	装备：枪
-buildtoolbar_popup_room_laundry	让囚犯协助清洁工洗衣的前提条件。\n\n干净的囚服用于满足囚犯们的“衣物”需求。\n\n每个囚犯需要4平米才会工作。\n工作岗位上限为20人。\n\n1台洗衣机+2个熨衣板+4个洗衣篮+5个打工囚犯，\n可满足64个囚犯的衣物需求。\n\n每个牢房区域应当有各自的洗衣房。\n记得偶尔去[后勤/衣物分配]检查，确保它们被正确配对。
-buildtoolbar_popup_room_visitation	让家属与囚犯面对面交谈的地方。\n\n满足“家庭”需求。\n即使在工作作息之外，囚犯总可以来接受探监。\n\n有的家属会带来违禁品。\n\n如果采用探监柜台，则可以杜绝这种行为。\n但不甘心的他们会尝试别的办法……\n\n注意：在进入探监室之前，家属身上并不存在违禁品。\n只有与囚犯会面时，才会（根据囚犯的需要）凭空生成。\n所以你无法针对家属进行检测和拦截。\n\n【新增玩法】律师可以到这里提供咨询服务。\n按照探监者人次，获得政府奖金。\n\n大约每10个囚犯每天会有1组探监者来访。
-buildtoolbar_popup_room_cleaningcupboard	让囚犯协助打扫监狱的前提条件。\n\n在这里打工的囚犯需要漂白剂，而清洁工并不需要它们。\n\n每个囚犯需要4平米才会工作。\n工作岗位上限为20人。但你只需要很少的打工者。\n\n事实上，如果监狱足够干净，你都不需要这个房间。\n\n这里会产生的违禁品：\n · “毒物”是毒品的一种替代品。\n · “木棍”是一种无法检测出来的武器。\n考虑到它们所带来的麻烦，还是多雇用几名清洁工吧。\n\n如果牢房都是无锁门，那么打扫效率就会极高。
-buildtoolbar_popup_room_armoury	武装警卫的锁柜安装在这里，对应于其人数上限。\n这里还是武装警卫和狙击手专用的休息处。\n\n注意：武装警卫并不会替清洁工开门。\n最好安装遥控门和门禁控制器。\n\n[推荐区划：员工专区]\n\n越狱时，囚犯们有可能试图攻入这里，以抢夺武器。\n与房间内武器架存在与否无关……
-buildtoolbar_popup_room_forestry	让可以自产木材。\n\n1. 园丁自动种树。\n2. 树苗长大。\n3. 工人将其砍伐，得到圆木。\n4. 在工坊里，圆木通过电锯台变成木板。\n5. 之后，再通过木工桌变成高级床。\n\n圆木本身也可以直接卖掉，但很不值钱。\n\n树苗会被自动采购并种植。5天后长大。\n建议按天拆分出5个林场；不要所有树都挤在同一天种/收。\n地面不要为沙土；那会导致成长缓慢。\n\n园丁种树时，会在本“房间”的上方和左侧留出1米的空白。\n换言之，最左上角的树苗，会位于房间的(3, 3)坐标。
-buildtoolbar_popup_room_classroom	这里，进行学术性的改造项目。\n\n由于“[学术Ⅰ]基础教育项目”的感兴趣人数比例很低，\n仅10分之一，所以对教室和课桌的需求很少。\n\n如果教室里有警卫，会压制囚犯，不利于其专心。\n如果囚犯们不安定，那么最稳妥的方式是，利用[部署时刻盘]，\n让警卫仅仅在课程前、后的各一小时来巡逻。\n\n【新增功能】更好的选择是安装‘定时呼叫’。\n或者，让教室外面的格子就是户外，这样巡逻的警卫的\n影响力会被隔离在户外。
-buildtoolbar_popup_room_exports	在这里，堆放工坊的产品，然后装车送走，从而卖掉。\n\n[推荐区划：员工专区]
-buildtoolbar_popup_room_mailroom	把从外界收来的信件，转送给囚犯。\n满足“家庭”、“娱乐”和“舒适”需求。\n\n每天上午8点，邮件被送过来。（但不寄出邮件）\n\n可以让囚犯打工。\n\n本房间的区划决定了邮件会属于哪个戒备类别的囚犯。\n（收信人取决于分拣者。这是颠倒因果……）\n只有设为“公共区域”时，才会给所有区划的牢房递送邮件。\n如果打工的囚犯无法走到某些牢房，那么会由待命的警卫来做。\n\n由于邮件只有一个来源，所以这个房间只需要建造一个。\n\n要注意检测邮件里的违禁品。\n\n送来的邮件为监狱囚犯总数的1/4。\n假设每天工作8小时（有效时间则为7小时），\n大约每50个囚犯，需要有1人来分拣邮件。\n每个囚犯需要12平米才会工作。
-buildtoolbar_popup_room_psychiatristoffice	供精神科医生诊断精神病人囚犯的区域。解锁额外物品并将其放置在精神科医生办公室，从而提升对精神病人囚犯的治疗效果。通过让精神病人囚犯参加心理咨询计划来解锁物品。
 d11_logging_caption	启用监狱日志
 d11_logging_caption_tooltip	此日志会记录监狱内实时发生的所有重大事件，人员死亡、不当行为及囚犯获释均会记录在册。
 d11_logging_header	监狱日志
@@ -6841,11 +6739,9 @@ object_ZombieChum	活尸密友
 buildtoolbar_popup_obj_ZombieChum	放下密友的残存肉块，诱使活尸远离监狱中的其他活人。这块肉绝对不是脑子做的……但这会治愈任何受伤的活尸。
 object_ornamentalgravestone	装饰性墓碑
 buildtoolbar_popup_obj_ornamentalgravestone	致敬逝者的纪念物。
-room_graveyard	墓地
+
 quickbuild_graveyard	墓地
-buildtoolbar_popup_room_graveyard	部分监狱囚犯的安息之地。他们是否想要一直安息下去就是另一回事了。
-room_empty	空房间
-buildtoolbar_popup_room_empty	什么也没有……\n\n这个“房间”可以用来节省墙壁和门，进而方便通行。\n它能够用来灵活地分割区域，以便设置区划。\n比如：\n · 代替墙壁分隔多个办公室\n · 在监狱大门旁边，划出一个小小区域，然后\n   指派警卫驻守，以便及时开门。\n · 在公共区域的房间门前，划出一个小小区域，\n   限定只有某一类别的囚犯可以通过。
+
 d11_graveyard_advisor_onboarding	墓地里有动静……地狱已满，活尸现世。
 object_DistractionContraption	干扰装置
 buildtoolbar_popup_obj_DistractionContraption	一种音频设备，用于在短时间内转移作用范围内所有受感染单位的注意力，每24小时只能使用1次。建议在接近午夜时使用此物品，但这并不是强制要求。
@@ -6898,7 +6794,6 @@ prisonerTracking_AllPrisoners	所有囚犯
 prisonerTracking_Misconduct	不当行为：
 buildtoolbar_popup_help_PrisonerTracking_4	^提示
 graph_axis_EscapedUndead	活尸已脱逃
-buildtoolbar_popup_room_staffroom	让员工快速恢复疲劳（精力）。\n\n位置合理的话，可以大大提高员工的工作时长。\n\n所有员工中，只有武装警卫、狙击手和警犬在别处休息。\n\n[推荐区划：员工专区]\n\n这里也可以安装监控监视器、门禁系统、电话窃听器。\n在这里，它们很少会出现缺少警卫操作的空档。\n当然，最好与警卫室相邻，且两者不隔墙壁。\n\n增加沙发并不会让员工恢复更快。\n\n但如果你启用“员工需求”，这里就有很多事情会不一样了。
 d11_nearFuture_advisor_onboarding	考虑给不那么听话的囚犯戴上追踪器。这样，我们就可以在警卫室对他们进行监控。
 object_TrackingMonitor	追踪监视器
 buildtoolbar_popup_uts_TrackingMonitor	追踪清单所需物品。\n\n由警卫在警卫室里进行操作，可监视任何佩戴追踪器的囚犯。连接路由器以扩展监控范围。
@@ -7918,7 +7813,7 @@ needs_total_active_staff		♫ *X名 员工正在解决此需求
 needs_help_bladder		人人皆需上厕所，囚犯也一样。\n\n监狱的体制非常严格，例如他们应在淋浴间，他们就无法使用牢房内的马桶。\n\n睡觉时间之后，最好给囚犯上厕所的机会。\n牢房之外也可以考虑添加一些厕所。\n\n+ 时间\n- 厕所\n\n失败后果: 愤怒+囚服变脏
 needs_help_bowels		人人皆需上厕所，囚犯也一样。\n\n周期是小便的两倍。\n\n+ 时间\n- 厕所\n\n失败后果: 愤怒+囚服变脏
 needs_help_sleep		囚犯只能在牢房的床铺上睡觉。\n有些囚犯会为了挖掘地道而放弃睡觉。\n\n+ 时间\n- 睡觉\n失败后果: 愤怒
-needs_help_food			人人皆需吃饭。。\n\n若你发现厨房无法应付需求，试着多雇用或安排几个厨师。\n你也可以在[报告]窗口中的[政策]标签页，调整你的伙食政策。\n\n+ 时间\n- 吃饭\n- 相关物品\n\n失败后果: 愤怒+挨饿(长期挨饿会死亡)
+needs_help_food			人人皆需吃饭。。\n\n若你发现厨房无法应付需求，试着多雇用或安排几个厨师。\n你也可以在[报告]窗口中的[政策]标签页，调整你的伙食政策。\n\n+ 时间\n- 吃饭\n- 零食贩卖机\n\n失败后果: 愤怒+挨饿(长期挨饿会死亡)
 needs_help_safety		即使在监狱，囚犯也需要安全感。\n\n如果你的监狱有太多斗殴事件或整体危险水平过高，\n囚犯会感到不安全，进而考虑武装自己。\n\n若这渐渐变成一个问题，可以试着雇用更多警卫、建立更多巡逻路线或者满足囚犯的其它需求，以此提高监狱的安全。\n\n监狱的“危险等级”的高/低，影响本需求的增/减\n- 监控\n\n失败后果: 为自保而想方设法得到武器
 needs_help_hygiene		大部分的囚犯会想要定期洗澡，尤其是早上起床后。\n\n“淋浴”作息会强迫那些牢房里没有淋浴物品的囚犯前往淋浴间。\n或者增加自由活动时间，让囚犯依自己的需求洗澡。\n\n+ 时间\n- 淋浴\n- 相关物品\n\n失败后果: 愤怒
 needs_help_exercise		很多囚犯会想要保持锻炼。\n\n可以建设一个庭院或健身房，让他们散步或锻炼。\n\n+ 时间\n- 庭院放风\n- 相关物品\n\n失败后果: 愤怒
@@ -7942,7 +7837,7 @@ needs_help_babyplay		婴儿需要活动和娱乐。\n\n若你的囚犯有婴儿�
 
 needs_help_staffbladder			员工也需要上厕所。\n在“员工休息室”或“员工专区”的房间里安装厕所，\n当轮休时员工会使用。\n\n+ 时间\n- 相关物品
 needs_help_staffbowels			员工也需要上厕所。\n在“员工休息室”或“员工专区”的房间里安装厕所，\n当轮休时员工会使用。\n\n+ 时间\n- 相关物品
-needs_help_stafffood			员工需要在“员工专区”的“食堂”里用餐。\n你也可以在任何“员工专区”房间里摆些‘配餐桌’和座位。\n食物会从外部订购，所以不需要给员工‘厨房’。\n但餐盘仍然需要在‘厨房水槽’清洗。\n\n+ 时间\n- 吃饭
+needs_help_stafffood			员工需要在“员工专区”的“食堂”里用餐。\n你也可以在任何“员工专区”房间里摆些‘配餐桌’和座位。\n食物会从外部订购，所以不需要给员工‘厨房’。\n但餐盘仍然需要在‘厨房水槽’清洗。\n\n+ 时间\n- 吃饭\n- 零食贩卖机
 needs_help_staffsafety			员工也需要安全感。\n高的危险等级或不断的打斗会让你的员工感到不安。\n更多的警卫彼此照应、配有更好的装备，可以缓解这个问题。\n\n监狱的“危险等级”的高/低，影响本需求的增/减
 needs_help_staffrecreation		监狱对谁来说都是超级无聊的地方，\n给你的员工们更丰富的娱乐吧。\n\n+ 时间\n- 相关物品
 needs_help_staffcomfort			给员工一些放松的地方，比如沙发。\n\n+ 时间\n- 相关物品
@@ -8045,27 +7940,209 @@ crisisSector_DeathRowOnly	死刑犯专区
 
 
 #+===============================房间===============================
+room_none	无
+room_clearrooms	清除房间
 
-d11_quick_yard	庭院
-buildtoolbar_popup_room_yard	让囚犯们每天晒几小时的太阳，进行健身等。\n\n配合“庭院放风”作息，可以强制囚犯来这里。\n主要用途是满足“自由”和“锻炼”需求，需要锻炼的囚犯会主动来到这里。\n可以安装多种设施物品。比如长凳、电视、电话亭、举重床。\n根据放风前后的作息，也可能需要一些马桶、淋浴花洒。
+room_empty	空房间
+buildtoolbar_popup_room_empty	它能够用来灵活地分割区域或部署警备。
+
+#+==囚犯专用
+
+room_solitary	禁闭室
+buildtoolbar_popup_room_solitary	专门针对恶中之恶的隔离惩罚方式。\n\n当囚犯被禁闭时由警卫为其送饭。\n禁闭会让囚犯的“镇压”程度快速上升。\n可以把禁闭中的部分囚犯招募为秘密线人。\n对于顽固的囚犯，禁闭是提高其改造评分的重要途径。
+
+room_holdingcell	拘留室
+buildtoolbar_popup_room_holdingcell	收容暂未分配房间的囚犯，是监狱初期节约资金的好办法。\n\n若启用牢房品质分级，得不到牢房的囚犯可以暂时呆在这里。\n大量犯人长期聚集在拘留室容易积累不满，导致频繁地闹事。\n如果想让大量囚犯较长时间住在拘留室，那么记得放置床铺并安排警卫驻守。\n\n居住空间：无限制（不计入监狱容量）
+
+room_cell	牢房
+buildtoolbar_popup_room_cell	标准的单人牢房。\n\n手动分配牢房：选中囚犯后，右击空闲牢房的任意位置。\n\n相关需求：积累”自由“需求
+
+room_dormitory	宿舍
+buildtoolbar_popup_room_dormitory	宿舍可容纳多名囚犯。\n\n居住空间：4平米/每名囚犯\n相关需求：积累”隐私“需求
+
+room_execution	行刑室
+buildtoolbar_popup_room_execution	处决死刑犯的区域。\n\n见证人大约需要5个座椅。\n建议在警力充沛的睡觉时间执行死刑。
+#-==
+
+#+==狱中劳役
+
+room_kitchen	厨房
+buildtoolbar_popup_room_kitchen	厨师为囚犯烹制食物的区域。\n\n厨师会提前4小时开始准备食物。\n厨师会从卸货区把食材搬到冰柜中。\n\n[报告/政策]中，伙食的份量和种类越多则消耗的食材越多，需要的厨师也越多。\n相应的好处是产生并维持囚犯的“吃得不错”状态，还提高监狱评级的“健康”指标。\n\n如果启用“天气与温度”，厨房会产生可观的热量。\n\n工作空间：12平米/每名囚犯
+
+room_workshop	工坊
+buildtoolbar_popup_room_workshop	囚犯们在这里制作物品。\n\n出售产品可能成为监狱的重要收入。\n囚犯可能会在这里得到简易的武器与工具。\n\n工作空间：12平米/每名囚犯
+
+room_library	图书馆
+buildtoolbar_popup_room_library	监狱会收到各地送来的书本，囚犯需要将书本分类并上架。\n\n囚犯会来这里借阅与还书。拿到书后囚犯会寻找安静的座位阅读，公共活动室等喧闹的地方无法读书。\n囚犯读书效率很高，但会花费很多时间在往返路上。\n\n相关需求：文化\n工作空间：12平米/每名囚犯
+
+room_mailroom	邮件收发室
+buildtoolbar_popup_room_mailroom	把收到的信件分拣后转送给囚犯。\n\n每天上午8点接收新邮件，邮件里可能会携带违禁品。\n\n本房间的区划决定了邮件会属于哪个戒备类别的囚犯。\n只有设为“公共区域”时，才会给所有区域的牢房递送邮件。\n若送信的囚犯无法走到某些牢房，那么会由待命的警卫来做。\n\n送来的邮件约为监狱囚犯总数的1/4。\n假设每天工作8小时，约50个囚犯需要有1人来分拣邮件。\n\n相关需求：家庭/娱乐/舒适\n工作空间：12平米/每名囚犯
+
+room_shop	商店
+buildtoolbar_popup_room_shop	商店让您的囚犯有地方花费来之不易的金钱，以快速满足一些需求，还能给监狱创造收入。\n\n · 棕色=食物\n · 蓝色=卫生\n · 绿色=娱乐\n\n相关需求：卫生/食物/舒适/奢侈品\n工作空间：12平米/每名囚犯
+
+room_laundry	洗衣房
+buildtoolbar_popup_room_laundry	脏衣服在此处清洗和熨烫，然后重新分发出去。\n\n每个牢房区域最好有各自的洗衣房。\n1台洗衣机+2个熨衣板+4个洗衣篮+5个囚犯，\n可满足64个囚犯的衣物需求。\n\n相关需求：衣服\n工作空间：4平米/每名囚犯
+
+room_cleaningcupboard	清洁用品间
+buildtoolbar_popup_room_cleaningcupboard	存放清洁用具的地方，囚犯会使用房间内的漂白剂打扫监狱。\n\n若能快速进入各个牢房，打扫效率将大大提高。\n\n相关需求：环境\n工作空间：4平米/每名囚犯
+
+room_forestry	林场
+buildtoolbar_popup_room_forestry	种树的区域，能够产出原木或让囚犯感受自然。\n\n树苗自动采购，园丁在林场种树后5天长大，\n工人将其砍伐后得到原木。\n沙土地面会导致成长缓慢。\n\n相关需求：自由
+
+room_Accounting 会计工作间
+buildtoolbar_popup_room_accounting 接受中型企业的会计外包业务。\n让囚犯进行简单而无聊的记账工作。\n\n工作空间：12平米/每名囚犯
+#-==
+
+#+==囚犯活动
+
+room_canteen	食堂
+buildtoolbar_popup_room_canteen	囚犯的进餐区域。\n\n由于“吃饭”作息让囚犯无法提前离开，可以添加一些满足其它需求的物品。\n由于人员密度形成高峰，囚犯很容易在此发生冲突，所以安保需要特别加强。\n\n如果启用“员工需求”，需要将一个食堂设为员工专区，以让员工轮休时来用餐。\n\n相关需求：食物
+
+room_shower	淋浴间
+buildtoolbar_popup_room_shower	囚犯可在此保持卫生。\n\n可强制囚犯在”淋浴“时间来此。\n囚犯也会在空闲时间依据自身需求使用淋浴设备。\n记得在门口或花洒下方铺设排水渠。\n\n相关需求：卫生
+
+room_yard	庭院
+buildtoolbar_popup_room_yard	让囚犯们每天晒一会太阳。\n\n可强制囚犯在”庭院防风“时间来此。\n囚犯会在需要锻炼时主动来到这里。\n可以安装各种物品以满足不同需求。\n\n相关需求：自由/锻炼
+
+room_commonroom	公共房间
+buildtoolbar_popup_room_commonroom	给囚犯一些自由时间让其放松。\n\n可以安装各种物品来满不同需求。
 
 room_gymnasium	健身房
-buildtoolbar_popup_room_gymnasium	这里是囚犯们锻炼身体、发泄压抑攻击性地方，也是训练他们用传统的方式处理分歧的地方。\n\n需求：\n- 卫生 0.50
+buildtoolbar_popup_room_gymnasium	这里是囚犯们锻炼身体、发泄攻击性的地方，也是用传统的方式解决分歧的地方。\n\n相关需求：积累”卫生“需求
 
+room_paroleroom	假释听证室
+buildtoolbar_popup_room_paroleroom	囚犯的命运将在这房间里决定。\n\n当囚犯服刑达到总刑期的50%和75%时，各可申请一次假释。\n死刑犯的上诉也在这里进行。\n\n最好有额外的警备人员，假释被驳回时囚犯可能会十分激动。\n如果囚犯提前释放且没有再犯罪，会得到非常可观的奖励。
+
+room_classroom	教室
+buildtoolbar_popup_room_classroom	囚犯可以在教室学习知识。\n\n教室里有警卫时会让囚犯难以专心。\n如果囚犯们不安定，那么推荐用[部署时刻表]，\n让警卫仅仅在课程前后的一小时来巡逻。\n或者将巡逻警卫的影响力隔离在户外。
+
+room_chapel	礼拜堂
+buildtoolbar_popup_room_chapel	礼拜堂能够应对囚犯的宗教需求。\n\n相关需求：宗教
+
+room_medicalward	医务室
+buildtoolbar_popup_room_medicalward	受伤的囚犯和员工会被带到这里接受医生的治疗。\n\n医生不会为囚犯开门，推荐采用无锁门。\n待命的医生能够自动响应的半径大约为20米。\n\n[推荐区划：目的地专区]
+
+room_visitation	探监室
+buildtoolbar_popup_room_visitation	囚犯与家属见面的地方。\n\n即使在工作作息之外，囚犯也可以接受探监。\n大约每10名囚犯每天有1组探监者来访。\n\n注意：家属可能会带来违禁品，探监柜台可以杜绝这种行为。\n在进入探监室之前，家属身上并不存在违禁品，只有与囚犯会面时才会根据囚犯的需要生成。\n\n相关需求：家庭
+#-==
+
+#+==员工专用
+
+room_office	办公室
+buildtoolbar_popup_room_office	每个管理人员都需要一间办公室。
+
+room_staffroom	员工休息室
+buildtoolbar_popup_room_staffroom	感到疲劳的员工可在此放松身心。\n\n位置合理的话，可以大大提高员工的工作时长。\n\n[推荐区划：员工专区]
+
+room_security	警备室
+buildtoolbar_popup_room_security	警卫、武装警卫和狙击手会在这里待命。\n每次激活秘密线人，都要将其押送到这里以提供情报。\n\n监控监视器、门禁系统和电话窃听器，很适合安装在这里。\n\n[推荐区划：员工专区]
+
+room_armoury	枪械库
+buildtoolbar_popup_room_armoury	所有枪械均存放于此处，武装警卫和狙击手在此休息。\n\n武装警卫的枪柜对应其人数上限。\n武装警卫不会替清洁工开门，推荐安装遥控门和门禁控制器。\n越狱时，囚犯们有可能试图攻入这里，以抢夺武器。\n\n[推荐区划：员工专区]
+
+room_kennel	狗舍
+buildtoolbar_popup_room_kennel	警犬在这里休息。\n\n警犬需要狗笼才能睡觉。
+
+room_canteen_staff	员工餐厅
+#-==
+
+#+==交通运输
+
+room_intake	入狱搜查室
+buildtoolbar_popup_room_intake	囚犯抵达监狱时，会先被带到这里搜身。\n\n推荐在此安装”囚犯分拣监控“
+
+room_morgue	停尸房
+buildtoolbar_popup_room_morgue	等待灵车时临时安放尸体的区域。\n\n[推荐区划：目的地专区]
+
+room_storage	仓库
+buildtoolbar_popup_room_storage	存储监狱所需的各种材料与物品。\n\n工人的待命地点，推荐封闭区域避免囚犯偷窃违禁品。\n\n[推荐区划：员工专区]
+
+room_deliveries	卸货区
+buildtoolbar_popup_room_deliveries	卸下货物、材料以及囚犯的区域。\n\n工人的待命地点。\n\n沿着马路加长此区，可以让更多的供给车同时停留，\n每辆供给车约9米，供给车只会在马路上的第一个卸货区卸货。\n如果与垃圾场、出货区相邻，则可以一边卸货一边装车。\n\n[推荐区划：员工专区]
+
+room_exports	出货区
+buildtoolbar_popup_room_exports	可出售的产品将会堆放在出货区，等待装车运走。\n\n[推荐区划：员工专区]
+
+room_garbage	垃圾场
+buildtoolbar_popup_room_garbage	垃圾袋将会堆放在垃圾场，等待装车运走。\n\n清洁工的待命地点。
+#-==
+
+#+==DLC
+#+女性囚犯
+room_familycell	家庭牢房
+buildtoolbar_popup_room_familycell	女囚犯带着婴儿一起生活的地方。
+
+room_nursery	托儿所
+buildtoolbar_popup_room_nursery	为有婴儿的女囚犯提供的活动室，并且她们在这里用餐。
+#-
+#+迈向绿色
 room_FarmingField	农田
-buildtoolbar_popup_room_FarmingField	谷物类农作物种植房间，这些农作物只可外销。\n\n需求：\n+ 锻炼 3.00\n+ 自由 3.00
+buildtoolbar_popup_room_FarmingField	种植谷物的区域，这些农作物只可外销。\n\n需求：\n- 锻炼 3.00\n- 自由 3.00
 
 room_VegetableAllotment	菜田
-buildtoolbar_popup_room_VegetableAllotment	蔬菜生长房间。内部种植的蔬菜既可供囚犯食用，亦可外销。\n\n需求：\n+ 锻炼 3.00\n+ 自由 3.00
+buildtoolbar_popup_room_VegetableAllotment	种植蔬菜的区域。内部种植的蔬菜既可供囚犯食用也可外销。\n\n需求：\n- 锻炼 3.00\n- 自由 3.00
 
 room_FruitOrchard	果园
-buildtoolbar_popup_room_FruitOrchard	果树种植房间。首次收获果实后，果树会不间断生产果实，既可供囚犯食用，亦可外销。
+buildtoolbar_popup_room_FruitOrchard	种植果树的区域。首次收获果实后，果树会不间断生产果实，既可供囚犯食用也可外销。
 
 room_flowergarden	花园
-buildtoolbar_popup_room_flowergarden	花园娱乐区，可供囚犯种植和照顾植物。
+buildtoolbar_popup_room_flowergarden	花园娱乐区，可供囚犯种植和照顾花朵。
+
+room_pantry	食品储藏室
+buildtoolbar_popup_room_Pantry	储存所有新鲜种植的蔬菜水果的房间，此房间为冷藏室，用于储存所有监狱内生长的食材。
+#-
+#+二次机会
+room_Bakery     面包房
+buildtoolbar_popup_room_Bakery   有烹饪或服务经验的囚犯可以烤制面包和蛋糕，卖给平民顾客。
+
+room_Restaurant     餐厅
+buildtoolbar_popup_room_Restaurant   有烹饪或服务经验的囚犯可以为平民顾客烹饪食物或负责上菜。
+
+room_TherapyRoom     会客室
+buildtoolbar_popup_room_TherapyRoom   一个“安全空间”，供动物疗法课程以及与已释放人员交流使用。
+#-
+#+完美风暴
+room_WeatherCentre	气象中心
+buildtoolbar_popup_room_WeatherCentre	配备天气预报设备的房间，可提前预警极端天气事件。
+
+room_TrainingRoom	培训室
+buildtoolbar_popup_room_TrainingRoom	供员工学习新技能的地方。
+#-
+#+精神病房
+room_PaddedCell	软垫牢房
+buildtoolbar_popup_room_paddedcell	适用于精神病囚犯，软垫墙壁能产生安抚效果。
+
+room_PaddedHoldingCell	软垫拘留牢房
+buildtoolbar_popup_room_paddedholdingcell	永久性软垫牢房准备好之前，新来的精神病囚犯会放置在这里。
+
+room_PaddedSolitary	软垫禁闭室
+buildtoolbar_popup_room_paddedsolitary	专门针对穷凶极恶的精神病囚犯的隔离惩戒牢房。
+
+room_PsychiatristOffice	精神科医生办公室
+buildtoolbar_popup_room_psychiatristoffice	供精神科医生诊断精神病人囚犯的区域。解锁额外物品并将其放置在精神科医生办公室，从而提升对精神病人囚犯的治疗效果。通过让精神病人囚犯参加心理咨询计划来解锁物品。
+#-
+#+帮派
+room_TheCage	牢笼
+buildtoolbar_popup_room_TheCage	为单独监禁的囚犯提供。此露天设施可供囚犯锻炼，同时将使用此设施的囚犯与其他囚犯隔离开来。
 
 room_FightClubRoom	搏击俱乐部房间
 buildtoolbar_popup_room_FightClubRoom	无论谁问起，都不要承认此房间的存在。\n\n需求：\n- 卫生 0.50
+
+room_TattooRemovalRoom	纹身去除室
+buildtoolbar_popup_room_TattooRemovalRoom	囚犯在这里经历痛苦、漫长的过程，最终将身上的帮派纹身去除。
+#-
+#+亡灵
+room_graveyard	墓地
+buildtoolbar_popup_room_graveyard	部分监狱囚犯的安息之地。他们是否想要一直安息下去就是另一回事了。
+#-
+#+未知
+room_superiorcell	高级牢房
+
+room_sharedcell	共用牢房
+buildtoolbar_popup_room_sharedcell	一个多人牢房。至多能够容纳8个囚犯。
+#-
+#-==
 
 #-===========================================================
 
@@ -8453,7 +8530,7 @@ buildtoolbar_popup_obj_guardtower	经过严格培训的狙击手可在警戒塔�
 
 object_weaponrack				武器架
 buildtoolbar_popup_obj_weaponrack 排列着许多武器。
-object_guardlocker				警卫锁柜
+object_guardlocker				枪柜
 buildtoolbar_popup_obj_guardlocker 每名武装警卫都需要自己的专属锁柜。\n必需安装在枪械库，决定了可雇用武装警卫的人数上限。
 object_dogbowl	警犬食盆
 buildtoolbar_popup_obj_dogbowl	为疲劳的警犬提供水和食物。\n少量增加狗的耐力。
@@ -8853,8 +8930,6 @@ object_AccountingBookFinished 账本($85)
 object_AccountingBookFailed 账本(有错误)
 object_AccountingBookFailed2 账本(有错误)
 object_AccountingBookCorrecting 账本(修正中)
-room_Accounting 会计工作间
-buildtoolbar_popup_room_accounting 接受中型企业的会计外包业务。\n让囚犯进行简单而无聊的记账工作。\n\n比起混乱的工坊，这里单纯得多。\n\n每个囚犯需要12平米才会工作。\n工作岗位上限为10人。\n\n大约每6到10个囚犯中，会有1人来工作。
 ab__failed_tt__progress \n修正进度: *P%
 ab__accountant_tt__count \n今天修正账本数: *C
 ab__accountant_tt__notworking \n今天修正账本数: *C\n\n*P
@@ -9181,16 +9256,6 @@ object_CCommand 建造建材指令
 #-
 
 
-# 新增应急呼叫
-interfacecallout_NationalGuard 部队
-
-
-object_jaildoorXL 特大监狱门
-buildtoolbar_popup_obj_jaildoorXL 超大的监狱门。
-
-
-reformprogram_GroupFitness [特殊]集体健身
-reformprogram_GroupFitness_text 让众多囚犯们大量流汗以充分健身。\n普通的举重时间很短，最好提供这个额外的健身机会。\n\n疾病点数机制：\n每个新囚犯会根据体型得到初始的疾病点数。\n比如：肥胖者最高，为300。\n之后的变化规则为：\n+/-伙食政策\n-举重\n+保持受伤(尚未得到治疗)
 
 
 
