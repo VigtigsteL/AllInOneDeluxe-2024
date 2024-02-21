@@ -953,7 +953,7 @@ BEGIN Provider
   SecondaryRate	  0.05
   ActionType      Use
   Flags           Passive
-  BroadcastRange  14
+  BroadcastRange  14.0
 END
 
 #使用电脑.办公桌 范围1 文化+0.1
