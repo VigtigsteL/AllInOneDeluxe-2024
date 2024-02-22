@@ -1,8 +1,8 @@
 # 监狱建筑师 (PrisonArchitect)中文豪华版2024 模组
 ***
 > [!IMPORTANT]
-> **特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)]**
-> <br>**特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)]**
+> **特别感谢 @GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)]**
+> <br>**特别感谢 @Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)]**
 > <br>**感谢两位开发者对PA社区做出的巨大贡献！**
 ***
 ## 本次模组是对[中文豪华版]基于<原始模组>与<二次开发模组><br>进行的修复与更新
@@ -119,8 +119,8 @@
 ***
 > [!IMPORTANT]
 >## 再次感谢两位开发者对PA社区做出的巨大贡献！
->### 特别感谢 GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)]
->### 特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)]
+>### 特别感谢 @GrandSong ([Steam个人主页](https://steamcommunity.com/id/grandsong/)) 最初开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)]
+>### 特别感谢 @Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)]
 ***
 > [!NOTE]
 >### 本次修复使用或参考了以下模组的内容，感谢这些作者的辛勤付出！
