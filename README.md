@@ -5,7 +5,7 @@
 > <br>**特别感谢 Yuanze31 ([Steam个人主页](https://steamcommunity.com/id/yuanze31/)) 二次开发了此模组    [[Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)|[Github主页](https://github.com/yuanze31/All-in-One-Deluxe)]**
 > <br>**感谢两位开发者对PA社区做出的巨大贡献！**
 ***
-# 本次模组是对[中文豪华版]<br>基于<原始模组>与<二次开发模组><br>进行的修复与更新
+## 本次模组是对[中文豪华版]基于<原始模组>与<二次开发模组><br>进行的修复与更新
 ## 当前版本：V1.4.0 | 更新日期：2024.02.22
 
 *感谢原作者 @GrandSong 对此次更新的肯定。*
