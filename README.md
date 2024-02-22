@@ -18,7 +18,7 @@
 
 ### 关于 模组 详细说明 请查看置顶<[原始模组](https://steamcommunity.com/sharedfiles/filedetails/?id=821415114)>与<[二次开发模组](https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242)>页面
 ***
-# ❗重要：修复了在大型游戏中<br>❗严重影响运算性能、2~5秒一次的严重卡顿、内存泄漏等严重Bug！
+## ❗重要：修复了在大型游戏中<br>❗严重影响运算性能、2~5秒一次的严重卡顿、内存泄漏等严重Bug！
 ***
 # 更新概况：
 
