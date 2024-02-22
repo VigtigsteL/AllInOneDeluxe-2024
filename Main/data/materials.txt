@@ -2120,15 +2120,7 @@ END
 #   Equipment            Clipboard
 # END
 
-BEGIN Object
-    Name                 ExecutionWitness
-    RenderDepth          2
-    Toughness            5
-    Sprite               PalermoDaughter1
-    Properties           Entity
-    Properties           DoesNotTire
-    Properties           Scripted
-END
+
 
 BEGIN Object
     Name                 ElectricChair
@@ -3160,798 +3152,7 @@ BEGIN Object
     Properties           Uncloneable
 END
 
-BEGIN Room
-    Name                 HoldingCell
-    Capturable           true
-    Properties           Housing
-    BEGIN Requirement Type MinimumSize  x 4  y 4  END
-    BEGIN Requirement Type Enclosed END
-    BEGIN Requirement Type Object  Id Toilet  END
-    BEGIN Requirement Type Object  Id Bench Alt SmallBench  END
-    BEGIN LikelyObject  Id    ShowerHead    END
-    BEGIN LikelyObject  Id    Drain     END
-    BEGIN LikelyObject  Id    Bed             END
-    BEGIN LikelyObject  Id    BunkBed             END
-    BEGIN LikelyObject  Id    Bin             END
-    BEGIN LikelyObject  Id    Radio           END
-    BEGIN LikelyObject  Id    PersonalSink    END
-    BEGIN LikelyObject  Id    SinkMirror    END
-    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
-END
 
-BEGIN Room
-    Name                 Cell
-    Capturable           true
-    Properties           Housing
-    Properties           QualityGraded
-	Properties           CanAssignGangSegregation
-    BEGIN Requirement Type MinimumSize  x 2  y 3  END
-    BEGIN Requirement Type Indoor  END
-    BEGIN Requirement Type Enclosed END
-	BEGIN Requirement Type Object  Id Bed Alt Mattress,ComfyBed,CoffinBed,OldBed,CampBed,NettedBed END	
-    BEGIN Requirement Type Object  Id Toilet  END
-
-    BEGIN LikelyObject	Id		JailDoor		END
-    BEGIN LikelyObject	Id		WoodDrain		END
-    BEGIN LikelyObject  Id      Bookshelf       END
-    BEGIN LikelyObject  Id      Tv              END
-	BEGIN LikelyObject  Id      LargeTv         END
-    BEGIN LikelyObject  Id      Window          END
-	BEGIN LikelyObject  Id      WindowLarge		END
-	BEGIN LikelyObject  Id 		SinkMirror		END
-    BEGIN LikelyObject  Id      Radio           END
-	BEGIN LikelyObject	Id		BoomBoxRoundhouse	END
-    BEGIN LikelyObject  Id      OfficeDesk      END
-    BEGIN LikelyObject  Id      Chair           END
-    BEGIN LikelyObject  Id      ShowerHead      END
-    BEGIN LikelyObject  Id      Drain           END
-    BEGIN LikelyObject  Id      ShortBookcase   END
-	BEGIN LikelyObject	Id		ChestOfDrawers	END
-	
-    BEGIN LikelyObject  Id      Plant           END
-	BEGIN LikelyObject	Id		BathroomSink	END
-	BEGIN LikelyObject	Id		WoodenTable		END
-	BEGIN LikelyObject	Id		WoodenStool		END
-	BEGIN LikelyObject	Id		MetalStool		END
-	BEGIN LikelyObject	Id		Painting1		END
-	BEGIN LikelyObject	Id		Painting2		END
-	BEGIN LikelyObject	Id		ChessTable		END
-	BEGIN LikelyObject	Id		BathroomHandDryer END
-    BEGIN LikelyObject	Id		PunchBag 		END
-	BEGIN LikelyObject	Id		PetBird			END
-	BEGIN LikelyObject  Id		Canvas			END
-	BEGIN LikelyObject	Id		Fan				END
-	BEGIN LikelyObject	Id		GymMat			END
-	BEGIN LikelyObject	Id		SoftPillow		END
-    BEGIN LikelyObject  Id      WindowClassy    END
-    BEGIN LikelyObject  Id      WindowClassyLarge   END
-    BEGIN LikelyObject  Id      GlassWindow     END
-    BEGIN LikelyObject  Id      GlassWindowLarge    END
-    BEGIN LikelyObject  Id      WoodenWindowSmall   END
-    BEGIN LikelyObject  Id      WoodenWindowLarge   END
-    BEGIN LikelyObject  Id      SofaChairBrown   END
-    BEGIN LikelyObject  Id      SofaChairDouble   END
-    BEGIN LikelyObject  Id      SofaChairDoubleBrown   END
-    BEGIN LikelyObject  Id      SofaChairSingle   END
-    BEGIN LikelyObject  Id      SofaSingle   END
-    BEGIN LikelyObject  Id      SofaDouble   END
-    BEGIN LikelyObject  Id      SwivelChair   END
-    BEGIN LikelyObject  Id      ChairYellow   END
-    BEGIN LikelyObject  Id      OfficeChair   END
-    BEGIN LikelyObject  Id      LeatherChair   END
-    BEGIN LikelyObject  Id      LeatherSofa   END
-    BEGIN LikelyObject  Id      DiningChair   END
-    BEGIN LikelyObject  Id      BedsideCab1   END
-    BEGIN LikelyObject  Id      BedsideCab2   END
-    BEGIN LikelyObject  Id      PaintCabinet   END
-    BEGIN LikelyObject  Id      Mirror   END
-
-    BEGIN Grading       Type    RoomSize Size   6               END
-    BEGIN Grading       Type    RoomSize Size   9              END
-    BEGIN Grading       Type    RoomSize Size   16              END
-    BEGIN Grading       Type    OutsideWindow   GradeEffect 2   END
-    BEGIN Grading       Type    OutsideWindow   Large true      END
-    BEGIN Grading       Type    Item    Id      OfficeDesk      END
-    BEGIN Grading       Type    Item    Id      ShowerHead      END
-    BEGIN Grading       Type    Item    Id      Tv  Alt LargeTv Multi true END
-    BEGIN Grading       Type    Item    Id      Radio           END
-    BEGIN Grading       Type    Item    Id      Bookshelf  Alt ShortBookcase  END
-    BEGIN Grading       Type    Item    Id      Chair   Alt WoodenStool,OfficeChair,ChairYellow,SwivelChair,MetalStool,DiningChair,SofaChairSingle,SofaChairDouble  Multi true  END
-    BEGIN Grading       Type    Item    Id      PetBird         END
-    BEGIN Grading       Type    Item    Id      SoftPillow      END
-    BEGIN Grading       Type    Item    Id      SinkMirror  Alt  BathroomSink  Multi true  END
-    BEGIN Grading       Type    Item    Id      Canvas          END
-    BEGIN Grading       Type    Item    Id      PunchBag        END
-	BEGIN Grading       Type    Item    Id      ComfyBed Alt NettedBed Multi true        END
-    BEGIN Grading       Type    Item    Id      Mattress   GradeEffect -1    END
-    BEGIN Grading       Type    Item    Id      OldBed     GradeEffect -1    END
-
-    BEGIN Grading       Type    BadWalls Percent 50 GradeEffect -1      END
-	BEGIN Grading		Type	HasGlassWalls Percent 50	GradeEffect -1		END
-    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
-    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
-END
-
-BEGIN Room
-    Name                 Dormitory
-    Properties           Housing
-    Properties           QualityGraded
-	Properties           CanAssignGangSegregation
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN Requirement Type Enclosed END
-    BEGIN Requirement Type Indoor  END
-    BEGIN Requirement Type Object  Id Bed Alt BunkBed,Mattress,ComfyBed,CoffinBed,OldBed,CampBed,NettedBed END
-    BEGIN Requirement Type Object  Id Toilet  END
-
-    BEGIN LikelyObject  Id      SmallBench		END
-	BEGIN LikelyObject  Id      JungleBench		END
-    BEGIN LikelyObject  Id      OakBench		END
-    BEGIN LikelyObject	Id		JailDoor		END
-    BEGIN LikelyObject  Id      Bookshelf       END
-    BEGIN LikelyObject  Id      Tv              END
-    BEGIN LikelyObject  Id      Window          END
-    BEGIN LikelyObject  Id      Radio           END
-	BEGIN LikelyObject	Id		BoomBoxRoundhouse	END
-    BEGIN LikelyObject  Id      PoolTable       END
-	BEGIN LikelyObject	Id		WaterCooler		END
-	BEGIN LikelyObject	Id		Fan				END
-	BEGIN LikelyObject	Id		Chair			END
-	BEGIN LikelyObject	Id		WindowLarge 	END
-	BEGIN LikelyObject	Id		WindowClassy	END
-	BEGIN LikelyObject	Id		WindowClassyLarge END
-	BEGIN LikelyObject	Id		ShowerHead		END
-	BEGIN LikelyObject	Id		GlassWindow		END
-	BEGIN LikelyObject	Id		GlassWindowLarge END
-	BEGIN LikelyObject	Id		SinkMirror		END
-	BEGIN LikelyObject	Id		TableFootball	END
-	BEGIN LikelyObject	Id		TableTennis		END
-	BEGIN LikelyObject	Id		PoolTable		END
-	BEGIN LikelyObject	Id		WoodenStool		END
-	BEGIN LikelyObject	Id		MetalStool		END
-    BEGIN LikelyObject  Id      SofaChairBrown   END
-    BEGIN LikelyObject  Id      SofaChairDouble   END
-    BEGIN LikelyObject  Id      SofaChairDoubleBrown   END
-    BEGIN LikelyObject  Id      SofaChairSingle   END
-    BEGIN LikelyObject  Id      SofaSingle    END
-    BEGIN LikelyObject  Id      SofaDouble    END
-    BEGIN LikelyObject  Id      SwivelChair   END
-    BEGIN LikelyObject  Id      ChairYellow   END
-    BEGIN LikelyObject  Id      OfficeChair   END
-    BEGIN LikelyObject  Id      LeatherChair  END
-    BEGIN LikelyObject  Id      Drain         END
-    BEGIN LikelyObject  Id      WoodDrain     END
-    BEGIN LikelyObject  Id      PhoneBooth    END
-    BEGIN LikelyObject  Id      VideoCallBooth  END
-    BEGIN LikelyObject  Id      SoftPillow      END
-    BEGIN LikelyObject  Id      LeatherSofa   END
-    BEGIN LikelyObject  Id      DiningChair   END
-    BEGIN LikelyObject  Id      BedsideCab1   END
-    BEGIN LikelyObject  Id      BedsideCab2   END
-    BEGIN LikelyObject  Id      PaintCabinet   END
-    BEGIN LikelyObject  Id      Mirror   END
-
-    BEGIN Grading       Type    OutsideWindow   GradeEffect 2 END
-    BEGIN Grading       Type    Item    Id      ShowerHead  Quantity 1 END
-    BEGIN Grading       Type    Item    Id      WaterCooler            END
-	
-    BEGIN Grading       Type    Item    Id      Tv Alt LargeTv   Multi true END
-    BEGIN Grading       Type    Item    Id      Radio           END
-    BEGIN Grading       Type    Item    Id      Fan           END
-    BEGIN Grading       Type    Item    Id      Bookshelf  Alt ShortBookcase   END
-    BEGIN Grading       Type    Item    Id      Chair   Alt Bench,SmallBench,JungleBench,OakBench,WoodenStool,OfficeChair,ChairYellow,SwivelChair,MetalStool,DiningChair,SofaChairSingle,SofaChairDouble  Multi true  END
-    BEGIN Grading       Type    Item    Id      SinkMirror  Alt  BathroomSink  Multi true  END
-	BEGIN Grading       Type    Item    Id      ComfyBed Alt NettedBed Multi true        END
-    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
-	BEGIN Grading		Type	HasGlassWalls Percent 50	GradeEffect -1		END
-    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
-    BEGIN Grading       Type    Item    Id      Mattress Quantity 4  GradeEffect -1    END
-    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
-END
-
-BEGIN Room
-    Name                FamilyCell
-    Properties          Housing
-    Properties          WomenOnly
-    Properties          MothersOnly
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN Requirement Type Enclosed END
-    BEGIN Requirement Type Object  Id Bed Alt Mattress,ComfyBed,OldBed END
-    BEGIN Requirement Type Object  Id Toilet  END
-    BEGIN Requirement Type Object  Id Crib END
-    BEGIN Requirement Type Object  Id ShowerHead END
-    BEGIN Requirement Type Object  Id Drain END
-    BEGIN LikelyObject  Id      PersonalSink    END
-    BEGIN LikelyObject  Id      SinkMirror    END
-    BEGIN LikelyObject  Id      Painting1       END
-    BEGIN LikelyObject  Id      Painting2       END
-    BEGIN LikelyObject  Id      ChessTable      END
-    BEGIN LikelyObject  Id      Plant           END
-    BEGIN LikelyObject  Id      JailDoor        END
-    BEGIN LikelyObject  Id      Bookshelf       END
-    BEGIN LikelyObject  Id      Tv              END
-    BEGIN LikelyObject  Id      Window          END
-    BEGIN LikelyObject  Id      Radio           END
-    BEGIN LikelyObject  Id      Drain           END
-    BEGIN LikelyObject  Id      ChestOfDrawers  END
-    BEGIN LikelyObject  Id      ShortBookcase   END
-
-    BEGIN Grading       Type    Item    Id      PASystem   GradeEffect -1    END
-    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
-END
-
-BEGIN Room
-    Name                 Intake
-    Properties       RequiresSector
-    BEGIN Requirement Type Object  Id Table Alt SmallTable END
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN LikelyObject  Id      Door    END
-    BEGIN LikelyObject  Id      Cctv    END
-    BEGIN LikelyObject  Id      Chair    END
-    Research             Security
-END
-
-BEGIN Room
-    Name                Nursery
-    Properties          RequiresSector
-    Properties          WomenOnly
-    Properties          MothersOnly
-    Properties          DiningArea
-    BEGIN Requirement Type Object  Id ServingTable  END
-    BEGIN Requirement Type Object  Id Table Alt SmallTable END
-    BEGIN Requirement Type Object  Id Bench Alt SmallBench END
-    BEGIN Requirement Type Object  Id PlayMat END
-    BEGIN Requirement Type Object  Id Crib END
-    BEGIN LikelyObject  Id      PersonalSink    END
-    BEGIN LikelyObject  Id      SinkMirror    END
-    BEGIN LikelyObject  Id      Tv             END
-    BEGIN LikelyObject  Id      Window          END
-    BEGIN LikelyObject  Id      Radio           END
-    BEGIN LikelyObject  Id      PhoneBooth      END
-END
-
-BEGIN Room
-    Name                 Canteen
-    Properties           RequiresSector
-    Properties           DiningArea
-    Properties           QualityGraded
-    BEGIN Requirement Type Object  Id ServingTable  END
-    BEGIN Requirement Type Object  Id Table Alt SmallTable END
-    BEGIN Requirement Type Object  Id Bench Alt SmallBench END
-    BEGIN LikelyObject  Id      Bin             END
-    BEGIN LikelyObject  Id      SmallTable      END
-    BEGIN LikelyObject  Id      SnackMachine    END
-    BEGIN LikelyObject  Id      Fan             END
-    BEGIN LikelyObject  Id      Plant  Alt  Plantcactus END
-    BEGIN LikelyObject  Id      WaterCooler     END
-    BEGIN LikelyObject  Id      DrinkMachine    END
-    BEGIN LikelyObject  Id    Sink             END
-    BEGIN LikelyObject  Id    MetalDetector             END
-    BEGIN LikelyObject  Id      LargeTv         END
-    BEGIN LikelyObject  Id      PersonalSink    END
-    BEGIN LikelyObject  Id      SinkMirror    END
-    BEGIN Grading       Type    RoomSize Size 20    END
-    BEGIN Grading       Type    MealQuality         END
-    BEGIN Grading       Type    MealVariety         END
-    BEGIN Grading       Type    Item    Id      Fan        END
-    BEGIN Grading       Type    Item    Id      DrinkMachine  END
-    BEGIN Grading       Type    Item    Id      SnackMachine  END
-    BEGIN Grading       Type    Item    Id      WaterCooler   END
-    BEGIN Grading       Type    Item    Id      Plant Quantity 4 Alt PlantCactus Quantity 4 END
-    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
-    BEGIN Grading       Type    Item    Id      Cctv   GradeEffect -1    END
-    END
-
-BEGIN Room
-    Name                 Kitchen
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN Requirement Type Object  Id Cooker                END
-    BEGIN Requirement Type Object  Id Fridge Alt TallFridge END
-    BEGIN LikelyObject  Id    Sink             END
-    BEGIN LikelyObject  Id    Bin              END
-    BEGIN LikelyObject  Id    MetalDetector    END
-    BEGIN LikelyObject  Id    Sprinkler        END
-    BEGIN LikelyObject  Id    StaffDoor        END
-    BEGIN LikelyObject  Id    TallFridge       END
-    BEGIN Contraband    Id    Knife            END
-    BEGIN Contraband    Id    Fork             END
-    BEGIN Contraband    Id    Spoon            END
-    Properties           PrisonersCanWork
-    Properties           RequiresSector
-    Properties           BlockMaterialTransfer
-    Qualification        KitchenInduction
-END
-
-BEGIN Room
-    Name                 Shower
-    BEGIN Requirement Type Object  Id ShowerHead  END
-    BEGIN LikelyObject  Id      Drain           END
-    BEGIN LikelyObject  Id      Bucket  END
-    BEGIN LikelyObject  Id      ShowerPillar    END
-    BEGIN LikelyObject  Id      SinkMirror      END
-    BEGIN LikelyObject  Id      BathroomHandDryer END
-    BEGIN LikelyObject  Id      SinkMirror    END
-END
-
-BEGIN Room
-    Name                 Yard
-    Properties           QualityGraded
-    BEGIN Requirement Type MinimumSize  x 4  y 4  END
-    BEGIN Requirement Type Outdoor END
-    BEGIN Requirement Type Secure END
-    BEGIN LikelyObject  Id    WeightsBench  END
-    BEGIN LikelyObject  Id      PhoneBooth    END
-    BEGIN LikelyObject  Id    SmallBench    END
-    BEGIN LikelyObject  Id    Bench    END
-    BEGIN LikelyObject  Id    Bleachers    END
-    BEGIN LikelyObject  Id      LargeTv         END
-    BEGIN LikelyObject  Id      PoolTable   END
-    BEGIN LikelyObject  Id      ShowerHead      END
-    BEGIN LikelyObject  Id      Drain           END
-    BEGIN LikelyObject  Id      MetalDetector             END
-    BEGIN LikelyObject  Id      Tree           END
-    BEGIN LikelyObject  Id      GuardTower           END
-    BEGIN LikelyObject  Id      GuardPavilion           END
-    BEGIN LikelyObject  Id      GuardPavilionCorner           END
-    BEGIN LikelyObject  Id      SmallBench      END
-    BEGIN LikelyObject  Id      OakBench        END
-    BEGIN LikelyObject  Id      WeightsBench    END
-    BEGIN LikelyObject  Id      PhoneBooth      END
-    BEGIN LikelyObject  Id      Bleachers       END
-    BEGIN LikelyObject  Id      Bench           END
-    BEGIN LikelyObject  Id      ParkBench       END
-    BEGIN LikelyObject  Id      OutdoorTable    END
-    BEGIN LikelyObject  Id      Chair           END
-    BEGIN LikelyObject  Id      WoodenStool     END
-    BEGIN LikelyObject  Id      Light           END
-    BEGIN LikelyObject  Id      FloodLight      END
-    BEGIN LikelyObject  Id      WallLight       END
-    BEGIN LikelyObject  Id      GuardPavilion   END
-    BEGIN LikelyObject  Id      GuardPavilionCorner END
-    BEGIN LikelyObject  Id      Radio           END
-    BEGIN LikelyObject  Id      PhoneBooth      END
-    BEGIN LikelyObject  Id      TyreStack       END
-    BEGIN LikelyObject  Id      TyreApparatus   END
-    BEGIN LikelyObject  Id      ChessTable      END
-    BEGIN LikelyObject  Id      PASystem        END
-    BEGIN LikelyObject  Id      PunchBag        END
-    BEGIN LikelyObject  Id      TrainingDummy   END
-    BEGIN LikelyObject  Id      DumbbellRack    END
-    BEGIN LikelyObject  Id      SnackMachine    END
-
-    BEGIN Grading       Type    RoomSize    Size    50  END
-    BEGIN Grading       Type    RoomSize    Size    100 GradeEffect 2  END
-    BEGIN Grading       Type    Item    Id      DumbbellRack    END
-    BEGIN Grading       Type    Item    Id      Bleachers       END
-    BEGIN Grading       Type    Item    Id      PunchBag     END
-    BEGIN Grading       Type    Item    Id      TyreApparatus   END
-    BEGIN Grading       Type    MultiItems  Quantity 10 GradeEffect 2 END
-    BEGIN Grading       Type    RoomSizeLess Size   16 GradeEffect -1 END
-    BEGIN Grading       Type    RoomSizeLess Size   50 GradeEffect -1   END
-    BEGIN Grading       Type    Floor   Id      Mud Alt NewMud Percent  50 GradeEffect -1 END
-    BEGIN Grading       Type    Item    Id      PASystem    GradeEffect -1 END
-END
-
-BEGIN Room
-    Name                 CommonRoom
-    Properties           QualityGraded
-    BEGIN Requirement Type MinimumSize  x 2  y 2  END
-    BEGIN LikelyObject  Id    SmallBench    END
-    BEGIN LikelyObject  Id      Bench           END
-    BEGIN LikelyObject  Id    LeatherChair  END
-    BEGIN LikelyObject  Id      LargeTv         END
-    BEGIN LikelyObject  Id      PoolTable   END
-    BEGIN LikelyObject  Id      Chair END
-    BEGIN LikelyObject  Id      WeightsBench END
-    BEGIN LikelyObject  Id      PhoneBooth END
-    BEGIN LikelyObject  Id      PrayerMat END
-    BEGIN LikelyObject  Id      TimedCaller         END
-    BEGIN LikelyObject  Id      LeatherChair    END
-    BEGIN LikelyObject  Id      TvSmall         END
-    BEGIN LikelyObject  Id      Plant           END
-    BEGIN LikelyObject  Id      WoodenTable     END
-    BEGIN LikelyObject  Id      ShortBookcase   END
-    BEGIN LikelyObject  Id      OvalStaffTable  END
-    BEGIN LikelyObject  Id      Painting1       END
-    BEGIN LikelyObject  Id      Painting2       END
-    BEGIN LikelyObject  Id      ChessTable      END
-    BEGIN LikelyObject  Id      PlantCactus     END
-    BEGIN LikelyObject  Id      OvalStaffTable  END
-    BEGIN LikelyObject  Id      OakTable        END
-    BEGIN LikelyObject  Id      TableFootball   END
-    BEGIN LikelyObject  Id      TableTennis     END
-    BEGIN LikelyObject  Id      Plant           END
-    BEGIN LikelyObject  Id      WoodenTable     END
-    BEGIN LikelyObject  Id      ShortBookcase   END
-    BEGIN LikelyObject  Id      OvalStaffTable  END
-    BEGIN LikelyObject  Id      Painting1       END
-    BEGIN LikelyObject  Id      Painting2       END
-    BEGIN Grading       Type    RoomSize    Size    25      END
-    BEGIN Grading       Type    RoomSize    Size    50      END
-    BEGIN Grading       Type    Item    Id      PhoneBooth  END
-    BEGIN Grading       Type    Item    Id      PoolTable   END
-    BEGIN Grading       Type    Item    Id      TableFootball   END
-    BEGIN Grading       Type    Item    Id      TableTennis END
-    BEGIN Grading       Type    Item    Id      SmallTv Alt LargeTv END
-    BEGIN Grading       Type    Item    Id      ChessTable  END
-    BEGIN Grading       Type    Item    Id      Radio       END
-    BEGIN Grading       Type    Item    Id      ArcadeMachine   END
-END
-
-BEGIN Room
-    Name                 Storage
-    BEGIN LikelyObject  Id    StaffDoor     END
-    BEGIN LikelyObject  Id    MetalDetector             END
-    BEGIN Contraband    Id      Screwdriver     END
-    BEGIN Contraband    Id      Saw             END
-    BEGIN Contraband    Id      Drill           END
-    BEGIN Contraband    Id      Hammer          END
-    Properties           StaffCanUseFacilities
-END
-
-BEGIN Room
-    Name Exports
-    Research             PrisonLabour
-END
-
-BEGIN Room
-    Name Deliveries
-    BEGIN LikelyObject  Id    StaffDoor     END
-    BEGIN LikelyObject  Id    MetalDetector             END
-END
-
-BEGIN Room
-    Name Garbage
-END
-
-BEGIN Room
-    Name                 Execution
-    BEGIN Requirement Type Object  Id ElectricChair  END
-    BEGIN Requirement Type MinimumSize  x 3  y 4  END
-    BEGIN LikelyObject  Id      Chair  END
-END
-
-BEGIN Room
-    Name                 Workshop
-    Research             PrisonLabour
-    Properties           PrisonersCanWork
-    Qualification        WorkshopInduction
-    BEGIN Requirement Type MinimumSize  x 5  y 4  END
-    BEGIN Requirement Type Object   Id WorkshopSaw END
-    BEGIN Requirement Type Object   Id CarpenterTable Alt WorkshopPress END
-    BEGIN LikelyObject  Id      WorkshopPress   END
-    BEGIN LikelyObject  Id      Table   END
-    BEGIN LikelyObject  Id      Radio   END
-    BEGIN LikelyObject  Id      TimedCaller         END
-    BEGIN LikelyObject  Id      MetalDetector         END
-    BEGIN Contraband    Id      Saw             END
-    BEGIN Contraband    Id      Screwdriver     END
-    BEGIN Contraband    Id      Hammer          END
-    BEGIN Contraband    Id      Drill           END
-    BEGIN Contraband    Id      Shank           END
-    BEGIN Contraband    Id      WoodenPickAxe   END
-END
-
-BEGIN Room
-    Name                 Security
-    Research             Security
-    BEGIN Requirement Type MinimumSize  x 2  y 2  END
-    BEGIN LikelyObject  Id      CctvMonitor       END
-    BEGIN LikelyObject  Id      DoorControlSystem END
-    BEGIN LikelyObject  Id      PhoneMonitor      END
-    BEGIN LikelyObject  Id      solitarydoor      END
-    BEGIN LikelyObject  Id      remotedoor        END
-    BEGIN LikelyObject  Id      TrackingMonitor   END
-    BEGIN Contraband    Id      JailKeys          END
-    BEGIN Contraband    Id      Keycard           END
-    BEGIN Contraband    Id      Baton             END
-    BEGIN Contraband    Id      Cigs              END
-    BEGIN Contraband    Id      Lighter           END
-    BEGIN Contraband    Id      Torch             END
-    Properties          StaffCanUseFacilities
-END
-
-BEGIN Room
-    Name                 Office
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN Requirement Type Object  Id OfficeDesk Alt FancyDesk END
-    BEGIN Requirement Type Object  Id Chair Alt OfficeChair END
-    BEGIN Requirement Type Object  Id FilingCabinet Alt FilingCabinetFancy END
-    BEGIN LikelyObject  Id    StaffDoor     END
-    BEGIN LikelyObject  Id    LeatherChair  END
-    BEGIN LikelyObject  Id    Lamp      END
-    BEGIN LikelyObject  Id    PlantCactus   END
-    BEGIN LikelyObject  Id    CoatStand   END
-    BEGIN LikelyObject  Id      ShortBookcase   END
-    BEGIN LikelyObject  Id      OvalStaffTable  END
-    BEGIN LikelyObject  Id      MooseHead   END
-    BEGIN LikelyObject  Id    Painting1   END
-    BEGIN LikelyObject  Id    Painting2   END
-
-    BEGIN Contraband    Id       MobilePhone     END
-    BEGIN Contraband    Id      Booze           END
-    BEGIN Contraband    Id      Cigs            END
-    BEGIN Contraband    Id      Lighter         END
-    BEGIN LikelyObject  Id      ChestOfDrawers  END
-    Properties           StaffCanUseFacilities
-END
-
-BEGIN Room
-    Name                 MedicalWard
-    Research             Health
-    BEGIN Requirement Type Indoor  END
-    BEGIN Requirement Type Object  Id MedicalBed  END
-    BEGIN Requirement Type Object  Id SinkMirror alt PersonalSink END
-    BEGIN LikelyObject  Id      SinkMirror    END
-    BEGIN LikelyObject  Id      Door     END
-    BEGIN LikelyObject  Id      MedicineCabinet     END
-    BEGIN LikelyObject  Id      Bin     END
-    BEGIN LikelyObject  Id      MetalDetector             END
-    BEGIN LikelyObject	Id		FirstAidStation	END
-    BEGIN LikelyObject	Id		MedicalBox	END
-    BEGIN LikelyObject	Id		HealthMonitor	END
-    BEGIN Contraband    Id      Needle          END
-    BEGIN Contraband    Id      Poison          END
-    BEGIN Contraband    Id      Medicine        END
-    BEGIN Contraband    Id      Scissors        END
-END
-
-BEGIN Room
-    Name                 Morgue
-    Research             Health
-    BEGIN Requirement Type Object  Id MorgueSlab  END
-    BEGIN LikelyObject  Id    MetalDetector             END
-    BEGIN Contraband    Id      Scissors         END
-    BEGIN Contraband    Id      Knife END
-
-END
-
-BEGIN Room
-    Name                 Laundry
-    Research             Cleaning
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN Requirement Type Object  Id LaundryMachine  END
-    BEGIN Requirement Type Object  Id LaundryBasket  END
-    BEGIN Requirement Type Object  Id IroningBoard Alt IroningBoardShort END
-    BEGIN LikelyObject  Id    Table     END
-    BEGIN Contraband    Id    Rope      END
-    Properties           PrisonersCanWork
-    Properties           RequiresSector
-END
-
-BEGIN Room
-    Name                 CleaningCupboard
-    Research             Cleaning
-    Properties           PrisonersCanWork
-    BEGIN Requirement Type Object  Id SinkMirror alt PersonalSink END
-    BEGIN Contraband    Id      Poison  END
-    BEGIN Contraband    Id      Club END
-    BEGIN LikelyObject  Id      Bucket  END
-END
-
-BEGIN Room
-    Name                 Visitation
-    BEGIN Requirement Type Object  Id VisitorTable  Alt VisitorTableSecure END
-    BEGIN LikelyObject  Id      VisitorTableSecure    END
-    BEGIN LikelyObject  Id      JailDoor    END
-    BEGIN LikelyObject  Id      VisitorDoor    END
-    BEGIN LikelyObject  Id    MetalDetector             END
-    BEGIN Contraband    Id      Cigs    END
-    BEGIN Contraband    Id      Lighter         END
-    BEGIN Contraband    Id      Drugs   END
-    BEGIN Contraband    Id      Booze   END
-    BEGIN Contraband    Id      MobilePhone END
-END
-
-BEGIN Room
-    Name                 ParoleRoom
-    Research             Legal
-    BEGIN Requirement Type Object  Id VisitorTable  END
-END
-
-BEGIN Room
-    Name                 Solitary
-    Research             Security
-    BEGIN Requirement Type Enclosed END
-    BEGIN LikelyObject  Id    SolitaryDoor  END
-    BEGIN LikelyObject  Id    securedoor     END
-    BEGIN LikelyObject  Id    remotedoor     END
-    BEGIN LikelyObject  Id      Toilet           END
-    BEGIN LikelyObject  Id      SolitaryDoor    END
-    BEGIN Incompatible Zone FamilyCell END
-END
-
-BEGIN Room
-    Name                 Kennel
-    Research             Dogs
-    BEGIN Requirement Type MinimumSize  x 2  y 2  END
-    BEGIN Requirement Type Enclosed END
-    BEGIN Requirement Type Object  Id DogCrate  END
-    Properties           StaffCanUseFacilities
-END
-
-BEGIN Room
-    Name                 Armoury
-    Research             Armoury
-    BEGIN Requirement Type Object  Id WeaponRack  END
-    BEGIN Requirement Type Object  Id GuardLocker END
-    BEGIN LikelyObject  Id    Table     END
-    BEGIN LikelyObject  Id    solitarydoor     END
-    BEGIN LikelyObject  Id    securedoor     END
-    BEGIN LikelyObject  Id    secretdoor     END
-    BEGIN LikelyObject  Id    remotedoor     END
-    BEGIN Contraband    Id      Shotgun         END
-    BEGIN Contraband    Id      Gun             END
-    BEGIN Contraband    Id      Tazer           END
-    BEGIN Contraband    Id      Baton           END
-    BEGIN Contraband    Id      Rifle           END
-    Properties           StaffCanUseFacilities
-END
-
-
-
-BEGIN Room
-    Name                 Staffroom
-    BEGIN Requirement Type Object  Id DrinkMachine  END
-
-    BEGIN LikelyObject  Id      Bin   END
-    BEGIN LikelyObject  Id      SofaChairSingle   END
-    BEGIN LikelyObject  Id      StaffDoor     END
-    BEGIN LikelyObject  Id      Toilet    END
-    BEGIN LikelyObject  Id      Radio   END
-    BEGIN LikelyObject  Id      ServingTable  END
-    BEGIN LikelyObject  Id      ArcadeCabinet  END
-    BEGIN LikelyObject  Id      PoolTable  END
-    BEGIN LikelyObject  Id      SmallTv  END
-    BEGIN LikelyObject  Id      LargeTv  END
-    BEGIN LikelyObject  Id      LeatherChair    END
-    BEGIN LikelyObject  Id      Plant           END
-    BEGIN LikelyObject  Id      PlantCactus     END
-    BEGIN LikelyObject  Id      Lamp            END
-    BEGIN LikelyObject  Id      WoodenTable END
-    BEGIN LikelyObject  Id      CoatStand       END
-    BEGIN LikelyObject  Id      OvalStaffTable  END
-    BEGIN LikelyObject  Id      ShortBookcase   END
-    BEGIN LikelyObject  Id      Painting1       END
-    BEGIN LikelyObject  Id      Painting2       END
-    BEGIN LikelyObject  Id      ChessTable      END
-    BEGIN LikelyObject  Id      CoffeeMachine   END
-    BEGIN LikelyObject  Id      WaterCooler     END
-    BEGIN LikelyObject  Id      SnackMachine    END
-    BEGIN LikelyObject  Id      Fan             END
-    BEGIN LikelyObject  Id      TableFootball   END
-    BEGIN LikelyObject  Id      TableTennis     END
-
-    BEGIN Contraband    Id      Cigs            END
-    BEGIN Contraband    Id      Lighter         END
-    BEGIN Contraband    Id      MobilePhone     END
-    BEGIN Contraband    Id      Knife           END
-    BEGIN Contraband    Id      Fork            END
-    Properties           StaffCanUseFacilities
-    Properties           DiningArea
-    Properties           RequiresSector
-END
-
-BEGIN Room
-    Name                 Library
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN Requirement Type Object  Id LibraryBookshelf Quantity 2 END
-    BEGIN Requirement Type Object Id SortingTable END
-    BEGIN Contraband    Id      Scissors        END
-    BEGIN Contraband    Id      FountainPen     END
-    BEGIN LikelyObject  Id      WoodenTable END
-    BEGIN LikelyObject  Id      ChestOfDrawers  END
-    BEGIN LikelyObject  Id      ShortBookcase   END
-    BEGIN LikelyObject  Id      ChessTable      END
-    BEGIN LikelyObject  Id      ComputerStation END
-
-    Properties           PrisonersCanWork
-    Qualification        Academic
-    WorkGroup            Library
-    Research             PrisonLabour
-END
-
-BEGIN Room
-    Name                 Forestry
-    Research             GroundsKeeping
-    BEGIN Requirement Type MinimumSize  x 3  y 3  END
-    BEGIN Requirement Type Outdoor END
-    BEGIN LikelyObject  Id    Tree     END
-    BEGIN LikelyObject  Id    StaffDoor     END
-    BEGIN LikelyObject  Id    fencegatestaff     END
-    BEGIN LikelyObject  Id    fencegatestandard     END
-    BEGIN LikelyObject  Id    MetalDetector             END
-    BEGIN Contraband  Id   Saw END
-    BEGIN Contraband  Id   Axe END
-    BEGIN Contraband  Id   Spade END
-	
-	Properties			PrisonersCanWork
-	WorkResearch		ForestryLabour
-	WorkExperience		WorkLabourer
-	WorkExperienceRate	0.05
-END
-
-BEGIN Room
-    Name                 Classroom
-    Properties           QualityGraded
-    Research             Education
-    BEGIN Requirement Type MinimumSize  x 3  y 4  END
-    BEGIN Requirement Type Object  Id SchoolDesk END
-    BEGIN Requirement Type Object  Id OfficeDesk Alt FancyDesk END
-	
-    BEGIN LikelyObject  Id      Door         END
-    BEGIN LikelyObject  Id      TimedCaller         END
-    BEGIN LikelyObject  Id  WaterCooler         END
-    BEGIN LikelyObject  Id  Blackboard          END
-    BEGIN LikelyObject  Id  Bookshelf           END
-    BEGIN LikelyObject  Id  Window              END
-    BEGIN LikelyObject  Id  WindowLarge         END
-    BEGIN LikelyObject  Id  WindowClassy        END
-    BEGIN LikelyObject  Id  WindowClassyLarge   END
-    BEGIN LikelyObject  Id  GlassWindow         END
-    BEGIN LikelyObject  Id  GlassWindowLarge    END
-
-    BEGIN Grading       Type    RoomSize    Size    25      END
-    BEGIN Grading       Type    RoomSize    Size    50      END
-    BEGIN Grading       Type    Item    Id  SchoolDesk  Quantity    6   END
-    BEGIN Grading       Type    Item    Id  SchoolDesk  Quantity    10  END
-    BEGIN Grading       Type    OutsideWindow   Quantity    2   END
-    BEGIN Grading       Type    Item    Id  Bookshelf Alt ShortBookcase Quantity 2 END
-    BEGIN Grading       Type    Item    Id  Blackboard  END
-    BEGIN Grading       Type    Item    Id  WaterCooler     END
-    BEGIN Grading       Type    OutsideWindow   Quantity    2 GradeEffect 2 END
-END
-
-BEGIN Room
-    Name                 Accounting
-    Research             Finance
-    Qualification        Bookkeeping
-    BEGIN Requirement Type MinimumSize  x 4  y 4  END
-    BEGIN Requirement Type Object  Id AccountingTable END
-    BEGIN Requirement Type Object  Id Table Alt SmallTable END
-    BEGIN LikelyObject  Id      Door         END
-    Properties           PrisonersCanWork
-    WorkGroup            Bookkeeping
-    BEGIN Contraband  Id   Scissors END
-END
-
-BEGIN Room
-    Name                Chapel
-    Research            MentalHealth
-    BEGIN Requirement Type MinimumSize x 4 y 4 END
-    BEGIN Requirement Type Object Id Altar END
-    BEGIN Requirement Type Object Id Pews END
-    BEGIN Requirement Type Object Id PrayerMat END
-    BEGIN LikelyObject  Id      Door         END
-    BEGIN LikelyObject  Id      TimedCaller         END
-    WorkGroup           Chapel
-END
-
-BEGIN Room
-    Name                MailRoom
-    BEGIN Requirement Type MinimumSize x 4 y 4 END
-    BEGIN Requirement Type Object Id SortingTable END
-    BEGIN Requirement Type Object Id Table Alt SmallTable END
-    Properties          PrisonersCanWork
-    Properties          BlockMaterialTransfer
-    WorkGroup           MailRoom
-    Research            PrisonLabour
-    BEGIN LikelyObject  Id      Door         END
-    BEGIN LikelyObject  Id    MetalDetector             END
-END
-
-BEGIN Room
-    Name                Shop
-    BEGIN Requirement Type MinimumSize x 2 y 3 END
-    BEGIN Requirement Type Object Id ShopShelf END
-    BEGIN Requirement Type AdjacentObject Id ShopFront END
-    BEGIN LikelyObject  Id      Table         END
-    BEGIN LikelyObject  Id      SmallTable         END
-    BEGIN LikelyObject  Id      Door         END
-    BEGIN LikelyObject  Id    MetalDetector             END
-    Properties          PrisonersCanWork
-    WorkGroup           Shop
-    Research            PrisonLabour
-END
 
 BEGIN Equipment
     Name                 MobilePhone
@@ -4018,12 +3219,11 @@ BEGIN Object
     Properties           SlowDelivery
 END
 
-# =============================================================================
+#+===============================材料===============================
 
+#+==食材
 
-# 堆叠材料
-
-## 食材
+#+食材
 BEGIN Object     
     Name                 Ingredients  
     MaxStackSize         40  
@@ -4038,8 +3238,9 @@ BEGIN Object
     Properties           Undamageable
     SpecialRestriction	 NoShadow
 END
+#-
 
-## 食材(烹饪)
+#+食材(烹饪)
 BEGIN Object     
     Name                 IngredientsCooking  
     MaxStackSize         40  
@@ -4052,8 +3253,9 @@ BEGIN Object
 	END
     Properties           Material
 END
+#-
 
-## 食材(煮熟)
+#+食材(煮熟)
 BEGIN Object     
     Name                 IngredientsCooked  
     MaxStackSize         40  
@@ -4067,8 +3269,9 @@ BEGIN Object
     Properties          Material
     Properties          Undamageable
 END
+#-
 
-## 食材(变质)
+#+食材(变质)
 BEGIN Object     
     Name                 IngredientsSpoiled  
     MaxStackSize         40  
@@ -4082,8 +3285,12 @@ BEGIN Object
     Properties           Material
     Properties           SlowDelivery
 END
+#-
+#-==
 
-## 餐盘
+#+==餐盘
+
+#+餐盘
 BEGIN Object     
     Name                 FoodTray  
     MaxStackSize         80  
@@ -4094,8 +3301,8 @@ BEGIN Object
     Properties           Material
     Properties           SlowDelivery
 END
-
-## 餐盘(脏)
+#-
+#+餐盘(脏)
 BEGIN Object     
     Name                 FoodTrayDirty  
     MaxStackSize         80  
@@ -4108,8 +3315,12 @@ BEGIN Object
     StackSprite          StackFoodTraysDirty
     Properties           Material
 END
+#-
+#-==
 
-## 囚服
+#+==囚服
+
+#+囚服
 BEGIN Object     
     Name                 PrisonerUniform
     MaxStackSize         40  
@@ -4120,8 +3331,9 @@ BEGIN Object
     Properties           Material
     Properties           SlowDelivery
 END
+#-
 
-## 囚服(脏)
+#+囚服(脏)
 BEGIN Object     
     Name                 DirtyPrisonerUniform  
     MaxStackSize         40  
@@ -4131,8 +3343,9 @@ BEGIN Object
     SpriteScale          1.2
     Properties           Material
 END
+#-
 
-## 囚服(皱)
+#+囚服(皱)
 BEGIN Object
     Name                CrumpledPrisonerUniform
     MaxStackSize        40
@@ -4141,66 +3354,12 @@ BEGIN Object
     StackSprite         StackPrisonUniformDirty
     Properties          Material
 END
+#-
+#-==
 
-## 金属板
-BEGIN Object     
-    Name                 SheetMetal
-    MaxStackSize         40
-    RenderDepth          1  
-    Price                -10
-    Sprite               SheetMetal
-    StackSprite          StackSheetMetal
-    Properties           Material    
-    Properties           SlowDelivery
-END
+#+==邮件
 
-## 空白车牌
-BEGIN Object     
-    Name                 LicensePlateBlank
-    MaxStackSize         40
-    RenderDepth          1  
-    Sprite               PlateBlank
-    StackSprite          StackPlatesBlank
-    Properties           Material  
-END
-
-## 车牌
-BEGIN Object     
-    Name                 LicensePlate
-    MaxStackSize         40
-    RenderDepth          1  
-    Price                -30
-    Sprite               Plate
-    StackSprite          StackPlates
-    Properties           Material
-    Properties           Sellable
-END
-
-## 原木
-BEGIN Object
-    Name                Log
-    MaxStackSize        9
-    RenderDepth         1
-    Price               -100
-    Sprite              RawWood
-    StackSprite         StackLogs
-    Properties          Material
-    Properties          Sellable
-END
-
-## 木板
-BEGIN Object
-    Name                Wood
-    MaxStackSize        40
-    RenderDepth         1
-    Price               -100
-    Sprite              Wood
-    StackSprite         StackWood
-    Properties          Material
-    Properties          Sellable
-END 
-
-## 邮件(未分类)
+#+邮件(未分类)
 BEGIN Object     
     Name                 MailUnsorted
     RenderDepth          1  
@@ -4213,8 +3372,9 @@ BEGIN Object
     Properties           SlowDelivery
     Properties           Uncloneable
 END
+#-
 
-## 邮件(已分类)
+#+邮件(已分类)
 BEGIN Object     
     Name                 MailSorted
     RenderDepth          1  
@@ -4226,8 +3386,78 @@ BEGIN Object
     WorkGroup            MailRoom
     Properties           Uncloneable
 END 
+#-
+#-==
 
-## 商店货物
+#+==工坊
+
+#+金属板
+BEGIN Object     
+    Name                 SheetMetal
+    MaxStackSize         40
+    RenderDepth          1  
+    Price                -10
+    Sprite               SheetMetal
+    StackSprite          StackSheetMetal
+    Properties           Material    
+    Properties           SlowDelivery
+END
+#-
+
+#+空白车牌
+BEGIN Object     
+    Name                 LicensePlateBlank
+    MaxStackSize         40
+    RenderDepth          1  
+    Sprite               PlateBlank
+    StackSprite          StackPlatesBlank
+    Properties           Material  
+END
+#-
+
+#+车牌
+BEGIN Object     
+    Name                 LicensePlate
+    MaxStackSize         40
+    RenderDepth          1  
+    Price                -30
+    Sprite               Plate
+    StackSprite          StackPlates
+    Properties           Material
+    Properties           Sellable
+END
+#-
+
+#+原木
+BEGIN Object
+    Name                Log
+    MaxStackSize        9
+    RenderDepth         1
+    Price               -100
+    Sprite              RawWood
+    StackSprite         StackLogs
+    Properties          Material
+    Properties          Sellable
+END
+#-
+
+#+木板
+BEGIN Object
+    Name                Wood
+    MaxStackSize        40
+    RenderDepth         1
+    Price               -100
+    Sprite              Wood
+    StackSprite         StackWood
+    Properties          Material
+    Properties          Sellable
+END 
+#-
+#-==
+
+#+==其他
+
+#+商店货物
 BEGIN Object     
     Name                 ShopGoods  
     MaxStackSize         40  
@@ -4239,8 +3469,9 @@ BEGIN Object
     Properties           SlowDelivery
     WorkGroup            Shop
 END   
+#-
 
-## 装备
+#+装备
 BEGIN Object     
     Name                 Equipment  
     Toughness            5.00000  
@@ -4248,82 +3479,15 @@ BEGIN Object
     Sprite               Hammer  
     Properties           Metal
 END
+#-
+#-==
+#-===========================================================
 
-# =============================================================================
+#+===============================人物===============================
 
+#+==行政人员
 
-# 紧急呼叫
-
-## 防爆警察
-BEGIN Callout  
-    Name                 RiotPolice  
-    Cost                 -300  
-    MaxNumber            5 
-    Vehicle              RiotVan
-    Entity               RiotGuard
-    NumEntities          6
-    Sprite               EmergencyRiotPolice
-END
-
-## 救护人员
-BEGIN Callout  
-    Name                 Paramedics
-    Cost                 -100  
-    MaxNumber            5 
-    Vehicle              Ambulance
-    Entity               Paramedic
-    NumEntities          4
-    Sprite               EmergencyParamedics
-END
-
-## 消防人员
-BEGIN Callout  
-    Name                 FireEngine
-    Cost                 -100 
-    MaxNumber            5  
-    Vehicle              FireEngine
-    Entity               Fireman
-    NumEntities          4
-    Sprite               EmergencyFireEngine
-END
-
-## [模组]部队
-BEGIN Callout
-    Name                 NationalGuard
-    MaxNumber            5
-    Cost                 -1500
-    Vehicle              TroopTruck
-    Entity               Soldier
-    NumEntities          6
-    Sprite               EmergencyRiotPolice
-END
-
-## [模组]供给车
-BEGIN Callout  
-    Name                 Truck  
-	Cost                 -100
-    MaxNumber            100
-    Vehicle              SupplyTruck
-    Sprite               TruckDriver
-    Entity               TruckDriver
-END
-
-## [模组]灵车
-BEGIN Callout  
-    Name                 Hearse  
-	Cost                 -100
-    MaxNumber            100 
-    Vehicle              Hearse
-    Sprite               Paramedic
-    Entity               Paramedic
-END
-
-# =============================================================================
-
-
-#行政人员
-
-## 典狱长
+#+典狱长
 BEGIN Object
     Name                 Warden
     Price                -1000
@@ -4343,8 +3507,9 @@ BEGIN Object
     Properties           Scripted
     Equipment            Gun
 END
+#-
 
-## 安保主管
+#+安保主管
 BEGIN Object
     Name                 Chief
     Price                -1000
@@ -4364,8 +3529,9 @@ BEGIN Object
     Properties           Scripted
     Equipment            Gun
 END
+#-
 
-## 会计
+#+会计
 BEGIN Object
     Name                 Accountant
     Price                -1000
@@ -4385,8 +3551,9 @@ BEGIN Object
     Equipment            Clipboard
     Properties           Scripted
 END
+#-
 
-## 律师
+#+律师
 BEGIN Object
     Name                 Lawyer
     Price                -5000
@@ -4406,8 +3573,9 @@ BEGIN Object
     Properties           Scripted
     Equipment            Clipboard
 END
+#-
 
-## 工头
+#+工头
 BEGIN Object
     Name                 Foreman
     Price                -1000
@@ -4428,8 +3596,9 @@ BEGIN Object
     Equipment            Clipboard
     MaxAllowed			 10
 END
+#-
 
-## 心理医生
+#+心理医生
 BEGIN Object
     Name                 Psychologist
     Price                -1000
@@ -4448,13 +3617,12 @@ BEGIN Object
     Properties           Staff
     Equipment            Clipboard
 END
+#-
+#-==
 
-# =============================================================================
+#+==工作人员
 
-
-#工作人员
-
-## 工人
+#+工人
 BEGIN Object
     Name                 Workman
     MoveSpeedFactor      2.00000
@@ -4471,8 +3639,9 @@ BEGIN Object
     Properties           Entity
     Properties           Staff
 END
+#-
 
-## 医生
+#+医生
 BEGIN Object
     Name                 Doctor
     Toughness            10.0000
@@ -4492,8 +3661,9 @@ BEGIN Object
     Properties           Scripted
     Equipment            Needle
 END
+#-
 
-## [模组]作弊工人
+#+[模组]作弊工人
 BEGIN Object
     Name                 CheatWorkman
     MoveSpeedFactor      2.00000
@@ -4510,8 +3680,9 @@ BEGIN Object
     Properties           Entity
     Properties           Staff
 END
+#-
 
-## [模组]劳工
+#+[模组]劳工
 BEGIN Object    
     Name                Laborer
     MoveSpeedFactor     0.700000
@@ -4536,8 +3707,9 @@ BEGIN Object
     Properties          StaffNeeds
     HangOutRoom         Staffroom
 END
+#-
 
-## [模组]大胆主持人
+#+[模组]大胆主持人
 BEGIN Object
     Name                 BoldHost
     MoveSpeedFactor      0.5
@@ -4558,13 +3730,12 @@ BEGIN Object
     Properties           Scripted
     Equipment            Microphone
 END
+#-
+#-==
 
-# =============================================================================
+#+==警备人员
 
-
-# 警备人员
-
-## 警卫
+#+警卫
 BEGIN Object     
     Name                 Guard  
     MoveSpeedFactor      1.500000  
@@ -4583,8 +3754,9 @@ BEGIN Object
     Properties           Guard
     Equipment            Baton
 END
+#-
 
-## 武装警卫
+#+武装警卫
 BEGIN Object     
     Name                 ArmedGuard
     MoveSpeedFactor      1.200000  
@@ -4604,8 +3776,9 @@ BEGIN Object
     Properties           Guard
     Equipment            Shotgun
 END
+#-
 
-## 训犬员
+#+训犬员
 BEGIN Object     
     Name                 DogHandler  
     MoveSpeedFactor      1.800000  
@@ -4625,8 +3798,9 @@ BEGIN Object
     Properties           Guard
     Equipment            Baton
 END
+#-
 
-## 警犬
+#+警犬
 BEGIN Object     
     Name                 Dog  
     MoveSpeedFactor      2.00000  
@@ -4641,8 +3815,9 @@ BEGIN Object
     Properties           Entity
     Properties           Staff
 END
+#-
 
-## 防爆警察
+#+防爆警察
 BEGIN Object     
     Name                 RiotGuard  
     MoveSpeedFactor      1.800000  
@@ -4658,8 +3833,9 @@ BEGIN Object
     Properties           DoesNotTire
     Equipment            Baton
 END
+#-
 
-## 士兵
+#+士兵
 BEGIN Object     
     Name                 Soldier  
     MoveSpeedFactor      2.000000  
@@ -4676,13 +3852,85 @@ BEGIN Object
     SpriteVariants       4
     Equipment            AssaultRifle
 END
+#-
+#-==
 
-# =============================================================================
+#+==紧急服务
 
+#+防爆警察
+BEGIN Callout  
+    Name                 RiotPolice  
+    Cost                 -300  
+    MaxNumber            5 
+    Vehicle              RiotVan
+    Entity               RiotGuard
+    NumEntities          6
+    Sprite               EmergencyRiotPolice
+END
+#-
 
-# 其他人员
+#+救护人员
+BEGIN Callout  
+    Name                 Paramedics
+    Cost                 -100  
+    MaxNumber            5 
+    Vehicle              Ambulance
+    Entity               Paramedic
+    NumEntities          4
+    Sprite               EmergencyParamedics
+END
+#-
 
-## 囚犯
+#+消防人员
+BEGIN Callout  
+    Name                 FireEngine
+    Cost                 -100 
+    MaxNumber            5  
+    Vehicle              FireEngine
+    Entity               Fireman
+    NumEntities          4
+    Sprite               EmergencyFireEngine
+END
+#-
+
+#+[模组]部队
+BEGIN Callout
+    Name                 NationalGuard
+    MaxNumber            5
+    Cost                 -1500
+    Vehicle              TroopTruck
+    Entity               Soldier
+    NumEntities          6
+    Sprite               EmergencyRiotPolice
+END
+#-
+
+#+[模组]供给车
+BEGIN Callout  
+    Name                 Truck  
+	Cost                 -100
+    MaxNumber            100
+    Vehicle              SupplyTruck
+    Sprite               TruckDriver
+    Entity               TruckDriver
+END
+#-
+
+#+[模组]灵车
+BEGIN Callout  
+    Name                 Hearse  
+	Cost                 -100
+    MaxNumber            100 
+    Vehicle              Hearse
+    Sprite               Paramedic
+    Entity               Paramedic
+END
+#-
+#-==
+
+#+==其他人员
+
+#+囚犯
 BEGIN Object     
     Name                 Prisoner  
     MoveSpeedFactor      0.750000  
@@ -4695,8 +3943,9 @@ BEGIN Object
     Properties           Entity
     Properties           DoesNotTire
 END
+#-
 
-## 精神领袖
+#+精神领袖
 BEGIN Object
     Name                 SpiritualLeader
     MoveSpeedFactor      1.000000
@@ -4711,8 +3960,9 @@ BEGIN Object
     Properties           Entity
     Properties           DoesNotTire
 END 
+#-
 
-## 假释官
+#+假释官
 BEGIN Object
     Name                 ParoleOfficer
     MoveSpeedFactor      1.000000
@@ -4727,8 +3977,9 @@ BEGIN Object
     Properties           Entity
     Properties           DoesNotTire
 END 
+#-
 
-## 假释律师
+#+假释律师
 BEGIN Object
     Name                 ParoleLawyer
     MoveSpeedFactor      1.000000
@@ -4743,8 +3994,9 @@ BEGIN Object
     Properties           Entity
     Properties           DoesNotTire
 END 
+#-
 
-## 上诉律师
+#+上诉律师
 BEGIN Object
     Name                 AppealsLawyer
     MoveSpeedFactor      1.000000
@@ -4759,8 +4011,9 @@ BEGIN Object
     Properties           Entity
     Properties           DoesNotTire
 END 
+#-
 
-## 上诉裁判官
+#+上诉裁判官
 BEGIN Object
     Name                 AppealsMagistrate
     MoveSpeedFactor      1.000000
@@ -4775,8 +4028,9 @@ BEGIN Object
     Properties           Entity
     Properties           DoesNotTire
 END 
+#-
 
-## 教师
+#+教师
 BEGIN Object     
     Name                 Teacher
     MoveSpeedFactor      1.000000  
@@ -4791,13 +4045,26 @@ BEGIN Object
     Properties           Entity
     Properties           DoesNotTire
 END
+#-
 
-# =============================================================================
+#+行刑见证人
+BEGIN Object
+    Name                 ExecutionWitness
+    RenderDepth          2
+    Toughness            5
+    Sprite               PalermoDaughter1
+    Properties           Entity
+    Properties           DoesNotTire
+    Properties           Scripted
+END
+#-
+#-==
 
+#-===========================================================
 
-# 车辆
+#+===============================车辆===============================
 
-#供给车
+#+供给车
 BEGIN Object     
     Name                 SupplyTruck  
     Width                2  
@@ -4810,7 +4077,9 @@ BEGIN Object
     Properties           Vehicle
     TopSpeed		 6.0
 END
+#-
 
+#+囚犯巴士
 BEGIN Object     
     Name                 PrisonerBus  
     Width                2  
@@ -4825,7 +4094,9 @@ BEGIN Object
     Properties           Vehicle
     TopSpeed		 6.0
 END
+#-
 
+#+消防车
 BEGIN Object     
     Name                 FireEngine  
     Width                2  
@@ -4839,7 +4110,9 @@ BEGIN Object
 	Properties           Undamageable
     TopSpeed		 16.0
 END
+#-
 
+#+防暴车
 BEGIN Object     
     Name                 RiotVan
     Width                2
@@ -4852,7 +4125,9 @@ BEGIN Object
     Properties           Vehicle
     TopSpeed		 16.0
 END
+#-
 
+#+救护车
 BEGIN Object     
     Name                 Ambulance
     Width                2 
@@ -4865,7 +4140,9 @@ BEGIN Object
     Properties           Vehicle
     TopSpeed		 16.0
 END
+#-
 
+#+灵车
 BEGIN Object     
     Name                 Hearse
     Width                2 
@@ -4878,7 +4155,9 @@ BEGIN Object
     Properties           Vehicle
     TopSpeed		 6.0
 END
+#-
 
+#+豪华轿车
 BEGIN Object     
     Name                 Limo
     Width                2 
@@ -4891,7 +4170,9 @@ BEGIN Object
     Properties           Vehicle
     TopSpeed		 6.0
 END
+#-
 
+#+军用卡车
 BEGIN Object     
     Name                 TroopTruck
     Width                2
@@ -4903,3 +4184,3034 @@ BEGIN Object
     Properties           Vehicle
     TopSpeed		 16.0
 END
+#-
+#-===========================================================
+
+#+===============================房间===============================
+
+#+==========囚犯专用
+
+#+==禁闭室
+
+BEGIN Room
+    Name                 Solitary
+    Research             Security
+	Properties           RequiresSector
+	Properties           CanAssignGangSegregation
+	
+    BEGIN Requirement Type Enclosed END
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Toilet           END
+	
+    BEGIN LikelyObject  Id    ServoProxy           END
+#-
+	
+#+其他
+    BEGIN Incompatible Zone FamilyCell END
+END
+#-
+#-==
+
+#+==拘留室
+
+BEGIN Room
+    Name                 HoldingCell
+    Capturable           true
+    Properties           Housing
+	Properties           CanAssignGangSegregation
+
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type MinimumSize  x 4  y 4  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt Walllight END
+    BEGIN Requirement Type Object  Id Toilet  END
+    BEGIN Requirement Type Object  Id Bench Alt SmallBench  END
+#-	
+
+#+推荐物品
+    BEGIN LikelyObject  Id    light             END
+    BEGIN LikelyObject  Id    Walllight             END
+    BEGIN LikelyObject  Id    Bench             END
+    BEGIN LikelyObject  Id    SmallBench             END
+
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    Windowlarge	             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead	             END
+    BEGIN LikelyObject  Id    Drain	             END
+    BEGIN LikelyObject  Id    PersonalSink	             END
+    BEGIN LikelyObject  Id    BathroomSink	             END
+    BEGIN LikelyObject  Id    SinkMirror	             END
+    BEGIN LikelyObject  Id    BathroomHandDryer	             END
+
+    BEGIN LikelyObject  Id    Bed             END
+    BEGIN LikelyObject  Id    Mattress             END
+    BEGIN LikelyObject  Id    OldBed             END
+    BEGIN LikelyObject  Id    BunkBed             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    Cctv             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    PASystem             END
+END
+#-
+#-==
+
+#+==宿舍
+BEGIN Room
+    Name                 Dormitory
+    Capturable           true
+    Properties           Housing
+    Properties           QualityGraded
+    Properties           RequiresSector
+	Properties           CanAssignGangSegregation
+	
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id Toilet  END
+    BEGIN Requirement Type Object  Id Bed Alt Mattress,OldBed,BunkBed,ComfyBed,CampBed,NettedBed,CoffinBed END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+    BEGIN LikelyObject  Id    SoftPillow             END
+    BEGIN LikelyObject  Id    Bed             END
+    BEGIN LikelyObject  Id    Mattress             END
+    BEGIN LikelyObject  Id    OldBed             END
+    BEGIN LikelyObject  Id    BunkBed             END
+    BEGIN LikelyObject  Id    ComfyBed             END
+    BEGIN LikelyObject  Id    CampBed             END
+    BEGIN LikelyObject  Id    NettedBed             END
+    BEGIN LikelyObject  Id    CoffinBed             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+
+    BEGIN LikelyObject  Id    WoodenTable	             END
+    BEGIN LikelyObject  Id    WoodenStool	             END
+    BEGIN LikelyObject  Id    OakTable	             END
+    BEGIN LikelyObject  Id    OakBench	             END
+    BEGIN LikelyObject  Id    Chair	             END
+    BEGIN LikelyObject  Id    ChairYellow	             END
+    BEGIN LikelyObject  Id    SchoolDesk	             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead	             END
+    BEGIN LikelyObject  Id    Drain	             END
+    BEGIN LikelyObject  Id    PersonalSink	             END
+    BEGIN LikelyObject  Id    BathroomSink	             END
+    BEGIN LikelyObject  Id    SinkMirror	             END
+    BEGIN LikelyObject  Id    BathroomHandDryer	             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+    BEGIN LikelyObject  Id    Fan             END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    PASystem             END
+#-	
+	
+#+品质评级
+    BEGIN Grading       Type    OutsideWindow   Large true      END
+
+	BEGIN Grading       Type    Item    Id      ComfyBed Alt SoftPillow Multi true Quantity 4 END
+	BEGIN Grading       Type    Item    Id      WoodenTable Alt OakTable,SchoolDesk Multi true END
+	BEGIN Grading       Type    Item    Id      WoodenStool Alt OakBench,Chair,ChairYellow,MetalStool,SchoolDesk Multi true Quantity 2 END
+	BEGIN Grading       Type    Item    Id      ShowerHead Alt PersonalSink,BathroomSink,SinkMirror Multi true END
+	BEGIN Grading       Type    Item    Id      Bin Alt RecyclingBin,Plant,PlantCactus Multi true END
+	BEGIN Grading       Type    Item    Id      Fan END
+	BEGIN Grading       Type    Item    Id      Radio Alt BoomBoxRoundhouse,Tv,LargeTv,Canvas,PetBird,ChessTable Multi true END
+	BEGIN Grading       Type    Item    Id      DumbbellRack Alt WeightsBench,GymMat,TrainingDummy,PunchBag,Treadmill Multi true END
+	BEGIN Grading       Type    Item    Id      Bookshelf Alt PrayerMat Multi true END
+	BEGIN Grading       Type    Item    Id      Sprinkler END
+
+    BEGIN Grading       Type    MultiItems  Quantity 10 END
+	BEGIN Grading		Type	Item    Id		OldBed Alt Mattress Multi true Quantity 1 GradeEffect -1	 END
+	BEGIN Grading		Type	Item    Id		OldBed Alt Mattress Multi true Quantity 2 GradeEffect -1	 END
+	BEGIN Grading		Type	Item    Id		OldBed Alt Mattress Multi true Quantity 3 GradeEffect -1	 END
+	BEGIN Grading		Type	Item    Id		OldBed Alt Mattress Multi true Quantity 4 GradeEffect -1	 END
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+	BEGIN Grading		Type	HasGlassWalls Percent 50	GradeEffect -1		END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+END
+#-
+#-==
+
+#+==牢房
+
+BEGIN Room
+    Name                 Cell
+    Capturable           true
+    Properties           Housing
+    Properties           QualityGraded
+	Properties           CanAssignGangSegregation
+	
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type Indoor  END
+	BEGIN Requirement Type MinimumSize  x 2  y 3  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id Toilet  END
+	BEGIN Requirement Type Object  Id Bed Alt Mattress,ComfyBed,CoffinBed,OldBed,CampBed,NettedBed END	
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    SoftPillow             END
+    BEGIN LikelyObject  Id    Bed             END
+    BEGIN LikelyObject  Id    Mattress             END
+    BEGIN LikelyObject  Id    OldBed             END
+    BEGIN LikelyObject  Id    BunkBed             END
+    BEGIN LikelyObject  Id    ComfyBed             END
+    BEGIN LikelyObject  Id    CampBed             END
+    BEGIN LikelyObject  Id    NettedBed             END
+    BEGIN LikelyObject  Id    CoffinBed             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+
+    BEGIN LikelyObject  Id    WoodenTable	             END
+    BEGIN LikelyObject  Id    WoodenStool	             END
+    BEGIN LikelyObject  Id    OakTable	             END
+    BEGIN LikelyObject  Id    OakBench	             END
+    BEGIN LikelyObject  Id    Chair	             END
+    BEGIN LikelyObject  Id    ChairYellow	             END
+    BEGIN LikelyObject  Id    SchoolDesk	             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead	             END
+    BEGIN LikelyObject  Id    Drain	             END
+    BEGIN LikelyObject  Id    PersonalSink	             END
+    BEGIN LikelyObject  Id    BathroomSink	             END
+    BEGIN LikelyObject  Id    SinkMirror	             END
+    BEGIN LikelyObject  Id    BathroomHandDryer	             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+    BEGIN LikelyObject  Id    Fan             END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-	
+	
+#+品质评级
+    BEGIN Grading       Type    RoomSize Size   6               END
+    BEGIN Grading       Type    RoomSize Size   9              END
+    BEGIN Grading       Type    RoomSize Size   16              END
+    BEGIN Grading       Type    OutsideWindow   Large true      END
+
+	BEGIN Grading       Type    Item    Id      ComfyBed Alt SoftPillow Multi true END
+	BEGIN Grading       Type    Item    Id      WoodenTable Alt OakTable,SchoolDesk Multi true END
+	BEGIN Grading       Type    Item    Id      WoodenStool Alt OakBench,Chair,ChairYellow,MetalStool,SchoolDesk Multi true END
+	BEGIN Grading       Type    Item    Id      ShowerHead Alt PersonalSink,BathroomSink,SinkMirror Multi true END
+	BEGIN Grading       Type    Item    Id      Bin Alt RecyclingBin,Plant,PlantCactus Multi true END
+	BEGIN Grading       Type    Item    Id      Fan END
+	BEGIN Grading       Type    Item    Id      Radio Alt BoomBoxRoundhouse,Tv,LargeTv,Canvas,PetBird,ChessTable Multi true END
+	BEGIN Grading       Type    Item    Id      DumbbellRack Alt WeightsBench,GymMat,TrainingDummy,PunchBag,Treadmill Multi true END
+	BEGIN Grading       Type    Item    Id      Bookshelf Alt PrayerMat Multi true END
+	BEGIN Grading       Type    Item    Id      Sprinkler END
+
+    BEGIN Grading       Type    MultiItems  Quantity 5 END
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+	BEGIN Grading		Type	HasGlassWalls Percent 50	GradeEffect -1		END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    Item    Id      Mattress   GradeEffect -2    END 
+	BEGIN Grading		Type	Item    Id		OldBed	   GradeEffect -1	 END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+END
+#-
+#-==
+
+#+==行刑室
+
+BEGIN Room
+    Name                 Execution
+	
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 4  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id ElectricChair  END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id      Light  END
+    BEGIN LikelyObject  Id      WallLight  END
+    BEGIN LikelyObject  Id      ElectricChair  END
+    BEGIN LikelyObject  Id      Chair  END
+    BEGIN LikelyObject  Id      ServoProxy  END
+END
+#-
+#-==
+#-==========
+
+#+==========狱中劳役
+
+#+==厨房
+BEGIN Room
+    Name                 Kitchen
+    Properties           PrisonersCanWork
+    Properties           RequiresSector
+    Properties           BlockMaterialTransfer
+    Qualification        KitchenInduction
+	QualificationAlternativeWorkExperienceType	WorkCook
+	WorkExperience		WorkCook
+	WorkExperienceRate	0.05
+	
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id Cooker                END
+    BEGIN Requirement Type Object  Id Sink                END
+    BEGIN Requirement Type Object  Id Fridge Alt TallFridge END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    Cooker             END
+    BEGIN LikelyObject  Id    Fridge             END
+    BEGIN LikelyObject  Id    TallFridge             END
+    BEGIN LikelyObject  Id    Sink             END
+    BEGIN LikelyObject  Id    ServingTable             END
+    BEGIN LikelyObject  Id    SmallServingTable             END
+    BEGIN LikelyObject  Id    JungleServingTable             END
+    BEGIN LikelyObject  Id    TrayDispenser             END
+    BEGIN LikelyObject  Id    FoodTrayPack             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Fan             END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id    Knife            END
+    BEGIN Contraband    Id    Fork             END
+    BEGIN Contraband    Id    Spoon            END
+END
+#-	
+#-==
+
+#+==洗衣房
+BEGIN Room
+    Name                 Laundry
+    Research             Cleaning
+	Properties           PrisonersCanWork
+    Properties           RequiresSector
+	WorkExperience		WorkCleaner
+	WorkExperienceRate	0.05
+	
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id LaundryMachine  END
+    BEGIN Requirement Type Object  Id LaundryBasket  END
+    BEGIN Requirement Type Object  Id IroningBoard Alt IroningBoardShort END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+	
+    BEGIN LikelyObject  Id    LaundryMachine     END
+    BEGIN LikelyObject  Id    LaundryBasket     END
+    BEGIN LikelyObject  Id    IroningBoard     END
+    BEGIN LikelyObject  Id    IroningBoardShort     END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id    Rope      END
+END
+#-
+#-==
+
+#+==清洁用品间
+
+BEGIN Room
+    Name                 CleaningCupboard
+    Research             Cleaning
+    Properties           PrisonersCanWork
+	WorkExperience		WorkCleaner
+	WorkExperienceRate	0.01
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 1  y 4  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+
+
+    BEGIN Requirement Type Object  Id BathroomHandDryer END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    PersonalSink             END
+    BEGIN LikelyObject  Id    BathroomSink             END
+    BEGIN LikelyObject  Id    SinkMirror             END
+    BEGIN LikelyObject  Id    BathroomHandDryer             END
+    BEGIN LikelyObject  Id    ShowerHead             END
+    BEGIN LikelyObject  Id    Drain             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Poison  END
+    BEGIN Contraband    Id      Club END
+END
+#-
+#-==
+
+#+==工坊
+
+BEGIN Room
+    Name                 Workshop
+    Research             PrisonLabour
+    Properties           RequiresSector
+    Properties           PrisonersCanWork
+    Qualification        WorkshopInduction
+	QualificationAlternativeWorkExperienceType	WorkCraftsman
+	WorkExperience		WorkCraftsman
+	WorkExperienceRate	0.05
+
+	BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type MinimumSize  x 5  y 4  END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object   Id WorkshopSaw Alt WorkshopPress,CarpenterTable Multi true END
+    BEGIN Requirement Type Object   Id Table Alt SmallTable END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    Toilet             END
+	
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    WorkshopSaw             END
+    BEGIN LikelyObject  Id    WorkshopPress             END
+    BEGIN LikelyObject  Id    CarpenterTable             END
+	
+	BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+	
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Saw             END
+    BEGIN Contraband    Id      Screwdriver     END
+    BEGIN Contraband    Id      Hammer          END
+    BEGIN Contraband    Id      Drill           END
+    BEGIN Contraband    Id      Shank           END
+    BEGIN Contraband    Id      WoodenPickAxe   END
+END
+#-
+#-==
+
+#+==图书馆
+
+BEGIN Room
+    Name                 Library
+    Research             PrisonLabour
+	Properties           PrisonerRelax
+    Properties           PrisonersCanWork
+    Properties           RequiresSector
+    Qualification        Academic
+    WorkGroup            Library
+	WorkExperience		WorkLabourer
+	WorkExperienceRate	0.01
+	
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id LibraryBookshelf Alt ShortBookcase END
+    BEGIN Requirement Type Object Id SortingTable END
+    BEGIN Requirement Type Object  Id Bin  Alt RecyclingBin END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    light             END
+    BEGIN LikelyObject  Id    Walllight             END
+	
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+	
+    BEGIN LikelyObject  Id    WoodenTable             END
+    BEGIN LikelyObject  Id    WoodenStool             END
+    BEGIN LikelyObject  Id    OakTable             END
+    BEGIN LikelyObject  Id    OakBench             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    Chair             END
+    BEGIN LikelyObject  Id    ChairYellow             END
+    BEGIN LikelyObject  Id    SofaChairsingle             END
+    BEGIN LikelyObject  Id    SofaChairdouble             END
+    BEGIN LikelyObject  Id    SofaChairBrown             END
+    BEGIN LikelyObject  Id    SofaChairDoubleBrown             END
+    BEGIN LikelyObject  Id    SchoolDesk             END
+    BEGIN LikelyObject  Id    Canvas             END
+    BEGIN LikelyObject  Id    ChessTable             END
+    BEGIN LikelyObject  Id    Bookshelf             END
+    BEGIN LikelyObject  Id    LibraryBookshelf             END
+    BEGIN LikelyObject  Id    ShortBookcase             END
+    BEGIN LikelyObject  Id    ComputerStation             END
+    BEGIN LikelyObject  Id    Bin             END
+
+    BEGIN LikelyObject  Id    SortingTable	             END
+
+    BEGIN LikelyObject  Id    Painting1	             END
+    BEGIN LikelyObject  Id    Painting2	             END
+    BEGIN LikelyObject  Id    Plant	             END
+    BEGIN LikelyObject  Id    PlantCactus	             END
+	
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Fan             END
+	
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Scissors        END
+    BEGIN Contraband    Id      FountainPen     END
+END
+#-
+#-==
+
+#+==邮件收发室
+
+BEGIN Room
+    Name                MailRoom
+    Research            PrisonLabour
+    Properties          PrisonersCanWork
+    Properties          BlockMaterialTransfer
+    WorkGroup           MailRoom
+	WorkExperience		WorkLabourer
+	WorkExperienceRate	0.01
+
+	BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type Indoor END
+    BEGIN Requirement Type MinimumSize x 3 y 3 END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object Id SortingTable END
+    BEGIN Requirement Type Object Id Table Alt SmallTable END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+	
+    BEGIN LikelyObject  Id    SortingTable             END
+    BEGIN LikelyObject  Id    Table             END
+    BEGIN LikelyObject  Id    SmallTable             END
+	
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+END
+#-
+#-==
+
+#+==商店
+
+BEGIN Room
+    Name                Shop
+    Research            PrisonLabour
+    Properties          PrisonersCanWork
+    Properties          RequiresSector
+    WorkGroup           Shop
+	WorkExperience		WorkRCS
+	WorkExperienceRate	0.025
+
+    BEGIN Requirement Type Indoor END
+    BEGIN Requirement Type MinimumSize x 3 y 3 END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object Id ShopShelf END
+    BEGIN Requirement Type Object Id SnackMachine END
+    BEGIN Requirement Type Object Id DrinkMachine END
+    BEGIN Requirement Type AdjacentObject Id ShopFront END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+	BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+
+    BEGIN LikelyObject  Id      Table         END
+    BEGIN LikelyObject  Id      SmallTable         END
+    BEGIN LikelyObject  Id      ShopShelf         END
+    BEGIN LikelyObject  Id      ShopFront         END
+    BEGIN LikelyObject  Id    SnackMachine             END
+    BEGIN LikelyObject  Id    DrinkMachine             END
+    BEGIN LikelyObject  Id    PhoneBooth             END
+
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+END
+#-
+#-==
+
+#+==林场
+
+BEGIN Room
+    Name                 Forestry
+    Research             GroundsKeeping
+	Properties			PrisonersCanWork
+	WorkResearch		ForestryLabour
+	WorkExperience		WorkLabourer
+	WorkExperienceRate	0.05
+
+    BEGIN Requirement Type Outdoor END
+    BEGIN Requirement Type MinimumSize  x 4  y 4  END
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+
+    BEGIN LikelyObject  Id    OutdoorTable     END
+    BEGIN LikelyObject  Id    ParkBench     END
+
+    BEGIN LikelyObject  Id    Toilet     END
+
+    BEGIN LikelyObject  Id    Bin     END
+    BEGIN LikelyObject  Id    RecyclingBin     END
+
+    BEGIN LikelyObject  Id    Bush     END
+    BEGIN LikelyObject  Id    FernBush     END
+    BEGIN LikelyObject  Id    Ivy     END
+
+    BEGIN LikelyObject  Id    Tree     END
+    BEGIN LikelyObject  Id    SnowyConiferTree     END
+    BEGIN LikelyObject  Id    PalmTree     END
+    BEGIN LikelyObject  Id    PalmTree     END
+    BEGIN LikelyObject  Id    SakuraTree     END
+    BEGIN LikelyObject  Id    CactusTree     END
+    BEGIN LikelyObject  Id    SpookyTree     END
+    BEGIN LikelyObject  Id    WillowTree     END
+    BEGIN LikelyObject  Id    BareTree     END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+    BEGIN LikelyObject  Id    PASystem             END
+#-
+
+#+违禁品
+    BEGIN Contraband  Id   Saw END
+    BEGIN Contraband  Id   Axe END
+    BEGIN Contraband  Id   Spade END
+END
+#-
+#-==
+
+#+==会计工作间
+
+BEGIN Room
+    Name                 Accounting
+    Research             Finance
+    Properties           PrisonersCanWork
+    Qualification        Bookkeeping
+    WorkGroup            Bookkeeping
+	WorkExperience		WorkCraftsman
+	WorkExperienceRate	0.03
+
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id AccountingTable END
+    BEGIN Requirement Type Object  Id Table Alt SmallTable END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id      Light         END
+    BEGIN LikelyObject  Id      WallLight         END
+    BEGIN LikelyObject  Id      AccountingTable         END
+    BEGIN LikelyObject  Id      Table         END
+    BEGIN LikelyObject  Id      SmallTable         END
+#-
+
+#+违禁品
+    BEGIN Contraband  Id   Scissors END
+END
+#-
+#-==
+
+#-==========
+
+#+==========囚犯活动
+
+#+==食堂
+
+BEGIN Room
+    Name                 Canteen
+    Properties           RequiresSector
+    Properties           DiningArea
+    Properties           QualityGraded
+	Properties           CanAssignGangSegregation
+	
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id ServingTable Alt SmallServingTable,JungleServingTable END
+    BEGIN Requirement Type Object  Id Table Alt SmallTable,OakTable,DiningTableLarge,DiningTableSmall,DinerBooth,JungleTable END
+    BEGIN Requirement Type Object  Id Bench Alt SmallBench,JungleBench,OakBench,DiningChair,DinerBooth END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id      Light         END
+    BEGIN LikelyObject  Id      WallLight         END
+
+    BEGIN LikelyObject  Id      ServingTable             END
+    BEGIN LikelyObject  Id      SmallServingTable             END
+    BEGIN LikelyObject  Id      JungleServingTable             END
+	
+    BEGIN LikelyObject  Id      Table             END
+    BEGIN LikelyObject  Id      SmallTable             END
+    BEGIN LikelyObject  Id      OakTable             END
+    BEGIN LikelyObject  Id      DiningTableLarge             END
+    BEGIN LikelyObject  Id      DiningTableSmall             END
+    BEGIN LikelyObject  Id      DinerBooth             END
+    BEGIN LikelyObject  Id      JungleTable             END
+	
+    BEGIN LikelyObject  Id      Bench             END
+    BEGIN LikelyObject  Id      SmallBench             END
+    BEGIN LikelyObject  Id      JungleBench             END
+    BEGIN LikelyObject  Id      OakBench             END
+    BEGIN LikelyObject  Id      DiningChair             END
+    BEGIN LikelyObject  Id      DinerBooth             END
+	
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    TrayDispenser             END
+    BEGIN LikelyObject  Id    FoodTrayPack             END
+
+    BEGIN LikelyObject  Id    SnackMachine             END
+    BEGIN LikelyObject  Id    DrinkMachine             END
+    BEGIN LikelyObject  Id    WaterCooler             END
+    BEGIN LikelyObject  Id    DrinkingFountain             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    PersonalSink             END
+    BEGIN LikelyObject  Id    BathroomSink             END
+    BEGIN LikelyObject  Id    SinkMirror             END
+    BEGIN LikelyObject  Id    BathroomHandDryer             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin	             END
+    BEGIN LikelyObject  Id    Fan	             END
+    BEGIN LikelyObject  Id    Plant	             END
+    BEGIN LikelyObject  Id    PlantCactus	             END
+
+    BEGIN LikelyObject  Id    Radio	             END
+    BEGIN LikelyObject  Id    BoomBoxRoundhouse	             END
+    BEGIN LikelyObject  Id    Tv	             END
+    BEGIN LikelyObject  Id    LargeTv	             END
+
+    BEGIN LikelyObject  Id    MedicineCabinet	             END
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    PASystem             END
+#-
+
+#+质量评级
+    BEGIN Grading       Type    RoomSize Size 20    END
+    BEGIN Grading       Type    OutsideWindow   Large true      END
+    BEGIN Grading       Type    MealQuality         END
+    BEGIN Grading       Type    MealVariety         END
+	
+    BEGIN Grading       Type    Item    Id      Fan        END
+    BEGIN Grading       Type    Item    Id      DrinkMachine  END
+    BEGIN Grading       Type    Item    Id      SnackMachine  END
+    BEGIN Grading       Type    Item    Id      Sprinkler  END
+    BEGIN Grading       Type    Item    Id      WaterCooler Alt DrinkingFountain   END
+    BEGIN Grading       Type    Item    Id      Plant Alt PlantCactus Multi true Quantity 4 END
+	
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    Item    Id      Cctv   GradeEffect -1    END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id    Knife            END
+    BEGIN Contraband    Id    Fork             END
+    BEGIN Contraband    Id    Spoon            END
+END
+#-
+#-==
+
+#+==淋浴间
+
+BEGIN Room
+    Name                 Shower
+    Properties           RequiresSector
+	Properties           CanAssignGangSegregation
+	
+    BEGIN Requirement Type MinimumSize  x 2  y 2  END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id ShowerHead  END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead             END
+    BEGIN LikelyObject  Id    ShowerPillar             END
+    BEGIN LikelyObject  Id    Drain             END
+    BEGIN LikelyObject  Id    PersonalSink             END
+    BEGIN LikelyObject  Id    BathroomSink             END
+    BEGIN LikelyObject  Id    SinkMirror             END
+    BEGIN LikelyObject  Id    BathroomHandDryer             END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    PASystem             END
+END
+#-
+#-==
+
+#+==公共房间
+
+BEGIN Room
+    Name                 CommonRoom
+    Properties           QualityGraded
+	Properties           PrisonerRelax
+
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    WoodenTable             END
+    BEGIN LikelyObject  Id    WoodenStool             END
+    BEGIN LikelyObject  Id    OakTable             END
+    BEGIN LikelyObject  Id    OakBench             END
+    BEGIN LikelyObject  Id    Chair             END
+    BEGIN LikelyObject  Id    ChairYellow             END
+    BEGIN LikelyObject  Id    SofaChairsingle             END
+    BEGIN LikelyObject  Id    SofaChairdouble             END
+    BEGIN LikelyObject  Id    SofaChairBrown             END
+    BEGIN LikelyObject  Id    SofaChairDoubleBrown             END
+    BEGIN LikelyObject  Id    SchoolDesk             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    SnackMachine             END
+    BEGIN LikelyObject  Id    DrinkMachine             END
+    BEGIN LikelyObject  Id    WaterCooler             END
+    BEGIN LikelyObject  Id    CoffeeMachine             END
+    BEGIN LikelyObject  Id    DrinkingFountain             END
+	
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Fan             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+    BEGIN LikelyObject  Id    IndoorTreePlanter             END
+
+    BEGIN LikelyObject  Id    Radio             END
+    BEGIN LikelyObject  Id    BoomBoxRoundhouse             END
+    BEGIN LikelyObject  Id    Tv             END
+    BEGIN LikelyObject  Id    LargeTv             END
+    BEGIN LikelyObject  Id    Canvas             END
+    BEGIN LikelyObject  Id    PetBird             END
+    BEGIN LikelyObject  Id    ChessTable             END
+    BEGIN LikelyObject  Id    ArcadeCabinet             END
+    BEGIN LikelyObject  Id    TableFootball             END
+    BEGIN LikelyObject  Id    TableTennis             END
+    BEGIN LikelyObject  Id    PoolTable             END
+    BEGIN LikelyObject  Id    CinemaScreen             END
+    BEGIN LikelyObject  Id    CinemaProjector             END
+
+    BEGIN LikelyObject  Id    DumbbellRack             END
+    BEGIN LikelyObject  Id    WeightsBench             END
+    BEGIN LikelyObject  Id    GymMat             END
+    BEGIN LikelyObject  Id    TrainingDummy             END
+    BEGIN LikelyObject  Id    PunchBag             END
+    BEGIN LikelyObject  Id    Treadmill             END
+    BEGIN LikelyObject  Id    BoxingRing             END
+
+    BEGIN LikelyObject  Id    Bookshelf             END
+    BEGIN LikelyObject  Id    LibraryBookshelf             END
+    BEGIN LikelyObject  Id    ShortBookcase             END
+    BEGIN LikelyObject  Id    ComputerStation             END
+
+    BEGIN LikelyObject  Id    PhoneBooth             END
+    BEGIN LikelyObject  Id    VideoCallBooth             END
+
+    BEGIN LikelyObject  Id    MedicineCabinet	             END
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    PASystem             END
+#-
+
+#+质量评级
+    BEGIN Grading       Type    RoomSize    Size    25      END
+    BEGIN Grading       Type    RoomSize    Size    50      END
+    BEGIN Grading       Type    OutsideWindow   Large true      END
+
+    BEGIN Grading       Type    Item    Id      Radio Alt BoomBoxRoundhouse Multi true END
+    BEGIN Grading       Type    Item    Id      Tv Alt LargeTv Multi true END
+    BEGIN Grading       Type    Item    Id      Canvas  END
+    BEGIN Grading       Type    Item    Id      PetBird END
+    BEGIN Grading       Type    Item    Id      ChessTable END
+    BEGIN Grading       Type    Item    Id      ArcadeCabinet END
+    BEGIN Grading       Type    Item    Id      TableTennis Alt PoolTable,TableFootball Multi true END
+    BEGIN Grading       Type    Item    Id      PhoneBooth  END
+
+    BEGIN Grading       Type    MultiItems  Quantity 10 END
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    Item    Id      Cctv   GradeEffect -1    END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+END
+#-
+#-==
+
+#+==健身房
+#在materials_dlc中
+#-==
+
+#+==庭院
+
+BEGIN Room
+    Name                 Yard
+    Properties           QualityGraded
+	
+    BEGIN Requirement Type Outdoor END
+    BEGIN Requirement Type Secure END
+    BEGIN Requirement Type MinimumSize  x 4  y 4  END
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+
+    BEGIN LikelyObject  Id    WoodenTable     END
+    BEGIN LikelyObject  Id    WoodenStool     END
+    BEGIN LikelyObject  Id    OakTable     END
+    BEGIN LikelyObject  Id    OakBench     END
+    BEGIN LikelyObject  Id    OutdoorTable     END
+    BEGIN LikelyObject  Id    ParkBench     END
+    BEGIN LikelyObject  Id    DeckChair     END
+
+    BEGIN LikelyObject  Id    SnackMachine     END
+    BEGIN LikelyObject  Id    DrinkMachine     END
+	
+    BEGIN LikelyObject  Id    Toilet     END
+    BEGIN LikelyObject  Id    ShowerHead     END
+    BEGIN LikelyObject  Id    Drain     END
+    BEGIN LikelyObject  Id    PersonalSink     END
+    BEGIN LikelyObject  Id    BathroomSink     END
+    BEGIN LikelyObject  Id    SinkMirror     END
+    BEGIN LikelyObject  Id    BathroomHandDryer     END
+	
+    BEGIN LikelyObject  Id    Bin     END
+    BEGIN LikelyObject  Id    RecyclingBin     END
+    BEGIN LikelyObject  Id    Bush     END
+    BEGIN LikelyObject  Id    FernBush     END
+    BEGIN LikelyObject  Id    Ivy     END
+
+    BEGIN LikelyObject  Id    Tree     END
+    BEGIN LikelyObject  Id    SnowyConiferTree     END
+    BEGIN LikelyObject  Id    PalmTree     END
+    BEGIN LikelyObject  Id    PalmTree     END
+    BEGIN LikelyObject  Id    SakuraTree     END
+    BEGIN LikelyObject  Id    CactusTree     END
+    BEGIN LikelyObject  Id    SpookyTree     END
+    BEGIN LikelyObject  Id    WillowTree     END
+    BEGIN LikelyObject  Id    BareTree     END
+
+    BEGIN LikelyObject  Id    Radio             END
+    BEGIN LikelyObject  Id    BoomBoxRoundhouse             END
+    BEGIN LikelyObject  Id    Canvas             END
+    BEGIN LikelyObject  Id    PetBird             END
+    BEGIN LikelyObject  Id    ChessTable             END
+    BEGIN LikelyObject  Id    TableFootball             END
+    BEGIN LikelyObject  Id    TableTennis             END
+    BEGIN LikelyObject  Id    PoolTable             END
+
+    BEGIN LikelyObject  Id    DumbbellRack             END
+    BEGIN LikelyObject  Id    WeightsBench             END
+    BEGIN LikelyObject  Id    GymMat             END
+    BEGIN LikelyObject  Id    TrainingDummy             END
+    BEGIN LikelyObject  Id    PunchBag             END
+    BEGIN LikelyObject  Id    BoxingRing             END
+
+    BEGIN LikelyObject  Id    PhoneBooth             END
+    BEGIN LikelyObject  Id    VideoCallBooth             END
+	
+    BEGIN LikelyObject  Id    MedicineCabinet             END
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+    BEGIN LikelyObject  Id    PASystem             END
+	
+#-
+
+#+质量评级
+    BEGIN Grading       Type    RoomSize    Size    100  END
+
+    BEGIN Grading       Type    Item    Id      Radio Alt BoomBoxRoundhouse Multi true END
+    BEGIN Grading       Type    Item    Id      Canvas  END
+    BEGIN Grading       Type    Item    Id      PetBird END
+    BEGIN Grading       Type    Item    Id      ChessTable END
+    BEGIN Grading       Type    Item    Id      TableTennis Alt PoolTable,TableFootball Multi true END
+
+    BEGIN Grading      Type    Item    Id  DumbbellRack Alt WeightsBench,GymMat Quantity 10  Multi true  END
+    BEGIN Grading      Type    Item    Id  PunchBag Alt TrainingDummy Quantity 4 Multi true          END
+    BEGIN Grading      Type    Item    Id  BoxingRing          END
+    BEGIN Grading       Type    Item    Id      PhoneBooth Quantity 4 END
+    BEGIN Grading       Type    Item    Id      DrinkMachine  END
+    BEGIN Grading       Type    Item    Id      SnackMachine  END
+	
+    BEGIN Grading       Type    MultiItems  Quantity 16 END
+    BEGIN Grading       Type    RoomSizeLess Size   25 GradeEffect -1 END
+    BEGIN Grading       Type    RoomSizeLess Size   50 GradeEffect -1   END
+    BEGIN Grading       Type    Floor   Id      Mud Alt NewMud Percent  50 GradeEffect -1 END
+    BEGIN Grading       Type    Item    Id      Cctv   GradeEffect -1    END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+END
+#-
+#-==
+
+#+==假释听证室
+BEGIN Room
+    Name                 ParoleRoom
+    Research             Legal
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 4  y 5  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id VisitorTable  END
+#-
+#+推荐物品
+    BEGIN LikelyObject  Id      Light         END
+    BEGIN LikelyObject  Id      WallLight         END
+	
+    BEGIN LikelyObject  Id      VisitorTable         END
+	
+    BEGIN LikelyObject  Id    MedicineCabinet	             END
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#+违禁品
+	BEGIN Contraband    Id      FountainPen END
+END
+#-
+#-==
+
+
+
+
+
+
+
+
+
+
+#-==========
+
+#+==教室
+
+BEGIN Room
+    Name                 Classroom
+    Research             Education
+    Properties           QualityGraded
+    Properties           RequiresSector
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 4  END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id Blackboard END
+    BEGIN Requirement Type Object  Id SchoolDesk END
+    BEGIN Requirement Type Object  Id OfficeDesk Alt FancyDesk END
+    BEGIN Requirement Type Object  Id SwivelChair Alt OfficeChair END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    Blackboard             END
+    BEGIN LikelyObject  Id    SchoolDesk             END
+    BEGIN LikelyObject  Id    OfficeDesk             END
+    BEGIN LikelyObject  Id    FancyDesk             END
+    BEGIN LikelyObject  Id    SwivelChair             END
+    BEGIN LikelyObject  Id    OfficeChair             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    FilingCabinet             END
+    BEGIN LikelyObject  Id    FilingCabinetFancy             END
+	
+    BEGIN LikelyObject  Id    WaterCooler             END
+    BEGIN LikelyObject  Id    DrinkingFountain             END
+	
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Fan             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+	
+    BEGIN LikelyObject  Id    Bookshelf             END
+    BEGIN LikelyObject  Id    LibraryBookshelf             END
+    BEGIN LikelyObject  Id    ShortBookcase             END
+
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    PASystem             END
+#-
+
+#+质量评级
+    BEGIN Grading       Type    RoomSize    Size    25      END
+    BEGIN Grading       Type    RoomSize    Size    50      END
+    BEGIN Grading       Type    OutsideWindow   Quantity    2   END
+    BEGIN Grading       Type    OutsideWindow   Large true      END
+	
+    BEGIN Grading       Type    Item    Id  SchoolDesk  Quantity    10   END
+    BEGIN Grading       Type    Item    Id  SchoolDesk  Quantity    20  END
+    BEGIN Grading       Type    Item    Id  ChestOfDrawers Alt FilingCabinet,FilingCabinetFancy Multi true END
+    BEGIN Grading       Type    Item    Id  Blackboard  END
+    BEGIN Grading       Type    Item    Id  Bookshelf Alt LibraryBookshelf,ShortBookcase Quantity 2 Multi true END
+    BEGIN Grading       Type    Item    Id  WaterCooler Alt DrinkingFountain Multi true  END
+    BEGIN Grading       Type    Item    Id  Bin Alt RecyclingBin Multi true  END
+    BEGIN Grading       Type    Item    Id  Sprinkler   END
+	
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    Item    Id      Cctv   GradeEffect -1    END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+END
+#-
+#-==
+
+#+==礼拜堂
+
+BEGIN Room
+    Name                Chapel
+    Research            MentalHealth
+    Properties           RequiresSector
+	Properties           CanAssignGangSegregation
+	Properties           PrisonerRelax
+    WorkGroup           Chapel
+	
+    BEGIN Requirement Type Indoor END
+    BEGIN Requirement Type MinimumSize x 4 y 4 END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object Id Altar END
+    BEGIN Requirement Type Object Id Pews END
+    BEGIN Requirement Type Object Id PrayerMat END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id      Light         END
+    BEGIN LikelyObject  Id      WallLight         END
+	
+    BEGIN LikelyObject  Id      Altar         END
+    BEGIN LikelyObject  Id      Pews         END
+    BEGIN LikelyObject  Id      PrayerMat         END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+END
+#-
+#-==
+
+#+==医务室
+
+BEGIN Room
+    Name                 MedicalWard
+    Research             Health
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize x 2 y 3 END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id MedicalBed  END
+    BEGIN Requirement Type Object  Id MedicineCabinet  END
+    BEGIN Requirement Type Object  Id PersonalSink Alt BathroomSink,SinkMirror Multi true END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id      Light         END
+    BEGIN LikelyObject  Id      WallLight         END
+	
+    BEGIN LikelyObject  Id      MedicalBed    END
+
+    BEGIN LikelyObject  Id      PersonalSink    END
+    BEGIN LikelyObject  Id      BathroomSink    END
+    BEGIN LikelyObject  Id      SinkMirror    END
+    BEGIN LikelyObject  Id      BathroomHandDryer    END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    OfficeDesk             END
+    BEGIN LikelyObject  Id    FancyDesk             END
+    BEGIN LikelyObject  Id    SwivelChair             END
+    BEGIN LikelyObject  Id    OfficeChair             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    FilingCabinet             END
+    BEGIN LikelyObject  Id    FilingCabinetFancy             END
+
+    BEGIN LikelyObject  Id    WaterCooler             END
+    BEGIN LikelyObject  Id    DrinkingFountain             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Fan             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+	
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Needle          END
+    BEGIN Contraband    Id      Poison          END
+    BEGIN Contraband    Id      Medicine        END
+    BEGIN Contraband    Id      Scissors        END
+END
+#-
+#-==
+
+#+==探监室
+
+BEGIN Room
+    Name                 Visitation
+    Properties           RequiresSector
+	Properties           CanAssignGangSegregation	
+	
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize x 2 y 3 END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id VisitorTable  Alt VisitorTableSecure END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id      Light         END
+    BEGIN LikelyObject  Id      WallLight         END
+	
+    BEGIN LikelyObject  Id      VisitorTable    END
+    BEGIN LikelyObject  Id      VisitorTableSecure    END
+	
+    BEGIN LikelyObject  Id      Plant    END
+    BEGIN LikelyObject  Id      PlantCactus    END
+
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Cigs    END
+    BEGIN Contraband    Id      Lighter         END
+    BEGIN Contraband    Id      Drugs   END
+    BEGIN Contraband    Id      Booze   END
+    BEGIN Contraband    Id      MobilePhone END
+END
+#-
+#-==
+#-==========
+
+#+==========员工专用
+
+#+==办公室
+BEGIN Room
+    Name                 Office
+    Properties           StaffCanUseFacilities
+	
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+
+    BEGIN Requirement Type Object  Id OfficeDesk Alt FancyDesk END
+    BEGIN Requirement Type Object  Id Chair Alt OfficeChair END
+    BEGIN Requirement Type Object  Id FilingCabinet Alt FilingCabinetFancy END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id      Light         END
+    BEGIN LikelyObject  Id      WallLight         END
+    BEGIN LikelyObject  Id      Lamp         END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    Chair             END
+    BEGIN LikelyObject  Id    ChairYellow             END
+    BEGIN LikelyObject  Id    SofaChairsingle             END
+    BEGIN LikelyObject  Id    SofaChairdouble             END
+    BEGIN LikelyObject  Id    SofaChairBrown             END
+    BEGIN LikelyObject  Id    SofaChairDoubleBrown             END
+    BEGIN LikelyObject  Id    OvalStaffTable             END
+	
+    BEGIN LikelyObject  Id    OfficeDesk             END
+    BEGIN LikelyObject  Id    FancyDesk             END
+    BEGIN LikelyObject  Id    SwivelChair             END
+    BEGIN LikelyObject  Id    OfficeChair             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    FilingCabinet             END
+    BEGIN LikelyObject  Id    FilingCabinetFancy             END
+	
+    BEGIN LikelyObject  Id    WaterCooler             END
+    BEGIN LikelyObject  Id    CoffeeMachine             END
+	
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+	
+    BEGIN LikelyObject  Id    Radio             END
+    BEGIN LikelyObject  Id    BoomBoxRoundhouse             END
+    BEGIN LikelyObject  Id    Tv             END
+    BEGIN LikelyObject  Id    LargeTv             END
+    BEGIN LikelyObject  Id    Bookshelf             END
+
+    BEGIN LikelyObject  Id    DoorMat             END
+    BEGIN LikelyObject  Id    MooseHead             END
+    BEGIN LikelyObject  Id    Painting1             END
+    BEGIN LikelyObject  Id    Painting2             END
+    BEGIN LikelyObject  Id    CoatStand             END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id       MobilePhone     END
+    BEGIN Contraband    Id      Booze           END
+    BEGIN Contraband    Id      Cigs            END
+    BEGIN Contraband    Id      Lighter         END
+END
+#-
+#-==
+
+#+==员工休息室
+
+BEGIN Room
+    Name                 Staffroom
+    Properties           StaffCanUseFacilities
+    Properties			 DiningArea
+    Properties           RequiresSector
+
+    BEGIN Requirement Type Indoor END
+    BEGIN Requirement Type MinimumSize  x 4  y 4  END
+
+#+必要物品	
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id SofaChairDouble Alt SofaChairBrown,SofaChairDoubleBrown,SofaChairSingle END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    WoodenTable             END
+    BEGIN LikelyObject  Id    WoodenStool             END
+    BEGIN LikelyObject  Id    OakTable             END
+    BEGIN LikelyObject  Id    OakBench             END
+    BEGIN LikelyObject  Id    Chair             END
+    BEGIN LikelyObject  Id    ChairYellow             END
+    BEGIN LikelyObject  Id    SofaChairsingle             END
+    BEGIN LikelyObject  Id    SofaChairdouble             END
+    BEGIN LikelyObject  Id    SofaChairBrown             END
+    BEGIN LikelyObject  Id    SofaChairDoubleBrown             END
+    BEGIN LikelyObject  Id    SchoolDesk             END
+
+    BEGIN LikelyObject  Id    OfficeDesk             END
+    BEGIN LikelyObject  Id    FancyDesk             END
+    BEGIN LikelyObject  Id    SwivelChair             END
+    BEGIN LikelyObject  Id    OfficeChair             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    FilingCabinet             END
+    BEGIN LikelyObject  Id    FilingCabinetFancy             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    ShowerHead             END
+    BEGIN LikelyObject  Id    ShowerPillar             END
+    BEGIN LikelyObject  Id    Drain             END
+    BEGIN LikelyObject  Id    PersonalSink             END
+    BEGIN LikelyObject  Id    BathroomSink             END
+    BEGIN LikelyObject  Id    SinkMirror             END
+    BEGIN LikelyObject  Id    BathroomHandDryer             END
+
+    BEGIN LikelyObject  Id    SnackMachine             END
+    BEGIN LikelyObject  Id    DrinkMachine             END
+    BEGIN LikelyObject  Id    WaterCooler             END
+    BEGIN LikelyObject  Id    CoffeeMachine             END
+    BEGIN LikelyObject  Id    DrinkingFountain             END
+	
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Fan             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+    BEGIN LikelyObject  Id    IndoorTreePlanter             END
+
+    BEGIN LikelyObject  Id    Radio             END
+    BEGIN LikelyObject  Id    BoomBoxRoundhouse             END
+    BEGIN LikelyObject  Id    Tv             END
+    BEGIN LikelyObject  Id    LargeTv             END
+    BEGIN LikelyObject  Id    Canvas             END
+    BEGIN LikelyObject  Id    PetBird             END
+    BEGIN LikelyObject  Id    ChessTable             END
+    BEGIN LikelyObject  Id    ArcadeCabinet             END
+    BEGIN LikelyObject  Id    TableFootball             END
+    BEGIN LikelyObject  Id    TableTennis             END
+    BEGIN LikelyObject  Id    PoolTable             END
+    BEGIN LikelyObject  Id    CinemaScreen             END
+    BEGIN LikelyObject  Id    CinemaProjector             END
+
+    BEGIN LikelyObject  Id    DumbbellRack             END
+    BEGIN LikelyObject  Id    WeightsBench             END
+    BEGIN LikelyObject  Id    GymMat             END
+    BEGIN LikelyObject  Id    TrainingDummy             END
+    BEGIN LikelyObject  Id    PunchBag             END
+    BEGIN LikelyObject  Id    Treadmill             END
+    BEGIN LikelyObject  Id    BoxingRing             END
+
+
+    BEGIN LikelyObject  Id    Bookshelf             END
+    BEGIN LikelyObject  Id    LibraryBookshelf             END
+    BEGIN LikelyObject  Id    ShortBookcase             END
+    BEGIN LikelyObject  Id    ComputerStation             END
+
+    BEGIN LikelyObject  Id    PhoneBooth             END
+    BEGIN LikelyObject  Id    VideoCallBooth             END
+
+    BEGIN LikelyObject  Id    MedicineCabinet	             END
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Cigs            END
+    BEGIN Contraband    Id      Lighter         END
+    BEGIN Contraband    Id      MobilePhone     END
+    BEGIN Contraband    Id      Knife           END
+    BEGIN Contraband    Id      Fork            END
+
+END
+#-
+#-==
+
+#+==警备室
+BEGIN Room
+    Name                 Security
+    Research             Security
+    Properties          StaffCanUseFacilities
+	
+    BEGIN Requirement Type MinimumSize  x 2  y 2  END
+
+#+必要物品	
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id      CctvMonitor       END
+    BEGIN LikelyObject  Id      DoorControlSystem END
+    BEGIN LikelyObject  Id      PhoneMonitor      END
+    BEGIN LikelyObject  Id      TrackingMonitor   END
+    BEGIN LikelyObject  Id      Router END
+
+    BEGIN LikelyObject  Id    OfficeDesk             END
+    BEGIN LikelyObject  Id    FancyDesk             END
+    BEGIN LikelyObject  Id    SwivelChair             END
+    BEGIN LikelyObject  Id    OfficeChair             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    FilingCabinet             END
+    BEGIN LikelyObject  Id    FilingCabinetFancy             END
+    BEGIN LikelyObject  Id    OvalStaffTable             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+
+    BEGIN LikelyObject  Id      SofaChairSingle END
+    BEGIN LikelyObject  Id      SofaChairDouble END
+    BEGIN LikelyObject  Id      SofaChairBrown END
+    BEGIN LikelyObject  Id      SofaChairDoubleBrown END
+	
+    BEGIN LikelyObject  Id    MedicineCabinet	             END
+	BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      JailKeys          END
+    BEGIN Contraband    Id      Keycard           END
+    BEGIN Contraband    Id      Baton             END
+    BEGIN Contraband    Id      Cigs              END
+    BEGIN Contraband    Id      Lighter           END
+    BEGIN Contraband    Id      Torch             END
+END
+#-
+#-==
+
+#+==枪械库
+
+BEGIN Room
+    Name                 Armoury
+    Research             Armoury
+    BEGIN Requirement Type Object  Id WeaponRack  END
+    Properties           StaffCanUseFacilities
+
+    BEGIN Requirement Type Indoor END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id GuardLocker END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    OfficeDesk             END
+    BEGIN LikelyObject  Id    FancyDesk             END
+    BEGIN LikelyObject  Id    SwivelChair             END
+    BEGIN LikelyObject  Id    OfficeChair             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    FilingCabinet             END
+    BEGIN LikelyObject  Id    FilingCabinetFancy             END
+    BEGIN LikelyObject  Id    OvalStaffTable             END
+
+    BEGIN LikelyObject  Id      SofaChairSingle END
+    BEGIN LikelyObject  Id      SofaChairDouble END
+    BEGIN LikelyObject  Id      SofaChairBrown END
+    BEGIN LikelyObject  Id      SofaChairDoubleBrown END
+
+    BEGIN LikelyObject  Id    Toilet             END
+
+    BEGIN LikelyObject  Id    GuardLocker             END
+    BEGIN LikelyObject  Id    WeaponRack             END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Shotgun         END
+    BEGIN Contraband    Id      Gun             END
+    BEGIN Contraband    Id      Tazer           END
+    BEGIN Contraband    Id      Baton           END
+    BEGIN Contraband    Id      Rifle           END
+END
+#-
+#-==
+
+#+==狗舍
+
+BEGIN Room
+    Name                 Kennel
+    Research             Dogs
+    Properties           StaffCanUseFacilities
+
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+	
+#+必要物品	
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id DogCrate  END
+    BEGIN Requirement Type Object  Id DogBowl  END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    OfficeDesk             END
+    BEGIN LikelyObject  Id    FancyDesk             END
+    BEGIN LikelyObject  Id    SwivelChair             END
+    BEGIN LikelyObject  Id    OfficeChair             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    FilingCabinet             END
+    BEGIN LikelyObject  Id    FilingCabinetFancy             END
+    BEGIN LikelyObject  Id    OvalStaffTable             END
+
+    BEGIN LikelyObject  Id      SofaChairSingle END
+    BEGIN LikelyObject  Id      SofaChairDouble END
+    BEGIN LikelyObject  Id      SofaChairBrown END
+    BEGIN LikelyObject  Id      SofaChairDoubleBrown END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    DogCrate             END
+    BEGIN LikelyObject  Id    DogBowl             END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+END
+#-
+#-==
+
+#-==========
+
+#+==========交通运输
+
+#+==入狱搜查室
+
+BEGIN Room
+    Name                 Intake
+    Research             Security
+    Properties       RequiresSector
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+
+#+必要物品	
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id Table Alt SmallTable END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id      Cctv    END
+    BEGIN LikelyObject  Id      Table    END
+    BEGIN LikelyObject  Id      SmallTable    END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+END
+#-
+#-==
+
+#+==停尸房
+
+BEGIN Room
+    Name                 Morgue
+    Research             Health
+
+    BEGIN Requirement Type Indoor  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id MorgueSlab  END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    MorgueSlab             END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Scissors         END
+    BEGIN Contraband    Id      Knife END
+END
+#-
+#-==
+
+#+==仓库
+
+BEGIN Room
+    Name                 Storage
+    Properties           StaffCanUseFacilities
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+	
+    BEGIN LikelyObject  Id      StorageShelf    END
+    BEGIN LikelyObject  Id      ScannerMachine  END
+    BEGIN LikelyObject  Id      ScannerMonitor  END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      Screwdriver     END
+    BEGIN Contraband    Id      Saw             END
+    BEGIN Contraband    Id      Drill           END
+    BEGIN Contraband    Id      Hammer          END
+END
+#-
+#-==
+
+#+==卸货区
+
+BEGIN Room
+    Name Deliveries
+    
+	BEGIN Requirement Type MinimumSize  x 1  y 3  END
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+	
+    BEGIN LikelyObject  Id      ScannerMachine  END
+    BEGIN LikelyObject  Id      ScannerMonitor  END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+END
+#-
+#-==
+
+#+==出货区
+
+BEGIN Room       
+    Name Exports
+    Research             PrisonLabour
+	
+    BEGIN Requirement Type MinimumSize  x 1  y 3  END  
+	
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+END
+#-
+#-==
+
+#+==垃圾场
+
+BEGIN Room       
+    Name Garbage
+
+    BEGIN Requirement Type MinimumSize  x 1  y 3  END
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+	
+    BEGIN LikelyObject  Id      Bin  END
+    BEGIN LikelyObject  Id      RecyclingBin  END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+END
+#-
+#-==
+#-==========
+
+#+==========DLC
+
+#+=====女性囚犯
+
+#+==家庭牢房
+BEGIN Room
+    Name                FamilyCell
+    Properties          Housing
+    Properties          WomenOnly
+    Properties          MothersOnly
+	Properties           CanAssignGangSegregation
+
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id Toilet  END
+    BEGIN Requirement Type Object  Id Bed Alt Mattress,ComfyBed,CoffinBed,OldBed,CampBed,NettedBed  END
+
+    BEGIN Requirement Type Object  Id Crib END
+    BEGIN Requirement Type Object  Id ShowerHead END
+    BEGIN Requirement Type Object  Id Drain END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    Crib             END
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead	             END
+    BEGIN LikelyObject  Id    Drain	             END
+    BEGIN LikelyObject  Id    PersonalSink	             END
+    BEGIN LikelyObject  Id    BathroomSink	             END
+    BEGIN LikelyObject  Id    SinkMirror	             END
+    BEGIN LikelyObject  Id    BathroomHandDryer	             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+
+    BEGIN LikelyObject  Id    WoodenTable	             END
+    BEGIN LikelyObject  Id    WoodenStool	             END
+    BEGIN LikelyObject  Id    OakTable	             END
+    BEGIN LikelyObject  Id    OakBench	             END
+    BEGIN LikelyObject  Id    Chair	             END
+    BEGIN LikelyObject  Id    ChairYellow	             END
+    BEGIN LikelyObject  Id    SchoolDesk	             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+    BEGIN LikelyObject  Id    Fan             END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-	
+	
+#+品质评级
+    BEGIN Grading       Type    MultiItems  Quantity 5 END
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+	BEGIN Grading		Type	HasGlassWalls Percent 50	GradeEffect -1		END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    Item    Id      Mattress   GradeEffect -2    END 
+	BEGIN Grading		Type	Item    Id		OldBed	   GradeEffect -1	 END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+END
+#-
+#-==
+
+#+==托儿所
+BEGIN Room
+    Name                Nursery
+    Properties          RequiresSector
+    Properties          WomenOnly
+    Properties          MothersOnly
+    Properties          DiningArea
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id ServingTable Alt SmallServingTable,JungleServingTable  END
+    BEGIN Requirement Type Object  Id Table Alt SmallTable,OakTable,JungleTable END
+    BEGIN Requirement Type Object  Id Bench Alt SmallBench,JungleBench END
+    BEGIN Requirement Type Object  Id Crib END
+    BEGIN Requirement Type Object  Id PlayMat END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    Crib             END
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead	             END
+    BEGIN LikelyObject  Id    Drain	             END
+    BEGIN LikelyObject  Id    PersonalSink	             END
+    BEGIN LikelyObject  Id    BathroomSink	             END
+    BEGIN LikelyObject  Id    SinkMirror	             END
+    BEGIN LikelyObject  Id    BathroomHandDryer	             END
+	
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    Radio	             END
+    BEGIN LikelyObject  Id    BoomBoxRoundhouse	             END
+    BEGIN LikelyObject  Id    Tv	             END
+    BEGIN LikelyObject  Id    LargeTv	             END
+	
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin	             END
+    BEGIN LikelyObject  Id    Fan	             END
+    BEGIN LikelyObject  Id    Plant	             END
+    BEGIN LikelyObject  Id    PlantCactus	             END
+
+    BEGIN LikelyObject  Id    MedicineCabinet	             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+END
+#-
+#-==
+#-=====
+
+#+=====迈向绿色
+
+#+==农田
+
+BEGIN Room       
+    Name                 FarmingField
+    Properties          PrisonersCanWork
+	Properties	    RequiresSector
+	Qualification        FarmTraining
+    VersionAdded        4000
+	WorkExperience		WorkLabourer
+	WorkExperienceRate	0.025
+
+    BEGIN Requirement Type Outdoor END
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Shed  END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+	
+	BEGIN LikelyObject 	Id		Shed		  END
+	BEGIN LikelyObject	Id		AutoScythe	  END
+	BEGIN LikelyObject	Id		AutoHarvester	      END
+	BEGIN LikelyObject	Id		BasicAutoGatherer	  END
+	BEGIN LikelyObject	Id		AdvancedAutoGatherer	  END
+	BEGIN LikelyObject	Id		DripPipe 		  END
+	BEGIN LikelyObject	Id		CropSprinkler	  END
+	BEGIN LikelyObject	Id		CompostBin	 	  END
+	BEGIN LikelyObject	Id		CompostFertilizer END
+	BEGIN LikelyObject	Id		HighQualityFertilizer END
+
+	BEGIN LikelyObject	Id		CropCornPlant	  END
+	BEGIN LikelyObject	Id		CropBarleyPlant	  END
+	BEGIN LikelyObject	Id		CropWheatPlant	  END
+
+	BEGIN LikelyObject	Id		Bin	END
+	BEGIN LikelyObject	Id		RecyclingBin	END
+
+    BEGIN LikelyObject  Id      HayBale    END
+    BEGIN LikelyObject  Id    Bush     END
+    BEGIN LikelyObject  Id    FernBush     END
+    BEGIN LikelyObject  Id    Ivy     END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+#-
+
+#+违禁品
+	BEGIN Contraband    Id      Sheers	END
+	BEGIN Contraband    Id      Spade	END
+	BEGIN Contraband    Id      Trowel	END
+	BEGIN Contraband    Id      HandFork	END
+    BEGIN Contraband    Id      Axe 	END
+    BEGIN Contraband    Id      Saw 	END
+	BEGIN Contraband    Id 	    ProducedDrugs	END
+
+END
+#-
+#-==
+
+#+==菜田
+
+BEGIN Room       
+    Name                 VegetableAllotment
+   	Properties          PrisonersCanWork
+	Properties	    RequiresSector
+	Qualification        FarmTraining
+    VersionAdded        4000
+	WorkExperience		WorkLabourer
+	WorkExperienceRate	0.025
+
+    BEGIN Requirement Type Outdoor END	
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Shed  END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+	
+	BEGIN LikelyObject 	Id		Shed		  END
+	BEGIN LikelyObject	Id		AutoScythe	  END
+	BEGIN LikelyObject	Id		AutoHarvester	      END
+	BEGIN LikelyObject	Id		BasicAutoGatherer	  END
+	BEGIN LikelyObject	Id		AdvancedAutoGatherer	  END
+	BEGIN LikelyObject	Id		DripPipe 		  END
+	BEGIN LikelyObject	Id		CropSprinkler	  END
+	BEGIN LikelyObject	Id		CompostBin	 	  END
+	BEGIN LikelyObject	Id		CompostFertilizer END
+	BEGIN LikelyObject	Id		HighQualityFertilizer END
+
+	BEGIN LikelyObject	Id		CropCarrotPlant	  END
+	BEGIN LikelyObject	Id		CropPotatoPlant	  END
+	BEGIN LikelyObject	Id		CropTomatoPlant	  END
+	BEGIN LikelyObject	Id		CropCabbagePlant	  END
+
+	BEGIN LikelyObject	Id		Bin	END
+	BEGIN LikelyObject	Id		RecyclingBin	END
+
+    BEGIN LikelyObject  Id      HayBale    END
+    BEGIN LikelyObject  Id    Bush     END
+    BEGIN LikelyObject  Id    FernBush     END
+    BEGIN LikelyObject  Id    Ivy     END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+#-
+
+#+违禁品
+   	BEGIN Contraband    Id      Sheers	END
+	BEGIN Contraband    Id      Spade	END
+	BEGIN Contraband    Id      Trowel	END
+	BEGIN Contraband    Id      HandFork	END
+    BEGIN Contraband    Id      Axe 	END
+    BEGIN Contraband    Id      Saw 	END
+
+END
+#-
+#-==
+
+#+==果园
+
+BEGIN Room       
+    Name                 FruitOrchard
+	Properties          PrisonersCanWork
+	Properties	    RequiresSector
+	Qualification        FarmTraining
+    VersionAdded        4000
+	WorkExperience		WorkLabourer
+	WorkExperienceRate	0.025
+	
+    BEGIN Requirement Type Outdoor END
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Shed  END    
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+	
+	BEGIN LikelyObject 	Id		Shed		  END
+	BEGIN LikelyObject	Id		BasicAutoGatherer	  END
+	BEGIN LikelyObject	Id		AdvancedAutoGatherer	  END
+
+	BEGIN LikelyObject	Id		CropAppleTree	END
+	BEGIN LikelyObject	Id		CropBananaTree	END
+	BEGIN LikelyObject	Id		CropPeachTree	END
+	BEGIN LikelyObject	Id		CropOrangeTree	END
+
+	BEGIN LikelyObject	Id		Bin	END
+	BEGIN LikelyObject	Id		RecyclingBin	END
+
+    BEGIN LikelyObject  Id      HayBale    END
+    BEGIN LikelyObject  Id    Bush     END
+    BEGIN LikelyObject  Id    FernBush     END
+    BEGIN LikelyObject  Id    Ivy     END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+#-
+
+#+违禁品
+   	BEGIN Contraband    Id      Sheers	END
+	BEGIN Contraband    Id      Spade	END
+	BEGIN Contraband    Id      Trowel	END
+	BEGIN Contraband    Id      HandFork	END
+    BEGIN Contraband    Id      Axe 	END
+    BEGIN Contraband    Id      Saw 	END
+	BEGIN Contraband    Id 	    ProducedNarcotics END
+END
+#-
+#-==
+
+#+==花园
+
+BEGIN Room       
+    Name                 FlowerGarden
+    Research             GroundsKeeping
+	Properties           PrisonerRelax
+    VersionAdded        4000
+
+#+必要物品
+    BEGIN Requirement Type 		Outdoor 				END	
+    BEGIN Requirement Type 		MinimumSize  x 5  y 5   		END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light     END
+    BEGIN LikelyObject  Id    SolarLight     END
+    BEGIN LikelyObject  Id    WallLight     END
+    BEGIN LikelyObject  Id    SolarWallLight     END
+    BEGIN LikelyObject  Id    FloodLight     END
+    BEGIN LikelyObject  Id    StreetLamp     END
+    BEGIN LikelyObject  Id    SearchLight     END
+	
+	BEGIN LikelyObject	Id    FlowerRoseBush		END
+	BEGIN LikelyObject	Id    FlowerSunflower		END
+	BEGIN LikelyObject	Id    FlowerMixedBegonias	END
+	BEGIN LikelyObject	Id    FlowerHeatherBushes	END
+	BEGIN LikelyObject	Id    FlowerHydrangeaPlant	END
+	BEGIN LikelyObject	Id    FlowerPlanterWateringCan	END
+	BEGIN LikelyObject	Id    FlowerPlanterWellies	END
+	BEGIN LikelyObject	Id    FlowerPlanterWheelbarrow	END
+
+	BEGIN LikelyObject	Id    Bin	END
+	BEGIN LikelyObject	Id    RecyclingBin	END
+
+    BEGIN LikelyObject  Id    HayBale    END
+    BEGIN LikelyObject  Id    Bush     END
+    BEGIN LikelyObject  Id    FernBush     END
+    BEGIN LikelyObject  Id    Ivy     END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    GuardPavilion             END
+    BEGIN LikelyObject  Id    GuardPavilionCorner             END
+    BEGIN LikelyObject  Id    GuardTower             END
+#-
+
+#+违禁品
+   	BEGIN Contraband    Id      Sheers	END
+	BEGIN Contraband    Id      Spade	END
+	BEGIN Contraband    Id      Trowel	END
+	BEGIN Contraband    Id      HandFork	END
+
+END
+#-
+#-==
+
+#+==食品储藏室
+
+BEGIN Room       
+    Name                 Pantry
+   	Research             Farming
+	
+    BEGIN Requirement Type 		Enclosed 		END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+	BEGIN LikelyObject	Id		TallFridge		END
+	BEGIN LikelyObject	Id		StorageShelf	END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+	BEGIN Contraband    Id 	    ProducedNarcotics END
+END
+#-
+#-==
+#-=====
+
+#+=====二次机会
+
+#+==面包房
+
+BEGIN Room       
+    Name                 Bakery  
+    Research             PrisonLabour
+    Properties           PrisonersCanWork
+    Properties           RequiresSector
+    Properties           BlockMaterialTransfer
+	QualificationAlternativeWorkExperienceType	WorkCook    
+	QualificationAlternativeWorkExperienceType	WorkRCS
+	VersionAdded	5000
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize x 5 y 5 END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id DoughMixer	END
+    BEGIN Requirement Type Object  Id Oven	END
+    BEGIN Requirement Type Object  Id ShopCounter	END
+    BEGIN Requirement Type Object  Id DisplayCounter  END
+    BEGIN Requirement Type Object  Id CakeStand END
+    BEGIN Requirement Type Object  Id Fridge  Alt	TallFridge	END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id      DoughMixer      END
+    BEGIN LikelyObject  Id      Oven            END
+    BEGIN LikelyObject  Id      ShopCounter     END
+    BEGIN LikelyObject  Id      DisplayCounter  END
+    BEGIN LikelyObject  Id      CakeStand	    END
+    BEGIN LikelyObject  Id      Fridge          END   
+    BEGIN LikelyObject  Id      TallFridge          END   
+
+    BEGIN LikelyObject  Id      WallPanel       END
+    BEGIN LikelyObject  Id      WallPanelWood   END
+    BEGIN LikelyObject  Id      WallPanelStone  END
+    BEGIN LikelyObject  Id      WallPanelCorner_A       END
+    BEGIN LikelyObject  Id      WallPanelWoodCorner_A   END
+    BEGIN LikelyObject  Id      WallPanelStoneCorner_A  END
+    BEGIN LikelyObject  Id      WallPanelCorner_B       END
+    BEGIN LikelyObject  Id      WallPanelWoodCorner_B   END
+    BEGIN LikelyObject  Id      WallPanelStoneCorner_B  END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-	
+	
+#+违禁品
+    BEGIN Contraband      Id      Knife           END
+    BEGIN Contraband      Id      Fork            END
+    BEGIN Contraband      Id      Spoon           END
+    BEGIN Contraband      Id      Scissors        END
+    BEGIN Contraband      Id 	  ProducedNarcotics END
+	BEGIN Contraband      Id      Bacon           END	
+    BEGIN Contraband      Id      Whisk           END
+    BEGIN Contraband      Id      RollingPin      END
+#-	
+	
+#+走私
+    BEGIN ContrabandEM    Id      Knife           END
+    BEGIN ContrabandEM    Id      Fork            END
+    BEGIN ContrabandEM    Id      Spoon           END
+    BEGIN ContrabandEM    Id      Scissors        END
+    BEGIN ContrabandEM    Id 	  ProducedNarcotics END
+	BEGIN ContrabandEM    Id      Bacon           END	
+    BEGIN ContrabandEM    Id      Whisk           END   
+    BEGIN ContrabandEM    Id      RollingPin      END   
+END
+#-
+#-==
+
+#+==餐厅
+
+BEGIN Room       
+    Name                 Restaurant  
+    Research             PrisonLabour
+    Properties           PrisonersCanWork
+    Properties           RequiresSector
+    Properties           BlockMaterialTransfer
+	QualificationAlternativeWorkExperienceType	WorkCook    
+	QualificationAlternativeWorkExperienceType	WorkRCS
+	VersionAdded	5000
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type MinimumSize  x 5  y 5     END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+	
+    BEGIN Requirement Type Object  Id Cooker  END
+    BEGIN Requirement Type Object  Id Fridge  Alt	TallFridge	END
+    BEGIN Requirement Type Object  Id Sink END
+    BEGIN Requirement Type Object  Id ShopCounter	END
+    BEGIN Requirement Type Object  Id DisplayCounter	END
+
+    BEGIN Requirement Type Object  Id Table	Alt	DiningTableLarge,DiningTableSmall,DinerBooth	END
+    BEGIN Requirement Type Object  Id Chair   Alt	DiningChair,DinerBooth,ChairYellow,SwivelChair	END    
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id      Cooker          END
+    BEGIN LikelyObject  Id      Fridge          END
+    BEGIN LikelyObject  Id      TallFridge          END
+    BEGIN LikelyObject  Id      Sink            END
+    BEGIN LikelyObject  Id      ShopCounter  END
+    BEGIN LikelyObject  Id      DisplayCounter  END
+	
+    BEGIN LikelyObject  Id      Table           END
+	BEGIN LikelyObject  Id      DiningTableLarge      END
+	BEGIN LikelyObject  Id      DiningTableSmall      END
+	BEGIN LikelyObject  Id      DinerBooth      END
+    BEGIN LikelyObject  Id      Chair           END
+    BEGIN LikelyObject  Id      ChairYellow     END
+    BEGIN LikelyObject  Id      DiningChair     END
+    BEGIN LikelyObject  Id      SwivelChair     END
+
+    BEGIN LikelyObject  Id      WallPanel       END
+    BEGIN LikelyObject  Id      WallPanelWood   END
+    BEGIN LikelyObject  Id      WallPanelStone  END
+    BEGIN LikelyObject  Id      WallPanelCorner_A       END
+    BEGIN LikelyObject  Id      WallPanelWoodCorner_A   END
+    BEGIN LikelyObject  Id      WallPanelStoneCorner_A  END
+    BEGIN LikelyObject  Id      WallPanelCorner_B       END
+    BEGIN LikelyObject  Id      WallPanelWoodCorner_B   END
+    BEGIN LikelyObject  Id      WallPanelStoneCorner_B  END
+
+    BEGIN LikelyObject  Id      Chandelier  END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-	
+	
+#+违禁品
+    BEGIN Contraband      Id      Knife           END
+    BEGIN Contraband      Id      Fork            END
+    BEGIN Contraband      Id      Spoon           END
+    BEGIN Contraband      Id      Scissors        END
+    BEGIN Contraband      Id 	  ProducedNarcotics END
+#-	
+	
+#+走私
+    BEGIN ContrabandEM    Id      Knife           END
+    BEGIN ContrabandEM    Id      Fork            END
+    BEGIN ContrabandEM    Id      Spoon           END
+    BEGIN ContrabandEM    Id      Scissors        END
+    BEGIN ContrabandEM    Id 	  ProducedNarcotics END
+
+END
+#-
+#-==
+
+#+==会客室
+
+BEGIN Room  
+
+    Name                   TherapyRoom
+	VersionAdded	5000
+	
+    BEGIN Requirement Type Indoor                    END
+    BEGIN Requirement Type MinimumSize  x 5  y 5     END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id Chair Alt ChairYellow,SwivelChair         END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id      Chair          END
+    BEGIN LikelyObject  Id      ChairYellow          END
+    BEGIN LikelyObject  Id      SwivelChair          END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-	
+	
+#+走私
+    BEGIN ContrabandEM  Id  Booze                    END
+    BEGIN ContrabandEM  Id  Cigs                     END
+    BEGIN ContrabandEM  Id  Lighter                  END
+END
+#-
+#-==
+#-==========
+
+#+=====完美风暴
+
+#+==气象中心
+
+BEGIN Room       
+    Name                 WeatherCentre
+    VersionAdded        4000
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 2  END
+	
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id WeatherMachine END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+	BEGIN LikelyObject 	Id	WeatherMachine END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+END
+#-	
+#-==
+
+#+==培训室
+
+BEGIN Room       
+    Name                 TrainingRoom
+    Capturable           true
+    Research             Education
+    Properties           StaffCanUseFacilities
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 4  y 5  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id OfficeDesk Alt FancyDesk END
+    BEGIN Requirement Type Object  Id Chair Alt ChairYellow,SwivelChair 	 END
+    BEGIN Requirement Type Object  Id RatTrap    	 END
+    BEGIN Requirement Type Object  Id FirstAidStation  END
+    BEGIN Requirement Type Object  Id GritBin   	 END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+
+    BEGIN LikelyObject	Id	OfficeDesk		END
+    BEGIN LikelyObject	Id	FancyDesk		END
+    BEGIN LikelyObject	Id	Chair		END
+    BEGIN LikelyObject	Id	ChairYellow		END
+    BEGIN LikelyObject	Id	SwivelChair		END
+
+    BEGIN LikelyObject	Id	RatTrap		END
+    BEGIN LikelyObject	Id	FirstAidStation	END
+    BEGIN LikelyObject	Id	GritBin		END
+
+	BEGIN LikelyObject	Id	WaterCooler			END
+	BEGIN LikelyObject	Id	Blackboard			END
+	BEGIN LikelyObject	Id	Bookshelf			END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+END
+#-
+#-==
+#-=====
+
+#+=====精神病房
+
+#+==软垫牢房
+BEGIN Room       
+    Name                 PaddedCell  
+    Capturable           true
+	DLC_Replace_Type	 Cell
+	VersionAdded		 2000
+    Properties           Housing
+	Properties			 HasPaddedWalls
+	
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type MinimumSize  x 2  y 3  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id Toilet     END
+    BEGIN Requirement Type Object  Id Bed Alt Mattress,ComfyBed,OldBed,CoffinBed,CampBed,NettedBed  END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+	
+    BEGIN LikelyObject  Id    SoftPillow             END
+    BEGIN LikelyObject  Id    Bed             END
+    BEGIN LikelyObject  Id    Mattress             END
+    BEGIN LikelyObject  Id    OldBed             END
+    BEGIN LikelyObject  Id    BunkBed             END
+    BEGIN LikelyObject  Id    ComfyBed             END
+    BEGIN LikelyObject  Id    CampBed             END
+    BEGIN LikelyObject  Id    NettedBed             END
+    BEGIN LikelyObject  Id    CoffinBed             END
+	
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+	
+    BEGIN LikelyObject  Id    WoodenTable	             END
+    BEGIN LikelyObject  Id    WoodenStool	             END
+    BEGIN LikelyObject  Id    OakTable	             END
+    BEGIN LikelyObject  Id    OakBench	             END
+    BEGIN LikelyObject  Id    Chair	             END
+    BEGIN LikelyObject  Id    ChairYellow	             END
+    BEGIN LikelyObject  Id    SchoolDesk	             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead	             END
+    BEGIN LikelyObject  Id    Drain	             END
+    BEGIN LikelyObject  Id    PersonalSink	             END
+    BEGIN LikelyObject  Id    BathroomSink	             END
+    BEGIN LikelyObject  Id    SinkMirror	             END
+    BEGIN LikelyObject  Id    BathroomHandDryer	             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+    BEGIN LikelyObject  Id    Fan             END
+	
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-	
+	
+#+品质评级
+    BEGIN Grading       Type    RoomSize Size   6                END
+    BEGIN Grading       Type    RoomSize Size   9                END
+    BEGIN Grading       Type    RoomSize Size   16               END
+    BEGIN Grading       Type    OutsideWindow   Stackable true	END
+    BEGIN Grading       Type    OutsideWindow   Large true      END
+	
+	BEGIN Grading       Type    Item    Id      ComfyBed Alt SoftPillow Multi true END
+	BEGIN Grading       Type    Item    Id      WoodenTable Alt OakTable,SchoolDesk Multi true END
+	BEGIN Grading       Type    Item    Id      WoodenStool Alt OakBench,Chair,ChairYellow,MetalStool,SchoolDesk Multi true END
+	BEGIN Grading       Type    Item    Id      ShowerHead Alt PersonalSink,BathroomSink,SinkMirror Multi true END
+	BEGIN Grading       Type    Item    Id      Bin Alt RecyclingBin,Plant,PlantCactus Multi true END
+	BEGIN Grading       Type    Item    Id      Fan END
+	BEGIN Grading       Type    Item    Id      Radio Alt BoomBoxRoundhouse,Tv,LargeTv,Canvas,PetBird,ChessTable Multi true END
+	BEGIN Grading       Type    Item    Id      DumbbellRack Alt WeightsBench,GymMat,TrainingDummy,PunchBag,Treadmill Multi true END
+	BEGIN Grading       Type    Item    Id      Bookshelf Alt PrayerMat Multi true END
+	BEGIN Grading       Type    Item    Id      Sprinkler END
+
+    BEGIN Grading       Type    MultiItems  Quantity 5 END
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+	BEGIN Grading		Type	HasGlassWalls Percent 50	GradeEffect -1		END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    Item    Id      Mattress   GradeEffect -2    END 
+	BEGIN Grading		Type	Item    Id		OldBed	   GradeEffect -1	 END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+END
+#-
+#-==
+
+#+==软垫拘留室
+
+BEGIN Room       
+    Name                 PaddedHoldingCell  
+    Capturable           true
+	DLC_Replace_Type	 HoldingCell
+	VersionAdded         2000
+    Properties           Housing
+	Properties			 HasPaddedWalls
+	
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt Walllight END
+    BEGIN Requirement Type Object  Id Toilet  END
+    BEGIN Requirement Type Object  Id Bench Alt SmallBench,JungleBench,OakBench END
+#-	
+
+#+推荐物品
+    BEGIN LikelyObject  Id    light             END
+    BEGIN LikelyObject  Id    Walllight             END
+
+    BEGIN LikelyObject  Id    Bench             END
+    BEGIN LikelyObject  Id    SmallBench             END
+
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    Windowlarge	             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead	             END
+    BEGIN LikelyObject  Id    Drain	             END
+    BEGIN LikelyObject  Id    PersonalSink	             END
+    BEGIN LikelyObject  Id    BathroomSink	             END
+    BEGIN LikelyObject  Id    SinkMirror	             END
+    BEGIN LikelyObject  Id    BathroomHandDryer	             END
+
+    BEGIN LikelyObject  Id    Bed             END
+    BEGIN LikelyObject  Id    Mattress             END
+    BEGIN LikelyObject  Id    OldBed             END
+    BEGIN LikelyObject  Id    BunkBed             END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    Cctv             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+    BEGIN LikelyObject  Id    PASystem             END
+END
+#-
+#-==
+
+#+==软垫禁闭室
+
+BEGIN Room       
+    Name                 PaddedSolitary
+	DLC_Replace_Type	 Solitary
+	VersionAdded		 2000
+	Properties           RequiresSector
+	Properties			 HasPaddedWalls
+
+    BEGIN Requirement Type Enclosed END
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Toilet           END
+	
+    BEGIN LikelyObject  Id    ServoProxy           END
+END
+#-
+#-==
+
+#+==精神科医生办公室
+
+BEGIN Room       
+    Name                 PsychiatristOffice  
+	VersionAdded		 2000
+	Properties           QualityGraded
+    Properties           StaffCanUseFacilities
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 4  y 4  END
+
+
+#+必要物品
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+
+    BEGIN Requirement Type Object  Id OfficeDesk Alt FancyDesk END
+    BEGIN Requirement Type Object  Id Chair Alt OfficeChair END
+    BEGIN Requirement Type Object  Id FilingCabinet Alt FilingCabinetFancy  END
+    BEGIN Requirement Type Object  Id SofaChairDouble Alt SofaChairBrown,SofaChairDoubleBrown,SofaChairSingle END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id      Light         END
+    BEGIN LikelyObject  Id      WallLight         END
+    BEGIN LikelyObject  Id      Lamp         END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    LeatherSofa             END
+    BEGIN LikelyObject  Id    Chair             END
+    BEGIN LikelyObject  Id    ChairYellow             END
+    BEGIN LikelyObject  Id    SofaChairsingle             END
+    BEGIN LikelyObject  Id    SofaChairdouble             END
+    BEGIN LikelyObject  Id    SofaChairBrown             END
+    BEGIN LikelyObject  Id    SofaChairDoubleBrown             END
+    BEGIN LikelyObject  Id    OvalStaffTable             END
+
+    BEGIN LikelyObject  Id    OfficeDesk             END
+    BEGIN LikelyObject  Id    FancyDesk             END
+    BEGIN LikelyObject  Id    SwivelChair             END
+    BEGIN LikelyObject  Id    OfficeChair             END
+    BEGIN LikelyObject  Id    ChestOfDrawers             END
+    BEGIN LikelyObject  Id    FilingCabinet             END
+    BEGIN LikelyObject  Id    FilingCabinetFancy             END
+
+    BEGIN LikelyObject  Id    WaterCooler             END
+    BEGIN LikelyObject  Id    CoffeeMachine             END
+	
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+	
+    BEGIN LikelyObject  Id    Radio             END
+    BEGIN LikelyObject  Id    BoomBoxRoundhouse             END
+    BEGIN LikelyObject  Id    Tv             END
+    BEGIN LikelyObject  Id    LargeTv             END
+    BEGIN LikelyObject  Id    Bookshelf             END
+
+	BEGIN LikelyObject	Id		LeatherSofa	END
+	BEGIN LikelyObject	Id		MedicineCabinetPsych	END
+	BEGIN LikelyObject	Id		RorschachTest	END
+	BEGIN LikelyObject	Id		Flipboard	END
+	BEGIN LikelyObject	Id		AnatomyModel	END
+
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    Sprinkler             END
+#-
+
+#+违禁品
+    BEGIN Contraband    Id      MobilePhone     END
+    BEGIN Contraband    Id      Booze           END
+    BEGIN Contraband    Id      Cigs            END
+    BEGIN Contraband    Id      Lighter         END
+	BEGIN Contraband    Id      FountainPen     END
+    BEGIN Contraband    Id      GoldPocketWatch END
+#-	
+	
+#+品质评级
+    BEGIN Grading       Type    OutsideWindow   Large true      END
+
+	BEGIN Grading       Type    Item    Id      LeatherSofa				GradeEffect		1		END
+	BEGIN Grading       Type    Item    Id      MedicineCabinetPsych	GradeEffect		1		END
+	BEGIN Grading       Type    Item    Id      RorschachTest			GradeEffect		1		END
+	BEGIN Grading       Type    Item    Id      Flipboard				GradeEffect		1		END
+	BEGIN Grading       Type    Item    Id      AnatomyModel			GradeEffect		1		END
+	
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    Item    Id      Cctv   GradeEffect -1    END
+    BEGIN Grading       Type    HasPASystem GradeEffect -1  END
+END
+#-
+#-==
+#-=====
+
+#+=====帮派
+
+#+==牢笼
+
+BEGIN Room       
+    Name                 TheCage
+	Properties           RequiresSector
+
+    BEGIN Requirement Type Enclosed END
+    BEGIN Requirement Type Secure END
+	
+    BEGIN LikelyObject	Id		FenceGateGuard	END
+    BEGIN LikelyObject	Id		SecureDoor		END
+    BEGIN LikelyObject	Id		CageGate		END
+
+END
+#-=====
+
+#+==搏击俱乐部房间
+
+BEGIN Room  
+    Name	FightClubRoom
+	VersionAdded	7000
+	
+    BEGIN Requirement Type Indoor					END
+    BEGIN Requirement Type MinimumSize  x 5  y 5    END
+	
+    BEGIN Requirement Type Object  Id FightRing		END
+	
+    BEGIN LikelyObject  Id      Chair   			END
+	BEGIN LikelyObject  Id      PunchBag			END
+	BEGIN LikelyObject  Id      TrainingDummy		END
+	BEGIN LikelyObject  Id      WaterCooler			END
+	BEGIN LikelyObject  Id      Boombox				END
+    BEGIN LikelyObject  Id      Bench				END
+    BEGIN LikelyObject  Id      SmallBench			END
+    BEGIN LikelyObject  Id      OakBench				END
+    BEGIN LikelyObject  Id      JungleBench				END
+END
+#-=====
+
+#+==纹身去除室
+
+BEGIN Room  
+    Name	TattooRemovalRoom
+	Properties			RequiresEnhancedGangs
+	VersionAdded	7000
+
+    BEGIN Requirement Type Indoor					END
+    BEGIN Requirement Type MinimumSize  x 3  y 4    END
+
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+    BEGIN Requirement Type Object  Id TattooRemovalMachine	END
+
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+    BEGIN LikelyObject  Id      TattooRemovalMachine   END
+    BEGIN LikelyObject  Id      CoatStand   END
+	BEGIN LikelyObject  Id      Plant       END
+END
+#-=====
+#-=====
+
+#+=====亡灵
+
+#+==墓地
+
+BEGIN Room       
+    Name                 Graveyard
+	Properties           RequiresSector
+	Properties           PrisonerRelax
+	
+	BEGIN Requirement Type Outdoor END	
+	
+	BEGIN Requirement Type Object  Id OrnamentalGravestone	END
+	
+    BEGIN LikelyObject	Id		ParkBench	END
+	BEGIN LikelyObject	Id		OrnateLantern	END
+	BEGIN LikelyObject	Id		ChairYellow	END
+	BEGIN LikelyObject	Id		Bookshelf	END
+	BEGIN LikelyObject	Id		FilingCabinetFancy	END
+	BEGIN LikelyObject	Id		SpookyTree	END
+END
+#-==
+#-=====
+#-==========
+#-===========================================================

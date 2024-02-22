@@ -758,8 +758,8 @@ codex_workshop_new	新
 codex_workshop_title	标题
 codex_workshop_desc	说明
 codex_workshop_view_in_workshop	在Steam创意工坊中查看
-codex_workshop_heading_pubed	你已发布的监狱
-codex_workshop_heading_subed	你已订阅的监狱
+codex_workshop_heading_puBed	你已发布的监狱
+codex_workshop_heading_suBed	你已订阅的监狱
 codex_workshop_published_by	发布者: *P
 codex_workshop_published_by_you	发布者: 【你自己】
 codex_workshop_published_good	监狱已发布
@@ -1838,13 +1838,13 @@ object_pipesmall				小型管道
 
 object_polaroid					宝丽来照片
 
-object_boombox					扬声器
+
 
 object_radiator					暖气片
 
 object_treestump				树桩
 
-object_superiorbed				高级床($850)
+object_superiorBed				高级床($850)
 
 
 object_doortimer				门禁定时器
@@ -2327,26 +2327,7 @@ targettingfood_required	需要的伙食：*X
 targettingfood_ready	准备好的伙食：*X
 targettingfood_cooked	烹制中的伙食：*X
 
-roomgrading	牢房品质评级
-roomgrading_cell_roomsize	房间面积至少 *X ㎡
-roomgrading_cell_cleanliness	清洁度 *X% 以上
-roomgrading_cell_outsidewindow	户外窗户
-roomgrading_cell_item	物品: *X
 
-roomgrading_dormitory_roomsize	人均牢房面积至少 *X ㎡
-roomgrading_dormitory_cleanliness	清洁度高于 *X%
-roomgrading_dormitory_outsidewindow	每8个囚犯1个朝着户外的窗
-roomgrading_dormitory_item	物品: 每4个囚犯1个 *X
-
-roomgrading_sharedcell_roomsize	人均牢房面积至少 *X ㎡
-roomgrading_sharedcell_cleanliness	清洁度高于 *X%
-roomgrading_sharedcell_outsidewindow	朝着户外的窗
-roomgrading_sharedcell_item	物品: 每4个囚犯1个 *X
-
-roomgrading_result	等级 *X
-roomgrading_currentoccupant	此牢房的囚犯有权使用等级 *X 的牢房
-roomgrading_unoccupied	未指派
-roomgrading_shared_occupuants	目前居住者: *X / *Y
 
 weathermap_temperature_title	温度
 weathermap_temperature_text	*C℃=*F℉
@@ -2521,25 +2502,25 @@ adviser_deathrowelectricityb_6	延长附近电缆以覆盖监狱区域。
 
 objective_deathrow_cellpower	给 房间 提供电力供应
 
-adviser_deathrow_connectchair_1	灯具不是唯一需要电力的东西。新的电椅也需要电力。
-adviser_deathrow_connectchair_2	用电缆将行刑设施连接到电网。
-adviser_deathrow_connectchair_3	电椅本身是一件特种电器。它需要专属电线。\n你需要把它直接连接到主电缆上。
+adviser_deathrow_connectChair_1	灯具不是唯一需要电力的东西。新的电椅也需要电力。
+adviser_deathrow_connectChair_2	用电缆将行刑设施连接到电网。
+adviser_deathrow_connectChair_3	电椅本身是一件特种电器。它需要专属电线。\n你需要把它直接连接到主电缆上。
 
-objective_deathrow_chairpower	给 电椅 提供电力供应
+objective_deathrow_Chairpower	给 电椅 提供电力供应
 objective_deathrow_condemnedcellpower	给 牢房 提供电力供应
 
-adviser_deathrow_testchair_1	我们就快要完成了。\n在启用前我们至少要测试新的行刑室一次。
-adviser_deathrow_testchair_2	我要将它打开几秒钟，以确保一切正常。
-adviser_deathrow_testchair_3	呃，不起作用。看来我们耗电过多，导致发电站跳闸了。\n整个监狱陷入了黑暗。
-adviser_deathrow_testchair_4	我们需要更多电力来满足电椅的用电尖峰。
-adviser_deathrow_testchair_5	首先我们需要恢复电力。需要进行两步操作：
-adviser_deathrow_testchair_5b	点击发电站，然后在弹出的菜单中选择“开机”。
-adviser_deathrow_testchair_6	然后再建立三个电容器，让我们有足够的功率为电椅供电。
-adviser_deathrow_testchair_7	完成之后，点击电椅，并在菜单中选择“开机”以测试它。
+adviser_deathrow_testChair_1	我们就快要完成了。\n在启用前我们至少要测试新的行刑室一次。
+adviser_deathrow_testChair_2	我要将它打开几秒钟，以确保一切正常。
+adviser_deathrow_testChair_3	呃，不起作用。看来我们耗电过多，导致发电站跳闸了。\n整个监狱陷入了黑暗。
+adviser_deathrow_testChair_4	我们需要更多电力来满足电椅的用电尖峰。
+adviser_deathrow_testChair_5	首先我们需要恢复电力。需要进行两步操作：
+adviser_deathrow_testChair_5b	点击发电站，然后在弹出的菜单中选择“开机”。
+adviser_deathrow_testChair_6	然后再建立三个电容器，让我们有足够的功率为电椅供电。
+adviser_deathrow_testChair_7	完成之后，点击电椅，并在菜单中选择“开机”以测试它。
 
 objective_deathrow_poweron	重新开启发电站。\n(点击发电站，然后在菜单中选择“开机”)
 objective_deathrow_expandpower	用3个新电容器来扩建发电站
-objective_deathrow_chairworking	再次测试电椅(点击，然后选择“开机”)
+objective_deathrow_Chairworking	再次测试电椅(点击，然后选择“开机”)
 
 adviser_deathrow_execution_1	干得好。我想我们完工了。
 adviser_deathrow_execution_2	现在发生的事情就不归我们管了。\n我们干得很专业，这在我们这一行是非常重要的。
@@ -3264,8 +3245,7 @@ object_canteenSign	标识（食堂）
 object_showerSign	标识（淋浴间）
 object_armourySign	标识（枪械库）
 
-object_windowclassy	高级窗户
-object_windowclassyLarge	高级窗户（大型）
+
 
 object_psychiatrist	精神科医生
 object_orderly	护理人员
@@ -3370,8 +3350,7 @@ buildtoolbar_popup_mat_blueclassywall	在地基上建造高级墙壁，以创建
 buildtoolbar_popup_mat_burgundyclassywall	在地基上建造高级墙壁，以创建新的员工区域或房间。
 buildtoolbar_popup_mat_greenclassywall	在地基上建造高级墙壁，以创建新的员工区域或房间。
 
-buildtoolbar_popup_obj_windowclassy	让外观看起来远好于实际状态。
-buildtoolbar_popup_obj_windowclassyLarge	让外观看起来远好于实际状态。
+
 
 buildtoolbar_popup_staff_psychiatrist	一名高级员工，定期为精神病囚犯提供咨询服务。\n一旦监狱中设置了心理咨询方案，精神科医生便会定期提供一对一咨询服务，以帮助安抚精神病囚犯。\n如果有很多精神病囚犯，应该聘用一些精神科医生来帮助他们。确保每位精神科医生都有自己的办公室。
 
@@ -3976,45 +3955,7 @@ customSector_subtitle	此安全区域允许下列行为：
 # Room Grading
 # =============================================================================
 
-roomgrading_messaging	升级此房间也将提升此安全区域等级。
-roomGrading_prisonerTransfer	安装“批准移送”DLC 并在“地图设置”菜单中打开“囚犯移送”选项后，升级才会激励囚犯。
 
-roomgrading_Cell_BadWalls	[*E] 四周墙壁摇摇欲坠
-roomgrading_Cell_OutsideWindow_Large	[*E] *Y 大型窗户
-roomgrading_Cell_HasWindow_None	[*E] 无窗户
-roomgrading_Dormitory_BadWalls	[*E] 四周墙壁摇摇欲坠
-roomgrading_Dormitory_Mattress	[*E] 大多数床质量较差
-roomgrading_Dormitory_HasWindow_None	[*E] 无窗户
-roomgrading_Canteen_RoomSize	[*E] 房间面积至少 *X ㎡
-roomgrading_Canteen_Item	[*E] 物品: *X
-roomgrading_Canteen_MealQuality	[*E] 伙食份量：中
-roomgrading_Canteen_MealQuality_High	[*E] 伙食份量：高
-roomgrading_Canteen_MealQuality_Low	[*E] 伙食份量：低
-roomgrading_Canteen_MealQuality_None	[*E] 伙食份量：无
-roomgrading_Canteen_MealVariety	[*E] 伙食花样：中
-roomgrading_Canteen_MealVariety_High	[*E] 伙食花样：高
-roomgrading_Canteen_MealVariety_Low	[*E] 伙食花样：低
-roomgrading_Canteen_MealVariety_None	[*E] 伙食花样：无
-roomgrading_Canteen_HasWindow_None	[*E] 无窗户
-roomgrading_Yard_RoomSize	[*E] 房间面积至少 *X ㎡
-roomgrading_Yard_RoomSizeLess	[*E] 房间面积不到 *X ㎡
-roomgrading_Yard_Item	[*E] 物品: *X
-roomgrading_Yard_Floor	[*E] 地板: *X（*Y% 以上）
-roomgrading_Yard_MultiItems	[*E] 包含上述物品中的 *X 种
-roomgrading_Yard_Floor_Quantity	[*E] 地板数量至少 *X
-roomgrading_CommonRoom_RoomSize	[*E] 房间面积至少 *X ㎡
-roomgrading_CommonRoom_Item	[*E] 物品: *X
-roomgrading_Gymnasium_RoomSize	[*E] 房间面积至少 *X ㎡
-roomgrading_Gymnasium_OutsideWindow	[*E] *Y 室外窗户
-roomgrading_Gymnasium_Item	[*E] 物品: *X
-roomgrading_Gymnasium_HasWindow_None	[*E] 无窗户
-roomgrading_Classroom_RoomSize	[*E] 房间面积至少 *X ㎡
-roomgrading_Classroom_Item	[*E] 物品: *X
-roomgrading_Classroom_OutsideWindow	[*E] 户外窗户至少 *Y 个
-
-buildtoolbar_improvement	- 提升一个 *R 的等级
-buildtoolbar_decreased	- 降低一个 *R 的等级
-buildtoolbar_improvement_windows	（面向外部时）
 
 buildtoolbar_planning_autofoundation	自动地基
 
@@ -4636,7 +4577,7 @@ buildtoolbar_popup_uts_Battery	储存变压器转换后的多余电能，以供�
 buildtoolbar_popup_uts_PowerExportMeter	能够将储存的电能送回至电网以获取经济效益的设备，该设备必须连接至合适的变压器。
 buildtoolbar_popup_obj_PracticeSolarPanel	放置在一张小桌子上的单个太阳能电池板，可最多供 4 名囚犯在工坊内进行太阳能电池板发展项目。\n\n囚犯在使用的过程中会损坏太阳能电池板\n但你只需要等待自动修复
 
-buildtoolbar_popup_obj_object_compostbin	用于改造食物和有机废物，制成可使用的肥料。
+
 
 buildtoolbar_popup_obj_BarnDoor	现在，不用再纠结囚犯是不是谷仓里长大的野蛮人了。
 buildtoolbar_popup_obj_WhitePicketGate	能为花园遮风挡雨，但用来看管囚犯效果有限。
@@ -5459,14 +5400,14 @@ material_SellFlooring	出售地板
 object_AdvancedAutoGatherer	高级自动收集器
 object_farmer	农民
 object_OrganicWaste	有机废物
-object_CompostBin	堆肥垃圾桶
+
 object_DumpObject	【丢弃物品】
 
 
 
 
 buildtoolbar_popup_obj_Shed	储存所有种子、工具和其他农业道具的区域。该区域还有可用于初级灌溉的水龙头。
-buildtoolbar_popup_obj_CompostBin	用于改造食物和有机废物，制成可使用的肥料。
+
 
 buildtoolbar_popup_obj_BowtieBandit	衣冠楚楚的小伙子。
 buildtoolbar_popup_obj_Shepherd	谁是聪明的小女孩！？
@@ -5546,7 +5487,7 @@ objective_HelpGreenEnergy_child_1_description	可使用三种新型绿色电源�
 objective_HelpNarcoticProduction_child_1_description	满足特定条件的囚犯能够自己酿酒。\n\n首先。他们将从农业房间、厨房区域或任何能接近的自动贩卖机中获取酿酒原料。\n\n接着，到了晚上，他们会在自己的牢房内用这些原料进行酿制，然后将酿制中的酒储存几日以待其发酵。
 reports_farmingpolicytitle	农业政策
 report_policy_categoryTooltip_PrisonerTransfer	传奇
-roomgrading_has_pa_system	[*X] 在牢房区域中设有广播系统
+
 buildtoolbar_popup_mat_Water	创建溪流、河流等无法穿越的水域。
 object_walkwaystairs	步道楼梯（建造中）
 buildtoolbar_popup_obj_walkwaystairs	在高耸的步道（城墙步道）旁放置，以便警卫前往步道并在上方巡逻。
@@ -6727,7 +6668,7 @@ codex_new_theUndead	活尸来了！
 codex_tooltip_theUndead	尸潮爆发？这可不是你所熟知的病毒所致，但愿你能从根源上消灭病毒。\n\n禁用尸潮爆发，让死者安息。\n\n爆发程度低：处理难度低，易于应对。\n\n爆发程度中：挑战性略微增加。\n\n爆发程度高：噩梦模式，活尸属性值最高，数量增长最快。此外，活尸能够在攻击无力自卫的单位时自我疗愈。
 event_infect_entities	有些犯人的举止看起来有点怪异，他们的行动速度变慢，目光呆滞地凝视前方，而且他们身上开始出血。
 equipment_Crowbar	撬棍
-equipment_BarbedWireBat	缠绕着带刺铁丝的球棒
+equipment_BarBedWireBat	缠绕着带刺铁丝的球棒
 equipment_ModifiedHandgun	改装过的手枪
 equipment_ModifiedAssaultRifle	改装过的突击步枪
 equipment_ChainsawWeapon	链锯
@@ -6795,12 +6736,6 @@ prisonerTracking_Misconduct	不当行为：
 buildtoolbar_popup_help_PrisonerTracking_4	^提示
 graph_axis_EscapedUndead	活尸已脱逃
 d11_nearFuture_advisor_onboarding	考虑给不那么听话的囚犯戴上追踪器。这样，我们就可以在警卫室对他们进行监控。
-object_TrackingMonitor	追踪监视器
-buildtoolbar_popup_uts_TrackingMonitor	追踪清单所需物品。\n\n由警卫在警卫室里进行操作，可监视任何佩戴追踪器的囚犯。连接路由器以扩展监控范围。
-object_HealthMonitor	健康监视器
-buildtoolbar_popup_uts_HealthMonitor	追踪清单所需物品。\n\n如果囚犯佩戴了追踪器，你就可以跟踪他们的健康和目前状态。安装在医务室内。
-object_Router	路由器
-buildtoolbar_popup_uts_Router	追踪清单所需物品。\n\n连上追踪监视器之后，便可追踪有效范围内所有配备了追踪器的囚犯。有效范围可以单独设置，也可以通过追踪清单进行全覆盖设置。
 
 object_advancedsearchlight	高级探照灯
 buildtoolbar_popup_uts_advancedsearchlight	一种先进的监控设备，利用面部识别来侦测越狱行为和防止囚犯越狱。\n\n该物品必须与监控监视器相连才能正常工作
@@ -6869,12 +6804,8 @@ finance_cost_stunbaton	装备：电击棍
 d11_stun_baton_caption	装备电击棍
 d11_stun_baton_tooltip	选中该选项后，你的警卫将配备电击棒。在约束不守规矩的囚犯时，这可以为他们提供额外支持。配置该选项需要一个枪械库，每名警卫的装备成本为 *X 元。除普通警卫外，防暴警卫也将配备这种新型警棍，但他们的劳务成本不会增加。
 dlc_name_futureTech	Future Tech Pack
-roomgrading_Cell_HasGlassWalls	[*E]四周装有玻璃墙
-roomgrading_Dormitory_HasGlassWalls	[*E]四周装有玻璃墙
-roomgrading_Canteen_HasGlassWalls	[*E]四周装有玻璃墙
-roomgrading_Gymnasium_HasGlassWalls	[*E]四周装有玻璃墙
-roomgrading_CommonRoom_HasGlassWalls	[*E]四周装有玻璃墙
-roomgrading_Classroom_HasGlassWalls	[*E]四周装有玻璃墙
+
+
 trackingMenu_unequipPrisoner	解除囚犯装备
 d11_staffalert_title_ArmouryPlaced	电击棍
 d11_staffalert_summary_ArmouryPlaced	如果你觉得警卫需要更多“电击震慑”，可以启用监狱政策来为他们配备电击棍
@@ -7017,7 +6948,7 @@ profiler_Modetotal	总计
 profiler_total	总计
 profiler_glfinishcaption	glFinish
 profiler_reset	重置
-#-
+#-===========================================================
 #+===============================声音工具===============================
 soundchannelviewer_title	声道
 soundeditor_title	声音编辑器(F5)
@@ -7054,7 +6985,7 @@ sounddspeditor_title	DSP编辑器
 samplebankeditor_title	音色库编辑器
 samplebankeditor_addsample	添加声音
 samplebank	(音色库)
-#-
+#-===========================================================
 
 
 
@@ -7400,7 +7331,7 @@ objective_grant_furnituremanufacturing_forestrys 一共建造5个 林场
 objective_grant_FurnitureManufacturing_gardener 雇用4名 园丁
 objective_grant_furnituremanufacturing_table	安装2张 木工桌
 objective_grant_furnituremanufacturing_reform	令2个囚犯通过 木工学徒 方案
-objective_grant_furnituremanufacturing_bed	制作10张 高级床
+objective_grant_furnituremanufacturing_Bed	制作10张 高级床
 
 objective_grant_reducestaffstress				员工福利行动
 objective_grant_reducestaffstress_description	监狱工会收到报告称，员工过分紧张和过度劳累，\n已经到了失误频发的地步。\n确保类似的问题在你的监狱中不会发生。
@@ -7939,6 +7870,12 @@ crisisSector_DeathRowOnly	死刑犯专区
 
 
 
+
+
+
+
+
+
 #+===============================房间===============================
 room_none	无
 room_clearrooms	清除房间
@@ -7969,6 +7906,12 @@ buildtoolbar_popup_room_execution	处决死刑犯的区域。\n\n见证人大约
 room_kitchen	厨房
 buildtoolbar_popup_room_kitchen	厨师为囚犯烹制食物的区域。\n\n厨师会提前4小时开始准备食物。\n厨师会从卸货区把食材搬到冰柜中。\n\n[报告/政策]中，伙食的份量和种类越多则消耗的食材越多，需要的厨师也越多。\n相应的好处是产生并维持囚犯的“吃得不错”状态，还提高监狱评级的“健康”指标。\n\n如果启用“天气与温度”，厨房会产生可观的热量。\n\n工作空间：12平米/每名囚犯
 
+room_laundry	洗衣房
+buildtoolbar_popup_room_laundry	脏衣服在此处清洗和熨烫，然后重新分发出去。\n\n每个牢房区域最好有各自的洗衣房。\n1台洗衣机+2个熨衣板+4个洗衣篮+5个囚犯，\n可满足64个囚犯的衣物需求。\n\n相关需求：衣服\n工作空间：4平米/每名囚犯
+
+room_cleaningcupboard	清洁用品间
+buildtoolbar_popup_room_cleaningcupboard	存放清洁用具的地方，囚犯会使用房间内的漂白剂打扫监狱。\n\n若能快速进入各个牢房，打扫效率将大大提高。\n\n相关需求：环境\n工作空间：4平米/每名囚犯
+
 room_workshop	工坊
 buildtoolbar_popup_room_workshop	囚犯们在这里制作物品。\n\n出售产品可能成为监狱的重要收入。\n囚犯可能会在这里得到简易的武器与工具。\n\n工作空间：12平米/每名囚犯
 
@@ -7980,12 +7923,6 @@ buildtoolbar_popup_room_mailroom	把收到的信件分拣后转送给囚犯。\n
 
 room_shop	商店
 buildtoolbar_popup_room_shop	商店让您的囚犯有地方花费来之不易的金钱，以快速满足一些需求，还能给监狱创造收入。\n\n · 棕色=食物\n · 蓝色=卫生\n · 绿色=娱乐\n\n相关需求：卫生/食物/舒适/奢侈品\n工作空间：12平米/每名囚犯
-
-room_laundry	洗衣房
-buildtoolbar_popup_room_laundry	脏衣服在此处清洗和熨烫，然后重新分发出去。\n\n每个牢房区域最好有各自的洗衣房。\n1台洗衣机+2个熨衣板+4个洗衣篮+5个囚犯，\n可满足64个囚犯的衣物需求。\n\n相关需求：衣服\n工作空间：4平米/每名囚犯
-
-room_cleaningcupboard	清洁用品间
-buildtoolbar_popup_room_cleaningcupboard	存放清洁用具的地方，囚犯会使用房间内的漂白剂打扫监狱。\n\n若能快速进入各个牢房，打扫效率将大大提高。\n\n相关需求：环境\n工作空间：4平米/每名囚犯
 
 room_forestry	林场
 buildtoolbar_popup_room_forestry	种树的区域，能够产出原木或让囚犯感受自然。\n\n树苗自动采购，园丁在林场种树后5天长大，\n工人将其砍伐后得到原木。\n沙土地面会导致成长缓慢。\n\n相关需求：自由
@@ -8002,14 +7939,14 @@ buildtoolbar_popup_room_canteen	囚犯的进餐区域。\n\n由于“吃饭”�
 room_shower	淋浴间
 buildtoolbar_popup_room_shower	囚犯可在此保持卫生。\n\n可强制囚犯在”淋浴“时间来此。\n囚犯也会在空闲时间依据自身需求使用淋浴设备。\n记得在门口或花洒下方铺设排水渠。\n\n相关需求：卫生
 
-room_yard	庭院
-buildtoolbar_popup_room_yard	让囚犯们每天晒一会太阳。\n\n可强制囚犯在”庭院防风“时间来此。\n囚犯会在需要锻炼时主动来到这里。\n可以安装各种物品以满足不同需求。\n\n相关需求：自由/锻炼
-
 room_commonroom	公共房间
 buildtoolbar_popup_room_commonroom	给囚犯一些自由时间让其放松。\n\n可以安装各种物品来满不同需求。
 
 room_gymnasium	健身房
 buildtoolbar_popup_room_gymnasium	这里是囚犯们锻炼身体、发泄攻击性的地方，也是用传统的方式解决分歧的地方。\n\n相关需求：积累”卫生“需求
+
+room_yard	庭院
+buildtoolbar_popup_room_yard	让囚犯们每天晒一会太阳。\n\n可强制囚犯在”庭院防风“时间来此。\n囚犯会在需要锻炼时主动来到这里。\n可以安装各种物品以满足不同需求。\n\n相关需求：自由/锻炼
 
 room_paroleroom	假释听证室
 buildtoolbar_popup_room_paroleroom	囚犯的命运将在这房间里决定。\n\n当囚犯服刑达到总刑期的50%和75%时，各可申请一次假释。\n死刑犯的上诉也在这里进行。\n\n最好有额外的警备人员，假释被驳回时囚犯可能会十分激动。\n如果囚犯提前释放且没有再犯罪，会得到非常可观的奖励。
@@ -8113,7 +8050,7 @@ buildtoolbar_popup_room_TrainingRoom	供员工学习新技能的地方。
 room_PaddedCell	软垫牢房
 buildtoolbar_popup_room_paddedcell	适用于精神病囚犯，软垫墙壁能产生安抚效果。
 
-room_PaddedHoldingCell	软垫拘留牢房
+room_PaddedHoldingCell	软垫拘留室
 buildtoolbar_popup_room_paddedholdingcell	永久性软垫牢房准备好之前，新来的精神病囚犯会放置在这里。
 
 room_PaddedSolitary	软垫禁闭室
@@ -8146,39 +8083,126 @@ buildtoolbar_popup_room_sharedcell	一个多人牢房。至多能够容纳8个�
 
 #-===========================================================
 
+#+===============================房间品质===============================
+roomgrading	牢房品质评级
+
+roomgrading_prisonerTransfer	安装<DLC:批准移送>并在“地图设置”菜单中打开“囚犯移送”选项后，升级才会激励囚犯。
+roomgrading_messaging	升级此房间也将提升此安全区域等级。
+roomgrading_result	等级 *X
+roomgrading_currentoccupant	此牢房的囚犯有权使用等级 *X 的牢房
+roomgrading_unoccupied	未指派
+roomgrading_shared_occupuants	目前居住者: *X / *Y
+buildtoolbar_improvement	- 提升一个 *R 的等级
+buildtoolbar_decreased	- 降低一个 *R 的等级
+buildtoolbar_improvement_windows	（面向外部时）
+roomgrading_has_pa_system	[*X] 区域中设有广播系统
+
+roomgrading_cell_roomsize	[*E] 房间面积至少 *X ㎡
+roomgrading_cell_cleanliness	[*E] 清洁度 *X% 以上
+roomgrading_cell_outsidewindow	[*E] 户外窗户
+roomgrading_cell_HasWindow_None	[*E] 无窗户
+roomgrading_cell_OutsideWindow_Large	[*E] *Y 大型窗户
+roomgrading_cell_item	[*E] 物品: *X
+roomgrading_cell_MultiItems	[*E] 包含 *X 个上述物品
+roomgrading_cell_BadWalls	[*E] 四周墙壁摇摇欲坠
+roomgrading_Cell_HasGlassWalls	[*E] 四周装有玻璃墙
+
+roomgrading_Dormitory_roomsize	[*E] 人均牢房面积至少 *X ㎡
+roomgrading_Dormitory_cleanliness	[*E] 清洁度高于 *X%
+roomgrading_Dormitory_outsidewindow	[*E] 每8个囚犯1个朝着户外的窗
+roomgrading_Dormitory_OutsideWindow_Large	[*E] *Y 大型窗户
+roomgrading_Dormitory_BadWalls	[*E] 半数墙壁摇摇欲坠
+roomgrading_Dormitory_Mattress	[*E] 半数床铺质量糟糕
+roomgrading_Dormitory_HasWindow_None	[*E] 无窗户
+roomgrading_Dormitory_item	[*E] 物品: 每4名囚犯拥有 *X
+roomgrading_Dormitory_MultiItems	[*E] 包含 *X 个上述物品
+roomgrading_Dormitory_HasGlassWalls	[*E] 四周装有玻璃墙
+
+roomgrading_sharedcell_roomsize	[*E] 人均牢房面积至少 *X ㎡
+roomgrading_sharedcell_cleanliness	[*E] 清洁度高于 *X%
+roomgrading_sharedcell_outsidewindow	[*E] 户外窗户
+roomgrading_sharedcell_item	[*E] 物品: 每4名囚犯拥有 *X
+
+roomgrading_Canteen_RoomSize	[*E] 房间面积至少 *X ㎡
+roomgrading_Canteen_Item	[*E] 物品: *X
+roomgrading_Canteen_MealQuality	[*E] 伙食份量：中
+roomgrading_Canteen_MealQuality_High	[*E] 伙食份量：高
+roomgrading_Canteen_MealQuality_Low	[*E] 伙食份量：低
+roomgrading_Canteen_MealQuality_None	[*E] 伙食份量：无
+roomgrading_Canteen_MealVariety	[*E] 伙食花样：中
+roomgrading_Canteen_MealVariety_High	[*E] 伙食种类：高
+roomgrading_Canteen_MealVariety_Low	[*E] 伙食种类：低
+roomgrading_Canteen_MealVariety_None	[*E] 伙食花样：无
+roomgrading_Canteen_HasWindow_None	[*E] 无窗户
+roomgrading_Canteen_HasGlassWalls	[*E] 四周装有玻璃墙
+roomgrading_Canteen_OutsideWindow_Large	[*E] *Y 大型窗户
+
+roomgrading_Yard_RoomSize	[*E] 房间面积至少 *X ㎡
+roomgrading_Yard_RoomSizeLess	[*E] 房间面积不到 *X ㎡
+roomgrading_Yard_Item	[*E] 物品: *X
+roomgrading_Yard_Floor	[*E] 地板: *X（*Y% 以上）
+roomgrading_Yard_MultiItems	[*E] 包含 *X 个上述物品
+roomgrading_Yard_Floor_Quantity	[*E] 地板数量至少 *X
+
+roomgrading_CommonRoom_RoomSize	[*E] 房间面积至少 *X ㎡
+roomgrading_CommonRoom_Item	[*E] 物品: *X
+roomgrading_CommonRoom_HasGlassWalls	[*E] 四周装有玻璃墙
+roomgrading_CommonRoom_OutsideWindow_Large	[*E] *Y 大型窗户
+roomgrading_CommonRoom_HasWindow_None	[*E] 无窗户
+roomgrading_CommonRoom_MultiItems	[*E] 包含 *X 个上述物品
+
+roomgrading_Gymnasium_RoomSize	[*E] 房间面积至少 *X ㎡
+roomgrading_Gymnasium_OutsideWindow	[*E] *Y 室外窗户
+roomgrading_Gymnasium_Item	[*E] 物品: *X
+roomgrading_Gymnasium_HasWindow_None	[*E] 无窗户
+roomgrading_Gymnasium_HasGlassWalls	[*E] 四周装有玻璃墙
+roomgrading_Gymnasium_OutsideWindow_Large	[*E] *Y 大型窗户
+roomgrading_Gymnasium_MultiItems	[*E] 包含 *X 个上述物品
+
+roomgrading_Classroom_RoomSize	[*E] 房间面积至少 *X ㎡
+roomgrading_Classroom_Item	[*E] 物品: *X
+roomgrading_Classroom_OutsideWindow	[*E] 户外窗户至少 *Y 个
+roomgrading_Classroom_HasGlassWalls	[*E]四周装有玻璃墙
+roomgrading_Classroom_OutsideWindow_Large	[*E] *Y 大型窗户
+roomgrading_Classroom_HasWindow_None	[*E] 无窗户
+
+#-===========================================================
+
+
 #+===============================物品===============================
 
 #+==============================照明
 
-object_light					灯
-buildtoolbar_popup_obj_light	确保你在晚上也能看清囚犯们。
+object_Light					灯
+buildtoolbar_popup_obj_Light	确保你在晚上也能看清囚犯们。
 object_SolarLight	灯\n （太阳能） 
 buildtoolbar_popup_obj_SolarLight	晚间自动开启的自供电太阳能灯。
-object_walllight	壁灯
-buildtoolbar_popup_obj_walllight	地堡风格灯，可以安在墙壁上。
+object_WallLight	壁灯
+buildtoolbar_popup_obj_WallLight	地堡风格灯，可以安在墙壁上。
 object_SolarWallLight	壁灯\n（太阳能）
 buildtoolbar_popup_obj_SolarWallLight	一只可安装于墙壁上的太阳能灯，在夜间会自动开启。
-object_lamp	落地灯
-buildtoolbar_popup_obj_lamp	一盏华丽的落地灯，非常适合办公室和员工区域。
-object_floodlight	泛光灯
-buildtoolbar_popup_obj_floodlight	高大室外灯，可以照亮庭院等大型区域。
-object_streetlamp	路灯
-buildtoolbar_popup_obj_streetlamp	照亮大道和小径。
-object_searchlight	探照灯
-buildtoolbar_popup_obj_searchlight	可来回探照的灯具，在夜晚时开启。可帮助您发现黑暗中行为不端的囚犯。
 
-object_Chandelier	豪华吊灯
-buildtoolbar_popup_obj_Chandelier	一盏高品质的吊灯。
+object_FloodLight	泛光灯
+buildtoolbar_popup_obj_FloodLight	高大室外灯，可以照亮庭院等大型区域。
+object_StreetLamp	路灯
+buildtoolbar_popup_obj_StreetLamp	照亮大道和小径。
+object_SearchLight	探照灯
+buildtoolbar_popup_obj_SearchLight	可来回探照的灯具，在夜晚时开启。可帮助您发现黑暗中行为不端的囚犯。
+
+object_Lamp	豪华落地灯
+buildtoolbar_popup_obj_Lamp	一盏高品质的落地灯，非常适合办公室和员工区域。
+object_ChandeLier	豪华吊灯
+buildtoolbar_popup_obj_ChandeLier	一盏高品质的吊灯，非常适合办公室和员工区域。
 object_OrnateLantern	豪华壁灯
-buildtoolbar_popup_obj_OrnateLantern	一盏高品质的壁灯。
+buildtoolbar_popup_obj_OrnateLantern	一盏高品质的壁灯，非常适合办公室和员工区域。
 
 #-========================
 #+==============================窗户
 
-object_window					牢窗
-buildtoolbar_popup_obj_window	可以见到一缕阳光。\n如果启用“天气与温度”，窗户会影响室温。
-object_windowlarge				牢窗（大）
-buildtoolbar_popup_obj_windowlarge	可以见到充沛的阳光。\n如果启用“天气与温度”，窗户会影响室温。
+object_Window					牢窗
+buildtoolbar_popup_obj_Window	可以见到一缕阳光。\n如果启用“天气与温度”，窗户会影响室温。
+object_WindowLarge				牢窗（大）
+buildtoolbar_popup_obj_WindowLarge	可以见到充沛的阳光。\n如果启用“天气与温度”，窗户会影响室温。
 object_GlassWindow	玻璃窗
 buildtoolbar_popup_obj_GLassWindow	可以见到一缕阳光。
 object_GlassWindowLarge	玻璃窗（大）
@@ -8189,7 +8213,10 @@ object_WoodenWindowLarge	木窗（大）
 buildtoolbar_popup_obj_WoodenWindowLarge	可以见到充沛的阳光。
 object_StainGlassWindow	彩绘玻璃窗
 buildtoolbar_popup_obj_StainGlassWindow	让外观看起来远好于实际状态。
-
+object_WindowClassy	高级窗户
+buildtoolbar_popup_obj_WindowClassy	让外观看起来远好于实际状态。
+object_WindowClassyLarge	高级窗户（大）
+buildtoolbar_popup_obj_WindowClassyLarge	让外观看起来远好于实际状态。
 #-========================
 #+==============================床
 
@@ -8200,12 +8227,17 @@ object_Mattress	海绵床垫
 buildtoolbar_popup_obj_Mattress	肮脏发霉的海绵床垫散发着臭味，但好歹比地板好一点。\n\n需求：\n+ 睡眠 0.12\n+ 舒适(坐) 0.09\n+ 舒适(睡) 0.12
 object_OldBed	旧床
 buildtoolbar_popup_obj_OldBed	老式监狱床铺，比海绵床垫好一些。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
-object_bunkbed					双层床
-buildtoolbar_popup_obj_bunkbed 让打鼾声合奏的乐器，狭隘的空间让人无法正常坐着，只有放在宿舍和拘留室才有意义。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
-object_bed						单人床
-buildtoolbar_popup_obj_bed	不太软也不太硬，刚刚好。好吧，其实又硬又小。\n\n需求：\n+ 睡眠 0.18\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.18
+object_BunkBed					双层床
+buildtoolbar_popup_obj_bunkBed 让打鼾声合奏的乐器，狭隘的空间让人无法正常坐着，只有放在宿舍和拘留室才有意义。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
+object_Bed						单人床
+buildtoolbar_popup_obj_Bed	不太软也不太硬，刚刚好。好吧，其实又硬又小。\n\n需求：\n+ 睡眠 0.18\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.18
 object_ComfyBed	舒适的床
 buildtoolbar_popup_obj_ComfyBed	配有记忆海绵床垫的豪华大床，可提供最好的夜间睡眠质量。\n\n需求：\n+ 睡眠 0.30\n+ 舒适(坐) 0.20\n+ 舒适(睡) 0.40
+
+object_CampBed	行军床
+buildtoolbar_popup_obj_CampBed	这床用着比看起来舒服。
+object_NettedBed	行军床（网状）
+buildtoolbar_popup_obj_NettedBed	在热带气候生活的必需品。舒适度不高，但可以驱赶蚊虫。
 
 object_CoffinBed	棺床
 buildtoolbar_popup_obj_CoffinBed	造型怪异的床。
@@ -8214,70 +8246,72 @@ buildtoolbar_popup_obj_CoffinBed	造型怪异的床。
 #+==============================桌椅柜
 
 #+组合
-object_table					长桌
-buildtoolbar_popup_obj_table	跟长凳很搭，一些房间需要它放置物品。
-object_bench					长凳
-buildtoolbar_popup_obj_bench	跟长桌绝配,可以坐4个人。\n\n需求：\n+ 舒适 0.20
-object_smalltable	短桌
-buildtoolbar_popup_obj_smalltable	长桌的缩小版。
-object_smallbench	短凳
-buildtoolbar_popup_obj_smallbench	长凳的缩小版，可以坐2个人。\n\n需求：\n+ 舒适 0.20
-object_woodenTable	木桌
-buildtoolbar_popup_obj_woodenTable	搭配木凳会很棒
-object_woodenStool	木凳
-buildtoolbar_popup_obj_woodenStool	搭配木桌会很棒。\n\n需求：\n+ 舒适 0.30
-object_oaktable	橡木桌
-buildtoolbar_popup_obj_oaktable	可以在这里吃饭。
-object_oakbench	橡木凳
-buildtoolbar_popup_obj_oakbench	搭配橡木桌会很棒，可以坐3个人。\n\n需求：\n+ 舒适 0.30
-object_chestOfDrawers	抽屉柜
-buildtoolbar_popup_obj_chestOfDrawers	一个木制抽屉柜。
+object_Table					长桌
+buildtoolbar_popup_obj_Table	跟长凳很搭，一些房间需要它放置物品。
+object_Bench					长凳
+buildtoolbar_popup_obj_Bench	跟长桌绝配,可以坐4个人。\n\n需求：\n+ 舒适 0.20
+object_SmallTable	短桌
+buildtoolbar_popup_obj_SmallTable	长桌的缩小版。
+object_SmallBench	短凳
+buildtoolbar_popup_obj_SmallBench	长凳的缩小版，可以坐2个人。\n\n需求：\n+ 舒适 0.20
+
+object_WoodenTable	木桌
+buildtoolbar_popup_obj_WoodenTable	搭配木凳会很棒
+object_WoodenStool	木凳
+buildtoolbar_popup_obj_WoodenStool	搭配木桌会很棒。\n\n需求：\n+ 舒适 0.30
+object_OakTable	橡木桌
+buildtoolbar_popup_obj_OakTable	可以在这里吃饭。
+object_OakBench	橡木凳
+buildtoolbar_popup_obj_OakBench	搭配橡木桌会很棒，可以坐3个人。\n\n需求：\n+ 舒适 0.30
+
+object_ChestOfDrawers	抽屉柜
+buildtoolbar_popup_obj_ChestOfDrawers	一个木制抽屉柜。
 object_SwivelChair	办公椅
 buildtoolbar_popup_obj_SwivelChair	普通的转椅，可摆放在办公桌的中央。\n\n需求：\n+ 舒适 0.30
-object_officedesk	办公桌
-buildtoolbar_popup_obj_officedesk	你的管理人员需要写东西。给他们提供一个光洁的办公桌吧。\n\n需求：\n+ 文化 0.10
-object_filingcabinet			档案柜
-buildtoolbar_popup_obj_filingcabinet	你的管理人员需要把他们写的东西细心整理好。
+object_OfficeDesk	办公桌
+buildtoolbar_popup_obj_OfficeDesk	你的管理人员需要写东西。给他们提供一个光洁的办公桌吧。\n\n需求：\n+ 文化 0.10
+object_FilingCabinet			档案柜
+buildtoolbar_popup_obj_FilingCabinet	你的管理人员需要把他们写的东西细心整理好。
 object_OfficeChair	豪华办公椅
-buildtoolbar_popup_obj_officeChair	豪华的转椅，供工作人员坐在办公桌中央。\n\n需求：\n+ 舒适 0.30
+buildtoolbar_popup_obj_OfficeChair	豪华的转椅，供工作人员坐在办公桌中央。\n\n需求：\n+ 舒适 0.30
 object_FancyDesk	豪华办公桌
 buildtoolbar_popup_obj_FancyDesk	你的员工需要记录很多信息，给他们提供一个现代化的办公桌吧。
 object_FilingCabinetFancy	豪华档案柜
 buildtoolbar_popup_obj_FilingCabinetFancy	给员工豪华档案柜以兹奖励。
 #-
 #+单椅
-object_chair	椅子（蓝色）
-buildtoolbar_popup_obj_chair	标准的单人座位。\n\n需求：\n+ 舒适 0.30
+object_Chair	椅子（蓝色）
+buildtoolbar_popup_obj_Chair	标准的单人座位。\n\n需求：\n+ 舒适 0.30
 object_ChairYellow	椅子（黄色）
 buildtoolbar_popup_obj_ChairYellow	跟桌子是绝配。\n\n需求：\n+ 舒适 0.30
-object_sofachairsingle			单人沙发\n（蓝色）
-buildtoolbar_popup_obj_sofachairsingle 可以让人舒舒服服地坐一会儿。\n\n需求：\n+ 舒适 0.80
-object_sofachairdouble			宽沙发\n（蓝色）
-buildtoolbar_popup_obj_sofachairdouble 可以让两个人一起坐着。\n\n需求：\n+ 舒适 0.80\n+ 员工舒适 2.00
+
+object_SofaChairsingle			单人沙发\n（蓝色）
+buildtoolbar_popup_obj_SofaChairsingle 可以让人舒舒服服地坐一会儿。\n\n需求：\n+ 舒适 0.80
+object_SofaChairdouble			宽沙发\n（蓝色）
+buildtoolbar_popup_obj_SofaChairdouble 可以让两个人一起坐着。\n\n需求：\n+ 舒适 0.80\n+ 员工舒适 2.00
 object_SofaChairBrown	单人沙发\n（棕色）
 buildtoolbar_popup_obj_SofaChairBrown	一个柔软的沙发，坐在上面很舒服。\n\n需求：\n+ 舒适 0.80
 object_SofaChairDoubleBrown	宽沙发\n（棕色）
 buildtoolbar_popup_obj_SofaChairDoubleBrown	一个大而柔软的沙发，可供两人就座。\n\n需求：\n+ 舒适 0.80
 #-
 #+单桌
-object_schooldesk				课桌
-buildtoolbar_popup_obj_schooldesk 学生的标准座椅。\可以在桌子上写日记与信件。\n\n需求：\n+ 舒适 0.30\n+ 文化 0.20\n+ 自由 0.10
-object_outdoorTable	室外桌
-buildtoolbar_popup_obj_outdoorTable	供囚犯坐在室外吃东西，可以坐6个人。\n\n需求：\n+ 舒适 0.30
-object_parkbench	公园板凳
-buildtoolbar_popup_obj_parkbench	一条室外公园板凳，可以坐3个人。\n\n需求：\n+ 舒适 0.30
+object_SchoolDesk				课桌
+buildtoolbar_popup_obj_SchoolDesk 学生的标准座椅。\可以在桌子上写日记与信件。\n\n需求：\n+ 舒适 0.30\n+ 文化 0.20\n+ 自由 0.10
+
+object_OutdoorTable	室外桌
+buildtoolbar_popup_obj_OutdoorTable	供囚犯坐在室外吃东西，可以坐6个人。\n\n需求：\n+ 舒适 0.30
+object_ParkBench	公园板凳
+buildtoolbar_popup_obj_ParkBench	一条室外公园板凳，可以坐3个人。\n\n需求：\n+ 舒适 0.30
 object_DeckChair	折叠躺椅
 buildtoolbar_popup_obj_DeckChair	在躺椅上享受舒适阳光。\n\n需求：\n+ 舒适 0.30
-object_ovalStaffTable	员工休闲桌
-buildtoolbar_popup_obj_ovalStaffTable	在员工区域搭配椅子会很棒。
+object_OvalStaffTable	员工休闲桌
+buildtoolbar_popup_obj_OvalStaffTable	在员工区域搭配椅子会很棒。
 #-
 #+未验证
 object_MetalStool	金属凳
 buildtoolbar_popup_obj_MetalStool	外观精致的小金属凳。\n\n需求：\n+ 舒适 0.30
-object_DiningChair	餐椅
-buildtoolbar_popup_obj_DiningChair	一把高品质的椅子，可以提高就餐档次。\n\n需求：\n+ 舒适 0.30
-object_leatherchair	皮革椅
-buildtoolbar_popup_obj_leatherchair	搭配皮革沙发。非常适合员工坐下，当然也非常适合囚犯。\n\n需求：\n+ 舒适 0.30
+object_leatherChair	皮革椅
+buildtoolbar_popup_obj_leatherChair	搭配皮革沙发。非常适合员工坐下，当然也非常适合囚犯。\n\n需求：\n+ 舒适 0.30
 object_JungleBench	竹凳
 buildtoolbar_popup_obj_JungleBench	可以坐4给人在上面，和竹桌很搭。\n\n需求：\n+ 舒适 0.30
 #-
@@ -8285,16 +8319,16 @@ buildtoolbar_popup_obj_JungleBench	可以坐4给人在上面，和竹桌很搭�
 #-========================
 #+==============================厨房
 
-object_cooker					炊具
-buildtoolbar_popup_obj_cooker	提供热腾腾的饭菜让囚犯们享受一下。\n\n如果启用“天气与温度”，炊具会产生可观的热量。\n在天冷时，这是好事。但天热时……\n\n如果要在开饭前4小时内准备好食物，建议：\n   炊具数=囚犯数×每顿份量÷25\n如果“吃饭”作息为2小时，那么除数最大可以为40。
-object_fridge					冰柜
-buildtoolbar_popup_obj_fridge	用于存放食材。\n\n1台冰柜可以盛放2箱食材。\n\n建议：\n   冰箱数=囚犯数×每顿份量÷40\n此外，伙食种类很多时，也需要再增多一些冰柜。
+object_Cooker					炊具
+buildtoolbar_popup_obj_Cooker	提供热腾腾的饭菜让囚犯们享受一下。\n\n如果启用“天气与温度”，炊具会产生可观的热量。\n在天冷时，这是好事。但天热时……\n\n如果要在开饭前4小时内准备好食物，建议：\n   炊具数=囚犯数×每顿份量÷25\n如果“吃饭”作息为2小时，那么除数最大可以为40。
+object_Fridge					冰柜
+buildtoolbar_popup_obj_Fridge	用于存放食材。\n\n1台冰柜可以盛放2箱食材。\n\n建议：\n   冰箱数=囚犯数×每顿份量÷40\n此外，伙食种类很多时，也需要再增多一些冰柜。
 object_TallFridge	立式冰箱
 buildtoolbar_popup_obj_TallFridge	现在食材可堆叠至一人高！
-object_sink						厨房水槽
-buildtoolbar_popup_obj_sink 用过的餐盘必须在这里清洗。\n\n速率为：5分钟/餐盘=12盘/小时\n\n如果启用“天气与温度”，那么用热水的话会洗得更快。\n\n大体上，每30个囚犯需要1个水槽。\n除非你一天提供3顿伙食，否则厨师有充裕的时间洗盘子。
-object_servingtable				配餐桌
-buildtoolbar_popup_obj_servingtable	用于为囚犯分发食物。\n\n有效的用餐时间越短，需要配餐桌越多。请把它们合理地分布在食堂里，以助于分流人群。\n\n容量为20×4份食物。不过，考虑人与物的流动性，\n如果“吃饭”作息为2小时，可以当做容量为120份。\n例如：如果人均2份食物，那么每60个囚犯需要1张配餐桌。\n\n【豪华版】\n伙食数量与种类会影响所有囚犯的疾病点数。
+object_Sink						厨房水槽
+buildtoolbar_popup_obj_Sink 用过的餐盘必须在这里清洗。\n\n速率为：5分钟/餐盘=12盘/小时\n\n如果启用“天气与温度”，那么用热水的话会洗得更快。\n\n大体上，每30个囚犯需要1个水槽。\n除非你一天提供3顿伙食，否则厨师有充裕的时间洗盘子。
+object_ServingTable				配餐桌
+buildtoolbar_popup_obj_ServingTable	用于为囚犯分发食物。\n\n有效的用餐时间越短，需要配餐桌越多。请把它们合理地分布在食堂里，以助于分流人群。\n\n容量为20×4份食物。不过，考虑人与物的流动性，\n如果“吃饭”作息为2小时，可以当做容量为120份。\n例如：如果人均2份食物，那么每60个囚犯需要1张配餐桌。\n\n【豪华版】\n伙食数量与种类会影响所有囚犯的疾病点数。
 object_SmallServingTable	配餐桌（小）
 buildtoolbar_popup_obj_SmallServingTable	配餐桌的缩小版，用于为囚犯分发食物。
 object_JungleServingTable	竹制配餐桌
@@ -8306,33 +8340,33 @@ buildtoolbar_popup_obj_FoodTrayPack	一堆 40 个餐盘 \n双击或按住即可�
 
 object_SnackMachine	零食贩卖机
 buildtoolbar_popup_obj_SnackMachine	高热低质的零食。\n\n需求：\n+ 食物 10.00
-object_drinkmachine	饮料贩卖机
-buildtoolbar_popup_obj_drinkmachine 基础员工房间的必需品，也可提供囚犯生产酒精所需的原料。\n\n需求：\n+ 饮水 15.00\n- 小便 5.00\n+ 员工饮水 30.00
+object_DrinkMachine	饮料贩卖机
+buildtoolbar_popup_obj_DrinkMachine 基础员工房间的必需品，也可提供囚犯生产酒精所需的原料。\n\n需求：\n+ 饮水 15.00\n- 小便 5.00\n+ 员工饮水 30.00
 object_WaterCooler	饮水机
 buildtoolbar_popup_obj_WaterCooler	让人们可以方便喝水。\n\n需求：\n+ 饮水 20.00\n- 小便 5.00\n+ 员工饮水 30.00
-object_CoffeeMachine	投币咖啡机
+object_CoffeeMachine	咖啡机
 buildtoolbar_popup_obj_CoffeeMachine	过度劳累的人们渴望的功能。\n\n需求：\n+ 员工饮水 15.00
 
 #-========================
 #+=============================卫生
 
-object_toilet					厕所
-buildtoolbar_popup_obj_toilet	如果你相信那些疯子的话，这是一项基本人权。\n\n除了牢房，在淋浴间、庭院或者工作场所等地方，也可以适当安装一些。\n越狱地道的入口会藏在马桶下，搜查马桶可以找到它。\n大范围搜查虽然包含马桶，但警卫不会那么仔细，必要时可以手动搜查单个马桶。\n\n需求：\n+ 小便 10.00\n+ 大便 5.00
-object_showerhead				花洒喷头
-buildtoolbar_popup_obj_showerhead	保持囚犯清洁，别忘了加个排水渠。\n\n除了淋浴间，在其它一些地方也可以安装它。\n\n需求：\n+ 卫生 5.00
-object_showerpillar	淋浴柱
-buildtoolbar_popup_obj_showerpillar	放在淋浴间的中间，然后在两边各安一个花洒喷头。\n\n装饰性
-object_drain					排水渠
-buildtoolbar_popup_obj_drain	清除地板上的积水，防止洗澡水漫延到淋浴间外面。\n\n适合安装在淋浴间的出入口。\n或者直接位于每个花洒的正下方。
+object_Toilet					厕所
+buildtoolbar_popup_obj_Yoilet	如果你相信那些疯子的话，这是一项基本人权。\n\n除了牢房，在淋浴间、庭院或者工作场所等地方，也可以适当安装一些。\n越狱地道的入口会藏在马桶下，搜查马桶可以找到它。\n大范围搜查虽然包含马桶，但警卫不会那么仔细，必要时可以手动搜查单个马桶。\n\n需求：\n+ 小便 10.00\n+ 大便 5.00
+object_ShowerHead				花洒喷头
+buildtoolbar_popup_obj_ShowerHead	保持囚犯清洁，别忘了加个排水渠。\n\n除了淋浴间，在其它一些地方也可以安装它。\n\n需求：\n+ 卫生 5.00
+object_ShowerPillar	淋浴柱
+buildtoolbar_popup_obj_ShowerPillar	放在淋浴间的中间，然后在两边各安一个花洒喷头。\n\n装饰性
+object_Drain					排水渠
+buildtoolbar_popup_obj_Drain	清除地板上的积水，防止洗澡水漫延到淋浴间外面。\n\n适合安装在淋浴间的出入口。\n或者直接位于每个花洒的正下方。
 
 object_PersonalSink 洗手池
 buildtoolbar_popup_obj_PersonalSink 让人们可以简单地清洁自己。\n\n需求：\n+ 卫生 0.40
-object_bathroomSink	浴室洗手池
-buildtoolbar_popup_obj_bathroomSink	没有它，卫生浴室就不完整。\n\n需求：\n+ 卫生 0.40\n+ 饮水 1.00
+object_BathroomSink	浴室洗手池
+buildtoolbar_popup_obj_BathroomSink	没有它，卫生浴室就不完整。\n\n需求：\n+ 卫生 0.40\n+ 饮水 1.00
 object_SinkMirror	洗手池和镜子
 buildtoolbar_popup_obj_SinkMirror	人们可以在镜子前更好的清洁自己。\n\n需求：\n+ 卫生 0.50
-object_bathroomHandDryer	干手机
-buildtoolbar_popup_obj_bathroomHandDryer	与洗手池完美搭配。\n\n需求：\n+ 卫生 0.30\n+ 饮水 0.50
+object_BathroomHandDryer	干手机
+buildtoolbar_popup_obj_BathroomHandDryer	与洗手池完美搭配。\n\n需求：\n+ 卫生 0.30\n+ 饮水 0.50
 
 #-=========================
 #+=============================衣物
@@ -8349,41 +8383,42 @@ buildtoolbar_popup_obj_ironingBoardShort	较短的熨衣板，用于熨烫干净
 #-=========================
 #+=============================环境
 
-object_bin	垃圾桶
-buildtoolbar_popup_obj_bin	把周围的垃圾暂时集中存放，厨房、食堂等地方都离不开垃圾桶。\n如果缺少它，工人会把每袋垃圾都分别送往垃圾场。\n\n需求：\n+ 环境 0.05
+object_Bin	垃圾桶
+buildtoolbar_popup_obj_Bin	把周围的垃圾暂时集中存放，厨房、食堂等地方都离不开垃圾桶。\n如果缺少它，工人会把每袋垃圾都分别送往垃圾场。\n\n需求：\n+ 环境 0.05
 object_RecyclingBin	可回收垃圾桶
 buildtoolbar_popup_obj_RecyclingBin	回收废物而不是直接丢弃，因为这些废物对环境有益。\n研究“回收激励”之后，你还能借此获得收益！\n\n需求：\n+ 环境 0.05
 object_Fan	风扇
-buildtoolbar_popup_obj_Fan	老式立扇，可帮助空气流通。\n\n需求：\n+ 环境 0.05
+buildtoolbar_popup_obj_Fan	老式立扇，可帮助空气流通。\n\n需求：\n+ 舒适 0.05
 #+植物
-object_plant	植物
-buildtoolbar_popup_obj_plant	一棵令人愉悦的室内植物。\n\n需求：\n+ 环境 0.02
-object_plantcactus	仙人掌盆栽
-buildtoolbar_popup_obj_plantcactus	一棵室内盆栽仙人掌。\n\n需求：\n+ 环境 0.02
-object_bush	灌木
-buildtoolbar_popup_obj_bush	为户外区域做一些装饰。\n\n需求：\n+ 环境 0.02
+object_Plant	植物
+buildtoolbar_popup_obj_Plant	一棵令人愉悦的室内植物。\n\n需求：\n+ 环境 0.02
+object_PlantCactus	仙人掌盆栽
+buildtoolbar_popup_obj_PlantCactus	一棵室内盆栽仙人掌。\n\n需求：\n+ 环境 0.02
+object_Bush	灌木
+buildtoolbar_popup_obj_Bush	为户外区域做一些装饰。\n\n需求：\n+ 环境 0.02
 object_FernBush	灌木树篱
 buildtoolbar_popup_obj_FernBush	这种灌木喜阴。\n\n需求：\n+ 环境 0.02
 object_Ivy	常春藤
 buildtoolbar_popup_obj_Ivy	枝叶繁茂的装饰灌木。\n\n需求：\n+ 环境 0.02
 #-
 #+树
-object_tree						树
-buildtoolbar_popup_obj_tree	采取措施应对全球变暖，是我们所有人的责任。\n\n长大后会自动被工人砍伐，变成原木。\n\n需求：\n+ 自由 0.10
-object_snowyconifertree	树（雪松）
-buildtoolbar_popup_obj_snowyconifertree	在雪地上看起来最合适。\n\n需求：\n+ 自由 0.10
-object_palmtree	树（棕榈树）
-buildtoolbar_popup_obj_palmtree	一般生长在旱地上，但是你现在可以决定将它们种在任意你想种的地方。\n\n需求：\n+ 自由 0.10
-object_sakuratree	树（樱花树）
-buildtoolbar_popup_obj_sakuratree	一棵开着粉色花朵的美丽樱花树。\n\n需求：\n+ 自由 0.10\n+ 环境 0.04
-object_cactustree	树（仙人掌）
-buildtoolbar_popup_obj_cactustree	在旱地上看起来最合适。
-object_spookytree	树（阴森）
-buildtoolbar_popup_obj_spookytree	一棵可怕的古树，让囚犯感到不适。\n\n需求：\n- 环境 0.02
+object_Tree						树
+buildtoolbar_popup_obj_Tree	采取措施应对全球变暖，是我们所有人的责任。\n\n长大后会自动被工人砍伐，变成原木。\n\n需求：\n+ 自由 0.10
+object_SnowyConiferTree	树（雪松）
+buildtoolbar_popup_obj_SnowyConiferTree	在雪地上看起来最合适。\n\n需求：\n+ 自由 0.10
+object_PalmTree	树（棕榈树）
+buildtoolbar_popup_obj_PalmTree	一般生长在旱地上，但是你现在可以决定将它们种在任意你想种的地方。\n\n需求：\n+ 自由 0.10
+object_SakuraTree	树（樱花树）
+buildtoolbar_popup_obj_SakuraTree	一棵开着粉色花朵的美丽樱花树。\n\n需求：\n+ 自由 0.10\n+ 环境 0.04
+object_CactusTree	树（仙人掌）
+buildtoolbar_popup_obj_CactusTree	在旱地上看起来最合适。
+object_SpookyTree	树（阴森）
+buildtoolbar_popup_obj_SpookyTree	一棵可怕的古树，让囚犯感到不适。\n\n需求：\n- 环境 0.02
 object_WillowTree	柳树
 buildtoolbar_popup_obj_WillowTree	这棵树可以很好地点缀水域或增添花园的优雅魅力。\n\n需求：\n+ 自由 0.10\n+ 环境 0.04
 object_BareTree	树（光秃）
 buildtoolbar_popup_obj_BareTree	大部分的树叶已经凋落。
+
 object_IndoorTreePlanter	室内植树区域
 buildtoolbar_popup_obj_IndoorTreePlanter	下沉式植树，可用于室内种植树木。
 #-
@@ -8391,50 +8426,52 @@ buildtoolbar_popup_obj_IndoorTreePlanter	下沉式植树，可用于室内种植
 #-=========================
 #+=============================娱乐
 
-object_radio					收音机
-buildtoolbar_popup_obj_radio	让囚犯收听它们喜爱的乐队音乐，聊以度日。\n\n需求：\n+ 娱乐 0.1
-object_BoomBoxRoundHouse	立体扬声器
-buildtoolbar_popup_obj_BoomBoxRoundHouse	让囚犯收听它们喜爱的音乐唱片，聊以度日。\n\n需求：\n+ 娱乐 0.2
-object_tv						小电视
-buildtoolbar_popup_obj_tv	用令人头脑发木的烂节目安抚囚犯。\n\n需要在电视前方给囚犯们坐或停留的地方。\n\n需求：\n+ 娱乐 2.00\n+ 舒适 0.20
-object_largetv					大电视
-buildtoolbar_popup_obj_largetv	让众多囚犯们一起体验脑残。\n\n需要在电视前方给囚犯们坐或停留的地方。\n\n需求：\n+ 娱乐 2.00\n+ 舒适 0.20
+object_Radio					收音机
+buildtoolbar_popup_obj_Radio	让囚犯收听它们喜爱的乐队音乐，聊以度日。\n\n需求：\n+ 娱乐 0.1
+object_BoomBoxRoundhouse	立体扬声器
+buildtoolbar_popup_obj_BoomBoxRoundhouse	让囚犯收听它们喜爱的音乐唱片，聊以度日。\n\n需求：\n+ 娱乐 0.2
+object_Tv						小电视
+buildtoolbar_popup_obj_Tv	用令人头脑发木的烂节目安抚囚犯。\n\n需要在电视前方给囚犯们坐或停留的地方。\n\n需求：\n+ 娱乐 2.00\n+ 舒适 0.20
+object_LargeTv					大电视
+buildtoolbar_popup_obj_LargeTv	让众多囚犯们一起体验脑残。\n\n需要在电视前方给囚犯们坐或停留的地方。\n\n需求：\n+ 娱乐 2.00\n+ 舒适 0.20
 object_Canvas	画布
-buildtoolbar_popup_obj_canvas	这种创新方式让囚犯能够表达他们的感受，而不用互相捅刀子。\n\n需求：\n+ 娱乐 0.30\n+ 舒适 0.30
+buildtoolbar_popup_obj_Canvas	这种创新方式让囚犯能够表达他们的感受，而不用互相捅刀子。\n\n需求：\n+ 娱乐 0.30\n+ 舒适 0.30
 object_PetBird	宠物鸟
 buildtoolbar_popup_obj_PetBird	能够陪伴囚犯的小伙伴。\n\n需求：\n+ 家庭 0.15\n+ 舒适 0.10\n+ 奢侈品 0.20
-object_arcadecabinet	游戏街机
-buildtoolbar_popup_obj_arcadecabinet 复古游戏机可供2名囚犯一起消遣。\n\n需求：\n+ 娱乐 0.30\n+ 舒适 0.20
 object_ChessTable	国际象棋桌
 buildtoolbar_popup_obj_chessTable	讲的是国王和法外之徒，可以2人使用。\n\n需求：\n+ 娱乐 4.00
+
+object_ArcadeCabinet	游戏街机
+buildtoolbar_popup_obj_ArcadeCabinet 复古游戏机可供2名囚犯一起消遣。\n\n需求：\n+ 娱乐 0.30\n+ 舒适 0.20
 object_TableFootball	桌上足球
 buildtoolbar_popup_obj_TableFootball	为你的囚犯提供额外的消遣，可以2人使用。\n\n需求：\n+ 娱乐 0.40
 object_TableTennis	乒乓球
 buildtoolbar_popup_obj_TableTennis	为你的囚犯提供额外的消遣，可以2人使用。\n\n需求：\n+ 娱乐 0.40
-object_pooltable	台球桌
-buildtoolbar_popup_obj_pooltable	玩局台球来打发千篇一律的监狱生活，可以2人使用。\n\n需求：\n+ 娱乐 0.40
+object_PoolTable	台球桌
+buildtoolbar_popup_obj_PoolTable	玩局台球来打发千篇一律的监狱生活，可以2人使用。\n\n需求：\n+ 娱乐 0.40
 
 #未验证
-object_cinemascreen	投影幕布
-buildtoolbar_popup_obj_cinemascreen	一块大型白色帆布，用于投射电影画面。需搭配投影仪使用，以便为囚犯播放电影。\n\n需求：\n+ 娱乐 5.00\n+ 自由 1.00
-object_cinemaprojector	投影仪
-buildtoolbar_popup_obj_cinemaprojector	每个放映室都需要一台投影仪。投影仪与投影幕布的距离不能超过10块地砖，否则无法播放电影。
+object_CinemaScreen	投影幕布
+buildtoolbar_popup_obj_CinemaScreen	一块大型白色帆布，用于投射电影画面。需搭配投影仪使用，以便为囚犯播放电影。\n\n需求：\n+ 娱乐 5.00\n+ 自由 1.00
+object_CinemaProjector	投影仪
+buildtoolbar_popup_obj_CinemaProjector	每个放映室都需要一台投影仪。投影仪与投影幕布的距离不能超过10块地砖，否则无法播放电影。
 
 #-=========================
 #+=============================锻炼
 
 object_DumbbellRack	哑铃架
 buildtoolbar_popup_obj_DumbbellRack	为了志趣相投的囚犯。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
-object_weightsbench				举重床
-buildtoolbar_popup_obj_weightsbench	让囚犯们锻炼，令他们保持愉悦。\n\n【豪华版】\n囚犯举重时，每小时减少疾病点数9点。\n当肥胖和瘦小的囚犯的疾病点数降低到100后，\n他们的体型会变成“一般”，同时会得到一些奖金。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
+object_WeightsBench				举重床
+buildtoolbar_popup_obj_WeightsBench	让囚犯们锻炼，令他们保持愉悦。\n\n【豪华版】\n囚犯举重时，每小时减少疾病点数9点。\n当肥胖和瘦小的囚犯的疾病点数降低到100后，\n他们的体型会变成“一般”，同时会得到一些奖金。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
 object_GymMat	体操垫
 buildtoolbar_popup_obj_GymMat	为了舒展身体从而缓解疼痛。\n\n需求：\n+ 锻炼 1.50\n+ 员工娱乐 1.50
-object_Treadmill	跑步机
-buildtoolbar_popup_obj_Treadmill	为了让囚犯保持健康。刻苦训练的囚犯甚至可能跑得更快。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
 object_TrainingDummy	训练木桩
 buildtoolbar_popup_obj_TrainingDummy	少林训练木桩。\n- 刻苦训练的囚犯甚至可能学到新的战斗技巧！\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
 object_PunchBag	拳击袋
 buildtoolbar_popup_obj_PunchBag	犯人需要释放好斗情绪时适用,可供2人同时使用。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
+object_Treadmill	跑步机
+buildtoolbar_popup_obj_Treadmill	为了让囚犯保持健康。刻苦训练的囚犯甚至可能跑得更快。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
+
 object_BoxingRing	拳击台
 buildtoolbar_popup_obj_BoxingRing	大多数犯人更喜欢在这幅画布上用对方的鲜血作画。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
 
@@ -8455,31 +8492,31 @@ object_PushUpStones	俯卧撑石
 buildtoolbar_popup_obj_PushUpStones	一件廉价运动器材，深受较为老练囚犯的欢迎。\n\n需求：\n+ 锻炼 0.30
 
 #-=========================
-#+=============================文化
+#+=============================文化/宗教
 
-object_bookshelf				小书架
-buildtoolbar_popup_obj_bookshelf	放书的架子。\n\n需求：\n+ 文化 0.20
-object_librarybookshelf			图书馆书架
-buildtoolbar_popup_obj_librarybookshelf 一个放书的高架。
-object_shortbookcase	图书馆矮书架
-buildtoolbar_popup_obj_shortbookcase	一个放书的矮架。
+object_Bookshelf				小书架
+buildtoolbar_popup_obj_Bookshelf	放书的架子。\n\n需求：\n+ 文化 0.20
+object_LibraryBookshelf			图书馆书架
+buildtoolbar_popup_obj_LibraryBookshelf 一个放书的高架。
+object_ShortBookcase	图书馆矮书架
+buildtoolbar_popup_obj_ShortBookcase	一个放书的矮架。
 object_ComputerStation	机房
 buildtoolbar_popup_obj_ComputerStation	一台普通的计算机。\n\n需求：\n+ 文化 0.40\n+ 舒适 0.20
 object_Blackboard	黑板
 buildtoolbar_popup_obj_Blackboard	没有它教室就不完整。
 
-object_altar					圣坛
-buildtoolbar_popup_obj_altar	祷告者与至高力量的中继站。\n在安装时应该给‘神职人员’留出空位。
-object_pews						教堂长凳
-buildtoolbar_popup_obj_pews	信徒的座位。用最坚硬、最致密的木头制成。\n\n需求：\n+ 宗教 0.30
-object_prayermat				祈祷垫
-buildtoolbar_popup_obj_prayermat	使囚犯们祈祷时不必跪在地板上。\n\n需求：\n+ 宗教 0.30
+object_Altar					圣坛
+buildtoolbar_popup_obj_Altar	祷告者与至高力量的中继站。\n在安装时应该给‘神职人员’留出空位。
+object_Pews						教堂长凳
+buildtoolbar_popup_obj_Pews	信徒的座位。用最坚硬、最致密的木头制成。\n\n需求：\n+ 宗教 0.30
+object_PrayerMat				祈祷垫
+buildtoolbar_popup_obj_PrayerMat	使囚犯们祈祷时不必跪在地板上。\n\n需求：\n+ 宗教 0.30
 
 #-=========================
 #+=============================医疗
 
-object_medicalbed				病床
-buildtoolbar_popup_obj_medicalbed	安置病人的地方。
+object_MedicalBed				病床
+buildtoolbar_popup_obj_MedicalBed	安置病人的地方。
 object_morgueslab				停尸台
 buildtoolbar_popup_obj_morgueslab	在送走遗体前，确保死者有地方暂时安息。
 object_gravestone	墓碑
@@ -8490,9 +8527,8 @@ buildtoolbar_popup_obj_MedicineCabinet 医药箱内放置了戒断药物，能�
 
 #-=========================
 #+=============================其他需求
-
-object_phonebooth				电话亭
-buildtoolbar_popup_obj_phonebooth	这些方便的电话亭可以让犯人与其家属通话。\n\n需求：\n+ 家庭 0.40
+object_PhoneBooth				电话亭
+buildtoolbar_popup_obj_PhoneBooth	这些方便的电话亭可以让犯人与其家属通话。\n\n需求：\n+ 家庭 0.40
 object_visitortable				会客桌
 buildtoolbar_popup_obj_visitortable 温馨的家庭会面或严肃的面谈审查。
 object_visitortablesecure		探监柜台
@@ -8503,8 +8539,8 @@ buildtoolbar_popup_uts_VideoCallBooth	亲人无法前来探视的时候，也可
 #-========================
 #+==============================安全
 
-object_metaldetector			金属探测器
-buildtoolbar_popup_obj_metaldetector	囚犯经过时偷藏的金属违禁品会被检测出来，有时会误报。\n需要在附近安排警卫，以及时地搜查并收缴违禁品。
+object_MetalDetector			金属探测器
+buildtoolbar_popup_obj_MetalDetector	囚犯经过时偷藏的金属违禁品会被检测出来，有时会误报。\n需要在附近安排警卫，以及时地搜查并收缴违禁品。
 object_CameraPillar	摄像机柱
 buildtoolbar_popup_obj_camerapillar	放置在开放区域，然后将摄像头安装在两侧。\n装饰性
 object_cctv						监控摄像头
@@ -8522,42 +8558,50 @@ object_phonemonitor				电话窃听器
 buildtoolbar_popup_uts_phonemonitor	监听囚犯们打出的电话，以提前洞察有组织的违法活动。\n每次只能窃听一个电话。\n\n使用“连接”工具将此设备与‘电话亭’或‘探监柜台’相连。\n窃听可以让你得知打电话的囚犯的特征和从外界运输违禁品的约定。
 
 object_GuardPavilion	警卫亭
-buildtoolbar_popup_obj_guardPavilion	放在庭院和开放区域，供警卫和武装警卫监视你的囚犯。\n	通过部署菜单安排警卫。\n - 增加该区域的镇压等级。\n - 警卫不受天气影响。
+buildtoolbar_popup_obj_GuardPavilion	放在庭院和开放区域，供警卫和武装警卫监视你的囚犯。\n	通过部署菜单安排警卫。\n - 增加该区域的镇压等级。\n - 警卫不受天气影响。
 object_GuardPavilionCorner	警卫亭（角落）
-buildtoolbar_popup_obj_guardPavilionCorner	放在庭院和开放区域的角落，供警卫和武装警卫监视你的囚犯。\n	通过部署菜单分配警卫。\n - 增加该区域的镇压等级。\n - 警卫不受天气影响。
-object_guardtower				警戒塔
-buildtoolbar_popup_obj_guardtower	经过严格培训的狙击手可在警戒塔保卫监狱安全。\n围墙无法阻挡狙击手视线。\n\n+ 增加压迫感
+buildtoolbar_popup_obj_GuardPavilionCorner	放在庭院和开放区域的角落，供警卫和武装警卫监视你的囚犯。\n	通过部署菜单分配警卫。\n - 增加该区域的镇压等级。\n - 警卫不受天气影响。
+object_GuardTower				警戒塔
+buildtoolbar_popup_obj_GuardTower	经过严格培训的狙击手可在警戒塔保卫监狱安全。\n围墙无法阻挡狙击手视线。\n\n+ 增加压迫感
 
 object_weaponrack				武器架
 buildtoolbar_popup_obj_weaponrack 排列着许多武器。
 object_guardlocker				枪柜
 buildtoolbar_popup_obj_guardlocker 每名武装警卫都需要自己的专属锁柜。\n必需安装在枪械库，决定了可雇用武装警卫的人数上限。
-object_dogbowl	警犬食盆
-buildtoolbar_popup_obj_dogbowl	为疲劳的警犬提供水和食物。\n少量增加狗的耐力。
+object_DogBowl	警犬食盆
+buildtoolbar_popup_obj_DogBowl	为疲劳的警犬提供水和食物。\n少量增加狗的耐力。
 object_dogcrate					狗笼
 buildtoolbar_popup_obj_dogcrate 舒适的狗笼，警犬能够在里面休息与疗伤。
 
 object_WardenStatue	典狱长雕像
 buildtoolbar_popup_obj_WardenStatue	高大的石像象征着典狱长对监狱的统治。\n\n+ 少量增加压迫感
-object_electricchair			处刑电椅
-buildtoolbar_popup_obj_electricchair	实施两千伏特的正义。\n\n【豪华版】\n把见证人直接瞬移过来！\n点击电椅，在菜单中开关该功能。\n注意：不要让多部电椅同时开启。
-object_Sprinkler	喷水灭火器
-buildtoolbar_popup_obj_sprinkler	发生火灾时，自动向此区域喷水。\n\n感应的直径为7米。\n如果管道被烧毁，那么会失去供水。
-object_barbedwire	铁丝网
-buildtoolbar_popup_obj_BarbedWire	一种安放在墙壁的尖刺状物品，可以让墙壁看起来更加气派和安全。
+object_electricChair			处刑电椅
+buildtoolbar_popup_obj_electricChair	实施两千伏特的正义。\n\n【豪华版】\n把见证人直接瞬移过来！\n点击电椅，在菜单中开关该功能。\n注意：不要让多部电椅同时开启。
+object_barBedwire	铁丝网
+buildtoolbar_popup_obj_BarBedWire	一种安放在墙壁的尖刺状物品，可以让墙壁看起来更加气派和安全。
 object_WindSock	风向标
 buildtoolbar_popup_obj_WindSock	风向标可显示风向和速度，并预警未来 1 小时内的灾难。
 
+object_TrackingMonitor	追踪监视器
+buildtoolbar_popup_uts_TrackingMonitor	追踪清单所需物品。\n\n由警卫在警卫室里进行操作，可监视任何佩戴追踪器的囚犯。连接路由器以扩展监控范围。
+object_HealthMonitor	健康监视器
+buildtoolbar_popup_uts_HealthMonitor	追踪清单所需物品。\n\n如果囚犯佩戴了追踪器，你就可以跟踪他们的健康和目前状态。安装在医务室内。
+object_Router	路由器
+buildtoolbar_popup_uts_Router	追踪清单所需物品。\n\n连上追踪监视器之后，便可追踪有效范围内所有配备了追踪器的囚犯。有效范围可以单独设置，也可以通过追踪清单进行全覆盖设置。
+
+
+object_Sprinkler	喷水灭火器
+buildtoolbar_popup_obj_sprinkler	发生火灾时，自动向此区域喷水。\n\n感应的直径为7米。\n如果管道被烧毁，那么会失去供水。
 #-========================
 #+==============================工作
-object_workshoppress			冲压机
-buildtoolbar_popup_obj_workshopsaw 工坊里的基本工具。\n · 把1张‘金属板’加工成2张‘车牌(空白)’\n   用时12分钟\n · 把1根‘原木’加工成4块‘木板’\n   用时30分钟\n\n无法限定为只加工某一种！\n由于金属板是从外面采购的，所以供应很稳定。\n原木的供应取决于林场的生产情况。
-object_workshopsaw				电锯台
-buildtoolbar_popup_obj_workshoppress 借助这项工坊工具，囚犯可以在车牌上冲压出文字。\n·用时6分钟\n\n建议：与加工金属板的电锯台的数量比为1:1。
-object_carpentertable			木工桌
-buildtoolbar_popup_obj_carpentertable 囚犯可以使用这个工坊工具将原木制成高级床。\n·用时60分钟\n\n建议：木工桌与电锯台的数量比为2:1。
-object_sortingtable				分拣台
-buildtoolbar_popup_obj_sortingtable 在‘图书馆’和‘邮件收发室’用来整理物品。
+object_WorkshopSaw			冲压机
+buildtoolbar_popup_obj_WorkshopSaw 工坊里的基本工具。\n · 把1张‘金属板’加工成2张‘车牌(空白)’\n   用时12分钟\n · 把1根‘原木’加工成4块‘木板’\n   用时30分钟\n\n无法限定为只加工某一种！\n由于金属板是从外面采购的，所以供应很稳定。\n原木的供应取决于林场的生产情况。
+object_WorkshopPress				电锯台
+buildtoolbar_popup_obj_WorkshopPress 借助这项工坊工具，囚犯可以在车牌上冲压出文字。\n·用时6分钟\n\n建议：与加工金属板的电锯台的数量比为1:1。
+object_CarpenterTable			木工桌
+buildtoolbar_popup_obj_CarpenterTable 囚犯可以使用这个工坊工具将原木制成高级床。\n·用时60分钟\n\n建议：木工桌与电锯台的数量比为2:1。
+object_SortingTable				分拣台
+buildtoolbar_popup_obj_SortingTable 在‘图书馆’和‘邮件收发室’用来整理物品。
 
 object_shopfront				店面
 buildtoolbar_popup_obj_shopfront 让‘商店’得以开业的必要部分。\n顾客会来到其外侧，选购商品。\n\n安装位置：墙壁
@@ -8572,16 +8616,16 @@ buildtoolbar_popup_obj_AccountingTable 需要囚服先通过“[制造]记账”
 #-========================
 #+==============================装饰
 
-object_doorMat	门垫
-buildtoolbar_popup_obj_doorMat	便宜的橡胶门垫，放在门口应该不错。
-object_mooseHead	驼鹿头
-buildtoolbar_popup_obj_mooseHead	一个手工制作的美丽驼鹿头，装在饰板上。
+object_DoorMat	门垫
+buildtoolbar_popup_obj_DoorMat	便宜的橡胶门垫，放在门口应该不错。
+object_MooseHead	驼鹿头
+buildtoolbar_popup_obj_MooseHead	一个手工制作的美丽驼鹿头，装在饰板上。
 object_Painting1	绘画
 buildtoolbar_popup_obj_painting1	尽管这是监狱，但这并不意味着我们不能展现出优雅的品味。
 object_Painting2	绘画
 buildtoolbar_popup_obj_painting2	尽管这是监狱，但这并不意味着我们不能展现出优雅的品味。
-object_coatstand	衣帽架
-buildtoolbar_popup_obj_coatstand	放置员工大衣和帽子的地方。
+object_CoatStand	衣帽架
+buildtoolbar_popup_obj_CoatStand	放置员工大衣和帽子的地方。
 
 object_SpiderWeb	蜘蛛网
 object_JackOLantern	南瓜灯
@@ -8642,7 +8686,10 @@ object_DripPipe	滴管
 object_CropSprinkler	农作物喷洒装置
 #-
 #+肥料
-object_compostbin	堆肥垃圾桶
+object_CompostBin	堆肥垃圾桶
+buildtoolbar_popup_obj_object_compostbin	用于改造食物和有机废物，制成可使用的肥料。
+buildtoolbar_popup_obj_CompostBin	用于改造食物和有机废物，制成可使用的肥料。
+
 object_CompostFertilizer	堆肥
 buildtoolbar_popup_obj_CompostFertilizer	应用在农作物上时，农作物生长和成熟的速度均会提高 25%。
 object_HighQualityFertilizer	优质肥料
@@ -8653,10 +8700,12 @@ object_CropCarrotPlant	胡萝卜植株
 object_CropPotatoPlant	土豆植株
 object_CropTomatoPlant	番茄植株
 object_CropCabbagePlant	卷心菜植株
+
 object_CropAppleTree	苹果树
 object_CropBananaTree	香蕉树
 object_CropOrangeTree	橙树
 object_CropPeachTree	桃树
+
 object_CropCornPlant	玉米植株
 object_CropWheatPlant	小麦植株
 object_CropBarleyPlant	大麦植株
@@ -8769,6 +8818,8 @@ object_DinerBooth	餐厅卡座
 buildtoolbar_popup_obj_DiningTableLarge	一张高品质的餐桌，可以提高就餐档次。
 buildtoolbar_popup_obj_DiningTableSmall	一张高品质的餐桌，可以提高就餐档次。
 buildtoolbar_popup_obj_DinerBooth	一个经典美国餐厅风格的带座位的小摊。\n\n需求：\n+ 舒适 0.30
+object_DiningChair	餐椅
+buildtoolbar_popup_obj_DiningChair	一把高品质的椅子，可以提高就餐档次。\n\n需求：\n+ 舒适 0.30
 
 object_DrinkingFountain	壁挂饮水机
 buildtoolbar_popup_obj_DrinkingFountain	壁挂式饮水机，可让你的囚犯和员工始终精神焕发且水分充足。\n\n需求：\n+ 饮水 20.00\n- 小便 5.00\n+ 员工饮水 30.00
