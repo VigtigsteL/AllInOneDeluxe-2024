@@ -1,3 +1,67 @@
+# ==<游戏主要数据>
+# ==格式优化中··· 优化后代码置底
+# ==已整合 materials.txt/materials_dlc.txt
+# ==加载顺序为 materials.txt > materials_dlc.txt > 系统预设
+
+#+图书馆矮书架
+BEGIN Object
+    Name                ShortBookcase
+    Width               3
+    Height              1
+    Sprite              LibraryBookshelf
+	StackSprite			LibraryBooks1
+    RenderDepth         2
+    ConstructionTime    4.0
+    MoveCost            1
+    Toughness           10.000
+    Price               -150
+    Filter		Work
+    Filter		Entertainment
+    Filter		Decoration
+    Group               StaticObject
+    BlockedBy           Wall
+    BlockedBy           StaticObject
+    BlockedBy           UtilityStation
+    MadeOf              Wood
+	NumSlots            1
+	AttachToWall		false
+    Properties          StaticObject
+	Properties          RoomSpecific
+	Properties          ShelfObject
+	Research            PrisonLabour
+	IndoorOutdoor       IndoorOnly
+    ToolbarSprite       d_BookshelfShortToolbar
+	VersionAdded		2000
+END
+#-
+
+#+可回收垃圾桶
+BEGIN Object
+	Name				 	RecyclingBin
+	Width            	 	1
+    Height           		1
+	ConstructionTime     	1.00000  
+    MoveSpeedFactor      	0.800000  
+    Toughness            	3.00000  
+    Price                	-50  
+    Filter			Work
+    Group                	StaticObject  
+    BlockedBy            	Wall  
+    BlockedBy            	StaticObject  
+    BlockedBy            	UtilityStation  
+    BEGIN SpriteBank	
+		Name			objects_d11_2
+		Sprite          d_RecyclingBin
+		ToolbarSprite   d_RecyclingBinToolbar
+	END
+    MadeOf               	Composite
+    Properties           	StaticObject
+	IndoorOutdoor			Either
+    VersionAdded        4000
+	Research             	RecyclingIncentive
+END
+#-
+
 BEGIN Object     
     Name                 PlantCactus 
     ConstructionTime     1.00000  
@@ -2204,7 +2268,7 @@ END
 
 BEGIN Object
     Name                 CameraMan
-  # Price                -2000
+	Price                -2000
     MoveSpeedFactor      0.700000
     Toughness            2
     RenderDepth          2
@@ -2247,8 +2311,8 @@ BEGIN Object
     Name                 SearchToilets
     Price                -20
     RenderDepth          4
-  # BlockedBy            Wall
-  # BlockedBy            StaticObject
+	BlockedBy            Wall
+	BlockedBy            StaticObject
     BlockedBy            UtilityStation
     Research             Deployment
     Sprite               Toilet
@@ -5244,7 +5308,101 @@ END
 #-==
 
 #+==健身房
-#在materials_dlc中
+
+BEGIN Room       
+    Name                 Gymnasium  
+    Capturable           true
+	VersionAdded		 3000
+	DLC					PrisonWingPriviledges
+	Properties			 QualityGraded
+	Properties           PrisonerRelax
+
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type MinimumSize  x 3  y 3  END
+
+#+物品要求
+    BEGIN Requirement Type Object  Id Light  Alt WallLight END
+#-
+
+#+推荐物品
+    BEGIN LikelyObject  Id    Light             END
+    BEGIN LikelyObject  Id    WallLight             END
+
+    BEGIN LikelyObject  Id    Window             END
+    BEGIN LikelyObject  Id    WindowLarge             END
+    BEGIN LikelyObject  Id    GlassWindow             END
+    BEGIN LikelyObject  Id    GlassWindowLarge             END
+    BEGIN LikelyObject  Id    WoodenWindowSmall             END
+    BEGIN LikelyObject  Id    WoodenWindowLarge             END
+    BEGIN LikelyObject  Id    StainGlassWindow             END
+    BEGIN LikelyObject  Id    WindowClassy             END
+    BEGIN LikelyObject  Id    WindowClassyLarge             END
+
+    BEGIN LikelyObject  Id    Toilet             END
+    BEGIN LikelyObject  Id    ShowerHead             END
+    BEGIN LikelyObject  Id    ShowerPillar             END
+    BEGIN LikelyObject  Id    Drain             END
+    BEGIN LikelyObject  Id    PersonalSink             END
+    BEGIN LikelyObject  Id    BathroomSink             END
+    BEGIN LikelyObject  Id    SinkMirror             END
+    BEGIN LikelyObject  Id    BathroomHandDryer             END
+
+    BEGIN LikelyObject  Id    SnackMachine             END
+    BEGIN LikelyObject  Id    DrinkMachine             END
+    BEGIN LikelyObject  Id    WaterCooler             END
+    BEGIN LikelyObject  Id    DrinkingFountain             END
+
+    BEGIN LikelyObject  Id    DumbbellRack             END
+    BEGIN LikelyObject  Id    WeightsBench             END
+    BEGIN LikelyObject  Id    GymMat             END
+    BEGIN LikelyObject  Id    TrainingDummy             END
+    BEGIN LikelyObject  Id    PunchBag             END
+    BEGIN LikelyObject  Id    Treadmill             END
+    BEGIN LikelyObject  Id    BoxingRing             END
+	
+	BEGIN LikelyObject	Id		TableTennis			 END
+
+    BEGIN LikelyObject  Id    Bin             END
+    BEGIN LikelyObject  Id    RecyclingBin             END
+    BEGIN LikelyObject  Id    Fan             END
+    BEGIN LikelyObject  Id    Plant             END
+    BEGIN LikelyObject  Id    PlantCactus             END
+
+    BEGIN LikelyObject  Id    MedicineCabinet             END
+    BEGIN LikelyObject  Id    MetalDetector             END
+    BEGIN LikelyObject  Id    ServoProxy             END
+    BEGIN LikelyObject  Id    PASystem             END
+#-	
+
+#+违禁品
+    BEGIN Contraband    Id      Rope		END
+    BEGIN Contraband    Id      Club		END
+    BEGIN Contraband    Id      Medicine	END
+END
+#-
+
+#+品质评级
+    BEGIN Grading      Type    RoomSize Size   50               END
+    BEGIN Grading       Type    OutsideWindow   Large true      END
+
+	BEGIN Grading      Type    Item    Id  Treadmill Quantity 4 END
+    BEGIN Grading      Type    Item    Id  WeightsBench Quantity 4 END
+    BEGIN Grading      Type    Item    Id  GymMat Quantity 4   END
+    BEGIN Grading      Type    Item    Id  DumbbellRack Quantity 4       END
+    BEGIN Grading      Type    Item    Id  PunchBag Quantity 2           END
+    BEGIN Grading      Type    Item    Id  TrainingDummy Quantity 2           END
+    BEGIN Grading      Type    Item    Id  BoxingRing          END
+    BEGIN Grading      Type    Item    Id  Fan                 END
+    BEGIN Grading      Type    Item    Id  WaterCooler Alt DrinkMachine,DrinkingFountain Multi true END
+
+
+    BEGIN Grading       Type    MultiItems  Quantity 16 END
+	BEGIN Grading      Type    OutsideWindow  Quantity 2   END
+    BEGIN Grading       Type    BadWalls    Percent 50  GradeEffect -1          END
+    BEGIN Grading       Type    HasWindow   Quantity 0 GradeEffect -1   END
+    BEGIN Grading       Type    Item    Id      Cctv   GradeEffect -1    END
+    BEGIN Grading       Type    Item    Id      PASystem    GradeEffect -1 END	
+#-	
 #-==
 
 #+==庭院
@@ -6675,10 +6833,8 @@ BEGIN Room
 	QualificationAlternativeWorkExperienceType	WorkCook    
 	QualificationAlternativeWorkExperienceType	WorkRCS
 	VersionAdded	5000
-
     BEGIN Requirement Type Indoor  END
     BEGIN Requirement Type Enclosed END
-    BEGIN Requirement Type MinimumSize  x 5  y 5     END
 
 #+必要物品
     BEGIN Requirement Type Object  Id Light  Alt WallLight END

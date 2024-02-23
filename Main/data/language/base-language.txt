@@ -27,7 +27,7 @@ object_jaildoorXL 特大监狱门
 buildtoolbar_popup_obj_jaildoorXL 超大的监狱门。
 
 reformprogram_GroupFitness [特殊]集体健身
-reformprogram_GroupFitness_text 让众多囚犯们大量流汗以充分健身。\n普通的举重时间很短，最好提供这个额外的健身机会。\n\n疾病点数机制：\n每个新囚犯会根据体型得到初始的疾病点数。\n比如：肥胖者最高，为300。\n之后的变化规则为：\n+/-伙食政策\n-举重\n+保持受伤(尚未得到治疗)
+reformprogram_GroupFitness_text 让众多囚犯们大量流汗以充分健身。\n普通的举重时间很短，最好提供这个额外的健身机会。\n\n疾病点数机制：\n每个新囚犯会根据体型得到初始的疾病点数。\n比如：肥胖者最高，为300。\n之后的变化规则为：\n+/- 伙食政策\n- 使用锻炼物品\n+ 保持受伤(尚未得到治疗)
 
 # =============================================================================
 # Interface Mode
@@ -3741,7 +3741,7 @@ equipment_Soap	肥皂
 buildtoolbar_popup_help_CellStatus_1	牢房状态显示你的牢房为已占用（橙色），帮派（红色）和闲置（绿色）。 点击已占用的牢房可查看分配至其中的犯人。
 
 object_punchbag_blocked	无法使用沙袋
-object_trainingdummy_blocked	无法使用训练木偶
+object_trainingdummy_blocked	无法使用木人桩
 
 gangCell	*X 牢房
 gangMember	帮派成员
@@ -6262,8 +6262,8 @@ d11_hover_info_gang_graffiti_1	辖区内帮派成员武力 +15%
 d11_hover_info_gang_graffiti_2	辖区内帮派成员坚韧 +15%
 object_FightRing	拳击场
 buildtoolbar_popup_obj_FightRing	如果囚犯能在擂台上一决高下，就不会在监狱侧翼中斗殴。\n\n需求：\n+ 锻炼 3.00\n+ 娱乐 3.00
-quickbuild_FightClubRoom	搏击俱乐部房间
-buildtoolbar_quickbuild_FightClubRoom	无论谁问起，都不要承认此房间的存在。
+quickbuild_FightClubRoom	搏击俱乐部
+buildtoolbar_quickbuild_FightClubRoom	无论谁问起，都不要承认此房间的存在。\n\n需求：\n+ 自由 3.00\n- 饮水 0.50
 
 object_CageGate	牢笼大门
 buildtoolbar_popup_obj_CageGate	可以完美搭配围栏使用的监狱大门。功能和门一样。
@@ -7741,40 +7741,40 @@ needs_total_active_staff		♫ *X名 员工正在解决此需求
 #-==
 
 #+==需求描述
-needs_help_bladder		人人皆需上厕所，囚犯也一样。\n\n监狱的体制非常严格，例如他们应在淋浴间，他们就无法使用牢房内的马桶。\n\n睡觉时间之后，最好给囚犯上厕所的机会。\n牢房之外也可以考虑添加一些厕所。\n\n+ 时间\n- 厕所\n\n失败后果: 愤怒+囚服变脏
-needs_help_bowels		人人皆需上厕所，囚犯也一样。\n\n周期是小便的两倍。\n\n+ 时间\n- 厕所\n\n失败后果: 愤怒+囚服变脏
-needs_help_sleep		囚犯只能在牢房的床铺上睡觉。\n有些囚犯会为了挖掘地道而放弃睡觉。\n\n+ 时间\n- 睡觉\n失败后果: 愤怒
-needs_help_food			人人皆需吃饭。。\n\n若你发现厨房无法应付需求，试着多雇用或安排几个厨师。\n你也可以在[报告]窗口中的[政策]标签页，调整你的伙食政策。\n\n+ 时间\n- 吃饭\n- 零食贩卖机\n\n失败后果: 愤怒+挨饿(长期挨饿会死亡)
-needs_help_safety		即使在监狱，囚犯也需要安全感。\n\n如果你的监狱有太多斗殴事件或整体危险水平过高，\n囚犯会感到不安全，进而考虑武装自己。\n\n若这渐渐变成一个问题，可以试着雇用更多警卫、建立更多巡逻路线或者满足囚犯的其它需求，以此提高监狱的安全。\n\n监狱的“危险等级”的高/低，影响本需求的增/减\n- 监控\n\n失败后果: 为自保而想方设法得到武器
-needs_help_hygiene		大部分的囚犯会想要定期洗澡，尤其是早上起床后。\n\n“淋浴”作息会强迫那些牢房里没有淋浴物品的囚犯前往淋浴间。\n或者增加自由活动时间，让囚犯依自己的需求洗澡。\n\n+ 时间\n- 淋浴\n- 相关物品\n\n失败后果: 愤怒
-needs_help_exercise		很多囚犯会想要保持锻炼。\n\n可以建设一个庭院或健身房，让他们散步或锻炼。\n\n+ 时间\n- 庭院放风\n- 相关物品\n\n失败后果: 愤怒
-needs_help_recreation	无聊的囚犯，是危险的囚犯。\n\n可以在公共区域增加一些用来消遣的娱乐设施，例如电视或收音机，\n以此达到囚犯对于休闲娱乐的需求。\n\n+ 时间\n- 相关物品\n\n失败后果: 愤怒
-needs_help_comfort		囚犯想要感到舒适，生理上和心理上皆如此。\n\n有许多方法可以帮助达到这一点，例如允许家庭探监、\n提供热水澡，或者单纯是确保他们有地方可以坐而已。\n\n+ 时间\n- (探监室)探监\n- (锅炉)热水澡\n- (座位)坐着\n- (床)放松\n- (床)睡觉\n- 相关物品\n\n失败后果: 愤怒
-needs_help_environment	囚犯讨厌居住在脏乱的环境。\n\n雇用一些清洁工或安排囚犯打扫，以保持环境整洁。\n\n周围环境的清洁程度的低/高，影响本需求的增/减。\n- 植物盆栽\n- 垃圾桶\n\n失败后果: 愤怒
-needs_help_privacy		有时候，囚犯会想要有独处的时间。\n\n通常待在自己牢房可以满足这个需求。\n如果住在宿舍与拘留室，他们会觉得隐私不足。\n女性囚犯的概率远高于男性囚犯\n该需求可能会导致更多的地道。\n\n+ 与他人共用牢房的时间\n- 牢房独处的时间\n- 与婴儿一起的时间\n\n不端行为: 发飙
-needs_help_freedom		就算在监狱里，囚犯还是会想要感到某种程度上的自由。\n\n增加“自由活动”或“庭院放风”到作息有助于此。\n\n+ 被监禁的时间\n- 自由活动的时间\n- (树)接触自然\n- 相关物品\n不端行为: 越狱
-needs_help_clothing		就算总是一样颜色的连裤衫，囚犯还是会想要干净衣服。\n\n增加洗衣房，并雇用清洁工或安排囚犯工作，以让他们美梦成真。\n\n+ 时间\n+ 淋雨\n- 获得 干净的囚服
-needs_help_drugs		不少囚犯都有毒瘾问题，这可能也是他们入狱的原因。\n\n让囚犯参与改造方案，有助于解决这个问题。\n\n如果囚犯偷偷使用了麻醉剂，他们会异常亢奋。\n有时会因为过量而导致生命危险。\n\n+ 时间\n- 通过相关改造方案\n- 长时间戒断\n- 使用相关违禁品\n- 相关物品\n\n失败后果: 戒断\n不端行为: 发飙
-needs_help_alcohol		不少囚犯饱受酒瘾的困扰，会竭尽全力把酒弄到手。\n\n让囚犯参与改造方案，有助于解决这个问题。\n\n+ 时间\n- 通过相关改造方案\n- 长时间戒断\n- 使用相关违禁品\n- 相关物品\n\n失败后果: 戒断\n不端行为: 发飙
-needs_help_spirituality	囚犯有各种不同的宗教信仰。\n\n在监狱内增加教堂长凳或祈祷垫，可以让囚犯满足宗教需求。\n建立(礼拜堂)并实施相关改造方案的成效最佳，并且还能普遍安抚囚犯。\n\n+ 时间\n- 教堂长凳/祈祷垫\n- 通过相关改造方案
-needs_help_literacy		一些囚犯就是想要读些东西。\n\n增加图书馆让囚犯借阅书籍，以满足这个需求。\n\n+ 时间\n- 相关物品
-needs_help_warmth		没有人想在寒冷中度日，但大自然可不管你。\n\n在监狱内增加暖气可以保持室内温暖。\n\n+ 寒冷区域\n- 温暖区域
-needs_help_family		大部分的囚犯想要和家人保持联系。\n最简单的方式是阅读邮件与使用电话亭，不过探监室的成效更好。\n\n+ 时间\n- (探监室)探监\n- (电话亭)通电话\n- 阅读 邮件\n- 宠物鸟\n\n失败后果: 愤怒\n不端行为: 越狱
-needs_help_luxuries		很多囚犯时不时地要享用一点奢侈品。可以通过建造商店来满足该需求，并且在这个过程中稍稍挣点小钱。\n\n+ 时间\n- 图书馆借阅\n- 小书架
+needs_help_bladder		人人皆需上厕所，囚犯也一样。\n\n监狱的体制非常严格，例如他们应在淋浴间，他们就无法使用牢房内的马桶。\n\n睡觉时间之后，最好给囚犯上厕所的机会。\n牢房之外也可以考虑添加一些厕所。\n\n- 时间\n+ 厕所\n\n失败后果: 愤怒+囚服变脏
+needs_help_bowels		人人皆需上厕所，囚犯也一样。\n\n周期是小便的两倍。\n\n- 时间\n+ 厕所\n\n失败后果: 愤怒+囚服变脏
+needs_help_sleep		囚犯只能在牢房的床铺上睡觉。\n有些囚犯会为了挖掘地道而放弃睡觉。\n\n- 时间\n+ 睡觉\n失败后果: 愤怒
+needs_help_food			人人皆需吃饭。。\n\n若你发现厨房无法应付需求，试着多雇用或安排几个厨师。\n你也可以在[报告]窗口中的[政策]标签页，调整你的伙食政策。\n\n- 时间\n+ 吃饭\n+ 零食贩卖机\n\n失败后果: 愤怒+挨饿(长期挨饿会死亡)
+needs_help_safety		即使在监狱，囚犯也需要安全感。\n\n如果你的监狱有太多斗殴事件或整体危险水平过高，\n囚犯会感到不安全，进而考虑武装自己。\n\n若这渐渐变成一个问题，可以试着雇用更多警卫、建立更多巡逻路线或者满足囚犯的其它需求，以此提高监狱的安全。\n\n监狱的“危险等级”影响本需求。\n+ 监控\n\n失败后果: 为自保而想方设法得到武器
+needs_help_hygiene		大部分的囚犯会想要定期洗澡，尤其是早上起床后。\n\n“淋浴”作息会强迫那些牢房里没有淋浴物品的囚犯前往淋浴间。\n或者增加自由活动时间，让囚犯依自己的需求洗澡。\n\n- 时间\n+ 淋浴\n+ 相关物品\n\n失败后果: 愤怒
+needs_help_exercise		很多囚犯会想要保持锻炼。\n\n可以建设一个庭院或健身房，让他们散步或锻炼。\n\n- 时间\n+ 庭院放风\n+ 相关物品\n\n失败后果: 愤怒
+needs_help_recreation	无聊的囚犯，是危险的囚犯。\n\n可以在公共区域增加一些用来消遣的娱乐设施，例如电视或收音机，\n以此达到囚犯对于休闲娱乐的需求。\n\n- 时间\n+ 相关物品\n\n失败后果: 愤怒
+needs_help_comfort		囚犯想要感到舒适，生理上和心理上皆如此。\n\n有许多方法可以帮助达到这一点，例如允许家庭探监、\n提供热水澡，或者单纯是确保他们有地方可以坐而已。\n\n- 时间\n+ (探监室)探监\n+ (锅炉)热水澡\n+ (座位)坐着\n+ (床)放松\n+ (床)睡觉\n+ 相关物品\n\n失败后果: 愤怒
+needs_help_environment	囚犯讨厌居住在脏乱的环境。\n\n雇用一些清洁工或安排囚犯打扫，以保持环境整洁。\n\n周围环境的清洁度影响本需求。\n+ 植物盆栽\n+ 垃圾桶\n\n失败后果: 愤怒
+needs_help_privacy		有时候，囚犯会想要有独处的时间。\n\n通常待在自己牢房可以满足这个需求。\n如果住在宿舍与拘留室，他们会觉得隐私不足。\n女性囚犯的概率远高于男性囚犯\n该需求可能会导致更多的地道。\n\n- 与他人共用牢房的时间\n+ 牢房独处的时间\n+ 与婴儿一起的时间\n\n不端行为: 发飙
+needs_help_freedom		就算在监狱里，囚犯还是会想要感到某种程度上的自由。\n\n增加“自由活动”或“庭院放风”到作息有助于此。\n\n- 被监禁的时间\n+ 自由活动的时间\n+ (树)接触自然\n+ 相关物品\n不端行为: 越狱
+needs_help_clothing		就算总是一样颜色的连裤衫，囚犯还是会想要干净衣服。\n\n增加洗衣房，并雇用清洁工或安排囚犯工作，以让他们美梦成真。\n\n- 时间\n- 淋雨\n+ 获得 干净的囚服
+needs_help_drugs		不少囚犯都有毒瘾问题，这可能也是他们入狱的原因。\n\n让囚犯参与改造方案，有助于解决这个问题。\n\n如果囚犯偷偷使用了麻醉剂，他们会异常亢奋。\n有时会因为过量而导致生命危险。\n\n- 时间\n+ 通过相关改造方案\n+ 长时间戒断\n+ 使用相关违禁品\n+ 相关物品\n\n失败后果: 戒断\n不端行为: 发飙
+needs_help_alcohol		不少囚犯饱受酒瘾的困扰，会竭尽全力把酒弄到手。\n\n让囚犯参与改造方案，有助于解决这个问题。\n\n- 时间\n+ 通过相关改造方案\n+ 长时间戒断\n+ 使用相关违禁品\n+ 相关物品\n\n失败后果: 戒断\n不端行为: 发飙
+needs_help_spirituality	囚犯有各种不同的宗教信仰。\n\n在监狱内增加教堂长凳或祈祷垫，可以让囚犯满足宗教需求。\n建立(礼拜堂)并实施相关改造方案的成效最佳，并且还能普遍安抚囚犯。\n\n- 时间\n+ 教堂长凳/祈祷垫\n+ 通过相关改造方案
+needs_help_literacy		一些囚犯就是想要读些东西。\n\n增加图书馆让囚犯借阅书籍，以满足这个需求。\n\n- 时间\n+ 相关物品
+needs_help_warmth		没有人想在寒冷中度日，但大自然可不管你。\n\n在监狱内增加暖气可以保持室内温暖。\n\n- 寒冷区域\n+ 温暖区域
+needs_help_family		大部分的囚犯想要和家人保持联系。\n最简单的方式是阅读邮件与使用电话亭，不过探监室的成效更好。\n\n- 时间\n+ (探监室)探监\n+ (电话亭)通电话\n+ 阅读 邮件\n+ 宠物鸟\n\n失败后果: 愤怒\n不端行为: 越狱
+needs_help_luxuries		很多囚犯时不时地要享用一点奢侈品。可以通过建造商店来满足该需求，并且在这个过程中稍稍挣点小钱。\n\n- 时间\n+ 图书馆借阅\n+ 小书架
 
 
-needs_help_babysleep	婴儿的睡眠时间需要比一般囚犯长。\n\n请确保有婴儿床可以让婴儿安心睡觉。\n\n+ 时间\n- (婴儿床)睡眠
-needs_help_babyplay		婴儿需要活动和娱乐。\n\n若你的囚犯有婴儿，请确保公共区域有 玩耍垫。\n\n+ 时间\n- (玩耍垫)玩耍
+needs_help_babysleep	婴儿的睡眠时间需要比一般囚犯长。\n\n请确保有婴儿床可以让婴儿安心睡觉。\n\n- 时间\n+ (婴儿床)睡眠
+needs_help_babyplay		婴儿需要活动和娱乐。\n\n若你的囚犯有婴儿，请确保公共区域有 玩耍垫。\n\n- 时间\n+ (玩耍垫)玩耍
 
-needs_help_staffbladder			员工也需要上厕所。\n在“员工休息室”或“员工专区”的房间里安装厕所，\n当轮休时员工会使用。\n\n+ 时间\n- 相关物品
-needs_help_staffbowels			员工也需要上厕所。\n在“员工休息室”或“员工专区”的房间里安装厕所，\n当轮休时员工会使用。\n\n+ 时间\n- 相关物品
-needs_help_stafffood			员工需要在“员工专区”的“食堂”里用餐。\n你也可以在任何“员工专区”房间里摆些‘配餐桌’和座位。\n食物会从外部订购，所以不需要给员工‘厨房’。\n但餐盘仍然需要在‘厨房水槽’清洗。\n\n+ 时间\n- 吃饭\n- 零食贩卖机
-needs_help_staffsafety			员工也需要安全感。\n高的危险等级或不断的打斗会让你的员工感到不安。\n更多的警卫彼此照应、配有更好的装备，可以缓解这个问题。\n\n监狱的“危险等级”的高/低，影响本需求的增/减
-needs_help_staffrecreation		监狱对谁来说都是超级无聊的地方，\n给你的员工们更丰富的娱乐吧。\n\n+ 时间\n- 相关物品
-needs_help_staffcomfort			给员工一些放松的地方，比如沙发。\n\n+ 时间\n- 相关物品
-needs_help_staffenvironment		没人喜欢脏乱的环境。\n\n+ 时间\n- 相关物品
-needs_help_staffrest			员工也需要休息。\n在[报告/政策]里，给员工充足的轮休。\n不在轮休时，警卫就不会去员工休息室。\n\n+ 时间\n- 轮休
-needs_help_staffwarmth			员工需要保持温暖，在您的监狱中安装暖气来让员工感到舒适。\n\n+ 寒冷区域\n- 温暖区域
+needs_help_staffbladder			员工也需要上厕所。\n在“员工休息室”或“员工专区”的房间里安装厕所，\n当轮休时员工会使用。\n\n- 时间\n+ 相关物品
+needs_help_staffbowels			员工也需要上厕所。\n在“员工休息室”或“员工专区”的房间里安装厕所，\n当轮休时员工会使用。\n\n- 时间\n+ 相关物品
+needs_help_stafffood			员工需要在“员工专区”的“食堂”里用餐。\n你也可以在任何“员工专区”房间里摆些‘配餐桌’和座位。\n食物会从外部订购，所以不需要给员工‘厨房’。\n但餐盘仍然需要在‘厨房水槽’清洗。\n\n- 时间\n+ 吃饭\n+ 零食贩卖机
+needs_help_staffsafety			员工也需要安全感。\n高的危险等级或不断的打斗会让你的员工感到不安。\n更多的警卫彼此照应、配有更好的装备，可以缓解这个问题。\n\n监狱的“危险等级”影响本需求。
+needs_help_staffrecreation		监狱对谁来说都是超级无聊的地方，\n给你的员工们更丰富的娱乐吧。\n\n- 时间\n+ 相关物品
+needs_help_staffcomfort			给员工一些放松的地方，比如沙发。\n\n- 时间\n+ 相关物品
+needs_help_staffenvironment		没人喜欢脏乱的环境。\n\n- 时间\n+ 相关物品
+needs_help_staffrest			员工也需要休息。\n在[报告/政策]里，给员工充足的轮休。\n不在轮休时，警卫就不会去员工休息室。\n\n- 时间\n+ 轮休
+needs_help_staffwarmth			员工需要保持温暖，在您的监狱中安装暖气来让员工感到舒适。\n\n- 寒冷区域\n+ 温暖区域
 #-===========================================================
 #-============================================================
 
@@ -7922,10 +7922,10 @@ room_mailroom	邮件收发室
 buildtoolbar_popup_room_mailroom	把收到的信件分拣后转送给囚犯。\n\n每天上午8点接收新邮件，邮件里可能会携带违禁品。\n\n本房间的区划决定了邮件会属于哪个戒备类别的囚犯。\n只有设为“公共区域”时，才会给所有区域的牢房递送邮件。\n若送信的囚犯无法走到某些牢房，那么会由待命的警卫来做。\n\n送来的邮件约为监狱囚犯总数的1/4。\n假设每天工作8小时，约50个囚犯需要有1人来分拣邮件。\n\n相关需求：家庭/娱乐/舒适\n工作空间：12平米/每名囚犯
 
 room_shop	商店
-buildtoolbar_popup_room_shop	商店让您的囚犯有地方花费来之不易的金钱，以快速满足一些需求，还能给监狱创造收入。\n\n · 棕色=食物\n · 蓝色=卫生\n · 绿色=娱乐\n\n相关需求：卫生/食物/舒适/奢侈品\n工作空间：12平米/每名囚犯
+buildtoolbar_popup_room_shop	商店让您的囚犯有地方花费来之不易的金钱，以快速满足一些需求，还能给监狱创造收入。\n\n · 棕色=食物\n · 蓝色=卫生\n · 绿色=娱乐\n\n需求：\n- 卫生/食物/舒适/奢侈品\n工作空间：12平米/每名囚犯
 
 room_forestry	林场
-buildtoolbar_popup_room_forestry	种树的区域，能够产出原木或让囚犯感受自然。\n\n树苗自动采购，园丁在林场种树后5天长大，\n工人将其砍伐后得到原木。\n沙土地面会导致成长缓慢。\n\n相关需求：自由
+buildtoolbar_popup_room_forestry	种树的区域，能够产出原木或让囚犯感受自然。\n\n树苗自动采购，园丁在林场种树后5天长大，\n工人将其砍伐后得到原木。\n沙土地面会导致成长缓慢。\n\n需求：\n- 自由
 
 room_Accounting 会计工作间
 buildtoolbar_popup_room_accounting 接受中型企业的会计外包业务。\n让囚犯进行简单而无聊的记账工作。\n\n工作空间：12平米/每名囚犯
@@ -7934,19 +7934,19 @@ buildtoolbar_popup_room_accounting 接受中型企业的会计外包业务。\n�
 #+==囚犯活动
 
 room_canteen	食堂
-buildtoolbar_popup_room_canteen	囚犯的进餐区域。\n\n由于“吃饭”作息让囚犯无法提前离开，可以添加一些满足其它需求的物品。\n由于人员密度形成高峰，囚犯很容易在此发生冲突，所以安保需要特别加强。\n\n如果启用“员工需求”，需要将一个食堂设为员工专区，以让员工轮休时来用餐。\n\n相关需求：食物
+buildtoolbar_popup_room_canteen	囚犯的进餐区域。\n\n由于“吃饭”作息让囚犯无法提前离开，可以添加一些满足其它需求的物品。\n由于人员密度形成高峰，囚犯很容易在此发生冲突，所以安保需要特别加强。\n\n如果启用“员工需求”，需要将一个食堂设为员工专区，以让员工轮休时来用餐。\n\n需求：\n+ 食物
 
 room_shower	淋浴间
-buildtoolbar_popup_room_shower	囚犯可在此保持卫生。\n\n可强制囚犯在”淋浴“时间来此。\n囚犯也会在空闲时间依据自身需求使用淋浴设备。\n记得在门口或花洒下方铺设排水渠。\n\n相关需求：卫生
+buildtoolbar_popup_room_shower	囚犯可在此保持卫生。\n\n可强制囚犯在”淋浴“时间来此。\n囚犯也会在空闲时间依据自身需求使用淋浴设备。\n记得在门口或花洒下方铺设排水渠。\n\n需求：\n+ 卫生
 
 room_commonroom	公共房间
 buildtoolbar_popup_room_commonroom	给囚犯一些自由时间让其放松。\n\n可以安装各种物品来满不同需求。
 
 room_gymnasium	健身房
-buildtoolbar_popup_room_gymnasium	这里是囚犯们锻炼身体、发泄攻击性的地方，也是用传统的方式解决分歧的地方。\n\n相关需求：积累”卫生“需求
+buildtoolbar_popup_room_gymnasium	这里是囚犯们锻炼身体、发泄攻击性的地方，也是用传统的方式解决分歧的地方。\n\n需求：\n+ 锻炼\n- 饮水 0.5
 
 room_yard	庭院
-buildtoolbar_popup_room_yard	让囚犯们每天晒一会太阳。\n\n可强制囚犯在”庭院防风“时间来此。\n囚犯会在需要锻炼时主动来到这里。\n可以安装各种物品以满足不同需求。\n\n相关需求：自由/锻炼
+buildtoolbar_popup_room_yard	让囚犯们每天晒一会太阳。\n\n可强制囚犯在”庭院防风“时间来此。\n囚犯会在需要锻炼时主动来到这里。\n可以安装各种物品以满足不同需求。\n\n需求：\n+ 锻炼\n+ 自由 1.00
 
 room_paroleroom	假释听证室
 buildtoolbar_popup_room_paroleroom	囚犯的命运将在这房间里决定。\n\n当囚犯服刑达到总刑期的50%和75%时，各可申请一次假释。\n死刑犯的上诉也在这里进行。\n\n最好有额外的警备人员，假释被驳回时囚犯可能会十分激动。\n如果囚犯提前释放且没有再犯罪，会得到非常可观的奖励。
@@ -7955,13 +7955,13 @@ room_classroom	教室
 buildtoolbar_popup_room_classroom	囚犯可以在教室学习知识。\n\n教室里有警卫时会让囚犯难以专心。\n如果囚犯们不安定，那么推荐用[部署时刻表]，\n让警卫仅仅在课程前后的一小时来巡逻。\n或者将巡逻警卫的影响力隔离在户外。
 
 room_chapel	礼拜堂
-buildtoolbar_popup_room_chapel	礼拜堂能够应对囚犯的宗教需求。\n\n相关需求：宗教
+buildtoolbar_popup_room_chapel	礼拜堂能够应对囚犯的宗教需求。\n\n需求：\n+ 宗教
 
 room_medicalward	医务室
 buildtoolbar_popup_room_medicalward	受伤的囚犯和员工会被带到这里接受医生的治疗。\n\n医生不会为囚犯开门，推荐采用无锁门。\n待命的医生能够自动响应的半径大约为20米。\n\n[推荐区划：目的地专区]
 
 room_visitation	探监室
-buildtoolbar_popup_room_visitation	囚犯与家属见面的地方。\n\n即使在工作作息之外，囚犯也可以接受探监。\n大约每10名囚犯每天有1组探监者来访。\n\n注意：家属可能会带来违禁品，探监柜台可以杜绝这种行为。\n在进入探监室之前，家属身上并不存在违禁品，只有与囚犯会面时才会根据囚犯的需要生成。\n\n相关需求：家庭
+buildtoolbar_popup_room_visitation	囚犯与家属见面的地方。\n\n即使在工作作息之外，囚犯也可以接受探监。\n大约每10名囚犯每天有1组探监者来访。\n\n注意：家属可能会带来违禁品，探监柜台可以杜绝这种行为。\n在进入探监室之前，家属身上并不存在违禁品，只有与囚犯会面时才会根据囚犯的需要生成。\n\n需求：\n+ 家庭
 #-==
 
 #+==员工专用
@@ -8015,16 +8015,16 @@ buildtoolbar_popup_room_nursery	为有婴儿的女囚犯提供的活动室，并
 #-
 #+迈向绿色
 room_FarmingField	农田
-buildtoolbar_popup_room_FarmingField	种植谷物的区域，这些农作物只可外销。\n\n需求：\n- 锻炼 3.00\n- 自由 3.00
+buildtoolbar_popup_room_FarmingField	种植谷物的区域，这些农作物只可外销。\n\n需求：\n+ 锻炼 2.00\n+ 自由 3.00
 
 room_VegetableAllotment	菜田
-buildtoolbar_popup_room_VegetableAllotment	种植蔬菜的区域。内部种植的蔬菜既可供囚犯食用也可外销。\n\n需求：\n- 锻炼 3.00\n- 自由 3.00
+buildtoolbar_popup_room_VegetableAllotment	种植蔬菜的区域。内部种植的蔬菜既可供囚犯食用也可外销。\n\n需求：\n+ 锻炼 2.00\n+ 自由 3.00
 
 room_FruitOrchard	果园
 buildtoolbar_popup_room_FruitOrchard	种植果树的区域。首次收获果实后，果树会不间断生产果实，既可供囚犯食用也可外销。
 
 room_flowergarden	花园
-buildtoolbar_popup_room_flowergarden	花园娱乐区，可供囚犯种植和照顾花朵。
+buildtoolbar_popup_room_flowergarden	花园娱乐区，可供囚犯种植和照顾花朵。\n\n需求：\n+ 锻炼 2.00\n+ 自由 3.00
 
 room_pantry	食品储藏室
 buildtoolbar_popup_room_Pantry	储存所有新鲜种植的蔬菜水果的房间，此房间为冷藏室，用于储存所有监狱内生长的食材。
@@ -8063,8 +8063,8 @@ buildtoolbar_popup_room_psychiatristoffice	供精神科医生诊断精神病人�
 room_TheCage	牢笼
 buildtoolbar_popup_room_TheCage	为单独监禁的囚犯提供。此露天设施可供囚犯锻炼，同时将使用此设施的囚犯与其他囚犯隔离开来。
 
-room_FightClubRoom	搏击俱乐部房间
-buildtoolbar_popup_room_FightClubRoom	无论谁问起，都不要承认此房间的存在。\n\n需求：\n- 卫生 0.50
+room_FightClubRoom	搏击俱乐部
+buildtoolbar_popup_room_FightClubRoom	无论谁问起，都不要承认此房间的存在。\n\n需求：\n+ 自由 0.50\n- 卫生 0.50
 
 room_TattooRemovalRoom	纹身去除室
 buildtoolbar_popup_room_TattooRemovalRoom	囚犯在这里经历痛苦、漫长的过程，最终将身上的帮派纹身去除。
@@ -8190,11 +8190,11 @@ object_SearchLight	探照灯
 buildtoolbar_popup_obj_SearchLight	可来回探照的灯具，在夜晚时开启。可帮助您发现黑暗中行为不端的囚犯。
 
 object_Lamp	豪华落地灯
-buildtoolbar_popup_obj_Lamp	一盏高品质的落地灯，非常适合办公室和员工区域。
+buildtoolbar_popup_obj_Lamp	一盏豪华的落地灯。\n\n需求：\n+ 奢侈品 0.06
 object_ChandeLier	豪华吊灯
-buildtoolbar_popup_obj_ChandeLier	一盏高品质的吊灯，非常适合办公室和员工区域。
+buildtoolbar_popup_obj_ChandeLier	一盏豪华的吊灯。\n\n需求：\n+ 奢侈品 0.06
 object_OrnateLantern	豪华壁灯
-buildtoolbar_popup_obj_OrnateLantern	一盏高品质的壁灯，非常适合办公室和员工区域。
+buildtoolbar_popup_obj_OrnateLantern	一盏豪华的壁灯。\n\n需求：\n+ 奢侈品 0.06
 
 #-========================
 #+==============================窗户
@@ -8231,21 +8231,26 @@ object_BunkBed					双层床
 buildtoolbar_popup_obj_bunkBed 让打鼾声合奏的乐器，狭隘的空间让人无法正常坐着，只有放在宿舍和拘留室才有意义。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
 object_Bed						单人床
 buildtoolbar_popup_obj_Bed	不太软也不太硬，刚刚好。好吧，其实又硬又小。\n\n需求：\n+ 睡眠 0.18\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.18
-object_ComfyBed	舒适的床
-buildtoolbar_popup_obj_ComfyBed	配有记忆海绵床垫的豪华大床，可提供最好的夜间睡眠质量。\n\n需求：\n+ 睡眠 0.30\n+ 舒适(坐) 0.20\n+ 舒适(睡) 0.40
-
-object_CampBed	行军床
-buildtoolbar_popup_obj_CampBed	这床用着比看起来舒服。
-object_NettedBed	行军床（网状）
-buildtoolbar_popup_obj_NettedBed	在热带气候生活的必需品。舒适度不高，但可以驱赶蚊虫。
+object_ComfyBed	豪华床
+buildtoolbar_popup_obj_ComfyBed	配有记忆海绵床垫的豪华大床，可提供最好的夜间睡眠质量。\n\n需求：\n+ 睡眠 0.30\n+ 舒适(坐) 0.20\n+ 舒适(睡) 0.40\n+ 奢侈品 0.12
 
 object_CoffinBed	棺床
-buildtoolbar_popup_obj_CoffinBed	造型怪异的床。
+buildtoolbar_popup_obj_CoffinBed	造型怪异的床。\n\n需求：\n+ 睡眠 0.18\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.18
+
+object_CampBed	行军床
+buildtoolbar_popup_obj_CampBed	这床用着比看起来舒服。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.15
+object_NettedBed	网床
+buildtoolbar_popup_obj_NettedBed	在热带气候生活的必需品。舒适度不高，但可以驱赶蚊虫。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.15
 
 #-========================
 #+==============================桌椅柜
 
 #+组合
+object_WoodenTable	木桌
+buildtoolbar_popup_obj_WoodenTable	搭配木凳会很棒
+object_WoodenStool	木凳
+buildtoolbar_popup_obj_WoodenStool	搭配木桌会很棒。\n\n需求：\n+ 舒适 0.15
+
 object_Table					长桌
 buildtoolbar_popup_obj_Table	跟长凳很搭，一些房间需要它放置物品。
 object_Bench					长凳
@@ -8255,55 +8260,54 @@ buildtoolbar_popup_obj_SmallTable	长桌的缩小版。
 object_SmallBench	短凳
 buildtoolbar_popup_obj_SmallBench	长凳的缩小版，可以坐2个人。\n\n需求：\n+ 舒适 0.20
 
-object_WoodenTable	木桌
-buildtoolbar_popup_obj_WoodenTable	搭配木凳会很棒
-object_WoodenStool	木凳
-buildtoolbar_popup_obj_WoodenStool	搭配木桌会很棒。\n\n需求：\n+ 舒适 0.30
 object_OakTable	橡木桌
-buildtoolbar_popup_obj_OakTable	可以在这里吃饭。
-object_OakBench	橡木凳
+buildtoolbar_popup_obj_OakTable	搭配橡木板凳会很棒，可以在这里吃饭。
+object_OakBench	橡木板凳
 buildtoolbar_popup_obj_OakBench	搭配橡木桌会很棒，可以坐3个人。\n\n需求：\n+ 舒适 0.30
 
+object_OutdoorTable	室外桌椅
+buildtoolbar_popup_obj_OutdoorTable	供囚犯坐在室外吃东西，可以坐6个人。\n\n需求：\n+ 舒适 0.30
+
 object_ChestOfDrawers	抽屉柜
-buildtoolbar_popup_obj_ChestOfDrawers	一个木制抽屉柜。
-object_SwivelChair	办公椅
-buildtoolbar_popup_obj_SwivelChair	普通的转椅，可摆放在办公桌的中央。\n\n需求：\n+ 舒适 0.30
-object_OfficeDesk	办公桌
-buildtoolbar_popup_obj_OfficeDesk	你的管理人员需要写东西。给他们提供一个光洁的办公桌吧。\n\n需求：\n+ 文化 0.10
+buildtoolbar_popup_obj_ChestOfDrawers	一个木制抽屉柜，可以存放一些杂物。\n\n需求：\n+ 奢侈品 0.05
 object_FilingCabinet			档案柜
-buildtoolbar_popup_obj_FilingCabinet	你的管理人员需要把他们写的东西细心整理好。
+buildtoolbar_popup_obj_FilingCabinet	用来整理物品并分类存放。\n\n需求：\n+ 奢侈品 0.06
+object_SwivelChair	办公椅
+buildtoolbar_popup_obj_SwivelChair	普通的转椅，可摆放在办公桌的中央。\n\n需求：\n+ 舒适 0.60\n+ 奢侈品 0.08
+object_OfficeDesk	办公桌
+buildtoolbar_popup_obj_OfficeDesk	一个干净整洁的办公桌。\n\n需求：\n+ 奢侈品 0.08
+
 object_OfficeChair	豪华办公椅
-buildtoolbar_popup_obj_OfficeChair	豪华的转椅，供工作人员坐在办公桌中央。\n\n需求：\n+ 舒适 0.30
+buildtoolbar_popup_obj_OfficeChair	豪华的转椅，供工作人员坐在办公桌中央。\n\n需求：\n+ 舒适 0.80
 object_FancyDesk	豪华办公桌
 buildtoolbar_popup_obj_FancyDesk	你的员工需要记录很多信息，给他们提供一个现代化的办公桌吧。
 object_FilingCabinetFancy	豪华档案柜
 buildtoolbar_popup_obj_FilingCabinetFancy	给员工豪华档案柜以兹奖励。
 #-
 #+单椅
-object_Chair	椅子（蓝色）
+object_Chair	椅子（蓝）
 buildtoolbar_popup_obj_Chair	标准的单人座位。\n\n需求：\n+ 舒适 0.30
-object_ChairYellow	椅子（黄色）
+object_ChairYellow	椅子（黄）
 buildtoolbar_popup_obj_ChairYellow	跟桌子是绝配。\n\n需求：\n+ 舒适 0.30
 
-object_SofaChairsingle			单人沙发\n（蓝色）
-buildtoolbar_popup_obj_SofaChairsingle 可以让人舒舒服服地坐一会儿。\n\n需求：\n+ 舒适 0.80
-object_SofaChairdouble			宽沙发\n（蓝色）
-buildtoolbar_popup_obj_SofaChairdouble 可以让两个人一起坐着。\n\n需求：\n+ 舒适 0.80\n+ 员工舒适 2.00
-object_SofaChairBrown	单人沙发\n（棕色）
-buildtoolbar_popup_obj_SofaChairBrown	一个柔软的沙发，坐在上面很舒服。\n\n需求：\n+ 舒适 0.80
-object_SofaChairDoubleBrown	宽沙发\n（棕色）
-buildtoolbar_popup_obj_SofaChairDoubleBrown	一个大而柔软的沙发，可供两人就座。\n\n需求：\n+ 舒适 0.80
+object_SofaChairsingle			沙发\n（蓝）
+buildtoolbar_popup_obj_SofaChairsingle 可以让人舒舒服服地坐一会儿。\n\n需求：\n+ 舒适 0.70\n+ 奢侈品 0.09
+object_SofaChairdouble			宽沙发\n（蓝）
+buildtoolbar_popup_obj_SofaChairdouble 可以让两个人一起坐着。\n\n需求：\n+ 舒适 0.70\n+ 奢侈品 0.09
+object_SofaChairBrown	沙发\n（棕）
+buildtoolbar_popup_obj_SofaChairBrown	一个柔软的沙发，坐在上面很舒服。\n\n需求：\n+ 舒适 0.70\n+ 奢侈品 0.09
+object_SofaChairDoubleBrown	宽沙发\n（棕）
+buildtoolbar_popup_obj_SofaChairDoubleBrown	一个大而柔软的沙发，可供两人就座。\n\n需求：\n+ 舒适 0.70\n+ 奢侈品 0.09
+object_ParkBench	公园板凳
+buildtoolbar_popup_obj_ParkBench	一条室外公园板凳，可以坐3个人。\n\n需求：\n+ 舒适 0.30
 #-
 #+单桌
 object_SchoolDesk				课桌
-buildtoolbar_popup_obj_SchoolDesk 学生的标准座椅。\可以在桌子上写日记与信件。\n\n需求：\n+ 舒适 0.30\n+ 文化 0.20\n+ 自由 0.10
+buildtoolbar_popup_obj_SchoolDesk 学生的标准座椅。\可以在桌子上写日记与信件。\n\n需求：\n+ 舒适 0.20\n+ 文化 0.20\n+ 自由 0.10
 
-object_OutdoorTable	室外桌
-buildtoolbar_popup_obj_OutdoorTable	供囚犯坐在室外吃东西，可以坐6个人。\n\n需求：\n+ 舒适 0.30
-object_ParkBench	公园板凳
-buildtoolbar_popup_obj_ParkBench	一条室外公园板凳，可以坐3个人。\n\n需求：\n+ 舒适 0.30
+
 object_DeckChair	折叠躺椅
-buildtoolbar_popup_obj_DeckChair	在躺椅上享受舒适阳光。\n\n需求：\n+ 舒适 0.30
+buildtoolbar_popup_obj_DeckChair	在躺椅上享受舒适阳光。\n\n需求：\n+ 舒适 0.50
 object_OvalStaffTable	员工休闲桌
 buildtoolbar_popup_obj_OvalStaffTable	在员工区域搭配椅子会很棒。
 #-
@@ -8311,13 +8315,13 @@ buildtoolbar_popup_obj_OvalStaffTable	在员工区域搭配椅子会很棒。
 object_MetalStool	金属凳
 buildtoolbar_popup_obj_MetalStool	外观精致的小金属凳。\n\n需求：\n+ 舒适 0.30
 object_leatherChair	皮革椅
-buildtoolbar_popup_obj_leatherChair	搭配皮革沙发。非常适合员工坐下，当然也非常适合囚犯。\n\n需求：\n+ 舒适 0.30
+buildtoolbar_popup_obj_leatherChair	搭配皮革沙发。非常适合员工坐下，当然也非常适合囚犯。\n\n需求：\n+ 舒适 0.50
 object_JungleBench	竹凳
 buildtoolbar_popup_obj_JungleBench	可以坐4给人在上面，和竹桌很搭。\n\n需求：\n+ 舒适 0.30
 #-
 
 #-========================
-#+==============================厨房
+#+==============================厨房食物饮水
 
 object_Cooker					炊具
 buildtoolbar_popup_obj_Cooker	提供热腾腾的饭菜让囚犯们享受一下。\n\n如果启用“天气与温度”，炊具会产生可观的热量。\n在天冷时，这是好事。但天热时……\n\n如果要在开饭前4小时内准备好食物，建议：\n   炊具数=囚犯数×每顿份量÷25\n如果“吃饭”作息为2小时，那么除数最大可以为40。
@@ -8338,20 +8342,23 @@ buildtoolbar_popup_obj_TrayDispenser	用于储存多余的餐盘，最大容量�
 object_FoodTrayPack	餐盘堆
 buildtoolbar_popup_obj_FoodTrayPack	一堆 40 个餐盘 \n双击或按住即可购买
 
+object_WaterCooler	饮水机
+buildtoolbar_popup_obj_WaterCooler	让人们可以方便喝水。\n\n需求：\n+ 饮水 20.00\n- 小便 7.00
+object_DrinkingFountain	壁挂饮水机\n\n需求：\n+ 饮水 20.00\n- 小便 7.00
+buildtoolbar_popup_obj_DrinkingFountain	壁挂式饮水机，可让你的囚犯和员工始终精神焕发且水分充足。\n\n需求：\n+ 饮水 20.00\n- 小便 7.00
+object_CoffeeMachine	咖啡机
+buildtoolbar_popup_obj_CoffeeMachine	过度劳累的人们渴望的功能。\n\n需求：\n+ 员工饮水 10.00\n+ 员工休息 3.0
+object_DrinkMachine	饮料贩卖机
+buildtoolbar_popup_obj_DrinkMachine 基础员工房间的必需品，也可提供囚犯生产酒精所需的原料。\n\n需求：\n+ 饮水 15.00\n- 小便 5.00
+
 object_SnackMachine	零食贩卖机
 buildtoolbar_popup_obj_SnackMachine	高热低质的零食。\n\n需求：\n+ 食物 10.00
-object_DrinkMachine	饮料贩卖机
-buildtoolbar_popup_obj_DrinkMachine 基础员工房间的必需品，也可提供囚犯生产酒精所需的原料。\n\n需求：\n+ 饮水 15.00\n- 小便 5.00\n+ 员工饮水 30.00
-object_WaterCooler	饮水机
-buildtoolbar_popup_obj_WaterCooler	让人们可以方便喝水。\n\n需求：\n+ 饮水 20.00\n- 小便 5.00\n+ 员工饮水 30.00
-object_CoffeeMachine	咖啡机
-buildtoolbar_popup_obj_CoffeeMachine	过度劳累的人们渴望的功能。\n\n需求：\n+ 员工饮水 15.00
 
 #-========================
 #+=============================卫生
 
 object_Toilet					厕所
-buildtoolbar_popup_obj_Yoilet	如果你相信那些疯子的话，这是一项基本人权。\n\n除了牢房，在淋浴间、庭院或者工作场所等地方，也可以适当安装一些。\n越狱地道的入口会藏在马桶下，搜查马桶可以找到它。\n大范围搜查虽然包含马桶，但警卫不会那么仔细，必要时可以手动搜查单个马桶。\n\n需求：\n+ 小便 10.00\n+ 大便 5.00
+buildtoolbar_popup_obj_Yoilet	如果你相信那些疯子的话，这是一项基本人权。\n\n除了牢房，在淋浴间、庭院或者工作场所等地方，也可以适当安装一些。\n越狱地道的入口会藏在马桶下，搜查马桶可以找到它。\n大范围搜查虽然包含马桶，但警卫不会那么仔细，必要时可以手动搜查单个马桶。\n\n需求：\n+ 小便 10.00 / 5.00\n+ 大便 5.00 / 10.00
 object_ShowerHead				花洒喷头
 buildtoolbar_popup_obj_ShowerHead	保持囚犯清洁，别忘了加个排水渠。\n\n除了淋浴间，在其它一些地方也可以安装它。\n\n需求：\n+ 卫生 5.00
 object_ShowerPillar	淋浴柱
@@ -8360,13 +8367,13 @@ object_Drain					排水渠
 buildtoolbar_popup_obj_Drain	清除地板上的积水，防止洗澡水漫延到淋浴间外面。\n\n适合安装在淋浴间的出入口。\n或者直接位于每个花洒的正下方。
 
 object_PersonalSink 洗手池
-buildtoolbar_popup_obj_PersonalSink 让人们可以简单地清洁自己。\n\n需求：\n+ 卫生 0.40
+buildtoolbar_popup_obj_PersonalSink 让人们可以简单地清洁自己。\n\n需求：\n+ 卫生 0.30 \n+ 员工环境 0.15
 object_BathroomSink	浴室洗手池
-buildtoolbar_popup_obj_BathroomSink	没有它，卫生浴室就不完整。\n\n需求：\n+ 卫生 0.40\n+ 饮水 1.00
+buildtoolbar_popup_obj_BathroomSink	没有它，卫生浴室就不完整。\n\n需求：\n+ 卫生 0.40\n+ 员工环境 0.20
 object_SinkMirror	洗手池和镜子
-buildtoolbar_popup_obj_SinkMirror	人们可以在镜子前更好的清洁自己。\n\n需求：\n+ 卫生 0.50
+buildtoolbar_popup_obj_SinkMirror	人们可以在镜子前更好的清洁自己。\n\n需求：\n+ 卫生 0.50\n+ 员工环境 0.25
 object_BathroomHandDryer	干手机
-buildtoolbar_popup_obj_BathroomHandDryer	与洗手池完美搭配。\n\n需求：\n+ 卫生 0.30\n+ 饮水 0.50
+buildtoolbar_popup_obj_BathroomHandDryer	与洗手池完美搭配。\n\n需求：\n+ 卫生 0.20\n+ 奢侈品 0.01\n+ 员工环境 0.1
 
 #-=========================
 #+=============================衣物
@@ -8388,7 +8395,7 @@ buildtoolbar_popup_obj_Bin	把周围的垃圾暂时集中存放，厨房、食�
 object_RecyclingBin	可回收垃圾桶
 buildtoolbar_popup_obj_RecyclingBin	回收废物而不是直接丢弃，因为这些废物对环境有益。\n研究“回收激励”之后，你还能借此获得收益！\n\n需求：\n+ 环境 0.05
 object_Fan	风扇
-buildtoolbar_popup_obj_Fan	老式立扇，可帮助空气流通。\n\n需求：\n+ 舒适 0.05
+buildtoolbar_popup_obj_Fan	老式立扇，可帮助空气流通。\n\n需求：\n+ 舒适 0.05\n+ 奢侈品 0.02
 #+植物
 object_Plant	植物
 buildtoolbar_popup_obj_Plant	一棵令人愉悦的室内植物。\n\n需求：\n+ 环境 0.02
@@ -8403,20 +8410,20 @@ buildtoolbar_popup_obj_Ivy	枝叶繁茂的装饰灌木。\n\n需求：\n+ 环境
 #-
 #+树
 object_Tree						树
-buildtoolbar_popup_obj_Tree	采取措施应对全球变暖，是我们所有人的责任。\n\n长大后会自动被工人砍伐，变成原木。\n\n需求：\n+ 自由 0.10
-object_SnowyConiferTree	树（雪松）
-buildtoolbar_popup_obj_SnowyConiferTree	在雪地上看起来最合适。\n\n需求：\n+ 自由 0.10
-object_PalmTree	树（棕榈树）
-buildtoolbar_popup_obj_PalmTree	一般生长在旱地上，但是你现在可以决定将它们种在任意你想种的地方。\n\n需求：\n+ 自由 0.10
-object_SakuraTree	树（樱花树）
-buildtoolbar_popup_obj_SakuraTree	一棵开着粉色花朵的美丽樱花树。\n\n需求：\n+ 自由 0.10\n+ 环境 0.04
-object_CactusTree	树（仙人掌）
-buildtoolbar_popup_obj_CactusTree	在旱地上看起来最合适。
-object_SpookyTree	树（阴森）
-buildtoolbar_popup_obj_SpookyTree	一棵可怕的古树，让囚犯感到不适。\n\n需求：\n- 环境 0.02
+buildtoolbar_popup_obj_Tree	采取措施应对全球变暖，是我们所有人的责任。\n\n长大后会自动被工人砍伐，变成原木。\n\n需求：\n+ 自由 0.10\n+ 环境 0.02
+object_SnowyConiferTree	雪松树
+buildtoolbar_popup_obj_SnowyConiferTree	在雪地上看起来很合适。\n\n需求：\n+ 自由 0.15\n+ 环境 0.03
+object_PalmTree	棕榈树
+buildtoolbar_popup_obj_PalmTree	常见的装饰树木。\n\n需求：\n+ 自由 0.15\n+ 环境 0.03
 object_WillowTree	柳树
-buildtoolbar_popup_obj_WillowTree	这棵树可以很好地点缀水域或增添花园的优雅魅力。\n\n需求：\n+ 自由 0.10\n+ 环境 0.04
-object_BareTree	树（光秃）
+buildtoolbar_popup_obj_WillowTree	这棵树可以很好地点缀水域或增添花园的优雅魅力。\n\n需求：\n+ 自由 0.20\n+ 环境 0.04
+object_SakuraTree	樱花树
+buildtoolbar_popup_obj_SakuraTree	一棵开着粉色花朵的美丽樱花树。\n\n需求：\n+ 自由 0.20\n+ 环境 0.04
+object_SpookyTree	阴森的树
+buildtoolbar_popup_obj_SpookyTree	一棵阴森恐怖的树，让囚犯更加想要远离这里。\n\n需求：\n- 自由 0.10\n+ 环境 0.02
+object_CactusTree	仙人掌树
+buildtoolbar_popup_obj_CactusTree	在旱地上看起来很合适。
+object_BareTree	光秃的树
 buildtoolbar_popup_obj_BareTree	大部分的树叶已经凋落。
 
 object_IndoorTreePlanter	室内植树区域
@@ -8427,32 +8434,33 @@ buildtoolbar_popup_obj_IndoorTreePlanter	下沉式植树，可用于室内种植
 #+=============================娱乐
 
 object_Radio					收音机
-buildtoolbar_popup_obj_Radio	让囚犯收听它们喜爱的乐队音乐，聊以度日。\n\n需求：\n+ 娱乐 0.1
+buildtoolbar_popup_obj_Radio	让囚犯收听它们喜爱的乐队音乐，聊以度日。\n\n需求：\n+ 娱乐 0.10\n+ 奢侈品 0.02
 object_BoomBoxRoundhouse	立体扬声器
-buildtoolbar_popup_obj_BoomBoxRoundhouse	让囚犯收听它们喜爱的音乐唱片，聊以度日。\n\n需求：\n+ 娱乐 0.2
-object_Tv						小电视
-buildtoolbar_popup_obj_Tv	用令人头脑发木的烂节目安抚囚犯。\n\n需要在电视前方给囚犯们坐或停留的地方。\n\n需求：\n+ 娱乐 2.00\n+ 舒适 0.20
+buildtoolbar_popup_obj_BoomBoxRoundhouse	让囚犯收听它们喜爱的音乐唱片，聊以度日。\n\n需求：\n+ 娱乐 0.08\n+ 奢侈品 0.02
+object_Tv						电视
+buildtoolbar_popup_obj_Tv	用令人头脑发木的烂节目安抚囚犯。\n\n需要在电视前方给囚犯们坐或停留的地方。\n\n需求：\n+ 娱乐 2.00\n+ 舒适 0.20\n+ 奢侈品 0.04
 object_LargeTv					大电视
-buildtoolbar_popup_obj_LargeTv	让众多囚犯们一起体验脑残。\n\n需要在电视前方给囚犯们坐或停留的地方。\n\n需求：\n+ 娱乐 2.00\n+ 舒适 0.20
+buildtoolbar_popup_obj_LargeTv	让众多囚犯们一起体验脑残。\n\n需要在电视前方给囚犯们坐或停留的地方。\n\n需求：\n+ 娱乐 2.00\n+ 舒适 0.25\n+ 奢侈品 0.06
+
 object_Canvas	画布
-buildtoolbar_popup_obj_Canvas	这种创新方式让囚犯能够表达他们的感受，而不用互相捅刀子。\n\n需求：\n+ 娱乐 0.30\n+ 舒适 0.30
+buildtoolbar_popup_obj_Canvas	这种创新方式让囚犯能够表达他们的感受，而不用互相捅刀子。\n\n需求：\n+ 娱乐 0.30\n+ 舒适 0.30\n+ 奢侈品 0.01
 object_PetBird	宠物鸟
-buildtoolbar_popup_obj_PetBird	能够陪伴囚犯的小伙伴。\n\n需求：\n+ 家庭 0.15\n+ 舒适 0.10\n+ 奢侈品 0.20
+buildtoolbar_popup_obj_PetBird	能够陪伴囚犯的小伙伴。\n\n需求：\n+ 家庭 0.15\n+ 舒适 0.10\n+ 奢侈品 0.15
 object_ChessTable	国际象棋桌
-buildtoolbar_popup_obj_chessTable	讲的是国王和法外之徒，可以2人使用。\n\n需求：\n+ 娱乐 4.00
+buildtoolbar_popup_obj_chessTable	讲的是国王和法外之徒，可以2人使用。\n\n需求：\n+ 娱乐 2.50\n+ 奢侈品 0.01
 
 object_ArcadeCabinet	游戏街机
-buildtoolbar_popup_obj_ArcadeCabinet 复古游戏机可供2名囚犯一起消遣。\n\n需求：\n+ 娱乐 0.30\n+ 舒适 0.20
+buildtoolbar_popup_obj_ArcadeCabinet 复古游戏机可供2名囚犯一起消遣。\n\n需求：\n+ 娱乐 0.30\n+ 舒适 0.20\n+ 奢侈品 0.08
 object_TableFootball	桌上足球
-buildtoolbar_popup_obj_TableFootball	为你的囚犯提供额外的消遣，可以2人使用。\n\n需求：\n+ 娱乐 0.40
+buildtoolbar_popup_obj_TableFootball	为你的囚犯提供额外的消遣，可以2人使用。\n\n需求：\n+ 娱乐 3.5\n+ 奢侈品 0.05
 object_TableTennis	乒乓球
-buildtoolbar_popup_obj_TableTennis	为你的囚犯提供额外的消遣，可以2人使用。\n\n需求：\n+ 娱乐 0.40
+buildtoolbar_popup_obj_TableTennis	为你的囚犯提供额外的消遣，可以2人使用。\n\n需求：\n+ 娱乐 3.5\n+ 奢侈品 0.05
 object_PoolTable	台球桌
-buildtoolbar_popup_obj_PoolTable	玩局台球来打发千篇一律的监狱生活，可以2人使用。\n\n需求：\n+ 娱乐 0.40
+buildtoolbar_popup_obj_PoolTable	玩局台球来打发千篇一律的监狱生活，可以2人使用。\n\n需求：\n+ 娱乐 3.5\n+ 奢侈品 0.05
 
 #未验证
 object_CinemaScreen	投影幕布
-buildtoolbar_popup_obj_CinemaScreen	一块大型白色帆布，用于投射电影画面。需搭配投影仪使用，以便为囚犯播放电影。\n\n需求：\n+ 娱乐 5.00\n+ 自由 1.00
+buildtoolbar_popup_obj_CinemaScreen	一块大型白色帆布，用于投射电影画面。需搭配投影仪使用，以便为囚犯播放电影。\n\n需求：\n+ 娱乐 4.00\n+ 自由 1.00
 object_CinemaProjector	投影仪
 buildtoolbar_popup_obj_CinemaProjector	每个放映室都需要一台投影仪。投影仪与投影幕布的距离不能超过10块地砖，否则无法播放电影。
 
@@ -8463,17 +8471,17 @@ object_DumbbellRack	哑铃架
 buildtoolbar_popup_obj_DumbbellRack	为了志趣相投的囚犯。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
 object_WeightsBench				举重床
 buildtoolbar_popup_obj_WeightsBench	让囚犯们锻炼，令他们保持愉悦。\n\n【豪华版】\n囚犯举重时，每小时减少疾病点数9点。\n当肥胖和瘦小的囚犯的疾病点数降低到100后，\n他们的体型会变成“一般”，同时会得到一些奖金。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
-object_GymMat	体操垫
+object_GymMat	健身垫
 buildtoolbar_popup_obj_GymMat	为了舒展身体从而缓解疼痛。\n\n需求：\n+ 锻炼 1.50\n+ 员工娱乐 1.50
-object_TrainingDummy	训练木桩
-buildtoolbar_popup_obj_TrainingDummy	少林训练木桩。\n- 刻苦训练的囚犯甚至可能学到新的战斗技巧！\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
+object_TrainingDummy	木人桩
+buildtoolbar_popup_obj_TrainingDummy	中国武术练习器材。\n刻苦训练的囚犯甚至可能学到新的战斗技巧！\n\n需求：\n+ 锻炼 2.00\n+ 员工娱乐 2.00
 object_PunchBag	拳击袋
-buildtoolbar_popup_obj_PunchBag	犯人需要释放好斗情绪时适用,可供2人同时使用。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
+buildtoolbar_popup_obj_PunchBag	犯人需要释放好斗情绪时适用,可供2人同时使用。\n\n需求：\n+ 锻炼 2.00\n+ 员工娱乐 2.00
 object_Treadmill	跑步机
-buildtoolbar_popup_obj_Treadmill	为了让囚犯保持健康。刻苦训练的囚犯甚至可能跑得更快。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
+buildtoolbar_popup_obj_Treadmill	为了让囚犯保持健康。刻苦训练的囚犯甚至可能跑得更快。\n\n需求：\n+ 锻炼 3.00\n+ 奢侈品 0.06\n+ 员工娱乐 3.00
 
 object_BoxingRing	拳击台
-buildtoolbar_popup_obj_BoxingRing	大多数犯人更喜欢在这幅画布上用对方的鲜血作画。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
+buildtoolbar_popup_obj_BoxingRing	大多数犯人更喜欢在这幅画布上用对方的鲜血作画。\n\n需求：\n+ 锻炼 4.00\n+ 娱乐 3.00
 
 object_TyreApparatus	轮胎器械
 buildtoolbar_popup_obj_TyreApparatus	有些囚犯坚持认为他们有练习攀岩的必要，可供3人同时使用。\n\n需求：\n+ 锻炼 3.00
@@ -8500,8 +8508,8 @@ object_LibraryBookshelf			图书馆书架
 buildtoolbar_popup_obj_LibraryBookshelf 一个放书的高架。
 object_ShortBookcase	图书馆矮书架
 buildtoolbar_popup_obj_ShortBookcase	一个放书的矮架。
-object_ComputerStation	机房
-buildtoolbar_popup_obj_ComputerStation	一台普通的计算机。\n\n需求：\n+ 文化 0.40\n+ 舒适 0.20
+object_ComputerStation	计算机
+buildtoolbar_popup_obj_ComputerStation	一台普通的计算机。\n\n需求：\n+ 文化 0.40\n+ 舒适 0.20\n + 奢侈品 0.10\n员工娱乐 1.0
 object_Blackboard	黑板
 buildtoolbar_popup_obj_Blackboard	没有它教室就不完整。
 
@@ -8510,7 +8518,7 @@ buildtoolbar_popup_obj_Altar	祷告者与至高力量的中继站。\n在安装�
 object_Pews						教堂长凳
 buildtoolbar_popup_obj_Pews	信徒的座位。用最坚硬、最致密的木头制成。\n\n需求：\n+ 宗教 0.30
 object_PrayerMat				祈祷垫
-buildtoolbar_popup_obj_PrayerMat	使囚犯们祈祷时不必跪在地板上。\n\n需求：\n+ 宗教 0.30
+buildtoolbar_popup_obj_PrayerMat	使囚犯们祈祷时不必跪在地板上。\n\n需求：\n+ 宗教 0.50
 
 #-=========================
 #+=============================医疗
@@ -8528,7 +8536,7 @@ buildtoolbar_popup_obj_MedicineCabinet 医药箱内放置了戒断药物，能�
 #-=========================
 #+=============================其他需求
 object_PhoneBooth				电话亭
-buildtoolbar_popup_obj_PhoneBooth	这些方便的电话亭可以让犯人与其家属通话。\n\n需求：\n+ 家庭 0.40
+buildtoolbar_popup_obj_PhoneBooth	这些方便的电话亭可以让犯人与其家属通话。\n\n需求：\n+ 家庭 4.00
 object_visitortable				会客桌
 buildtoolbar_popup_obj_visitortable 温馨的家庭会面或严肃的面谈审查。
 object_visitortablesecure		探监柜台
@@ -8544,7 +8552,7 @@ buildtoolbar_popup_obj_MetalDetector	囚犯经过时偷藏的金属违禁品会�
 object_CameraPillar	摄像机柱
 buildtoolbar_popup_obj_camerapillar	放置在开放区域，然后将摄像头安装在两侧。\n装饰性
 object_cctv						监控摄像头
-buildtoolbar_popup_uts_cctv	不用到处安排警卫，也可以监视囚犯。\n\n迷雾中发生事端时，附近的警卫不会知晓，所以不会前去处理。\n必须用‘监控监视器’连接才能工作。\n\n【豪华版】增加了“分拣囚犯”研究可以升级摄像头，\n从而把特定的囚犯群体，自动设置为合适的戒备类别。\n\n需求：\n+ 安全 0.03\n- 隐私 0.05
+buildtoolbar_popup_uts_cctv	不用到处安排警卫，也可以监视囚犯。\n\n迷雾中发生事端时，附近的警卫不会知晓，所以不会前去处理。\n必须用‘监控监视器’连接才能工作。\n\n【豪华版】增加了“分拣囚犯”研究可以升级摄像头，\n从而把特定的囚犯群体，自动设置为合适的戒备类别。\n\n需求：\n+ 安全 0.05\n- 隐私 0.05
 object_cctvmonitor				监控监视器
 buildtoolbar_popup_uts_cctvmonitor	警卫可远程监控监狱各处的摄像头。\n\n使用“连接”工具，将监视器与‘监控摄像头’相连。\n最多同时监视8个摄像头。如果连接了超过8个摄像头，\n监视器会轮流切换显示，只能提供不完整的监控覆盖度。
 
@@ -8558,11 +8566,11 @@ object_phonemonitor				电话窃听器
 buildtoolbar_popup_uts_phonemonitor	监听囚犯们打出的电话，以提前洞察有组织的违法活动。\n每次只能窃听一个电话。\n\n使用“连接”工具将此设备与‘电话亭’或‘探监柜台’相连。\n窃听可以让你得知打电话的囚犯的特征和从外界运输违禁品的约定。
 
 object_GuardPavilion	警卫亭
-buildtoolbar_popup_obj_GuardPavilion	放在庭院和开放区域，供警卫和武装警卫监视你的囚犯。\n	通过部署菜单安排警卫。\n - 增加该区域的镇压等级。\n - 警卫不受天气影响。
+buildtoolbar_popup_obj_GuardPavilion	放在庭院和开放区域，供警卫和武装警卫监视你的囚犯。\n通过部署菜单安排警卫，警卫不受天气影响。\n+ 压迫感
 object_GuardPavilionCorner	警卫亭（角落）
-buildtoolbar_popup_obj_GuardPavilionCorner	放在庭院和开放区域的角落，供警卫和武装警卫监视你的囚犯。\n	通过部署菜单分配警卫。\n - 增加该区域的镇压等级。\n - 警卫不受天气影响。
+buildtoolbar_popup_obj_GuardPavilionCorner	放在庭院和开放区域的角落，供警卫和武装警卫监视你的囚犯。\n	通过部署菜单分配警卫，警卫不受天气影响。\n+ 压迫感
 object_GuardTower				警戒塔
-buildtoolbar_popup_obj_GuardTower	经过严格培训的狙击手可在警戒塔保卫监狱安全。\n围墙无法阻挡狙击手视线。\n\n+ 增加压迫感
+buildtoolbar_popup_obj_GuardTower	经过严格培训的狙击手可在警戒塔保卫监狱安全。\n围墙无法阻挡狙击手视线。\n\n+ 压迫感
 
 object_weaponrack				武器架
 buildtoolbar_popup_obj_weaponrack 排列着许多武器。
@@ -8574,7 +8582,7 @@ object_dogcrate					狗笼
 buildtoolbar_popup_obj_dogcrate 舒适的狗笼，警犬能够在里面休息与疗伤。
 
 object_WardenStatue	典狱长雕像
-buildtoolbar_popup_obj_WardenStatue	高大的石像象征着典狱长对监狱的统治。\n\n+ 少量增加压迫感
+buildtoolbar_popup_obj_WardenStatue	高大的石像象征着典狱长对监狱的统治。\n\n+ 压迫感
 object_electricChair			处刑电椅
 buildtoolbar_popup_obj_electricChair	实施两千伏特的正义。\n\n【豪华版】\n把见证人直接瞬移过来！\n点击电椅，在菜单中开关该功能。\n注意：不要让多部电椅同时开启。
 object_barBedwire	铁丝网
@@ -8604,7 +8612,7 @@ object_SortingTable				分拣台
 buildtoolbar_popup_obj_SortingTable 在‘图书馆’和‘邮件收发室’用来整理物品。
 
 object_shopfront				店面
-buildtoolbar_popup_obj_shopfront 让‘商店’得以开业的必要部分。\n顾客会来到其外侧，选购商品。\n\n安装位置：墙壁
+buildtoolbar_popup_obj_shopfront 让‘商店’得以开业的必要部分。\n顾客会来到其外侧，选购商品。\n\n安装位置：墙壁\n\n需求：\n+ 奢侈品
 object_shopshelf				商店货架
 buildtoolbar_popup_obj_shopshelf 在‘商店’用来摆放商品。\n\n每小时自动从外面订购商品，以确保库存30份。
 object_StorageShelf	仓库货架
@@ -8820,9 +8828,6 @@ buildtoolbar_popup_obj_DiningTableSmall	一张高品质的餐桌，可以提高�
 buildtoolbar_popup_obj_DinerBooth	一个经典美国餐厅风格的带座位的小摊。\n\n需求：\n+ 舒适 0.30
 object_DiningChair	餐椅
 buildtoolbar_popup_obj_DiningChair	一把高品质的椅子，可以提高就餐档次。\n\n需求：\n+ 舒适 0.30
-
-object_DrinkingFountain	壁挂饮水机
-buildtoolbar_popup_obj_DrinkingFountain	壁挂式饮水机，可让你的囚犯和员工始终精神焕发且水分充足。\n\n需求：\n+ 饮水 20.00\n- 小便 5.00\n+ 员工饮水 30.00
 
 #-========================
 #+==============================未知
