@@ -1,21 +1,22 @@
-[h1]本次模组是对 [中文豪华版] 基于 < 原始模组 > 与 < 二次开发模组 >
-进行的修复与更新。[/h1]
-[h3]当前版本:V1.4.0 | 更新日期:2024.02.22[/h3]
-[i]
-感谢原作者 @GrandSong 对此次更新的肯定。
+[H1]本次模组是对 [中文豪华版] 基于 < 原始模组 > 与 < 二次开发模组 >
+进行的修复与更新[/H1]
+[H3]本模组正以原版游戏为核心，对所有内容进行修复、优化、重新设计，
+力争成为 [B][U]PA模组最优解[/U][/B]，目前工作量已高达 [B]500+小时[/B]，
+已重制内容包括且不限于：图标、房间与需求数据、人物数值、行政研究、各类说明[/H3]
+[hr][/hr][h3][B]当前版本:V1.5.0 | 更新日期:2024.02.25[/B][/h3]
+[i]感谢原作者 @GrandSong 对此次更新的肯定。
 已获得二次开发作者 @Yuanze31 许可。
 如果有任何需要完善的地方、希望更改或添加的功能。
-欢迎大家反馈与讨论。
-[/i]
+欢迎大家反馈与讨论。[/i]
+
 [h3][b]------------------------鼓励请点赞，好用请收藏，感谢大家的支持！------------------[/b][/h3]
-[hr][/hr][h2]关于 [b]本模组 更新概况[/b] 请查看本模组页面[/h2]
-[h2]关于 [b]本模组 更新详情[/b] 请查看<[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3151283978]改动说明[/url]>[/h2]
+[hr][/hr][h3]关于 [b]本模组 更新概况[/b] 请查看本模组页面[/h3]
+[h3]关于 [b]本模组 更新详情[/b] 请查看<[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3151283978]改动说明[/url]>[/h3]
 
-[h2]关于 [b]模组 详细说明[/b] 请查看 <原始模组> 与 < 二次开发模组 > 页面[/h2]
-感谢两位开发者对 PA 社区做出的巨大贡献！
-原始模组：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=821415114]{中文豪华版} | 作者 @GrandSong[/url]
-二次开发：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242]{中文豪华版}-yuanze31 | 作者 @yuanze31[/url]
-
+[h3]关于 [b]模组 详细说明[/b] 请查看 <原始模组> 与 < 二次开发模组 > 页面[/h3]
+[b]感谢两位开发者对 PA 社区做出的巨大贡献！[/b][list]
+[*]原始模组：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=821415114]{中文豪华版} | 作者 @GrandSong[/url]
+[*]二次开发：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242]{中文豪华版}-yuanze31 | 作者 @yuanze31[/url][/list]
 
 [hr][/hr][h1][b]重要！修复了在大型游戏中，
 大幅降低运算性能、2~5 秒一次严重卡顿、内存泄漏等严重 Bug！[/b][/h1]
@@ -93,12 +94,13 @@
 
 [h3]七、其他[/h3]
 [b][i]重新设计内容与绘制贴图[/i][/b][olist]
-[*][b][V1.3.2] 优化：重新设计"行政研究"的所有内容，并更换了背景图片[/b]
+[*][b][V1.3.2] 重制：重新设计"行政研究"的所有内容，并更换了背景图片[/b]
 [*][b][V1.3.4] 优化：所有"统计图表"中的介绍、提示、格式，并更换了背景图片[/b]
+[*][b][V1.5.0] 重制：重新编写和设计了所有需求数据，详情见<改动说明>[/b]
 [/olist]
 
 [h3]八、文本[/h3]
-[b][i]优化大量文本与格式，添加更多提示说明。[/i][/b][olist]
+[b][i]优化大量文本与格式，添加更多提示说明[/i][/b][olist]
 [*][b][V1.3.0] 添加：所有"原版物品"的需求详细信息[/b]
 [*][b][V1.4.0] 优化：所有"房间"的介绍、提示、格式[/b]
 [*]添加：所有”可出售产品“的价格备注
@@ -109,9 +111,9 @@
 [hr][/hr]
 [h2][b]再次感谢两位开发者对 PA 社区做出的巨大贡献！[/b][/h2]
 本模组 Github：[i][u]https://github.com/VigtigsteL/AllInOneDeluxe2024[/u][/i]
-
-原始模组：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=821415114]{中文豪华版} | 作者 @GrandSong[/url]
-二次开发：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242]{中文豪华版}-yuanze31 | 作者 @yuanze31[/url]
+[list]
+[*]原始模组：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=821415114]{中文豪华版} | 作者 @GrandSong[/url]
+[*]二次开发：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2895128242]{中文豪华版}-yuanze31 | 作者 @yuanze31[/url][/list]
 ----------------------------------------------------------------------
 [h3]本次修复使用或参考了以下模组的内容，感谢这些作者的辛勤付出！[/h3]
 <[url=https://steamcommunity.com/sharedfiles/filedetails/?id=359636985]Large Prison Mod[/url]>
