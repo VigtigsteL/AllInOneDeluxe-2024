@@ -2018,7 +2018,7 @@ BEGIN Provider
   Object          PersonalSink
   Slot            0
   PrimaryNeed     Hygiene
-  PrimaryRate     -0.3
+  PrimaryRate     -0.4
   ActionType      Use
   Priority        0.9
 END
@@ -2030,35 +2030,37 @@ BEGIN Provider
   Object          PersonalSink
   Slot            0
   PrimaryNeed     StaffEnvironment
-  PrimaryRate     -0.15
+  PrimaryRate     -0.2
   ActionType      Use
   Priority        0.9
 END
 #-
 
-#+浴室洗手池 优先级 0.9 卫生 0.4
+#+洗手池大 优先级 0.9 卫生 0.4
 BEGIN Provider
   Action          WashingHand
   ProviderType    Object
   Object          BathroomSink
   Slot            0
   PrimaryNeed     Hygiene
-  PrimaryRate     -0.4
+  PrimaryRate     -0.3
   ActionType      Use
   Priority        0.9
 END
+
 #-
-#+浴室洗手池 优先级 0.9 员工环境 0.2
+#+洗手池大 优先级 0.9 员工环境 0.2
 BEGIN Provider
   Action          WashingHand
   ProviderType    Object
   Object          BathroomSink
   Slot            0
   PrimaryNeed     StaffEnvironment
-  PrimaryRate     -0.2
+  PrimaryRate     -0.15
   ActionType      Use
   Priority        0.9
 END
+
 #-
 
 #+洗手池和镜子 优先级 0.9 卫生 0.5

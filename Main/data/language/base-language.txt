@@ -124,7 +124,7 @@ interfacecontraband_gangs	帮派
 
 interfacecallout_fireengine	消防车
 interfacecallout_riotpolice	防暴警察
-interfacecallout_armedpolice	武装警卫
+interfacecallout_armedpolice	武装警察
 interfacecallout_paramedics	救护人员
 interfacecallout_soldiers	士兵
 
@@ -277,19 +277,16 @@ buildtoolbar_popup_grading	查看你的监狱整体等级，基于四个关键�
 buildtoolbar_popup_obj_jaildoor	把囚犯关在他们应该待的地方。\n\n在“睡觉”和“监禁”作息，或者囚犯被禁足、关禁闭时，\n牢房的监狱门会变成关闭模式。\n这时，只有附近的警卫可以开门并替人开门。\n\n非牢房的监狱门，则总是这个模式。\n你会看到清洁工经常被拦住。\n也容易在高峰时段造成囚犯的拥堵，产生不良情绪。\n如果不考虑真实性，那么很多时候，‘员工门’甚至\n‘无锁门’会是更好的选择。
 buildtoolbar_popup_obj_jaildoorlarge	把很多囚犯关在他们应该待的地方。\n\n在人流特别拥挤的交通瓶颈，最好安装反向对开的两个门\n，形成4米宽。或者，可以用3米的特大监狱门。
 buildtoolbar_popup_obj_door	简单的门。\n没有锁。谁都可以出入。\n\n用于满足房间对“封闭”的需要，或分割出不同的区划。\n\n或者，你也可以用“空房间”。\n\n如果不考虑真实性，那么你应该优先考虑用这种门。
-buildtoolbar_popup_obj_solitarydoor	牢固的门，能够阻挡哪怕最强壮的犯人越狱。\n\n任何作息时，它都会把囚犯关起来。\n适合禁闭室和枪械库。
-buildtoolbar_popup_obj_staffdoor	上锁的门。不只警卫，所有员工都能打开它。\n\n不过，囚犯仍然可以等有人开门而通过。\n所以还是依靠区划来阻止囚犯进出某些区域吧。
 
 buildtoolbar_popup_obj_dismantleobject	按住左键并拖动鼠标，可以选中多个物品。\n拆除后，物品会被装进箱子，以便你重新安装。
 
 buildtoolbar_popup_obj_playmat 让婴儿玩耍的小小天地。\n\n满足婴儿的玩耍需求\n速率：每5分钟降低2点
 buildtoolbar_popup_obj_crib 啊，他/她睡觉的样子不像是个天使么？\n\n满足婴儿的睡眠需求\n速率：每5分钟降低0.5点\n\n虽然在‘家庭牢房’之外也能安装这种床，\n但是婴儿睡觉时，母亲会不肯离开太远……
 
-buildtoolbar_popup_obj_roadgate 通常用在马路上，以防大胆的囚犯从那里越狱。
 
 buildtoolbar_popup_obj_radiator 让冬天的寒气走开。但夏天时……\n\n如果启用“天气与温度”，牢房等地需要保持温暖。\n\n需要‘锅炉’和‘热水管’。\n\n对人的行走速度影响大(0.5倍)。\n\n注意：它的热量不会穿过监狱门。
 
-object_TimedCaller 定时呼叫
+object_TimedCaller 定时呼叫器
 buildtoolbar_popup_obj_TimedCaller 每天指定的时刻，呼叫一名警卫过来。\n确保在最容易发生事端的时间和地点，有警卫在场。\n\n主要用于教室等地方。\n\n只会选择活着且没有忙碌中的警卫。\n呼叫的范围为从15米到30米。\n如果没有找到警卫，会逐渐放大搜索范围。
 
 tc__when 定时于 *H 时 *M 分
@@ -574,7 +571,7 @@ statustoolbar_escapemap	安保
 statustoolbar_electricity	电力
 statustoolbar_stats	统计
 statustoolbar_danger	危险
-statustoolbar_jobs	工作
+statustoolbar_jobs	劳役
 statustoolbar_gangs	帮派
 statustoolbar_staff	员工
 statustoolbar_research	研究
@@ -1136,7 +1133,7 @@ report_finance	财政
 
 report_staff	员工
 report_prisoners	囚犯
-report_jobs	工作
+report_jobs	劳役
 report_needs	需求
 report_threats	威胁
 report_regime	作息
@@ -1579,7 +1576,7 @@ action_urinate	小便
 action_soilsuit	弄脏囚服
 action_eat	吃饭
 action_complain	抱怨
-action_work	工作
+action_work	劳役
 action_visitation	接受探监
 action_parole	假释听证
 action_misbehaving	行为不端
@@ -1633,7 +1630,7 @@ experience_misconduct	不端行为
 experience_lockeddown	禁足
 experience_regime	其它
 experience_sleep	睡觉
-experience_work	工作
+experience_work	劳役
 experience_class	上课
 experience_freetime	自由活动
 experience_moodbad	坏
@@ -1748,41 +1745,20 @@ nameplate_wounded	流血！
 # =============================================================================
 
 
-object_none						无
-object_box						一箱
-object_stack					一堆
 
-object_crib						婴儿床
 
 object_jaildoor					监狱门
 object_jaildoorlarge			大型监狱门
-object_door						门\n  （无锁）  
+object_door						门\n  （无锁）
+  
 object_solitarydoor				禁闭门
-object_staffdoor				员工门\n（绿色）
+buildtoolbar_popup_obj_solitarydoor	牢固的门，能够阻挡哪怕最强壮的犯人越狱。\n\n任何作息时，它都会把囚犯关起来。\n适合禁闭室和枪械库。
+
 object_remotedoor				遥控门
-object_roadgate					道路闸门
+
 object_jailbars					牢房栏杆
 
-object_brick					砖
-object_concrete					混凝土
-object_steel					钢材
-object_ingredients				食材
-object_ingredientscooking		食材(烹饪)
-object_ingredientscooked		食材(煮熟)
-object_ingredientsspoiled		食材(变质)
-object_meal						伙食
-object_foodtray					餐盘
-object_foodtraydirty			餐盘(脏)
-object_grassturf				草坪
-object_prisoneruniform			囚服(干净)
-object_dirtyprisoneruniform		囚服(脏)
-object_crumpledprisoneruniform	囚服(皱)
-object_bleach					漂白剂
-object_sheetmetal				金属板
-object_licenseplateblank		空白车牌
-object_licenseplate				车牌($25)
-object_log						原木($85)
-object_wood						木板($85)
+
 object_workman					工人
 object_truckdriver				卡车司机
 object_guard					警卫
@@ -1832,9 +1808,9 @@ object_powerswitch				电源开关
 object_logiccircuit				逻辑电路
 object_logicbridge				逻辑桥
 object_waterpumpstation			水泵站
-object_pipevalve				阀门
-object_pipelarge				大型管道
-object_pipesmall				小型管道
+object_pipevalve				水管阀门
+object_pipelarge				大型水管
+object_pipesmall				小型水管
 
 object_polaroid					宝丽来照片
 
@@ -1842,9 +1818,8 @@ object_polaroid					宝丽来照片
 
 object_radiator					暖气片
 
-object_treestump				树桩
 
-object_superiorBed				高级床($850)
+
 
 
 object_doortimer				门禁定时器
@@ -1861,7 +1836,7 @@ object_cutscenepolaroid			过场动画\n宝丽来照片
 object_cutscenecamera			动画镜头
 object_cutscenecue				动画提示
 object_cutscenecaption			动画字幕
-object_foodwaste				食物残渣
+
 
 object_paroleofficer			假释官
 object_parolelawyer				假释律师
@@ -1890,7 +1865,7 @@ object_stafffood				员工餐
 object_stafffoodboxed			员工餐
 object_newspaper				报纸
 object_strikefire				抗议之火
-object_Limo						防暴警车\n(剧情用)
+object_Limo						轿车\n(剧情用)
 object_SmokeGenerator			烟雾生成器
 object_Smoke					烟雾生成器
 
@@ -1902,34 +1877,163 @@ material_clearindoorarea	【清除室内】
 material_demolishwalls	【拆除墙壁】
 material_removetunnels	填埋地道
 material_canceljobs	取消工作
-material_dirt	泥土
-material_sand	沙土
-material_pavingstone	!铺路石!
-material_grass	草坪
-material_gravel	碎石路
-material_road	马路
-material_roadmarkings	路标
-material_roadmarkingsleft	路标(左)
-material_roadmarkingsright	路标(右)
-material_stone	石板路
-material_fence	铁栅栏
-material_concretetiles	!混凝土砖!
-material_concretefloor	!混凝土地板!
-material_woodenfloor	木地板
-material_ceramicfloor	陶瓷地板
-material_mosaicfloor	拼花地板
-material_metalfloor	金属地板
-material_marbletiles	大理石瓷砖
-material_whitetiles	白色瓷砖
-material_fancytiles	花式瓷砖
-material_concretewall	!混凝土墙!
-material_brickwall	砖墙
-material_perimeterwall	围墙
+
+#+==仅限户外
+
+material_dirt	_ 泥土\n 〔免费〕
+buildtoolbar_popup_mat_dirt	地板前缀意思为：\n^ 表示仅限室内\n_ 表示仅限户外\n* 表示两者皆可
+material_newmud	_ 泥地(黑)\n 〔免费〕
+material_mud	_ 泥地(红)\n 〔免费〕
+material_sand	_ 沙土\n 〔免费〕
+
+material_grass	_ 草坪
+material_grasscornerfloor	_ 草坪拐角
+material_grasscornerfloor1	_ 草坪拐角
+material_grasscornerfloor2	_ 草坪拐角
+material_grasscornerfloor3	_ 草坪拐角
+
+material_FieldGrass	_ 草地
+buildtoolbar_popup_mat_FieldGrass	茂密的草丛。
+material_LongGrass	_ 茂密杂草
+material_flowerfield	_ 花田
+material_grassstones	_ 草坪石头
+material_sandstone	_ 砂岩
+
+material_pavingstone	_ 铺路石※
+material_gravel	_ 碎石路
+material_stone	_ 石板路
+material_RunningTrack	_ 跑道
+material_road	_ 马路
+material_roadmarkings	_ 马路标识线
+material_roadmarkingsleft	_ 马路标识线(左)
+material_roadmarkingsright	_ 马路标识线(右)
+
+material_Snow	_ 雪地
+material_lunarfloor	_ 月球
+material_CliffEdge	_ 悬崖
+
+#-==
+
+#+==两者皆可
+
+material_concretefloor	* 混凝土※
+material_concretetiles	* 混凝土砖※
+material_YellowStraightLineTiles	* 混凝土砖（直墙）
+material_YellowCornerLineTiles	* 混凝土砖（角落）
+
+material_woodenfloor	* 木板
+material_DarkWoodFloor	* 木板(深色)
+buildtoolbar_popup_mat_DarkWoodFloor	坚固的木质地板。
+material_LaminateFlooringFR	* 木板(防火)
+buildtoolbar_popup_mat_LaminateFlooringFR	使用防火复合材料制作的木地板。
+material_BambooFloor	* 竹地板
+
+material_metalfloor	* 金属地板
+material_NewIronFloor	* 铁板
+material_NewCargoFloor	* 货箱底板
+material_solacofloor	* 科技地板
+material_gratefloor	* 金属格柵
+
+material_ReclaimedBrickFloor	* 翻新地砖
+material_ReclaimedRubberFloor	* 翻新橡胶
+
+#-==
+
+#+==仅限室内
+
+material_ceramicfloor	^ 陶瓷地板
+material_whitetiles	^ 白色瓷砖
+material_mosaicfloor	^ 拼花地板
+material_fancytiles	^ 花式瓷砖
+material_NewCheckeredFloor	^ 黑白格瓷砖
+material_marbletiles	^ 大理石瓷砖
+
+material_CarpetFR	^ 防火地毯
+buildtoolbar_popup_mat_CarpetFR	舒适的防火地毯。
+material_limestonefloor	^ 石灰岩
+
+
+
+
+#-==
+
+#+==未分类地板
+
+material_blueCarpet	地毯（蓝色）
+material_redCarpet	地毯（红色）
+material_brownCarpet	地毯（棕色）
+material_paddedfloor	软垫
+
+#-==
+
+
+#+==分区墙壁
+
+material_concretewall	混凝土墙※
+material_WallMinSec	墙壁\n（低戒备）
+material_WallMedSec	墙壁\n（中戒备）
+material_WallMaxSec	墙壁\n（高戒备）
+material_WallSuperMaxSec	墙壁\n（超高戒备）
+material_WallDeathRowSec	墙壁\n（死刑犯）
+material_WallInsaneSec	墙壁\n （精神病犯） 
+material_WallProtective	墙壁\n （重点保护） 
+
+#-==
+
+
+
+
+
+
+
+
+
+
+
+material_fence	铁网围栏
+material_yutaniwall	墙壁\n（科技）
+
+material_pipewall	墙壁\n（管道）
+material_overgrownwall	墙壁\n （藤蔓） 
+material_derelictwall	墙壁\n （破旧） 
+material_slumwall	墙壁\n（贫民窟）
+material_rustywall	墙壁\n （生锈） 
+material_bamboofence	竹栅栏
+material_decayedWall	墙壁\n （腐朽） 
+
+material_FenceAndGrass	铁网围栏\n（草坪）
+
+material_artdecowall	墙壁\n （艺术） 
+material_orientalWall	墙壁\n （日式） 
+material_decayedWall	墙壁\n （腐朽） 
+material_blueWall	高级墙壁\n（蓝色条纹）
+material_burgundyWall	高级墙壁\n（勃艮第色）
+material_greenWall	高级墙壁\n（绿色）
+material_cushionedwall	墙壁\n（衬垫）
+material_ReclaimedWoodWall	墙壁\n （木制） 
+
+
+material_NewTiledWall	墙壁\n （瓷砖） 
+material_NewBarredWall	铁栅栏
+material_NewBBlockWall	墙壁\n （白色） 
+material_NewHedgeWall	篱笆
+
+material_BottleWall	墙壁\n （回收） 
+material_WhitePicketFence	白色栅栏
+
+material_HayBailWall	干草墙
+material_WoodenFence	木栅栏
+material_GardenWall	墙壁\n （花园） 
+
+material_brickwall	砖墙\n（红砖）
+material_perimeterwall	监狱围墙
 material_burntfloor	烧焦的地板
 material_burntwall	烧焦的墙
 material_buildingframe	建筑框架
 material_roof	屋顶
 material_water	湖泊
+
+
 
 
 
@@ -2018,7 +2122,7 @@ reformerror_noroom	未找到所需房间
 reformerror_nofreetimeslot	所有房间都已预订
 reformerror_staffonly	所有房间为员工专区
 reformerror_noobjects	缺少所需物品
-reformerror_noregimetime	缺少“工作”作息时间槽
+reformerror_noregimetime	缺少“劳役”作息时间槽
 reformerror_noteachers	缺少教师
 
 reform_interested	*X 人感兴趣 
@@ -2059,7 +2163,7 @@ reform_program_properties_practical	实践性的
 reform_program_properties_repeatable	可重复
 reform_program_properties_passive	被动的(无需专心和理解)
 reform_program_properties_staffonly	仅限 员工
-reform_program_properties_outsideofwork	可在“工作”作息之外进行
+reform_program_properties_outsideofwork	可在“劳役”作息之外进行
 reform_program_properties_teacherssit	教师 要有座位
 reform_program_properties_canescortstudent	(被禁足或禁闭的)囚犯可由警卫护送
 
@@ -2087,15 +2191,15 @@ regimetooltip_sleep	囚犯被关在牢房里，灯也熄了。所有人都上床
 regimetooltip_eat	囚犯们前往指定的食堂，就坐吃饭。\n\n囚犯可以使用食堂内的一切设施，但在时间结束前不得离开。\n\n厨师会提前4小时开始准备伙食。
 regimetooltip_shower	囚犯们脱掉衣服进入淋浴间。每日的淋浴对囚犯的卫生很重要。\n但有些囚犯懒得去，除非被强迫。\n\n注意：强制的淋浴时间，很少是个好主意。\n哪怕牢房里就有花洒，他们也只能去淋浴间。\n不用淋浴而有其它需求的囚犯，也无法提前离开。
 regimetooltip_yard	囚犯可以到庭院中进行必要的锻炼、晒太阳、呼吸新鲜空气。\n\n这段时间内，囚犯可以使用庭院里的任何设施，比如\n用举重床健身、打电话给所爱之人、淋浴等。\n\n囚犯被限制在庭院。不过可以在庭院安装多种功能物品。\n该作息可以用来错开不同的囚犯群体，以防发生冲突。\n特别是帮派之间的冲突。\n\n对于高戒备群体，“庭院放风”+警戒塔可以压制其嚣张气焰。
-regimetooltip_work	囚犯可在监狱四处工作。\n任何职位空缺都会被填补，囚犯会自动到其工作岗位报到。\n(可以在[部署>狱中劳役]设立职位空缺。)\n\n“工作”期间，所有的改造项目也会进行。它们算是一回事。\n\n注意：工作中的囚犯无法处理自己的需求。\n\n至于目前没有工作或参加改造项目的囚犯，则如同“自由活动”。
+regimetooltip_work	囚犯可在监狱四处工作。\n任何职位空缺都会被填补，囚犯会自动到其工作岗位报到。\n(可以在[部署>狱中劳役]设立职位空缺。)\n\n“劳役”期间，所有的改造项目也会进行。它们算是一回事。\n\n注意：工作中的囚犯无法处理自己的需求。\n\n至于目前没有工作或参加改造项目的囚犯，则如同“自由活动”。
 regimetooltip_freetime	囚犯们可以使用监狱中的所有设施，只要区划允许其进入。\n囚犯最喜欢这段时间，会开展社交，并尽可能好地打理其需求。\n\n较长的自由活动可以缓解监狱中的压力和紧张情绪，\n但很多人认为这算不上什么刑罚。(降低[评级]中改造指标的评分)\n\n自由活动时，囚犯可以按其需要，最大自由地行动。\n不过，狱中劳役和囚犯参加的改造项目，无法进行。\n\n此外不会做的事情，只有一个：开始吃饭。不过如果\n上一个作息是吃饭，那么没吃完的囚犯可以在这时继续。
-regimetooltip_worklockdown	关于“工作”部分，见“工作或自由活动”。\n\n目前没有工作或参加改造项目的囚犯，会被“监禁”在牢房里。
+regimetooltip_worklockdown	关于“劳役”部分，见“工作或自由活动”。\n\n目前没有工作或参加改造项目的囚犯，会被“监禁”在牢房里。
 
 regime_clear	清除这类囚犯的作息，\n而采用中威胁的作息。
 
 schedule_editor_students	学生数：*X/*Y
 schedule_editor_error_staffonly	目标房间为【仅员工】，囚犯无法进入
-schedule_editor_error_noregimetime	项目不在有效的“工作”作息内
+schedule_editor_error_noregimetime	项目不在有效的“劳役”作息内
 schedule_editor_error_noteachers	这个项目没有教师
 schedule_editor_error_noobjects	任何房间都没有此项目所需的物品
 schedule_editor_pin	固定(即使条件不足，也不会自动关停)
@@ -2940,12 +3044,6 @@ Object_SwapOffice	交换办公室
 # {All-in-One Deluxe Edition}-yuanze31
 # =============================================================================
 
-# =============================================================================
-# =============================================================================
-# =============================================================================
-# =============================================================================
-# =============================================================================
-
 # June27th Update
 
 # =============================================================================
@@ -2973,14 +3071,7 @@ moveobjects_abort	右击：取消移动
 # New Materials
 # =============================================================================
 
-material_NewTiledWall	花砖墙
-material_NewBarredWall	铁丝网墙
-material_NewBBlockWall	白墙
-material_NewHedgeWall	篱笆
-material_NewIronFloor	铁板
-material_NewCargoFloor	货箱底板
-material_NewCheckeredFloor	方格花纹地板
-material_Snow	雪
+
 
 # =============================================================================
 # Misc
@@ -3016,53 +3107,6 @@ mm_updatenotes_10	希望您喜欢这些新功能及改进！
 
 # =============================================================================
 # Materials - Names
-# =============================================================================
-
-material_newmud	泥地
-material_mud	泥地
-material_yutaniwall	墙壁 (Yutani)
-material_solacofloor	Solaco 瓷砖
-material_gratefloor	格柵
-
-# =============================================================================
-# Objects - Names
-# =============================================================================
-
-object_visitorDoor	探视门
-
-# ====================门====================
-
-object_DoubleDoor	双开门\n（无锁）
-
-object_fencegatestaff	栅栏门\n（员工）
-object_fencegatestandard	栅栏门\n（无锁）
-object_fencegatevisitor	栅栏门\n（访客）
-object_fencegateguard	栅栏门\n（警卫）
-
-object_jaildoorgrey	监狱门\n（灰色）
-object_jaildoorlargegrey	大型监狱门\n（灰色）
-object_jaildoororange	监狱门\n（橙色）
-object_jaildoorlargeorange	大型监狱门\n（橙色）
-object_jaildoorred	监狱门\n（红色）
-object_jaildoorlargered	大型监狱门\n（红色）
-object_jaildoorYellow	监狱门\n（黄色）
-object_jaildoorlargeyellow	大型监狱门\n（黄色）
-object_JailDoorWhite	监狱门\n（白色）
-object_JailDoorLargeWhite	大型监狱门\n（白色）
-
-object_DoubleStaffDoor	双开员工门\n（绿色）
-object_StaffDoorBlue	员工门\n（蓝色）
-object_DoubleStaffDoorBlue	双开员工门\n（蓝色）
-object_StaffDoorOrange	员工门\n（橙色）
-object_DoubleStaffDoorOrange	双开员工门\n（橙色）
-object_StaffDoorRed	员工门\n（红色）
-object_DoubleVisitorDoor	双开探视门
-
-object_BarnDoor	谷仓门\n（无锁）
-object_WhitePicketGate	白色栅栏门\n（无锁）
-
-object_securedoor	安全禁闭门
-object_secretdoor	隐藏门
 # =============================================================================
 
 
@@ -3145,17 +3189,7 @@ buildtoolbar_deployment_MagentaPatrol	有颜色的巡逻路线允许重叠，可
 interfacedeployment_PrioritizePatrol	优先巡逻
 buildtoolbar_deployment_PrioritizePatrol	使用此选项，可以优先安排指定的警卫监视你监狱周围的特定巡逻路线。如果你人手紧缺，警卫会优先监视你设置的优先巡逻路线。有两个优先级别可选，“高”(>>) 和“超高”(>>>)。
 
-buildtoolbar_popup_filter_title	过滤器列表
-buiildtoolbar_popup_filter_toggle	点击按钮进行切换
-buildtoolbar_popup_filter_default	默认
-buildtoolbar_popup_filter_az	A-Z
-buildtoolbar_popup_filter_owned	已拥有
-buildtoolbar_popup_filter_costhighlow	费用（从高到低）
-buildtoolbar_popup_filter_costlowhigh	费用（从低到高）
-buildtoolbar_popup_filter_indooroutdoor	从室内到室外
-buildtoolbar_popup_filter_outdoorindoor	从室外到室内
-buildtoolbar_popup_filter_quantity	拥有数量
-buildtoolbar_popup_filter_byroom	按房间
+
 
 # =============================================================================
 # Interface Mode
@@ -3218,18 +3252,7 @@ codex_options_windowed_resolution	窗口模式的分辨率
 # Materials - Names
 # =============================================================================
 
-material_sandstone	砂岩
-material_limestonefloor	石灰岩
-material_blueCarpet	地毯（蓝色）
-material_redCarpet	地毯（红色）
-material_brownCarpet	地毯（棕色）
-material_paddedfloor	软垫
-material_grassstones	草坪石头
-material_grasscornerfloor	草坪拐角
-material_grasscornerfloor1	草坪拐角
-material_grasscornerfloor2	草坪拐角
-material_grasscornerfloor3	草坪拐角
-material_lunarfloor	月球
+
 
 # =============================================================================
 # Objects - Names
@@ -3317,7 +3340,7 @@ buildtoolbar_popup_obj_companion	警卫最好的朋友
 buildtoolbar_popup_obj_cat	并非每个人都喜欢狗。
 buildtoolbar_popup_obj_direwoof	谁会试图逃跑？
 
-buildtoolbar_popup_filter_mostused	最常用
+
 buildtoolbar_caters_safety	满足安全需求。
 
 interfacedeployment_orderly	分配护理人员
@@ -3755,33 +3778,8 @@ interfacedeployment_CustomSector	自定义区域
 # Materials - Names
 # =============================================================================
 
-material_RunningTrack	跑道
-material_BambooFloor	竹板
-material_pipewall	墙壁\n（管道）
-material_overgrownwall	墙壁\n （藤蔓） 
-material_derelictwall	墙壁\n （破旧） 
-material_slumwall	墙壁\n（贫民窟）
-material_rustywall	墙壁\n （生锈） 
-material_bamboofence	竹栅栏
-material_decayedWall	墙壁\n （腐朽） 
-material_flowerfield	花田
-material_FenceAndGrass	铁栅栏\n（草坪）
-material_WallMinSec	墙壁\n（低戒备囚犯）
-material_WallMedSec	墙壁\n（中戒备囚犯）
-material_WallMaxSec	墙壁\n（高戒备囚犯）
-material_WallSuperMaxSec	墙壁\n（超高戒备囚犯）
-material_WallDeathRowSec	墙壁\n（死刑犯）
-material_WallInsaneSec	墙壁\n （白色） 
-material_WallProtective	墙壁\n （黄色） 
-material_artdecowall	墙壁\n （艺术） 
-material_orientalWall	墙壁\n （东方） 
-material_decayedWall	墙壁\n （腐朽） 
-material_blueWall	高级墙壁\n（蓝色条纹）
-material_burgundyWall	高级墙壁\n（勃艮第色）
-material_greenWall	高级墙壁\n（绿色）
-material_cushionedwall	墙壁\n（衬垫）
-material_ReclaimedWoodWall	墙壁\n （木制） 
-material_CliffEdge	悬崖
+
+
 
 # =============================================================================
 # Objects - Names
@@ -4200,8 +4198,6 @@ report_policy_matchTitle	匹配安全区域
 report_policy_match_tooltip	将 *X 不当行为政策与另一个安全区域相匹配。
 report_intake_cat_PrisonerTransfer	传奇囚犯！
 
-object_roadbarrier	路障
-buildtoolbar_popup_obj_roadbarrier	一个坚实的路障，能够阻挡哪怕急速的卡车。\n仅当戒严时关闭。
 
 buildtoolbar_popup_help_Orderly_1	护理人员经过特别训练，专门看护精神病人囚犯。\n
 buildtoolbar_popup_help_Orderly_2	护理人员具有与警卫和医生类似的特征，但无法像普通警卫一样对囚犯产生镇压效果。\n\n
@@ -4473,13 +4469,7 @@ job_failed_routetomaterial_blocked	材料和工作之间的道路被阻挡
 material_FlowerField	花田
 #
 
-material_BottleWall	瓶墙
-material_WhitePicketFence	白色栅栏
-material_ReclaimedBrickFloor	翻新的砖石地砖
-material_ReclaimedRubberFloor	翻新的橡胶地砖
-material_HayBailWall	干草墙
-material_WoodenFence	木栅栏
-material_GardenWall	花园墙
+
 material_SellMaterial	【销售材料】
 
 # =============================================================================
@@ -4494,7 +4484,7 @@ object_WindTurbine	风力发电机
 object_SolarWindHybrid	风光互补发电机
 object_Battery	变压器电池
 object_PowerExportMeter	外销电能测量仪
-object_PracticeSolarPanel	太阳能电池板组装练习
+object_PracticeSolarPanel	太阳能电池\n组装练习板
 
 object_RecyclingBag	可回收袋
 
@@ -4549,7 +4539,7 @@ buildtoolbar_quickbuild__yard	标准庭院，包含囚犯可能需要的任何�
 #
 
 buildtoolbar_popup_mat_ReclaimedWoodWall	对老旧材料废物利用搭建而成的木墙。
-buildtoolbar_popup_mat_BottleWall	对老旧材料废物利用搭建而成的绚丽多彩墙。
+buildtoolbar_popup_mat_BottleWall	利用废弃塑料瓶搭建而成的绚丽多彩的墙壁。
 buildtoolbar_popup_mat_WhitePicketFence	能为花园遮风挡雨，但用来看管囚犯效果有限。
 buildtoolbar_popup_mat_ReclaimedBrickFloor	利用废旧材料制造出的人字纹地砖。
 buildtoolbar_popup_mat_ReclaimedRubberFloor	利用废旧材料制造出的橡胶地砖。
@@ -5005,18 +4995,9 @@ d11_report_policy_farming_tooltip_farmsearchfrequency	由于农业房间不在�
 d11_report_policy_farming_tooltip_farmsearchtarget	由于农业房间不在搜查范围内，请使用该选项，通过搜查频率选项，决定针对哪个道具或实体进行搜查。
 d11_report_policy_farming_tooltip_croptype	选择自动购买自然农作物还是转基因农作物。转基因农作物的生长时间将缩短 50%，但等量农作物的外销价格也较低，同时囚犯在食用时也不会产生需求增长。
 
-d11_carousel_filter_pack_GreenMachine	物品背包
 
-d11_carousel_filter_type_All	物品类型：所有类型
-d11_carousel_filter_type_RequiresWater	管道系统
-d11_carousel_filter_type_RequiresElectricity	电子设施
-d11_carousel_filter_type_Entertainment	娱乐设施
-d11_carousel_filter_type_Decoration	装饰
-d11_carousel_filter_type_Foliage	植物
-d11_carousel_filter_type_Signs	标志
-d11_carousel_filter_type_Security	安保
-d11_carousel_filter_type_Catering	看护
-d11_carousel_filter_type_Misc	其他
+
+
 
 d11_contraband_found_produced	监狱制造
 
@@ -5297,7 +5278,7 @@ d11_tooltip_HelpEnvironmentallyFriendly_child_2_SectionTitle	执行“选择”�
 equipment_WateringCan	"洒水壶	"
 d11_Crop_Placement_Error_01	农作物只能放置在各自的农业房间内。
 d11_Crop_Placement_Error_02	农作物只能放置在尘土地、泥地、草坪、草坪拐角或花田上。
-interfacemode_objectPack_filter_all	所有内容包
+
 d11_staffalert_summary_BasicFarming01	可在每个农业房间内种植蔬菜、果树和谷物，农作物收获后可外销出售，也可用作囚犯餐食。
 d11_staffalert_summary_BasicFarming02	农民不仅要处理耕种方面的一切事宜，还要将种田技能传授给囚犯。
 oobjective_HelpEnvironmentallyFriendly	和其他农作物不同的是，果树会持续不断地产出水果，因此无需在收获之后将其移除。
@@ -5385,19 +5366,9 @@ d11_cropDistributionHint	右键点击：管理分配
 d11_manageCropsInstructions	可以点击百分比按钮将其锁定，从而防止其他房间改变此比例。否则，请使用箭头按钮改变百分比。在所有连接的房间中，每种农作物的总量不得超过 100%。
 dlc_name_seaAirLand	困守孤岛
 dlc_name_greenMachine	迈向绿色
-interfacemode_objectType_filter_requiresWater	管道系统
-interfacemode_objectType_filter_requiresElectricity	电子设施
-interfacemode_objectType_filter_entertainment	娱乐设施
-interfacemode_objectType_filter_rest	休息
-interfacemode_objectType_filter_exercise	锻炼
-interfacemode_objectType_filter_decoration	装饰
-interfacemode_objectType_filter_foliage	植物
-interfacemode_objectType_filter_signs	标志
-interfacemode_objectType_filter_security	安保
-interfacemode_objectType_filter_catering	看护
-interfacemode_objectType_filter_misc	其他
+
 material_SellFlooring	出售地板
-object_AdvancedAutoGatherer	高级自动收集器
+
 object_farmer	农民
 object_OrganicWaste	有机废物
 
@@ -5466,8 +5437,7 @@ buildtoolbar_popup_mat_grasscornerfloor3	带有泥土的草坪拐角，对于建
 
 d11_hover_alert_water	需要水源
 d11_hover_alert_electricity	需要电力
-interfacemode_objectPack_filter_caption	根据相关扩展包，过滤显示的物品数量。
-interfacemode_objectType_filter_caption	根据物品类型，过滤显示的物品数量。
+
 d11_powerstation_overloaded_two_stations	已过载，电站之间不能相互连接
 buildtoolbar_deployment_PrioritizeFarmer	使用此选项，可以优先安排农民在特定区域内劳作，完成工作后他们才会去监狱的其他区域工作。如果你人手紧缺，农民会优先打理你设置的优先区域。指派 1 名、2 名或 3 名农民优先在一片区域内劳作。
 interfacetopbar_tooltip_totalFarmers	共计 *X 名农民
@@ -5482,7 +5452,7 @@ mutator_name_RoofView	屋顶视角
 mutator_tooltip_RoofView	添加类似战争迷雾的效果，区别是会在能见度较低的区域显示建筑物屋顶，而非“迷雾”。
 job_group_hovering_expand	点击以扩展相似的工作类型
 job_group_hovering_collapse	点击以折叠相似的工作类型
-interfacemode_objectType_filter_all	物品类型：所有类型
+
 objective_HelpGreenEnergy_child_1_description	可使用三种新型绿色电源替换发电站。\n\n风力发电机\n太阳能电池板\n太阳能供电的风力发电机\n游戏初期只可获取太阳能电池板。\n\n每个绿色电源的属性会有些许不同，例如电能输出量可能有所区别，但与发电站不同的是，这些电源可以相互连接，一排最多 50 个。
 objective_HelpNarcoticProduction_child_1_description	满足特定条件的囚犯能够自己酿酒。\n\n首先。他们将从农业房间、厨房区域或任何能接近的自动贩卖机中获取酿酒原料。\n\n接着，到了晚上，他们会在自己的牢房内用这些原料进行酿制，然后将酿制中的酒储存几日以待其发酵。
 reports_farmingpolicytitle	农业政策
@@ -5507,7 +5477,7 @@ needs_help_staffwarmth	员工需要保持温暖，在您的监狱中放上暖气
 codex_options_enableturbomode	启用加速模式
 reputation_swimmer_high	游泳者
 object_TherapyAnimal	提供治疗的动物
-object_TherapyAnimalContainer	提供治疗的动物的笼子
+object_TherapyAnimalContainer	提供治疗的动物笼
 object_AnimalTherapist	动物治疗师
 object_RestaurantCustomer	平民顾客
 object_DisplayCounter	展示柜
@@ -5527,7 +5497,7 @@ object_RestaurantPlateDirty	盘子（脏）
 object_CakeStand	蛋糕架
 
 object_SaloonDoor	沙龙门\n（无锁）
-object_OrnateLantern	景观灯
+object_OrnateLantern	豪华壁灯
 
 object_NoEntrySign	标识（不准进入）
 object_GymSign	标识（体育馆）
@@ -5929,7 +5899,7 @@ object_PestControlTruck	害虫防治卡车
 object_PestControlWorker	害虫防治工人
 equipment_PoisonWand	熏蒸消毒器
 equipment_FirstAidKit	急救箱
-object_damagedelectricalcable	受损的电缆
+object_damagedelectricalcable	损坏的电缆
 object_Rat	老鼠
 object_RatTrap	捕鼠器
 object_RatDroppings	老鼠屎
@@ -6148,12 +6118,7 @@ event_deep_freeze_vis_sniper_tower	狙击塔报告称能见度低。除非天气
 event_deep_freeze_vis_outside_guard	户外巡逻警卫已多次报告能见度问题。他们似乎无法看清距离较远的囚犯。
 event_lightning_storm_vis_sniper_tower	在这种天气下，警戒塔上狙击手的视野会受限。他们的可见距离肯定不如往常。
 event_lightning_storm_vis_outside_guard	室外警卫报告称当前天气下能见度低。因此请警惕有人试图越狱。
-material_FieldGrass	草地
-buildtoolbar_popup_mat_FieldGrass	茂密芜杂的草丛。
-material_LaminateFlooringFR	复合地板（防火）
-buildtoolbar_popup_mat_LaminateFlooringFR	防火木地板。
-material_CarpetFR	地毯（防火）
-buildtoolbar_popup_mat_CarpetFR	铺设舒适的防火地毯，非常适合员工区域。
+
 object_Shiba	柴犬
 buildtoolbar_popup_obj_Shiba	年轻但经验丰富的警犬，喜欢鸡肉和奶酪类零食。
 object_BlackSetter	黑色塞特犬
@@ -6278,7 +6243,7 @@ object_RemoteDoorWhite	遥控门（白色）
 buildtoolbar_popup_obj_RemoteDoorWhite	用这种门可以有效地防止囚犯窃取钥匙而大规模越狱。\n\n不能用钥匙打开，而只能遥控开门。\n需要有警卫操作对应的‘门禁系统’，给员工和囚犯放行。\n需要及时安装其所需的‘门禁控制器’，以免阻碍通行。\n\n员工会尽量不走这个门，即使其所在路线很近……\n所以，如无必要，那么安装‘禁闭门’就够了。
 object_GymInstructor	健身教练
 
-material_LongGrass	茂密杂草
+
 codex_tooltip_gangsEnhanced	现在可更改帮派接收监狱囚犯的速度。监狱中帮派成员越多，帮派招募速度就越快，监狱也会变得更加混乱和危险。\n\n传统模式-体验之前的帮派难度（适合新手）\n“低强度模式”（默认）-适合新手或中级玩家\n中强度模式-熟练玩家\n高强度模式-渴望高难度挑战的专家
 codex_tooltip_morelieutenants	骨干在各个帮派争夺新地盘过程中扮演着重要角色。如果你想让帮派更活跃，考虑减少每个骨干所需的成员数量。如果想挑战一下自己，可以将数值设置为 6 以下。
 codex_option_morelieutenants	更多骨干
@@ -6583,8 +6548,7 @@ regimetooltip_eatLockdown	囚犯必须前往指定餐厅用餐，或使用该餐
 regimetooltip_showerLockdown	囚犯可前往淋浴间好好洗个澡，并换身干净的囚服（如有）。洗完澡后，囚犯会被限制在牢房里，如同“监禁”。
 rooms_AllRooms	所有房间
 
-material_DarkWoodFloor	深色木地板
-buildtoolbar_popup_mat_DarkWoodFloor	坚固的木质地板，可用于办公室。
+
 
 interface_action_rank	级别
 rank_title	级别
@@ -6659,8 +6623,7 @@ material_TaintedFloor	已污染
 buildtoolbar_popup_mat_TaintedFloor	这里看起来寸草不生。
 material_FenceWall	栅栏围墙
 buildtoolbar_popup_mat_FenceWall	这些墙壁让人感觉格外阴森可怖。
-material_YellowStraightLineTiles	混凝土砖（直墙）
-material_YellowCornerLineTiles	混凝土砖（角落）
+
 buildtoolbar_popup_mat_Rotatable	可旋转
 finances_category_zombiepayments	收容活尸奖金
 dlc_name_graveyardShift	活尸
@@ -6668,7 +6631,7 @@ codex_new_theUndead	活尸来了！
 codex_tooltip_theUndead	尸潮爆发？这可不是你所熟知的病毒所致，但愿你能从根源上消灭病毒。\n\n禁用尸潮爆发，让死者安息。\n\n爆发程度低：处理难度低，易于应对。\n\n爆发程度中：挑战性略微增加。\n\n爆发程度高：噩梦模式，活尸属性值最高，数量增长最快。此外，活尸能够在攻击无力自卫的单位时自我疗愈。
 event_infect_entities	有些犯人的举止看起来有点怪异，他们的行动速度变慢，目光呆滞地凝视前方，而且他们身上开始出血。
 equipment_Crowbar	撬棍
-equipment_BarBedWireBat	缠绕着带刺铁丝的球棒
+equipment_BarBedWireBat	令人望而却步的蛇腹型铁丝网。
 equipment_ModifiedHandgun	改装过的手枪
 equipment_ModifiedAssaultRifle	改装过的突击步枪
 equipment_ChainsawWeapon	链锯
@@ -7303,9 +7266,9 @@ objective_grant_prisonerworkforce_research	通过[行政系统]解锁“狱中�
 objective_grant_prisonerworkforce_cleaning	建造 清洁间
 objective_grant_prisonerworkforce_laundry	建造 洗衣房
 objective_grant_prisonerworkforce_kitchenclass	让3个囚犯完成 厨房安全与卫生 方案
-objective_grant_prisonerworkforce_laundryassigned	将3个囚犯指派到 洗衣房 工作
-objective_grant_prisonerworkforce_kitchenassigned	将3个囚犯指派到 厨房 工作
-objective_grant_prisonerworkforce_cleaningassigned	将3个囚犯指派到 清洁间 工作
+objective_grant_prisonerworkforce_laundryassigned	将3个囚犯指派到 洗衣房 劳役
+objective_grant_prisonerworkforce_kitchenassigned	将3个囚犯指派到 厨房 劳役
+objective_grant_prisonerworkforce_cleaningassigned	将3个囚犯指派到 清洁间 劳役
 
 objective_grant_educationreformprogram	通过教育行动来改造
 objective_grant_educationreformprogram_description	一个著名的运动团体正在执行一个大规模社会实验。\n它考察的是教育对囚犯的再犯罪率的影响。\n设立一些教室，并开始教育你的囚犯。
@@ -7571,7 +7534,7 @@ researchtooltip_security	解锁“安保主管”。\n可以从“员工”工�
 research_remoteaccess	门禁系统
 researchtooltip_remoteaccess	能够远程控制门禁，降低警卫的工作量。\n安装“门禁控制器”或“门禁定时器”后，警卫就能在门禁系统中遥控开门。
 
-research_cctv	监控
+research_cctv	监控摄像机
 researchtooltip_cctv	解锁“监控摄像头”与“监视器”，能够远程观察监狱。\n老旧的设备使得画面模糊，警卫无法在监控中清晰地观察囚犯。\n解锁“电话窃听”系统，能够监听囚犯打出的电话以获取情报。
 
 research_CCTVImprovement	警报程序
@@ -7872,10 +7835,6 @@ crisisSector_DeathRowOnly	死刑犯专区
 
 
 
-
-
-
-
 #+===============================房间===============================
 room_none	无
 room_clearrooms	清除房间
@@ -7987,7 +7946,7 @@ room_canteen_staff	员工餐厅
 #+==交通运输
 
 room_intake	入狱搜查室
-buildtoolbar_popup_room_intake	囚犯抵达监狱时，会先被带到这里搜身。\n\n推荐在此安装”囚犯分拣监控“
+buildtoolbar_popup_room_intake	囚犯抵达监狱时，会先被带到这里搜身。\n\n推荐在此安装”监控-囚犯分类器“
 
 room_morgue	停尸房
 buildtoolbar_popup_room_morgue	等待灵车时临时安放尸体的区域。\n\n[推荐区划：目的地专区]
@@ -8168,18 +8127,43 @@ roomgrading_Classroom_HasWindow_None	[*E] 无窗户
 
 #-===========================================================
 
+#+===============================材料===============================
+
+object_brick					砖块
+object_concrete					混凝土
+object_steel					钢材
+object_ingredients				食材
+object_ingredientscooking		食材(烹饪)
+object_ingredientscooked		食材(煮熟)
+object_ingredientsspoiled		食材(变质)
+object_foodwaste				食物残渣
+object_meal						伙食
+object_foodtray					餐盘
+object_foodtraydirty			餐盘(脏)
+object_grassturf				草坪
+object_prisoneruniform			囚服(干净)
+object_dirtyprisoneruniform		囚服(脏)
+object_crumpledprisoneruniform	囚服(皱)
+object_bleach					漂白剂
+object_sheetmetal				金属板
+object_licenseplateblank		空白车牌
+object_licenseplate				车牌($25)
+object_log						原木($85)
+object_wood						木板($85)
+
+#-===========================================================
 
 #+===============================物品===============================
 
 #+==============================照明
 
-object_Light					灯
+object_Light					*灯
 buildtoolbar_popup_obj_Light	确保你在晚上也能看清囚犯们。
-object_SolarLight	灯\n （太阳能） 
+object_SolarLight	太阳能灯
 buildtoolbar_popup_obj_SolarLight	晚间自动开启的自供电太阳能灯。
-object_WallLight	壁灯
+object_WallLight	*壁灯
 buildtoolbar_popup_obj_WallLight	地堡风格灯，可以安在墙壁上。
-object_SolarWallLight	壁灯\n（太阳能）
+object_SolarWallLight	太阳能壁灯
 buildtoolbar_popup_obj_SolarWallLight	一只可安装于墙壁上的太阳能灯，在夜间会自动开启。
 
 object_FloodLight	泛光灯
@@ -8199,48 +8183,53 @@ buildtoolbar_popup_obj_OrnateLantern	一盏豪华的壁灯。\n\n需求：\n+ �
 #-========================
 #+==============================窗户
 
-object_Window					牢窗
+object_Window					'窗户\n （牢房） 
 buildtoolbar_popup_obj_Window	可以见到一缕阳光。\n如果启用“天气与温度”，窗户会影响室温。
-object_WindowLarge				牢窗（大）
+object_WindowLarge				'窗户\n （大型/牢房） 
 buildtoolbar_popup_obj_WindowLarge	可以见到充沛的阳光。\n如果启用“天气与温度”，窗户会影响室温。
-object_GlassWindow	玻璃窗
+object_GlassWindow	'窗户\n （玻璃） 
 buildtoolbar_popup_obj_GLassWindow	可以见到一缕阳光。
-object_GlassWindowLarge	玻璃窗（大）
+object_GlassWindowLarge	'窗户\n （大型/玻璃） 
 buildtoolbar_popup_obj_GlassWindowLarge	可以见到充沛的阳光。
-object_WoodenWindowSmall	木窗
+object_WoodenWindowSmall	'窗户\n （木制） 
 buildtoolbar_popup_obj_WoodenWindowSmall	偶尔可以瞥见一缕阳光。
-object_WoodenWindowLarge	木窗（大）
+object_WoodenWindowLarge	'窗户\n （大型/木制） 
 buildtoolbar_popup_obj_WoodenWindowLarge	可以见到充沛的阳光。
-object_StainGlassWindow	彩绘玻璃窗
-buildtoolbar_popup_obj_StainGlassWindow	让外观看起来远好于实际状态。
-object_WindowClassy	高级窗户
+object_WindowClassy	'窗户\n （高级） 
 buildtoolbar_popup_obj_WindowClassy	让外观看起来远好于实际状态。
-object_WindowClassyLarge	高级窗户（大）
+object_WindowClassyLarge	'窗户\n （大型/高级） 
 buildtoolbar_popup_obj_WindowClassyLarge	让外观看起来远好于实际状态。
+
+object_StainGlassWindow	'窗户\n（彩绘玻璃）
+buildtoolbar_popup_obj_StainGlassWindow	让外观看起来远好于实际状态。
 #-========================
 #+==============================床
 
-object_SoftPillow	松软的枕头
+object_SoftPillow	'松软枕头
 buildtoolbar_popup_obj_SoftPillow	毛茸茸的羽毛枕头。
 
-object_Mattress	海绵床垫
+object_Mattress	'床铺\n（简陋） 
 buildtoolbar_popup_obj_Mattress	肮脏发霉的海绵床垫散发着臭味，但好歹比地板好一点。\n\n需求：\n+ 睡眠 0.12\n+ 舒适(坐) 0.09\n+ 舒适(睡) 0.12
-object_OldBed	旧床
+object_OldBed	'床铺\n （老旧） 
 buildtoolbar_popup_obj_OldBed	老式监狱床铺，比海绵床垫好一些。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
-object_BunkBed					双层床
+object_BunkBed					'床铺\n （双层） 
 buildtoolbar_popup_obj_bunkBed 让打鼾声合奏的乐器，狭隘的空间让人无法正常坐着，只有放在宿舍和拘留室才有意义。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.12\n+ 舒适(睡) 0.15
-object_Bed						单人床
+object_Bed						'床铺
 buildtoolbar_popup_obj_Bed	不太软也不太硬，刚刚好。好吧，其实又硬又小。\n\n需求：\n+ 睡眠 0.18\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.18
-object_ComfyBed	豪华床
+object_ComfyBed	'床铺\n （豪华） 
 buildtoolbar_popup_obj_ComfyBed	配有记忆海绵床垫的豪华大床，可提供最好的夜间睡眠质量。\n\n需求：\n+ 睡眠 0.30\n+ 舒适(坐) 0.20\n+ 舒适(睡) 0.40\n+ 奢侈品 0.12
 
-object_CoffinBed	棺床
+object_CoffinBed	'床铺\n （棺材） 
 buildtoolbar_popup_obj_CoffinBed	造型怪异的床。\n\n需求：\n+ 睡眠 0.18\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.18
 
-object_CampBed	行军床
+object_CampBed	'床铺\n （露营） 
 buildtoolbar_popup_obj_CampBed	这床用着比看起来舒服。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.15
-object_NettedBed	网床
+object_NettedBed	'床铺\n （网状） 
 buildtoolbar_popup_obj_NettedBed	在热带气候生活的必需品。舒适度不高，但可以驱赶蚊虫。\n\n需求：\n+ 睡眠 0.15\n+ 舒适(坐) 0.15\n+ 舒适(睡) 0.15
+
+object_crib						'床铺\n （婴儿）
+
+object_superiorBed				高级床($850)
 
 #-========================
 #+==============================桌椅柜
@@ -8251,13 +8240,13 @@ buildtoolbar_popup_obj_WoodenTable	搭配木凳会很棒
 object_WoodenStool	木凳
 buildtoolbar_popup_obj_WoodenStool	搭配木桌会很棒。\n\n需求：\n+ 舒适 0.15
 
-object_Table					长桌
+object_Table					.桌子
 buildtoolbar_popup_obj_Table	跟长凳很搭，一些房间需要它放置物品。
-object_Bench					长凳
+object_Bench					.板凳
 buildtoolbar_popup_obj_Bench	跟长桌绝配,可以坐4个人。\n\n需求：\n+ 舒适 0.20
-object_SmallTable	短桌
+object_SmallTable	.桌子\n  （短）  
 buildtoolbar_popup_obj_SmallTable	长桌的缩小版。
-object_SmallBench	短凳
+object_SmallBench	.板凳\n  （短）  
 buildtoolbar_popup_obj_SmallBench	长凳的缩小版，可以坐2个人。\n\n需求：\n+ 舒适 0.20
 
 object_OakTable	橡木桌
@@ -8268,20 +8257,20 @@ buildtoolbar_popup_obj_OakBench	搭配橡木桌会很棒，可以坐3个人。\n
 object_OutdoorTable	室外桌椅
 buildtoolbar_popup_obj_OutdoorTable	供囚犯坐在室外吃东西，可以坐6个人。\n\n需求：\n+ 舒适 0.30
 
-object_ChestOfDrawers	抽屉柜
+object_ChestOfDrawers	·抽屉柜
 buildtoolbar_popup_obj_ChestOfDrawers	一个木制抽屉柜，可以存放一些杂物。\n\n需求：\n+ 奢侈品 0.05
-object_FilingCabinet			档案柜
+object_FilingCabinet			·档案柜
 buildtoolbar_popup_obj_FilingCabinet	用来整理物品并分类存放。\n\n需求：\n+ 奢侈品 0.06
-object_SwivelChair	办公椅
+object_SwivelChair	·办公椅
 buildtoolbar_popup_obj_SwivelChair	普通的转椅，可摆放在办公桌的中央。\n\n需求：\n+ 舒适 0.60\n+ 奢侈品 0.08
-object_OfficeDesk	办公桌
+object_OfficeDesk	·办公桌
 buildtoolbar_popup_obj_OfficeDesk	一个干净整洁的办公桌。\n\n需求：\n+ 奢侈品 0.08
 
-object_OfficeChair	豪华办公椅
+object_OfficeChair	·办公椅\n （豪华） 
 buildtoolbar_popup_obj_OfficeChair	豪华的转椅，供工作人员坐在办公桌中央。\n\n需求：\n+ 舒适 0.80
-object_FancyDesk	豪华办公桌
+object_FancyDesk	·办公桌\n （豪华） 
 buildtoolbar_popup_obj_FancyDesk	你的员工需要记录很多信息，给他们提供一个现代化的办公桌吧。
-object_FilingCabinetFancy	豪华档案柜
+object_FilingCabinetFancy	·档案柜\n （豪华） 
 buildtoolbar_popup_obj_FilingCabinetFancy	给员工豪华档案柜以兹奖励。
 #-
 #+单椅
@@ -8292,11 +8281,11 @@ buildtoolbar_popup_obj_ChairYellow	跟桌子是绝配。\n\n需求：\n+ 舒适 
 
 object_SofaChairsingle			沙发\n（蓝）
 buildtoolbar_popup_obj_SofaChairsingle 可以让人舒舒服服地坐一会儿。\n\n需求：\n+ 舒适 0.70\n+ 奢侈品 0.09
-object_SofaChairdouble			宽沙发\n（蓝）
+object_SofaChairdouble			沙发\n（大/蓝）
 buildtoolbar_popup_obj_SofaChairdouble 可以让两个人一起坐着。\n\n需求：\n+ 舒适 0.70\n+ 奢侈品 0.09
 object_SofaChairBrown	沙发\n（棕）
 buildtoolbar_popup_obj_SofaChairBrown	一个柔软的沙发，坐在上面很舒服。\n\n需求：\n+ 舒适 0.70\n+ 奢侈品 0.09
-object_SofaChairDoubleBrown	宽沙发\n（棕）
+object_SofaChairDoubleBrown	沙发\n（大/棕）
 buildtoolbar_popup_obj_SofaChairDoubleBrown	一个大而柔软的沙发，可供两人就座。\n\n需求：\n+ 舒适 0.70\n+ 奢侈品 0.09
 object_ParkBench	公园板凳
 buildtoolbar_popup_obj_ParkBench	一条室外公园板凳，可以坐3个人。\n\n需求：\n+ 舒适 0.30
@@ -8323,13 +8312,13 @@ buildtoolbar_popup_obj_JungleBench	可以坐4给人在上面，和竹桌很搭�
 #-========================
 #+==============================厨房食物饮水
 
-object_Cooker					炊具
+object_Cooker					.炊具
 buildtoolbar_popup_obj_Cooker	提供热腾腾的饭菜让囚犯们享受一下。\n\n如果启用“天气与温度”，炊具会产生可观的热量。\n在天冷时，这是好事。但天热时……\n\n如果要在开饭前4小时内准备好食物，建议：\n   炊具数=囚犯数×每顿份量÷25\n如果“吃饭”作息为2小时，那么除数最大可以为40。
-object_Fridge					冰柜
+object_Fridge					.冰柜
 buildtoolbar_popup_obj_Fridge	用于存放食材。\n\n1台冰柜可以盛放2箱食材。\n\n建议：\n   冰箱数=囚犯数×每顿份量÷40\n此外，伙食种类很多时，也需要再增多一些冰柜。
-object_TallFridge	立式冰箱
+object_TallFridge	.立式冰箱
 buildtoolbar_popup_obj_TallFridge	现在食材可堆叠至一人高！
-object_Sink						厨房水槽
+object_Sink						.厨房水槽
 buildtoolbar_popup_obj_Sink 用过的餐盘必须在这里清洗。\n\n速率为：5分钟/餐盘=12盘/小时\n\n如果启用“天气与温度”，那么用热水的话会洗得更快。\n\n大体上，每30个囚犯需要1个水槽。\n除非你一天提供3顿伙食，否则厨师有充裕的时间洗盘子。
 object_ServingTable				配餐桌
 buildtoolbar_popup_obj_ServingTable	用于为囚犯分发食物。\n\n有效的用餐时间越短，需要配餐桌越多。请把它们合理地分布在食堂里，以助于分流人群。\n\n容量为20×4份食物。不过，考虑人与物的流动性，\n如果“吃饭”作息为2小时，可以当做容量为120份。\n例如：如果人均2份食物，那么每60个囚犯需要1张配餐桌。\n\n【豪华版】\n伙食数量与种类会影响所有囚犯的疾病点数。
@@ -8337,7 +8326,7 @@ object_SmallServingTable	配餐桌（小）
 buildtoolbar_popup_obj_SmallServingTable	配餐桌的缩小版，用于为囚犯分发食物。
 object_JungleServingTable	竹制配餐桌
 buildtoolbar_popup_obj_JungleServingTable	用于为囚犯分发食物。
-object_TrayDispenser	餐盘分发柜
+object_TrayDispenser	.餐盘分发柜
 buildtoolbar_popup_obj_TrayDispenser	用于储存多余的餐盘，最大容量为 200。
 object_FoodTrayPack	餐盘堆
 buildtoolbar_popup_obj_FoodTrayPack	一堆 40 个餐盘 \n双击或按住即可购买
@@ -8357,19 +8346,19 @@ buildtoolbar_popup_obj_SnackMachine	高热低质的零食。\n\n需求：\n+ 食
 #-========================
 #+=============================卫生
 
-object_Toilet					厕所
+object_Toilet					*厕所
 buildtoolbar_popup_obj_Yoilet	如果你相信那些疯子的话，这是一项基本人权。\n\n除了牢房，在淋浴间、庭院或者工作场所等地方，也可以适当安装一些。\n越狱地道的入口会藏在马桶下，搜查马桶可以找到它。\n大范围搜查虽然包含马桶，但警卫不会那么仔细，必要时可以手动搜查单个马桶。\n\n需求：\n+ 小便 10.00 / 5.00\n+ 大便 5.00 / 10.00
-object_ShowerHead				花洒喷头
+object_ShowerHead				*淋浴花洒
 buildtoolbar_popup_obj_ShowerHead	保持囚犯清洁，别忘了加个排水渠。\n\n除了淋浴间，在其它一些地方也可以安装它。\n\n需求：\n+ 卫生 5.00
 object_ShowerPillar	淋浴柱
 buildtoolbar_popup_obj_ShowerPillar	放在淋浴间的中间，然后在两边各安一个花洒喷头。\n\n装饰性
-object_Drain					排水渠
+object_Drain					*排水渠
 buildtoolbar_popup_obj_Drain	清除地板上的积水，防止洗澡水漫延到淋浴间外面。\n\n适合安装在淋浴间的出入口。\n或者直接位于每个花洒的正下方。
 
-object_PersonalSink 洗手池
-buildtoolbar_popup_obj_PersonalSink 让人们可以简单地清洁自己。\n\n需求：\n+ 卫生 0.30 \n+ 员工环境 0.15
-object_BathroomSink	浴室洗手池
-buildtoolbar_popup_obj_BathroomSink	没有它，卫生浴室就不完整。\n\n需求：\n+ 卫生 0.40\n+ 员工环境 0.20
+object_PersonalSink 洗手池（大）
+buildtoolbar_popup_obj_PersonalSink 拥有更大的空间，可以更好地清洁。\n\n需求：\n+ 卫生 0.40\n+ 员工环境 0.20
+object_BathroomSink	洗手池
+buildtoolbar_popup_obj_BathroomSink	让人们可以简单地清洁自己。\n\n需求：\n+ 卫生 0.30 \n+ 员工环境 0.15
 object_SinkMirror	洗手池和镜子
 buildtoolbar_popup_obj_SinkMirror	人们可以在镜子前更好的清洁自己。\n\n需求：\n+ 卫生 0.50\n+ 员工环境 0.25
 object_BathroomHandDryer	干手机
@@ -8392,42 +8381,44 @@ buildtoolbar_popup_obj_ironingBoardShort	较短的熨衣板，用于熨烫干净
 
 object_Bin	垃圾桶
 buildtoolbar_popup_obj_Bin	把周围的垃圾暂时集中存放，厨房、食堂等地方都离不开垃圾桶。\n如果缺少它，工人会把每袋垃圾都分别送往垃圾场。\n\n需求：\n+ 环境 0.05
-object_RecyclingBin	可回收垃圾桶
+object_RecyclingBin	垃圾桶\n（可回收）
 buildtoolbar_popup_obj_RecyclingBin	回收废物而不是直接丢弃，因为这些废物对环境有益。\n研究“回收激励”之后，你还能借此获得收益！\n\n需求：\n+ 环境 0.05
 object_Fan	风扇
 buildtoolbar_popup_obj_Fan	老式立扇，可帮助空气流通。\n\n需求：\n+ 舒适 0.05\n+ 奢侈品 0.02
 #+植物
-object_Plant	植物
+object_Plant	盆栽\n （植物） 
 buildtoolbar_popup_obj_Plant	一棵令人愉悦的室内植物。\n\n需求：\n+ 环境 0.02
-object_PlantCactus	仙人掌盆栽
+object_PlantCactus	盆栽\n （仙人掌） 
 buildtoolbar_popup_obj_PlantCactus	一棵室内盆栽仙人掌。\n\n需求：\n+ 环境 0.02
 object_Bush	灌木
 buildtoolbar_popup_obj_Bush	为户外区域做一些装饰。\n\n需求：\n+ 环境 0.02
-object_FernBush	灌木树篱
+object_FernBush	灌木\n （蕨类） 
 buildtoolbar_popup_obj_FernBush	这种灌木喜阴。\n\n需求：\n+ 环境 0.02
-object_Ivy	常春藤
+object_Ivy	灌木\n （常春藤） 
 buildtoolbar_popup_obj_Ivy	枝叶繁茂的装饰灌木。\n\n需求：\n+ 环境 0.02
 #-
 #+树
 object_Tree						树
 buildtoolbar_popup_obj_Tree	采取措施应对全球变暖，是我们所有人的责任。\n\n长大后会自动被工人砍伐，变成原木。\n\n需求：\n+ 自由 0.10\n+ 环境 0.02
-object_SnowyConiferTree	雪松树
+object_SnowyConiferTree	树\n  （雪松）  
 buildtoolbar_popup_obj_SnowyConiferTree	在雪地上看起来很合适。\n\n需求：\n+ 自由 0.15\n+ 环境 0.03
-object_PalmTree	棕榈树
+object_PalmTree	树\n  （棕榈）  
 buildtoolbar_popup_obj_PalmTree	常见的装饰树木。\n\n需求：\n+ 自由 0.15\n+ 环境 0.03
-object_WillowTree	柳树
+object_WillowTree	树\n  （杨柳）  
 buildtoolbar_popup_obj_WillowTree	这棵树可以很好地点缀水域或增添花园的优雅魅力。\n\n需求：\n+ 自由 0.20\n+ 环境 0.04
-object_SakuraTree	樱花树
+object_SakuraTree	树\n  （樱花）  
 buildtoolbar_popup_obj_SakuraTree	一棵开着粉色花朵的美丽樱花树。\n\n需求：\n+ 自由 0.20\n+ 环境 0.04
-object_SpookyTree	阴森的树
+object_SpookyTree	树\n  （阴森）  
 buildtoolbar_popup_obj_SpookyTree	一棵阴森恐怖的树，让囚犯更加想要远离这里。\n\n需求：\n- 自由 0.10\n+ 环境 0.02
-object_CactusTree	仙人掌树
+object_CactusTree	树\n （仙人掌） 
 buildtoolbar_popup_obj_CactusTree	在旱地上看起来很合适。
-object_BareTree	光秃的树
+object_BareTree	树\n  （光秃）  
 buildtoolbar_popup_obj_BareTree	大部分的树叶已经凋落。
 
 object_IndoorTreePlanter	室内植树区域
 buildtoolbar_popup_obj_IndoorTreePlanter	下沉式植树，可用于室内种植树木。
+
+object_treestump				树桩
 #-
 
 #-=========================
@@ -8469,7 +8460,7 @@ buildtoolbar_popup_obj_CinemaProjector	每个放映室都需要一台投影仪�
 
 object_DumbbellRack	哑铃架
 buildtoolbar_popup_obj_DumbbellRack	为了志趣相投的囚犯。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
-object_WeightsBench				举重床
+object_WeightsBench				举重凳
 buildtoolbar_popup_obj_WeightsBench	让囚犯们锻炼，令他们保持愉悦。\n\n【豪华版】\n囚犯举重时，每小时减少疾病点数9点。\n当肥胖和瘦小的囚犯的疾病点数降低到100后，\n他们的体型会变成“一般”，同时会得到一些奖金。\n\n需求：\n+ 锻炼 3.00\n+ 员工娱乐 3.00
 object_GymMat	健身垫
 buildtoolbar_popup_obj_GymMat	为了舒展身体从而缓解疼痛。\n\n需求：\n+ 锻炼 1.50\n+ 员工娱乐 1.50
@@ -8502,11 +8493,11 @@ buildtoolbar_popup_obj_PushUpStones	一件廉价运动器材，深受较为老�
 #-=========================
 #+=============================文化/宗教
 
-object_Bookshelf				小书架
+object_Bookshelf				壁挂书架
 buildtoolbar_popup_obj_Bookshelf	放书的架子。\n\n需求：\n+ 文化 0.20
 object_LibraryBookshelf			图书馆书架
 buildtoolbar_popup_obj_LibraryBookshelf 一个放书的高架。
-object_ShortBookcase	图书馆矮书架
+object_ShortBookcase	图书馆书架\n（矮）
 buildtoolbar_popup_obj_ShortBookcase	一个放书的矮架。
 object_ComputerStation	计算机
 buildtoolbar_popup_obj_ComputerStation	一台普通的计算机。\n\n需求：\n+ 文化 0.40\n+ 舒适 0.20\n + 奢侈品 0.10\n员工娱乐 1.0
@@ -8523,14 +8514,14 @@ buildtoolbar_popup_obj_PrayerMat	使囚犯们祈祷时不必跪在地板上。\n
 #-=========================
 #+=============================医疗
 
-object_MedicalBed				病床
+object_MedicalBed				.病床
 buildtoolbar_popup_obj_MedicalBed	安置病人的地方。
-object_morgueslab				停尸台
+object_morgueslab				.停尸台
 buildtoolbar_popup_obj_morgueslab	在送走遗体前，确保死者有地方暂时安息。
 object_gravestone	墓碑
 buildtoolbar_popup_obj_gravestone	在你的监狱中每发生一起死亡事故就会提供一块墓碑。
 
-object_MedicineCabinet 医药箱
+object_MedicineCabinet .医药箱
 buildtoolbar_popup_obj_MedicineCabinet 医药箱内放置了戒断药物，能够帮助周围的囚犯更好的克服成瘾。\n\n需求：\n+ 酒精 0.05\n+ 毒品 0.02
 
 #-=========================
@@ -8547,27 +8538,27 @@ buildtoolbar_popup_uts_VideoCallBooth	亲人无法前来探视的时候，也可
 #-========================
 #+==============================安全
 
-object_MetalDetector			金属探测器
+object_MetalDetector			*金属探测器
 buildtoolbar_popup_obj_MetalDetector	囚犯经过时偷藏的金属违禁品会被检测出来，有时会误报。\n需要在附近安排警卫，以及时地搜查并收缴违禁品。
-object_CameraPillar	摄像机柱
+object_CameraPillar	监控机柱
 buildtoolbar_popup_obj_camerapillar	放置在开放区域，然后将摄像头安装在两侧。\n装饰性
-object_cctv						监控摄像头
-buildtoolbar_popup_uts_cctv	不用到处安排警卫，也可以监视囚犯。\n\n迷雾中发生事端时，附近的警卫不会知晓，所以不会前去处理。\n必须用‘监控监视器’连接才能工作。\n\n【豪华版】增加了“分拣囚犯”研究可以升级摄像头，\n从而把特定的囚犯群体，自动设置为合适的戒备类别。\n\n需求：\n+ 安全 0.05\n- 隐私 0.05
-object_cctvmonitor				监控监视器
+object_cctv						监控摄像机
+buildtoolbar_popup_uts_cctv	不用到处安排警卫，也可以监视囚犯。\n\n迷雾中发生事端时，附近的警卫不会知晓，所以不会前去处理。\n必须用‘监控监视器’连接才能工作。\n\n【豪华版】增加了“囚犯分类器”研究可以升级摄像头，\n从而把特定的囚犯群体，自动设置为合适的戒备类别。\n\n需求：\n+ 安全 0.05\n- 隐私 0.05
+object_cctvmonitor				安保系统\n （监控） 
 buildtoolbar_popup_uts_cctvmonitor	警卫可远程监控监狱各处的摄像头。\n\n使用“连接”工具，将监视器与‘监控摄像头’相连。\n最多同时监视8个摄像头。如果连接了超过8个摄像头，\n监视器会轮流切换显示，只能提供不完整的监控覆盖度。
 
-object_ServoProxy 门禁控制器
+object_ServoProxy *门禁控制器
 buildtoolbar_popup_obj_ServoProxy 详情见[基础设施]里的‘门禁控制器’
 object_servo					门禁控制器
 buildtoolbar_popup_uts_Servo	安装在你想要遥控的门上。\n\n请确保齿轮在门的正上方；另一端则在墙壁上。\n一旦安装好，门禁控制器在被触发时就会自动开门——\n通常由‘门禁控制系统’或‘门禁定时器’触发。\n\n门禁控制器可以串连，当第一个伺服器开启时，\n会触发后面的伺服器。
-object_doorcontrolsystem		门禁系统
+object_doorcontrolsystem		安保系统\n （门禁） 
 buildtoolbar_popup_uts_DoorControlSystem	警卫可遥控打开监狱各处的门，减轻大量工作量。\n每秒最多打开两扇门。\n\n使用“连接”工具，将此系统与‘门禁控制器’相连。
-object_phonemonitor				电话窃听器
+object_phonemonitor				安保系统\n （窃听） 
 buildtoolbar_popup_uts_phonemonitor	监听囚犯们打出的电话，以提前洞察有组织的违法活动。\n每次只能窃听一个电话。\n\n使用“连接”工具将此设备与‘电话亭’或‘探监柜台’相连。\n窃听可以让你得知打电话的囚犯的特征和从外界运输违禁品的约定。
 
 object_GuardPavilion	警卫亭
 buildtoolbar_popup_obj_GuardPavilion	放在庭院和开放区域，供警卫和武装警卫监视你的囚犯。\n通过部署菜单安排警卫，警卫不受天气影响。\n+ 压迫感
-object_GuardPavilionCorner	警卫亭（角落）
+object_GuardPavilionCorner	警卫亭\n （角落） 
 buildtoolbar_popup_obj_GuardPavilionCorner	放在庭院和开放区域的角落，供警卫和武装警卫监视你的囚犯。\n	通过部署菜单分配警卫，警卫不受天气影响。\n+ 压迫感
 object_GuardTower				警戒塔
 buildtoolbar_popup_obj_GuardTower	经过严格培训的狙击手可在警戒塔保卫监狱安全。\n围墙无法阻挡狙击手视线。\n\n+ 压迫感
@@ -8578,14 +8569,14 @@ object_guardlocker				枪柜
 buildtoolbar_popup_obj_guardlocker 每名武装警卫都需要自己的专属锁柜。\n必需安装在枪械库，决定了可雇用武装警卫的人数上限。
 object_DogBowl	警犬食盆
 buildtoolbar_popup_obj_DogBowl	为疲劳的警犬提供水和食物。\n少量增加狗的耐力。
-object_dogcrate					狗笼
+object_dogcrate					警犬笼
 buildtoolbar_popup_obj_dogcrate 舒适的狗笼，警犬能够在里面休息与疗伤。
 
 object_WardenStatue	典狱长雕像
 buildtoolbar_popup_obj_WardenStatue	高大的石像象征着典狱长对监狱的统治。\n\n+ 压迫感
-object_electricChair			处刑电椅
+object_electricChair			死刑电椅
 buildtoolbar_popup_obj_electricChair	实施两千伏特的正义。\n\n【豪华版】\n把见证人直接瞬移过来！\n点击电椅，在菜单中开关该功能。\n注意：不要让多部电椅同时开启。
-object_barBedwire	铁丝网
+object_barBedwire	防爬铁丝网
 buildtoolbar_popup_obj_BarBedWire	一种安放在墙壁的尖刺状物品，可以让墙壁看起来更加气派和安全。
 object_WindSock	风向标
 buildtoolbar_popup_obj_WindSock	风向标可显示风向和速度，并预警未来 1 小时内的灾难。
@@ -8601,7 +8592,7 @@ buildtoolbar_popup_uts_Router	追踪清单所需物品。\n\n连上追踪监视�
 object_Sprinkler	喷水灭火器
 buildtoolbar_popup_obj_sprinkler	发生火灾时，自动向此区域喷水。\n\n感应的直径为7米。\n如果管道被烧毁，那么会失去供水。
 #-========================
-#+==============================工作
+#+==============================劳役
 object_WorkshopSaw			冲压机
 buildtoolbar_popup_obj_WorkshopSaw 工坊里的基本工具。\n · 把1张‘金属板’加工成2张‘车牌(空白)’\n   用时12分钟\n · 把1根‘原木’加工成4块‘木板’\n   用时30分钟\n\n无法限定为只加工某一种！\n由于金属板是从外面采购的，所以供应很稳定。\n原木的供应取决于林场的生产情况。
 object_WorkshopPress				电锯台
@@ -8633,17 +8624,17 @@ buildtoolbar_popup_obj_painting1	尽管这是监狱，但这并不意味着我�
 object_Painting2	绘画
 buildtoolbar_popup_obj_painting2	尽管这是监狱，但这并不意味着我们不能展现出优雅的品味。
 object_CoatStand	衣帽架
-buildtoolbar_popup_obj_CoatStand	放置员工大衣和帽子的地方。
+buildtoolbar_popup_obj_CoatStand	放置大衣和帽子的地方。
 
-object_SpiderWeb	蜘蛛网
-object_JackOLantern	南瓜灯
-object_DecoratedTree	带装饰的树（阴森可怖）
+object_SpiderWeb	[万圣节]\n蜘蛛网
+object_JackOLantern	[万圣节]\n南瓜灯
+object_DecoratedTree	[万圣节]\n装饰树
 buildtoolbar_popup_obj_SpiderWeb	为你的墙面增加一点恐怖元素。
 buildtoolbar_popup_obj_JackOLantern	令人毛骨悚然的光源，可能还可以吃。
 buildtoolbar_popup_obj_DecoratedTree	一棵阴森可怖的古树，上面配有装饰物。
-object_BorderPlantA	花园边缘植物 A
-object_BorderPlantB	花园边缘植物 B
-object_BorderPlantC	花园边缘植物 C
+object_BorderPlantA	花园植物 A
+object_BorderPlantB	花园植物 B
+object_BorderPlantC	花园植物 C
 buildtoolbar_popup_obj_BorderPlantA	装饰花卉，可用于充当小花园的篱笆。
 buildtoolbar_popup_obj_BorderPlantB	装饰花卉，可用于充当小花园的篱笆。
 buildtoolbar_popup_obj_BorderPlantC	装饰花卉，可用于充当小花园的篱笆。
@@ -8654,12 +8645,12 @@ buildtoolbar_popup_obj_tyrestack	充当小型墙壁，囚犯和员工走动时�
 object_WallPanel	墙板（红色）
 object_WallPanelWood	墙板（木质）
 object_WallPanelStone	墙板（石质）
-object_WallPanelCorner_A	A 型墙板角件（红色）
-object_WallPanelWoodCorner_A	A 型墙板角件（木质）
-object_WallPanelStoneCorner_A	A 型墙板角件（石质）
-object_WallPanelCorner_B	B 型墙板角件（红色）
-object_WallPanelWoodCorner_B	B 型墙板角件（木质）
-object_WallPanelStoneCorner_B	B 型墙板角件（石质）
+object_WallPanelCorner_A	墙板角件（A型红色）
+object_WallPanelWoodCorner_A	墙板角件（A型木质）
+object_WallPanelStoneCorner_A	墙板角件（A型石质）
+object_WallPanelCorner_B	墙板角件（B型红色）
+object_WallPanelWoodCorner_B	墙板角件（B型木质）
+object_WallPanelStoneCorner_B	墙板角件（B型石质）
 buildtoolbar_popup_obj_WallPanel	短的独立墙板，无需清除屋内瓷砖就能创建隔离区域。
 buildtoolbar_popup_obj_WallPanelWood	短的独立墙板，无需清除屋内瓷砖就能创建隔离区域。
 buildtoolbar_popup_obj_WallPanelStone	短的独立墙板，无需清除屋内瓷砖就能创建隔离区域。
@@ -8671,13 +8662,13 @@ buildtoolbar_popup_obj_WallPanelWoodCorner_B	墙板的独立角件，无需清�
 buildtoolbar_popup_obj_WallPanelStoneCorner_B	墙板的独立角件，无需清除屋内瓷砖就能创建隔离区域。
 object_footbridge	人行桥
 buildtoolbar_popup_obj_Footbridge	允许囚犯和员工穿过陆地和水域。无法在墙壁、栅栏和其他建筑物上建造。
-object_footbridgesteel	钢制人行桥
+object_footbridgesteel	人行桥（钢制）
 buildtoolbar_popup_obj_FootbridgeSteel	允许囚犯和员工穿过陆地和水域。无法在墙壁、栅栏和其他建筑物上建造。
-object_footbridgeb	人行桥 B
+object_footbridgeb	人行桥（B型）
 buildtoolbar_popup_obj_FootbridgeB	允许囚犯和员工穿过陆地和水域。无法在墙壁、栅栏和其他建筑物上建造。
-object_footbridgesteelb	钢制人行桥 B
+object_footbridgesteelb	人行桥（B型钢制）
 buildtoolbar_popup_obj_FootbridgeSteelB	允许囚犯和员工穿过陆地和水域。无法在墙壁、栅栏和其他建筑物上建造。
-object_GrassBridge	铺草的桥
+object_GrassBridge	人行桥（铺草）
 buildtoolbar_popup_obj_GrassBridge	一座铺满草的桥，可以安全地通过道路。
 #-
 
@@ -8686,37 +8677,37 @@ buildtoolbar_popup_obj_GrassBridge	一座铺满草的桥，可以安全地通过
 
 #+物品
 object_shed	农屋
-object_AutoScythe	自动镰刀工具
-object_AutoHarvester	自动收割机
-object_BasicAutoGatherer	初级自动收集器
-object_AdvanceAutoGatherer	高级自动收集器
-object_DripPipe	滴管
-object_CropSprinkler	农作物喷洒装置
+object_AutoScythe	自动收割机
+object_AutoHarvester	自动收割机\n （高级） 
+object_BasicAutoGatherer	自动收集器
+object_AdvancedAutoGatherer	自动收集器\n （高级） 
+object_DripPipe	自动浇灌器
+object_CropSprinkler	自动浇灌器\n （高级） 
 #-
 #+肥料
-object_CompostBin	堆肥垃圾桶
+object_CompostBin	堆肥桶
 buildtoolbar_popup_obj_object_compostbin	用于改造食物和有机废物，制成可使用的肥料。
 buildtoolbar_popup_obj_CompostBin	用于改造食物和有机废物，制成可使用的肥料。
 
-object_CompostFertilizer	堆肥
+object_CompostFertilizer	肥料
 buildtoolbar_popup_obj_CompostFertilizer	应用在农作物上时，农作物生长和成熟的速度均会提高 25%。
-object_HighQualityFertilizer	优质肥料
+object_HighQualityFertilizer	肥料\n（优质）
 buildtoolbar_popup_obj_HighQualityFertilizer	应用在农作物上时，农作物生长和成熟的速度均会提高 50%，同时还有更高几率掉落种子。
 #-
 #+作物
-object_CropCarrotPlant	胡萝卜植株
-object_CropPotatoPlant	土豆植株
-object_CropTomatoPlant	番茄植株
-object_CropCabbagePlant	卷心菜植株
+object_CropCarrotPlant	种子\n （胡萝卜） 
+object_CropPotatoPlant	种子\n （土豆） 
+object_CropTomatoPlant	种子\n （番茄） 
+object_CropCabbagePlant	种子\n （卷心菜） 
 
-object_CropAppleTree	苹果树
-object_CropBananaTree	香蕉树
-object_CropOrangeTree	橙树
-object_CropPeachTree	桃树
+object_CropAppleTree	果树\n （苹果） 
+object_CropBananaTree	果树\n （香蕉） 
+object_CropOrangeTree	果树\n （橙子） 
+object_CropPeachTree	果树\n （桃子） 
 
-object_CropCornPlant	玉米植株
-object_CropWheatPlant	小麦植株
-object_CropBarleyPlant	大麦植株
+object_CropCornPlant	种子\n （玉米） 
+object_CropWheatPlant	种子\n （小麦） 
+object_CropBarleyPlant	种子\n （大麦） 
 
 object_CropAppleTreeSeed	苹果树种子
 object_CropBananaTreeSeed	香蕉树种子
@@ -8756,11 +8747,11 @@ buildtoolbar_popup_obj_CropBarleyPlant	来种植大麦吧！\n一包 20 粒种�
 buildtoolbar_popup_obj_CropWheatPlant	来种植小麦吧！\n一包 20 粒种子\n72 小时成熟\n常规产量为 4 份小麦\n成熟的小麦单价 $6。
 #-
 #+鲜花
-object_FlowerRoseBush	玫瑰花丛
-object_FlowerSunflower	向日葵
-object_FlowerMixedBegonias	缤纷秋海棠
-object_FlowerHeatherBushes	石楠花丛
-object_FlowerHydrangeaPlant	绣球花植株
+object_FlowerRoseBush	鲜花\n （玫瑰） 
+object_FlowerSunflower	鲜花\n （向日葵） 
+object_FlowerMixedBegonias	鲜花\n （秋海棠） 
+object_FlowerHeatherBushes	鲜花\n （石楠花） 
+object_FlowerHydrangeaPlant	鲜花\n （绣球花） 
 object_FlowerRoseBushSeed	玫瑰花丛种子
 object_FlowerSunflowerSeed	向日葵种子
 object_FlowerMixedBegoniasSeed	秋海棠种子
@@ -8775,13 +8766,13 @@ buildtoolbar_popup_obj_FlowerHydrangeaPlant	布满蓝花的装饰植物。
 #+装饰
 object_GardenGnome	花园小矮人玩偶
 object_TopiaryBush	造型灌木
-object_TopiaryBushBall	造型灌木（球形）
-object_TopiaryBushWarden	造型灌木（典狱长）
-object_TopiaryBushSwan	造型灌木（天鹅）
-object_TopiaryBushDeer	造型灌木（小鹿）
-object_TopiaryBushDog	造型灌木（小狗）
-object_TopiaryBushCat	造型灌木（小猫）
-object_TopiaryBushRex	造型灌木（霸王龙）
+object_TopiaryBushBall	造型灌木\n （球） 
+object_TopiaryBushWarden	造型灌木\n （典狱长） 
+object_TopiaryBushSwan	造型灌木\n （鹅） 
+object_TopiaryBushDeer	造型灌木\n （鹿） 
+object_TopiaryBushDog	造型灌木\n （狗） 
+object_TopiaryBushCat	造型灌木\n （猫） 
+object_TopiaryBushRex	造型灌木\n （霸王龙） 
 buildtoolbar_popup_obj_GardenGnome	令人愉悦的经典花园装饰物。
 buildtoolbar_popup_obj_TopiaryBush	扭曲的装饰灌木丛。
 buildtoolbar_popup_obj_TopiaryBushBall	棒棒糖造型的装饰灌木丛。
@@ -8792,12 +8783,12 @@ buildtoolbar_popup_obj_TopiaryBushDog	充满活力的狗狗造型装饰灌木丛
 buildtoolbar_popup_obj_TopiaryBushCat	慵懒的猫咪造型装饰灌木丛，猫也是人类最好的朋友。
 buildtoolbar_popup_obj_TopiaryBushRex	令人震撼的装饰灌木丛。
 
-object_OxStatue	牛雕像
-object_PaperDragonHead	龙（头)
-object_PaperDragonBody	龙（身)
-object_PaperDragonTail	龙（尾 ）
-object_PaperLantern	灯笼
-object_CoupletBanner	对联横批
+object_OxStatue	[春节]\n 牛雕像 
+object_PaperDragonHead	[春节]\n  龙头  
+object_PaperDragonBody	[春节]\n  龙身  
+object_PaperDragonTail	[春节]\n  龙尾  
+object_PaperLantern	[春节]\n  灯笼  
+object_CoupletBanner	[春节]\n  对联  
 buildtoolbar_popup_obj_OxStatue	生肖牛的雕像
 buildtoolbar_popup_obj_PaperDragonHead	一张龙头的剪纸
 buildtoolbar_popup_obj_PaperDragonBody	一张龙身的剪纸
@@ -8807,9 +8798,9 @@ buildtoolbar_popup_obj_CoupletBanner	一副装饰性的对联
 
 object_HayBale	干草堆
 object_PinkFlamingo	粉红色火烈鸟
-object_FlowerPlanterWateringCan	花盆（洒水壶）
-object_FlowerPlanterWellies	花盆（雨靴）
-object_FlowerPlanterWheelbarrow	花盆（手推车）
+object_FlowerPlanterWateringCan	花盆\n（洒水壶）
+object_FlowerPlanterWellies	花盆\n （雨靴） 
+object_FlowerPlanterWheelbarrow	花盆\n（手推车）
 buildtoolbar_popup_obj_HayBale	没有什么比一大堆干草更具有农场气息。
 buildtoolbar_popup_obj_PinkFlamingo	令人愉悦的经典花园装饰物。
 buildtoolbar_popup_obj_FlowerPlanterWateringCan	一件简单的容器，现在改用作花盆。
@@ -8828,14 +8819,112 @@ buildtoolbar_popup_obj_DiningTableSmall	一张高品质的餐桌，可以提高�
 buildtoolbar_popup_obj_DinerBooth	一个经典美国餐厅风格的带座位的小摊。\n\n需求：\n+ 舒适 0.30
 object_DiningChair	餐椅
 buildtoolbar_popup_obj_DiningChair	一把高品质的椅子，可以提高就餐档次。\n\n需求：\n+ 舒适 0.30
-
-#-========================
-#+==============================未知
-
 object_ShopCounter	商店前台
 buildtoolbar_popup_obj_ShopCounter	一个用于商品交易的柜台，不需要靠墙放置。
 
+
 #-========================
+#+==============================物品堆叠
+
+object_none						无
+object_box						一箱
+object_stack					一堆
+
+
+#-========================
+
+#+==============================门
+
+object_DoubleDoor	双开门\n（无锁）
+
+object_fencegatestaff	铁网门\n（员工）
+object_fencegatestandard	铁网门\n（无锁）
+object_fencegatevisitor	铁网门\n（访客）
+object_fencegateguard	铁网门\n（警卫）
+
+object_jaildoorgrey	监狱门\n（灰色）
+object_jaildoorlargegrey	大型监狱门\n（灰色）
+object_jaildoororange	监狱门\n（橙色）
+object_jaildoorlargeorange	大型监狱门\n（橙色）
+object_jaildoorred	监狱门\n（红色）
+object_jaildoorlargered	大型监狱门\n（红色）
+object_jaildoorYellow	监狱门\n（黄色）
+object_jaildoorlargeyellow	大型监狱门\n（黄色）
+object_JailDoorWhite	监狱门\n（白色）
+object_JailDoorLargeWhite	大型监狱门\n（白色）
+
+object_DoubleStaffDoor	双开员工门\n（绿色）
+object_StaffDoorBlue	员工门\n（蓝色）
+object_DoubleStaffDoorBlue	双开员工门\n（蓝色）
+object_StaffDoorOrange	员工门\n（橙色）
+object_DoubleStaffDoorOrange	双开员工门\n（橙色）
+object_StaffDoorRed	员工门\n（红色）
+object_DoubleVisitorDoor	双开探视门
+object_visitorDoor	探视门
+object_BarnDoor	谷仓门\n（无锁）
+object_WhitePicketGate	白色栅栏门\n（无锁）
+
+object_staffdoor				员工门\n（绿色）
+buildtoolbar_popup_obj_staffdoor	上锁的门，所有员工都能打开它。\n\n不过，囚犯仍然可以等有人开门而通过。\n所以还是依靠区划来阻止囚犯进出某些区域吧。
+
+
+object_securedoor	安全禁闭门
+object_secretdoor	隐藏门
+
+object_roadgate					道路闸门
+buildtoolbar_popup_obj_roadgate 通常用在马路上，以防大胆的囚犯从那里越狱。
+
+object_roadbarrier	路障
+buildtoolbar_popup_obj_roadbarrier	一个坚实的路障，能够阻挡哪怕急速的卡车。\n仅当戒严时关闭。
+
+#-==============================
+
+#-===========================================================
+
+#-===========================================================
+
+#+===============================物品筛选===============================
+
+buildtoolbar_popup_filter_title	过滤器列表
+buiildtoolbar_popup_filter_toggle	点击按钮进行切换
+buildtoolbar_popup_filter_default	默认
+buildtoolbar_popup_filter_az	A-Z
+buildtoolbar_popup_filter_owned	已拥有
+buildtoolbar_popup_filter_costhighlow	费用（从高到低）
+buildtoolbar_popup_filter_costlowhigh	费用（从低到高）
+buildtoolbar_popup_filter_indooroutdoor	从室内到室外
+buildtoolbar_popup_filter_outdoorindoor	从室外到室内
+buildtoolbar_popup_filter_quantity	拥有数量
+buildtoolbar_popup_filter_byroom	按房间
+buildtoolbar_popup_filter_mostused	最常用
+
+d11_carousel_filter_pack_GreenMachine	物品背包
+d11_carousel_filter_type_All	物品类型：所有类型
+d11_carousel_filter_type_RequiresWater	卫生
+d11_carousel_filter_type_RequiresElectricity	照明
+d11_carousel_filter_type_Entertainment	[需求设施]
+d11_carousel_filter_type_Decoration	装饰/结构
+d11_carousel_filter_type_Foliage	环境/植物
+d11_carousel_filter_type_Signs	标识
+d11_carousel_filter_type_Security	安全/医疗
+d11_carousel_filter_type_Catering	餐饮
+d11_carousel_filter_type_Misc	未分类
+
+interfacemode_objectPack_filter_all	所有内容包
+interfacemode_objectType_filter_requiresWater	卫生
+interfacemode_objectType_filter_requiresElectricity	照明
+interfacemode_objectType_filter_entertainment	[需求设施]
+interfacemode_objectType_filter_rest	家具
+interfacemode_objectType_filter_exercise	锻炼
+interfacemode_objectType_filter_decoration	装饰/结构
+interfacemode_objectType_filter_foliage	环境/植物
+interfacemode_objectType_filter_signs	标识
+interfacemode_objectType_filter_security	安全/医疗
+interfacemode_objectType_filter_catering	餐饮
+interfacemode_objectType_filter_misc	未分类
+interfacemode_objectPack_filter_caption	根据相关扩展包，过滤显示的物品数量。
+interfacemode_objectType_filter_caption	根据物品类型，过滤显示的物品数量。
+interfacemode_objectType_filter_all	物品类型：所有类型
 
 #-===========================================================
 
@@ -9207,16 +9296,16 @@ object_A48Clothes 杀手留言
 #+==========================杀手结束
 
 
-object_TargetSorter 分拣袭击目标
-buildtoolbar_popup_uts_TargetSorter 告密者和前执法者都是其他犯人的眼中钉，会被当做袭击目标。\n(如果你开启了“事件”，那么一种事件是保护联邦证人。)\n最好的对策是把他们分类为“重点保护”，以便远离威胁。\n\n本“设施”可以升级一台‘监控摄像头’，让它能够自动检测\n这些囚犯，并把他们分拣到相应的戒备类别。\n摄像头的检测范围半径为7米。\n\n把本升级包“安装”到摄像头的位置上，就会自动完成升级。\n\n最需要它的地方是“入狱搜查室”。
+object_TargetSorter 囚犯分类器
+buildtoolbar_popup_uts_TargetSorter 告密者和前执法者都是其他犯人的眼中钉，会被当做袭击目标。\n(如果你开启了“事件”，那么一种事件是保护联邦证人。)\n最好的对策是把他们分类为“重点保护”，以便远离威胁。\n\n本“设施”可以升级一台‘监控摄像头’，让它能够自动检测\n这些囚犯，并把他们分类到相应的戒备类别。\n摄像头的检测范围半径为7米。\n\n把本升级包“安装”到摄像头的位置上，就会自动完成升级。\n\n最需要它的地方是“入狱搜查室”。
 
-object_GangSorter 分拣帮派成员
-buildtoolbar_popup_uts_GangSorter 你开启了“帮派”，那么三个帮派之间会不断地发生冲突。\n最好的对策是把他们分类为“中、高、低戒备”。\n\n本“设施”可以升级一台‘监控摄像头’，让它能够自动检测\n这些囚犯，并把他们分拣到相应的戒备类别。\n摄像头的检测范围半径为7米。\n\n死刑犯和超高戒备的囚犯不受此影响。\n告密者等目标(分类为“重点保护”)优先于帮派。\n\n把本升级包“安装”到摄像头的位置上，就会自动完成升级。\n\n除了新接收的囚犯，帮派还会慢慢地在监狱中招募新人。\n所以你也许需要不止一个本工具。
+object_GangSorter 分类帮派成员
+buildtoolbar_popup_uts_GangSorter 你开启了“帮派”，那么三个帮派之间会不断地发生冲突。\n最好的对策是把他们分类为“中、高、低戒备”。\n\n本“设施”可以升级一台‘监控摄像头’，让它能够自动检测\n这些囚犯，并把他们分类到相应的戒备类别。\n摄像头的检测范围半径为7米。\n\n死刑犯和超高戒备的囚犯不受此影响。\n告密者等目标(分类为“重点保护”)优先于帮派。\n\n把本升级包“安装”到摄像头的位置上，就会自动完成升级。\n\n除了新接收的囚犯，帮派还会慢慢地在监狱中招募新人。\n所以你也许需要不止一个本工具。
 
-PrisonerSorter_NeedUpgrade \n(尚未升级“分拣囚犯”的功能)
-PrisonerSorter_TargetFound \n已分拣袭击目标 *X 人
-PrisonerSorter_GangFound \n已分拣帮派成员 *X 人
-PrisonerSorter_TargetNGangFound \n已分拣袭击目标 *X 人\n已分拣帮派成员 *Y 人
+PrisonerSorter_NeedUpgrade \n(尚未升级“囚犯分类器”的功能)
+PrisonerSorter_TargetFound \n已分类受袭击目标 *X 人
+PrisonerSorter_GangFound \n已分类帮派成员 *X 人
+PrisonerSorter_TargetNGangFound \n已分类袭击目标 *X 人\n已分类帮派成员 *Y 人
 PrisonerSorter_NotEnabledGangs \n你需要在[主菜单/附加功能/本监狱的额外玩法]中，“启用 帮派”。否则这个毫无用处。
 PrisonerSorter_DidNotUpgrade \n本升级包没有发挥作用。原因可能是：\n · 当前位置上没有‘监控摄像头’\n · 摄像头已经被升级过了\n可以拆除本升级包，再“安装”到别的摄像头。
 
@@ -9309,7 +9398,7 @@ object_CCommand 建造建材指令
 
 #-=============================================================================
 
-#-
+#-===========================================================
 
 
 
