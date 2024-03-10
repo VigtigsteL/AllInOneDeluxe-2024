@@ -159,3 +159,10 @@ BEGIN Custom
     HEIGHT      Scaled          384
 END
 
+BEGIN Custom
+	NAME        ViewChangelog
+    XPOS        Scaled          950
+    YPOS        Scaled          2500
+    WIDTH       Scaled          3700
+    HEIGHT      Scaled          384
+END

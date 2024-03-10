@@ -1133,7 +1133,7 @@ report_finance	财政
 
 report_staff	员工
 report_prisoners	囚犯
-report_jobs	劳役
+report_jobs	工作
 report_needs	需求
 report_threats	威胁
 report_regime	作息
@@ -8333,7 +8333,7 @@ buildtoolbar_popup_obj_FoodTrayPack	一堆 40 个餐盘 \n双击或按住即可�
 
 object_WaterCooler	饮水机
 buildtoolbar_popup_obj_WaterCooler	让人们可以方便喝水。\n\n需求：\n+ 饮水 20.00\n- 小便 7.00
-object_DrinkingFountain	壁挂饮水机\n\n需求：\n+ 饮水 20.00\n- 小便 7.00
+object_DrinkingFountain	壁挂饮水机
 buildtoolbar_popup_obj_DrinkingFountain	壁挂式饮水机，可让你的囚犯和员工始终精神焕发且水分充足。\n\n需求：\n+ 饮水 20.00\n- 小便 7.00
 object_CoffeeMachine	咖啡机
 buildtoolbar_popup_obj_CoffeeMachine	过度劳累的人们渴望的功能。\n\n需求：\n+ 员工饮水 10.00\n+ 员工休息 3.0
