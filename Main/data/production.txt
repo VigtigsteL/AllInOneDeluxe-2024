@@ -1,4 +1,26 @@
 
+BEGIN Processor
+    Processor            SortingTable
+    Input                LibraryBookUnsorted
+    Output               LibraryBookSorted
+    OperatingTime        15.0
+    Worker               Prisoner
+    Worker               Laborer
+    BEGIN AlternateOutput
+        Type             RuinedBook 
+        Count            1
+        Chance           0.1
+    END
+END
+
+BEGIN Processor
+    Processor            SortingTable
+    Input                MailUnsorted
+    Output               MailSorted
+    OperatingTime        15.0
+    Worker               Prisoner
+    Worker               Laborer
+END
 
 BEGIN ProductionRule
     Rule                Storage
@@ -8,6 +30,7 @@ BEGIN ProductionRule
     Room                Library
     Distribution        Random
     Worker           Prisoner
+    Worker           Laborer
 END
 
 BEGIN ProductionRule       
