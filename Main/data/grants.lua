@@ -27,6 +27,10 @@ function CreateGrants()
 
     CreateFireProtectionGrant()
     CreateSmallIsBeautifulGrant()
+    CreateSmallIsBeautiful2Grant()
+    CreateSmallIsBeautiful3Grant()
+
+    CreatePrisonPopulationGrants();
 end
 
 function CreateShortTermInvestment()
@@ -129,21 +133,17 @@ function CreateSecurityTunnelGrant()
     Objective.SetPreRequisite("Completed", "Grant_AdvancedSecurity", 1)
     Objective.HiddenWhileLocked()
 
-    Objective.CreateGrant("Grant_SecurityTunnel_Dog", 1000, 3000)
+    Objective.CreateGrant("Grant_SecurityTunnel_Dog", 1000, 4000)
     Objective.SetParent("Grant_SecurityTunnel")
     Objective.Requires("PatrolDogs", "AtLeast", 6)
 
-    Objective.CreateGrant("Grant_SecurityTunnel_PavingStone", 0, 1000)
+    Objective.CreateGrant("Grant_SecurityTunnel_Guard", 1000, 4000)
     Objective.SetParent("Grant_SecurityTunnel")
-    -- Objective.SetFlags          (true, false)
-    Objective.TargetZone(1, 2, 70, 71)
-    Objective.RequireMaterials("PavingStone", 5)
+    Objective.Requires("Patrols", "AtLeast", 12)
 
-    Objective.CreateGrant("Grant_SecurityTunnel_PerimeterWall", 10000, 20000)
+    Objective.CreateGrant("Grant_SecurityTunnel_ArmedGuard", 1000, 4000)
     Objective.SetParent("Grant_SecurityTunnel")
-    -- Objective.SetFlags          (true, false)
-    Objective.TargetZone(1, 1, 70, 70)
-    Objective.RequireMaterials("PerimeterWall", 1)
+    Objective.Requires("Patrolarmed", "AtLeast", 4)
 
 end
 
@@ -170,7 +170,7 @@ function CreateSecurityOfficeGrant1()
 
     Objective.CreateGrant("Grant_SecurityOffice1_Servo", 1000, 2000)
     Objective.SetParent("Grant_SecurityOffice1")
-    Objective.RequireObjects("Servo", 3)
+    Objective.RequireObjects("Servo", 4)
 
 end
 
@@ -302,7 +302,7 @@ function CreatePrisonLabourGrant()
 
     Objective.CreateGrant("Grant_PrisonLabour_Plates", 3000, 5000)
     Objective.SetParent("Grant_PrisonLabour")
-    Objective.RequireManufactured("LicensePlate", 30)
+    Objective.RequireManufactured("LicensePlate", 40)
 end
 
 function CreateFurnitureManufacturingGrant()
@@ -316,7 +316,7 @@ function CreateFurnitureManufacturingGrant()
 
     Objective.CreateGrant("Grant_FurnitureManufacturing_Forestrys", 5000, 10000)
     Objective.SetParent("Grant_FurnitureManufacturing")
-    Objective.RequireRoomsAvailable("Forestry", 5)
+    Objective.RequireRoomsAvailable("Forestry", 4)
 
     Objective.CreateGrant("Grant_FurnitureManufacturing_Gardener", 0, 1000)
     Objective.SetParent("Grant_FurnitureManufacturing")
@@ -438,13 +438,13 @@ function CreateFireProtectionGrant()
 end
 
 function CreateSmallIsBeautifulGrant()
-    Objective.CreateGrant("Grant_SmallIsBeautiful", 10000, 40000)
+    Objective.CreateGrant("Grant_SmallIsBeautiful", 10000, 30000)
     Objective.SetPreRequisite("Completed", "Grant_AdvancedSecurity", 1)
     Objective.HiddenWhileLocked()
 
     Objective.CreateGrant("Grant_SmallIsBeautiful_Prisoners", 0, 0)
     Objective.SetParent("Grant_SmallIsBeautiful")
-    Objective.Requires("Prisoners", "AtLeast", 120)
+    Objective.Requires("Prisoners", "AtLeast", 100)
 
     Objective.CreateGrant("Grant_SmallIsBeautiful_Guards", 0, 0)
     Objective.SetParent("Grant_SmallIsBeautiful")
@@ -453,7 +453,84 @@ function CreateSmallIsBeautifulGrant()
 
     Objective.CreateGrant("Grant_SmallIsBeautiful_ArmedGuard", 0, 0)
     Objective.SetParent("Grant_SmallIsBeautiful")
-    Objective.RequireObjects("ArmedGuard", 4)
+    Objective.RequireObjects("ArmedGuard", 5)
     Objective.Invert()
+
+    Objective.CreateGrant           ( "Grant_SmallIsBeautiful_Wait", 0, 0 )
+    Objective.SetParent             ( "Grant_SmallIsBeautiful" )
+    Objective.RequireTimePassed     ( 4320 )
 end
 
+function CreateSmallIsBeautiful2Grant()
+    Objective.CreateGrant("Grant_SmallIsBeautiful2", 20000, 60000)
+    Objective.SetPreRequisite("Completed", "Grant_SmallIsBeautiful", 1)
+    Objective.HiddenWhileLocked()
+
+    Objective.CreateGrant("Grant_SmallIsBeautiful2_Prisoners", 0, 0)
+    Objective.SetParent("Grant_SmallIsBeautiful2")
+    Objective.Requires("Prisoners", "AtLeast", 200)
+
+    Objective.CreateGrant("Grant_SmallIsBeautiful2_Guards", 0, 0)
+    Objective.SetParent("Grant_SmallIsBeautiful2")
+    Objective.RequireObjects("Guard", 50)
+    Objective.Invert()
+
+    Objective.CreateGrant("Grant_SmallIsBeautiful2_ArmedGuard", 0, 0)
+    Objective.SetParent("Grant_SmallIsBeautiful2")
+    Objective.RequireObjects("ArmedGuard", 10)
+    Objective.Invert()
+
+    Objective.CreateGrant           ( "Grant_SmallIsBeautiful2_Wait", 0, 0 )
+    Objective.SetParent             ( "Grant_SmallIsBeautiful2" )
+    Objective.RequireTimePassed     ( 4320 )
+end
+
+function CreateSmallIsBeautiful3Grant()
+    Objective.CreateGrant("Grant_SmallIsBeautiful3", 30000, 90000)
+    Objective.SetPreRequisite("Completed", "Grant_SmallIsBeautiful2", 1)
+    Objective.HiddenWhileLocked()
+
+    Objective.CreateGrant("Grant_SmallIsBeautiful3_Prisoners", 0, 0)
+    Objective.SetParent("Grant_SmallIsBeautiful3")
+    Objective.Requires("Prisoners", "AtLeast", 300)
+
+    Objective.CreateGrant("Grant_SmallIsBeautiful3_Guards", 0, 0)
+    Objective.SetParent("Grant_SmallIsBeautiful3")
+    Objective.RequireObjects("Guard", 75)
+    Objective.Invert()
+
+    Objective.CreateGrant("Grant_SmallIsBeautiful3_ArmedGuard", 0, 0)
+    Objective.SetParent("Grant_SmallIsBeautiful3")
+    Objective.RequireObjects("ArmedGuard", 15)
+    Objective.Invert()
+
+    Objective.CreateGrant           ( "Grant_SmallIsBeautiful3_Wait", 0, 0 )
+    Objective.SetParent             ( "Grant_SmallIsBeautiful3" )
+    Objective.RequireTimePassed     ( 4320 )
+end
+
+function CreatePrisonPopulationGrants()
+
+    local last = 0;
+    local list = {10,20, 30, 40, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200, 240, 280, 320, 360, 400};
+    local reward = 100
+
+    -- special case for the first item because it has no prerequisites.
+    Objective.CreateGrant        ( "Grant_Prison_Population_"..last, 0, last * reward );
+    Objective.SetPreRequisite    ( "Prisoners", "AtLeast", last )
+    Objective.HiddenWhileLocked  ()
+
+    for _,item in pairs(list) do
+
+        local payment = reward * 2 * (item - last) + (item * reward) + 2000;
+        
+        Objective.CreateGrant        ( "Grant_Prison_Population_"..item, 0, payment);
+        Objective.SetPreRequisite    ( "Completed", "Grant_Prison_Population_"..last, 1 )
+        Objective.SetPreRequisite    ( "Prisoners", "AtLeast", item )
+        Objective.HiddenWhileLocked  ()
+
+        last = item;
+
+    end
+
+end
