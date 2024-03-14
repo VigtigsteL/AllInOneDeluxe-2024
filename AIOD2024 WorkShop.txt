@@ -1,4 +1,4 @@
-[h1][B]　　　　　　当前版本:V1.7.1 | 更新日期:2024.03.15[/B][/h1][hr][/hr]
+[h1][B]　　　　　　当前版本:V1.7.2 | 更新日期:2024.03.15[/B][/h1][hr][/hr]
 [H1]本次模组是对 [中文豪华版] 基于 < 原始模组 > 与 < 二次开发模组 >
 进行的修复与更新[/H1]
 [i]If you need an English version, please feedback in the discussion forum. If enough players want it, I'll try to develop it.[/i]
@@ -23,7 +23,7 @@
 [i]如果有任何需要完善的地方、希望更改或添加的功能。
 欢迎大家反馈与讨论。[/i]
 
-[hr][/hr][h1][b]　　　　　　　　　　重要！修复了在大型游戏中，
+[hr][/hr][h1][b]　　　　　　　　　　重要！修复在大型游戏中，
 　大幅降低运算性能、2~5 秒一次严重卡顿、内存泄漏等严重 Bug！[/b][/h1]
 [hr][/hr]
 [h1][b]更新概况：[/b][/h1]
