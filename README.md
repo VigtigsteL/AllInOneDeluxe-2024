@@ -146,7 +146,6 @@
 ***
 > [!TIP]
 >## 我正在使用的模组推荐：
->#### Prison Population Grants/监狱人口补助金    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=227085867)
 >#### Murgh DevTools (Continued)/Murgh 开发工具(续)    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3019052572)
 >#### No More Water!/无需水源    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2514307311)
 >#### No More Power!/无需电力    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2514307414)
