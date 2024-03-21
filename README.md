@@ -143,6 +143,7 @@
 >#### Ozone'sFixes&QolAll-In-One/Ozone的修复和Qol一体化    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2978340955)
 >#### CallableTrucks/应急卡车    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=1632394574)
 >#### RestylingUI(Continued)/重新设计用户界面(续)    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=3009547076)
+>#### Prison Population Grants/监狱人口补助金    [Steam模组页面](https://steamcommunity.com/sharedfiles/filedetails/?id=227085867)
 ***
 > [!TIP]
 >## 我正在使用的模组推荐：
