@@ -2409,10 +2409,10 @@ END
 
 #+===============================卫生
 
-#+厕所 $200
+#+厕所 $100
 BEGIN Object
 Name                 Toilet
-Price                -200
+Price                -100
 MadeOf               HollowMetal
 Toughness            15
 MoveSpeedFactor      0.5
@@ -2433,12 +2433,12 @@ Properties           StaticObject
 END
 #-
 
-#+淋浴花洒 $200
+#+淋浴花洒 $100
 BEGIN Object
 Name                 ShowerHead
 ConstructionTime     1
 Toughness            100
-Price                -200
+Price                -100
 RenderDepth          3
 AttachToWall         true
 BlockedBy            Wall
@@ -2790,10 +2790,10 @@ VersionAdded		 1000
 END
 #-
 
-#+洗衣篮 $100
+#+洗衣篮 $50
 BEGIN Object
 Name                 LaundryBasket
-Price                -100
+Price                -50
 Filter		 RequiresWater
 Filter		 Work
 ConstructionTime     2
@@ -3158,7 +3158,7 @@ BEGIN Object
 	ConstructionTime     1.50000
 	MoveSpeedFactor      0.900000  
 	Toughness            10.0000  
-	Price                -200  
+	Price                -100  
 	Filter               Entertainment
 	AttachToWall         false
 	Group                StaticObject  
@@ -3477,7 +3477,7 @@ BEGIN Object
 	Width                1  
 	Height               1  
 	ConstructionTime     10.0000  
-	Price                -300  
+	Price                -200  
 	Filter               Entertainment
 	RenderDepth          1  
 	AttachToWall         true  
@@ -3578,7 +3578,7 @@ BEGIN Object
 	ConstructionTime     2
 	MoveSpeedFactor      0.7
 	Toughness            5
-	Price                -30
+	Price                -50
 	RenderDepth          2
 	Filter               Entertainment
 	AttachToWall         true
@@ -3829,7 +3829,7 @@ BEGIN Object
 	Name                 Fan
 	ConstructionTime     3.00000
 	MoveSpeedFactor      0.600000
-	Price                -30 
+	Price                -100 
 	Filter               Entertainment
 	Group                StaticObject 
 	BlockedBy            StaticObject     
@@ -4681,7 +4681,7 @@ Height				2
 ConstructionTime	3.00000
 MoveSpeedFactor		0.500000
 Toughness			30.0000
-Price				-200
+Price				-250
 Filter				Rest
 NumSlots			2
 Group				StaticObject
@@ -11265,7 +11265,7 @@ END
 
 #+==自助机器
 
-#+咖啡机 $400
+#+咖啡机 $300
 BEGIN Object
 Name				CoffeeMachine
 Width				1
@@ -11274,7 +11274,7 @@ Sprite				d_CoffeeMachine
 ToolbarSprite		d_CoffeeMachineToolbar
 ConstructionTime	5.00000
 MoveSpeedFactor		0.600000
-Price				-400
+Price				-300
 Filter               Catering
 Group				StaticObject
 BlockedBy			Wall
@@ -11288,11 +11288,11 @@ VersionAdded		3000
 END
 #-
 
-#+壁挂饮水机 $300
+#+壁挂饮水机 $200
 BEGIN Object
 Name				DrinkingFountain
 ConstructionTime     1.00000  
-Price                -300
+Price                -200
 Filter               Catering
 Group                StaticObject  
 BlockedBy            Wall  
@@ -11310,12 +11310,12 @@ END
 END
 #-
 
-#+饮水机 $300
+#+饮水机 $150
 BEGIN Object
 Name                 WaterCooler
 ConstructionTime     3.00000
 MoveSpeedFactor      0.600000  
-Price                -300
+Price                -150
 Filter               Catering
 Group                StaticObject 
 BlockedBy            StaticObject     
@@ -17143,7 +17143,7 @@ Sprite               FireEngine
 SpriteScale          1.2
 Properties           Vehicle
 Properties           Undamageable
-TopSpeed		 16.0
+TopSpeed		 12.0
 END
 #-
 
@@ -17158,7 +17158,7 @@ Toughness            35
 Sprite               RiotVan
 SpriteScale          1.4
 Properties           Vehicle
-TopSpeed		 16.0
+TopSpeed		 12.0
 END
 #-
 
@@ -17173,7 +17173,7 @@ Toughness            35
 Sprite               Ambulance
 SpriteScale          1.2
 Properties           Vehicle
-TopSpeed		 16.0
+TopSpeed		 12.0
 END
 #-
 
@@ -17217,12 +17217,11 @@ NumSlots             6
 Toughness            35
 Sprite               TroopTruck
 Properties           Vehicle
-TopSpeed		 16.0
+TopSpeed		 12.0
 END
 #-
 
-
-#+消防车
+#+排水车
 BEGIN Object
 Name				DrainageVan
 Width				2
