@@ -1,12 +1,7 @@
 # ==============================================================================
 # 中文豪华版2024 By:Vigtigste
 # =============================================================================
-quickbuild_Armoury	枪械库
-quickbuild_Infirmary	医务室
-quickbuild_Laundry	洗衣房
-quickbuild_Library	图书馆
-quickbuild_MailRoom	邮件收发室
-quickbuild_Visitation	探视
+
 d11_quick_yard	庭院
 
 # 声音编辑器(F5)
@@ -1747,8 +1742,7 @@ nameplate_wounded	流血！
 
 
 
-object_jaildoor					监狱门
-object_jaildoorlarge			大型监狱门
+
 object_door						门\n  （无锁）
   
 object_solitarydoor				禁闭门
@@ -2445,16 +2439,19 @@ roomerror_nocanteen_kitchen	从此厨房无法抵达任何食堂。\n厨房在�
 
 ceos_letter	\n\n亲爱的先生/女士：\n\n恭喜你完成基本入门。你现在是完全合格的监狱建筑师了！很快你就会从\n空置地块和几堆砖块开始设计、建造并经营你自己的监狱。在开始之前，\n我想我或许可以给你分享一些重要的经验教训。\n\n1. 每个监狱都需要典狱长——他应当是你最先雇用的人员之一。给他建一间\n漂亮的办公室，他会通过[行政系统]，开启一系列高级功能。\n\n2. 单人牢房很贵，特别是在早期资金紧张时。为了存下钱来，先从一个\n大型的拘留室起步吧；它马上就可以给很多囚犯共同使用。\n\n3. 设立厨房和食堂，并在第一个囚犯抵达之前开始运营。别忘了雇用厨师\n——没有什么比空空的胃更能激怒囚犯！\n\n4. 建造监狱是一项昂贵的事业，你需要擅长通过补助与合同，筹集大笔资金。\n可以从右下角的[报告]窗口，访问[补助]标签页。\n\n我要讲的就是这些——祝你好运！\n\n监狱建筑师公司\n首席执行官\n\n\n附赠小提示：\n · 按 - 和 + 键，可以缩放界面比例。\n · 按1、2、3、4可以设定时钟速度为1、2、5、10倍。\n  (界面上的三个按钮，则是更快的2、4、10倍。)\n · 经常存档是个好习惯。(我偶尔会遇到程序崩溃的情况。)\n\n{中文豪华版} 祝你游戏愉快！\nyuanze3131@gmail.com
 
-quickbuild_basiccell	基础牢房
-quickbuild_solitarycell	禁闭室
-quickbuild_office	办公室
-quickbuild_luxurycell	豪华牢房
-quickbuild_sharedcell	多人牢房
-quickbuild_kitchen	厨房
-quickbuild_canteen	食堂
-quickbuild_utilityroom	基础设施房
-quickbuild_classroom	教室
-quickbuild_commonroom	公共活动室
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 season_current	当前季节：*X
 season_spring	春
@@ -3078,13 +3075,7 @@ moveobjects_abort	右击：取消移动
 # =============================================================================
 
 double_click_select_desc	双击左键跟踪*E
-quickbuild_intermediatecell	升级的牢房
-quickbuild_holdingcell	拘留牢房
-quickbuild_medical	医疗室
-quickbuild_shop	商店
-quickbuild_shower	淋浴间
-quickbuild_staffroom	员工休息室
-quickbuild_workshop	工坊
+
 
 # =============================================================================
 # Main Menu
@@ -3394,27 +3385,7 @@ buildtoobar_PsychConItemImproveInfo	- 升级精神科医生办公室。
 buildtoobar_PsychConItemImproveSuppression	- 咨询结束后，该精神病囚犯的\n压抑和某些需求降低 +5%
 buildtoobar_PsychConItemImproveGrace	- 咨询结束后，在其压抑和某些需求再次上升之前，\n为该精神病囚犯\n提供 1 天的额外“宽限”期。
 
-# =============================================================================
-# Room - Names
-# =============================================================================
 
-
-
-# =============================================================================
-# Room - Description
-# =============================================================================
-
-
-
-# =============================================================================
-# Quick Build - Names
-# =============================================================================
-
-quickbuild_paddedbasiccell	软垫（小）
-quickbuild_paddedintermediatecell	软垫（中）
-quickbuild_paddedholdingcell	软垫拘留牢房
-quickbuild_paddedsolitarycell	软垫禁闭室
-quickbuild_PsychiatristOffice	精神科医生办公室
 
 # =============================================================================
 # Interface Mode
@@ -4383,12 +4354,6 @@ delivery_hover_hint	物流>可在运输菜单控制此*X的用途。
 ferryDock_placement_hint	必须有对应的陆地作为目的地。
 transportZones_hover_hint	通过物流菜单与停机坪、码头和道路连接。
 
-# =============================================================================
-# Prefabs - Names
-# =============================================================================
-
-quickbuild_OutdoorLake	室外湖泊
-quickbuild_River	河流
 
 # =============================================================================
 # CODEX - Menu Entries
@@ -4440,17 +4405,9 @@ interface_landbuywateronly	只能在水中
 codex_option_landExpansion	土地扩张
 codex_tooltip_landExpansion	扩展地块土地的各个边界，即可在开局获得更大的起始地块。
 
-quickbuild_smallIsland	岛屿（小）
-quickbuild_mediumIsland	岛屿（中）
-quickbuild_largeIsland	岛屿（大）
-quickbuild_smallLand	土地（小）
-quickbuild_largeLand	土地（大）
 
-buildtoolbar_quickbuild_smallIsland	可大量生成的岛屿，四周浅水环绕，在任何群岛中都不会显得格格不入。
-buildtoolbar_quickbuild_mediumIsland	可大量生成的岛屿，四周浅水环绕，在任何群岛中都不会显得格格不入。
-buildtoolbar_quickbuild_largeIsland	可大量生成的岛屿，四周浅水环绕，在任何群岛中都不会显得格格不入。
-buildtoolbar_quickbuild_smallLand	由沙子、泥土和草砖构成的基础印记，可在扩展土地时使用。
-buildtoolbar_quickbuild_largeLand	由沙子、泥土和草砖构成的基础印记，可在扩展土地时使用。
+
+
 
 material_islandgenerator	快速建岛
 buildtoolbar_popup_mat_islandgenerator	在水中拖出一片区域来生成随机小岛，建岛时一定要避开航道。
@@ -4508,27 +4465,14 @@ equipment_ProducedDrugs	毒品成品
 equipment_ProducedBooze	酒类成品
 equipment_ProducedNarcotics	麻醉品成品
 
-# =============================================================================
-# Room - Names
-# =============================================================================
-
-quickbuild_VegetableAllotment	菜田
-quickbuild_FruitOrchard	果园
-quickbuild_FarmingField	农田
-quickbuild_pantry	食品储藏室
 
 #=========================================================================
 # Quick Rooms
 #=========================================================================
 
-d11_quick_flowerGarden	花园
-d11_quick_grove	小树林
-d11_quick_hedgeMaze	树篱迷宫
 
-buildtoolbar_quickbuild__flowerGarden	为囚犯提供的安静休憩区。
-buildtoolbar_quickbuild__grove	为土地增添生机的树林。
-buildtoolbar_quickbuild__hedgeMaze	使用树篱搭建的初级迷宫，可供囚犯进行探索。
-buildtoolbar_quickbuild__yard	标准庭院，包含囚犯可能需要的任何东西。
+
+
 
 # =============================================================================
 # Carousel - Hint strings
@@ -5393,14 +5337,8 @@ d11_farm_search_freq_option_5days	每 5 天
 d11_farm_search_target_option_crops	仅限农作物
 Ingredients_UsageCaption	使用率
 researchtooltip_farming	解锁高级农业技术、设备，以及更昂贵的农作物。
-quickbuild_grove	小树林
-quickbuild_flowerGarden	花园
-quickbuild_yard	庭院
-quickbuild_hedgeMaze	树篱迷宫
-buildtoolbar_quickbuild_flowerGarden	为囚犯提供的安静休憩区。
-buildtoolbar_quickbuild_grove	为土地增添生机的树林。
-buildtoolbar_quickbuild_hedgeMaze	使用树篱搭建的初级迷宫，可供囚犯进行探索。
-buildtoolbar_quickbuild_yard	标准庭院，包含囚犯可能需要的任何东西。
+
+
 objective_target_ExportPower1	绿色能源目标 3
 objective_target_ExportPower1_description	将电能外销限额提升至 1,000 单位。
 objective_target_ExportPower1_task	外销 1,000 单位电能。
@@ -5528,10 +5466,7 @@ d11_restaurant_work_desc	指派囚犯在餐厅工作，为平民顾客烹饪食�
 d11_bakery_work	面包房
 d11_bakery_work_desc	指派囚犯在面包房工作，为平民顾客烹饪烘焙食物。但是他们必须要有烹饪或服务生方面的工作经验。
 
-quickbuild_Therapy	会客室
-quickbuild_Restaurant	餐厅
-quickbuild_Bakery	面包房
-quickbuild_Reception	囚犯接收处
+
 reformprogram_AnimalTherapy	动物疗法
 reformprogram_AnimalTherapy_text	囚犯通常很难控制自己的脾气或其他负面想法。通过这个课程让他们与动物建立一种纽带关系，希望囚犯能学会如何保持冷静，并在事态升级前学会克制自己。
 reformProgram_ConflictResolution	冲突解决
@@ -5963,8 +5898,7 @@ material_RebarReinforcement	钢筋
 buildtoolbar_popup_mat_RebarReinforcement	这种钢筋可以加强墙壁和地基的结构完整性，降低事故发生并造成损坏的可能性。
 subsidence_tooltip_Damaged	下陷/老鼠造成的破坏
 
-quickbuild_WeatherCentre	气象中心
-buildtoolbar_quickbuild_WeatherCentre	配备天气预报设备的房间，可提前预警极端天气事件。
+
 object_pestcontrolteacher	害虫防治工人
 d11_generator_charge_text	发电机电量：*X%
 event_SubsidenceFirstTime	你的监狱好像出现了下陷问题。请务必在建筑结构上加装钢筋以防下陷或雇用修理工。
@@ -6191,7 +6125,7 @@ codex_tooltip_startingSeason	选择初始季节。天气会随季节自然变化
 object_AirPestControlHeli	空中害虫防治
 codex_option_default	默认
 dlc_name_kimber	帮派
-quickbuild_Gymnasium	健身房
+
 boilingpoint_Needs	需求
 boilingpoint_RoomQuality	牢房品质
 buildtoolbar_popup_help_BoilingPoint_3	^提示
@@ -6226,21 +6160,17 @@ buildtoolbar_popup_obj_TattooRemovalMachine	改造帮派成员的必备物品。
 。
 equipment_TattooRemovalTool	纹身去除工具
 
-quickbuild_TheCage	牢笼
-buildtoolbar_quickbuild_TheCage	一部露天设施，可供一名囚犯在其中锻炼，将他们与其他囚犯隔离开来。
+
 material_CageFence	牢笼栅栏
 buildtoolbar_popup_mat_CageFence	一道铁网围栏，用于防止锻炼中的囚犯出逃。
 
-quickbuild_TattooRemovalRoom	纹身去除室
-buildtoolbar_quickbuild_TattooRemovalRoom	囚犯在这里经历痛苦、漫长的过程，最终将身上的帮派纹身去除。
+
 
 object_GangGraffiti	帮派涂鸦
 d11_hover_info_gang_graffiti_1	辖区内帮派成员武力 +15%
 d11_hover_info_gang_graffiti_2	辖区内帮派成员坚韧 +15%
 object_FightRing	拳击场
 buildtoolbar_popup_obj_FightRing	如果囚犯能在擂台上一决高下，就不会在监狱侧翼中斗殴。\n\n需求：\n+ 锻炼 3.00\n+ 娱乐 3.00
-quickbuild_FightClubRoom	搏击俱乐部
-buildtoolbar_quickbuild_FightClubRoom	无论谁问起，都不要承认此房间的存在。\n\n需求：\n+ 自由 3.00\n- 饮水 0.50
 
 object_CageGate	牢笼大门
 buildtoolbar_popup_obj_CageGate	可以完美搭配围栏使用的监狱大门。功能和门一样。
@@ -6623,9 +6553,7 @@ equipment_waterBucket	水桶
 dlc_name_qol1	生命自由
 action_BabySleep	[婴儿]睡觉
 action_BabyPlay	[婴儿]玩耍
-quickbuild_Security	安保
-quickbuild_Parole	假释室
-quickbuild_Kennel	警犬休息室
+
 graph_allTime	所有时间
 victory_UndeadEscapes_units	越狱
 d11_logging_gangFight	[*T]*Y的*X是帮派打斗事件中的攻击者
@@ -6661,7 +6589,7 @@ buildtoolbar_popup_obj_ZombieChum	放下密友的残存肉块，诱使活尸远�
 object_ornamentalgravestone	装饰性墓碑
 buildtoolbar_popup_obj_ornamentalgravestone	致敬逝者的纪念物。
 
-quickbuild_graveyard	墓地
+
 
 d11_graveyard_advisor_onboarding	墓地里有动静……地狱已满，活尸现世。
 object_DistractionContraption	干扰装置
@@ -6737,8 +6665,7 @@ object_Byte	字节
 buildtoolbar_popup_obj_Byte	最新的探测技术趋势。虽然体能相比其他警犬较弱，但它敏锐的感觉弥补了这一缺点。
 material_GlassWall	玻璃墙
 buildtoolbar_popup_mat_GlassWall	想要对监狱实施有效监控，高压电墙是最好的围墙选择。
-quickbuild_GlassCell	玻璃牢房
-buildtoolbar_popup_room_GlassCell	私密性欠佳的囚室。
+
 material_ElectrifiedFence	电栅栏
 buildtoolbar_popup_mat_ElectrifiedFence	高压电威慑。\n每一块见方区域地下都需要铺设电缆。
 equipment_keycard	门禁卡
@@ -8076,6 +8003,97 @@ buildtoolbar_popup_room_sharedcell	一个多人牢房。至多能够容纳8个�
 
 #-===========================================================
 
+#+===============================快速建造===============================
+quickbuild_basiccell	牢房\n （基础） 
+quickbuild_solitarycell	禁闭室
+quickbuild_office	办公室
+quickbuild_luxurycell	牢房\n （豪华） 
+quickbuild_sharedcell	宿舍\n （4人） 
+quickbuild_kitchen	厨房
+quickbuild_canteen	食堂
+quickbuild_utilityroom	基础设施房
+quickbuild_classroom	教室
+quickbuild_commonroom	公共活动室
+quickbuild_intermediatecell	牢房\n （升级） 
+quickbuild_holdingcell	拘留室
+quickbuild_medical	医疗室
+quickbuild_shop	商店
+quickbuild_shower	淋浴间
+quickbuild_staffroom	员工休息室
+quickbuild_workshop	工坊
+quickbuild_Armoury	枪械库
+quickbuild_Infirmary	医务室
+quickbuild_Laundry	洗衣房
+quickbuild_Library	图书馆
+quickbuild_MailRoom	邮件收发室
+quickbuild_Visitation	探监室
+quickbuild_paddedbasiccell	软垫（小）
+quickbuild_paddedintermediatecell	软垫（中）
+quickbuild_paddedholdingcell	软垫拘留牢房
+quickbuild_paddedsolitarycell	软垫禁闭室
+quickbuild_PsychiatristOffice	精神科医生办公室
+quickbuild_OutdoorLake	室外湖泊
+quickbuild_River	河流
+
+quickbuild_smallIsland	岛屿（小）
+quickbuild_mediumIsland	岛屿（中）
+quickbuild_largeIsland	岛屿（大）
+quickbuild_smallLand	土地（小）
+quickbuild_largeLand	土地（大）
+buildtoolbar_quickbuild_smallIsland	可大量生成的岛屿，四周浅水环绕，在任何群岛中都不会显得格格不入。
+buildtoolbar_quickbuild_mediumIsland	可大量生成的岛屿，四周浅水环绕，在任何群岛中都不会显得格格不入。
+buildtoolbar_quickbuild_largeIsland	可大量生成的岛屿，四周浅水环绕，在任何群岛中都不会显得格格不入。
+buildtoolbar_quickbuild_smallLand	由沙子、泥土和草砖构成的基础印记，可在扩展土地时使用。
+buildtoolbar_quickbuild_largeLand	由沙子、泥土和草砖构成的基础印记，可在扩展土地时使用。
+
+
+quickbuild_VegetableAllotment	菜田
+quickbuild_FruitOrchard	果园
+quickbuild_FarmingField	农田
+quickbuild_pantry	食品储藏室
+quickbuild_grove	小树林
+
+quickbuild_flowerGarden	花园
+quickbuild_yard	庭院
+quickbuild_hedgeMaze	树篱迷宫
+buildtoolbar_quickbuild_flowerGarden	为囚犯提供的安静休憩区。
+buildtoolbar_quickbuild_grove	为土地增添生机的树林。
+buildtoolbar_quickbuild_hedgeMaze	使用树篱搭建的初级迷宫，可供囚犯进行探索。
+buildtoolbar_quickbuild_yard	标准庭院，包含囚犯可能需要的任何东西。
+
+quickbuild_Therapy	会客室
+quickbuild_Restaurant	餐厅
+quickbuild_Bakery	面包房
+quickbuild_Reception	囚犯接收处
+
+quickbuild_WeatherCentre	气象中心
+buildtoolbar_quickbuild_WeatherCentre	配备天气预报设备的房间，可提前预警极端天气事件。
+
+quickbuild_Gymnasium	健身房
+
+quickbuild_TheCage	牢笼
+buildtoolbar_quickbuild_TheCage	一部露天设施，可供一名囚犯在其中锻炼，将他们与其他囚犯隔离开来。
+quickbuild_TattooRemovalRoom	纹身去除室
+buildtoolbar_quickbuild_TattooRemovalRoom	囚犯在这里经历痛苦、漫长的过程，最终将身上的帮派纹身去除。
+quickbuild_FightClubRoom	搏击俱乐部
+buildtoolbar_quickbuild_FightClubRoom	无论谁问起，都不要承认此房间的存在。\n\n需求：\n+ 自由 3.00\n- 饮水 0.50
+
+quickbuild_Security	安保室
+quickbuild_Parole	假释室
+quickbuild_Kennel	警犬休息室
+
+quickbuild_graveyard	墓地
+
+quickbuild_GlassCell	玻璃牢房
+buildtoolbar_popup_room_GlassCell	私密性欠佳的囚室。
+
+quickbuild_solitarycellsmall	禁闭室\n （微型） 
+quickbuild_cellsmall	牢房\n （微型） 
+quickbuild_sharedcell8	宿舍\n  （8人） 
+quickbuild_OfficeSmall	办公室\n （微型）
+quickbuild_VisitationSecure	探监室\n （高级）
+#-===========================================================
+
 #+===============================房间品质===============================
 roomgrading	牢房品质评级
 
@@ -8876,6 +8894,8 @@ object_fencegatestandard	铁网门\n（无锁）
 object_fencegatevisitor	铁网门\n（访客）
 object_fencegateguard	铁网门\n（警卫）
 
+object_jaildoor					监狱门
+object_jaildoorlarge			大型监狱门
 object_jaildoorgrey	监狱门\n（灰色）
 object_jaildoorlargegrey	大型监狱门\n（灰色）
 object_jaildoororange	监狱门\n（橙色）

@@ -1,0 +1,80 @@
+
+#+禁闭室（微型）
+BEGIN Prefab
+    Name        SolitaryCellSmall
+    w           3
+    h           3
+    RoomType    Solitary
+    BEGIN Object    Type    Toilet          x   1   y   1   orX 0   orY 1   END
+	BEGIN Object    Type    ShowerHead  	x   1   y   1   orX 0   orY 1   END       
+	BEGIN Object    Type    Drain 			x   1   y   1   orX 0   orY 1   END       
+    BEGIN Object    Type    SecureDoor    	x   1   y   2   orX 0   orY 1   END 
+END
+#-
+
+#+牢房（微型）
+BEGIN Prefab
+    Name        CellSmall
+    w           3
+    h           5
+    RoomType    Cell
+    BEGIN Object    Type    Toilet          x   1   y   1   orX 0   orY 1   END
+	BEGIN Object    Type    ShowerHead  	x   1   y   1   orX 0   orY 1   END       
+	BEGIN Object    Type    Drain 			x   1   y   1   orX 0   orY 1   END       
+	BEGIN Object    Type    Bed 			x   1   y   2   orX 0   orY 1   END       
+	BEGIN Object    Type    Light 			x   1   y   2   orX 0   orY 1   END       
+    BEGIN Object    Type    SecureDoor  	x   1   y   4   orX 0   orY 1   END 
+END
+#-
+
+#+宿舍（8人）
+BEGIN Prefab
+    Name        SharedCell8
+    w           8
+    h           8
+    RoomType    Dormitory
+    BEGIN Object    Type    BunkBed         x   1   y   1   orX 4   orY 1   END
+    BEGIN Object    Type    BunkBed         x   1   y   2   orX 4   orY 1   END
+    BEGIN Object    Type    BunkBed         x   1   y   3   orX 4   orY 1   END
+    BEGIN Object    Type    BunkBed         x   1   y   4   orX 4   orY 1   END
+	BEGIN Material	Type	ConcreteWall	x	1	y	5	w	2	h	1	END
+    BEGIN Object    Type    Light		    x   3   y   5   orX 0   orY 1   END
+    BEGIN Object    Type    Toilet          x   1   y   6   orX 0   orY -1   END
+	BEGIN Object    Type    ShowerHead  	x   1   y   6   orX 0   orY -1   END       
+	BEGIN Object    Type    Drain 			x   1   y   6   orX 0   orY -1   END  
+    BEGIN Object    Type    JailDoor        x   3   y   7   orX 0   orY 1   END 
+END
+#-
+
+#+办公室（微型）
+BEGIN Prefab
+    Name        OfficeSmall
+    w           5
+    h           5
+    RoomType    Office
+    BEGIN Object    Type    OfficeDesk      x   1   y   1   orX 0   orY 1  END
+    BEGIN Object    Type    SwivelChair     x   1   y   2   orX 0   orY -1  END
+    BEGIN Object    Type    FilingCabinet   x   3   y   1   orX 0   orY 1   END
+    BEGIN Object    Type    Light			x   2   y   2   orX 0   orY 1   END
+    BEGIN Object    Type    StaffDoorBlue   x   2   y   4   orX 0   orY 1   END 
+END
+#-
+
+#+探监室（高级）
+BEGIN Prefab
+    Name    VisitationSecure
+    w       10
+    h       8
+    RoomType    Visitation
+
+	BEGIN Object    Type    VisitorTableSecure   x   1   y   3   orX 0   orY 0   END
+	BEGIN Object    Type    VisitorTableSecure   x   3   y   3   orX 0   orY 0   END
+	BEGIN Object    Type    VisitorTableSecure   x   5   y   3   orX 0   orY 0   END
+	BEGIN Object    Type    VisitorTableSecure   x   7   y   3   orX 0   orY 0   END
+		
+    BEGIN Object    Type    VisitorDoor  		 x   0   y   1   orX -1   orY 0   END  
+    BEGIN Object    Type    JailDoor  			 x   0   y   6   orX -1   orY 0   END  
+END
+#-
+
+#+
